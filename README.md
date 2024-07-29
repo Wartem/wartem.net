@@ -5,6 +5,7 @@
 Welcome to **Wartem.xyz**, my personal website! This site serves as a digital portfolio and a platform to share some of projects, and experiences. Here, you will find:
 
 - **Portfolio**: Showcasing my work, skills, and projects.
+- **Blog**: Insights and articles on topics that interest me.
 
 ## Current Status
 
@@ -15,7 +16,7 @@ I'm excited to announce that the website is now live! Feel free to explore the v
 You can look forward to:
 
 - Updates to my portfolio with new projects.
-
+- Blog posts covering a things related to tech.
 
 
 Thank you for visiting Wartem.xyz! I appreciate your support and interest.
