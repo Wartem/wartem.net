@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Week</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/css/materialize.min.css">
+
+    <link rel="stylesheet" href="the-week.css">
+
+</head>
+<body>
+    <div class="week-container">
+        <div class="day" id="monday">Måndag</div>
+        <div class="day" id="tuesday">Tisdag</div>
+        <div class="day" id="wednesday">Onsdag</div>
+        <div class="day" id="thursday">Torsdag</div>
+        <div class="day" id="friday">Fredag</div>
+        <div class="day" id="saturday">Lördag</div>
+        <div class="day" id="sunday">Söndag</div>
+    </div>
+
+    <div class="settings-container">
+      <!--   <div class="row"> -->
+          <!-- <nav>
+            <div class="nav-wrapper">
+              <div class="col s12">
+                <a href="#" class="brand-logo">Text to speech example</a>
+              </div>
+            </div>
+          </nav> -->
+       <!--  </div> -->
+      
+        <form class="settings">
+          <!-- <div class="row"> -->
+           <!--  <label>Choose voice</label> -->
+            <!-- <select id="voices"></select> -->
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+            
+            
+
+               <!--  <select class="range-field" style="margin-bottom: 1rem;" id="voices"></select> -->
+
+               <div class="range-field">   
+                <label>Välj röst</label>
+                <select id="voices"></select>
+            </div> 
+
+               <div class="setting">
+              <label>Hastighet</label>
+              <p class="range-field">
+                <input type="range" id="rate" min="1" max="100" value="10" />
+              </p>
+            </div>
+            <div class="setting">
+                <label>Tonhöjd</label>
+                <p class="range-field">
+                  <input type="range" id="pitch" min="0" max="2" value="1" />
+                </p>
+                
+              
+            </div>
+            
+            <!-- <div class="col s12">
+              <p>N.B. Rate and Pitch only work with native voice.</p>
+            </div> -->
+          <!-- </div> -->
+         <!--  <div class="row">
+            <div class="input-field col s12">
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label>Write message</label>
+            </div>
+          </div> -->
+<!--           <a href="#" id="speak" class="waves-effect waves-light btn">Speak</a>
+ -->        </form>  
+      
+    </div>
+      
+     <!--  <div id="modal1" class="modal">
+        <h4>Speech Synthesis not supported</h4>
+        <p>Your browser does not support speech synthesis.</p>
+        <p>We recommend you use Google Chrome.</p> -->
+      <!--   <div class="action-bar">
+          <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Close</a>
+        </div> -->
+     <!--  </div> -->
+
+
+
+      <footer>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         -->
+         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/js/materialize.min.js"></script>
+        <script src="the-week.js"></script>
+    </footer>
+</body>
+</html>

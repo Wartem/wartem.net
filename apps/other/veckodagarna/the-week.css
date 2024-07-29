@@ -1,0 +1,130 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+ /*  html{
+    min-height: 100vh;
+    width: 100vw;
+  } */
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vw;
+    height: 100vh; */
+
+    height: 100vh;
+    width: 100vw;
+
+    /* width: 100%;
+    height: auto; */
+
+    margin: 0;
+    background: radial-gradient(#2b93d8, #000000);
+  }
+
+  .range-field{
+    background:rgb(185, 189, 212, 0.3);
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.5rem;
+    border-width: 0.5rem;
+    /* margin-top: 1rem; */
+    font-style: oblique;
+
+  }
+
+  .week-container{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 0.5rem;
+    /* margin-top: 1.25rem; */
+    border-color: black;
+    border-width: 0.5rem;
+    background-color: rgb(40, 41, 41, 0.5);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    /* align-items: center;
+    justify-content: center; */
+    /* padding-top: 0.5rem;
+    padding-bottom: 0.5rem; */
+
+    height: auto;
+    width: 50%;
+    max-height: 80%;
+
+   /*  min-width: 80%; */
+   /*  height: 100%; */
+  }
+
+  .day{
+    /* width: 100%;
+    height: auto; */
+    /* padding: 1rem; */
+    
+    border-radius: 0.3125rem;
+
+    height: 4.285rem;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    /* font-weight: 3rem; */
+
+    /* max-height: 14.285%; */
+
+    /* min-height: 50%;
+    max-height: 80%;
+    width: auto; */
+  }
+
+  #monday{
+      background-color: rgb(0, 121, 26);
+  }
+
+  #tuesday{
+    background-color: rgb(9, 151, 156);
+}
+
+#wednesday{
+    background-color: rgb(255, 255, 255);
+}
+
+#thursday{
+    background-color: rgb(114, 96, 64);
+}
+
+#friday{
+    background-color: rgb(247, 212, 18);
+}
+
+#saturday{
+    background-color: rgb(202, 15, 140);
+}
+
+#sunday{
+    background-color: rgb(165, 23, 23);
+}
+
+.setting{
+margin-top: 1rem;
+}
+
+.settings-container{
+    /* display: column; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+@media (max-width: 850px) {
+  .settings-container{
+  margin-left: 1rem;
+  }
+}

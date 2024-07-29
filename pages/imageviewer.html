@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image viewer</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/imageviewer.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes"
+      rel="stylesheet"
+    />
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Wartem, home" />
+    <meta name="keywords" content="Wartem, home" />
+    <meta name="author" content="Wartem" />
+    <link rel="icon" href="../images/R3QQ2015ProfileImage.jpg" />
+
+    <link rel="stylesheet" type="text/css" href="../css/default_content.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+  </head>
+  <body>
+    <div class="pre"></div>
+    <div id="all-but-footer">
+    <header>
+      <div id="header"></div>
+    </header>
+
+    <div class="container-i">
+      <div class="row-i">
+        <h2 id="header-title-i">Image Viewer</h2>
+        <h6>Type "dog" or "duck" below</h6>
+        <br />
+
+        <form id="filter" class="form-inline mb-3">
+          <input
+            type="text"
+            class="form-control mr-2"
+            id="item"
+            placeholder="Search Images..."
+          />
+        </form>
+        <br />
+        <ul id="items" class="list-group"></ul>
+      </div>
+    </div>
+  </div>
+    <footer id="footer">
+      <noscript>Sorry, your browser does not support JavaScript! </noscript>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+      <script type="text/javascript" src="/scripts/jquery-3.3.1.js"></script>
+
+      <script>
+        $(window).on("load", function () {
+          // Animate loader off screen
+          $(".pre").fadeOut(0);
+        });
+      </script>
+      <script>
+        $(document).ready(function () {
+          /* $("#div_head").load("/includes/include_head.html"); */
+          $("#header").load("/includes/include_header.html");
+          $("#footer").load("/includes/include_footer.html");
+        });
+      </script>
+      <script type="text/javascript" src="../js/imageviewer.js"></script>
+    </footer>
+  </body>
+</html>

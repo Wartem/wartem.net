@@ -1,0 +1,52 @@
+Links and widgets
+
+<!-- Facebook widget
+    
+    <div class="fb-post fb_iframe_widget" 
+    data-href="https://www.facebook.com/media/set/?set=a.434509136730782.1073741831.412387768942919&amp;type=3" 
+    data-width="500" fb-xfbml-state="rendered" 
+    fb-iframe-plugin-query="app_id=&amp;container_width=250&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmedia%2Fset%2F%3Fset%3Da.434509136730782.1073741831.412387768942919%26type%3D3&amp;locale=en_US&amp;sdk=joey&amp;width=500"><span style="vertical-align: bottom; width: 350px; height: 573px;"><iframe name="f4222d3bbf5384" width="500px" height="1000px" data-testid="fb:post Facebook Social Plugin" title="fb:post Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.3/plugins/post.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df23579bc882034c%26domain%3Drosentorget.blogspot.com%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252Frosentorget.blogspot.com%252Ff3aaa13c7570ad8%26relation%3Dparent.parent&amp;container_width=250&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmedia%2Fset%2F%3Fset%3Da.434509136730782.1073741831.412387768942919%26type%3D3&amp;locale=en_US&amp;sdk=joey&amp;width=500" style="border: none; visibility: visible; width: 350px; height: 573px;" class=""></iframe></span></div> -->
+ 
+    
+   <!-- Trip advisor
+        <div class="widget-content">
+        <div id="TA_virtualsticker777" class="TA_virtualsticker"><div class="container"> <div id="CDSWIDSTICKER"> <a href="https://www.tripadvisor.se/Hotel_Review-g667281-d8078314-Reviews-Rosentorgets_Bed_and_breakfast-Simrishamn_Skane_County.html" onclick="ta.cds.handleTALink(18961,this);return true;" target="_blank" rel="nofollow"> <div id="CDSWIDHEADER"> <div id="CDSWIDSTICKERHEADLINE">Recenserad på tripadvisor.se</div> </div> </a> <div id="CDSWIDLOGO"> <a target="_blank" href="https://www.tripadvisor.se/"><img src="https://www.tripadvisor.se/img/cdsi/img2/branding/tripadvisor_sticker_logo_88x55-18961-2.png" alt="TripAdvisor"></a> </div> </div> </div> <script type="text/javascript"> window.onload = function() { var headline = document.getElementById("CDSWIDSTICKERHEADLINE"); if (headline.scrollHeight > 30) { headline.className = "longHeadline"; } } </script> </div>
+        <script src="https://www.jscache.com/wejs?wtype=virtualsticker&amp;uniq=777&amp;lang=sv&amp;locationId=8078314&amp;display_version=2"></script>
+        </div> -->
+
+      <!--   Trip advisor social widget
+          <div class="socialWidget  cx_brand_refresh1 "> <a href="/UserReviewEdit-g667281-d8078314-Rosentorgets_Bed_and_breakfast-Simrishamn_Skane_County.html" target="_blank"> <div class="socialWidgetCoreGreen green sm" title="Skriv ett omdöme på Tripadvisor"> <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logomark.svg" align="middle"> <div class="rateText"> Betygsätt </div> </div> </a> </div> -->
+
+          
+          AirBnB link
+
+
+          Sidvisningar
+
+          CWasteson blogger profile
+          https://www.blogger.com/profile/04132695093792623980
+
+
+_____________________________________
+
+
+Background and theme: depending on season.
+
+- Nav with pages.
+
+- Page with info about B&B. 
+  - nav with sections
+      - "What's included?" and Prices
+      - 
+      - 
+
+- Landing page
+- Page with info about the rooms.
+- Page with info about activities in the area.
+- Page translated into english.
+- Page with contact info and personal links.
+- Page with old website 
+- The old blogspot site included.
+- Gallery
+- External websites
+

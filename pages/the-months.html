@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Remove odd image</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Wartem, home" />
+    <meta name="keywords" content="Wartem, home" />
+    <meta name="author" content="Wartem" />
+    <link rel="icon" href="../images/R3QQ2015ProfileImage.jpg" />
+    
+    <link rel="stylesheet" type="text/css" href="../css/default_content.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/site_include.css" />
+    
+</head>
+<body>
+    <header>
+        <div class="pre"></div>
+        <div id="header"></div>
+      </header>
+
+      <div class="site-include-container">
+        <div class="content">
+          <iframe
+            src="../apps/months-of-the-seasons/season-months.html"
+            style="border: none;"
+          ></iframe>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <noscript>Sorry, your browser does not support JavaScript! </noscript>
+        <script type="text/javascript" src="/scripts/jquery-3.3.1.js"></script>
+
+        <script>
+            $(window).on("load", function () {
+              // Animate loader off screen
+              $(".pre").fadeOut(0);
+            });
+    
+            $(document).ready(function () {
+              $("#header").load("/includes/include_header.html");
+              $("#footer").load("/includes/include_footer.html");
+            });
+          </script>
+        </footer>
+</body>
+</html>

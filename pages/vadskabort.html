@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>What is odd</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/vadskabort.css" />
+    <link rel="stylesheet" type="text/css" href="../css/site_include.css" />
+
+  <!--   <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes"
+      rel="stylesheet"
+    /> -->
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Wartem, home" />
+    <meta name="keywords" content="Wartem, home" />
+    <meta name="author" content="Wartem" />
+    <link rel="icon" href="../images/R3QQ2015ProfileImage.jpg" />
+
+    <link rel="stylesheet" type="text/css" href="../css/default_content.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+  </head>
+  <body>
+    <header>
+      <div class="pre"></div>
+      <div id="header"></div>
+    </header>
+
+    <section id="game">
+      <div id="instructions">
+        <p id="instructions-text">
+          Click on the animal that does not fit in with the others. Points: 0
+        </p>
+      </div>
+      <div class="main-panel">
+        <div id="outer">
+          <div id="first-row">
+            <div class="image-container">
+              <img src="../images/pic/ducks/ducks-2655535_1920.jpg" alt="" />
+            </div>
+
+            <div class="image-container">
+              <img src="../images/pic/ducks/mallard-3478011_1920.jpg" alt="" />
+            </div>
+          </div>
+
+          <div id="second-row">
+            <div class="image-container">
+              <img src="../images/pic/ducks/mallard-3609130_1920.jpg" alt="" />
+            </div>
+
+            <div class="image-container">
+              <img src="../images/pic/ducks/mallard-3747770_1920.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <noscript>Sorry, your browser does not support JavaScript! </noscript>
+      <script type="text/javascript" src="/scripts/jquery-3.3.1.js"></script>
+      <script type="text/javascript" src="../js/vadskabort.js"></script>
+      <!-- <script
+        src="https://unpkg.com/react@17/umd/react.development.js"
+        crossorigin
+      ></script> -->
+     <!--  <script
+        src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+        crossorigin
+      ></script> -->
+      
+     <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script> -->
+
+      <script>
+        $(window).on("load", function () {
+          // Animate loader off screen
+          $(".pre").fadeOut(0);
+        });
+
+        $(document).ready(function () {
+          /* $("#div_head").load("/includes/include_head.html"); */
+          $("#header").load("/includes/include_header.html");
+          $("#footer").load("/includes/include_footer.html");
+        });
+      </script>
+    </footer>
+  </body>
+</html>
