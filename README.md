@@ -1,4 +1,4 @@
-# Welcome to [wartem.xyz!](https://wartem.xyz)
+# Welcome to [wartem.net!](https://wartem.net)
 
 ## About This Website
 
@@ -19,8 +19,8 @@ You can look forward to:
 - Blog posts covering a things related to tech.
 
 
-Thank you for visiting Wartem.xyz! I appreciate your support and interest.
-[Website URL](https://wartem.xyz)
+Thank you for visiting Wartem.net! I appreciate your support and interest.
+[Website URL](https://wartem.net)
 
 ---
 
