@@ -1,20 +1,25 @@
-# Welcome to Wartem.xyz
+# Welcome to [wartem.xyz!](https://wartem.xyz)
 
 ## About This Website
 
-Welcome to **Wartem.xyz**, a personal website that serves as a digital portfolio and a platform to share my some of my projects, and experiences. Here, you will find:
+Welcome to **Wartem.xyz**, my personal website! This site serves as a digital portfolio and a platform to share some of projects, and experiences. Here, you will find:
 
 - **Portfolio**: Showcasing my work, skills, and projects.
 
 ## Current Status
 
-This website is currently in the process of being configured and is awaiting DNS propagation. If you see this message, it means that the domain settings are being updated, and the site may not yet be accessible.
+I'm excited to announce that the website is now live! Feel free to explore the various sections, and I hope you find the content engaging and informative.
 
 ### What to Expect
 
-Once the DNS changes have fully propagated, you will be able to explore the website and its content. Thank you for your patience during this transition!
+You can look forward to:
 
-Thank you for visiting Wartem.xyz!
+- Updates to my portfolio with new projects.
+
+
+
+Thank you for visiting Wartem.xyz! I appreciate your support and interest.
+[Website URL](https://wartem.xyz)
 
 ---
 
