@@ -1,0 +1,139 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* 
+  html{
+    
+  } */
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: auto;
+
+    margin: 0;
+    background: radial-gradient(#2f7eb3, #071620);
+  }
+
+  .container{
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 0rem;
+    border-radius: 0.5rem;
+
+    align-items: center;
+    background-color: rgb(40, 41, 41, 0.5);
+  }
+
+  .season{
+    margin: 0;
+    padding: 0;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+     /*  padding: 0.2rem; */
+     margin: 0.4rem;
+      border-radius: 1rem;
+      background-color: rgba(140, 153, 153, 0.253);
+  } 
+
+  #winter{
+    background-image: url("pic/winter.jpg");
+   }
+ 
+   #spring{
+     background-image: url("pic/spring.png");
+   }
+ 
+   #summer{
+     background-image: url("pic/summer.png");
+   }
+ 
+   #autumn{
+     background-image: url("pic/autumn.jpg");
+   }
+
+   .month{
+    margin: 0;
+    padding: 0;
+    /* padding: 1rem;  */
+    margin: 1.5rem;
+    width: 5rem;
+    height: 5rem;
+    /* height: auto; */
+    /* background-color:darkgray; */
+    /* text-align: center; */
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: rgba(0, 0, 0, 0.075);
+
+    /* border-inline: solid; */
+    /* border-width: 0.2rem;
+    box-shadow: border;
+    border-radius: 0.7rem;
+    border-style: solid; */
+    
+    /* box-shadow: border; */
+    
+  }
+
+  .month img{
+    /* background-color: rgb(104, 173, 104, 0.764); */
+    height: 100%;
+    width: auto;
+    /* border-width: 0.2rem; */
+    border-radius: 0.7rem;
+
+    /* box-shadow: 0 0.4rem 0.4rem 0 rgba(133, 132, 132, 0.7) *//* , 0 6px 20px 0 rgba(0, 0, 0, 0.19) *//* ; */
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.7)
+
+    /* border-style: solid; */
+  /*   background-image: url("pictogram/mars.png"); */
+  }
+  
+  span{
+    /* width: 100%;
+    height: auto; */
+  /* font-size: 0.9em;
+  font-weight: bold; */
+  /* display: block; */
+  overflow: hidden;
+    text-overflow: center;
+    /* max-width: 100%; */
+  }
+
+  .month:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    user-select: none;
+    /* border-width: 0.3rem; */
+  }
+
+  @media (max-width: 650px) {
+  /*   body{
+        display: flex;
+
+        justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    } */
+
+    @media (max-width: 850px) {
+
+
+         }
+
+   
+  }

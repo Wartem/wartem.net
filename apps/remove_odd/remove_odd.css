@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "Nillya";
+  src: url("Fonts/Nillya-nRJvO.ttf");
+}
+
+@font-face {
+  font-family: "Binjay";
+  src: url("Fonts/Binjay-nR5D0.ttf");
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    min-height: 100vh;
+  }
+  
+  body{
+    margin: 0;
+    background: radial-gradient(#2b93d8, #000000);
+  }
+
+#game{
+
+  width: 100%;
+  height: auto;
+  
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+
+  
+
+/*
+  margin: 0px;
+  padding: 0px; */
+
+  /* grid-column: 2 / -1; */
+}
+
+#images-frame{
+
+  border-color: #000000;
+  border-width: 0px;
+  border-style: solid;
+  border-radius: 40px;
+  background-color: black; /* #17537a; */
+
+  display: grid;
+  /* grid-template-columns: auto auto auto auto; */
+   grid-template-columns: repeat(2, auto); 
+  
+  /* grid-gap: 10px; */
+  /* background-color: #2196F3; */
+  padding: 10px;
+
+  align-items: center;
+
+ /*  grid-column: 1 / -1;
+  align-items: center;
+  width: 600px; */
+  /* perspective: 500px; */
+}
+
+.image-container{
+   display: flex;
+  justify-content: center;
+  align-items: center; 
+  /* width: 50%;
+  height: auto; */
+  border-radius: 20px;
+  margin: 10px;
+}
+
+ .image-container:hov img{ /* :hover :active */ 
+  transition: .15s ease-in;
+  opacity: 0.8;
+  
+  /* animation: overlay-grow 500ms forwards; */
+  /* transition: width 100ms ease-in-out, height 100ms ease-in-out; */
+   transform: scale(1.04);  
+  /* border-color: aliceblue;
+  background-color: aliceblue; */
+ }  
+
+.image-container img {
+  height: 15rem;
+  width: auto;
+  border-radius: 1rem;
+  user-select: none;
+}
+
+.title-and-instructions{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  user-select: none;
+}
+
+.title-and-instructions h1{
+
+  border-radius: 0.5rem;
+  background-color: rgb(168, 208, 221);
+  font-family: Nillya, serif;
+  font-size: large;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-stretch: expanded;
+  line-height: 1em;
+  width: auto;
+  letter-spacing: 0.2rem;
+  margin: 0.6rem;
+  font-size: 2rem;
+}
+
+.title-and-instructions #points{
+  font-family: Binjay, serif;
+  margin-left: 10px;
+  /* background-color: beige; */
+}
+
+/* .image-container {
+  transform: rotateY(-180deg);
+}
+ */
+/* .card.visible .card-front {
+  transform: rotateY(0);
+} */
+
+@keyframes flipAll {
+  0%,
+  /* 100% {
+    transform: rotate(0);
+  } */
+  25% {
+    transform: rotate(100deg);
+  }
+  75% {
+    transform: rotate(200deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1147px) {
+  .image-container img {
+    height: 13rem;
+    
+  }
+}
+
+@media (max-width: 970px) {
+  .image-container img {
+    height: 11rem;
+
+  }
+}
+
+@media (max-width: 850px) {
+
+  .title-and-instructions{
+    flex-direction: column;
+   
+  }
+
+  .title-and-instructions h1{
+   margin: 0px;
+   margin-bottom: 4px;
+    font-size: 1.4rem;
+  }
+
+  .title-and-instructions #points{
+  margin: 0px;
+  margin-bottom: 6px;
+  font-size: 1.4rem;
+  }
+
+  #images-frame{
+    grid-template-columns: repeat(1, auto); 
+  }
+
+  .image-container{
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .image-container img {
+    height: 8.6rem;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .image-container img {
+    height: 8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .image-container img {
+    height: 7rem;
+  }
+
+  .title-and-instructions h1{
+
+    font-size: 1.2rem;
+  }
+
+  .title-and-instructions #points{
+
+  font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .title-and-instructions h1{
+
+     font-size: 1rem;
+   }
+ 
+   .title-and-instructions #points{
+
+   font-size: 1rem;
+   }
+
+  .image-container img {
+    height: 6rem;
+  }
+
+  .image-container{
+    border-radius: 5px;
+    margin: 6px;
+  }
+}
+
+@media (max-width: 260px) {
+  .image-container img {
+    height: 5rem;
+  }
+}
+
+@media (max-width: 190px) {
+  .image-container img {
+    height: 4rem;
+  }
+
+  .image-container{
+    border-radius: 1px;
+    margin: 1px;
+  }
+}

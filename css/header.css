@@ -1,0 +1,244 @@
+html{
+ /*  overflow-x: hidden; */
+  min-width: 100vw;
+  max-width: 100vw;
+}
+
+header{
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+
+}
+
+.navbar-div{
+  background: #034463;
+  color: white;
+  min-height: 1.6rem;
+  border-bottom: #74a591 3px solid;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: solid;
+  font-size: 0.7rem;
+}
+
+.navbar-div{
+/*   display: flex;
+  flex-direction: row;
+  justify-content: left; */
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  /* grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 100px); */
+  align-items: center;
+}
+
+/* #highlight a h1{
+  margin-left: 2rem;
+  margin-right: 0.4rem;
+} */
+
+#highlight a h1{
+  
+  /* align-items: left;
+  align-content: left; */
+  /* animation-delay: 0.3s; */
+  /* animation-direction: normal; */
+  /* animation:forwards; */
+  /* visibility: hidden; */
+  /* color: rgb(112, 154, 173); */
+  /* display: none; */
+  
+  /* animation-fill-mode: forwards; */
+  /* z-index: 0; */
+}
+
+@keyframes init-h1 {
+  0% {
+    /* transform: rotate(100); */
+    /* transform: skewY(180deg); */
+    /* transform: skewY(180deg); */
+    /* transform: scale(-2); */
+    /* visibility: visible; */
+    /* display: flex; */
+    /* padding-left: 30rem; */
+    color:#034463;
+    opacity: 0;
+    /* display: flex;
+    justify-content: right; */
+    /* align-content: right; */
+    
+  }
+  100% {
+    
+    /* transform: translate(30px, 20px) rotate(20deg);
+    transform: rotate(360deg); */
+    /* transform: rotate(360); */
+    /* color: white; */
+    /* align-items: left; */
+    opacity: 1;
+/*     text-shadow: 11px 11px 6px 6px rgba(255, 255, 255, 0.705);
+ */    /* transform: skewX(-90deg); */
+ /* color: rgb(112, 154, 173); */
+  }
+}
+
+#highlight h1{
+  font: 1.7rem/1.5 Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  opacity: 0.5;
+  animation-name: init-h1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  /* color: rgb(112, 154, 173); */
+}
+
+#highlight h1:hover{
+  color: #74a591;
+}
+
+.nav-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  /* align-items: inherit; */
+  gap: 1rem;
+  /* margin-right: 2rem; */
+}
+
+.nav-item{
+  /* margin-left: 1rem; */
+}
+
+.nav-item a{
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  background-color: #74a5913d;
+  /* text-decoration-style: solid; */
+  font-style: solid;
+  font-weight: bold;
+  /* font-weight: 1rem; */
+  /* border-color: #a8b4bb;
+  border-width: 0.2rem;
+  border-style: solid; */
+  /* box-shadow: 3px 3px 3px rgb(255, 255, 255); */
+  box-shadow: 0px 0px 1px 2px rgba(255, 255, 255, 0.61);
+}
+
+.nav-item a:hover {
+  /* color: #74a591; */
+ /*  font-weight: bold; */
+ /*  background-color: #74a591; */
+
+
+
+ /* transition: transform 100ms ease-in-out; */
+ animation: overlay-grow 300ms forwards;
+ color: black;
+ box-shadow: 0px 0px 6px 6px rgba(255, 255, 255, 0.705);
+ /* border-width: 1rem; */
+}
+
+
+@keyframes overlay-grow {
+  from {
+    
+  }
+  to {
+    background-color: rgb(112, 154, 173);
+    
+    /* color: #74a591; */
+  }
+}
+
+@media (max-width: 645px) {
+
+  #highlight h1{
+    margin-left: 0.2rem;
+    font-size: 1.4rem;
+  }
+
+  .nav-item{
+    /* margin: 0.4rem; */
+    /* padding: 0px; */
+  }
+
+  .nav-item a{
+    font-size: 0.8rem;
+  }
+
+}
+
+@media (max-width: 520px) {
+
+.nav-div{
+  display:grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 1.5rem;
+}
+
+ /*  #highlight{
+    margin-left: 0.2rem;
+    
+  } */
+
+/*   #highlight a h1{ */
+    /* margin-left: 2rem; */
+    /* margin-right: 0.4rem; */
+  /* } */
+
+  #highlight{
+    font-size: 1.3rem;
+  }
+
+  .nav-item{
+   /*  margin: 0.4rem;
+    margin-bottom: 1rem; */
+    /* padding: 0px; */
+  }
+
+  .nav-item a{
+   /*  font-size: 0.8rem; */
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  .navbar-div{
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    display: flex;
+    justify-content: center;
+  }
+
+#highlight{
+ /*  margin-left: 0.4rem; */
+ margin-right: 1rem;
+}
+
+/* #highlight a h1{
+ /*  margin-left: 1rem; */
+  /* margin-right: 0.4rem;
+} */ /* */ 
+
+/* .nav-div{
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  margin: 0;
+} */
+
+/* .nav-item{
+  margin-bottom: 1rem;
+  padding: 0rem;
+} */
+
+}

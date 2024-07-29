@@ -1,0 +1,80 @@
+/* @font-face {
+    font-family: "Allura-Regular";
+    src: url("Assets/Fonts/Allura-Regular.ttf");
+  }
+ */
+ 
+ *
+/*  , *::before, *::after  */
+ {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+  }
+
+html{
+    box-sizing: border-box;
+/*     font-family: "Allura-Regular", "Arial Narrow", Arial, sans-serif;
+ */    
+ letter-spacing: 0.1rem;
+  }
+
+html{
+    /* min-height: 100vh;
+    width: auto;  */
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    /* justify-content: center; */
+  }
+
+  .one{
+    /* min-height: 100%;
+    width: auto; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    /* height: 100%; */
+    /* padding: 50%; */
+    
+    background-color: yellow;
+    flex-grow: 1;
+    margin: 1rem;
+  }
+
+  .two{
+    /* min-height: 50rem; */
+    /* width: auto; */
+    /* display: grid;
+    grid-template-columns: repeat(1, auto); */
+    /* gap: 0rem; */
+    display: flex;
+    /* height: 100%; */
+    flex-direction: column;
+    background-color: azure;
+    /* align-items: center; */
+    flex-grow: 1;
+    /* flex: 1; */
+    margin: 1rem;
+  }
+
+  .three{
+    /* max-height: 50%; */
+    /* width: auto; */
+    background-color: black;
+    flex-grow: 1;
+    height: 20rem;
+  }
+
+  .four{
+    /* max-height: 50%; */
+    /* width: auto; */
+    background-color: green;
+    flex-grow: 1;
+    height: 20rem;
+  }
+
