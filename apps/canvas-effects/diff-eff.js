@@ -4,8 +4,8 @@ let fps = 99;
 let activated = true;
 
 let userInputAllowed = true;
-let mouseOnCanvasX = canvas.width/2;
-let mouseOnCanvasY = canvas.height/2;
+let mouseOnCanvasX = canvas.width / 2;
+let mouseOnCanvasY = canvas.height / 2;
 
 const allApps = document.querySelectorAll('.nav-item');
 
@@ -15,10 +15,10 @@ let canvasSectionH2 = document.querySelector('#canvas-section-h2');
 const fpsSlider = document.querySelector('#fps-slider');
 fpsSlider.value = fps;
 
-document.getElementById("fps-slider").oninput = function() {
+document.getElementById("fps-slider").oninput = function () {
     fps = fpsSlider.value;
-    
-    document.querySelector('#fps-text').innerHTML = "Speed: " + fps+"/100";
+
+    document.querySelector('#fps-text').innerHTML = "Speed: " + fps + "/100";
 };
 
 const balls_1 = document.querySelector('#nav-item-1');
@@ -190,7 +190,7 @@ function runAppBalls() {
     console.log("Current app: " + "Balls");
 
     if (!appBallsInit) {
-        playerBall = new Ball(canvas.width/2,canvas.height/2, 20);
+        playerBall = new Ball(canvas.width / 2, canvas.height / 2, 20);
         playerBall.color = "rgb(20,40,225)";
         balls.push(playerBall);
 
@@ -223,20 +223,20 @@ let runPaint2Init = false;
 let runPaint3Init = false;
 
 function runPaint2() {
-    if(!runPaint2Init){
-    ctx.clearRect(
-        0, 0,
-        canvas.width,
-        canvas.height
-    );
-    ctx.beginPath();
-    ctx.fillStyle = 'white';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fill();
+    if (!runPaint2Init) {
+        ctx.clearRect(
+            0, 0,
+            canvas.width,
+            canvas.height
+        );
+        ctx.beginPath();
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fill();
 
         runPaint2Init = true;
     }
-    
+
     ctx.beginPath();
     /* ctx.fillStyle = this.color; */
     ctx.arc(mouseOnCanvasX, mouseOnCanvasY, 15, 0, 2 * Math.PI);
@@ -249,41 +249,41 @@ let app3ColorB = 100;
 
 function runApp3() {
 
-    if(!runPaint3Init){
-    ctx.clearRect(
-        0, 0,
-        canvas.width,
-        canvas.height
-    );
-    ctx.beginPath();
-    ctx.fillStyle = 'black';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fill();
+    if (!runPaint3Init) {
+        ctx.clearRect(
+            0, 0,
+            canvas.width,
+            canvas.height
+        );
+        ctx.beginPath();
+        ctx.fillStyle = 'black';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fill();
 
-    runPaint3Init = true;
+        runPaint3Init = true;
     }
 
     /* ctx.save(); */
 
     for (let i = 0; i < 6; i++) {
         for (let j = 0; j < 6; j++) {
-          ctx.fillStyle = `rgba(
+            ctx.fillStyle = `rgba(
               ${Math.floor(app3ColorR - 42.5 * i)},
               ${Math.floor(app3ColorG - 42.5 * j)},
               ${app3ColorB},
-              ${getRandom(0,1)})`;
-          ctx.fillRect(mouseOnCanvasX - j * 25 + 50, 
-            mouseOnCanvasY - i * 25 + 50, 
-            25, 25);
+              ${getRandom(0, 1)})`;
+            ctx.fillRect(mouseOnCanvasX - j * 25 + 50,
+                mouseOnCanvasY - i * 25 + 50,
+                25, 25);
         }
-      }
+    }
 
-     /*  ctx.restore(); */
+    /*  ctx.restore(); */
 
-   
+
     /* ctx.fillStyle = 'orange'; */
-    
-    
+
+
 }
 
 let runPaint4Init = false;
@@ -292,49 +292,49 @@ let paint4Y = 0;
 
 
 function runApp4() {
-    if(!runPaint4Init){
-    ctx.clearRect(
-        0, 0,
-        paint4X,
-        paint4Y
-    );
-    ctx.beginPath();
-    ctx.fillStyle = 'rgb(225,225,225)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fill();
-    ctx.moveTo(canvas.width/2, canvas.height/2);
-    runPaint4Init = true;
-    paint4X = canvas.width/2;
-    paint4Y = canvas.height/2;
+    if (!runPaint4Init) {
+        ctx.clearRect(
+            0, 0,
+            paint4X,
+            paint4Y
+        );
+        ctx.beginPath();
+        ctx.fillStyle = 'rgb(225,225,225)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fill();
+        ctx.moveTo(canvas.width / 2, canvas.height / 2);
+        runPaint4Init = true;
+        paint4X = canvas.width / 2;
+        paint4Y = canvas.height / 2;
     }
 
-ctx.beginPath();
-/* ctx.moveTo(20, 20); */
-ctx.lineTo(paint4X, paint4Y);
-let amount = getRandom(1,10);
-paint4X += getRandom(-amount,amount);
-paint4Y += getRandom(-amount,amount);
-if(paint4X > canvas.width){
-    paint4X = canvas.width;
-}
-if(paint4X < 0){
-    paint4X = 0;
-}
+    ctx.beginPath();
+    /* ctx.moveTo(20, 20); */
+    ctx.lineTo(paint4X, paint4Y);
+    let amount = getRandom(1, 10);
+    paint4X += getRandom(-amount, amount);
+    paint4Y += getRandom(-amount, amount);
+    if (paint4X > canvas.width) {
+        paint4X = canvas.width;
+    }
+    if (paint4X < 0) {
+        paint4X = 0;
+    }
 
-if(paint4Y > canvas.height){
-    paint4Y = canvas.height;
-}
-if(paint4Y < 0){
-    paint4Y = 0;
-}
+    if (paint4Y > canvas.height) {
+        paint4Y = canvas.height;
+    }
+    if (paint4Y < 0) {
+        paint4Y = 0;
+    }
 
-ctx.lineWidth = getRandom(1,1.5);
-ctx.lineTo(paint4X, paint4Y);
-/* ctx.lineTo(70, 100); */
-ctx.strokeStyle = "blue";
-ctx.stroke();
+    ctx.lineWidth = getRandom(1, 1.5);
+    ctx.lineTo(paint4X, paint4Y);
+    /* ctx.lineTo(70, 100); */
+    ctx.strokeStyle = "blue";
+    ctx.stroke();
 
-    
+
 }
 
 function runApp5() {
@@ -389,7 +389,7 @@ function runApp8() {
     ctx.fill();
 }
 
-function runContent(){
+function runContent() {
     if (states.balls_1) {
         runAppBalls();
     } else if (states.paint) {
@@ -428,13 +428,13 @@ let fpsCounter = 0;
 
 function run() {
     if (activated) {
-        fpsCounter +=1; // når 100 efter 1 sekund
+        fpsCounter += 1; // når 100 efter 1 sekund
         // >= 100 vid 1 fps
         // >= 50 vid 
         // 96 fps ska man vänta 4 fps
         // MaxFPS = 100. FPS = 96. 
         /* if(fpsCounter > (maxFPS - fps)){ */
-        if(fpsCounter > (maxFPS - fps)){
+        if (fpsCounter > (maxFPS - fps)) {
             runContent();
             /* console.log(fps); */
             fpsCounter = 0;
@@ -444,32 +444,7 @@ function run() {
     }
 }
 
-setInterval(run, 4 /*4 is minimum 10 1000 / maxFPS */); // 1000 milli / FPS
-// 100 gånger per sekund
-
-/* function navItem2() {
-
-}
-
-function navItem3() {
-
-}
-function navItem4() {
-
-}
-function navItem5() {
-
-}
-function navItem6() {
-
-}
-function navItem7() {
-
-}
-function navItem8() {
-
-} */
-
+setInterval(run, 4 /*4 is minimum 10 1000 / maxFPS */);
 
 
 let states = {
@@ -492,31 +467,6 @@ class Shape {
         this.color = 'rgba(0,0,0,1)';
     }
 }
-
-/* ctx.clearRect(
-    0, 0,
-    canvas.width,
-    canvas.height
-);
-
-this.balls.forEach((ball) => {
-    ball.x += ball.xUnits;
-  ball.y += ball.yUnits;
-
-    ctx.fillStyle = ball.color;
-    ctx.beginPath();
-    
-    ctx.arc(
-        ball.x, ball.y,
-        ball.radius, 0, 
-        2 * Math.PI, false
-    );
-
-    ctx.closePath();
-    ctx.fill();
-
-    this.checkBorders(ball);
-}); */
 
 class Ball extends Shape {
     // return new Ball(canvas.width/2, canvas.height/2, getRandom(-1, 1), getRandom(-1, 1), "rgba(30,30,30,1", 5);
@@ -568,7 +518,7 @@ class Ball extends Shape {
                     ball.velX *= -1;
                     ball.velY *= -1;
                     ball.size += getRandom(-1, 1);
-                    if(ball.size < 5 || ball.size > 15){
+                    if (ball.size < 5 || ball.size > 15) {
                         ball.size = 10;
                     }
                 }
@@ -616,113 +566,83 @@ function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect(), // abs. size of element
         scaleX = canvas.width / rect.width,    // relationship bitmap vs. element for X
         scaleY = canvas.height / rect.height;  // relationship bitmap vs. element for Y
-  
+
     return {
-      x: (evt.clientX - rect.left) * scaleX,   // scale mouse coordinates after they have
-      y: (evt.clientY - rect.top) * scaleY     // been adjusted to be relative to element
+        x: (evt.clientX - rect.left) * scaleX,   // scale mouse coordinates after they have
+        y: (evt.clientY - rect.top) * scaleY     // been adjusted to be relative to element
     }
-  }
-
-function handleMouseCoords(event){
-
-let mousePos = getMousePos(canvas, event);
-
-
-if(userInputAllowed && mouseIsInCanvas){
-    mouseOnCanvasX = mousePos.x;
-    mouseOnCanvasY = mousePos.y; 
-     
-     if(appBallsInit){
-        playerBall.x = mousePos.x; 
-        playerBall.y = mousePos.y;
-        playerBall.velX = 0;
-        playerBall.velY = 0;
-     }
-    
-
 }
 
-if (timestamp === null) {
-    timestamp = Date.now();
+function handleMouseCoords(event) {
+
+    let mousePos = getMousePos(canvas, event);
+
+
+    if (userInputAllowed && mouseIsInCanvas) {
+        mouseOnCanvasX = mousePos.x;
+        mouseOnCanvasY = mousePos.y;
+
+        if (appBallsInit) {
+            playerBall.x = mousePos.x;
+            playerBall.y = mousePos.y;
+            playerBall.velX = 0;
+            playerBall.velY = 0;
+        }
+
+
+    }
+
+    if (timestamp === null) {
+        timestamp = Date.now();
+        lastMouseX = event.clientX;
+        lastMouseY = event.clientY;
+        return;
+    }
+
+    let now = Date.now();
+    let dt = now - timestamp;
+    let dx = event.clientX - lastMouseX;
+    let dy = event.clientY - lastMouseY;
+    mouseSpeedX = Math.round(dx / dt * 100);
+    mouseSpeedY = Math.round(dy / dt * 100);
+
+    timestamp = now;
     lastMouseX = event.clientX;
     lastMouseY = event.clientY;
-    return;
-}
-
-let now = Date.now();
-let dt =  now - timestamp;
-let dx = event.clientX - lastMouseX;
-let dy = event.clientY - lastMouseY;
-mouseSpeedX = Math.round(dx / dt * 100);
-mouseSpeedY = Math.round(dy / dt * 100);
-
-timestamp = now;
-lastMouseX = event.clientX;
-lastMouseY = event.clientY;
 
 }
 
-function userInteruptCheck(){
+function userInteruptCheck() {
     userInputAllowed = true;
     /* console.log("userInputAllowed is true"); */
 }
 
-
-/* function handlerMouseEnter(event){
-    player
-}
-canvas.onmouseenter = handleMouseEnter; */
-
-function handleMouseDown(event){
-    if(states.balls_1){
-   const ball = new Ball(event.clientX, event.clientY, 13);
-   ball.color = "orange";
-   balls.push(ball);
+function handleMouseDown(event) {
+    if (states.balls_1) {
+        const ball = new Ball(event.clientX, event.clientY, 13);
+        ball.color = "orange";
+        balls.push(ball);
     }
-    else if(states.paint){
-      ctx.fillStyle = "rgb(0,0,0)";
-      
+    else if (states.paint) {
+        ctx.fillStyle = "rgb(0,0,0)";
+
     }
-    else if(states.nav_3){
+    else if (states.nav_3) {
 
-        app3ColorR = getRandom(0,255);
-        app3ColorG = getRandom(0,255);
-        app3ColorB = getRandom(0,255);
-
-
-
-        /* ctx.fillStyle = `rgba(
-            ${Math.floor(255 - 42.5 * i)},
-            ${Math.floor(255 - 42.5 * j)},
-            0,
-            1)`; */
-        
-
-        /* for (let i = 0; i < 6; i++) {
-            for (let j = 0; j < 6; j++) {
-              ctx.fillStyle = `rgb(
-                  ${Math.floor(255 - 42.5 * i)},
-                  ${Math.floor(255 - 42.5 * j)},
-                  0)`;
-              ctx.fillRect(mouseOnCanvasX - j * 25 + 50, 
-                mouseOnCanvasY - i * 25 + 50, 
-                25, 25);
-            }
-          } */
-
-        /* ctx.rotate(-20*Math.PI/180); */
-        /* ctx.scale(5,5); */
+        app3ColorR = getRandom(0, 255);
+        app3ColorG = getRandom(0, 255);
+        app3ColorB = getRandom(0, 255);
     }
-    else if(states.nav_4){
-        
+    else if (states.nav_4) {
+
         ctx.beginPath();
         ctx.moveTo(paint4X, paint4Y);
         paint4X = mouseOnCanvasX;
         paint4Y = mouseOnCanvasY;
-        ctx.lineWidth = getRandom(3,5);
+        ctx.lineWidth = getRandom(3, 5);
         ctx.lineTo(paint4X, paint4Y);
-        const randomColor = Math.floor(Math.random()*16777215).toString(16);
-        ctx.strokeStyle = "#"+randomColor;
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        ctx.strokeStyle = "#" + randomColor;
         ctx.stroke();
         /* let amount = getRandom(1,5); */
         /* paint4X += getRandom(-amount,amount);
@@ -730,32 +650,31 @@ function handleMouseDown(event){
     }
 }
 
-function handleMouseUp(event){
-    if(paint_2){
+function handleMouseUp(event) {
+    if (paint_2) {
         ctx.fillStyle = "rgb(255,255,255)";
-      }
+    }
 }
 
 let mouseIsInCanvas = false;
 
-function handleMouseEnter(event){
+function handleMouseEnter(event) {
     mouseIsInCanvas = true;
- }
+}
 
- function handleMouseLeave(event){
+function handleMouseLeave(event) {
     mouseIsInCanvas = false;
-    if(states.balls_1){
-    playerBall.velX = getRandom(-1, 1);
-    playerBall.velY = getRandom(-1, 1);
+    if (states.balls_1) {
+        playerBall.velX = getRandom(-1, 1);
+        playerBall.velY = getRandom(-1, 1);
     }
- }
+}
 
 canvas.onmouseenter = handleMouseEnter;
 canvas.onmouseleave = handleMouseLeave;
 
 canvas.onmousedown = handleMouseDown;
 canvas.onmouseup = handleMouseUp;
-
 
 canvas.onmousemove = handleMouseCoords;
 
@@ -766,133 +685,129 @@ let timestamp = null;
 let lastMouseX = null;
 let lastMouseY = null;
 
-
-
-
-
 var haveEvents = 'ongamepadconnected' in window;
-  var controllers = {};
-  
-  function connecthandler(e) {
+var controllers = {};
+
+function connecthandler(e) {
     addgamepad(e.gamepad);
-  }
-  
-  function addgamepad(gamepad) {
+}
+
+function addgamepad(gamepad) {
     controllers[gamepad.index] = gamepad;
-  
+
     var d = document.createElement("div");
     d.setAttribute("id", "controller" + gamepad.index);
-  
+
     var t = document.createElement("h1");
     t.appendChild(document.createTextNode("gamepad: " + gamepad.id));
     d.appendChild(t);
-  
+
     var b = document.createElement("div");
     b.className = "buttons";
     for (var i = 0; i < gamepad.buttons.length; i++) {
-      var e = document.createElement("span");
-      e.className = "button";
-      //e.id = "b" + i;
-      e.innerHTML = i;
-      b.appendChild(e);
+        var e = document.createElement("span");
+        e.className = "button";
+        //e.id = "b" + i;
+        e.innerHTML = i;
+        b.appendChild(e);
     }
-  
+
     d.appendChild(b);
-  
+
     var a = document.createElement("div");
     a.className = "axes";
-  
+
     for (var i = 0; i < gamepad.axes.length; i++) {
-      var p = document.createElement("progress");
-      p.className = "axis";
-      //p.id = "a" + i;
-      p.setAttribute("max", "2");
-      p.setAttribute("value", "1");
-      p.innerHTML = i;
-      a.appendChild(p);
+        var p = document.createElement("progress");
+        p.className = "axis";
+        //p.id = "a" + i;
+        p.setAttribute("max", "2");
+        p.setAttribute("value", "1");
+        p.innerHTML = i;
+        a.appendChild(p);
     }
-  
+
     d.appendChild(a);
-  
+
     // See https://github.com/luser/gamepadtest/blob/master/index.html
     var start = document.getElementById("start");
     if (start) {
-      start.style.display = "none";
+        start.style.display = "none";
     }
-  
+
     document.body.appendChild(d);
     requestAnimationFrame(updateStatus);
-  }
-  
-  function disconnecthandler(e) {
+}
+
+function disconnecthandler(e) {
     removegamepad(e.gamepad);
-  }
-  
-  function removegamepad(gamepad) {
+}
+
+function removegamepad(gamepad) {
     var d = document.getElementById("controller" + gamepad.index);
     document.body.removeChild(d);
     delete controllers[gamepad.index];
-  }
-  
-  function updateStatus() {
+}
+
+function updateStatus() {
     if (!haveEvents) {
-      scangamepads();
+        scangamepads();
     }
-  
+
     var i = 0;
     var j;
-  
+
     for (j in controllers) {
-      var controller = controllers[j];
-      var d = document.getElementById("controller" + j);
-      var buttons = d.getElementsByClassName("button");
-  
-      for (i = 0; i < controller.buttons.length; i++) {
-        var b = buttons[i];
-        var val = controller.buttons[i];
-        var pressed = val == 1.0;
-        if (typeof(val) == "object") {
-          pressed = val.pressed;
-          val = val.value;
+        var controller = controllers[j];
+        var d = document.getElementById("controller" + j);
+        var buttons = d.getElementsByClassName("button");
+
+        for (i = 0; i < controller.buttons.length; i++) {
+            var b = buttons[i];
+            var val = controller.buttons[i];
+            var pressed = val == 1.0;
+            if (typeof (val) == "object") {
+                pressed = val.pressed;
+                val = val.value;
+            }
+
+            var pct = Math.round(val * 100) + "%";
+            b.style.backgroundSize = pct + " " + pct;
+
+            if (pressed) {
+                b.className = "button pressed";
+            } else {
+                b.className = "button";
+            }
         }
-  
-        var pct = Math.round(val * 100) + "%";
-        b.style.backgroundSize = pct + " " + pct;
-  
-        if (pressed) {
-          b.className = "button pressed";
-        } else {
-          b.className = "button";
+
+        var axes = d.getElementsByClassName("axis");
+        for (i = 0; i < controller.axes.length; i++) {
+            var a = axes[i];
+            a.innerHTML = i + ": " + controller.axes[i].toFixed(4);
+            a.setAttribute("value", controller.axes[i] + 1);
         }
-      }
-  
-      var axes = d.getElementsByClassName("axis");
-      for (i = 0; i < controller.axes.length; i++) {
-        var a = axes[i];
-        a.innerHTML = i + ": " + controller.axes[i].toFixed(4);
-        a.setAttribute("value", controller.axes[i] + 1);
-      }
     }
-  
+
     requestAnimationFrame(updateStatus);
-  }
-  
-  function scangamepads() {
+}
+
+function scangamepads() {
     var gamepads = navigator.getGamepads ? navigator.getGamepads() : (navigator.webkitGetGamepads ? navigator.webkitGetGamepads() : []);
     for (var i = 0; i < gamepads.length; i++) {
-      if (gamepads[i]) {
-        if (gamepads[i].index in controllers) {
-          controllers[gamepads[i].index] = gamepads[i];
-        } else {
-          addgamepad(gamepads[i]);
+        if (gamepads[i]) {
+            if (gamepads[i].index in controllers) {
+                controllers[gamepads[i].index] = gamepads[i];
+            } else {
+                addgamepad(gamepads[i]);
+            }
         }
-      }
     }
-  }
-  
-  window.addEventListener("gamepadconnected", connecthandler);
-  window.addEventListener("gamepaddisconnected", disconnecthandler);
-  
-  if (!haveEvents) {
-   setInterval(scangamepads, 500);
-  }
+}
+
+window.addEventListener("gamepadconnected", connecthandler);
+window.addEventListener("gamepaddisconnected", disconnecthandler);
+
+if (!haveEvents) {
+    setInterval(scangamepads, 500);
+}

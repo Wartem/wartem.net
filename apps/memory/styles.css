@@ -14,7 +14,7 @@
 
 html {
   min-height: 100vh;
- /*  max-height: 100vh; */
+  /*  max-height: 100vh; */
   cursor: url(Assets/Cursors/Emblem.cur), auto;
   font-family: Binjay;
 }
@@ -120,11 +120,6 @@ h1 {
 .card-back:hover .cats {
   transform: translateY(0);
 }
-
-/* .image-container img {
-  height: 100%;
-  width: auto;
-} */
 
 .card-value {
   position: relative;

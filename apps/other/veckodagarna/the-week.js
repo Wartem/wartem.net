@@ -36,9 +36,6 @@ $(document).ready(function(){
  
        speechSynthesis.speak(msg);
 
-
-
-       
        console.log($(this)/* .attr('id') */.text());
        /*  console.log(e.target.id); */
       });

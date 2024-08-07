@@ -48,34 +48,38 @@
       <p style="margin-left: 10px; margin-right: 10px">
         This demo is ported from a version for Windows. Not all features are
         working yet. Keyboard WASD to move. Change the camera position with the
-        mouse. Sound and shooting with spacebar works after a few minutes of "loading".
+        mouse. Sound and shooting with spacebar works after a few minutes of
+        "loading".
       </p>
     </aside>
 
     <div class="site-include-container">
       <div class="content">
-        <iframe src="../apps/rollaball/index.html" style="margin-top: 0%"></iframe>
+        <iframe
+          src="../apps/rollaball/index.html"
+          style="margin-top: 0%"
+        ></iframe>
       </div>
     </div>
 
     <footer id="footer">
-		<noscript>Sorry, your browser does not support JavaScript! </noscript>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script> -->
-    <script type="text/javascript" src="/scripts/jquery-3.3.1.js"></script>
+      <noscript>Sorry, your browser does not support JavaScript! </noscript>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script> -->
+      <script type="text/javascript" src="/scripts/jquery-3.3.1.js"></script>
 
-    <script>
-      $(window).on("load", () => {
-        // Animate loader off screen
-        $(".pre").fadeOut(500);
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        /* $("#div_head").load("/includes/include_head.html"); */
-        $("#header").load("/includes/include_header.html");
-        $("#footer").load("/includes/include_footer.html");
-      });
-    </script>
-	</footer>
+      <script>
+        $(window).on("load", () => {
+          // Animate loader off screen
+          $(".pre").fadeOut(500);
+        });
+      </script>
+      <script>
+        $(document).ready(function () {
+          /* $("#div_head").load("/includes/include_head.html"); */
+          $("#header").load("/includes/include_header.html");
+          $("#footer").load("/includes/include_footer.html");
+        });
+      </script>
+    </footer>
   </body>
 </html>
