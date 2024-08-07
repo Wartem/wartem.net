@@ -1,27 +1,21 @@
 # Welcome to [wartem.net!](https://wartem.net)
 
-## About This Website
+# Personal Website
 
-Welcome to **Wartem.net**, my personal website! This site serves as a digital portfolio and a platform to share some of projects, and experiences. Here, you will find:
+## Project Overview
 
-- **Portfolio**: Showcasing my work, skills, and projects.
-- **Blog**: Insights and articles on topics that interest me.
+Welcome to the repository for **Wartem.net**, my personal website! This site serves as a digital portfolio and a platform to share some of projects, and experiences.
+This project is an early personal website that I developed as a learning experience a few years ago. While it showcases my initial foray into web development, I want to acknowledge that the code may not adhere to the best practices.
 
-## Current Status
+## Future Improvements
 
-I'm excited to announce that the website is now live! Feel free to explore the various sections, and I hope you find the content engaging and informative.
+I might revisit this project, adding more content, refactor it and using best practices. Alternatively I'll start from scratch.
 
-### What to Expect
-
-You can look forward to:
-
-- Updates to my portfolio with new projects.
-- Blog posts covering a things related to tech.
+## New projects
+I plan to put new projects on my project hub: http://wartem.xyz
 
 
-Thank you for visiting Wartem.net! I appreciate your support and interest.
-[Website URL](https://wartem.net)
 
 ---
 
-*Last updated: July 29, 2024*
+*Last updated: August 7, 2024*
