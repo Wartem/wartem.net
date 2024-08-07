@@ -1,10 +1,4 @@
 
-
-
-/* () => { */
- 
-    console.log("1");
-
 $(function(){
    /*  $(document).ready(function(){ */
     if ('speechSynthesis' in window) {
