@@ -1,0 +1,40 @@
+#python-github {
+  background-color: #cfe0e7;
+  padding: 20px 0;
+}
+
+#python-github .container {
+  background-color: #7eacc26e;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#python-github p {
+  color: #034463; /* Set paragraph text color to black */
+  font-weight: 400;
+  font-weight: bold;
+}
+#python-github ul {
+  background-color: #7eacc26e;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.github-button {
+  display: inline-block;
+  padding: 4px 4px;
+  background-color: #034463;
+  color: white;
+  margin-top: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.github-button:hover {
+  background-color: #555;
+}

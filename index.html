@@ -14,10 +14,10 @@
     <meta name="keywords" content="Wartem, home" />
     <meta name="author" content="Wartem" />
     <link rel="icon" href="../images/R3QQ2015ProfileImage.jpg" />
-
     <link rel="stylesheet" type="text/css" href="../css/default_content.css" />
     <link rel="stylesheet" type="text/css" href="../css/header.css" />
     <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
   </head>
 
   <body>
@@ -26,11 +26,25 @@
       <header>
         <div id="header"></div>
       </header>
+
+      <section id="python-github">
+        <div class="container">
+          <div class="rounded-borders-box">
+            <div class="rounded-borders-box-text">
+              <h2>Python Development and GitHub</h2>
+        <br>
+        <p>Welcome to my portfolio! I'm passionate about Python development and continuously expanding my skills.</p>
+        <p>Check out the <a href="../pages/about.html" target="_blank" class="github-button">About page</a> for more info or my latest Python projects on <a href="https://github.com/Wartem" target="_blank" class="github-button">My GitHub</a></p>
+      </div>
+    </div>
+  </div>
+      </section>
+
       <section id="showcase">
         <div class="container">
           <div class="rounded-borders-box">
             <div class="rounded-borders-box-text">
-              <h2>Projects Overview</h2>
+              <h2>Previous Projects Overview</h2>
               <h3>
                 GTAV modifications, Unity projects and example projects in Java.
               </h3>
@@ -186,7 +200,7 @@
         $(window).on("load", function () {
           $(".rounded-borders-box").css("opacity", "0.8");
           // Animate loader off screen
-          $(".pre").fadeOut(500, () => {});
+          $(".pre").fadeOut(300, () => {});
         });
       </script>
       <script>
