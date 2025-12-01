@@ -1,9 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<footer class="site-footer">
+  <div class="footer-content">
+    <div>
+      <p class="footer-title">Wartem</p>
+      <p class="footer-text">Creating engaging experiences across web, Python, and game modding.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/Wartem" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+      <a href="https://discord.gg/g532sDT" target="_blank" rel="noopener" class="footer-link">Discord</a>
+      <a href="/pages/about.html" class="footer-link">About</a>
+    </div>
+  </div>
+  <p class="footer-meta">&copy; <span id="footer-year"></span> Wartem. Built for the curious.</p>
+</footer>
 <script>
-  document.getElementById("year").innerHTML =
-    "by Wartem, Copyright &copy; " + new Date().getFullYear();
+  const footerYear = document.getElementById("footer-year");
+  if (footerYear) {
+    footerYear.textContent = new Date().getFullYear();
+  }
 </script>
-<div id="year"></div>
-</html>
-
