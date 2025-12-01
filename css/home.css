@@ -265,7 +265,6 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 0.75rem;
-  align-items: center;
 }
 
 .link-grid img {
@@ -273,14 +272,10 @@ main {
   border-radius: 12px;
   border: var(--border);
   background: rgba(255, 255, 255, 0.02);
-  object-fit: contain;
 }
 
 .link-grid .links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  display: block;
 }
 
 .mods {
