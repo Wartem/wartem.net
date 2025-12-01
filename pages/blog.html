@@ -2,63 +2,56 @@
 <html lang="en">
   <head>
     <title>Blog - Wartem</title>
-    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Wartem, home" />
-    <meta name="keywords" content="Wartem, home" />
+    <meta name="description" content="Wartem blog" />
+    <meta name="keywords" content="Wartem, blog" />
     <meta name="author" content="Wartem" />
     <link rel="icon" href="../images/R3QQ2015ProfileImage.jpg" />
-
-    <link rel="stylesheet" type="text/css" href="../css/default_content.css" />
-    <link rel="stylesheet" type="text/css" href="../css/header.css" />
-    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="../css/site_include.css" />
-    <link rel="import" href="https://mwasteson.blogspot.com" />
-
-    <!--  <link
-      href="https://fonts.googleapis.com/css?family=Great+Vibes"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
-    /> -->
-
-    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script> -->
+    />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/page.css" />
   </head>
 
   <body>
-    <header>
-      <div class="pre"></div>
-      <div id="header"></div>
-    </header>
+    <div class="page-shell">
+      <header>
+        <div id="header"></div>
+      </header>
 
-    <div class="site-include-container">
-      <div class="content">
-        <iframe
-          src="https://mwasteson.blogspot.com"
-          style="border: none"
-        ></iframe>
-      </div>
+      <main class="page-main">
+        <section class="page-hero">
+          <span class="eyebrow">Blog</span>
+          <h1>Blog posts from mwasteson.blogspot.com.</h1>
+          <p>Posts are hosted on Blogger and shown here in one place.</p>
+        </section>
+
+        <section class="section-card">
+          <div class="note">If the embed does not load, open the blog directly.</div>
+          <div class="info-actions">
+            <a class="button secondary" href="https://mwasteson.blogspot.com" target="_blank" rel="noopener">Open blog</a>
+          </div>
+          <iframe class="embed-frame" src="https://mwasteson.blogspot.com" style="border: none;"></iframe>
+        </section>
+      </main>
+
+      <footer>
+        <div id="footer"></div>
+      </footer>
     </div>
 
-    <!-- style="position: fixed" -->
-
-    <footer id="footer">
-      <noscript>Sorry, your browser does not support JavaScript! </noscript>
-      <script type="text/javascript" src="/scripts/jquery-3.3.1.js"></script>
-      <script>
-        $(window).on("load", function () {
-          $(".pre").fadeOut(300);
-          /* $(".pre").fadeOut(0); */
-          /* let e = document.getElementsByClassName("content");
-          e.getAttribute('src') = "https://mwasteson.blogspot.com"; */
-        });
-      </script>
-      <script>
-        $(document).ready(function () {
-          /* $("#div_head").load("/includes/include_head.html"); */
-          $("#header").load("/includes/include_header.html");
-          $("#footer").load("/includes/include_footer.html");
-        });
-      </script>
-    </footer>
+    <script src="/scripts/jquery-3.3.1.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("/includes/include_header.html");
+        $("#footer").load("/includes/include_footer.html");
+      });
+    </script>
   </body>
 </html>
