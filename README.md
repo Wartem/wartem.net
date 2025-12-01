@@ -23,10 +23,6 @@ I also believe that there is a careful balance required when using AI tools and 
 In future iterations, I plan to explore the use of AI-assisted refactoring to further enhance the codebase. However, for this submission, I prioritized originality, transparency, and the demonstration of my individual capabilities.
 
 
-## New projects
-I plan to put new projects on my project hub: http://wartem.xyz
-
-
 
 ---
 
