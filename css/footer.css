@@ -1,50 +1,73 @@
-footer {
-  /*
-  width: 100%;
-  border: #74a591 3px solid;
-  color: #ffffff;
-  background-color: #034463;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-
-  padding: 20px;
-  margin-top: 20px;
-  clear: both;
-  position: fixed;    
-  bottom: 0;
-  */
-  /* clear: both; */
-  border:solid;
-  width: 100%;
-  border: #74a591 3px solid;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom: 0px;
-  color: #ffffff;
-  background-color: #034463;
-  /* font-family: /* Arial,  Helvetica, sans-serif; */
-  text-align: center;
-  padding: 1.4rem;
-  /* margin-top: 20px; */
-  /*max-height: calc(100vh - 2.8rem); */
-  /* height: 2.8rem; */
-  display: flex;
-  /* flex: 1; */
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0%;
- 
-  align-items: center;
-  justify-content: center;
-  /* bottom: 0; */
-  font-size: 1rem;
-  
-  
+:root {
+  --footer-bg: rgba(7, 16, 30, 0.85);
+  --footer-border: rgba(255, 255, 255, 0.08);
+  --footer-text: #dbe8ff;
+  --footer-subtle: #9fb4cc;
 }
 
-@media (max-width: 768px) {
-  footer {
-    font-size: 12px;
-    padding: 15px;
+.site-footer {
+  background: linear-gradient(160deg, rgba(7, 16, 30, 0.92), rgba(10, 30, 52, 0.8));
+  border-top: 1px solid var(--footer-border);
+  border-radius: 24px 24px 0 0;
+  color: var(--footer-text);
+  padding: 2rem clamp(1.2rem, 4vw, 3rem);
+  margin-top: 2.5rem;
+  box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.18);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.footer-text {
+  color: var(--footer-subtle);
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+.footer-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: var(--footer-text);
+  text-decoration: none;
+  padding: 0.55rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+  background: linear-gradient(135deg, #6cf0c2, #4ab7ff);
+  color: #0b1324;
+  transform: translateY(-1px);
+}
+
+.footer-meta {
+  margin-top: 1.6rem;
+  color: var(--footer-subtle);
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 640px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
