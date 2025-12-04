@@ -1,0 +1,6 @@
+
+{
+  "name": "WartemWeather",
+  "description": "En lokal-först väderapp med stöd för flera modeller, inklusive Yr och SMHI. Ger vetenskaplig precision och AI-insikter.",
+  "requestFramePermissions": []
+}
