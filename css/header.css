@@ -44,11 +44,21 @@ header {
 }
 
 .brand-icon {
-  width: 34px;
-  height: 34px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #6cf0c2, #4ab7ff);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 6px 18px rgba(76, 207, 255, 0.35);
+  /* Dimensions: Set the size for your logo */
+  width: 40px; 
+  height: 40px; 
+  display: inline-block; /* Ensure it takes the set dimensions */
+
+  /* Image properties: Replace 'path/to/your/logo.svg' with the actual path */
+  background-image: url(/images/wartem_logo.png); 
+  background-size: contain; /* Ensures the logo fits within the 40x40 box */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* Remove any conflicting properties (e.g., if it was a solid color circle) */
+  background-color: transparent; 
+  border: none;
+  box-shadow: none;
 }
 
 .nav-tagline {
