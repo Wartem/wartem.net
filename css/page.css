@@ -52,6 +52,12 @@ main.page-main {
   margin-top: 0;
 }
 
+h3 {
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .section-card a {
   color: #6cf0c2;
 }
@@ -142,6 +148,7 @@ main.page-main {
   gap: 0.65rem;
   flex-wrap: wrap;
   margin-top: 0.9rem;
+  padding-bottom: 1rem;
 }
 
 .info-actions .button {

@@ -25,7 +25,7 @@
         <div id="header"></div>
       </header>
 
-      <main>
+      <main> 
         <section class="hero">
           <div class="hero-main">
             <span class="eyebrow">Wartem</span>
@@ -37,26 +37,39 @@
             </p>
             <div class="hero-actions">
               <a class="button" href="/pages/about.html">Learn more about me</a>
-              <a class="button secondary" href="https://github.com/Wartem" target="_blank" rel="noopener"
-                >My GitHub</a
-              >
+              <a class="button secondary" href="https://github.com/Wartem" target="_blank" rel="noopener">My GitHub</a>
             </div>
             <div class="hero-stat-grid">
-              <div class="card stat">
-                <strong>200k+</strong>
-                <p>Downloads in total on my official page (gta5-mods.com/users/R3QQ).</p>
+                <div class="card stat">
+                  <strong>200k+</strong>
+                  <p>
+                    Downloads in total on my official GTAV-mods page
+                    (<a href="https://www.gta5-mods.com/users/R3QQ" target="_blank" rel="noopener"
+                      >gta5-mods.com/users/R3QQ</a
+                    >).
+                  </p>
+                </div>
+                <div class="card stat">
+                  <strong>Python focus</strong>
+                  <p>Flask for web development, Pandas and Matplotlib for data analysis and visualization, and OpenAI API work.</p>
+                </div>
+                <div class="card stat">
+                  <strong>Unity</strong>
+                  <p>Ball game in 3D and an image viewer in 2D. Developed for Windows and tested in WebGL.</p>
+                </div>
               </div>
-              <div class="card stat">
-                <strong>Python focus</strong>
-                <p>Flask for web development, Pandas and Matplotlib for data analysis and visualization, and OpenAI API work.</p>
-              </div>
-              <div class="card stat">
-                <strong>Unity</strong>
-                <p>Ball game in 3D and an image viewer in 2D. Developed for Windows and tested in WebGL.</p>
-              </div>
-            </div>
           </div>
           <div class="hero-aside">
+            <a class="weather-hero-link" href="/apps/weather" aria-label="Open WartemWeather app">
+              <div class="weather-hero-overlay">
+                <div>
+                  <p class="weather-hero-label">Live dashboard</p>
+                  <p class="weather-hero-title">WartemWeather</p>
+                  <p class="weather-hero-desc">Hyper-local weather with multi-model graphs.</p>
+                </div>
+                <span class="weather-hero-cta">Open app -></span>
+              </div>
+            </a>
             <div class="hero-card-grid">
               <div class="card">
                 <div class="badge">
@@ -269,7 +282,7 @@
               <div class="project-content">
                 <span class="badge">Python</span>
                 <h3 class="project-title">OpenArt Data Tools</h3>
-                <p class="project-desc">Preparing open art data for dashboards, viewers, and playful exploration.</p>
+                <p class="project-desc">Preparing open art data for dashboards, viewers, and curious exploration.</p>
               </div>
             </a>
             <a class="project-card" href="/pages/unitywebgl.html">
@@ -281,7 +294,7 @@
               </div>
             </a>
             <a class="project-card" href="https://github.com/Wartem/WartemProjectHub" target="_blank" rel="noopener">
-              <img src="images/R3QQ2015ProfileImage.jpg" alt="Project hub" />
+              <img src="images/code_from_project_hub.png" alt="Project hub" />
               <div class="project-content">
                 <span class="badge">Project Hub</span>
                 <h3 class="project-title">Python ProjectHub</h3>
@@ -291,7 +304,7 @@
           </div>
         </section>
 
-        <section class="cta">
+        <section class="cta"> 
           <h2>Want to dive deeper?</h2>
           <p>
             Browse the blog, peek at the GitHub repos, or drop into Discord if you want to collaborate, test builds, or just say hi.
@@ -311,8 +324,8 @@
     <script src="scripts/jquery-3.3.1.js"></script>
     <script>
       $(function () {
-        $("#header").load("/includes/include_header.html");
-        $("#footer").load("/includes/include_footer.html");
+        $("#header").load("/includes/include_header.html #header-content > *");
+        $("#footer").load("/includes/include_footer.html #footer-content > *");
       });
     </script>
   </body>
