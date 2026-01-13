@@ -25,4 +25,4 @@ In future iterations, I plan to use AI-assisted refactoring more extensively to 
 
 ---
 
-*Last updated: August 13, 2024*
+*Last updated: December, 2025*
