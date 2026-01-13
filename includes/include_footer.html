@@ -16,6 +16,15 @@
             <a href="https://github.com/Wartem" target="_blank" rel="noopener" class="footer-link">GitHub</a>
             <a href="https://discord.gg/g532sDT" target="_blank" rel="noopener" class="footer-link">Discord</a>
             <a href="/pages/about.html" class="footer-link">About</a>
+            <a
+              href="#"
+              class="footer-link js-email"
+              data-user="contact"
+              data-domain="wartem"
+              data-tld="net"
+              rel="nofollow"
+              >contact [at] wartem [dot] net</a
+            >
           </div>
         </div>
         <p class="footer-meta">&copy; <span id="footer-year"></span> Wartem. Built for the curious.</p>
@@ -25,6 +34,19 @@
         if (footerYear) {
           footerYear.textContent = new Date().getFullYear();
         }
+
+        const emailLinks = document.querySelectorAll(".js-email");
+        emailLinks.forEach((link) => {
+          const user = link.getAttribute("data-user");
+          const domain = link.getAttribute("data-domain");
+          const tld = link.getAttribute("data-tld");
+          if (!user || !domain || !tld) {
+            return;
+          }
+          const email = `${user}@${domain}.${tld}`;
+          link.textContent = email;
+          link.setAttribute("href", `mailto:${email}`);
+        });
       </script>
     </div>
   </body>
