@@ -77,10 +77,7 @@
               methods solving different problems like encrypt/decrypt.
             </li>
           </ul>
-          <p class="note">
-            WIP: <a href="https://wartem.xyz" target="_blank" rel="noopener">My personal deployment on Heroku</a>, where I plan
-            to add more projects.
-          </p>
+
         </section>
 
         <section class="section-card">
@@ -276,14 +273,19 @@
           <div>
             <h2>Contact</h2>
             <p>
+              Contact name: M&aring;rten Wasteson
+            </p>
+            <p>
+              Email:
               <a
                 href="#"
                 class="js-email"
-                data-user="contact"
-                data-domain="wartem"
-                data-tld="net"
+                data-user="tcatnoc"
+                data-domain="metraw"
+                data-tld="ten"
+                data-reverse="true"
                 rel="nofollow"
-                >contact [at] wartem [dot] net</a
+                >Enable JavaScript to view</a
               >
             </p>
           </div>
@@ -299,12 +301,70 @@
       </footer>
     </div>
 
-    <script src="/scripts/jquery-3.3.1.js"></script>
     <script src="/js/ball-on-canvas.js"></script>
     <script>
-      $(function () {
-        $("#header").load("/includes/include_header.html");
-        $("#footer").load("/includes/include_footer.html");
+      document.addEventListener("DOMContentLoaded", function () {
+        function loadInclude(targetSelector, url, fragmentSelector) {
+          return fetch(url)
+            .then(function (response) {
+              return response.text();
+            })
+            .then(function (html) {
+              var parser = new DOMParser();
+              var doc = parser.parseFromString(html, "text/html");
+              var fragment = fragmentSelector ? doc.querySelector(fragmentSelector) : doc.body;
+              var target = document.querySelector(targetSelector);
+              if (!fragment || !target) {
+                return;
+              }
+              fragment.querySelectorAll("script").forEach(function (script) {
+                script.remove();
+              });
+              target.innerHTML = fragment.innerHTML;
+            });
+        }
+
+        function updateFooterYear() {
+          var footerYear = document.getElementById("footer-year");
+          if (footerYear) {
+            footerYear.textContent = new Date().getFullYear();
+          }
+        }
+
+        function updateEmailLinks() {
+          var emailLinks = document.querySelectorAll(".js-email");
+          emailLinks.forEach(function (link) {
+            var user = link.getAttribute("data-user");
+            var domain = link.getAttribute("data-domain");
+            var tld = link.getAttribute("data-tld");
+            if (!user || !domain || !tld) {
+              return;
+            }
+            var reverse = link.getAttribute("data-reverse") === "true";
+            var normalize = function (value) {
+              return reverse ? value.split("").reverse().join("") : value;
+            };
+            var email = normalize(user) + "@" + normalize(domain) + "." + normalize(tld);
+            link.textContent = email;
+            link.setAttribute("href", "mailto:" + email);
+          });
+        }
+
+        var includes = [
+          loadInclude("#header", "/includes/include_header.html", "#header-content"),
+          loadInclude("#footer", "/includes/include_footer.html", "#footer-content"),
+        ];
+
+        Promise.all(
+          includes.map(function (promise) {
+            return promise.catch(function () {
+              return null;
+            });
+          })
+        ).then(function () {
+          updateFooterYear();
+          updateEmailLinks();
+        });
       });
     </script>
   </body>
