@@ -1,0 +1,113 @@
+const mojibakePairs: Array<[string, string]> = [
+  ["Ã…", "Å"],
+  ["Ã„", "Ä"],
+  ["Ã–", "Ö"],
+  ["Ã¥", "å"],
+  ["Ã¤", "ä"],
+  ["Ã¶", "ö"],
+  ["â†’", "→"]
+];
+
+const phrasePairs: Array<[string, string]> = [
+  ["gratislage", "gratisläge"],
+  ["Namndvardag", "Nämndvardag"],
+  ["namndvardag", "nämndvardag"],
+  ["Oversikt", "Översikt"],
+  ["oversikt", "översikt"],
+  ["Arbetsfloden", "Arbetsflöden"],
+  ["arbetsfloden", "arbetsflöden"],
+  ["Snabblankar", "Snabblänkar"],
+  ["Fortsattning", "Fortsättning"],
+  ["innehall", "innehåll"],
+  ["narliggande", "närliggande"],
+  ["nasta", "nästa"],
+  ["vagar", "vägar"],
+  ["Jamfor", "Jämför"],
+  ["jamfor", "jämför"],
+  ["sprakstod", "språkstöd"],
+  ["spraklig", "språklig"],
+  ["sprak", "språk"],
+  ["arshjul", "årshjul"],
+  ["uppfoljning", "uppföljning"],
+  ["uppfolj", "uppfölj"],
+  ["forbattrad", "förbättrad"],
+  ["forbattrade", "förbättrade"],
+  ["fordjupning", "fördjupning"],
+  ["snoemos", "snömos"],
+  ["osaker", "osäker"],
+  ["OSAKERT", "OSÄKERT"],
+  ["faktapastaenden", "faktapåståenden"],
+  ["pastaenden", "påståenden"],
+  ["sidospÃ¥r", "sidospår"]
+];
+
+const wordPairs: Array<[RegExp, string]> = [
+  [/\bSok\b/g, "Sök"],
+  [/\bsok\b/g, "sök"],
+  [/\bsokning\b/g, "sökning"],
+  [/\bsokord\b/g, "sökord"],
+  [/\bfor\b/g, "för"],
+  [/\bFor\b/g, "För"],
+  [/\bar\b/g, "är"],
+  [/\bAr\b/g, "Är"],
+  [/\bpa\b/g, "på"],
+  [/\bPa\b/g, "På"],
+  [/\bfran\b/g, "från"],
+  [/\bFran\b/g, "Från"],
+  [/\bgor\b/g, "gör"],
+  [/\bGor\b/g, "Gör"],
+  [/\bhjalp\b/g, "hjälp"],
+  [/\bHjalp\b/g, "Hjälp"],
+  [/\bhalla\b/g, "hålla"],
+  [/\bHalla\b/g, "Hålla"],
+  [/\bforsta\b/g, "förstå"],
+  [/\bForsta\b/g, "Förstå"],
+  [/\bforklara\b/g, "förklara"],
+  [/\bForklara\b/g, "Förklara"],
+  [/\bforklaring\b/g, "förklaring"],
+  [/\bborja\b/g, "börja"],
+  [/\bBorja\b/g, "Börja"],
+  [/\bbehall\b/g, "behåll"],
+  [/\bBehall\b/g, "Behåll"],
+  [/\blater\b/g, "låter"],
+  [/\bLat\b/g, "Låt"],
+  [/\blat\b/g, "låt"],
+  [/\bfragor\b/g, "frågor"],
+  [/\bFrÃ¥gor\b/g, "Frågor"],
+  [/\bfraga\b/g, "fråga"],
+  [/\binvandningar\b/g, "invändningar"],
+  [/\bInvandningar\b/g, "Invändningar"],
+  [/\bamne\b/g, "ämne"],
+  [/\bAmne\b/g, "Ämne"],
+  [/\bmal\b/g, "mål"],
+  [/\bMal\b/g, "Mål"],
+  [/\bmalgrupp\b/g, "målgrupp"],
+  [/\bmalton\b/g, "målton"],
+  [/\bNar\b/g, "När"],
+  [/\bnar\b/g, "när"],
+  [/\bfa\b/g, "få"],
+  [/\bFar\b/g, "Får"],
+  [/\bfar\b/g, "får"],
+  [/\bmanad\b/g, "månad"],
+  [/\barskurs\b/g, "årskurs"],
+  [/\balder\b/g, "ålder"],
+  [/\bovning\b/g, "övning"],
+  [/\bovningar\b/g, "övningar"],
+  [/\bframgar\b/g, "framgår"],
+  [/\bracker\b/g, "räcker"],
+  [/\blattlast\b/g, "lättläst"],
+  [/\bstodpunkter\b/g, "stödpunkter"],
+  [/\bmojliga\b/g, "möjliga"],
+  [/\bbehorigheter\b/g, "behörigheter"],
+  [/\bbehorighet\b/g, "behörighet"]
+];
+
+export function fixSvText(value: string | undefined | null): string {
+  if (!value) return "";
+  let text = value;
+  for (const [from, to] of mojibakePairs) text = text.replaceAll(from, to);
+  for (const [from, to] of phrasePairs) text = text.replaceAll(from, to);
+  for (const [pattern, to] of wordPairs) text = text.replace(pattern, to);
+  return text;
+}
+

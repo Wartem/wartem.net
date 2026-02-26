@@ -1,0 +1,202 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Card from "../../components/Card.astro";
+import Callout from "../../components/Callout.astro";
+import Checklist from "../../components/Checklist.astro";
+import StepByStep from "../../components/StepByStep.astro";
+import { toolLinks, toolFilterCategories } from "../../data/site";
+
+const sidebarItems = [
+  { label: "Översikt", href: "#oversikt" },
+  { label: "Filtrera verktyg", href: "#verktygslista" },
+  { label: "Valprinciper", href: "#valprinciper" },
+  { label: "Betalval", href: "#betalval" },
+  { label: "Lokala alternativ", href: "#lokala-alternativ-note" }
+];
+
+const selectionChecklist = [
+  "Börja med uppgiften (skriva, debattträna, förstå artikel, dokumentfrågor).",
+  "Välj verktyg efter styrka – inte efter vana – när uppgiften är viktig.",
+  "Separera gärna research/faktakoll från skrivande/tonarbete.",
+  "Markera alltid [KOLLA] och [OSÄKERT] i viktiga texter och anteckningar.",
+  "Bygg 1-2 stabila arbetsspår i stället för att byta verktyg hela tiden."
+];
+
+const selectionSteps = [
+  {
+    title: "Välj filter efter behov",
+    body: "Filtrera först på Skriv, Debatt, Akademiskt eller Integritet för att minska brus."
+  },
+  {
+    title: "Öppna verktygssidorna",
+    body: "Jämför 'Passar för CWas', styrkor/svagheter och integritet i korthet för 2-3 kandidater."
+  },
+  {
+    title: "Bestäm arbetsroll",
+    body: "Välj om verktyget ska vara huvudverktyg (skapande) eller komplement (research/faktakoll/språkgranskning)."
+  }
+];
+---
+
+<BaseLayout
+  title="Verktyg | CWas AI-handbok"
+  currentPath="/verktyg"
+  sidebarEyebrow="Verktyg"
+  sidebarTitle="Verktygsöversikt"
+  sidebarCopy="Filtrera verktyg efter uppgift och jämför vad som faktiskt hjälper CWas i vardagen."
+  sidebarItems={sidebarItems}
+>
+  <section id="oversikt" class="hero">
+    <p class="eyebrow">Verktyg</p>
+    <h1>Verktygsguide för CWas</h1>
+    <p class="lead">
+      Verktygsdelen är byggd som praktiskt beslutsstöd: filtrera efter uppgift, läs verktygssidorna och använd jämförelsesidan
+      för att avgöra vilket abonnemang som ger mest nytta enligt källmaterialet.
+    </p>
+    <div class="hero-grid">
+      <Card title="Filtrera efter behov" href="#verktygslista" description="Skriv, Debatt, Akademiskt, Integritet." tag="Index" />
+      <Card title="Jämför betalval" href="/verktyg/vilket-ska-jag-betala-for" description="Källbaserad vägledning utan nya fakta." tag="Jämförelse" />
+      <Card title="Lokala alternativ" href="/verktyg/lokala-alternativ" description="När integritet väger tyngre än låg tröskel." tag="Integritet" />
+    </div>
+  </section>
+
+  <section id="verktygslista" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Index + filter</p>
+      <h2>Filtrera verktyg efter behov</h2>
+      <p>
+        Filtreringen är avsedd som första sortering. Ett verktyg kan tillhöra flera kategorier och fungera som både huvudverktyg och komplement.
+      </p>
+    </div>
+
+    <div class="filter-toolbar" role="toolbar" aria-label="Filtrera verktyg">
+      <button type="button" class="filter-pill is-active" data-tool-filter="Alla" aria-pressed="true">Alla</button>
+      {toolFilterCategories.map((category) => (
+        <button type="button" class="filter-pill" data-tool-filter={category} aria-pressed="false">
+          {category}
+        </button>
+      ))}
+      <span id="tool-filter-status" class="filter-status" aria-live="polite">
+        Visar {toolLinks.length} av {toolLinks.length}
+      </span>
+    </div>
+
+    <div class="tool-card-grid" data-tool-grid>
+      {
+        toolLinks.map((tool) => (
+          <article
+            class="tool-card-row"
+            data-tool-item
+            data-categories={tool.categories.join("|")}
+          >
+            <a href={tool.href} class="tool-card-link" aria-label={`${tool.label} – öppna verktygssida`}>
+              <div class="tool-card-head">
+                <h3>{tool.label}</h3>
+                <span class="tool-card-arrow" aria-hidden="true">→</span>
+              </div>
+              {tool.description && <p>{tool.description}</p>}
+              <div class="tag-list" aria-label={`Kategorier för ${tool.label}`}>
+                {tool.categories.map((category) => <span class="tag-chip">{category}</span>)}
+              </div>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+
+    <script is:inline>
+      const toolbar = document.querySelector(".filter-toolbar");
+      const status = document.getElementById("tool-filter-status");
+      const items = Array.from(document.querySelectorAll("[data-tool-item]"));
+      if (toolbar && status && items.length > 0) {
+        toolbar.addEventListener("click", (event) => {
+          const target = event.target;
+          if (!(target instanceof HTMLButtonElement)) return;
+          const selected = target.dataset.toolFilter || "Alla";
+          const buttons = Array.from(toolbar.querySelectorAll(".filter-pill"));
+          for (const button of buttons) {
+            const active = button === target;
+            button.classList.toggle("is-active", active);
+            button.setAttribute("aria-pressed", String(active));
+          }
+
+          let visible = 0;
+          for (const item of items) {
+            const categories = (item.getAttribute("data-categories") || "").split("|");
+            const show = selected === "Alla" || categories.includes(selected);
+            item.classList.toggle("is-hidden", !show);
+            if (show) visible += 1;
+          }
+
+          status.textContent = `Visar ${visible} av ${items.length} (${selected})`;
+        });
+      }
+    </script>
+  </section>
+
+  <section id="valprinciper" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Valstöd</p>
+      <h2>Valprinciper för rätt verktyg</h2>
+      <p>
+        Källmaterialet pekar på att CWas får bäst resultat när verktygen används i tydliga roller: ett för skapande/träning, ett för research/faktakoll och ett för språkgranskning.
+      </p>
+    </div>
+
+    <div class="stack">
+      <StepByStep title="Praktiskt sätt att välja" steps={selectionSteps} />
+      <Checklist title="Tumregler som minskar verktygsstress" items={selectionChecklist} />
+      <Callout title="Viktigt: källa före säker röst" variant="warning">
+        Ett välskrivet AI-svar kan fortfarande vara fel. När det gäller offentlig text, debattunderlag eller akademiska sammanfattningar ska du alltid skilja på skrivkvalitet och faktakvalitet.
+      </Callout>
+      <Callout title="Källbaserat mönster" variant="info">
+        I underlagen återkommer ett mönster: skriv- och debattarbete fungerar ofta bäst i ChatGPT/Claude, medan Perplexity används som research- och faktakollkomplement.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="betalval" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Jämförelse</p>
+      <h2>Vilket ska jag betala för?</h2>
+      <p>
+        Den här frågan får en egen sida eftersom källorna innehåller olika rekommendationer beroende på om fokus ligger på text + akademi, eller på bred vardagsnytta inklusive debattträning.
+      </p>
+    </div>
+    <div class="cards-grid">
+      <Card
+        title="Öppna jämförelsesidan"
+        href="/verktyg/vilket-ska-jag-betala-for"
+        description="Källbaserad jämförelse av ChatGPT, Claude, Perplexity och Gemini utan nya fakta."
+        tag="Beslut"
+      />
+      <Card
+        title="Snabb tumregel"
+        href="/verktyg/vilket-ska-jag-betala-for#snabbregel"
+        description="Välj huvudverktyg efter största vardagsbehov, inte efter flest funktioner."
+        tag="Snabbstart"
+      />
+    </div>
+  </section>
+
+  <section id="lokala-alternativ-note" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Integritetsspår</p>
+      <h2>Lokala alternativ och högre integritetsnivå</h2>
+      <p>
+        När uppgiftens innehåll inte passar i externa molntjänster finns en separat sida för lokala/offline alternativ, deras styrkor och den praktiska friktionen.
+      </p>
+    </div>
+    <div class="stack">
+      <Card
+        title="Lokala alternativ"
+        href="/verktyg/lokala-alternativ"
+        description="Ollama, AnythingLLM, EU-/lokalt orienterade alternativ och hur de bedöms praktiskt."
+        tag="Integritet"
+      />
+      <Callout title="Ingen magisk lösning" variant="info">
+        Lokal drift löser inte automatiskt kvalitet, faktakoll eller användarvänlighet. Det är ett integritetsval – inte en garanti för bättre resultat.
+      </Callout>
+    </div>
+  </section>
+</BaseLayout>

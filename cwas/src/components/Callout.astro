@@ -1,0 +1,26 @@
+---
+type Variant = "info" | "tip" | "warning";
+
+interface Props {
+  title?: string;
+  variant?: Variant;
+}
+
+const { title = "Notis", variant = "info" } = Astro.props;
+
+const labels: Record<Variant, string> = {
+  info: "Info",
+  tip: "Tips",
+  warning: "Varning"
+};
+---
+
+<aside class={`callout callout-${variant}`} aria-label={`${labels[variant]}: ${title}`}>
+  <div class="callout-head">
+    <strong>{title}</strong>
+    <span>{labels[variant]}</span>
+  </div>
+  <div class="callout-body">
+    <slot />
+  </div>
+</aside>

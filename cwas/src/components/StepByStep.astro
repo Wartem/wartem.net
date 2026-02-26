@@ -1,0 +1,27 @@
+---
+interface Step {
+  title: string;
+  body: string;
+}
+
+interface Props {
+  title?: string;
+  steps: Step[];
+}
+
+const { title, steps } = Astro.props;
+---
+
+<section class="step-by-step">
+  {title && <h3>{title}</h3>}
+  <ol>
+    {
+      steps.map((step) => (
+        <li>
+          <h4>{step.title}</h4>
+          <p>{step.body}</p>
+        </li>
+      ))
+    }
+  </ol>
+</section>

@@ -1,0 +1,248 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import Callout from "../components/Callout.astro";
+import Checklist from "../components/Checklist.astro";
+import PromptBlock from "../components/PromptBlock.astro";
+import ComparisonTable from "../components/ComparisonTable.astro";
+import StepByStep from "../components/StepByStep.astro";
+
+const sidebarItems = [
+  { label: "Start", href: "#start" },
+  { label: "Hur sajten används", href: "#hur-sajten-anvands" },
+  { label: "Snabba startspår", href: "#snabba-startspar" },
+  { label: "Välj väg", href: "#valj-vag" },
+  { label: "Trygg start", href: "#trygg-start" },
+  { label: "Vad du hittar var", href: "#vad-du-hittar-var" }
+];
+
+const everydayChecklist = [
+  "Börja med uppgiften (inte verktyget): skriv vad du ska få gjort på 10-30 minuter.",
+  "Välj sedan sida: Arbetsflöden, Promptbibliotek eller Verktyg.",
+  "Använd AI för form, struktur och tempo; du behåller ansvar för fakta, ton och bedömning.",
+  "Be alltid om kritisk runda: svagheter, oklarheter och vad som måste källkontrolleras.",
+  "Anonymisera innan du klistrar in text om den kan innehålla personuppgifter."
+];
+
+const wayColumns = ["Om du behöver...", "Börja här", "Gå vidare till", "Var extra noga med"];
+const wayRows = [
+  [
+    "Skriva en text snabbt",
+    "Arbetsflöden: Politisk text 30 min",
+    "Promptbibliotek: Skrivande + Verktyg: ChatGPT/Claude",
+    "Faktakontroll och ton (för formell / för fluffig)"
+  ],
+  [
+    "Träna muntlig argumentation",
+    "Arbetsflöden: Debatt 10 min",
+    "Promptbibliotek: Debatt + Verktyg: ChatGPT/Claude",
+    "Friktion i träningen (undvik att AI bara håller med)"
+  ],
+  [
+    "Förstå en engelsk artikel snabbt",
+    "Arbetsflöden: Akademisk artikel 20 min",
+    "Verktyg: Perplexity / NotebookLM / Claude",
+    "Vad som är fakta, tolkning och luckor i underlaget"
+  ],
+  [
+    "Ta fram plan / årshjul",
+    "Arbetsflöden: Skolbiblioteksplan/årshjul",
+    "Promptbibliotek: Skolbibliotek/MIK + Verktyg: språkstöd",
+    "Att anpassa för lokal kontext och målgrupp"
+  ]
+];
+
+const startSteps = [
+  {
+    title: "Välj ett startspår",
+    body: "Utgå från det du ska göra nu: skriva, debattera, förstå forskning eller planera skolbiblioteksarbete."
+  },
+  {
+    title: "Kör en kort AI-runda",
+    body: "Be om utkast/struktur/feedback i tydligt format och med krav på markering av osäkerheter."
+  },
+  {
+    title: "Granska innan du använder",
+    body: "Kontrollera fakta, justera ton och ta bort allt som inte låter som CWas."
+  }
+];
+
+const starterPrompt = `Du är min arbetsassistent för svensk skolbiblioteks- och politikvardag.
+Arbeta på tydlig svenska.
+
+Mål:
+- Hjälp mig bli snabbare utan att tappa kvalitet
+- Varna för otydligheter, "snömos" och möjliga missförstånd
+- Markera faktapåståenden som bör källkontrolleras med [KOLLA]
+- Säg tydligt vad du inte kan veta från underlaget
+
+Arbetssätt:
+1. Börja med att fråga vilket resultat jag behöver just nu (text, tal, sammanfattning, plan)
+2. Föreslå ett kort arbetssätt i 3 steg
+3. Leverera svaret i punktform eller tydliga rubriker
+4. Avsluta med: "Tre svagheter/risker i svaret"`
+---
+
+<BaseLayout
+  title="Start | CWas AI-handbok"
+  currentPath="/"
+  sidebarEyebrow="Start"
+  sidebarTitle="Startpunkt för CWas"
+  sidebarCopy="Praktisk ingång till handboken: välj uppgift, följ ett startspår och använd AI med tydliga kontrollpunkter."
+  sidebarItems={sidebarItems}
+>
+  <section id="start" class="hero">
+    <p class="eyebrow">CWas AI-handbok</p>
+    <h1>En praktisk referens för AI i skolbiblioteks- och politikvardag</h1>
+    <p class="lead">
+      Den här sidan är gjord för snabb vardagsanvändning under tidspress. Fokus är inte "AI för AI:s skull", utan
+      att hjälpa CWas skriva tydligare, tänka klarare, träna muntligt och spara tid utan att tumma på integritet eller kvalitet.
+    </p>
+    <div class="hero-grid">
+      <Card
+        title="Skriv snabbare"
+        description="Utkast, omskrivning, läsbarhet och ton – med CWas som redaktör."
+        href="/arbetsfloden#politisk-text-30-min"
+        tag="Startspår"
+      />
+      <Card
+        title="Träna debatt"
+        description="Korta drillar för att hålla linjen under press och få fram kärnbudskapet."
+        href="/arbetsfloden#debatt-10-min"
+        tag="Startspår"
+      />
+      <Card
+        title="Förstå forskning"
+        description="Snabb överblick av engelska artiklar, ordlista och seminariestöd."
+        href="/arbetsfloden#akademisk-artikel-20-min"
+        tag="Startspår"
+      />
+    </div>
+  </section>
+
+  <section id="hur-sajten-anvands" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Arbetssätt</p>
+      <h2>Hur sajten används</h2>
+      <p>
+        Källmaterialet visar ett tydligt mönster: CWas får mest nytta när AI används som skrivstöd, träningspartner
+        och strukturhjälp, medan CWas själv står för innehåll, omdöme, granskning och slutlig formulering.
+      </p>
+    </div>
+
+    <div class="stack">
+      <StepByStep title="Tre steg som fungerar i stressiga lägen" steps={startSteps} />
+      <Callout title="Grundprincip" variant="info">
+        Börja med uppgiften och tidsramen ("jag behöver ett utkast på 20 minuter"), inte med att fundera för länge på vilket verktyg som är "bäst".
+      </Callout>
+      <Callout title="Viktigt för tonen" variant="tip">
+        AI hjälper gärna till att göra texten korrekt och välstrukturerad, men CWas behöver ofta lägga tillbaka personlighet, känsla och konkret exempel.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="snabba-startspar" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Snabbstart</p>
+      <h2>Snabba startspår (välj efter situation)</h2>
+      <p>Klicka där du står just nu. Varje spår leder vidare till rätt arbetsflöde, prompts och verktygssidor.</p>
+    </div>
+
+    <div class="cards-grid">
+      <Card
+        title="Jag ska skriva politisk text nu"
+        href="/arbetsfloden#politisk-text-30-min"
+        description="30-minutersflöde för insändare/debatttext + faktacheck."
+        tag="30 min"
+      />
+      <Card
+        title="Jag behöver debattträna snabbt"
+        href="/arbetsfloden#debatt-10-min"
+        description="10-minutersdrill med tes, invändningar och förbättrade formuleringar."
+        tag="10 min"
+      />
+      <Card
+        title="Jag fastnar i en engelsk artikel"
+        href="/arbetsfloden#akademisk-artikel-20-min"
+        description="Snabb överblick, ordlista och frågor att ställa till studien."
+        tag="20 min"
+      />
+      <Card
+        title="Jag ska göra skolbiblioteksplan/årshjul"
+        href="/arbetsfloden#skolbiblioteksplan-arshjul"
+        description="Planeringsspår för mallar, aktiviteter och uppföljning."
+        tag="Planering"
+      />
+      <Card
+        title="Jag vill ha färdiga promptmallar"
+        href="/promptbibliotek"
+        description="Promptbibliotek uppdelat på skrivande, debatt, akademiskt, MIK och nämndvardag."
+        tag="Prompts"
+      />
+      <Card
+        title="Jag är osäker på vad som får delas"
+        href="/integritet-gdpr"
+        description="Praktisk sida för anonymisering, risknivå och GDPR-check."
+        tag="Trygghet"
+      />
+    </div>
+  </section>
+
+  <section id="valj-vag" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Orientering</p>
+      <h2>Välj väg: uppgift först eller verktyg först?</h2>
+      <p>
+        Källorna pekar på två fungerande arbetssätt. Det vanligaste (och snabbaste) för CWas är uppgift först.
+        Verktyg först fungerar bäst när det handlar om att testa nytt eller när integritetskrav styr valet.
+      </p>
+    </div>
+
+    <div class="stack">
+      <ComparisonTable title="Snabb vägledning" columns={wayColumns} rows={wayRows} />
+      <Callout title="Praktisk tumregel" variant="tip">
+        Om du tvekar: börja i <a href="/arbetsfloden">Arbetsflöden</a>, inte i <a href="/verktyg">Verktyg</a>.
+        Arbetsflödena minskar starttröghet.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="trygg-start" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Trygg start</p>
+      <h2>Starta säkert och få bättre svar direkt</h2>
+      <p>
+        I källorna återkommer samma mönster: tydliga instruktioner ger bättre resultat, och en inbyggd kritisk runda
+        minskar risken för fluff, felaktigheter och överdriven instämmandekultur.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Checklist title="Fem snabba saker före varje AI-pass" items={everydayChecklist} />
+      <PromptBlock id="start-prompt-cwas" title="Återanvändbar startprompt (generell)" prompt={starterPrompt} />
+      <Callout title="Integritet först" variant="warning">
+        Använd aldrig riktiga personnamn eller känsliga elev-/ärendedata i externa AI-tjänster. Anonymisera först och använd alltid "CWas" på denna sajt.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="vad-du-hittar-var" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Navigering</p>
+      <h2>Vad du hittar var på sajten</h2>
+      <p>
+        Handboken är byggd för att kunna användas både som snabbhjälp och som referens när CWas vill fördjupa eller förbättra sitt arbetssätt.
+      </p>
+    </div>
+
+    <div class="cards-grid">
+      <Card title="Profil och behov" href="/profil-behov" tag="Grund" description="Samlad bild av CWas arbetssituation, mål, styrkor, friktion och risker." />
+      <Card title="Verktyg" href="/verktyg" tag="Översikt" description="När olika verktyg passar, vad de är bra på och vad som måste bevakas." />
+      <Card title="Arbetsflöden" href="/arbetsfloden" tag="Praktik" description="Tidsatta rutiner för politisk text, debatt, akademisk artikel och skolbiblioteksplanering." />
+      <Card title="Promptbibliotek" href="/promptbibliotek" tag="Mallar" description="Kopierbara promptmallar per situation: skrivande, debatt, akademiskt, MIK och nämndvardag." />
+      <Card title="Integritet och GDPR" href="/integritet-gdpr" tag="Trygghet" description="Praktiska regler, anonymisering och riskbedömning för vardagsanvändning." />
+      <Card title="Tips och trix" href="/tips-trix" tag="Finlir" description="Kvalitetskontroll, prompting-tips, vanliga fallgropar och smart återanvändning." />
+      <Card title="QA-checklista" href="/qa-checklista" tag="Kvalitet" description="Manuell kontroll före publicering eller större uppdatering av handboken." />
+    </div>
+  </section>
+</BaseLayout>

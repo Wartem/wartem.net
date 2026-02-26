@@ -1,0 +1,199 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "./Card.astro";
+import Callout from "./Callout.astro";
+import Checklist from "./Checklist.astro";
+import PromptBlock from "./PromptBlock.astro";
+import StepByStep from "./StepByStep.astro";
+
+interface PromptExample {
+  id: string;
+  title: string;
+  prompt: string;
+}
+
+interface StepItem {
+  title: string;
+  body: string;
+}
+
+interface MiniLink {
+  label: string;
+  href: string;
+  description?: string;
+}
+
+interface Props {
+  toolName: string;
+  slugPath: string;
+  shortDescription: string;
+  categories: string[];
+  fitsForCWas: string[];
+  strengths: string[];
+  weaknesses: string[];
+  useWhen: string[];
+  avoidWhen?: string[];
+  workflowSteps: StepItem[];
+  privacySummary: string;
+  privacyChecks: string[];
+  factCheckNotes?: string[];
+  uncertainties?: string[];
+  examplePrompts: PromptExample[];
+  relatedLinks?: MiniLink[];
+  sourceBasisNote?: string;
+}
+
+const {
+  toolName,
+  slugPath,
+  shortDescription,
+  categories,
+  fitsForCWas,
+  strengths,
+  weaknesses,
+  useWhen,
+  avoidWhen = [],
+  workflowSteps,
+  privacySummary,
+  privacyChecks,
+  factCheckNotes = [],
+  uncertainties = [],
+  examplePrompts,
+  relatedLinks = [],
+  sourceBasisNote = "Bygger på källmaterialet i projektet (utan nya fakta). Verifiera priser/funktioner i officiella kanaler innan beslut."
+} = Astro.props;
+
+const sidebarItems = [
+  { label: "Översikt", href: "#oversikt" },
+  { label: "Passar för CWas", href: "#passar-for-cwas" },
+  { label: "Styrkor / svagheter", href: "#styrkor-svagheter" },
+  { label: "När använda", href: "#nar-anvanda" },
+  { label: "Integritet i korthet", href: "#integritet-kort" },
+  { label: "Exempelprompts", href: "#prompts" }
+];
+---
+
+<BaseLayout
+  title={`${toolName} | CWas AI-handbok`}
+  currentPath={slugPath}
+  sidebarEyebrow="Verktyg"
+  sidebarTitle={toolName}
+  sidebarCopy={shortDescription}
+  sidebarItems={sidebarItems}
+>
+  <section id="oversikt" class="hero">
+    <p class="eyebrow">Verktygssida</p>
+    <h1>{toolName}</h1>
+    <p class="lead">{shortDescription}</p>
+    <div class="tag-list" aria-label="Kategorier">
+      {categories.map((category) => <span class="tag-chip">{category}</span>)}
+    </div>
+    {
+      relatedLinks.length > 0 && (
+        <div class="cards-grid" style="margin-top: 1rem;">
+          {relatedLinks.map((link) => <Card title={link.label} href={link.href} description={link.description} tag="Gå vidare" />)}
+        </div>
+      )
+    }
+  </section>
+
+  <section id="passar-for-cwas" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Passar för CWas</p>
+      <h2>När {toolName} brukar ge mest nytta</h2>
+      <p>
+        Sammanfattning utifrån källmaterialet: vilka typer av uppgifter verktyget hjälper bäst med i CWas skolbiblioteks-,
+        politik- och studievardag.
+      </p>
+    </div>
+    <Checklist title={`Passar för CWas när behovet är...`} items={fitsForCWas} />
+  </section>
+
+  <section id="styrkor-svagheter" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Bedömning</p>
+      <h2>Styrkor och svagheter</h2>
+      <p>
+        Fokus här är praktisk användbarhet för CWas, inte en generell "bäst i test"-rankning.
+      </p>
+    </div>
+    <div class="cards-grid">
+      <div class="stack" style="margin-top: 0;">
+        <Checklist title="Styrkor" items={strengths} />
+      </div>
+      <div class="stack" style="margin-top: 0;">
+        <Checklist title="Svagheter / begränsningar" items={weaknesses} />
+      </div>
+    </div>
+  </section>
+
+  <section id="nar-anvanda" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Användning</p>
+      <h2>När använda (och när välja något annat)</h2>
+      <p>
+        Snabbt stöd för att välja rätt verktyg i rätt läge, baserat på uppgift, tidsram och krav på kontroll.
+      </p>
+    </div>
+    <div class="stack">
+      <Checklist title={`Använd ${toolName} när...`} items={useWhen} />
+      {
+        avoidWhen.length > 0 && (
+          <Checklist title={`Välj annat verktyg eller arbetssätt när...`} items={avoidWhen} />
+        )
+      }
+      <StepByStep title="Kort rutin för säkrare användning" steps={workflowSteps} />
+    </div>
+  </section>
+
+  <section id="integritet-kort" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Integritet</p>
+      <h2>Integritet i korthet</h2>
+      <p>
+        Kort, praktisk vägledning för CWas. För full rutin: se <a href="/integritet-gdpr">Integritet och GDPR</a>.
+      </p>
+    </div>
+    <div class="stack">
+      <Callout title="Integritetsöversikt" variant="warning">
+        {privacySummary}
+      </Callout>
+      <Checklist title="Praktiska kontroller" items={privacyChecks} />
+      {
+        factCheckNotes.length > 0 && (
+          <Callout title="Faktakoll / verifiera i praktiken" variant="info">
+            <ul class="placeholder-list">
+              {factCheckNotes.map((item) => <li>{item}</li>)}
+            </ul>
+          </Callout>
+        )
+      }
+      {
+        uncertainties.length > 0 && (
+          <Callout title="Osäkert eller varierar mellan plan/inställningar" variant="info">
+            <ul class="placeholder-list">
+              {uncertainties.map((item) => <li>{item}</li>)}
+            </ul>
+          </Callout>
+        )
+      }
+    </div>
+  </section>
+
+  <section id="prompts" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Exempelprompts</p>
+      <h2>Exempelprompts för {toolName}</h2>
+      <p>
+        Dessa är startpunkter som kan klistras in och anpassas. Lägg alltid till eget underlag och markera faktakoll där det behövs.
+      </p>
+    </div>
+    <div class="stack">
+      {examplePrompts.map((promptItem) => <PromptBlock id={promptItem.id} title={promptItem.title} prompt={promptItem.prompt} />)}
+      <Callout title="Källbaserad rekommendation" variant="info">
+        {sourceBasisNote}
+      </Callout>
+      <p class="placeholder-note">Route: <code>{slugPath}</code></p>
+    </div>
+  </section>
+</BaseLayout>

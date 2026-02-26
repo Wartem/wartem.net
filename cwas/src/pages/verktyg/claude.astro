@@ -1,0 +1,124 @@
+---
+import ToolPageShell from "../../components/ToolPageShell.astro";
+---
+
+<ToolPageShell
+  toolName="Claude"
+  slugPath="/verktyg/claude"
+  shortDescription="Starkt verktyg för nyanserad textbearbetning, längre resonemang och dokumentnära arbete. I flera källor lyfts Claude som förstahandsval för CWas vid politiska texter och akademisk överblick."
+  categories={["Skriv", "Debatt", "Akademiskt"]}
+  fitsForCWas={[
+    "Längre politiska texter där ton, struktur och sammanhang behöver hållas ihop.",
+    "Akademiska sammanfattningar och begreppsförklaringar på svenska från engelskt underlag.",
+    "Debattträning i text när CWas vill ha strategisk friktion och tydlig feedback.",
+    "Projektbaserat arbete där återkommande instruktioner sparar tid."
+  ]}
+  strengths={[
+    "Starkt på längre resonemang och sammanhållen textstruktur enligt underlagen.",
+    "Nyanserad svensk text och bra tonjustering i skrivstödssituationer.",
+    "Bra för dokumentarbete, analys och fördjupning när underlaget är komplext.",
+    "Passar CWas arbetssätt: utkast -> granskning -> förbättring."
+  ]}
+  weaknesses={[
+    "Inte primärt ett källfokuserat researchverktyg (jämfört med Perplexity).",
+    "Kräver fortfarande tydliga instruktioner för att undvika generella svar.",
+    "Kan ge självsäkra formuleringar trots osäkra fakta om du inte kräver markering.",
+    "Röst-/dialogfunktioner är inte det främsta skälet att välja Claude i källmaterialet."
+  ]}
+  useWhen={[
+    "Du ska skriva politisk text, plan eller längre underlag där ton och struktur är viktiga.",
+    "Du behöver begriplig svensk överblick av akademiskt material.",
+    "Du vill ha ett verktyg som fungerar bra för både skrivande och analys i samma arbetsyta.",
+    "Du arbetar med återkommande projektspår (t.ex. 'Politik' och 'Skolbibliotek')."
+  ]}
+  avoidWhen={[
+    "Du främst behöver källspår och snabb verifiering av webbuppgifter (börja i Perplexity).",
+    "Du vill göra röstbaserad debattträning som huvudcase (ChatGPT/Gemini kan vara smidigare enligt vissa underlag).",
+    "Du hanterar känsligt material som bör stanna lokalt."
+  ]}
+  workflowSteps={[
+    { title: "Starta med roll + uppgift", body: "Sätt Claude som redaktör, seminarieassistent eller debattpartner. Skriv tydligt vad du vill få ut." },
+    { title: "Ge underlag i ett paket", body: "Klistra in text/abstract/faktapunkter i ett sammanhållet meddelande för mindre prompttrassel." },
+    { title: "Kräv kritik och markeringar", body: "Be om [KOLLA], [OSÄKERT] och en separat lista med svagheter/motargument." },
+    { title: "Spara fungerande mallar", body: "Återanvänd de prompts som ger bra ton och bra arbetsflöde för CWas." }
+  ]}
+  privacySummary="Behandla Claude som extern molntjänst. Källmaterialet lyfter att träning/datadelning kan kunna styras i inställningar, men CWas bör ändå utgå från anonymisering som standard."
+  privacyChecks={[
+    "Lägg inte in elevuppgifter, individärenden eller känsliga personuppgifter.",
+    "Använd anonymisering även för interna politiska eller skolnära texter när det går.",
+    "Skriv in krav på [OSÄKERT] när underlaget är begränsat (särskilt i akademiska sammanfattningar).",
+    "Separera faktakoll från textbearbetning: Claude kan hjälpa till att lista vad som ska kontrolleras."
+  ]}
+  factCheckNotes={[
+    "Verifiera statistik, citat, beslut och formella uppgifter i primärkälla innan publicering.",
+    "Vid akademiska texter: kontrollera metod, urval och slutsatser mot originaltext/abstract."
+  ]}
+  uncertainties={[
+    "Funktioner, kvoter och exakt projektstöd kan skilja mellan gratis/betalplaner och ändras över tid.",
+    "Hur starkt webbsök och källfunktioner fungerar jämfört med andra verktyg kan variera mellan versioner."
+  ]}
+  examplePrompts={[
+    {
+      id: "claude-politik-utkast",
+      title: "Politisk text med faktakollmarkering",
+      prompt: `Du är min redaktör och presstext-stöd på svenska.
+Skriv en insändare/debatttext utifrån mitt underlag.
+
+Krav:
+- Tydlig tes i början
+- Engagerad men saklig ton
+- Undvik floskler och snömos
+- Minst ett konkret exempel (om underlaget räcker)
+- Markera faktapåståenden med [KOLLA]
+- Markera antaganden eller luckor med [OSÄKERT]
+
+Leverera:
+1) Utkast
+2) 5 rubriker
+3) Lista över faktapåståenden att kontrollera
+4) Tre svagheter i utkastet
+
+Underlag:
+[klistra in]`
+    },
+    {
+      id: "claude-akad-ordlista",
+      title: "Akademisk artikel -> svensk överblick + ordlista",
+      prompt: `Jag ska förstå en akademisk artikel på engelska.
+Arbeta bara utifrån underlaget jag ger.
+
+Gör detta på svenska:
+1. Sammanfatta (max 150 ord) för icke-specialist.
+2. Skriv 8-12 facktermer med kort förklaring.
+3. Skriv 5 kritiska frågor till studien (metod/urval/tolkning).
+4. Markera allt som inte framgår med [OSÄKERT].
+5. Markera sådant jag bör kontrollera i originaltexten med [KOLLA].
+
+Underlag:
+[abstract/utdrag/anteckningar]`
+    },
+    {
+      id: "claude-debatt-friktion",
+      title: "Debattträning i text med friktion",
+      prompt: `Du är min strategiska samtals- och debattpartner på svenska.
+Du ska inte vara instämmande som standard.
+
+Uppgift:
+- Hjälp mig formulera kärnbudskapet
+- Ställ följdfrågor som skärper argumentet
+- Spela rimlig motståndare pedagogiskt
+- Peka ut det som är oklart eller strategiskt svagt
+
+Start:
+1. Be mig skriva min tes i en mening.
+2. Ge en invändning.
+3. Efter mitt svar: ge kort feedback + bättre formulering.
+
+Markera faktapåståenden med [KOLLA].`
+    }
+  ]}
+  relatedLinks={[
+    { label: "Politisk text 30 min", href: "/arbetsfloden#politisk-text-30-min", description: "Workflow för utkast, faktakoll och tonrunda." },
+    { label: "Vilket ska jag betala för?", href: "/verktyg/vilket-ska-jag-betala-for", description: "Jämförelse mellan ChatGPT, Claude, Perplexity och Gemini." }
+  ]}
+/>

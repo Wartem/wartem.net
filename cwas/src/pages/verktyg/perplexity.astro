@@ -1,0 +1,108 @@
+---
+import ToolPageShell from "../../components/ToolPageShell.astro";
+---
+
+<ToolPageShell
+  toolName="Perplexity"
+  slugPath="/verktyg/perplexity"
+  shortDescription="Research- och faktakollverktyg med källspår. I källmaterialet beskrivs Perplexity ofta som starkt komplement till skrivverktyg, särskilt för research och citeringsorientering."
+  categories={["Akademiskt", "Integritet"]}
+  fitsForCWas={[
+    "Snabb research och första orientering i ett ämne med synliga källspår.",
+    "Politisk faktakontroll av siffror, rapporter och sakpåståenden före publicering.",
+    "Akademiskt stöd när CWas vill hitta relaterade källor eller spåra citeringar.",
+    "Situationer där CWas behöver känna större kontroll över var informationen kommer ifrån."
+  ]}
+  strengths={[
+    "Källvisning/källspår är central styrka i underlagen.",
+    "Bra för snabb omvärldsorientering och första research-pass.",
+    "Minskar risken för osynliga påhitt jämfört med rena skrivchattar (men eliminerar den inte).",
+    "Starkt komplement till Claude/ChatGPT när text ska faktasäkras."
+  ]}
+  weaknesses={[
+    "Inte lika starkt för djup omformulering, tonarbete eller personlig röst i text.",
+    "Sämre 'träningspartner'-känsla för debatt och dialog.",
+    "Källor måste fortfarande granskas manuellt (kvalitet och relevans varierar).",
+    "Ger inte automatiskt rätt slutsats bara för att källor visas."
+  ]}
+  useWhen={[
+    "Du vill kolla fakta, siffror, beslut eller bakgrundsuppgifter snabbt.",
+    "Du behöver hitta källor eller artiklar att gå vidare med.",
+    "Du vill bygga en researchbas innan du går till skrivverktyg.",
+    "Du behöver ett första underlag för akademiskt citeringsspår."
+  ]}
+  avoidWhen={[
+    "Du behöver finslipa ton, retorik eller stil i en politisk text (gå vidare till Claude/ChatGPT).",
+    "Du vill debattträna med invändningar och rollspel (använd ChatGPT/Claude).",
+    "Du hanterar känsligt material som inte ska skickas till extern tjänst."
+  ]}
+  workflowSteps={[
+    { title: "Ställ smal fråga först", body: "Börja med en tydlig fråga i taget (inte hela ämnesområdet på en gång)." },
+    { title: "Kolla källorna direkt", body: "Läs rubrik, avsändare, datum och typ av källa innan du använder uppgiften." },
+    { title: "Skilj sök från skriv", body: "Ta researchen vidare till skrivverktyg först efter att du gjort en enkel kvalitetsgranskning." },
+    { title: "Markera osäkerhet", body: "Om källa eller tolkning är oklar: markera [KOLLA] eller [OSÄKERT] i dina anteckningar." }
+  ]}
+  privacySummary="Använd Perplexity för researchfrågor och offentligt/okänsligt material. Källmaterialet pekar på verktyget som starkt för källspår, men det är fortfarande en extern molntjänst."
+  privacyChecks={[
+    "Klistra inte in personuppgifter, elevuppgifter eller individärenden.",
+    "Använd hellre sammanfattad frågeställning än interna dokument.",
+    "Spara källor och egna noteringar separat för spårbarhet.",
+    "Verifiera källans datum och originalkontext innan du citerar."
+  ]}
+  factCheckNotes={[
+    "Källor behöver fortfarande läsas och kontrolleras manuellt.",
+    "AI-sammanfattningen av en källa kan missa nyanser; läs primärkällan vid viktiga påståenden."
+  ]}
+  uncertainties={[
+    "Vilka källor som prioriteras och hur svar formuleras kan ändras över tid.",
+    "Pro/gratisfunktioner och kvoter varierar; utgå från nuvarande konto innan du planerar arbetsflöde."
+  ]}
+  examplePrompts={[
+    {
+      id: "perplexity-research-brief",
+      title: "Snabb researchbrief med källor",
+      prompt: `Jag behöver en snabb researchöverblick på svenska om: [ämne].
+
+Gör detta:
+1. Sammanfatta huvudläget i 5-7 punkter.
+2. Visa källor för varje punkt.
+3. Markera punkter där källläget verkar svagt eller oklart med [OSÄKERT].
+4. Lista 5 följdfrågor jag bör kolla vidare.
+5. Separera fakta från tolkning.
+
+Viktigt: prioritera tydliga källor och skriv kort.`
+    },
+    {
+      id: "perplexity-faktakoll",
+      title: "Faktakoll av politisk text",
+      prompt: `Jag har ett utkast med faktapåståenden.
+Hjälp mig faktakolla påståendena ett i taget.
+
+Format:
+- Påstående
+- Stöd i källa (länk + kort sammanfattning)
+- Om källan inte räcker: [KOLLA]
+- Om olika källor säger olika: [OSÄKERT]
+
+Påståenden:
+[klistra in numrerad lista]`
+    },
+    {
+      id: "perplexity-citeringsspår",
+      title: "Akademiskt citeringsspår (första orientering)",
+      prompt: `Jag vill förstå forskningskontexten kring denna artikel:
+[titel / DOI / länk]
+
+Gör detta:
+1. Ge en kort överblick av artikeln (om möjligt från öppna källor).
+2. Föreslå relaterade studier eller citerande spår att följa.
+3. Lista sökord jag kan använda vidare i Semantic Scholar / liknande.
+4. Markera vad som är osäkert eller inte går att avgöra från öppna uppgifter med [OSÄKERT].
+5. Markera vad jag måste kontrollera i originalartikeln med [KOLLA].`
+    }
+  ]}
+  relatedLinks={[
+    { label: "Akademisk artikel 20 min", href: "/arbetsfloden#akademisk-artikel-20-min", description: "Workflow för överblick, ordlista och citeringsspår." },
+    { label: "Vilket ska jag betala för?", href: "/verktyg/vilket-ska-jag-betala-for", description: "Källbaserad jämförelse: huvudverktyg vs komplement." }
+  ]}
+/>

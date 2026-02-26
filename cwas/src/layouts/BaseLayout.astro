@@ -1,0 +1,229 @@
+---
+import "../styles/global.css";
+import { siteNav } from "../data/site";
+import { relatedContentByPath } from "../data/related-content";
+import RelatedContent from "../components/RelatedContent.astro";
+import { siteMeta } from "../data/site-meta";
+
+interface NavItem {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  description?: string;
+  currentPath?: string;
+  sidebarEyebrow?: string;
+  sidebarTitle?: string;
+  sidebarCopy?: string;
+  sidebarItems?: NavItem[];
+}
+
+const {
+  title,
+  description = "CWas AI-handbok",
+  currentPath = "/",
+  sidebarEyebrow = "Referensguide",
+  sidebarTitle = "CWas arbetsyta",
+  sidebarCopy = "Struktur för AI-verktyg, prompts, rutiner och integritetsråd.",
+  sidebarItems = siteNav
+} = Astro.props;
+
+const isActivePageLink = (href: string) => {
+  if (!href.startsWith("/")) return false;
+  if (href === "/") return currentPath === "/";
+  return currentPath === href || currentPath.startsWith(`${href}/`);
+};
+
+const pageLabelFromTitle = title.split("|")[0]?.trim() || "Sida";
+const pathSegments = currentPath.split("/").filter(Boolean);
+
+const breadcrumbs: NavItem[] = [{ label: "Start", href: "/" }];
+if (currentPath !== "/") {
+  if (pathSegments[0] === "verktyg") {
+    breadcrumbs.push({ label: "Verktyg", href: "/verktyg" });
+    if (pathSegments.length > 1) {
+      breadcrumbs.push({ label: pageLabelFromTitle, href: currentPath });
+    }
+  } else {
+    breadcrumbs.push({ label: pageLabelFromTitle, href: currentPath });
+  }
+}
+
+const backHref =
+  currentPath === "/"
+    ? null
+    : pathSegments[0] === "verktyg" && pathSegments.length > 1
+      ? "/verktyg"
+      : "/";
+
+const relatedLinks =
+  relatedContentByPath[currentPath] ??
+  (pathSegments[0] === "verktyg" && pathSegments.length > 1
+    ? [
+        { label: "Verktygsindex", href: "/verktyg", description: "Tillbaka till filtrerad verktygsöversikt." },
+        { label: "Vilket ska jag betala för?", href: "/verktyg/vilket-ska-jag-betala-for", description: "Källbaserad jämförelse av betalval." },
+        { label: "Promptbibliotek", href: "/promptbibliotek", description: "Korta prompts som fungerar i gratisläge." }
+      ]
+    : []);
+
+const basePath = (import.meta.env.BASE_URL || "/").replace(/\/+$/, "") || "/";
+---
+
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Hoppa till innehåll</a>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a href="/" class="brand" aria-label="CWas AI-handbok">
+          <span class="brand-mark" aria-hidden="true">CW</span>
+          <span class="brand-text">
+            <strong>CWas</strong>
+            <small>AI-handbok</small>
+          </span>
+        </a>
+
+        <nav class="topnav" aria-label="Huvudnavigering">
+          <ul>
+            {
+              siteNav.map((item) => (
+                <li>
+                  <a href={item.href} aria-current={isActivePageLink(item.href) ? "page" : undefined}>
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+
+        <details class="mobile-menu">
+          <summary aria-label="Öppna meny">
+            <span></span>
+            <span></span>
+            <span></span>
+          </summary>
+          <nav aria-label="Mobil meny">
+            <ul>
+              {
+                siteNav.map((item) => (
+                  <li>
+                    <a href={item.href} aria-current={isActivePageLink(item.href) ? "page" : undefined}>
+                      {item.label}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Sidmeny">
+        <div class="sidebar-panel">
+          <p class="sidebar-eyebrow">{sidebarEyebrow}</p>
+          <h2>{sidebarTitle}</h2>
+          <p class="sidebar-copy">{sidebarCopy}</p>
+          <nav aria-label="Sidans sektioner">
+            <ul>
+              {
+                sidebarItems.map((item) => (
+                  <li>
+                    <a href={item.href} aria-current={isActivePageLink(item.href) ? "page" : undefined}>
+                      {item.label}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </nav>
+        </div>
+      </aside>
+
+      <main id="main-content" class="main-content">
+        <div class="page-meta-bar">
+          {backHref && <a class="back-link" href={backHref}>Tillbaka</a>}
+          <nav class="breadcrumbs" aria-label="Brödsmulor">
+            <ol>
+              {
+                breadcrumbs.map((crumb, index) => (
+                  <li>
+                    {index === breadcrumbs.length - 1 ? (
+                      <span aria-current="page">{crumb.label}</span>
+                    ) : (
+                      <a href={crumb.href}>{crumb.label}</a>
+                    )}
+                  </li>
+                ))
+              }
+            </ol>
+          </nav>
+          <div class="page-meta-subrow">
+            <p class="page-updated">
+              Senast uppdaterad: <time datetime={siteMeta.lastUpdatedIso}>{siteMeta.lastUpdatedLabel}</time>
+            </p>
+            <div class="page-meta-links" aria-label="Hjälplänkar">
+              <a href="/om-guiden">Om handboken</a>
+              <a href="/sok">Sök</a>
+            </div>
+          </div>
+        </div>
+
+        <slot />
+
+        {relatedLinks.length > 0 && <RelatedContent links={relatedLinks} />}
+      </main>
+    </div>
+
+    <footer class="site-footer" aria-label="Sidfot">
+      <div class="site-footer-inner">
+        <p class="site-footer-brand">CWas AI-handbok</p>
+        <p class="site-footer-meta">
+          Statisk referenssajt för vardagsanvändning. Senast uppdaterad:
+          <time datetime={siteMeta.lastUpdatedIso}> {siteMeta.lastUpdatedLabel}</time>
+        </p>
+        <nav class="site-footer-nav" aria-label="Sidfotsnavigation">
+          <a href="/">Start</a>
+          <a href="/sok">Sök</a>
+          <a href="/verktyg">Verktyg</a>
+          <a href="/arbetsfloden">Arbetsflöden</a>
+          <a href="/promptbibliotek">Promptbibliotek</a>
+          <a href="/integritet-gdpr">Integritet</a>
+          <a href="/tips-trix">Tips och trix</a>
+          <a href="/om-guiden">Om handboken</a>
+          <a href="/qa-checklista">QA-checklista</a>
+        </nav>
+      </div>
+    </footer>
+    <script is:inline define:vars={{ basePath }}>
+      (() => {
+        const base = typeof basePath === "string" ? basePath : "/";
+        if (!base || base === "/") return;
+
+        const normalizeHref = (href) => {
+          if (!href || !href.startsWith("/")) return href;
+          if (href.startsWith("//")) return href;
+          if (href === base || href.startsWith(`${base}/`)) return href;
+          return `${base}${href}`;
+        };
+
+        for (const anchor of document.querySelectorAll("a[href]")) {
+          const href = anchor.getAttribute("href");
+          if (!href || href.startsWith("#")) continue;
+          anchor.setAttribute("href", normalizeHref(href));
+        }
+      })();
+    </script>
+  </body>
+</html>

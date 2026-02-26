@@ -2,5 +2,6 @@
     "liveServer.settings.port": 5501,
     "liveServer.settings.ignoreFiles": [
         "**/includes/**"
-    ] 
+    ],
+    "dotnet.preferCSharpExtension": true
 }

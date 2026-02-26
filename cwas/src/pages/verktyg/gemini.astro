@@ -1,0 +1,119 @@
+---
+import ToolPageShell from "../../components/ToolPageShell.astro";
+---
+
+<ToolPageShell
+  toolName="Gemini"
+  slugPath="/verktyg/gemini"
+  shortDescription="Google-nära verktyg för brainstorming, skrivstöd och dokumentarbete. I källmaterialet ses Gemini som relevant främst när Google-miljö/integration är viktig, men inte alltid förstahandsval för CWas."
+  categories={["Skriv", "Debatt", "Akademiskt", "Integritet"]}
+  fitsForCWas={[
+    "Brainstorming och strukturstöd i vardagliga skrivuppgifter.",
+    "Arbetsflöden där Google Docs/Drive redan är centrala (om CWas använder sådan miljö).",
+    "Snabb omformulering och planeringshjälp i dokumentnära arbete.",
+    "Samtalsträning i verktyg med dialogfunktioner (beroende på aktuell plan/funktion)."
+  ]}
+  strengths={[
+    "Relevant när arbetet redan sker i Google-ekosystemet enligt underlagen.",
+    "Kan fungera för skrivstöd, struktur och brainstorming i vardagsflöden.",
+    "Kan vara ett alternativ för dialog/samtal beroende på funktion och plan.",
+    "Bred verktygsprofil för både text och research-liknande användning."
+  ]}
+  weaknesses={[
+    "Källmaterialet placerar ofta Gemini lägre än ChatGPT/Claude för CWas kärnbehov.",
+    "Upplevd nytta blir låg om CWas inte arbetar aktivt i Google-miljö.",
+    "Tillits- och integritetsfrågor kring Google-ekosystemet är ett uttalat tema i källorna.",
+    "Kan ge mindre unik nytta om andra verktyg redan täcker skrivande och debattträning."
+  ]}
+  useWhen={[
+    "Du redan arbetar i Google Docs/Drive och vill minska verktygsskiften.",
+    "Du behöver brainstorming, struktur eller första utkast snabbt.",
+    "Du vill testa samtalsfunktioner som alternativ till andra verktyg.",
+    "Du vill jämföra svar/ton med ChatGPT eller Claude i samma uppgift."
+  ]}
+  avoidWhen={[
+    "Du söker tydlig källhänvisning som huvudfunktion (Perplexity är ofta bättre för det i underlagen).",
+    "Du känner att Google-kopplingen ökar misstro eller distraktion i arbetet.",
+    "Du arbetar med material som kräver hög integritetsnivå eller lokal hantering."
+  ]}
+  workflowSteps={[
+    { title: "Välj uppgiftstyp", body: "Ange om du behöver brainstorming, omformulering, plan eller sammanfattning." },
+    { title: "Styr formatet hårt", body: "Be om rubriker, punktlistor, längd och markering av [KOLLA]/[OSÄKERT]." },
+    { title: "Jämför vid viktiga texter", body: "Kör gärna samma prompt i Claude/ChatGPT om texten är viktig för ton eller strategi." },
+    { title: "Slutgranska lokalt", body: "Kontrollera fakta, ton och lokal relevans innan du använder resultatet." }
+  ]}
+  privacySummary="Gemini bör behandlas som extern molntjänst i Google-ekosystemet. Källmaterialet pekar på att detta kan vara både styrka (integration) och en tvekan för CWas (tillit/bubbelrisk)."
+  privacyChecks={[
+    "Klistra inte in personuppgifter, elevdata eller känsliga ärenden.",
+    "Var extra tydlig med vad som är offentligt material vs internt underlag.",
+    "Använd anonymisering även i dokumentnära arbete.",
+    "Separera brainstorming från känsliga sakuppgifter."
+  ]}
+  factCheckNotes={[
+    "Begär [KOLLA] på alla sakpåståenden som ska användas i offentlig text eller muntlig argumentation.",
+    "Kontrollera att AI inte fyller i lokala detaljer (skola, kommun, beslut) som inte fanns i underlaget."
+  ]}
+  uncertainties={[
+    "Vilka integrations- och samtalsfunktioner som är tillgängliga beror på plan och aktuell produktversion.",
+    "Hur stor nytta Gemini ger jämfört med ChatGPT/Claude beror mycket på CWas faktiska Google-användning."
+  ]}
+  examplePrompts={[
+    {
+      id: "gemini-brainstorm",
+      title: "Brainstorming -> prioriterad lista",
+      prompt: `Hjälp mig brainstorma kring detta ämne på svenska: [ämne].
+
+Gör detta:
+1. Ge 12 idéer/förslag.
+2. Gruppera dem i teman.
+3. Prioritera de 5 mest realistiska för min vardag.
+4. Säg vad som kräver lokal anpassning med [OSÄKERT].
+5. Markera fakta/regelpåståenden med [KOLLA].`
+    },
+    {
+      id: "gemini-planutkast",
+      title: "Planutkast i dokumentnära format",
+      prompt: `Jag behöver ett tydligt utkast till en plan/dokumenttext.
+Skriv på enkel, professionell svenska.
+
+Format:
+- Syfte
+- Bakgrund
+- Förslag/åtgärder
+- Tidslinje
+- Uppföljning
+
+Regler:
+- Skriv konkret, utan administrativa floskler
+- Markera antaganden med [OSÄKERT]
+- Markera sådant som måste stämmas av mot lokala beslut med [KOLLA]
+
+Underlag:
+[klistra in]`
+    },
+    {
+      id: "gemini-jamforelse",
+      title: "Jämför två textversioner",
+      prompt: `Jämför två textversioner jag klistrar in.
+
+Bedöm:
+1. Tydlighet
+2. Ton (saklig/engagerad)
+3. Risk för missförstånd
+4. Eventuella faktapåståenden som behöver [KOLLA]
+5. Vilken version som passar bäst för [målgrupp]
+
+Ge även en förbättrad hybridversion.
+
+Version A:
+[text]
+
+Version B:
+[text]`
+    }
+  ]}
+  relatedLinks={[
+    { label: "Verktygsindex", href: "/verktyg", description: "Filtrera verktyg efter skriv/debatt/akademiskt/integritet." },
+    { label: "Betalval", href: "/verktyg/vilket-ska-jag-betala-for", description: "Se hur Gemini vägs mot andra alternativ i källorna." }
+  ]}
+/>

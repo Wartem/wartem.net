@@ -1,0 +1,106 @@
+---
+import ToolPageShell from "../../components/ToolPageShell.astro";
+---
+
+<ToolPageShell
+  toolName="Lokala alternativ"
+  slugPath="/verktyg/lokala-alternativ"
+  shortDescription="Samlingssida för lokala/offline eller mer integritetsfokuserade alternativ som nämns i källmaterialet (t.ex. Ollama, AnythingLLM, self-hostade upplägg och EU-orienterade alternativ)."
+  categories={["Skriv", "Akademiskt", "Integritet"]}
+  fitsForCWas={[
+    "Hög integritetsnivå är viktigare än låg lärtröskel.",
+    "Dokumentfrågor behöver hanteras lokalt/offline utan extern molntjänst.",
+    "CWas vill ha ett alternativ när känsliga arbetsunderlag inte bör lämna enheten.",
+    "Det finns tekniskt stöd eller vilja att acceptera högre installationsfriktion."
+  ]}
+  strengths={[
+    "Hög eller maximal integritetsnivå kan vara möjlig enligt källmaterialet.",
+    "Bra alternativ för dokumentarbete där extern uppladdning inte är lämplig.",
+    "Kan minska oro kring datainsamling och mikrofon-/kontoberoenden.",
+    "Ger CWas en tydlig 'plan B' för känsligare arbetsuppgifter."
+  ]}
+  weaknesses={[
+    "Högre lärtröskel, installation och underhåll än molnverktyg.",
+    "Kan ge sämre användarvänlighet eller sämre svensk kvalitet beroende på lokal modell/upplägg.",
+    "Kräver mer tid för felsökning, uppsättning och kvalitetstest.",
+    "Inte alltid realistiskt utan IT-stöd eller tydligt avsatt tid."
+  ]}
+  useWhen={[
+    "Du har dokument eller material som inte bör skickas till kommersiella molntjänster.",
+    "Integritet/policy väger tyngre än snabbast möjliga start.",
+    "Du vill testa lokal RAG/dokumentfrågor för protokoll, planer eller underlag.",
+    "Du vill bygga en trygg reservväg för känsligare arbetsflöden."
+  ]}
+  avoidWhen={[
+    "Du behöver snabb start idag utan teknisk konfiguration.",
+    "Du främst behöver debattträning eller snabbt kreativt skrivstöd i lågfriktionsläge.",
+    "Du saknar tid för installation, test och kvalitetssäkring."
+  ]}
+  workflowSteps={[
+    { title: "Definiera behovet först", body: "Klargör om målet är integritet, dokumentfrågor, offlinebruk eller policykrav." },
+    { title: "Börja litet", body: "Testa ett begränsat use case (t.ex. sammanfatta ett ofarligt dokument) innan du bygger större setup." },
+    { title: "Jämför kvalitet", body: "Jämför output mot befintligt molnverktyg på samma uppgift för att se vad du vinner/förlorar." },
+    { title: "Dokumentera beslut", body: "Skriv när lokalt alternativ ska användas och när molnverktyg fortfarande räcker." }
+  ]}
+  privacySummary="Den stora poängen här är integritet: källmaterialet lyfter lokala/offline upplägg som alternativ när material inte bör lämna datorn eller organisationens miljö. Samtidigt ökar teknisk och praktisk friktion."
+  privacyChecks={[
+    "Avgör först om uppgiften verkligen kräver lokal hantering.",
+    "Testa lokal lösning på ofarligt material innan du flyttar viktiga arbetsflöden.",
+    "Dokumentera vem som ansvarar för installation, uppdatering och felsökning.",
+    "Behåll anonymisering som vana även i lokal miljö."
+  ]}
+  factCheckNotes={[
+    "Lokalt = inte automatiskt bättre kvalitet. Faktakoll behövs fortfarande.",
+    "Verifiera vilka lokala verktyg/upplägg som faktiskt är tillgängliga för CWas i praktiken."
+  ]}
+  uncertainties={[
+    "Vilka modeller och svenska kvalitetsnivåer som fungerar bra lokalt varierar kraftigt.",
+    "Tillgänglighet, driftkrav och användarvänlighet beror på dator, resurser och teknisk hjälp.",
+    "EU-/lokala alternativ behöver bedömas utifrån faktisk policy och implementation, inte bara namn."
+  ]}
+  examplePrompts={[
+    {
+      id: "lokal-rag-sammanfatta",
+      title: "Lokal dokumentsammanfattning med kontrollmarkering",
+      prompt: `Arbeta bara utifrån det dokument jag ger.
+
+Gör detta på svenska:
+1. Sammanfatta huvudpunkter
+2. Lista beslut/ansvar/tidsangivelser
+3. Markera otydligheter med [OSÄKERT]
+4. Markera uppgifter som bör kontrolleras i originalet med [KOLLA]
+5. Skriv 5 frågor jag bör ställa innan dokumentet används vidare`
+    },
+    {
+      id: "lokal-rag-qa",
+      title: "Fråga-på-filer (mötesförberedelse)",
+      prompt: `Jag ska förbereda mig inför ett möte utifrån lokala dokument.
+
+Hjälp mig:
+1. Lista 7 viktigaste punkterna
+2. Lista 5 möjliga invändningar/frågor
+3. Skriv korta talpunkter
+4. Markera allt som inte är tydligt underbyggt med [OSÄKERT]
+5. Markera allt jag bör dubbelkolla i originalfiler med [KOLLA]`
+    },
+    {
+      id: "lokal-planutkast",
+      title: "Plan-/policyutkast från lokalt underlag",
+      prompt: `Skapa ett första utkast till plan/policy på svenska utifrån mitt lokala underlag.
+
+Krav:
+- Håll dig till underlaget
+- Skriv konkret, utan snömos
+- Markera antaganden med [OSÄKERT]
+- Markera regler/styrdokumentspåståenden med [KOLLA]
+- Lista 3 risker om jag använder texten utan manuell granskning
+
+Underlag:
+[klistra in / dokumentreferens]`
+    }
+  ]}
+  relatedLinks={[
+    { label: "Integritet och GDPR", href: "/integritet-gdpr", description: "Praktisk bedömning av risknivå och vad som får delas." },
+    { label: "Vilket ska jag betala för?", href: "/verktyg/vilket-ska-jag-betala-for", description: "Jämförelse av molnverktyg när lokalt alternativ inte behövs." }
+  ]}
+/>

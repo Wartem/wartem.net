@@ -1,0 +1,32 @@
+---
+import { fixSvText } from "../utils/fixSvText";
+
+interface Props {
+  title: string;
+  description?: string;
+  href?: string;
+  tag?: string;
+}
+
+const { title, description, href, tag } = Astro.props;
+const displayTitle = fixSvText(title);
+const displayDescription = description ? fixSvText(description) : undefined;
+const displayTag = tag ? fixSvText(tag) : undefined;
+---
+
+{
+  href ? (
+    <a class="card" href={href}>
+      {displayTag && <span class="card-tag">{displayTag}</span>}
+      <h3>{displayTitle}</h3>
+      {displayDescription && <p>{displayDescription}</p>}
+    </a>
+  ) : (
+    <article class="card">
+      {displayTag && <span class="card-tag">{displayTag}</span>}
+      <h3>{displayTitle}</h3>
+      {displayDescription && <p>{displayDescription}</p>}
+      <slot />
+    </article>
+  )
+}

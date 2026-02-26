@@ -1,0 +1,30 @@
+---
+interface Props {
+  id?: string;
+  eyebrow?: string;
+  title: string;
+  intro?: string;
+  items?: string[];
+  note?: string;
+}
+
+const { id, eyebrow = "Placeholder", title, intro, items = [], note } = Astro.props;
+---
+
+<section id={id} class="content-section">
+  <div class="section-header">
+    <p class="eyebrow">{eyebrow}</p>
+    <h2>{title}</h2>
+    {intro && <p>{intro}</p>}
+  </div>
+
+  {
+    items.length > 0 && (
+      <ul class="placeholder-list">
+        {items.map((item) => <li>{item}</li>)}
+      </ul>
+    )
+  }
+
+  {note && <p class="placeholder-note">{note}</p>}
+</section>
