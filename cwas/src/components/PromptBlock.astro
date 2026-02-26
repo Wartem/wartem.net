@@ -9,7 +9,10 @@ interface Props {
 
 const { id, title, prompt } = Astro.props;
 const displayTitle = fixSvText(title);
-const displayPrompt = fixSvText(prompt);
+const displayPrompt = fixSvText(prompt)
+  .replaceAll("\\r\\n", "\n")
+  .replaceAll("\\n", "\n")
+  .replaceAll("\\t", "\t");
 ---
 
 <section class="prompt-block" aria-labelledby={`${id}-title`}>

@@ -821,7 +821,7 @@ a {
 
 .card-tag {
   display: inline-block;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.75rem;
   padding: 0.15rem 0.45rem;
   border-radius: 999px;
   background: rgba(31, 107, 87, 0.1);
@@ -833,6 +833,8 @@ a {
 }
 
 .card h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
   font-size: 1.05rem;
 }
 

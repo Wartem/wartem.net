@@ -4,119 +4,119 @@
     "title": "Utkast från punkter",
     "category": "Skrivande",
     "tags": ["snabbstart", "struktur", "gratislage"],
-    "summary": "Gor ett kort utkast fran dina egna punkter utan att AI hittar pa detaljer.",
-    "prompt": "Skriv ett kort utkast pa svenska utifran mina punkter.\\n\\nKrav:\\n- Tydlig rubrik\\n- Tydlig tes i borjan\\n- Inga nya fakta\\n- Markera luckor med [OSAKERT]\\n- Markera faktapastaenden att kontrollera med [KOLLA]\\n\\nMina punkter:\\n[klistra in]"
+    "summary": "Gör ett kort utkast från dina egna punkter utan att AI hittar på detaljer.",
+    "prompt": "Skriv ett kort utkast på svenska utifrån mina punkter.\\n\\nKrav:\\n- Tydlig rubrik\\n- Tydlig tes i början\\n- Inga nya fakta\\n- Markera luckor med [OSÄKERT]\\n- Markera faktapåståenden att kontrollera med [KOLLA]\\n\\nMina punkter:\\n[klistra in]"
   },
   {
     "id": "skr-korta-ner",
     "title": "Kortare och tydligare text",
     "category": "Skrivande",
     "tags": ["redigering", "ton", "snabbstart"],
-    "summary": "Kortar texten utan att andra standpunkt eller sakinnehall.",
-    "prompt": "Korta ner texten 20-30% pa tydlig svenska utan att andra standpunkt eller sakinnehall.\\n\\nGor detta:\\n1. Skriv ny version\\n2. Markera 3 meningar som var otydliga\\n3. Markera faktapastaenden med [KOLLA]\\n\\nText:\\n[klistra in]"
+    "summary": "Kortar texten utan att ändra standpunkt eller sakinnehåll.",
+    "prompt": "Korta ner texten 20-30% på tydlig svenska utan att ändra standpunkt eller sakinnehåll.\\n\\nGör detta:\\n1. Skriv ny version\\n2. Markera 3 meningar som var otydliga\\n3. Markera faktapåståenden med [KOLLA]\\n\\nText:\\n[klistra in]"
   },
   {
     "id": "skr-tonjustera",
-    "title": "Tonjustera utan snoemos",
+    "title": "Tonjustera utan snömos",
     "category": "Skrivande",
     "tags": ["ton", "politik", "gratislage"],
-    "summary": "Gor texten mer saklig eller mer engagerad utan floskler.",
-    "prompt": "Justera tonen i texten pa svenska.\\n\\nValj malton: [saklig / engagerad / varm / formell]\\nKrav:\\n- Undvik snoemos och floskler\\n- Behall budskapet\\n- Ge 2 alternativ for inledning\\n- Markera faktapastaenden med [KOLLA]\\n\\nText:\\n[klistra in]"
+    "summary": "Gör texten mer saklig eller mer engagerad utan floskler.",
+    "prompt": "Justera tonen i texten på svenska.\\n\\nVälj målton: [saklig / engagerad / varm / formell]\\nKrav:\\n- Undvik snömos och floskler\\n- Behåll budskapet\\n- Ge 2 alternativ för inledning\\n- Markera faktapåståenden med [KOLLA]\\n\\nText:\\n[klistra in]"
   },
   {
     "id": "debatt-tes-pitch",
     "title": "Tes till 20-sekunders pitch",
     "category": "Debatt",
     "tags": ["debatt", "tes", "snabbstart", "gratislage"],
-    "summary": "Tranar kort muntlig formulering i textlage.",
-    "prompt": "Du ar min debattcoach pa svenska.\\n\\nGor detta:\\n1. Be mig skriva min tes i 1 mening\\n2. Hjalp mig gora den till en 20-sekunders pitch\\n3. Ge feedback pa tydlighet och risk for missforstand\\n4. Ge en battre version som later som mig\\n\\nStarta med: 'Skriv din tes i en mening.'"
+    "summary": "Tränar kort muntlig formulering i textläge.",
+    "prompt": "Du är min debattcoach på svenska.\\n\\nGör detta:\\n1. Be mig skriva min tes i 1 mening\\n2. Hjälp mig göra den till en 20-sekunders pitch\\n3. Ge feedback på tydlighet och risk för missförstånd\\n4. Ge en bättre version som låter som mig\\n\\nStarta med: 'Skriv din tes i en mening.'"
   },
   {
     "id": "debatt-motargument",
     "title": "Motargument och svar",
     "category": "Debatt",
     "tags": ["debatt", "motargument", "faktakoll"],
-    "summary": "Far rimliga invandningar och forbattrade svar utan halmgubbar.",
-    "prompt": "Spela en saklig men skeptisk motdebattor pa svenska.\\n\\nAmne: [amne]\\nMin tes: [tes]\\n\\nGor detta:\\n- Ge 3 rimliga invandningar (inte halmgubbar)\\n- Lat mig svara\\n- Ge kort feedback pa strategi och tydlighet\\n- Markera faktapastaenden med [KOLLA]"
+    "summary": "Får rimliga invändningar och förbättrade svar utan halmgubbar.",
+    "prompt": "Spela en saklig men skeptisk motdebattör på svenska.\\n\\nÄmne: [ämne]\\nMin tes: [tes]\\n\\nGör detta:\\n- Ge 3 rimliga invändningar (inte halmgubbar)\\n- Låt mig svara\\n- Ge kort feedback på strategi och tydlighet\\n- Markera faktapåståenden med [KOLLA]"
   },
   {
     "id": "debatt-brygga",
-    "title": "Halla linjen (brygga tillbaka)",
+    "title": "Hålla linjen (brygga tillbaka)",
     "category": "Debatt",
     "tags": ["debatt", "strategi", "snabbstart"],
-    "summary": "Tranar att inte fastna i sidospår under press.",
-    "prompt": "Vi tranar pa att halla linjen i debatt.\\n\\nDu ska:\\n- Stalla 1 huvudfraga\\n- Forsoka dra mig till 2 sidospar\\n- Efter varje svar saga om jag holl linjen\\n- Ge en kort 'brygga tillbaka'-formulering\\n\\nMarkera faktapastaenden med [KOLLA]."
+    "summary": "Tränar att inte fastna i sidospår under press.",
+    "prompt": "Vi tränar på att hålla linjen i debatt.\\n\\nDu ska:\\n- Ställa 1 huvudfråga\\n- Försöka dra mig till 2 sidospår\\n- Efter varje svar säga om jag höll linjen\\n- Ge en kort 'brygga tillbaka'-formulering\\n\\nMarkera faktapåståenden med [KOLLA]."
   },
   {
     "id": "akad-sammanfattning",
-    "title": "Abstract till svensk oversikt",
+    "title": "Abstract till svensk översikt",
     "category": "Akademiskt",
     "tags": ["akademiskt", "sammanfattning", "ordlista", "gratislage"],
-    "summary": "Snabb svensk oversikt med osakerhetsmarkeringar fran abstract eller utdrag.",
-    "prompt": "Arbeta bara utifran underlaget jag ger.\\n\\nGor detta pa svenska:\\n1. Sammanfatta (max 120 ord)\\n2. Lista 8 facktermer med kort forklaring\\n3. Skriv 5 kritiska fragor till studien\\n4. Markera det som inte framgar med [OSAKERT]\\n5. Markera det jag maste kontrollera i originalet med [KOLLA]\\n\\nUnderlag:\\n[klistra in abstract/utdrag]"
+    "summary": "Snabb svensk översikt med osäkerhetsmarkeringar från abstract eller utdrag.",
+    "prompt": "Arbeta bara utifrån underlaget jag ger.\\n\\nGör detta på svenska:\\n1. Sammanfatta (max 120 ord)\\n2. Lista 8 facktermer med kort förklaring\\n3. Skriv 5 kritiska frågor till studien\\n4. Markera det som inte framgår med [OSÄKERT]\\n5. Markera det jag måste kontrollera i originalet med [KOLLA]\\n\\nUnderlag:\\n[klistra in abstract/utdrag]"
   },
   {
     "id": "akad-metod-resultat",
-    "title": "Forsta metod och resultat",
+    "title": "Förstå metod och resultat",
     "category": "Akademiskt",
     "tags": ["akademiskt", "metod", "faktakoll"],
     "summary": "Bryter ut metod/resultat i enkel svenska och markerar luckor.",
-    "prompt": "Forklara texten nedan pa enkel svenska med fokus pa metod och resultat.\\n\\nFormat:\\n- Syfte\\n- Metod\\n- Resultat\\n- Begransningar\\n\\nKrav:\\n- Inga gissningar\\n- [OSAKERT] om underlaget inte racker\\n- [KOLLA] for siffror, urval och exakta resultat\\n\\nText:\\n[klistra in]"
+    "prompt": "Förklara texten nedan på enkel svenska med fokus på metod och resultat.\\n\\nFormat:\\n- Syfte\\n- Metod\\n- Resultat\\n- Begränsningar\\n\\nKrav:\\n- Inga gissningar\\n- [OSÄKERT] om underlaget inte räcker\\n- [KOLLA] för siffror, urval och exakta resultat\\n\\nText:\\n[klistra in]"
   },
   {
     "id": "akad-seminariefrgor",
     "title": "Seminariefrågor + korta svar",
     "category": "Akademiskt",
     "tags": ["akademiskt", "seminarium", "snabbstart"],
-    "summary": "Genererar fragor du kan fa pa seminarium och korta svarsalternativ.",
-    "prompt": "Jag ska presentera en artikel pa seminarium.\\n\\nUtifran mitt underlag, skriv:\\n1. 5 troliga seminariefragor\\n2. Korta svar (2-3 meningar)\\n3. Vad jag inte kan saga sakert utan att kontrollera mer [KOLLA]/[OSAKERT]\\n\\nUnderlag:\\n[klistra in anteckningar/abstract]"
+    "summary": "Genererar frågor du kan få på seminarium och korta svarsalternativ.",
+    "prompt": "Jag ska presentera en artikel på seminarium.\\n\\nUtifrån mitt underlag, skriv:\\n1. 5 troliga seminariefrågor\\n2. Korta svar (2-3 meningar)\\n3. Vad jag inte kan säga säkert utan att kontrollera mer [KOLLA]/[OSÄKERT]\\n\\nUnderlag:\\n[klistra in anteckningar/abstract]"
   },
   {
     "id": "mik-lektionside",
-    "title": "MIK-ovning pa 10-20 min",
+    "title": "MIK-övning på 10-20 min",
     "category": "Skolbibliotek/MIK",
     "tags": ["mik", "lektion", "planering", "gratislage"],
-    "summary": "Skapar en kort MIK-aktivitet med tydligt syfte och enkel uppfoljning.",
-    "prompt": "Skapa en kort MIK-ovning pa svenska (10-20 min).\\n\\nAmne: [amne]\\nMalgrupp: [arskurs/alder]\\n\\nFormat:\\n- Syfte\\n- Material\\n- Genomforande steg for steg\\n- 3 fragor till eleverna\\n- Enkel uppfoljning\\n\\nMarkera lokala antaganden med [OSAKERT] och styrdokumentspastaenden med [KOLLA]."
+    "summary": "Skapar en kort MIK-aktivitet med tydligt syfte och enkel uppföljning.",
+    "prompt": "Skapa en kort MIK-övning på svenska (10-20 min).\\n\\nÄmne: [ämne]\\nMålgrupp: [årskurs/ålder]\\n\\nFormat:\\n- Syfte\\n- Material\\n- Genomförande steg för steg\\n- 3 frågor till eleverna\\n- Enkel uppföljning\\n\\nMarkera lokala antaganden med [OSÄKERT] och styrdokumentspåståenden med [KOLLA]."
   },
   {
     "id": "mik-differentiera",
-    "title": "Differentiera aktivitet (enklare/fordjupning)",
+    "title": "Differentiera aktivitet (enklare/fördjupning)",
     "category": "Skolbibliotek/MIK",
     "tags": ["mik", "differentiering", "lektion"],
-    "summary": "Tar en aktivitet och gor två nivaer for olika behov.",
-    "prompt": "Jag har en aktivitet for skolbibliotek/MIK.\\nGor tva versioner:\\n- Enklare\\n- Fordjupning\\n\\nBehall samma syfte.\\nSkriv pa enkel svenska.\\nMarkera lokala antaganden med [OSAKERT].\\n\\nAktivitet:\\n[klistra in]"
+    "summary": "Tar en aktivitet och gör två nivåer för olika behov.",
+    "prompt": "Jag har en aktivitet för skolbibliotek/MIK.\\nGör två versioner:\\n- Enklare\\n- Fördjupning\\n\\nBehåll samma syfte.\\nSkriv på enkel svenska.\\nMarkera lokala antaganden med [OSÄKERT].\\n\\nAktivitet:\\n[klistra in]"
   },
   {
     "id": "skolbibliotek-arshjulpunkt",
-    "title": "Arshjulspunkt med uppfoljning",
+    "title": "Årshjulspunkt med uppföljning",
     "category": "Skolbibliotek/MIK",
     "tags": ["planering", "arshjul", "uppfoljning"],
-    "summary": "Formulerar en arshjulspunkt med ansvar, tidsatgang och mattpunkt.",
-    "prompt": "Hjalp mig skriva en punkt till skolbibliotekets arshjul pa svenska.\\n\\nGor detta:\\n- Aktivitet (kort och konkret)\\n- Malgrupp\\n- Nar (period/manad)\\n- Samverkan/ansvar\\n- Enkel uppfoljning (1-2 mattpunkter)\\n\\nMarkera lokala beslut/krav med [KOLLA] och antaganden med [OSAKERT].\\n\\nUnderlag:\\n[klistra in]"
+    "summary": "Formulerar en årshjulspunkt med ansvar, tidsåtgång och mätpunkt.",
+    "prompt": "Hjälp mig skriva en punkt till skolbibliotekets årshjul på svenska.\\n\\nGör detta:\\n- Aktivitet (kort och konkret)\\n- Målgrupp\\n- När (period/månad)\\n- Samverkan/ansvar\\n- Enkel uppföljning (1-2 mätpunkter)\\n\\nMarkera lokala beslut/krav med [KOLLA] och antaganden med [OSÄKERT].\\n\\nUnderlag:\\n[klistra in]"
   },
   {
     "id": "namnd-sammanfatta-underlag",
     "title": "Sammanfatta underlag till beslutspunkt",
     "category": "Namndvardag",
     "tags": ["namndvardag", "sammanfattning", "faktakoll", "gratislage"],
-    "summary": "Kort briefing av underlag med kontrollmarkeringar och fragor.",
-    "prompt": "Sammanfatta underlaget pa svenska for forberedelse infor beslut/mote.\\n\\nFormat:\\n- 5-7 huvudpunkter\\n- Vad som ar viktigast att forsta\\n- 3 mojliga fragor/invandningar\\n- Vad som maste dubbelkollas [KOLLA]\\n- Vad som ar oklart i underlaget [OSAKERT]\\n\\nUnderlag:\\n[klistra in]"
+    "summary": "Kort briefing av underlag med kontrollmarkeringar och frågor.",
+    "prompt": "Sammanfatta underlaget på svenska för förberedelse inför beslut/möte.\\n\\nFormat:\\n- 5-7 huvudpunkter\\n- Vad som är viktigast att förstå\\n- 3 möjliga frågor/invändningar\\n- Vad som måste dubbelkollas [KOLLA]\\n- Vad som är oklart i underlaget [OSÄKERT]\\n\\nUnderlag:\\n[klistra in]"
   },
   {
     "id": "namnd-talpunkter",
-    "title": "Talpunkter for mote eller media",
+    "title": "Talpunkter för möte eller media",
     "category": "Namndvardag",
     "tags": ["namndvardag", "talpunkter", "ton"],
-    "summary": "Skapar korta talpunkter i saklig ton utan for mycket formalism.",
-    "prompt": "Skriv korta talpunkter pa svenska utifran mitt underlag.\\n\\nKrav:\\n- Saklig, tydlig ton\\n- Inga floskler\\n- 1 huvudbudskap + 3 stodpunkter\\n- 2 fragor jag kan fa och korta svar\\n- Markera faktapastaenden med [KOLLA]\\n\\nUnderlag:\\n[klistra in]"
+    "summary": "Skapar korta talpunkter i saklig ton utan för mycket formalism.",
+    "prompt": "Skriv korta talpunkter på svenska utifrån mitt underlag.\\n\\nKrav:\\n- Saklig, tydlig ton\\n- Inga floskler\\n- 1 huvudbudskap + 3 stödpunkter\\n- 2 frågor jag kan få och korta svar\\n- Markera faktapåståenden med [KOLLA]\\n\\nUnderlag:\\n[klistra in]"
   },
   {
     "id": "namnd-remiss-sprak",
-    "title": "Spraklig skarpning av formell text",
+    "title": "Språklig skärpning av formell text",
     "category": "Namndvardag",
     "tags": ["namndvardag", "redigering", "ton", "struktur"],
-    "summary": "Gor formell text tydligare utan att anda sakinnehall.",
-    "prompt": "Gor texten tydligare och mer lattlast pa svenska utan att andra sakinnehall.\\n\\nGor detta:\\n1. Forbattrad version\\n2. Lista 3 otydliga meningar och battre alternativ\\n3. Markera fakta/regelpastaenden med [KOLLA]\\n4. Markera oklara delar med [OSAKERT]\\n\\nText:\\n[klistra in]"
+    "summary": "Gör formell text tydligare utan att ändra sakinnehåll.",
+    "prompt": "Gör texten tydligare och mer lättläst på svenska utan att ändra sakinnehåll.\\n\\nGör detta:\\n1. Förbättrad version\\n2. Lista 3 otydliga meningar och bättre alternativ\\n3. Markera fakta/regelpåståenden med [KOLLA]\\n4. Markera oklara delar med [OSÄKERT]\\n\\nText:\\n[klistra in]"
   }
 ]
