@@ -309,6 +309,11 @@ a {
   gap: 1rem;
 }
 
+.main-content > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
 .page-meta-bar {
   display: grid;
   gap: 0.35rem;
@@ -341,6 +346,7 @@ a {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  min-width: 0;
   gap: 0.35rem;
   align-items: center;
   color: var(--muted);
@@ -350,6 +356,7 @@ a {
 .breadcrumbs li {
   display: inline-flex;
   align-items: center;
+  min-width: 0;
   gap: 0.35rem;
 }
 
@@ -360,6 +367,7 @@ a {
 
 .breadcrumbs a {
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .breadcrumbs a:hover,
@@ -371,6 +379,7 @@ a {
 .breadcrumbs [aria-current="page"] {
   color: #24332c;
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
 .page-meta-subrow {
@@ -512,6 +521,11 @@ a {
   margin-top: 0.9rem;
   display: grid;
   gap: 0.75rem;
+  min-width: 0;
+}
+
+.stack > * {
+  min-width: 0;
 }
 
 .tag-list {
@@ -1001,6 +1015,8 @@ a {
   border-radius: var(--radius-sm);
   background: var(--panel-strong);
   padding: 0.9rem;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .comparison-table h3 {
@@ -1010,6 +1026,7 @@ a {
 .table-wrap {
   margin-top: 0.55rem;
   overflow-x: auto;
+  max-width: 100%;
 }
 
 .comparison-table table {
@@ -1115,14 +1132,127 @@ a {
 }
 
 @media (max-width: 640px) {
+  .app-shell {
+    padding-inline: 0;
+    padding-top: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .main-content {
+    gap: 0.75rem;
+  }
+
   .topbar-inner {
     padding-inline: 0.8rem;
   }
 
+  .page-meta-bar,
   .hero,
   .content-section {
     padding: 0.9rem;
-    border-radius: 16px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .page-meta-subrow {
+    align-items: flex-start;
+  }
+
+  .page-updated {
+    min-width: 0;
+    flex: 1 1 100%;
+  }
+
+  .page-meta-links {
+    min-width: 0;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.5rem 0.8rem;
+  }
+
+  .page-meta-links a {
+    overflow-wrap: anywhere;
+  }
+
+  .breadcrumbs {
+    min-width: 0;
+  }
+
+  .hero h1 {
+    max-width: none;
+    font-size: clamp(1.55rem, 8vw, 2rem);
+  }
+
+  .lead {
+    max-width: none;
+  }
+
+  .section-header,
+  .stack {
+    min-width: 0;
+  }
+
+  .comparison-table {
+    padding: 0.75rem;
+  }
+
+  .comparison-table h3 {
+    margin-bottom: 0.35rem;
+  }
+
+  .table-wrap {
+    margin-top: 0.45rem;
+    overflow-x: visible;
+    max-width: 100%;
+  }
+
+  .comparison-table table {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .comparison-table thead {
+    display: none;
+  }
+
+  .comparison-table tbody,
+  .comparison-table tr,
+  .comparison-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .comparison-table tr {
+    border-top: 1px solid var(--line);
+    padding: 0.1rem 0;
+  }
+
+  .comparison-table tr:first-child {
+    border-top: 0;
+  }
+
+  .comparison-table td {
+    border-bottom: 0;
+    padding: 0.45rem 0.2rem;
+    overflow-wrap: anywhere;
+  }
+
+  .comparison-table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 0.18rem;
+    color: #203029;
+    font-size: 0.76rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .prompt-block pre,
+  .table-wrap {
+    overscroll-behavior-x: contain;
   }
 
   .prompt-header {

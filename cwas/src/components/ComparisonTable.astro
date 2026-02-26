@@ -21,7 +21,7 @@ const { title, columns, rows } = Astro.props;
         {
           rows.map((row) => (
             <tr>
-              {row.map((cell) => <td>{cell}</td>)}
+              {row.map((cell, cellIndex) => <td data-label={columns[cellIndex] ?? ""}>{cell}</td>)}
             </tr>
           ))
         }
