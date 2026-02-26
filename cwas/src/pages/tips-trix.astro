@@ -1,0 +1,217 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import Callout from "../components/Callout.astro";
+import Checklist from "../components/Checklist.astro";
+import ComparisonTable from "../components/ComparisonTable.astro";
+import StepByStep from "../components/StepByStep.astro";
+
+const sidebarItems = [
+  { label: "Översikt", href: "#oversikt" },
+  { label: "Prompting", href: "#prompting" },
+  { label: "Kvalitetskontroll", href: "#kvalitetskontroll" },
+  { label: "Jämför verktyg", href: "#jamnfor-verktyg" },
+  { label: "Effektivisering", href: "#effektivisering" },
+  { label: "Vanliga fallgropar", href: "#vanliga-fallgropar" }
+];
+
+const promptingChecklist = [
+  "Skriv alltid uppgift + mål + format (vad du vill få ut).",
+  "Ge underlag i punktform om du har bråttom, det räcker ofta.",
+  "Be om kort svar först, fördjupa i steg.",
+  "Markera osäkerhet: be om [KOLLA] och [OSÄKERT].",
+  "Be om en kritisk runda innan du använder svaret."
+];
+
+const qualitySteps = [
+  {
+    title: "Skilj form från fakta",
+    body: "Ett välskrivet svar kan fortfarande vara fel. Bedöm språk och sanningshalt separat."
+  },
+  {
+    title: "Kör kritisk runda",
+    body: "Be AI lista svagheter, invändningar och vad som måste kontrolleras innan du går vidare."
+  },
+  {
+    title: "Verifiera i källa",
+    body: "Kolla siffror, citat, datum, beslut och sakpåståenden i primärkälla eller originalunderlag."
+  },
+  {
+    title: "Behåll CWas röst",
+    body: "Justera ton, tempo och formulering så texten låter som CWas, inte generisk AI-text."
+  }
+];
+
+const compareColumns = ["Situation", "Bra strategi", "Varför", "Vanlig fälla"];
+const compareRows = [
+  [
+    "Viktig offentlig text",
+    "Skriv i Claude/ChatGPT + faktakolla i Perplexity/källor",
+    "Separat styrka för språk vs källspår",
+    "Att lita på första skrivsvar utan kontroll"
+  ],
+  [
+    "Debattträning",
+    "Ett dialogverktyg + friktionsprompt",
+    "Tränar strategi och tydlighet under press",
+    "Att AI bara håller med"
+  ],
+  [
+    "Akademisk överblick",
+    "Överblick/ordlista + separat kontroll i originaltext",
+    "Snabb förståelse utan att tappa spårbarhet",
+    "Att presentera AI-tolkning som om den vore artikelns exakta innehåll"
+  ],
+  [
+    "Språkputs på färdig text",
+    "Språkstöd som sista steg",
+    "Snabb kvalitetshöjning med låg friktion",
+    "Att låta språkverktyg ändra betydelse"
+  ]
+];
+
+const efficiencyChecklist = [
+  "Spara 5-10 prompts du faktiskt använder (inte 50 som ser bra ut).",
+  "Bygg rutiner per uppgift: skrivande, debatt, artikel, planering.",
+  "Återanvänd rubrikstrukturer och checklistor.",
+  "Jobba i korta pass: 10, 20 eller 30 minuter med tydligt mål.",
+  "Avsluta varje pass med nästa steg i en rad."
+];
+
+const pitfallsChecklist = [
+  "För bred prompt: AI får gissa vad du egentligen menar.",
+  "För mycket underlag: du klistrar in mer än som behövs.",
+  "För snabb tillit: du använder texten innan faktakoll.",
+  "För lite friktion: AI får aldrig kritisera eller invända.",
+  "För mycket verktygsbyte: du tappar tid i stället för att vinna tid."
+];
+---
+
+<BaseLayout
+  title="Tips och trix | CWas AI-handbok"
+  currentPath="/tips-trix"
+  sidebarEyebrow="Tips"
+  sidebarTitle="Tips och trix"
+  sidebarCopy="Praktiska arbetssätt för prompting, kvalitet, verktygsval och vardagseffektivitet."
+  sidebarItems={sidebarItems}
+>
+  <section id="oversikt" class="hero">
+    <p class="eyebrow">Tips och trix</p>
+    <h1>Praktiska AI-vanor som sparar tid och minskar fel</h1>
+    <p class="lead">
+      Den här sidan samlar korta, återanvändbara arbetssätt för CWas vardag: hur du skriver bättre prompts, kvalitetssäkrar svar,
+      väljer rätt verktyg i rätt läge och undviker vanliga misstag under tidspress.
+    </p>
+    <div class="hero-grid">
+      <Card title="Promptbibliotek" href="/promptbibliotek" description="Filtrera och kopiera korta promptmallar." tag="Prompts" />
+      <Card title="Arbetsflöden" href="/arbetsfloden" description="Tidsatta steg-för-steg-flöden för vanliga uppgifter." tag="Workflow" />
+      <Card title="Integritet och trygg användning" href="/integritet-gdpr" description="Praktiska regler före du klistrar in underlag." tag="Trygghet" />
+    </div>
+  </section>
+
+  <section id="prompting" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Teknik</p>
+      <h2>Prompting som ger bättre svar (utan att bli långt)</h2>
+      <p>
+        Källmaterialet pekar tydligt på detta: när instruktionen blir tydligare blir svaren mer användbara. Nyckeln är inte långa prompts, utan rätt information i rätt ordning.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Checklist title="Fem promptvanor som ger effekt" items={promptingChecklist} />
+      <Callout title="Kort prompt fungerar ofta bäst" variant="tip">
+        Börja med en kort, tydlig instruktion och lägg till krav i nästa steg. Det sparar tid och minskar risken för generiska långsvar.
+      </Callout>
+      <Callout title="Bra standardrad" variant="info">
+        Lägg gärna till: <code>Markera osäkra delar med [OSÄKERT] och faktapåståenden jag bör kontrollera med [KOLLA]</code>.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="kvalitetskontroll" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Kvalitet</p>
+      <h2>Kvalitetskontroll och faktagranskning</h2>
+      <p>
+        Målet är inte att misstro allt, utan att ha en snabb rutin för att skilja språkstöd från sakstöd. Det är särskilt viktigt för offentlig text, debatt och akademiska sammanfattningar.
+      </p>
+    </div>
+
+    <div class="stack">
+      <StepByStep title="Snabb kvalitetsrutin" steps={qualitySteps} />
+      <Callout title="Yes-man-problemet" variant="warning">
+        AI kan vara för instämmande om du inte ber om kritik. Be därför aktivt om motargument, svagheter och otydligheter i svaret.
+      </Callout>
+      <Callout title="Citat och siffror" variant="warning">
+        Verifiera alltid citat, statistik och exakta formuleringar i extern källa eller originalunderlag innan du publicerar eller framför dem.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="jamnfor-verktyg" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Strategi</p>
+      <h2>När det lönar sig att jämföra verktyg</h2>
+      <p>
+        Jämförelse är mest användbart när uppgiften är viktig eller när du vill skilja på skrivhjälp och faktakontroll. För vardagsarbete räcker ofta ett stabilt huvudflöde.
+      </p>
+    </div>
+
+    <div class="stack">
+      <ComparisonTable title="När jämförelse ger mest nytta" columns={compareColumns} rows={compareRows} />
+      <Callout title="Bra tumregel" variant="tip">
+        Jämför verktyg när texten är viktig, tiden är knapp och fel blir dyra. Annars: kör ditt standardflöde och lägg tiden på granskning i stället.
+      </Callout>
+      <Card
+        title="Verktygsindex med filter"
+        href="/verktyg"
+        description="Filtrera verktyg efter Skriv, Debatt, Akademiskt eller Integritet."
+        tag="Verktyg"
+      />
+    </div>
+  </section>
+
+  <section id="effektivisering" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Tempo</p>
+      <h2>Effektivisering med mallar och återanvändning</h2>
+      <p>
+        Den största tidsvinsten kommer ofta inte från "bättre modell", utan från bättre vana: färdiga startprompts, tydliga arbetsflöden och små checklistor som går att använda direkt.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Checklist title="Effektiviseringsvanor som håller över tid" items={efficiencyChecklist} />
+      <div class="cards-grid">
+        <Card title="Promptbibliotek" href="/promptbibliotek" description="Korta mallar i datafil med filtrering + kopiera." tag="Snabbt" />
+        <Card title="Intern sök" href="/sok" description="Hitta prompt, verktyg eller workflow direkt." tag="Sök" />
+        <Card title="Arbetsflöden" href="/arbetsfloden" description="Kör 10/20/30-minutersflöden utan omstartstrassel." tag="Workflow" />
+        <Card title="Verktygsguide" href="/verktyg" description="Välj verktyg efter uppgift, inte vana." tag="Valstöd" />
+      </div>
+      <Callout title="Minsta möjliga rutin" variant="info">
+        Om du bara gör en sak: spara tre prompts du använder ofta och en checklista för [KOLLA]/[OSÄKERT]. Det ger direkt effekt.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="vanliga-fallgropar" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Undvik</p>
+      <h2>Vanliga fallgropar (och hur du märker dem tidigt)</h2>
+      <p>
+        De flesta problem kommer inte från "fel verktyg", utan från tempo, otydligt syfte eller att granskningen hoppades över. Här är de vanligaste tecknen att stanna upp.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Checklist title="Vanliga misstag" items={pitfallsChecklist} />
+      <Callout title="Stanna upp om..." variant="warning">
+        Du märker att svaret låter bra men du inte kan säga vad som faktiskt bygger på underlag, vad som är tolkning och vad du fortfarande behöver kontrollera.
+      </Callout>
+      <Callout title="Bra återställning" variant="tip">
+        Gå tillbaka till tre frågor: Vad är uppgiften? Vad vet jag säkert? Vad behöver [KOLLA]? Starta sedan om med kortare prompt.
+      </Callout>
+    </div>
+  </section>
+</BaseLayout>

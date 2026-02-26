@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import Callout from "../components/Callout.astro";
+
+const sidebarItems = [
+  { label: "404", href: "#oversikt" },
+  { label: "Snabblänkar", href: "#snabblankar" }
+];
+---
+
+<BaseLayout
+  title="Sidan hittades inte | CWas AI-handbok"
+  currentPath="/404"
+  sidebarEyebrow="404"
+  sidebarTitle="Sidan hittades inte"
+  sidebarCopy="Använd snabblänkarna för att komma tillbaka till handboken."
+  sidebarItems={sidebarItems}
+>
+  <section id="oversikt" class="hero">
+    <p class="eyebrow">404</p>
+    <h1>Den sidan finns inte (eller har flyttats)</h1>
+    <p class="lead">
+      Länken kan vara gammal eller felstavad. Använd snabblänkarna nedan eller intern sök för att hitta rätt sida.
+    </p>
+    <div class="stack">
+      <Callout title="Snabbaste väg tillbaka" variant="tip">
+        Börja i <a href="/sok">Sök</a> om du letar efter ett verktyg, en prompt eller ett arbetsflöde.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="snabblankar" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Snabblänkar</p>
+      <h2>Vanliga vägar tillbaka</h2>
+      <p>Startpunkter som täcker de flesta behov i handboken.</p>
+    </div>
+    <div class="cards-grid">
+      <Card title="Start" href="/" description="Introduktion och snabba startspår." tag="Start" />
+      <Card title="Sök" href="/sok" description="Sök i sidor, sektioner, verktyg och prompts." tag="Sök" />
+      <Card title="Verktyg" href="/verktyg" description="Filtrera och jämför verktyg." tag="Verktyg" />
+      <Card title="Arbetsflöden" href="/arbetsfloden" description="Tidsatta workflows med prompts och checklistor." tag="Workflow" />
+      <Card title="Promptbibliotek" href="/promptbibliotek" description="Filtrera och kopiera prompts." tag="Prompts" />
+      <Card title="Integritet och trygg användning" href="/integritet-gdpr" description="Praktiska regler före du klistrar in underlag." tag="Trygghet" />
+    </div>
+  </section>
+</BaseLayout>

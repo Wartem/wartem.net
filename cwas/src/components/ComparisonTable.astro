@@ -1,0 +1,31 @@
+---
+interface Props {
+  title?: string;
+  columns: string[];
+  rows: string[][];
+}
+
+const { title, columns, rows } = Astro.props;
+---
+
+<section class="comparison-table">
+  {title && <h3>{title}</h3>}
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          {columns.map((column) => <th scope="col">{column}</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        {
+          rows.map((row) => (
+            <tr>
+              {row.map((cell) => <td>{cell}</td>)}
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</section>

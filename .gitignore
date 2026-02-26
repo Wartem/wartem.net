@@ -1,2 +1,9 @@
-/DELETE_THIS
-/draumr/primal_norse/old
+draumr
+/apps/weather
+/draumr/primal_norse
+
+/cwas/node_modules/
+/cwas/.astro/
+/cwas/dist/
+/cwas/delete/
+apps/artviewer/NGArt Viewer 3/obj/

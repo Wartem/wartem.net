@@ -1,0 +1,144 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Callout from "../components/Callout.astro";
+import Checklist from "../components/Checklist.astro";
+import StepByStep from "../components/StepByStep.astro";
+import Card from "../components/Card.astro";
+
+const sidebarItems = [
+  { label: "Översikt", href: "#oversikt" },
+  { label: "Underlag", href: "#underlag" },
+  { label: "Hur guiden byggts", href: "#hur-guiden-byggts" },
+  { label: "Hur den används", href: "#hur-den-anvands" },
+  { label: "Uppdatering", href: "#uppdatering" }
+];
+
+const sourceChecklist = [
+  "Guiden bygger på de underlag som hör till CWas-projektet i denna arbetsyta.",
+  "Rekommendationer och prioriteringar är sammanvägda från de dokumenten.",
+  "Verktygsjämförelser på sajten återger källornas resonemang och väger ihop dem praktiskt.",
+  "Sajten ska läsas som arbetsstöd, inte som ersättning för lokala riktlinjer eller officiella villkor."
+];
+
+const buildSteps = [
+  {
+    title: "Samla och strukturera",
+    body: "Underlagen delades upp i teman: profil/behov, verktyg, arbetsflöden, prompts och trygg användning."
+  },
+  {
+    title: "Omskriv till handbok",
+    body: "Innehållet skrevs om till korta, pedagogiska avsnitt med fokus på vardagsnytta, tydlighet och återanvändning."
+  },
+  {
+    title: "Bygg som statisk sajt",
+    body: "Sajten byggs som statisk webbplats utan backend, med filtrering och sök som fungerar i webbläsaren."
+  },
+  {
+    title: "Lägg till arbetsstöd",
+    body: "Steg-för-steg-flöden, checklistor, prompts, verktygssidor och sök kopplas ihop med relaterat innehåll."
+  }
+];
+
+const usageChecklist = [
+  "Börja i Start eller Intern sök när du är stressad.",
+  "Använd Arbetsflöden när du redan vet vilken uppgift du ska göra.",
+  "Använd Verktyg när du behöver välja rätt verktyg eller jämföra alternativ.",
+  "Använd Promptbibliotek när du vill kopiera en kort mall och komma igång snabbt.",
+  "Använd Integritet och trygg användning innan du klistrar in underlag."
+];
+
+const updateChecklist = [
+  "Kontrollera priser, kvoter och funktioner i officiella källor innan köp eller policybeslut.",
+  "Uppdatera verktygssidor när arbetssätt eller prioriteringar ändras i praktiken.",
+  "Lägg till nya prompts först efter att de testats i vardagen.",
+  "Behåll korta och tydliga formuleringar, handboken ska vara snabb att använda."
+];
+---
+
+<BaseLayout
+  title="Om handboken | CWas AI-handbok"
+  currentPath="/om-guiden"
+  sidebarEyebrow="Om guiden"
+  sidebarTitle="Om handboken"
+  sidebarCopy="Kort sida om underlag, arbetssätt och hur guiden hålls användbar över tid."
+  sidebarItems={sidebarItems}
+>
+  <section id="oversikt" class="hero">
+    <p class="eyebrow">Om handboken</p>
+    <h1>Hur guiden är byggd och hur den är tänkt att användas</h1>
+    <p class="lead">
+      Den här sidan beskriver kort vad guiden bygger på, hur innehållet har strukturerats och hur den bäst används i vardagen.
+      Fokus är praktisk nytta: snabbt hitta rätt stöd för rätt situation.
+    </p>
+    <div class="hero-grid">
+      <Card title="Start" href="/" description="Snabba startspår och introduktion till handboken." tag="Start" />
+      <Card title="Intern sök" href="/sok" description="Sök i verktyg, arbetsflöden, sektioner och prompts." tag="Sök" />
+      <Card title="Promptbibliotek" href="/promptbibliotek" description="Datadrivna promptmallar med filter och kopiera." tag="Prompts" />
+    </div>
+  </section>
+
+  <section id="underlag" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Underlag</p>
+      <h2>Vad guiden bygger på</h2>
+      <p>
+        Handboken bygger på projektets samlade underlag om CWas arbetssituation, verktygsförslag, arbetsflöden och praktiska arbetssätt.
+        Innehållet är pedagogiskt omskrivet och organiserat för vardagsanvändning.
+      </p>
+    </div>
+    <div class="stack">
+      <Checklist title="Grunder för innehållet" items={sourceChecklist} />
+      <Callout title="Viktigt om verktyg och priser" variant="warning">
+        Verktyg, priser och funktioner förändras snabbt. Använd handboken som beslutsstöd och kontrollera alltid aktuell information hos leverantören innan köp eller längre planering.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="hur-guiden-byggts" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Metod</p>
+      <h2>Hur guiden byggts</h2>
+      <p>
+        Målet har varit en statisk, snabb och lättläst handbok där innehåll går att hitta via meny, relaterade länkar, filtrering och intern sök.
+      </p>
+    </div>
+    <div class="stack">
+      <StepByStep title="Kort arbetsprocess" steps={buildSteps} />
+      <Callout title="Designprincip" variant="info">
+        Innehållet skrivs för snabb användning under press: korta stycken, tydliga rubriker, checklistor och direkt användbara mallar.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="hur-den-anvands" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Användning</p>
+      <h2>Hur handboken används bäst</h2>
+      <p>
+        Guiden fungerar både som uppslagsverk och som arbetsyta. Välj väg efter uppgift och tidsram i stället för att börja i verktygsjämförelse varje gång.
+      </p>
+    </div>
+    <div class="stack">
+      <Checklist title="Praktisk användning i vardagen" items={usageChecklist} />
+      <Callout title="Bra arbetsordning" variant="tip">
+        Uppgift först, verktyg sen: börja med vad du behöver få gjort och gå sedan till rätt arbetsflöde, prompt eller verktygssida.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="uppdatering" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Uppdatering</p>
+      <h2>Hur guiden hålls aktuell</h2>
+      <p>
+        För att handboken ska fortsätta vara användbar behöver den uppdateras när vardagsbehoven ändras eller när verktygens funktioner och villkor skiftar.
+      </p>
+    </div>
+    <div class="stack">
+      <Checklist title="Enkel uppdateringsrutin" items={updateChecklist} />
+      <Callout title="Vad som ger mest värde att uppdatera först" variant="tip">
+        Börja med arbetsflöden, prompts och verktygsprioriteringar. Det är där vardagsnyttan förändras snabbast.
+      </Callout>
+    </div>
+  </section>
+</BaseLayout>

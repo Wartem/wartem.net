@@ -1,0 +1,22 @@
+---
+interface Props {
+  title?: string;
+  items: string[];
+}
+
+const { title, items } = Astro.props;
+---
+
+<section class="checklist">
+  {title && <h3>{title}</h3>}
+  <ul>
+    {
+      items.map((item) => (
+        <li>
+          <span class="checklist-icon" aria-hidden="true">✓</span>
+          <span class="checklist-text">{item}</span>
+        </li>
+      ))
+    }
+  </ul>
+</section>

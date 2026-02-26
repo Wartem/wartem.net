@@ -1,0 +1,500 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import Callout from "../components/Callout.astro";
+import Checklist from "../components/Checklist.astro";
+import PromptBlock from "../components/PromptBlock.astro";
+import StepByStep from "../components/StepByStep.astro";
+
+const sidebarItems = [
+  { label: "Översikt", href: "#oversikt" },
+  { label: "Politisk text 30 min", href: "#politisk-text-30-min" },
+  { label: "Debatt 10 min", href: "#debatt-10-min" },
+  { label: "Akademisk artikel 20 min", href: "#akademisk-artikel-20-min" },
+  { label: "Skolbiblioteksplan / årshjul", href: "#skolbiblioteksplan-arshjul" }
+];
+
+const politicalSteps = [
+  {
+    title: "0-5 min: Stoff in och mål",
+    body: "Skriv 3-5 punkter du vill få fram, målgrupp, varför texten behövs nu och vilken typ av text du skriver (insändare/debattartikel/underlag)."
+  },
+  {
+    title: "5-8 min: Första utkast med tydliga krav",
+    body: "Be AI skriva ett utkast med tydlig tes, konkret exempel och avslutande uppmaning. Kräv markering med [KOLLA] på alla fakta som måste verifieras."
+  },
+  {
+    title: "8-15 min: Strukturrunda och ton",
+    body: "Be om kortare/skarpare version, eller mer personlig ton. CWas väljer vad som låter rätt och kastar resten."
+  },
+  {
+    title: "15-20 min: Faktakollista",
+    body: "Låt AI lista alla faktapåståenden som numrerade punkter så de kan bockas av mot källor innan publicering."
+  },
+  {
+    title: "20-25 min: Språkgranskning",
+    body: "Kör texten i språkstöd (LanguageTool/Microsoft Editor) för stavning, grammatik och onödigt krångliga meningar."
+  },
+  {
+    title: "25-30 min: Final review",
+    body: "Läs texten högt. Kontrollera att första stycket bär tesen, att tonen känns som CWas och att inget [KOLLA] finns kvar obekräftat."
+  }
+];
+
+const politicalPrepChecklist = [
+  "Ämne + syfte i en mening (vad vill du att läsaren ska tänka/göra?).",
+  "3-5 sakpunkter eller fakta du vill använda.",
+  "Målgrupp (allmänhet, nämnd, media, internt sammanhang).",
+  "Maxlängd eller formatkrav (insändare, social post, talepunkter)."
+];
+
+const politicalFinalChecklist = [
+  "Alla [KOLLA]-markeringar är verifierade eller borttagna.",
+  "Tydlig tes i inledningen.",
+  "Minst ett konkret exempel (inte bara allmänna formuleringar).",
+  "Ton: saklig, tydlig och utan onödigt 'snömos'.",
+  "CWas känner igen sin egen röst i texten."
+];
+
+const politicalPromptDraft = `Jag ska skriva en politisk text och behöver ett snabbt, bra utkast på svenska.
+
+Roll:
+Du är min redaktör och skrivstöd, inte min ersättare.
+
+Uppgift:
+Skriv ett utkast utifrån mitt underlag.
+
+Krav:
+- Tydlig tes i första stycket
+- Saklig men engagerad ton
+- Undvik snömos, floskler och partijargong
+- Lägg in ett konkret exempel om underlaget räcker
+- Markera varje faktapåstående som jag måste verifiera med [KOLLA]
+- Om du måste anta något: markera det med [OSÄKERT]
+
+Format:
+- Version 1: ca 350-450 ord
+- Rubrikförslag: 5 alternativ
+- Kort ingress: 2 alternativ
+
+Mitt underlag:
+[klistra in punkter/fakta/utkast här]`;
+
+const politicalPromptRevision = `Granska texten nedan som en kritisk redaktör.
+
+Gör detta i ordning:
+1. Lista 3 svagheter i texten (oklarhet, strategi, ton eller logik).
+2. Lista alla faktapåståenden som måste källkollas innan publicering.
+3. Markera meningar som låter som snömos och skriv konkreta alternativ.
+4. Skriv en förbättrad version som är 15-20% kortare.
+5. Säg tydligt vad som fortfarande är [OSÄKERT].
+
+Text:
+[klistra in texten här]`;
+
+const debateSteps = [
+  {
+    title: "0-2 min: Sätt scenario och tes",
+    body: "Bestäm ämne och formulera tesen i en mening. Välj vem AI ska spela: journalist, politisk motståndare eller skeptisk medborgare."
+  },
+  {
+    title: "2-4 min: 20-sekunders pitch",
+    body: "Säg eller skriv tesen som en kort pitch. Be AI ge snabb feedback på tydlighet, fokus och risk för missförstånd."
+  },
+  {
+    title: "4-8 min: Två till fem repliker träning",
+    body: "AI ställer invändningar eller följdfrågor. CWas svarar snabbt utan att överredigera, för att träna skarpt läge."
+  },
+  {
+    title: "8-9 min: Friktionsrunda",
+    body: "Be AI vara mindre instämmande och peka ut det svagaste i argumentationen. Träna en bättre formulering direkt."
+  },
+  {
+    title: "9-10 min: Nödmeningar",
+    body: "Avsluta med 2-3 korta formuleringar CWas kan falla tillbaka på när samtalet drar iväg eller blir stressigt."
+  }
+];
+
+const debateChecklist = [
+  "Tes i 1 mening (inte flera spår samtidigt).",
+  "1 konkret exempel som stöder tesen.",
+  "1 värdeprincip (t.ex. likvärdighet, ansvar, frihet, tillgång).",
+  "2 vanliga invändningar du väntar dig.",
+  "Ett mål med passet: tydlighet, tempo, strategi eller lugn under press."
+];
+
+const debateAfterChecklist = [
+  "Sa jag tesen tidigt?",
+  "Svarade jag på frågan innan jag bytte spår?",
+  "Fastnade jag i försvar istället för budskap?",
+  "Vilken formulering vill jag behålla till nästa gång?",
+  "Vilken formulering bör jag undvika?"
+];
+
+const debatePromptCoach = `Du är min strategiska träningspartner för debatt på svenska.
+
+Viktigt:
+- Du får inte hålla med som standard.
+- Du ska vara saklig och respektfull, men skapa nyttig friktion.
+- Hjälp mig formulera kärnbudskap tydligt under press.
+
+Upplägg:
+1. Be mig säga min tes i en mening.
+2. Tvinga mig till en 20-sekunders pitch.
+3. Ge kort feedback på: tydlighet, fokus, risk för missförstånd.
+4. Spela en rimlig motståndare och ge 2 invändningar (inte halmgubbar).
+5. Efter mina svar: ge förbättrade formuleringar som låter som mig.
+6. Avsluta med 3 konkreta förbättringstips.
+
+Starta med frågan:
+"Vilken tes vill du träna på i en mening?"`;
+
+const debatePromptBridge = `Vi tränar på att hålla linjen i debatt.
+
+Uppgift:
+Spela en journalist eller motdebattör som försöker dra mig till sidospår.
+
+Regler:
+- Ge 1 huvudfråga och sedan 2 sidospår.
+- Efter varje svar från mig: säg om jag höll linjen.
+- Om jag tappade fokus: ge en bättre "brygga tillbaka"-mening.
+- Markera otydliga eller riskabla formuleringar med [KOLLA] om de innehåller faktapåståenden.
+
+Ämne:
+[skriv ämne här]`;
+
+const academicSteps = [
+  {
+    title: "0-2 min: Laglig och praktisk start",
+    body: "Använd artikelns titel/DOI för att hitta abstract eller laglig version (t.ex. bibliotekstillgång, Unpaywall, Semantic Scholar). Om fulltext är låst: börja med abstract + egna anteckningar."
+  },
+  {
+    title: "2-5 min: Klistra in rätt underlag",
+    body: "Ge AI abstract, eventuellt introduktion/slutsats och dina egna anteckningar. Undvik att klistra in mer skyddad text än du har rätt att använda."
+  },
+  {
+    title: "5-10 min: Be om överblick + ordlista + frågor",
+    body: "Be om svensk sammanfattning, ordlista med facktermer och kritiska frågor om metod, urval, generaliserbarhet och tolkning."
+  },
+  {
+    title: "10-14 min: Luckor och osäkerheter",
+    body: "Be AI säga vad som inte går att veta från underlaget och markera [OSÄKERT]. Detta minskar risken att du råkar presentera antaganden som fakta."
+  },
+  {
+    title: "14-18 min: Citeringsspår / forskningskontext",
+    body: "Använd Semantic Scholar, Connected Papers, Elicit eller liknande för att se vilka studier som citerar eller bygger vidare. Låt AI hjälpa dig göra en enkel citeringsmatris."
+  },
+  {
+    title: "18-20 min: Seminarieanteckning",
+    body: "Spara en kort svensk sammanfattning, ordlista och 3-5 frågor till seminariet. Lägg till egen notering: varför artikeln är relevant för CWas just nu."
+  }
+];
+
+const academicPrepChecklist = [
+  "Titel, författare, år och gärna DOI/länk.",
+  "Abstract (eller delar du får använda).",
+  "Seminariekrav: taltid, slides, fokusfrågor.",
+  "Vad du behöver förstå mest: metod, resultat, begrepp eller forskningssammanhang."
+];
+
+const academicReviewChecklist = [
+  "Vad i sammanfattningen kommer direkt från underlaget?",
+  "Vad är AI-tolkning eller förenkling?",
+  "Vilka delar är markerade [OSÄKERT] och måste kollas i originaltexten?",
+  "Vilka begrepp behöver du kunna förklara muntligt?",
+  "Har du minst en egen reflektion, inte bara AI-text?"
+];
+
+const academicPromptOverview = `Jag ska förstå och presentera en akademisk artikel på svenska.
+
+Arbeta bara utifrån underlaget jag ger. Hitta inte på detaljer.
+
+Gör detta:
+1. Sammanfatta på svenska (max 150 ord) för en icke-specialist.
+2. Skriv en längre version (200-300 ord) med de viktigaste begreppen förklarade kort.
+3. Lista 8-12 facktermer med svensk förklaring.
+4. Skriv 5 kritiska frågor till studien (metod, urval, generaliserbarhet, alternativa tolkningar).
+5. Markera allt som inte går att veta från underlaget med [OSÄKERT].
+6. Markera faktauppgifter jag bör verifiera i originalartikeln med [KOLLA].
+
+Underlag (abstract/utdrag/egna anteckningar):
+[klistra in här]`;
+
+const academicPromptCitation = `Jag har en ursprungsartikel och flera citerande studier (titel + abstract/anteckning).
+
+Skapa en enkel citeringsmatris med dessa kolumner:
+- Artikel (kortnamn)
+- Varför den citerar originalet (bakgrund/metod/resultat/teori) [om det framgår]
+- Vad den tar med sig från originalet (1 mening)
+- Stödjer / utvecklar / kritiserar [skriv [OSÄKERT] om det inte framgår tydligt]
+- En seminariefråga jag kan ställa utifrån detta
+
+Regler:
+- Gissa inte om relationen mellan studierna.
+- Skriv [OSÄKERT] när underlaget är för tunt.
+- Skriv [KOLLA] om jag bör läsa originalabstract/fulltext för att kunna säga något säkert.
+
+Material:
+[klistra in titel + abstract/anteckningar för studierna här]`;
+
+const schoolPlanSteps = [
+  {
+    title: "Steg 1: Samla ramar och mål",
+    body: "Utgå från lokala mål, tidigare plan/årshjul, styrdokument och resurser. AI ska hjälpa till att strukturera, inte avgöra vad som gäller lokalt."
+  },
+  {
+    title: "Steg 2: Bygg planens stomme",
+    body: "Be AI skapa en struktur med rubriker (mål, aktiviteter, samverkan, tidsplan, ansvar, uppföljning, resurser, risker)."
+  },
+  {
+    title: "Steg 3: Fyll årshjulet period för period",
+    body: "Arbeta månad/termin i taget. Låt AI föreslå aktiviteter, men markera lokala beroenden (schema, personal, budget) som [OSÄKERT]."
+  },
+  {
+    title: "Steg 4: Lägg in MIK- och läsfrämjande spår",
+    body: "Be om konkreta micro-aktiviteter eller lektionsidéer på olika nivåer. Anpassa sedan till åldrar, lärarsamverkan och lokal kultur."
+  },
+  {
+    title: "Steg 5: Gör uppföljning möjlig",
+    body: "Lägg till få, realistiska mätpunkter: deltagande, genomförda insatser, samverkanspunkter och kvalitativa observationer."
+  },
+  {
+    title: "Steg 6: Verklighetscheck",
+    body: "Gå igenom planen som CWas, inte som AI: är detta rimligt med faktisk tid, bemanning och skolans kalender?"
+  }
+];
+
+const schoolPlanPrepChecklist = [
+  "Tidigare skolbiblioteksplan eller årshjul (om det finns).",
+  "Lokala mål/prioriteringar för skola och bibliotek.",
+  "Årskurser, målgrupper och samverkansytor.",
+  "Resurser: tid, bemanning, budget, lokaler, teknik.",
+  "Terminens fasta datum/perioder (prov, lov, temaveckor, etc.)."
+];
+
+const schoolPlanQualityChecklist = [
+  "Varje aktivitet har syfte och målgrupp.",
+  "Planen är realistisk i tid och bemanning.",
+  "Det finns plats för variation och oförutsedda händelser.",
+  "Uppföljning är enkel nog att faktiskt genomföra.",
+  "Inga elevuppgifter eller känslig information finns i AI-underlag."
+];
+
+const schoolPlanPromptStructure = `Hjälp mig skapa ett första utkast till skolbiblioteksplan/årshjul.
+
+Roll:
+Du är min planeringsassistent på svenska.
+
+Viktigt:
+- Du ska inte hitta på lokala beslut, resurser eller krav.
+- Markera lokala antaganden med [OSÄKERT].
+- Markera allt som måste stämmas av mot styrdokument/beslut med [KOLLA].
+
+Gör detta:
+1. Föreslå en tydlig struktur med rubriker för skolbiblioteksplan/årshjul.
+2. Fyll ett första utkast med aktiviteter per period (månad eller termin).
+3. Lägg till förslag på ansvar/samverkan (bibliotekarie, lärare, arbetslag) där det passar.
+4. Föreslå enkla uppföljningspunkter.
+5. Skriv konkret och kortfattat, utan administrativa floskler.
+
+Lokalt underlag:
+[klistra in mål, ramar, prioriteringar, tidigare plan osv.]`;
+
+const schoolPlanPromptActivities = `Skapa förslag till skolbiblioteks- och MIK-aktiviteter utifrån planeringsmålen nedan.
+
+Krav:
+- Skriv på enkel svenska
+- Anpassa för skolvardag och realistisk tidsåtgång
+- Ge 2 nivåer när det passar (enklare/fördjupning)
+- Markera sådant som kräver lokal anpassning med [OSÄKERT]
+- Markera påståenden om styrdokument/krav med [KOLLA]
+
+Format per aktivitet:
+- Syfte
+- Målgrupp/årskurs
+- Tidsåtgång
+- Genomförande i korta steg
+- Material som behövs
+- Enkel uppföljning
+
+Planeringsmål:
+[klistra in här]`;
+---
+
+<BaseLayout
+  title="Arbetsflöden | CWas AI-handbok"
+  currentPath="/arbetsfloden"
+  sidebarEyebrow="Arbetsflöden"
+  sidebarTitle="Tidsatta arbetsflöden"
+  sidebarCopy="Konkreta steg för återkommande uppgifter: skrivande, debattträning, akademiska artiklar och skolbiblioteksplanering."
+  sidebarItems={sidebarItems}
+>
+  <section id="oversikt" class="hero">
+    <p class="eyebrow">Arbetsflöden</p>
+    <h1>Praktiska arbetsflöden för CWas</h1>
+    <p class="lead">
+      Här finns färdiga arbetssätt som går att köra direkt i vardagen. Varje workflow innehåller steg-för-steg, checklista,
+      copybara prompts och tydlig markering av vad som måste faktakollas eller behandlas som osäkert.
+    </p>
+    <div class="hero-grid">
+      <Card title="Politisk text 30 min" href="#politisk-text-30-min" description="Från stoff till publicerbart utkast + faktacheck." tag="Workflow" />
+      <Card title="Debatt 10 min" href="#debatt-10-min" description="Kort drill för tes, invändningar och nödmeningar." tag="Workflow" />
+      <Card title="Akademisk artikel 20 min" href="#akademisk-artikel-20-min" description="Överblick, ordlista, frågor och citeringsspår." tag="Workflow" />
+    </div>
+  </section>
+
+  <section id="politisk-text-30-min" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Workflow</p>
+      <h2>Politisk text 30 min</h2>
+      <p>
+        Målet är ett publicerbart utkast med tydlig tes, rimlig ton och separat faktakollista. AI hjälper främst med
+        struktur, språk och tempo. CWas äger innehållet, bedömningen och slutversionen.
+      </p>
+    </div>
+
+    <div class="stack">
+      <StepByStep title="Steg för steg (30 min)" steps={politicalSteps} />
+      <div class="cards-grid">
+        <Card title="Passar med" href="/verktyg/chatgpt" description="Snabb textbearbetning och struktur." tag="Verktyg" />
+        <Card title="Alternativ" href="/verktyg/claude" description="Bra för längre resonemang och tonjustering." tag="Verktyg" />
+        <Card title="Korrektur" href="/verktyg/sprakstod" description="Språkgranskning före publicering." tag="Verktyg" />
+        <Card title="Prompts" href="/promptbibliotek#skrivande" description="Fler mallar för skrivande." tag="Bibliotek" />
+      </div>
+      <Checklist title="Förbered innan du börjar" items={politicalPrepChecklist} />
+      <Checklist title="Slutkontroll före publicering" items={politicalFinalChecklist} />
+
+      <Callout title="Faktakoll krävs (tydligt)" variant="warning">
+        All statistik, datum, beslut, citat, budgetuppgifter och sakpåståenden som kan påverka trovärdighet eller tolkning ska verifieras innan publicering.
+        Använd gärna AI för att göra en checklista, men inte som slutlig källa.
+      </Callout>
+
+      <Callout title="Osäkert / beror på sammanhang" variant="info">
+        Ton, längdgränser och publiceringsformat varierar mellan kanal, redaktion och situation. Om AI föreslår lokala detaljer som inte finns i underlaget, behandla dem som <code>[OSÄKERT]</code>.
+      </Callout>
+
+      <PromptBlock id="wf-politisk-utkast" title="Prompt 1: första utkast med [KOLLA]/[OSÄKERT]" prompt={politicalPromptDraft} />
+      <PromptBlock id="wf-politisk-revision" title="Prompt 2: kritisk redaktörsrunda" prompt={politicalPromptRevision} />
+    </div>
+  </section>
+
+  <section id="debatt-10-min" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Workflow</p>
+      <h2>Debatt 10 min</h2>
+      <p>
+        Detta workflow tränar muntlig skärpa, strategi och lugn under press. Fokus är inte att "vinna" i AI-chatten,
+        utan att få fram ett tydligare budskap som håller i ett riktigt samtal.
+      </p>
+    </div>
+
+    <div class="stack">
+      <StepByStep title="Steg för steg (10 min)" steps={debateSteps} />
+      <div class="cards-grid">
+        <Card title="Debattverktyg" href="/verktyg/chatgpt" description="Bra för dialogträning och röstläge (om du vill)." tag="Verktyg" />
+        <Card title="Textbaserad drill" href="/verktyg/claude" description="Bra för strategisk friktion och formulering." tag="Verktyg" />
+        <Card title="Debattprompts" href="/promptbibliotek#debatt" description="Fler mallar för tes, motargument och Q&A." tag="Bibliotek" />
+        <Card title="Trygg användning" href="/integritet-gdpr" description="Mikrofon, data och vad som inte ska delas." tag="Integritet" />
+      </div>
+
+      <Checklist title="Inför passet (1 minut förberedelse)" items={debateChecklist} />
+      <Checklist title="Efter passet (snabb logg)" items={debateAfterChecklist} />
+
+      <Callout title="Faktakoll krävs (även i träning)" variant="warning">
+        Om du tränar med siffror, beslut eller konkreta sakpåståenden: markera dem som <code>[KOLLA]</code> och verifiera efter passet.
+        AI:s invändningar är träningsmaterial, inte belagda fakta.
+      </Callout>
+
+      <Callout title="Osäkert / varierar" variant="info">
+        Röstfunktioner, kvoter och beteende skiljer sig mellan verktyg och abonnemang. Workflowet fungerar lika bra i textläge om du vill undvika mikrofon eller spara tid.
+      </Callout>
+
+      <Callout title="Viktigt: nyttig friktion" variant="tip">
+        Be AI vara sakligt kritisk, inte elak. Målet är att skärpa budskapet och undvika yes-man-problemet, inte att öka stressnivån.
+      </Callout>
+
+      <PromptBlock id="wf-debatt-coach" title="Prompt 1: strategisk debattcoach" prompt={debatePromptCoach} />
+      <PromptBlock id="wf-debatt-brygga" title="Prompt 2: brygga tillbaka och håll linjen" prompt={debatePromptBridge} />
+    </div>
+  </section>
+
+  <section id="akademisk-artikel-20-min" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Workflow</p>
+      <h2>Akademisk artikel 20 min</h2>
+      <p>
+        Målet är snabb orientering: förstå huvudpoängen, centrala begrepp och vad som behöver granskas närmare.
+        Detta workflow är byggt för situationer där engelska och facktermer skapar tröghet, särskilt under tidspress.
+      </p>
+    </div>
+
+    <div class="stack">
+      <StepByStep title="Steg för steg (20 min)" steps={academicSteps} />
+      <div class="cards-grid">
+        <Card title="Research och källspår" href="/verktyg/perplexity" description="Bra för snabb orientering och källor." tag="Verktyg" />
+        <Card title="Dokumentarbete" href="/verktyg/notebooklm" description="Bra när du jobbar med egna underlag/dokument." tag="Verktyg" />
+        <Card title="Textförklaring" href="/verktyg/claude" description="Bra för sammanfattning och begreppsförklaring." tag="Verktyg" />
+        <Card title="Akademiska prompts" href="/promptbibliotek#akademiskt" description="Fler mallar för artikelstöd och seminarier." tag="Bibliotek" />
+      </div>
+
+      <Checklist title="Innan du börjar" items={academicPrepChecklist} />
+      <Checklist title="Granskningscheck efter AI-svar" items={academicReviewChecklist} />
+
+      <Callout title="Faktakoll krävs (alltid i akademiskt stöd)" variant="warning">
+        Verifiera metod, urval, resultat, siffror, citat och slutsatser i originalunderlaget. AI kan formulera sig säkert även när underlaget är tunt.
+      </Callout>
+
+      <Callout title="Osäkert när underlaget är begränsat" variant="info">
+        Om du bara har abstract eller korta utdrag kan AI hjälpa med överblick, men inte säkert beskriva hela metod- eller resultatdelen.
+        Kräv <code>[OSÄKERT]</code> när något inte framgår.
+      </Callout>
+
+      <Callout title="Praktiskt och lagligt" variant="tip">
+        Börja gärna med abstract, introduktion/slutsats och egna anteckningar. Om fulltext ligger bakom paywall: använd lagliga vägar (bibliotekstillgång, öppna versioner) innan du bygger djupare slutsatser.
+      </Callout>
+
+      <PromptBlock id="wf-akad-oversikt" title="Prompt 1: svensk överblick + ordlista + frågor" prompt={academicPromptOverview} />
+      <PromptBlock id="wf-akad-citering" title="Prompt 2: citeringsmatris med osäkerhetsmarkering" prompt={academicPromptCitation} />
+    </div>
+  </section>
+
+  <section id="skolbiblioteksplan-arshjul" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Workflow</p>
+      <h2>Skolbiblioteksplan / årshjul</h2>
+      <p>
+        Detta workflow hjälper CWas bygga planeringsunderlag snabbare: först en tydlig struktur, sedan aktiviteter och uppföljning.
+        AI används för att få fart och struktur, men lokala beslut, resurser och prioriteringar måste alltid stämmas av.
+      </p>
+    </div>
+
+    <div class="stack">
+      <StepByStep title="Steg för steg (första utkast)" steps={schoolPlanSteps} />
+      <div class="cards-grid">
+        <Card title="Skolbibliotek/MIK-prompts" href="/promptbibliotek#skolbibliotek-mik" description="Fler mallar för aktiviteter, lektionsupplägg och planering." tag="Bibliotek" />
+        <Card title="Skriv- och språkstöd" href="/verktyg/sprakstod" description="Bra för tydlighet och konsekvent språk i planer." tag="Verktyg" />
+        <Card title="Dokumentstöd" href="/verktyg/notebooklm" description="Bra när du arbetar mot befintliga styrdokument." tag="Verktyg" />
+        <Card title="Integritet/GDPR" href="/integritet-gdpr" description="Särskilt viktigt om underlag innehåller elevnära information." tag="Integritet" />
+      </div>
+
+      <Checklist title="Underlag som behövs" items={schoolPlanPrepChecklist} />
+      <Checklist title="Kvalitetskontroll före delning" items={schoolPlanQualityChecklist} />
+
+      <Callout title="Faktakoll krävs (lokala ramar)" variant="warning">
+        AI känner inte skolans faktiska beslut, schema, budget, bemanning eller lokala prioriteringar. Alla påståenden om styrdokument, ansvarsfördelning och krav ska stämmas av och markeras <code>[KOLLA]</code> tills de är verifierade.
+      </Callout>
+
+      <Callout title="Osäkert / kräver lokal anpassning" variant="info">
+        Förslag på aktiviteter, tidsåtgång och samverkan är idéer tills de anpassats till skolans årskurser, arbetslag, kalender och resurser.
+        Be AI markera lokala antaganden som <code>[OSÄKERT]</code>.
+      </Callout>
+
+      <Callout title="Bra arbetsprincip" variant="tip">
+        Mall först, AI sen: börja med rubriker och ramar, låt sedan AI fylla ut förslag som CWas redigerar, prioriterar och förenklar.
+      </Callout>
+
+      <PromptBlock id="wf-arshjul-utkast" title="Prompt 1: struktur + första utkast till plan/årshjul" prompt={schoolPlanPromptStructure} />
+      <PromptBlock id="wf-arshjul-aktiviteter" title="Prompt 2: aktiviteter och MIK-inslag" prompt={schoolPlanPromptActivities} />
+    </div>
+  </section>
+</BaseLayout>

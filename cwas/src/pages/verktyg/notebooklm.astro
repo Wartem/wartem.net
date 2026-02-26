@@ -1,0 +1,104 @@
+---
+import ToolPageShell from "../../components/ToolPageShell.astro";
+---
+
+<ToolPageShell
+  toolName="NotebookLM"
+  slugPath="/verktyg/notebooklm"
+  shortDescription="Verktyg för att arbeta mot egna dokument och källsamlingar. I källmaterialet lyfts NotebookLM som starkt när CWas vill fråga på flera dokument och få källnära överblick."
+  categories={["Akademiskt", "Integritet"]}
+  fitsForCWas={[
+    "Sammanfatta och ställa frågor på egna dokument (planer, protokoll, underlag).",
+    "Bygga överblick över flera dokument i samma ämne.",
+    "Akademiskt stöd när CWas vill arbeta källnära med uppladdat material.",
+    "Lyssna igenom material via ljudöversikt (där funktionen finns och passar)."
+  ]}
+  strengths={[
+    "Bra för dokumentbaserat arbete och källnära frågor enligt underlagen.",
+    "Passar CWas behov av att orientera sig i större materialmängder.",
+    "Kan ge bättre struktur när flera dokument ska hållas ihop samtidigt.",
+    "Praktiskt för planerings- och policydokument, inte bara löpande text."
+  ]}
+  weaknesses={[
+    "Integritetsbedömning behövs alltid innan dokument laddas upp (extern tjänst).",
+    "Inte lämpligt för elevuppgifter, individärenden eller känsligt material.",
+    "Kvaliteten beror på vad som faktiskt laddas upp och hur tydliga frågorna är.",
+    "Kan fortfarande feltolka eller förenkla om underlaget är komplext eller motsägelsefullt."
+  ]}
+  useWhen={[
+    "Du har flera dokument och behöver snabb överblick eller tematisering.",
+    "Du vill fråga på eget underlag i stället för fri webbresearch.",
+    "Du jobbar med plan, protokoll, policy eller akademiskt material och vill hålla dig nära källorna.",
+    "Du vill skapa frågelista, sammanfattning eller talstöd från ett dokumentpaket."
+  ]}
+  avoidWhen={[
+    "Dokumenten innehåller personuppgifter eller känsliga elev-/ärendeuppgifter.",
+    "Du bara behöver snabb textomformulering (Claude/ChatGPT är ofta snabbare).",
+    "Du behöver lokal/offline hantering av dokumenten."
+  ]}
+  workflowSteps={[
+    { title: "Välj dokument med omsorg", body: "Ladda bara upp sådant material som är lämpligt att behandla i extern tjänst." },
+    { title: "Fråga smalt först", body: "Börja med sammanfattning, teman och begrepp innan du ber om mer avancerade slutsatser." },
+    { title: "Kräv källnärhet", body: "Be verktyget hålla sig till underlaget och markera [OSÄKERT] när något inte framgår." },
+    { title: "Exportera och kontrollera", body: "Använd output som arbetsstöd och kontrollera viktiga slutsatser i originaldokumenten." }
+  ]}
+  privacySummary="NotebookLM är användbart för källnära dokumentarbete, men CWas bör alltid göra en integritetsbedömning före uppladdning. Källorna lyfter det som bra för dokumentfrågor men olämpligt för känsliga personuppgifter."
+  privacyChecks={[
+    "Ladda inte upp elevuppgifter, personnummer, individärenden eller känsliga persondata.",
+    "Anonymisera namn och identifierare när dokument behöver användas som arbetsunderlag.",
+    "Håll isär offentliga dokument, interna arbetsutkast och känsliga handlingar.",
+    "Markera i egen anteckning vad som är AI-sammanfattning vs originalkälla."
+  ]}
+  factCheckNotes={[
+    "Kontrollera att sammanfattningen inte förskjuter viktiga nyanser från originaldokumentet.",
+    "Vid policy/protokoll: dubbelkolla formuleringar som rör ansvar, beslut och tidsplaner."
+  ]}
+  uncertainties={[
+    "Funktioner (t.ex. ljudöversikter och språkstöd) kan variera över tid och mellan konton.",
+    "Hur källnära svaren blir påverkas av dokumentkvalitet och hur frågorna ställs."
+  ]}
+  examplePrompts={[
+    {
+      id: "notebooklm-dok-oversikt",
+      title: "Dokumentpaket -> överblick och teman",
+      prompt: `Arbeta bara utifrån de dokument jag har lagt in.
+
+Gör detta på svenska:
+1. Sammanfatta huvudteman i 5-8 punkter.
+2. Lista viktiga begrepp/termer.
+3. Säg vilka frågor dokumenten verkar besvara.
+4. Säg vilka frågor som fortfarande saknar tydligt stöd och markera [OSÄKERT].
+5. Markera påståenden som jag bör kontrollera direkt i originaldokument med [KOLLA].`
+    },
+    {
+      id: "notebooklm-protokoll-fragor",
+      title: "Protokoll/policy -> frågor och talpunkter",
+      prompt: `Utifrån dokumenten: hjälp mig förbereda mig inför möte/samtal.
+
+Gör detta:
+1. Lista 7 viktiga punkter jag bör ha koll på.
+2. Ge 5 möjliga frågor/invändningar jag kan få.
+3. Skriv korta talpunkter på svenska (sakliga och tydliga).
+4. Markera sådant som behöver [KOLLA] i originaltexten.
+5. Markera sådant som inte framgår tydligt med [OSÄKERT].`
+    },
+    {
+      id: "notebooklm-akad-underlag",
+      title: "Akademiskt underlag -> seminariestöd",
+      prompt: `Jag använder detta material för seminarieförberedelse.
+Arbeta bara utifrån dokumenten.
+
+Skapa:
+1. Kort svensk sammanfattning
+2. Ordlista (10 termer)
+3. 5 kritiska frågor
+4. 5 slides-rubriker med en talrad per slide
+5. [OSÄKERT]-markering där underlaget inte räcker
+6. [KOLLA]-markering för detaljer jag måste kontrollera själv`
+    }
+  ]}
+  relatedLinks={[
+    { label: "Akademisk artikel 20 min", href: "/arbetsfloden#akademisk-artikel-20-min", description: "Workflow för artikelöverblick och citeringsspår." },
+    { label: "Integritet och GDPR", href: "/integritet-gdpr", description: "Praktisk bedömning innan dokument laddas upp." }
+  ]}
+/>

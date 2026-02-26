@@ -1,0 +1,26 @@
+---
+import Card from "./Card.astro";
+import type { LinkItem } from "../data/site";
+
+interface Props {
+  title?: string;
+  links: LinkItem[];
+}
+
+const { title = "Relaterat innehåll", links } = Astro.props;
+---
+
+{
+  links.length > 0 && (
+    <section class="content-section related-content">
+      <div class="section-header">
+        <p class="eyebrow">Fortsättning</p>
+        <h2>{title}</h2>
+        <p>Snabba vägar till närliggande sidor och praktiska nästa steg.</p>
+      </div>
+      <div class="cards-grid">
+        {links.map((link) => <Card title={link.label} href={link.href} description={link.description} tag="Relaterat" />)}
+      </div>
+    </section>
+  )
+}

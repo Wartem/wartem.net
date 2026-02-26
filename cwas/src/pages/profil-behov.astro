@@ -1,0 +1,246 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import Callout from "../components/Callout.astro";
+import Checklist from "../components/Checklist.astro";
+import ComparisonTable from "../components/ComparisonTable.astro";
+import StepByStep from "../components/StepByStep.astro";
+
+const sidebarItems = [
+  { label: "Profilöversikt", href: "#profiloversikt" },
+  { label: "Arbetsvardag", href: "#arbetsvardag" },
+  { label: "Huvudbehov", href: "#huvudbehov" },
+  { label: "Styrkor och friktion", href: "#styrkor-och-friktion" },
+  { label: "Integritet och tillit", href: "#integritet-och-tillit" },
+  { label: "Vad handboken ska stödja", href: "#vad-handboken-ska-stodja" }
+];
+
+const roleChecklist = [
+  "Skolbibliotek / skola: planering, MIK, läsfrämjande material, dokument och upplägg.",
+  "Politik / nämndvardag: texter, budskap, sammanfattningar, argumentation och kommunikativ skärpa.",
+  "Studier / akademi: förstå engelska artiklar, bygga ordlista, seminariestöd och citeringsspår.",
+  "Debattträning / muntlighet: öva formulering, strategi och trygghet under press."
+];
+
+const strengthsVsFrictionColumns = ["Styrkor hos CWas", "Friktion / hinder", "Vad handboken ska ge"];
+const strengthsVsFrictionRows = [
+  [
+    "Kan innehållet, ser snabbt vad som är relevant",
+    "Fastnar ibland i formulering och tempo under stress",
+    "Korta arbetsflöden och promptmallar som minskar starttröghet"
+  ],
+  [
+    "Bra granskare och redaktör",
+    "AI kan bli för formell, korrekt eller 'snäll'",
+    "Kritiska kontrollfrågor, tonjustering och friktionsprompts"
+  ],
+  [
+    "Tydligt syfte i både skola och politik",
+    "Tidsbrist och hög kognitiv belastning vid deadlines",
+    "Snabbspår, checklistor och återanvändbara mallar"
+  ],
+  [
+    "Vill lära sig mer systematiskt",
+    "Promptteknik och verktygsval kan kännas rörigt",
+    "Pedagogiska exempel, steg-för-steg och tydlig navigering"
+  ]
+];
+
+const supportSteps = [
+  {
+    title: "Utgå från situationen",
+    body: "CWas behöver stöd som fungerar i verkliga lägen: under tidspress, inför textpublicering, seminarier eller debatt."
+  },
+  {
+    title: "Minska friktion",
+    body: "Sajten ska minska omstartstid med färdiga startspår, promptmallar och återkommande kontrollpunkter."
+  },
+  {
+    title: "Behåll kontrollen",
+    body: "Sajten ska hjälpa CWas använda AI som verktyg, inte ersättare för omdöme, faktaarbete eller personlig röst."
+  }
+];
+---
+
+<BaseLayout
+  title="Profil och behov | CWas AI-handbok"
+  currentPath="/profil-behov"
+  sidebarEyebrow="Profil"
+  sidebarTitle="CWas: behovsbild"
+  sidebarCopy="Samlad, anonymiserad bild av hur CWas använder AI idag och vilket stöd handboken behöver ge i praktiken."
+  sidebarItems={sidebarItems}
+>
+  <section id="profiloversikt" class="hero">
+    <p class="eyebrow">Profil och behov</p>
+    <h1>CWas: vad AI ska hjälpa till med (och vad CWas själv ska äga)</h1>
+    <p class="lead">
+      Källmaterialet beskriver en användare som redan får tydlig nytta av AI, särskilt som skrivstöd och språkstöd,
+      men som vill arbeta mer systematiskt, tryggt och strategiskt. CWas använder AI bäst som redaktörsstöd, träningspartner
+      och strukturhjälp – inte som ersättning för eget omdöme.
+    </p>
+  </section>
+
+  <section id="arbetsvardag" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Vardag</p>
+      <h2>Arbetsvardagen som formar behoven</h2>
+      <p>
+        CWas rör sig mellan flera sammanhang där språk, tydlighet och tempo är centralt: skolbiblioteksarbete,
+        politik/nämndvardag och studier. Det gör att samma AI-verktyg kan användas på olika sätt beroende på situation.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Checklist title="Fyra återkommande arbetsspår" items={roleChecklist} />
+      <div class="cards-grid">
+        <Card
+          title="Skolbibliotek och MIK"
+          description="Behov av planering, lektionsupplägg, läsfrämjande material och tydliga dokument."
+          href="/promptbibliotek#skolbibliotek-mik"
+          tag="Skola"
+        />
+        <Card
+          title="Politisk kommunikation"
+          description="Behov av skarpa texter, tydlig tes, rätt ton och snabb faktakontroll."
+          href="/arbetsfloden#politisk-text-30-min"
+          tag="Politik"
+        />
+        <Card
+          title="Akademiska artiklar"
+          description="Behov av svensk överblick, ordlista och stöd för att förstå forskningssammanhang."
+          href="/arbetsfloden#akademisk-artikel-20-min"
+          tag="Studier"
+        />
+        <Card
+          title="Muntlig träning"
+          description="Behov av dialog, debattdrill och strategisk återkoppling när det blir skarpt läge."
+          href="/arbetsfloden#debatt-10-min"
+          tag="Tal"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section id="huvudbehov" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Behov</p>
+      <h2>Huvudbehov som återkommer i källorna</h2>
+      <p>
+        Flera dokument beskriver samma kärna: CWas behöver AI som sparar tid, förbättrar språk och struktur, hjälper till
+        att tänka högt och ger bättre kontroll över komplexa texter – utan att skapa beroende av otydliga eller opålitliga svar.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Callout title="1. Skrivstöd med skärpa" variant="tip">
+        CWas använder AI för att förtydliga, korta, förlänga och omstrukturera texter. Målet är inte "mer text", utan bättre text:
+        mindre snömos, tydligare tes, bättre läsbarhet och rätt ton.
+      </Callout>
+
+      <Callout title="2. Akademiskt språkstöd och överblick" variant="info">
+        Engelska forskningsartiklar och facktermer kan skapa onödig tröghet. CWas behöver snabb svensk överblick, ordlista,
+        frågor till studien och hjälp att hitta ett rimligt citeringsspår utan att fastna.
+      </Callout>
+
+      <Callout title="3. Samtalspartner för debattträning" variant="tip">
+        Ett centralt behov är att träna muntlig formulering och strategi under press. AI ska inte bara hålla med, utan hjälpa till
+        att skärpa budskap, ställa följdfrågor och simulera rimliga invändningar.
+      </Callout>
+
+      <Callout title="4. Integritet, tillit och kontroll" variant="warning">
+        CWas uttrycker tydliga frågor om mikrofonåtkomst, datainsamling och hur AI kan styra vad man frågar om. Handboken måste därför
+        göra trygg användning enkel i praktiken, inte bara i princip.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="styrkor-och-friktion" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Analys</p>
+      <h2>Styrkor och friktion i nuvarande AI-användning</h2>
+      <p>
+        Källorna visar att CWas redan har god AI-nytta. Det som saknas är främst struktur, återanvändning och en trygg rutin
+        för kvalitet och integritet i pressade lägen.
+      </p>
+    </div>
+
+    <div class="stack">
+      <ComparisonTable title="Behovsbild i praktiken" columns={strengthsVsFrictionColumns} rows={strengthsVsFrictionRows} />
+      <Callout title="Viktig observation" variant="info">
+        CWas beskriver att bättre instruktioner ger mycket bättre resultat. Det betyder att handboken ska lägga stor vikt vid pedagogiska promptmallar och enkla arbetsrutiner.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="integritet-och-tillit" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Trygghet</p>
+      <h2>Integritet, tillit och risker som måste tas på allvar</h2>
+      <p>
+        CWas behov handlar inte bara om teknikval utan om kontroll: vad som delas, hur mikrofon används, och hur man undviker
+        att AI blir en alltför instämmande eller styrande "samtalspartner".
+      </p>
+    </div>
+
+    <div class="stack">
+      <Checklist
+        title="Detta behöver handboken hjälpa med varje gång"
+        items={[
+          "Snabb anonymiseringsrutin före promptning.",
+          "Tydlig skillnad mellan fakta, tolkning och AI-förslag.",
+          "Prompts som skapar friktion (kritik, motargument, svagheter).",
+          "Praktiska råd om mikrofonbehörighet och datainställningar.",
+          "Rutiner för faktakontroll före publicering eller framförande."
+        ]}
+      />
+      <Callout title="Yes-man-problemet" variant="warning">
+        Ett återkommande tema i materialet är att AI kan bli för instämmande. För CWas är det särskilt viktigt i debattträning,
+        där verklig nytta kräver motstånd, precisering och strategisk feedback.
+      </Callout>
+      <Callout title="Pragmatisk hållning till abonnemang" variant="tip">
+        CWas verkar väga nytta mot tid och lärinsats, inte bara funktioner. Handboken ska därför hjälpa till med "vad ger effekt nu?" snarare än maximal verktygsjämförelse.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="vad-handboken-ska-stodja" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Konsekvens för sajten</p>
+      <h2>Vad handboken ska stödja för att vara användbar för CWas</h2>
+      <p>
+        Den här behovsbilden styr hur resten av sajten ska fyllas: korta startspår, återanvändbara mallar, tydlig struktur,
+        pedagogiska steg och praktiska integritetsråd.
+      </p>
+    </div>
+
+    <div class="stack">
+      <StepByStep title="Designkrav i praktiken" steps={supportSteps} />
+      <div class="cards-grid">
+        <Card
+          title="Gå till Arbetsflöden"
+          href="/arbetsfloden"
+          description="För tidsatta rutiner: politisk text, debatt, akademisk artikel och skolbiblioteksplanering."
+          tag="Nästa steg"
+        />
+        <Card
+          title="Gå till Promptbibliotek"
+          href="/promptbibliotek"
+          description="För kopierbara mallar som minskar prompttrassel och förbättrar kvaliteten."
+          tag="Nästa steg"
+        />
+        <Card
+          title="Gå till Integritet och GDPR"
+          href="/integritet-gdpr"
+          description="För praktiska tumregler om vad som kan delas, hur och när."
+          tag="Trygghet"
+        />
+        <Card
+          title="Gå till Verktyg"
+          href="/verktyg"
+          description="För verktygsval per uppgift, styrkor, begränsningar och lokala alternativ."
+          tag="Översikt"
+        />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,199 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Card from "../../components/Card.astro";
+import Callout from "../../components/Callout.astro";
+import Checklist from "../../components/Checklist.astro";
+import ComparisonTable from "../../components/ComparisonTable.astro";
+import StepByStep from "../../components/StepByStep.astro";
+
+const sidebarItems = [
+  { label: "Översikt", href: "#oversikt" },
+  { label: "Snabbregel", href: "#snabbregel" },
+  { label: "Källorna säger olika", href: "#kallorna-sager-olika" },
+  { label: "Om du väljer EN", href: "#om-du-valjer-en" },
+  { label: "Om du väljer TVÅ", href: "#om-du-valjer-tva" },
+  { label: "Testa i 30 dagar", href: "#testa-30-dagar" }
+];
+
+const compareColumns = ["Verktyg", "Starkast i källorna för CWas", "Vanlig roll", "Tydlig begränsning i underlagen"];
+const compareRows = [
+  [
+    "ChatGPT",
+    "Bred vardagsnytta: skrivande + debattträning + planering",
+    "Huvudverktyg (skapande/träning)",
+    "Faktakoll och källspår behöver extra kontroll"
+  ],
+  [
+    "Claude",
+    "Nyanserad text, längre resonemang, akademisk överblick",
+    "Huvudverktyg (text/analys) eller alternativ till ChatGPT",
+    "Mindre fokus på källspår som huvudstyrka"
+  ],
+  [
+    "Perplexity",
+    "Research, faktakoll och citeringsorientering",
+    "Komplementverktyg (research/faktakoll)",
+    "Svagare för tonarbete och debattträning"
+  ],
+  [
+    "Gemini",
+    "Google-nära arbetsflöden och integration (om relevant)",
+    "Situationsverktyg / alternativ",
+    "Lägre unik nytta om Google-miljön inte är central"
+  ]
+];
+
+const oneToolChecklist = [
+  "Välj det verktyg som täcker flest av dina återkommande uppgifter – inte flest funktioner på pappret.",
+  "Om debattträning och dialog är centralt: ChatGPT lyfts starkt i flera underlag.",
+  "Om längre text, ton och akademisk överblick är viktigast: Claude lyfts som förstahandsval i flera underlag.",
+  "Faktakoll och källspår löser du ändå bäst med separat researchrutin (ofta Perplexity som komplement)."
+];
+
+const twoToolChecklist = [
+  "Vanlig källbild: ett huvudverktyg för skapande/träning + ett researchverktyg för källspår.",
+  "ChatGPT/Claude + Perplexity återkommer som praktisk kombination i materialet.",
+  "Undvik dubbel betalning om två verktyg fyller nästan samma roll i din vardag.",
+  "Värdera faktisk användning efter 2-4 veckor, inte första dagen."
+];
+
+const trialSteps = [
+  {
+    title: "Vecka 1: huvuduppgifter",
+    body: "Testa verktyget på CWas riktiga vardagsuppgifter: politisk text, debattträning, akademisk artikel eller plan/årshjul."
+  },
+  {
+    title: "Vecka 2: återanvändning",
+    body: "Skapa 2-3 återkommande promptmallar/projektspår och se om arbetsflödet blir snabbare."
+  },
+  {
+    title: "Vecka 3: kvalitet under stress",
+    body: "Mät hur verktyget fungerar när tiden är knapp: blir resultatet användbart eller kräver det för mycket efterarbete?"
+  },
+  {
+    title: "Vecka 4: beslut",
+    body: "Bestäm om verktyget ska vara huvudverktyg, komplement eller avslutas. Bedöm nytta, inte bara teknikintresse."
+  }
+];
+---
+
+<BaseLayout
+  title="Vilket ska jag betala för? | CWas AI-handbok"
+  currentPath="/verktyg/vilket-ska-jag-betala-for"
+  sidebarEyebrow="Jämförelse"
+  sidebarTitle="Vilket ska jag betala för?"
+  sidebarCopy="Källbaserad jämförelse av betalval för CWas – utan nya fakta, och med tydlig markering där underlagen ger olika svar."
+  sidebarItems={sidebarItems}
+>
+  <section id="oversikt" class="hero">
+    <p class="eyebrow">Jämförelse</p>
+    <h1>Vilket ska jag betala för?</h1>
+    <p class="lead">
+      Källmaterialet ger inte ett enda universellt svar. Två huvudlinjer återkommer: Claude som starkt förstahandsval för
+      text + akademisk överblick, och ChatGPT som bredast totalnytta för skrivande + debattträning. Perplexity återkommer ofta
+      som researchkomplement, medan Gemini främst blir prioriterat när Google-miljö är central.
+    </p>
+    <div class="hero-grid">
+      <Card title="Verktygsindex" href="/verktyg" description="Filtrera verktyg och öppna verktygssidor." tag="Index" />
+      <Card title="ChatGPT" href="/verktyg/chatgpt" description="Bred vardagsnytta och debattträning." tag="Kandidat" />
+      <Card title="Claude" href="/verktyg/claude" description="Stark på längre texter och nyans." tag="Kandidat" />
+    </div>
+  </section>
+
+  <section id="snabbregel" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Snabbregel</p>
+      <h2>Välj efter största vardagsnytta – inte flest funktioner</h2>
+      <p>
+        För CWas är den viktigaste frågan inte "vilket verktyg är bäst i världen?" utan vilket verktyg som faktiskt används
+        konsekvent i de situationer som återkommer: skriva, debattträna, förstå akademiska texter och planera skolbiblioteksarbete.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Checklist title="Snabbregel i praktiken" items={oneToolChecklist} />
+      <Callout title="Källbaserad försiktighet" variant="warning">
+        Underlagen innehåller olika rekommendationer beroende på prioritering. Det är inte en motsägelse – det är en signal om att valet ska styras av CWas faktiska huvudbehov.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="kallorna-sager-olika" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Sammanvägning</p>
+      <h2>Källorna säger olika – så här går de att läsa ihop</h2>
+      <p>
+        Vissa underlag prioriterar Claude för politiska texter, längre resonemang och akademisk överblick. Andra prioriterar
+        ChatGPT för bred vardagsnytta, särskilt när debattträning och dialog är viktigt. Perplexity återkommer som komplement för källor.
+      </p>
+    </div>
+
+    <div class="stack">
+      <ComparisonTable title="Samlad källbild (utan nya fakta)" columns={compareColumns} rows={compareRows} />
+      <Callout title="Det som återkommer mest" variant="info">
+        Ett huvudverktyg för skapande/träning + ett komplement för research/faktakoll är den tydligaste praktiska modellen i materialet.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="om-du-valjer-en" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Scenario 1</p>
+      <h2>Om du väljer EN betaltjänst</h2>
+      <p>
+        Välj mellan ChatGPT och Claude utifrån vardagsviktning. Underlagen ger stöd för båda, men av olika skäl.
+      </p>
+    </div>
+    <div class="stack">
+      <Callout title="Välj ChatGPT om..." variant="tip">
+        CWas främst vill ha bred vardagsnytta i ett verktyg: skrivstöd, dialog, debattträning och planering i samma arbetsyta.
+      </Callout>
+      <Callout title="Välj Claude om..." variant="tip">
+        CWas främst vill optimera politisk textbearbetning, längre resonemang, ton och akademisk överblick i svenska sammanfattningar.
+      </Callout>
+      <Callout title="Faktakoll oavsett val" variant="warning">
+        Oavsett om du väljer ChatGPT eller Claude behöver du separat rutin för faktakoll och källkontroll (ofta via Perplexity/gratis researchflöde eller manuella källor).
+      </Callout>
+    </div>
+  </section>
+
+  <section id="om-du-valjer-tva" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Scenario 2</p>
+      <h2>Om du väljer TVÅ verktyg</h2>
+      <p>
+        Det vanligaste mönstret i underlagen är att kombinera ett skapande/träningsverktyg med ett research/faktakollverktyg.
+      </p>
+    </div>
+    <div class="stack">
+      <Checklist title="Praktisk två-verktygsmodell" items={twoToolChecklist} />
+      <div class="cards-grid">
+        <Card title="ChatGPT + Perplexity" href="/verktyg/chatgpt" description="Bred skapande/träning + källspår/faktakoll." tag="Kombination" />
+        <Card title="Claude + Perplexity" href="/verktyg/claude" description="Text/analys i nyans + research/faktakoll." tag="Kombination" />
+      </div>
+      <Callout title="Undvik överlapp" variant="info">
+        Om två verktyg används till exakt samma saker i vardagen kan det vara bättre att betala för ett och bygga bättre prompts/rutiner i stället.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="testa-30-dagar" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Beslut i praktik</p>
+      <h2>Testa i 30 dagar (utan att överoptimera)</h2>
+      <p>
+        Källmaterialet visar att faktisk nytta för CWas handlar mycket om arbetsrutin, promptvana och tidsvinst. Testa därför i verkliga uppgifter – inte bara i demo-läge.
+      </p>
+    </div>
+
+    <div class="stack">
+      <StepByStep title="En enkel testplan" steps={trialSteps} />
+      <Callout title="Ingen ny fakta på denna sida" variant="info">
+        Den här jämförelsen bygger endast på projektets källmaterial. Priser, kvoter och funktioner kan ha ändrats sedan underlagen skrevs – kontrollera alltid leverantörens aktuella info innan köp.
+      </Callout>
+      <Callout title="När du bör avstå köp just nu" variant="warning">
+        Om CWas ännu inte använder ett gratisverktyg konsekvent i vardagen är det ofta bättre att först etablera arbetsflöden och promptmallar innan abonnemang väljs.
+      </Callout>
+    </div>
+  </section>
+</BaseLayout>

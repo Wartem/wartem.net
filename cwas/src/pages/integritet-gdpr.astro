@@ -1,0 +1,269 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Callout from "../components/Callout.astro";
+import Checklist from "../components/Checklist.astro";
+import ComparisonTable from "../components/ComparisonTable.astro";
+import StepByStep from "../components/StepByStep.astro";
+
+const sidebarItems = [
+  { label: "Översikt", href: "#oversikt" },
+  { label: "Praktisk riskklassning", href: "#praktisk-riskklassning" },
+  { label: "Vad man inte klistrar in", href: "#vad-kan-delas" },
+  { label: "Anonymisering", href: "#anonymisering" },
+  { label: "Mikrofon och behörigheter", href: "#mikrofon-behorigheter" },
+  { label: "Data controls", href: "#data-controls" },
+  { label: "Dokumentation", href: "#dokumentation" },
+  { label: "Checklista", href: "#checklista" }
+];
+
+const riskColumns = ["Nivå", "Typisk situation", "Exempel", "Rekommenderat arbetssätt"];
+const riskRows = [
+  [
+    "Låg risk",
+    "Generella idéer, strukturstöd, språkförbättring",
+    "Rubrikförslag, disposition, formulering av offentlig text",
+    "Kan användas i extern AI-tjänst, men markera fakta som [KOLLA]"
+  ],
+  [
+    "Mellanrisk",
+    "Internt arbetsmaterial utan personuppgifter",
+    "Utkast, anteckningar, planeringstexter med lokal kontext",
+    "Minimera data, anonymisera, klistra inte in mer än nödvändigt"
+  ],
+  [
+    "Hög risk",
+    "Personuppgifter, elevärenden, känslig eller sekretessnära info",
+    "Individärenden, stödinsatser, elevlistor, känslig personalinfo",
+    "Klistra inte in i extern AI-tjänst; använd lokal hantering eller arbeta utan AI"
+  ]
+];
+
+const neverPaste = [
+  "Personnummer, fullständiga elevnamn eller andra unika personidentifierare.",
+  "Individärenden, elevhälsodata, stödinsatser eller känsliga personuppgifter.",
+  "Sekretessbelagda handlingar eller material som inte får spridas.",
+  "Lösenord, inloggningsuppgifter, API-nycklar eller interna säkerhetsuppgifter.",
+  "Rådata som kan identifiera enskilda personer även om namn tagits bort."
+];
+
+const sometimesPasteWithCare = [
+  "Egna utkast och offentliga texter som behöver språkstöd eller strukturering.",
+  "Sammanfattade punkter från underlag i stället för hela dokument.",
+  "Offentliga protokoll/handlingar utan personuppgifter (kontrollera alltid först).",
+  "Abstract eller korta utdrag från akademiska texter när du behöver överblick."
+];
+
+const anonymizeSteps = [
+  {
+    title: "Ta bort identifierare",
+    body: "Rensa namn, personnummer, kontaktuppgifter, diarienummer och andra detaljer som kan koppla texten till en person."
+  },
+  {
+    title: "Byt till roller eller neutrala etiketter",
+    body: "Använd till exempel 'Elev A', 'Vårdnadshavare', 'Medarbetare', 'Skola X' eller 'CWas' i stället för riktiga namn."
+  },
+  {
+    title: "Minimera underlaget",
+    body: "Klistra bara in det AI behöver för uppgiften. Ofta räcker en sammanfattning eller punktlista."
+  },
+  {
+    title: "Läs igenom en extra gång",
+    body: "Kontrollera att metadata, citat eller detaljer inte ändå avslöjar vem det gäller."
+  }
+];
+
+const anonymizeChecklist = [
+  "Har jag tagit bort namn och andra direkta identifierare?",
+  "Har jag tagit bort onödiga detaljer som kan göra personen igenkännbar?",
+  "Kan jag i stället sammanfatta underlaget i punkter?",
+  "Har jag bytt riktiga namn till neutral etikett (t.ex. 'CWas' eller roll)?"
+];
+
+const micChecklist = [
+  "Ge mikrofonbehörighet bara när du faktiskt ska använda röstläge.",
+  "Stäng av mikrofonbehörighet efteråt om du inte använder funktionen ofta.",
+  "Kontrollera regelbundet vilka appar/tjänster som har mikrofontillgång i enhetens inställningar.",
+  "Använd textläge om ämnet är känsligt eller om du vill undvika mikrofon helt.",
+  "Träna debatt i text går ofta lika bra för struktur och strategi."
+];
+
+const dataControlsChecklist = [
+  "Leta efter inställningar för datadelning/träningsanvändning innan du börjar använda tjänsten.",
+  "Använd tillfälliga chattar/sessions om tjänsten erbjuder det och uppgiften kräver extra försiktighet.",
+  "Läs kort vad inställningen faktiskt betyder (historik, träning, lagring, delning).",
+  "Utgå från minsta nödvändiga delning även om data controls är på plats.",
+  "Dokumentera egen tumregel: vad görs alltid i textläge/lokalt och vad får göras i extern tjänst."
+];
+
+const documentationChecklist = [
+  "Notera syfte med AI-användningen (vad skulle bli gjort snabbare/bättre?).",
+  "Notera vilket verktyg som användes och för vilken del (utkast, research, språkgranskning).",
+  "Markera vad som fortfarande var [KOLLA] / [OSÄKERT] efter AI-rundan.",
+  "Spara slutversionen separat och gör manuella ändringar där.",
+  "Skriv kort vad som fungerade, så bra prompts kan återanvändas."
+];
+
+const quickChecklist = [
+  "Är detta låg, mellan eller hög risk?",
+  "Har jag tagit bort sådant som inte ska klistras in?",
+  "Har jag anonymiserat namn och identifierare?",
+  "Behöver jag mikrofon – eller räcker textläge?",
+  "Har jag kollat data controls i tjänsten?",
+  "Har jag en plan för [KOLLA]/[OSÄKERT] efter AI-svaret?"
+];
+---
+
+<BaseLayout
+  title="Integritet och GDPR | CWas AI-handbok"
+  currentPath="/integritet-gdpr"
+  sidebarEyebrow="Integritet"
+  sidebarTitle="Integritet och trygg användning"
+  sidebarCopy="Praktiska regler och checklistor för vad som kan delas, hur man anonymiserar och hur man använder AI mer tryggt i vardagen."
+  sidebarItems={sidebarItems}
+>
+  <section id="oversikt" class="hero">
+    <p class="eyebrow">Integritet och trygg användning</p>
+    <h1>Praktiska regler för AI i vardagen</h1>
+    <p class="lead">
+      Den här sidan är byggd som vardagsstöd: vad man inte klistrar in, hur man anonymiserar, hur mikrofonbehörigheter kan hanteras
+      och hur data controls används på neutral nivå. Målet är tryggare vanor, inte juridiska specialtolkningar.
+    </p>
+  </section>
+
+  <section id="praktisk-riskklassning" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Praktik</p>
+      <h2>Praktisk riskklassning av uppgifter</h2>
+      <p>
+        En enkel riskklassning hjälper CWas att snabbt avgöra om extern AI-tjänst är rimlig för uppgiften eller om innehållet måste minimeras,
+        anonymiseras eller helt undvikas.
+      </p>
+    </div>
+
+    <div class="stack">
+      <ComparisonTable title="Tre nivåer som fungerar i vardagen" columns={riskColumns} rows={riskRows} />
+      <Callout title="Tumregel" variant="tip">
+        Om du tvekar mellan mellanrisk och hög risk: behandla det som hög risk tills du har gjort en tydlig anonymisering eller valt ett säkrare arbetssätt.
+      </Callout>
+      <Callout title="Neutral nivå" variant="info">
+        Den här sidan ger praktiska vanor och försiktighetsprinciper. Vid osäkerhet om formella regler i din organisation ska lokala riktlinjer och ansvariga funktioner följas.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="vad-kan-delas" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Do / Don't</p>
+      <h2>Vad man inte klistrar in (och vad som kan fungera med försiktighet)</h2>
+      <p>
+        Källmaterialet återkommer tydligt till detta: undvik personuppgifter och känsligt material i externa AI-tjänster. Arbeta hellre med anonymiserade versioner eller sammanfattningar.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Checklist title="Klistra inte in i extern AI-tjänst" items={neverPaste} />
+      <Checklist title="Kan ofta fungera med försiktighet" items={sometimesPasteWithCare} />
+      <Callout title="Viktigt om offentliga handlingar" variant="warning">
+        Även om ett dokument i grunden är offentligt kan det innehålla personuppgifter eller detaljer som inte bör skickas vidare utan bedömning. Läs igenom innan du klistrar in.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="anonymisering" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Metod</p>
+      <h2>Anonymisering och minimering (praktiskt arbetssätt)</h2>
+      <p>
+        Målet är inte perfekt juridisk terminologi i varje steg, utan en fungerande vana som minskar risk: ta bort identifiering, minska datamängden och använd neutrala etiketter.
+      </p>
+    </div>
+
+    <div class="stack">
+      <StepByStep title="En enkel anonymiseringsrutin" steps={anonymizeSteps} />
+      <Checklist title="Snabb anonymiseringscheck" items={anonymizeChecklist} />
+      <Callout title="Bra standardvana" variant="tip">
+        Gör anonymisering som standard även när du tror att materialet är "ofarligt". Det minskar misstag under stress.
+      </Callout>
+      <Callout title="Särskilt viktigt" variant="warning">
+        Kombinationer av små detaljer kan göra någon identifierbar även utan namn. Var extra försiktig med unika händelser, datum, roller och citat.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="mikrofon-behorigheter" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Behörigheter</p>
+      <h2>Mikrofonbehörigheter och röstläge (praktiskt)</h2>
+      <p>
+        Källmaterialet tar upp oro för mikrofonåtkomst och "tjuvlyssning". Ett praktiskt svar är att minimera behörighet, använda röst bara när det behövs och välja textläge när det räcker.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Checklist title="Tryggare vanor för mikrofon" items={micChecklist} />
+      <Callout title="Neutral princip" variant="info">
+        Mikrofonbehörighet och databehandling styrs både av enhetens operativsystem och av tjänstens egna inställningar. Kontrollera båda nivåerna.
+      </Callout>
+      <Callout title="Praktiskt för CWas" variant="tip">
+        Debattträning kan göras i textläge när du vill undvika mikrofon eller hålla tempot uppe. Nyttan för struktur och argumentation finns kvar.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="data-controls" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Inställningar</p>
+      <h2>Data controls (på neutral nivå)</h2>
+      <p>
+        Många AI-tjänster har inställningar för historik, datadelning, träningsanvändning eller tillfälliga chattar. Dessa minskar inte behovet av försiktighet, men de kan vara en viktig extra kontroll.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Checklist title="Data controls: vad du gör innan användning" items={dataControlsChecklist} />
+      <Callout title="Viktigt att förstå" variant="warning">
+        Data controls är inte samma sak som "nu kan jag klistra in vad som helst". Känsliga personuppgifter och individärenden ska fortfarande inte användas i extern AI-tjänst.
+      </Callout>
+      <Callout title="Bra arbetsprincip" variant="tip">
+        Använd data controls som extra skydd ovanpå anonymisering och dataminimering – inte som ersättning för dem.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="dokumentation" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Spårbarhet</p>
+      <h2>Dokumentation och kvalitetssäkring (enkelt och användbart)</h2>
+      <p>
+        CWas behöver inte tung administration för varje AI-pass. En kort logg räcker ofta för att återanvända bra arbetssätt och hålla koll på vad som fortfarande behöver faktakoll.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Checklist title="Minimal dokumentation som ger nytta" items={documentationChecklist} />
+      <Callout title="Koppling till resten av sajten" variant="info">
+        Använd samma markeringar överallt: <code>[KOLLA]</code> för faktakontroll och <code>[OSÄKERT]</code> när underlaget inte räcker. Det gör arbetsflöden och prompts mer konsekventa.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="checklista" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Checklista</p>
+      <h2>Kort checklista före varje AI-session</h2>
+      <p>
+        Den här checklistan är tänkt att vara snabb nog att använda i verkligheten, även när CWas är stressad eller har kort om tid.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Checklist title="60-sekunders check" items={quickChecklist} />
+      <Callout title="När du ska pausa och tänka om" variant="warning">
+        Om uppgiften innehåller personuppgifter, sekretess eller hög risk och du inte hinner anonymisera ordentligt: använd inte extern AI-tjänst för den delen.
+      </Callout>
+      <Callout title="Bra nästa steg" variant="tip">
+        Vid osäkerhet: gå till <a href="/verktyg/lokala-alternativ">Lokala alternativ</a> eller arbeta med manuell sammanfattning utan AI tills underlaget är säkert att använda.
+      </Callout>
+    </div>
+  </section>
+</BaseLayout>

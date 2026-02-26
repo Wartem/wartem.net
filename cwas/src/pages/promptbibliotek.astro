@@ -1,0 +1,246 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import Callout from "../components/Callout.astro";
+import PromptBlock from "../components/PromptBlock.astro";
+import promptLibraryData from "../content/prompt-library.json";
+import { fixSvText } from "../utils/fixSvText";
+
+interface PromptItem {
+  id: string;
+  title: string;
+  category: string;
+  tags: string[];
+  summary: string;
+  prompt: string;
+}
+
+const prompts = promptLibraryData as PromptItem[];
+
+const sidebarItems = [
+  { label: "Översikt", href: "#oversikt" },
+  { label: "Filter", href: "#filter" },
+  { label: "Skrivande", href: "#skrivande" },
+  { label: "Debatt", href: "#debatt" },
+  { label: "Akademiskt", href: "#akademiskt" },
+  { label: "Skolbibliotek / MIK", href: "#skolbibliotek-mik" },
+  { label: "Nämndvardag", href: "#namndvardag" }
+];
+
+const categoryOrder = ["Skrivande", "Debatt", "Akademiskt", "Skolbibliotek/MIK", "Namndvardag"];
+
+const categoryMeta: Record<string, { id: string; intro: string; label?: string }> = {
+  Skrivande: {
+    id: "skrivande",
+    intro: "Korta prompts för utkast, omskrivning, struktur och tonjustering i gratisläge."
+  },
+  Debatt: {
+    id: "debatt",
+    intro: "Prompts för tes, invändningar, friktion och att hålla linjen under press."
+  },
+  Akademiskt: {
+    id: "akademiskt",
+    intro: "Prompts för snabb översikt, ordlista och seminarieförberedelse med [KOLLA]/[OSÄKERT]."
+  },
+  "Skolbibliotek/MIK": {
+    id: "skolbibliotek-mik",
+    intro: "Prompts för MIK-övningar, differentiering och årshjulspunkter i skolbiblioteksvardag."
+  },
+  Namndvardag: {
+    id: "namndvardag",
+    label: "Nämndvardag",
+    intro: "Prompts för underlagssammanfattning, talpunkter och språklig skärpning i nämndnära arbete."
+  }
+};
+
+const groupedPrompts = categoryOrder.map((category) => ({
+  category,
+  label: categoryMeta[category].label ?? category,
+  sectionId: categoryMeta[category].id,
+  intro: categoryMeta[category].intro,
+  items: prompts.filter((prompt) => prompt.category === category)
+}));
+
+const allTags = [...new Set(prompts.flatMap((prompt) => prompt.tags))].sort((a, b) => a.localeCompare(b, "sv"));
+
+const tagLabel = (tag: string) =>
+  ({
+    gratislage: "gratisläge",
+    namndvardag: "nämndvardag",
+    arshjul: "årshjul",
+    uppfoljning: "uppföljning",
+    spraklig: "språklig",
+    sprakstod: "språkstöd",
+    seminarium: "seminarium",
+    faktakoll: "faktakoll"
+  } as Record<string, string>)[tag] ?? fixSvText(tag);
+---
+
+<BaseLayout
+  title="Promptbibliotek | CWas AI-handbok"
+  currentPath="/promptbibliotek"
+  sidebarEyebrow="Prompts"
+  sidebarTitle="Promptbibliotek"
+  sidebarCopy="Datadrivet bibliotek med korta prompts som fungerar i gratisläge, med filtrering och kopiera-knapp."
+  sidebarItems={sidebarItems}
+>
+  <section id="oversikt" class="hero">
+    <p class="eyebrow">Promptbibliotek</p>
+    <h1>Promptmallar per situation</h1>
+    <p class="lead">
+      Alla prompts på sidan kommer från en datafil och kan filtreras på kategori och taggar. Mallarna är korta för att fungera
+      bra även i gratisläge och under tidspress.
+    </p>
+    <div class="hero-grid">
+      <Card title="Filtrera prompts" href="#filter" description="Välj kategori och taggar för snabbare sökning." tag="UI" />
+      <Card title="Kopiera direkt" href="#filter" description="Varje prompt har kopiera-knapp via PromptBlock." tag="Copy" />
+      <Card title="Korta mallar" href="#skrivande" description="Byggda för gratisläge och tydliga instruktioner." tag="Gratisläge" />
+    </div>
+  </section>
+
+  <section id="filter" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Filter</p>
+      <h2>Filtrera promptbiblioteket</h2>
+      <p>
+        Välj en kategori och/eller en tagg. Filtreringen döljer prompts som inte matchar. Kopiera-knappen fungerar på alla synliga prompts.
+      </p>
+    </div>
+
+    <div class="stack">
+      <Callout title="Kort prompt = mindre friktion" variant="tip">
+        Källmaterialet visar att CWas får bra resultat när instruktionen är tydlig men inte onödigt lång. Dessa mallar är därför
+        korta och byggda för att snabbt kunna fyllas på med eget underlag.
+      </Callout>
+
+      <div class="filter-panel-grid">
+        <div class="filter-panel">
+          <p class="filter-group-label">Kategori</p>
+          <div class="filter-toolbar" role="toolbar" aria-label="Filtrera prompts efter kategori">
+            <button type="button" class="filter-pill is-active" data-prompt-category="Alla" aria-pressed="true">Alla</button>
+            {
+              categoryOrder.map((category) => (
+                <button type="button" class="filter-pill" data-prompt-category={category} aria-pressed="false">
+                  {categoryMeta[category].label ?? category}
+                </button>
+              ))
+            }
+          </div>
+        </div>
+
+        <div class="filter-panel">
+          <p class="filter-group-label">Taggar</p>
+          <div class="filter-toolbar" role="toolbar" aria-label="Filtrera prompts efter tagg">
+            <button type="button" class="filter-pill is-active" data-prompt-tag="Alla" aria-pressed="true">Alla</button>
+            {
+              allTags.map((tag) => (
+                <button type="button" class="filter-pill" data-prompt-tag={tag} aria-pressed="false">
+                  {tagLabel(tag)}
+                </button>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+
+      <p id="prompt-filter-status" class="filter-status prompt-filter-status" aria-live="polite">
+        Visar {prompts.length} av {prompts.length} prompts
+      </p>
+    </div>
+  </section>
+
+  {
+    groupedPrompts.map((group) => (
+      <section
+        id={group.sectionId}
+        class="content-section prompt-category-section"
+        data-prompt-section
+        data-section-category={group.category}
+      >
+        <div class="section-header">
+          <p class="eyebrow">Kategori</p>
+          <h2>{group.label}</h2>
+          <p>{group.intro}</p>
+        </div>
+
+        <div class="prompt-library-grid">
+          {
+            group.items.map((item) => (
+              <article
+                class="prompt-library-item"
+                data-prompt-item
+                data-prompt-category={item.category}
+                data-prompt-tags={item.tags.join("|")}
+              >
+                <div class="prompt-card-meta">
+                  <p class="prompt-card-summary">{fixSvText(item.summary)}</p>
+                  <div class="tag-list" aria-label={`Taggar för ${fixSvText(item.title)}`}>
+                    {item.tags.map((tag) => <span class="tag-chip">{tagLabel(tag)}</span>)}
+                  </div>
+                </div>
+                <PromptBlock id={`plib-${item.id}`} title={fixSvText(item.title)} prompt={fixSvText(item.prompt)} />
+              </article>
+            ))
+          }
+        </div>
+      </section>
+    ))
+  }
+
+  <script is:inline>
+    const categoryButtons = Array.from(document.querySelectorAll("[data-prompt-category].filter-pill"));
+    const tagButtons = Array.from(document.querySelectorAll("[data-prompt-tag].filter-pill"));
+    const promptItems = Array.from(document.querySelectorAll("[data-prompt-item]"));
+    const sections = Array.from(document.querySelectorAll("[data-prompt-section]"));
+    const statusEl = document.getElementById("prompt-filter-status");
+
+    let activeCategory = "Alla";
+    let activeTag = "Alla";
+
+    const setButtonState = (buttons, activeValue, attrName) => {
+      for (const button of buttons) {
+        const isActive = button.getAttribute(attrName) === activeValue;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      }
+    };
+
+    const applyPromptFilters = () => {
+      let visibleCount = 0;
+      for (const item of promptItems) {
+        const itemCategory = item.getAttribute("data-prompt-category") || "";
+        const itemTags = (item.getAttribute("data-prompt-tags") || "").split("|").filter(Boolean);
+        const categoryMatch = activeCategory === "Alla" || itemCategory === activeCategory;
+        const tagMatch = activeTag === "Alla" || itemTags.includes(activeTag);
+        const show = categoryMatch && tagMatch;
+        item.classList.toggle("is-hidden", !show);
+        if (show) visibleCount += 1;
+      }
+
+      for (const section of sections) {
+        const visibleInSection = section.querySelectorAll("[data-prompt-item]:not(.is-hidden)").length;
+        section.classList.toggle("is-hidden", visibleInSection === 0);
+      }
+
+      if (statusEl) {
+        statusEl.textContent = `Visar ${visibleCount} av ${promptItems.length} prompts (kategori: ${activeCategory}, tagg: ${activeTag})`;
+      }
+    };
+
+    for (const button of categoryButtons) {
+      button.addEventListener("click", () => {
+        activeCategory = button.getAttribute("data-prompt-category") || "Alla";
+        setButtonState(categoryButtons, activeCategory, "data-prompt-category");
+        applyPromptFilters();
+      });
+    }
+
+    for (const button of tagButtons) {
+      button.addEventListener("click", () => {
+        activeTag = button.getAttribute("data-prompt-tag") || "Alla";
+        setButtonState(tagButtons, activeTag, "data-prompt-tag");
+        applyPromptFilters();
+      });
+    }
+  </script>
+</BaseLayout>

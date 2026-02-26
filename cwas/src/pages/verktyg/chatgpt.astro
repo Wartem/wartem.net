@@ -1,0 +1,114 @@
+---
+import ToolPageShell from "../../components/ToolPageShell.astro";
+---
+
+<ToolPageShell
+  toolName="ChatGPT"
+  slugPath="/verktyg/chatgpt"
+  shortDescription="Brett verktyg för skrivstöd, omformulering, planering och debattträning. I källmaterialet lyfts ChatGPT som ett starkt totalverktyg när CWas vill ha både text och dialogträning."
+  categories={["Skriv", "Debatt", "Akademiskt"]}
+  fitsForCWas={[
+    "Snabbt skriva om, förkorta eller strukturera texter under tidspress.",
+    "Debattträning och muntlig träning (särskilt om CWas vill använda dialog/röstläge).",
+    "Skapa arbetsplaner, utkast och mallar för återkommande uppgifter.",
+    "Språkstöd kring akademiska texter när målet är begriplighet och seminarieförberedelse."
+  ]}
+  strengths={[
+    "Bred användning: samma verktyg kan användas för skrivande, planering och dialogträning.",
+    "Starkt stöd för svensk text i vardaglig användning enligt källmaterialet.",
+    "Bra för iteration: utkast -> kritik -> ny version i samma tråd.",
+    "Kan fungera som träningspartner för tes, invändningar och 'håll linjen'-övningar."
+  ]}
+  weaknesses={[
+    "Sämre än källfokuserade verktyg när du behöver tydliga källspår för research/faktakontroll.",
+    "Kan låta säker även när fakta är osäkra eller ofullständiga (hallucinationsrisk).",
+    "Kan bli för instämmande om du inte uttryckligen ber om friktion och kritik.",
+    "Funktioner/kvoter varierar mellan plan och kan ändras över tid."
+  ]}
+  useWhen={[
+    "Du behöver ett snabbt utkast, omskrivning eller strukturhjälp och vill arbeta vidare direkt.",
+    "Du vill debattträna med korta repliker, följdfrågor och feedback i samma verktyg.",
+    "Du vill skapa återanvändbara promptmallar för CWas vardag.",
+    "Du vill kombinera skrivstöd och reflektionsstöd i ett verktyg."
+  ]}
+  avoidWhen={[
+    "Du behöver tydlig källhänvisning som huvudfunktion (börja hellre i Perplexity).",
+    "Du arbetar med känsliga personuppgifter eller individärenden (använd inte extern molntjänst).",
+    "Du behöver lokal/offline hantering av dokument av integritetsskäl."
+  ]}
+  workflowSteps={[
+    { title: "Sätt uppgift och format", body: "Börja med mål, målgrupp, längd och tidsram. Var tydlig med att svaret ska vara på svenska." },
+    { title: "Kräv kontrollmarkeringar", body: "Be om [KOLLA] för faktapåståenden och [OSÄKERT] när underlaget inte räcker." },
+    { title: "Kör kritisk runda", body: "Be om tre svagheter, motargument eller risker innan du använder texten." },
+    { title: "Slutgranska själv", body: "CWas granskar ton, fakta och om texten faktiskt låter som CWas." }
+  ]}
+  privacySummary="Behandla ChatGPT som en extern molntjänst. Använd datakontroller och undvik personuppgifter, elevärenden eller annat känsligt material. Om röst används: hantera mikrofonbehörighet aktivt."
+  privacyChecks={[
+    "Anonymisera namn, personnummer och individärenden före promptning.",
+    "Använd tillfällig chatt / datakontroller när innehållet är känsligare.",
+    "Ge mikrofonbehörighet bara när du faktiskt tränar med röst.",
+    "Separera retorikträning från känsliga sakuppgifter."
+  ]}
+  factCheckNotes={[
+    "Be alltid om markering av osäkra fakta med [KOLLA] eller [OSÄKERT].",
+    "Verifiera siffror, citat, datum och beslut i primärkällor innan publicering eller framförande."
+  ]}
+  uncertainties={[
+    "Vilka funktioner som ingår (t.ex. röst, kvoter, projektfunktioner) beror på plan och kan ändras.",
+    "Hur väl röstläge fungerar i praktiken beror på enhet, språk och inställningar."
+  ]}
+  examplePrompts={[
+    {
+      id: "chatgpt-redaktor",
+      title: "Redaktör för politisk text",
+      prompt: `Du är min redaktör på svenska.
+Hjälp mig göra texten tydligare och mer slagkraftig utan att ändra min ståndpunkt.
+
+Gör detta:
+1. Skriv om texten med tydligare struktur och mindre snömos.
+2. Föreslå 5 rubriker och 2 ingresser.
+3. Markera faktapåståenden med [KOLLA].
+4. Markera sådant du antar med [OSÄKERT].
+5. Lista 3 svagheter i texten och hur jag kan förbättra dem.
+
+Text:
+[klistra in]`
+    },
+    {
+      id: "chatgpt-debattcoach",
+      title: "Debattcoach (tes -> invändning -> förbättrat svar)",
+      prompt: `Du är min strategiska debattcoach på svenska.
+Du får inte hålla med som standard.
+
+Upplägg:
+- Be mig säga min tes i 1 mening.
+- Tvinga mig till en 20-sekunders pitch.
+- Ge 2 rimliga invändningar (inte halmgubbar).
+- Efter varje svar: ge kort feedback + bättre formulering som låter som mig.
+- Markera faktapåståenden som behöver verifieras med [KOLLA].
+
+Starta nu med: "Vilken tes vill du träna på?"`
+    },
+    {
+      id: "chatgpt-seminarium",
+      title: "Akademiskt språkstöd inför seminarium",
+      prompt: `Jag ska presentera en akademisk artikel.
+Arbeta bara utifrån texten/anteckningarna jag ger.
+
+Gör detta på svenska:
+1. 60-sekunders sammanfattning.
+2. 3-minuters version med begrepp förklarade.
+3. Ordlista (10 termer).
+4. 5 möjliga seminariefrågor + korta svar.
+5. Markera allt som inte framgår av underlaget med [OSÄKERT].
+6. Markera uppgifter som bör kontrolleras i originaltexten med [KOLLA].
+
+Underlag:
+[klistra in abstract/anteckningar]`
+    }
+  ]}
+  relatedLinks={[
+    { label: "Arbetsflöden", href: "/arbetsfloden", description: "Tidsatta arbetsflöden för skrivande, debatt och artiklar." },
+    { label: "Betalval", href: "/verktyg/vilket-ska-jag-betala-for", description: "Jämförelsesida baserad på källorna." }
+  ]}
+/>

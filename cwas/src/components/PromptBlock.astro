@@ -1,0 +1,47 @@
+---
+import { fixSvText } from "../utils/fixSvText";
+
+interface Props {
+  id: string;
+  title: string;
+  prompt: string;
+}
+
+const { id, title, prompt } = Astro.props;
+const displayTitle = fixSvText(title);
+const displayPrompt = fixSvText(prompt);
+---
+
+<section class="prompt-block" aria-labelledby={`${id}-title`}>
+  <div class="prompt-header">
+    <h3 id={`${id}-title`}>{displayTitle}</h3>
+    <button type="button" class="copy-button" data-prompt-copy data-target={id}>
+      Kopiera prompt
+    </button>
+  </div>
+  <pre><code id={id}>{displayPrompt}</code></pre>
+</section>
+
+<script is:inline>
+  const buttons = document.querySelectorAll("[data-prompt-copy]");
+  for (const button of buttons) {
+    if (button.dataset.bound === "true") continue;
+    button.dataset.bound = "true";
+    button.addEventListener("click", async () => {
+      const targetId = button.getAttribute("data-target");
+      if (!targetId) return;
+      const code = document.getElementById(targetId);
+      if (!code) return;
+      const original = button.textContent;
+      try {
+        await navigator.clipboard.writeText(code.innerText);
+        button.textContent = "Kopierad";
+      } catch {
+        button.textContent = "Kunde inte kopiera";
+      }
+      window.setTimeout(() => {
+        button.textContent = original;
+      }, 1400);
+    });
+  }
+</script>

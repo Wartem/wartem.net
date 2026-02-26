@@ -1,0 +1,181 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import Callout from "../components/Callout.astro";
+import { searchIndex } from "../data/search-index";
+import { fixSvText } from "../utils/fixSvText";
+
+const sidebarItems = [
+  { label: "Översikt", href: "#oversikt" },
+  { label: "Sök", href: "#sok-panel" },
+  { label: "Resultat", href: "#resultat" },
+  { label: "Tips", href: "#soktips" }
+];
+
+const typeOrder = ["Alla", "Sida", "Sektion", "Verktyg", "Prompt"];
+---
+
+<BaseLayout
+  title="Sök | CWas AI-handbok"
+  currentPath="/sok"
+  sidebarEyebrow="Sök"
+  sidebarTitle="Intern sök"
+  sidebarCopy="Sök i sidor, sektioner, verktyg och prompts utan backend."
+  sidebarItems={sidebarItems}
+>
+  <section id="oversikt" class="hero">
+    <p class="eyebrow">Intern sök</p>
+    <h1>Hitta rätt innehåll snabbt</h1>
+    <p class="lead">
+      Sök i handbokens sidor, sektioner, verktyg och prompts. Resultat filtreras direkt i webbläsaren och fungerar utan backend.
+    </p>
+    <div class="hero-grid">
+      <Card title="Sök i prompts" href="/promptbibliotek" description="Datadrivet promptbibliotek med filter och kopiera." tag="Prompts" />
+      <Card title="Sök i verktyg" href="/verktyg" description="Filtrera verktyg och gå vidare till verktygssidor." tag="Verktyg" />
+      <Card title="Sök i arbetsflöden" href="/arbetsfloden" description="Hitta sektioner för skrivande, debatt, akademiskt och planering." tag="Arbetsflöden" />
+    </div>
+  </section>
+
+  <section id="sok-panel" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Sökpanel</p>
+      <h2>Sök och filtrera</h2>
+      <p>Skriv ett ord (t.ex. "debatt", "integritet", "Perplexity", "seminarium") och välj typ vid behov.</p>
+    </div>
+
+    <div class="search-panel">
+      <label for="site-search-input" class="search-label">Sök i handboken</label>
+      <input
+        id="site-search-input"
+        class="search-input"
+        type="search"
+        placeholder="Sök på verktyg, prompt, arbetsflöde eller ämne..."
+        autocomplete="off"
+      />
+
+      <div class="filter-toolbar" role="toolbar" aria-label="Filtrera sökresultat efter typ">
+        {
+          typeOrder.map((type, index) => (
+            <button
+              type="button"
+              class={`filter-pill ${index === 0 ? "is-active" : ""}`}
+              data-search-type={type}
+              aria-pressed={index === 0 ? "true" : "false"}
+            >
+              {fixSvText(type)}
+            </button>
+          ))
+        }
+      </div>
+
+      <p id="search-status" class="filter-status prompt-filter-status" aria-live="polite">
+        Visar {searchIndex.length} av {searchIndex.length} resultat
+      </p>
+    </div>
+  </section>
+
+  <section id="resultat" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Resultat</p>
+      <h2>Sökresultat</h2>
+      <p>Klicka på ett resultat för att hoppa direkt till sida eller sektion.</p>
+    </div>
+
+    <div class="search-results-grid">
+      {
+        searchIndex.map((entry) => (
+          <article
+            class="search-result-card"
+            data-search-item
+            data-search-type={entry.type}
+            data-search-text={`${entry.title} ${entry.excerpt} ${entry.category ?? ""} ${(entry.tags ?? []).join(" ")}`.toLowerCase()}
+          >
+            <a class="search-result-link" href={entry.href}>
+              <div class="search-result-head">
+                <div>
+                  <p class="search-result-type">{fixSvText(entry.type)}</p>
+                  <h3>{fixSvText(entry.title)}</h3>
+                </div>
+                <span class="tool-card-arrow" aria-hidden="true">→</span>
+              </div>
+              <p class="search-result-excerpt">{fixSvText(entry.excerpt)}</p>
+              <div class="tag-list">
+                {entry.category && <span class="tag-chip">{fixSvText(entry.category)}</span>}
+                {(entry.tags ?? []).slice(0, 4).map((tag) => <span class="tag-chip">{fixSvText(tag)}</span>)}
+              </div>
+              <p class="search-result-href"><code>{entry.href}</code></p>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+
+    <p id="search-empty" class="placeholder-note search-empty is-hidden">
+      Inga träffar. Testa ett annat ord eller välj typfiltret "Alla".
+    </p>
+  </section>
+
+  <section id="soktips" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Tips</p>
+      <h2>Snabba söktips</h2>
+      <p>Exempel på sökord som brukar ge bra träffar i den här handboken.</p>
+    </div>
+    <div class="stack">
+      <Callout title="Exempel på sökord" variant="tip">
+        Testa: <code>debatt</code>, <code>[KOLLA]</code>, <code>integritet</code>, <code>Perplexity</code>, <code>seminarium</code>, <code>MIK</code>, <code>årshjul</code>.
+      </Callout>
+      <Callout title="Hur sökningen fungerar" variant="info">
+        Sökningen matchar titel, beskrivning, kategori och taggar i det interna indexet. Den kräver ingen server och skickar inga sökfrågor externt.
+      </Callout>
+    </div>
+  </section>
+
+  <script is:inline>
+    const input = document.getElementById("site-search-input");
+    const status = document.getElementById("search-status");
+    const empty = document.getElementById("search-empty");
+    const items = Array.from(document.querySelectorAll("[data-search-item]"));
+    const typeButtons = Array.from(document.querySelectorAll("[data-search-type].filter-pill"));
+    let activeType = "Alla";
+
+    const setTypeState = (selected) => {
+      for (const button of typeButtons) {
+        const isActive = button.getAttribute("data-search-type") === selected;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      }
+    };
+
+    const runSearch = () => {
+      const query = (input instanceof HTMLInputElement ? input.value : "").trim().toLowerCase();
+      let visible = 0;
+      for (const item of items) {
+        const text = (item.getAttribute("data-search-text") || "").toLowerCase();
+        const type = item.getAttribute("data-search-type") || "";
+        const queryMatch = query.length === 0 || text.includes(query);
+        const typeMatch = activeType === "Alla" || type === activeType;
+        const show = queryMatch && typeMatch;
+        item.classList.toggle("is-hidden", !show);
+        if (show) visible += 1;
+      }
+      if (status) {
+        status.textContent = `Visar ${visible} av ${items.length} resultat${activeType !== "Alla" ? ` (${activeType})` : ""}${query ? ` för "${query}"` : ""}`;
+      }
+      if (empty) {
+        empty.classList.toggle("is-hidden", visible !== 0);
+      }
+    };
+
+    if (input instanceof HTMLInputElement) {
+      input.addEventListener("input", runSearch);
+    }
+    for (const button of typeButtons) {
+      button.addEventListener("click", () => {
+        activeType = button.getAttribute("data-search-type") || "Alla";
+        setTypeState(activeType);
+        runSearch();
+      });
+    }
+  </script>
+</BaseLayout>

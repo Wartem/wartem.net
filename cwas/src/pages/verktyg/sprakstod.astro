@@ -1,0 +1,114 @@
+---
+import ToolPageShell from "../../components/ToolPageShell.astro";
+---
+
+<ToolPageShell
+  toolName="LanguageTool / Microsoft Editor"
+  slugPath="/verktyg/sprakstod"
+  shortDescription="Språkgranskning och redigeringsstöd för svensk text. I källmaterialet lyfts språkstöd som lågtröskelverktyg för korrektur, tydlighet och stil – särskilt i slutet av arbetsflöden."
+  categories={["Skriv", "Integritet"]}
+  fitsForCWas={[
+    "Slutrunda på politiska texter, planer och dokument innan de delas/publiceras.",
+    "Snabb språkgranskning av svenska texter (stavning, grammatik, tydlighet).",
+    "När CWas vill förbättra läsbarhet utan att starta ett stort AI-flöde.",
+    "Som komplement till Claude/ChatGPT efter att innehåll och struktur redan är satta."
+  ]}
+  strengths={[
+    "Låg lärtröskel och snabb effekt i vardagen.",
+    "Bra för korrektur, språkriktighet och tydlighet i svenska texter.",
+    "Passar utmärkt som sista steg efter AI-utkast och egen redigering.",
+    "Minskar risken för småfel som drar ned trovärdighet."
+  ]}
+  weaknesses={[
+    "Ger inte strategisk hjälp med tes, argumentation eller debattupplägg.",
+    "Är inte ett researchverktyg och faktakollar inte innehåll.",
+    "Förslag kan ibland ändra nyans/ton; CWas måste läsa varje ändring.",
+    "Klarar inte själv komplex omarbetning av innehållslig logik."
+  ]}
+  useWhen={[
+    "Textens innehåll är klart men du vill förbättra språk och läsbarhet.",
+    "Du vill hitta småfel innan publicering eller inlämning.",
+    "Du behöver göra en text mer konsekvent i stil eller ton.",
+    "Du vill kombinera snabb AI-skrivning med säker slutgranskning."
+  ]}
+  avoidWhen={[
+    "Du behöver källor, research eller akademisk artikelöverblick.",
+    "Du behöver debattträning eller muntlig strategisk feedback.",
+    "Du vill få fram själva kärnbudskapet (använd först ett skriv-/dialogverktyg)."
+  ]}
+  workflowSteps={[
+    { title: "Gör innehållsrundan först", body: "Sätt tes, struktur och sakinnehåll innan du börjar finputsa språket." },
+    { title: "Kör språkgranskning", body: "Granska stavning, grammatik och formuleringar – men acceptera inte allt automatiskt." },
+    { title: "Skydda rösten", body: "Behåll formuleringar som bär CWas ton även om verktyget föreslår mer standardiserat språk." },
+    { title: "Faktakolla separat", body: "Språkstöd ersätter inte faktakontroll. Kontrollera påståenden i källor efteråt." }
+  ]}
+  privacySummary="Språkstöd är ofta lågtröskel och praktiskt, men text du klistrar in kan fortfarande behandlas av extern tjänst beroende på verktyg och miljö. Anpassa efter texttyp och känslighet."
+  privacyChecks={[
+    "Undvik att klistra in känsliga personuppgifter och individärenden.",
+    "Anonymisera namn om texten innehåller elevnära eller personkopplad information.",
+    "Använd lokal/offline lösning om integritetskravet är högt.",
+    "Kom ihåg att språkverktyg inte avgör vad som är lämpligt att dela."
+  ]}
+  factCheckNotes={[
+    "Språkstöd kontrollerar språk – inte sanningshalt. Faktakoll görs alltid separat.",
+    "Automatiska omskrivningar kan råka ändra betydelsen; kontrollera sakinnebörden."
+  ]}
+  uncertainties={[
+    "Vilka funktioner som finns beror på om du använder LanguageTool, Microsoft Editor eller annan integrerad variant.",
+    "Integritetsnivå varierar beroende på klient (webb, tillägg, lokal installation, organisationens miljö)."
+  ]}
+  examplePrompts={[
+    {
+      id: "sprakstod-manus-korrektur",
+      title: "Instruktion för AI före språkstöd (förbättra utan att ändra betydelse)",
+      prompt: `Gör en språkförbättringsrunda på texten nedan.
+
+Krav:
+- Ändra inte ståndpunkt eller sakinnehåll
+- Behåll min ton så långt det går
+- Gör språket tydligare och mer lättläst
+- Markera meningar där omskrivning riskerar att ändra betydelsen med [KOLLA]
+
+Leverera:
+1. Förbättrad version
+2. Lista över 5 känsliga formuleringar att läsa extra noga
+
+Text:
+[klistra in]`
+    },
+    {
+      id: "sprakstod-lattlast",
+      title: "Förenkla svenska utan att bli platt",
+      prompt: `Skriv om texten till tydligare svenska.
+
+Krav:
+- Kortare meningar
+- Tydligare subjekt/verb
+- Behåll nyanser och saklighet
+- Undvik att göra texten "PR-mjuk"
+- Markera eventuella faktaformuleringar som bör kontrolleras med [KOLLA]
+
+Text:
+[klistra in]`
+    },
+    {
+      id: "sprakstod-tonkontroll",
+      title: "Tonkontroll före språkgranskning",
+      prompt: `Bedöm tonen i texten innan jag kör språkgranskning.
+
+Svara på svenska och bedöm:
+1. För formell / lagom / för vardaglig
+2. Risk för snömos
+3. Risk för missförstånd
+4. 3 meningar som bör stramas upp
+5. Faktapåståenden att märka [KOLLA]
+
+Text:
+[klistra in]`
+    }
+  ]}
+  relatedLinks={[
+    { label: "Politisk text 30 min", href: "/arbetsfloden#politisk-text-30-min", description: "Korrektur ingår som sista steg i workflowet." },
+    { label: "Promptbibliotek: skrivande", href: "/promptbibliotek#skrivande", description: "Fler mallar för skriv- och språkförbättring." }
+  ]}
+/>

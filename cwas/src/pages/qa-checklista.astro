@@ -1,0 +1,141 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Checklist from "../components/Checklist.astro";
+import Callout from "../components/Callout.astro";
+import StepByStep from "../components/StepByStep.astro";
+import ComparisonTable from "../components/ComparisonTable.astro";
+
+const sidebarItems = [
+  { label: "Översikt", href: "#oversikt" },
+  { label: "Snabb QA", href: "#snabb-qa" },
+  { label: "Sida för sida", href: "#sida-for-sida" },
+  { label: "Innehållskontroll", href: "#innehallskontroll" },
+  { label: "UX och navigation", href: "#ux-och-navigation" },
+  { label: "Publicering", href: "#publicering" }
+];
+
+const quickQa = [
+  "Fungerar startsidan och syns snabba startspår tydligt?",
+  "Fungerar intern sök (testa minst tre ord)?",
+  "Fungerar filtrering i Verktyg och Promptbibliotek?",
+  "Fungerar kopiera-knapparna i prompts?",
+  "Fungerar tillbaka-länkar och brödsmulor på vanliga sidor och verktygssidor?",
+  "Visas relaterat innehåll under sidan?",
+  "Ger 404-sidan tydliga vägar tillbaka?"
+];
+
+const pageSteps = [
+  { title: "Start + Profil", body: "Kontrollera läsbarhet, länkar och att behovsbilden känns konsekvent." },
+  { title: "Arbetsflöden + Promptbibliotek", body: "Testa prompts, filtrering, kopiera och [KOLLA]/[OSÄKERT]-markeringar." },
+  { title: "Verktyg + Jämförelse", body: "Kontrollera verktygssidor, filtrering och betaljämförelsens länkar." },
+  { title: "Integritet + Tips + Sök", body: "Kontrollera checklister, sökresultat och navigation." }
+];
+
+const contentColumns = ["Kontrollpunkt", "Vad du letar efter", "Åtgärd om fel"];
+const contentRows = [
+  ["Språk", "Kort, tydlig svenska och konsekventa ordval", "Korta stycken, förenkla formuleringar, samordna rubriker"],
+  ["Länkar", "Rätt sida/sektion öppnas", "Rätta `href` eller ankare"],
+  ["Markeringar", "[KOLLA]/[OSÄKERT] finns där de behövs", "Lägg till i workflows/prompts"],
+  ["Promptar", "Korta nog för gratisläge och tydliga nog att fungera", "Kortare instruktion, tydligare formatkrav"],
+  ["Sammanhang", "Sidan leder vidare till nästa steg", "Lägg till relaterat innehåll eller intern länk"]
+];
+
+const uxChecklist = [
+  "Mobilmeny går att öppna och använda.",
+  "Filterknappar visar aktivt läge och går att använda med tangentbord.",
+  "Sök visar tomt läge när inget matchar.",
+  "Utskrift ser rimlig ut på minst en längre sida.",
+  "Footer länkar till rätt nyckelsidor."
+];
+
+const publishChecklist = [
+  "Kör `npm install` och `npm run build` när nät/cache finns.",
+  "Klicktesta ett urval av sidor i build/preview.",
+  "Kontrollera att inga tillfälliga filer följer med.",
+  "Bekräfta 'Senast uppdaterad' om innehållet ändrats."
+];
+---
+
+<BaseLayout
+  title="QA-checklista | CWas AI-handbok"
+  currentPath="/qa-checklista"
+  sidebarEyebrow="QA"
+  sidebarTitle="Manuell QA-checklista"
+  sidebarCopy="Snabb checklista för innehåll, filter, sök, navigation och publicering."
+  sidebarItems={sidebarItems}
+>
+  <section id="oversikt" class="hero">
+    <p class="eyebrow">QA</p>
+    <h1>Manuell QA-checklista (sida för sida)</h1>
+    <p class="lead">
+      Använd denna sida som snabb genomgång före publicering eller efter större ändringar. Fokus är att handboken känns sammanhängande och går snabbt att använda.
+    </p>
+  </section>
+
+  <section id="snabb-qa" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Snabb QA</p>
+      <h2>5–10 minuter: snabb kontroll</h2>
+      <p>En kort runda som fångar de vanligaste regressionsfelen.</p>
+    </div>
+    <div class="stack">
+      <Checklist title="Snabb check" items={quickQa} />
+      <Callout title="Bra startpunkt" variant="tip">
+        Testa först <a href="/sok">Sök</a>, <a href="/verktyg">Verktyg</a> (filter) och <a href="/promptbibliotek">Promptbibliotek</a> (filter + kopiera).
+      </Callout>
+    </div>
+  </section>
+
+  <section id="sida-for-sida" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Ordning</p>
+      <h2>Sida för sida: rekommenderad QA-runda</h2>
+      <p>Kör detta när du vill göra en lite grundligare kontroll.</p>
+    </div>
+    <div class="stack">
+      <StepByStep title="QA-runda" steps={pageSteps} />
+    </div>
+  </section>
+
+  <section id="innehallskontroll" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Innehåll</p>
+      <h2>Innehållskontroll i praktiken</h2>
+      <p>Det viktigaste är att användaren snabbt förstår vad som ska göras och vart man går vidare.</p>
+    </div>
+    <div class="stack">
+      <ComparisonTable title="Vad du kontrollerar" columns={contentColumns} rows={contentRows} />
+      <Callout title="Viktigt för denna sajt" variant="warning">
+        Kontrollera särskilt workflows och prompts så att faktakoll- och osäkerhetsmarkeringar finns kvar där de behövs.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="ux-och-navigation" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">UX</p>
+      <h2>UX och navigation</h2>
+      <p>Sajten bygger på snabb orientering via sök, filter, relaterat innehåll och tydliga vägar tillbaka.</p>
+    </div>
+    <div class="stack">
+      <Checklist title="UX-checklista" items={uxChecklist} />
+      <Callout title="Testa verkliga flöden" variant="info">
+        Exempel: Start → Arbetsflöden → Verktygssida → tillbaka → Sök → sektionsträff. Om det känns naturligt är UX-kedjan i bra skick.
+      </Callout>
+    </div>
+  </section>
+
+  <section id="publicering" class="content-section">
+    <div class="section-header">
+      <p class="eyebrow">Publicering</p>
+      <h2>Inför publicering</h2>
+      <p>Slutkontroller för build och innehåll när det är dags att publicera uppdateringar.</p>
+    </div>
+    <div class="stack">
+      <Checklist title="Publiceringscheck" items={publishChecklist} />
+      <Callout title="Miljön här" variant="info">
+        Build har tidigare varit blockerad av offline npm-cache. Kör lokal build när nät/cache finns tillgängligt.
+      </Callout>
+    </div>
+  </section>
+</BaseLayout>
