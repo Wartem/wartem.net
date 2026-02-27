@@ -126,7 +126,10 @@ const typeOrder = ["Alla", "Sida", "Sektion", "Verktyg", "Prompt"];
         Testa: <code>debatt</code>, <code>[KOLLA]</code>, <code>integritet</code>, <code>Perplexity</code>, <code>seminarium</code>, <code>MIK</code>, <code>årshjul</code>.
       </Callout>
       <Callout title="Hur sökningen fungerar" variant="info">
-        Sökningen matchar titel, beskrivning, kategori och taggar i det interna indexet. Den kräver ingen server och skickar inga sökfrågor externt.
+        Sökningen matchar titel, beskrivning, kategori och taggar i det interna indexet. Filtreringen sker i webbläsaren och kräver ingen separat sökserver.
+      </Callout>
+      <Callout title="Teknisk notis (kontrollera själv)" variant="tip">
+        Vill du verifiera att sökningen inte triggar extra nätverksanrop: öppna webbläsarens DevTools → Network, skriv i sökrutan och se om några requests sker utöver sidans vanliga laddning. Observera att själva hostingmiljön fortfarande kan logga sidvisningar.
       </Callout>
     </div>
   </section>

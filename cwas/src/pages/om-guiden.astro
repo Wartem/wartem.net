@@ -20,6 +20,14 @@ const sourceChecklist = [
   "Sajten ska läsas som arbetsstöd, inte som ersättning för lokala riktlinjer eller officiella villkor."
 ];
 
+const sourceTypeChecklist = [
+  "Profil/behov: arbetssituation, mål, friktion och risker.",
+  "Arbetsflöden: tidssatta rutiner för återkommande uppgifter.",
+  "Prompts: korta mallar som testas och återanvänds.",
+  "Verktyg: styrkor/svagheter och rollfördelning (huvudverktyg vs komplement).",
+  "Trygg användning: integritet, dataminimering och kvalitetssäkring."
+];
+
 const buildSteps = [
   {
     title: "Samla och strukturera",
@@ -52,6 +60,14 @@ const updateChecklist = [
   "Uppdatera verktygssidor när arbetssätt eller prioriteringar ändras i praktiken.",
   "Lägg till nya prompts först efter att de testats i vardagen.",
   "Behåll korta och tydliga formuleringar, handboken ska vara snabb att använda."
+];
+
+const externalGuidanceChecklist = [
+  "IMY (Integritetsskyddsmyndigheten): vägledning om GDPR och generativ AI, särskilt för personuppgifter och riskbedömning.",
+  "Skolverket: råd om försiktighet med känslig information i skolkontext och kritiskt förhållningssätt till AI-innehåll.",
+  "W3C: WCAG 2.2 som tillgänglighetsstandard (relevant för offentlig verksamhet).",
+  "Digg (Myndigheten för digital förvaltning): vägledning kopplat till DOS-lagen (Lag (2018:1937) om tillgänglighet till digital offentlig service).",
+  "SFS: den juridiska grunden för offentlig sektor när handboken används i sådan kontext (inkl. DOS-lagen)."
 ];
 ---
 
@@ -88,6 +104,7 @@ const updateChecklist = [
     </div>
     <div class="stack">
       <Checklist title="Grunder för innehållet" items={sourceChecklist} />
+      <Checklist title="Underlagen i korthet" items={sourceTypeChecklist} />
       <Callout title="Viktigt om verktyg och priser" variant="warning">
         Verktyg, priser och funktioner förändras snabbt. Använd handboken som beslutsstöd och kontrollera alltid aktuell information hos leverantören innan köp eller längre planering.
       </Callout>
@@ -136,6 +153,7 @@ const updateChecklist = [
     </div>
     <div class="stack">
       <Checklist title="Enkel uppdateringsrutin" items={updateChecklist} />
+      <Checklist title="Extern vägledning att luta sig mot" items={externalGuidanceChecklist} />
       <Callout title="Vad som ger mest värde att uppdatera först" variant="tip">
         Börja med arbetsflöden, prompts och verktygsprioriteringar. Det är där vardagsnyttan förändras snabbast.
       </Callout>

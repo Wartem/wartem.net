@@ -12,8 +12,8 @@
     "title": "Kortare och tydligare text",
     "category": "Skrivande",
     "tags": ["redigering", "ton", "snabbstart"],
-    "summary": "Kortar texten utan att ändra standpunkt eller sakinnehåll.",
-    "prompt": "Korta ner texten 20-30% på tydlig svenska utan att ändra standpunkt eller sakinnehåll.\\n\\nGör detta:\\n1. Skriv ny version\\n2. Markera 3 meningar som var otydliga\\n3. Markera faktapåståenden med [KOLLA]\\n\\nText:\\n[klistra in]"
+    "summary": "Kortar texten utan att ändra ståndpunkt eller sakinnehåll.",
+    "prompt": "Korta ner texten 20-30% på tydlig svenska utan att ändra ståndpunkt eller sakinnehåll.\\n\\nGör detta:\\n1. Skriv ny version\\n2. Markera 3 meningar som var otydliga\\n3. Markera faktapåståenden med [KOLLA]\\n\\nText:\\n[klistra in]"
   },
   {
     "id": "skr-tonjustera",
