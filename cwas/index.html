@@ -34,27 +34,51 @@ Arbetssätt:
 2. Föreslå ett kort arbetssätt i 3 steg
 3. Leverera svaret i punktform eller tydliga rubriker
 4. Avsluta med: &quot;Tre svagheter/risker i svaret&quot;</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> <aside class="callout callout-warning" aria-label="Varning: Integritet först"> <div class="callout-head"> <strong>Integritet först</strong> <span>Varning</span> </div> <div class="callout-body"> 
 Använd aldrig riktiga personnamn eller känsliga elev-/ärendedata i externa AI-tjänster. Anonymisera först och använd alltid "CWas" på denna sajt.
  </div> </aside> </div> </section> <section id="vad-du-hittar-var" class="content-section"> <div class="section-header"> <p class="eyebrow">Navigering</p> <h2>Vad du hittar var på sajten</h2> <p>

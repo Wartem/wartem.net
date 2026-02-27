@@ -26,25 +26,49 @@ const displayPrompt = fixSvText(prompt)
 </section>
 
 <script is:inline>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script>
