@@ -20,27 +20,51 @@ Gör detta på svenska:
 3. Markera otydligheter med [OSÄKERT]
 4. Markera uppgifter som bör kontrolleras i originalet med [KOLLA]
 5. Skriv 5 frågör jag bör ställa innan dokumentet används vidare</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script><section class="prompt-block" aria-labelledby="lokal-rag-qa-title"> <div class="prompt-header"> <h3 id="lokal-rag-qa-title">Fråga-på-filer (mötesförberedelse)</h3> <button type="button" class="copy-button" data-prompt-copy data-target="lokal-rag-qa">
 Kopiera prompt
 </button> </div> <pre><code id="lokal-rag-qa">Jag ska förbereda mig inför ett möte utifrån lokala dokument.
@@ -51,27 +75,51 @@ Hjälp mig:
 3. Skriv korta talpunkter
 4. Markera allt som inte är tydligt underbyggt med [OSÄKERT]
 5. Markera allt jag bör dubbelkolla i originalfiler med [KOLLA]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script><section class="prompt-block" aria-labelledby="lokal-planutkast-title"> <div class="prompt-header"> <h3 id="lokal-planutkast-title">Plan-/policyutkast från lokalt underlag</h3> <button type="button" class="copy-button" data-prompt-copy data-target="lokal-planutkast">
 Kopiera prompt
 </button> </div> <pre><code id="lokal-planutkast">Skapa ett första utkast till plan/policy på svenska utifrån mitt lokala underlag.
@@ -85,27 +133,51 @@ Krav:
 
 Underlag:
 [klistra in / dokumentreferens]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> <aside class="callout callout-info" aria-label="Info: Källbaserad rekommendation"> <div class="callout-head"> <strong>Källbaserad rekommendation</strong> <span>Info</span> </div> <div class="callout-body"> Bygger på källmaterialet i projektet (utan nya fakta). Verifiera priser/funktioner i officiella kanaler innan beslut. </div> </aside> <p class="placeholder-note">Route: <code>/verktyg/lokala-alternativ</code></p> </div> </section>  <section class="content-section related-content"><div class="section-header"><p class="eyebrow">Fortsättning</p><h2>Relaterat innehåll</h2><p>Snabba vägar till närliggande sidor och praktiska nästa steg.</p></div><div class="cards-grid"><a class="card" href="/verktyg"><span class="card-tag">Relaterat</span><h3>Verktygsindex</h3><p>Tillbaka till filtrerad verktygsöversikt.</p></a><a class="card" href="/verktyg/vilket-ska-jag-betala-for"><span class="card-tag">Relaterat</span><h3>Vilket ska jag betala för?</h3><p>Källbaserad jämförelse av betalval.</p></a><a class="card" href="/promptbibliotek"><span class="card-tag">Relaterat</span><h3>Promptbibliotek</h3><p>Korta prompts som fungerar i gratisläge.</p></a></div></section> </main> </div> <footer class="site-footer" aria-label="Sidfot"> <div class="site-footer-inner"> <p class="site-footer-brand">CWas AI-handbok</p> <p class="site-footer-meta">
 Statisk referenssajt för vardagsanvändning. Senast uppdaterad:
 <time datetime="2026-02-26"> 26 februari 2026</time> </p> <nav class="site-footer-nav" aria-label="Sidfotsnavigation"> <a href="/">Start</a> <a href="/sok">Sök</a> <a href="/verktyg">Verktyg</a> <a href="/arbetsfloden">Arbetsflöden</a> <a href="/promptbibliotek">Promptbibliotek</a> <a href="/integritet-gdpr">Integritet</a> <a href="/tips-trix">Tips och trix</a> <a href="/om-guiden">Om handboken</a> <a href="/qa-checklista">QA-checklista</a> </nav> </div> </footer> <script>(function(){const basePath = "/cwas";

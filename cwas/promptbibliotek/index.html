@@ -22,27 +22,51 @@ Krav:
 
 Mina punkter:
 [klistra in]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article><article class="prompt-library-item" data-prompt-item data-prompt-category="Skrivande" data-prompt-tags="redigering|ton|snabbstart"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Kortar texten utan att ändra ståndpunkt eller sakinnehåll.</p> <div class="tag-list" aria-label="Taggar för Kortare och tydligare text"> <span class="tag-chip">redigering</span><span class="tag-chip">ton</span><span class="tag-chip">snabbstart</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-skr-korta-ner-title"> <div class="prompt-header"> <h3 id="plib-skr-korta-ner-title">Kortare och tydligare text</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-skr-korta-ner">
 Kopiera prompt
 </button> </div> <pre><code id="plib-skr-korta-ner">Korta ner texten 20-30% på tydlig svenska utan att ändra ståndpunkt eller sakinnehåll.
@@ -54,27 +78,51 @@ Gör detta:
 
 Text:
 [klistra in]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article><article class="prompt-library-item" data-prompt-item data-prompt-category="Skrivande" data-prompt-tags="ton|politik|gratislage"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Gör texten mer saklig eller mer engagerad utan floskler.</p> <div class="tag-list" aria-label="Taggar för Tonjustera utan snömos"> <span class="tag-chip">ton</span><span class="tag-chip">politik</span><span class="tag-chip">gratisläge</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-skr-tonjustera-title"> <div class="prompt-header"> <h3 id="plib-skr-tonjustera-title">Tonjustera utan snömos</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-skr-tonjustera">
 Kopiera prompt
 </button> </div> <pre><code id="plib-skr-tonjustera">Justera tonen i texten på svenska.
@@ -88,27 +136,51 @@ Krav:
 
 Text:
 [klistra in]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article> </div> </section><section id="debatt" class="content-section prompt-category-section" data-prompt-section data-section-category="Debatt"> <div class="section-header"> <p class="eyebrow">Kategori</p> <h2>Debatt</h2> <p>Prompts för tes, invändningar, friktion och att hålla linjen under press.</p> </div> <div class="prompt-library-grid"> <article class="prompt-library-item" data-prompt-item data-prompt-category="Debatt" data-prompt-tags="debatt|tes|snabbstart|gratislage"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Tränär kort muntlig formulering i textläge.</p> <div class="tag-list" aria-label="Taggar för Tes till 20-sekunders pitch"> <span class="tag-chip">debatt</span><span class="tag-chip">tes</span><span class="tag-chip">snabbstart</span><span class="tag-chip">gratisläge</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-debatt-tes-pitch-title"> <div class="prompt-header"> <h3 id="plib-debatt-tes-pitch-title">Tes till 20-sekunders pitch</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-debatt-tes-pitch">
 Kopiera prompt
 </button> </div> <pre><code id="plib-debatt-tes-pitch">Du är min debattcoach på svenska.
@@ -120,27 +192,51 @@ Gör detta:
 4. Ge en bättre version som låter som mig
 
 Starta med: &#39;Skriv din tes i en mening.&#39;</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article><article class="prompt-library-item" data-prompt-item data-prompt-category="Debatt" data-prompt-tags="debatt|motargument|faktakoll"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Får rimliga invändningar och förbättrade svar utan halmgubbar.</p> <div class="tag-list" aria-label="Taggar för Motargument och svar"> <span class="tag-chip">debatt</span><span class="tag-chip">motargument</span><span class="tag-chip">faktakoll</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-debatt-motargument-title"> <div class="prompt-header"> <h3 id="plib-debatt-motargument-title">Motargument och svar</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-debatt-motargument">
 Kopiera prompt
 </button> </div> <pre><code id="plib-debatt-motargument">Spela en saklig men skeptisk motdebattör på svenska.
@@ -153,27 +249,51 @@ Gör detta:
 - Låt mig svara
 - Ge kort feedback på strategi och tydlighet
 - Markera faktapåståenden med [KOLLA]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article><article class="prompt-library-item" data-prompt-item data-prompt-category="Debatt" data-prompt-tags="debatt|strategi|snabbstart"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Tränär att inte fastna i sidospår under press.</p> <div class="tag-list" aria-label="Taggar för Hålla linjen (brygga tillbaka)"> <span class="tag-chip">debatt</span><span class="tag-chip">strategi</span><span class="tag-chip">snabbstart</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-debatt-brygga-title"> <div class="prompt-header"> <h3 id="plib-debatt-brygga-title">Hålla linjen (brygga tillbaka)</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-debatt-brygga">
 Kopiera prompt
 </button> </div> <pre><code id="plib-debatt-brygga">Vi tränär på att hålla linjen i debatt.
@@ -185,27 +305,51 @@ Du ska:
 - Ge en kort &#39;brygga tillbaka&#39;-formulering
 
 Markera faktapåståenden med [KOLLA].</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article> </div> </section><section id="akademiskt" class="content-section prompt-category-section" data-prompt-section data-section-category="Akademiskt"> <div class="section-header"> <p class="eyebrow">Kategori</p> <h2>Akademiskt</h2> <p>Prompts för snabb översikt, ordlista och seminarieförberedelse med [KOLLA]/[OSÄKERT].</p> </div> <div class="prompt-library-grid"> <article class="prompt-library-item" data-prompt-item data-prompt-category="Akademiskt" data-prompt-tags="akademiskt|sammanfattning|ordlista|gratislage"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Snabb svensk översikt med osäkerhetsmarkeringar från abstract eller utdrag.</p> <div class="tag-list" aria-label="Taggar för Abstract till svensk översikt"> <span class="tag-chip">akademiskt</span><span class="tag-chip">sammanfattning</span><span class="tag-chip">ordlista</span><span class="tag-chip">gratisläge</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-akad-sammanfattning-title"> <div class="prompt-header"> <h3 id="plib-akad-sammanfattning-title">Abstract till svensk översikt</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-akad-sammanfattning">
 Kopiera prompt
 </button> </div> <pre><code id="plib-akad-sammanfattning">Arbeta bara utifrån underlaget jag ger.
@@ -219,27 +363,51 @@ Gör detta på svenska:
 
 Underlag:
 [klistra in abstract/utdrag]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article><article class="prompt-library-item" data-prompt-item data-prompt-category="Akademiskt" data-prompt-tags="akademiskt|metod|faktakoll"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Bryter ut metod/resultat i enkel svenska och markerar luckor.</p> <div class="tag-list" aria-label="Taggar för Förstå metod och resultat"> <span class="tag-chip">akademiskt</span><span class="tag-chip">metod</span><span class="tag-chip">faktakoll</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-akad-metod-resultat-title"> <div class="prompt-header"> <h3 id="plib-akad-metod-resultat-title">Förstå metod och resultat</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-akad-metod-resultat">
 Kopiera prompt
 </button> </div> <pre><code id="plib-akad-metod-resultat">Förklara texten nedan på enkel svenska med fokus på metod och resultat.
@@ -257,27 +425,51 @@ Krav:
 
 Text:
 [klistra in]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article><article class="prompt-library-item" data-prompt-item data-prompt-category="Akademiskt" data-prompt-tags="akademiskt|seminarium|snabbstart"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Genererar frågör du kan få på seminarium och korta svarsalternativ.</p> <div class="tag-list" aria-label="Taggar för Seminariefrågör + korta svar"> <span class="tag-chip">akademiskt</span><span class="tag-chip">seminarium</span><span class="tag-chip">snabbstart</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-akad-seminariefrgor-title"> <div class="prompt-header"> <h3 id="plib-akad-seminariefrgor-title">Seminariefrågör + korta svar</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-akad-seminariefrgor">
 Kopiera prompt
 </button> </div> <pre><code id="plib-akad-seminariefrgor">Jag ska presentera en artikel på seminarium.
@@ -289,27 +481,51 @@ Utifrån mitt underlag, skriv:
 
 Underlag:
 [klistra in anteckningar/abstract]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article> </div> </section><section id="skolbibliotek-mik" class="content-section prompt-category-section" data-prompt-section data-section-category="Skolbibliotek/MIK"> <div class="section-header"> <p class="eyebrow">Kategori</p> <h2>Skolbibliotek/MIK</h2> <p>Prompts för MIK-övningar, differentiering och årshjulspunkter i skolbiblioteksvardag.</p> </div> <div class="prompt-library-grid"> <article class="prompt-library-item" data-prompt-item data-prompt-category="Skolbibliotek/MIK" data-prompt-tags="mik|lektion|planering|gratislage"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Skapar en kort MIK-aktivitet med tydligt syfte och enkel uppföljning.</p> <div class="tag-list" aria-label="Taggar för MIK-övning på 10-20 min"> <span class="tag-chip">mik</span><span class="tag-chip">lektion</span><span class="tag-chip">planering</span><span class="tag-chip">gratisläge</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-mik-lektionside-title"> <div class="prompt-header"> <h3 id="plib-mik-lektionside-title">MIK-övning på 10-20 min</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-mik-lektionside">
 Kopiera prompt
 </button> </div> <pre><code id="plib-mik-lektionside">Skapa en kort MIK-övning på svenska (10-20 min).
@@ -325,27 +541,51 @@ Format:
 - Enkel uppföljning
 
 Markera lokala antaganden med [OSÄKERT] och styrdokumentspåståenden med [KOLLA].</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article><article class="prompt-library-item" data-prompt-item data-prompt-category="Skolbibliotek/MIK" data-prompt-tags="mik|differentiering|lektion"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Tar en aktivitet och gör två nivåer för olika behov.</p> <div class="tag-list" aria-label="Taggar för Differentiera aktivitet (enklare/fördjupning)"> <span class="tag-chip">mik</span><span class="tag-chip">differentiering</span><span class="tag-chip">lektion</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-mik-differentiera-title"> <div class="prompt-header"> <h3 id="plib-mik-differentiera-title">Differentiera aktivitet (enklare/fördjupning)</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-mik-differentiera">
 Kopiera prompt
 </button> </div> <pre><code id="plib-mik-differentiera">Jag har en aktivitet för skolbibliotek/MIK.
@@ -359,27 +599,51 @@ Markera lokala antaganden med [OSÄKERT].
 
 Aktivitet:
 [klistra in]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article><article class="prompt-library-item" data-prompt-item data-prompt-category="Skolbibliotek/MIK" data-prompt-tags="planering|arshjul|uppfoljning"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Formulerar en årshjulspunkt med ansvar, tidsåtgång och mätpunkt.</p> <div class="tag-list" aria-label="Taggar för Årshjulspunkt med uppföljning"> <span class="tag-chip">planering</span><span class="tag-chip">årshjul</span><span class="tag-chip">uppföljning</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-skolbibliotek-arshjulpunkt-title"> <div class="prompt-header"> <h3 id="plib-skolbibliotek-arshjulpunkt-title">Årshjulspunkt med uppföljning</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-skolbibliotek-arshjulpunkt">
 Kopiera prompt
 </button> </div> <pre><code id="plib-skolbibliotek-arshjulpunkt">Hjälp mig skriva en punkt till skolbibliotekets årshjul på svenska.
@@ -395,27 +659,51 @@ Markera lokala beslut/krav med [KOLLA] och antaganden med [OSÄKERT].
 
 Underlag:
 [klistra in]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article> </div> </section><section id="namndvardag" class="content-section prompt-category-section" data-prompt-section data-section-category="Namndvardag"> <div class="section-header"> <p class="eyebrow">Kategori</p> <h2>Nämndvardag</h2> <p>Prompts för underlagssammanfattning, talpunkter och språklig skärpning i nämndnära arbete.</p> </div> <div class="prompt-library-grid"> <article class="prompt-library-item" data-prompt-item data-prompt-category="Namndvardag" data-prompt-tags="namndvardag|sammanfattning|faktakoll|gratislage"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Kort briefing av underlag med kontrollmarkeringar och frågör.</p> <div class="tag-list" aria-label="Taggar för Sammanfatta underlag till beslutspunkt"> <span class="tag-chip">nämndvardag</span><span class="tag-chip">sammanfattning</span><span class="tag-chip">faktakoll</span><span class="tag-chip">gratisläge</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-namnd-sammanfatta-underlag-title"> <div class="prompt-header"> <h3 id="plib-namnd-sammanfatta-underlag-title">Sammanfatta underlag till beslutspunkt</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-namnd-sammanfatta-underlag">
 Kopiera prompt
 </button> </div> <pre><code id="plib-namnd-sammanfatta-underlag">Sammanfatta underlaget på svenska för förberedelse inför beslut/möte.
@@ -429,27 +717,51 @@ Format:
 
 Underlag:
 [klistra in]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article><article class="prompt-library-item" data-prompt-item data-prompt-category="Namndvardag" data-prompt-tags="namndvardag|talpunkter|ton"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Skapar korta talpunkter i saklig ton utan för mycket formalism.</p> <div class="tag-list" aria-label="Taggar för Talpunkter för möte eller media"> <span class="tag-chip">nämndvardag</span><span class="tag-chip">talpunkter</span><span class="tag-chip">ton</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-namnd-talpunkter-title"> <div class="prompt-header"> <h3 id="plib-namnd-talpunkter-title">Talpunkter för möte eller media</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-namnd-talpunkter">
 Kopiera prompt
 </button> </div> <pre><code id="plib-namnd-talpunkter">Skriv korta talpunkter på svenska utifrån mitt underlag.
@@ -463,27 +775,51 @@ Krav:
 
 Underlag:
 [klistra in]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article><article class="prompt-library-item" data-prompt-item data-prompt-category="Namndvardag" data-prompt-tags="namndvardag|redigering|ton|struktur"> <div class="prompt-card-meta"> <p class="prompt-card-summary">Gör formell text tydligare utan att ändra sakinnehåll.</p> <div class="tag-list" aria-label="Taggar för Språklig skärpning av formell text"> <span class="tag-chip">nämndvardag</span><span class="tag-chip">redigering</span><span class="tag-chip">ton</span><span class="tag-chip">struktur</span> </div> </div> <section class="prompt-block" aria-labelledby="plib-namnd-remiss-sprak-title"> <div class="prompt-header"> <h3 id="plib-namnd-remiss-sprak-title">Språklig skärpning av formell text</h3> <button type="button" class="copy-button" data-prompt-copy data-target="plib-namnd-remiss-sprak">
 Kopiera prompt
 </button> </div> <pre><code id="plib-namnd-remiss-sprak">Gör texten tydligare och mer lättläst på svenska utan att ändra sakinnehåll.
@@ -496,27 +832,51 @@ Gör detta:
 
 Text:
 [klistra in]</code></pre> </section> <script>
-  const buttons = document.querySelectorAll("[data-prompt-copy]");
-  for (const button of buttons) {
-    if (button.dataset.bound === "true") continue;
-    button.dataset.bound = "true";
-    button.addEventListener("click", async () => {
-      const targetId = button.getAttribute("data-target");
-      if (!targetId) return;
-      const code = document.getElementById(targetId);
-      if (!code) return;
-      const original = button.textContent;
-      try {
-        await navigator.clipboard.writeText(code.innerText);
-        button.textContent = "Kopierad";
-      } catch {
-        button.textContent = "Kunde inte kopiera";
+  (() => {
+    const fallbackCopy = (text) => {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.top = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      textArea.setSelectionRange(0, textArea.value.length);
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
       }
-      window.setTimeout(() => {
-        button.textContent = original;
-      }, 1400);
-    });
-  }
+      return fallbackCopy(text);
+    };
+
+    const buttons = document.querySelectorAll("[data-prompt-copy]");
+    for (const button of buttons) {
+      if (button.dataset.bound === "true") continue;
+      button.dataset.bound = "true";
+      button.addEventListener("click", async () => {
+        const targetId = button.getAttribute("data-target");
+        if (!targetId) return;
+        const code = document.getElementById(targetId);
+        if (!code) return;
+        const original = button.textContent;
+        try {
+          const copied = await copyText(code.textContent ?? "");
+          button.textContent = copied ? "Kopierad" : "Kunde inte kopiera";
+        } catch {
+          button.textContent = "Kunde inte kopiera";
+        }
+        window.setTimeout(() => {
+          button.textContent = original;
+        }, 1400);
+      });
+    }
+  })();
 </script> </article> </div> </section><script>
     const categoryButtons = Array.from(document.querySelectorAll("[data-prompt-category].filter-pill"));
     const tagButtons = Array.from(document.querySelectorAll("[data-prompt-tag].filter-pill"));
