@@ -1,0 +1,15 @@
+{
+  "capture_count": 380,
+  "failed_best_capture_lookups": [],
+  "kind_counts": {
+    "category": 20,
+    "feed": 22,
+    "homepage": 3,
+    "other": 144,
+    "pagination": 1,
+    "post_like": 82,
+    "tag": 108
+  },
+  "mode": "url-first-best-capture",
+  "unique_url_count": 380
+}
