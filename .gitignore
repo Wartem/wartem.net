@@ -7,3 +7,7 @@ draumr
 /cwas/dist/
 /cwas/delete/
 apps/artviewer/NGArt Viewer 3/obj/
+__pycache__/
+*.pyc
+archive/bufsimrishamn/tmp*/
+archive/bufsimrishamn/out-smoke/
