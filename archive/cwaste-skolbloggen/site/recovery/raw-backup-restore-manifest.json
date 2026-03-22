@@ -1,0 +1,812 @@
+{
+  "mode": "raw-backup-restore",
+  "restored_count": 134,
+  "failed_count": 0,
+  "restored": [
+    {
+      "path": "2010/01/05/valkommen-till-sv-b/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227040927id_/http://cwaste.skolbloggen.se:80/2010/01/05/valkommen-till-sv-b/",
+      "final_url": "https://web.archive.org/web/20100227040927id_/http://cwaste.skolbloggen.se:80/2010/01/05/valkommen-till-sv-b/",
+      "normalized_url": "http://cwaste.skolbloggen.se/2010/01/05/valkommen-till-sv-b/"
+    },
+    {
+      "path": "2010/01/10/vilka-ar-dina-tankar-kring-kursplanen-for-svenska-b/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227040931id_/http://cwaste.skolbloggen.se:80/2010/01/10/vilka-ar-dina-tankar-kring-kursplanen-for-svenska-b/",
+      "final_url": "https://web.archive.org/web/20100227040931id_/http://cwaste.skolbloggen.se:80/2010/01/10/vilka-ar-dina-tankar-kring-kursplanen-for-svenska-b/",
+      "normalized_url": "http://cwaste.skolbloggen.se/2010/01/10/vilka-ar-dina-tankar-kring-kursplanen-for-svenska-b/"
+    },
+    {
+      "path": "2010/01/17/vecka-3/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227040936id_/http://cwaste.skolbloggen.se:80/2010/01/17/vecka-3/",
+      "final_url": "https://web.archive.org/web/20100227040936id_/http://cwaste.skolbloggen.se:80/2010/01/17/vecka-3/",
+      "normalized_url": "http://cwaste.skolbloggen.se/2010/01/17/vecka-3/"
+    },
+    {
+      "path": "2010/01/22/vecka-4/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227041141id_/http://cwaste.skolbloggen.se:80/2010/01/22/vecka-4/",
+      "final_url": "https://web.archive.org/web/20100227041141id_/http://cwaste.skolbloggen.se:80/2010/01/22/vecka-4/",
+      "normalized_url": "http://cwaste.skolbloggen.se/2010/01/22/vecka-4/"
+    },
+    {
+      "path": "2010/01/29/vecka-5/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227040941id_/http://cwaste.skolbloggen.se:80/2010/01/29/vecka-5/",
+      "final_url": "https://web.archive.org/web/20100227040941id_/http://cwaste.skolbloggen.se:80/2010/01/29/vecka-5/",
+      "normalized_url": "http://cwaste.skolbloggen.se/2010/01/29/vecka-5/"
+    },
+    {
+      "path": "2010/01/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227062135id_/http://cwaste.skolbloggen.se:80/2010/01/",
+      "final_url": "https://web.archive.org/web/20100227062135id_/http://cwaste.skolbloggen.se:80/2010/01/",
+      "normalized_url": "http://cwaste.skolbloggen.se/2010/01/"
+    },
+    {
+      "path": "2010/02/19/nu-fyller-jag-inte-pa-mer-har/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227025312id_/http://cwaste.skolbloggen.se:80/2010/02/19/nu-fyller-jag-inte-pa-mer-har/",
+      "final_url": "https://web.archive.org/web/20100227025312id_/http://cwaste.skolbloggen.se:80/2010/02/19/nu-fyller-jag-inte-pa-mer-har/",
+      "normalized_url": "http://cwaste.skolbloggen.se/2010/02/19/nu-fyller-jag-inte-pa-mer-har/"
+    },
+    {
+      "path": "2010/02/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227062140id_/http://cwaste.skolbloggen.se:80/2010/02/",
+      "final_url": "https://web.archive.org/web/20100227062140id_/http://cwaste.skolbloggen.se:80/2010/02/",
+      "normalized_url": "http://cwaste.skolbloggen.se/2010/02/"
+    },
+    {
+      "path": "2013/08/14/vi-bloggar/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111346id_/http://cwaste.skolbloggen.se:80/2013/08/14/vi-bloggar/",
+      "final_url": "https://web.archive.org/web/20180323111346id_/http://cwaste.skolbloggen.se:80/2013/08/14/vi-bloggar/",
+      "normalized_url": "http://cwaste.skolbloggen.se/2013/08/14/vi-bloggar/"
+    },
+    {
+      "path": "2013/08/index.html",
+      "fetch_url": "https://web.archive.org/web/20181205010233id_/https://cwaste.skolbloggen.se/2013/08/",
+      "final_url": "https://web.archive.org/web/20181205010233id_/https://cwaste.skolbloggen.se/2013/08/",
+      "normalized_url": "https://cwaste.skolbloggen.se/2013/08/"
+    },
+    {
+      "path": "author/cwaste/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323110857id_/http://cwaste.skolbloggen.se:80/author/cwaste/",
+      "final_url": "https://web.archive.org/web/20180323110857id_/http://cwaste.skolbloggen.se:80/author/cwaste/",
+      "normalized_url": "http://cwaste.skolbloggen.se/author/cwaste/"
+    },
+    {
+      "path": "category/introduktion/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227041147id_/http://cwaste.skolbloggen.se:80/category/introduktion/",
+      "final_url": "https://web.archive.org/web/20100227041147id_/http://cwaste.skolbloggen.se:80/category/introduktion/",
+      "normalized_url": "http://cwaste.skolbloggen.se/category/introduktion/"
+    },
+    {
+      "path": "category/okategoriserad/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111351id_/http://cwaste.skolbloggen.se:80/category/okategoriserad/",
+      "final_url": "https://web.archive.org/web/20180323111351id_/http://cwaste.skolbloggen.se:80/category/okategoriserad/",
+      "normalized_url": "http://cwaste.skolbloggen.se/category/okategoriserad/"
+    },
+    {
+      "path": "category/planering/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227025321id_/http://cwaste.skolbloggen.se:80/category/planering/",
+      "final_url": "https://web.archive.org/web/20100227025321id_/http://cwaste.skolbloggen.se:80/category/planering/",
+      "normalized_url": "http://cwaste.skolbloggen.se/category/planering/"
+    },
+    {
+      "path": "det-utvidgade-textbegreppet/bildanalys-ett-exempel/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323110902id_/http://cwaste.skolbloggen.se:80/det-utvidgade-textbegreppet/bildanalys-ett-exempel/",
+      "final_url": "https://web.archive.org/web/20180323110902id_/http://cwaste.skolbloggen.se:80/det-utvidgade-textbegreppet/bildanalys-ett-exempel/",
+      "normalized_url": "http://cwaste.skolbloggen.se/det-utvidgade-textbegreppet/bildanalys-ett-exempel/"
+    },
+    {
+      "path": "det-utvidgade-textbegreppet/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111356id_/http://cwaste.skolbloggen.se:80/det-utvidgade-textbegreppet/",
+      "final_url": "https://web.archive.org/web/20180323111356id_/http://cwaste.skolbloggen.se:80/det-utvidgade-textbegreppet/",
+      "normalized_url": "http://cwaste.skolbloggen.se/det-utvidgade-textbegreppet/"
+    },
+    {
+      "path": "index.html",
+      "fetch_url": "https://web.archive.org/web/20190822221227id_/https://cwaste.skolbloggen.se/",
+      "final_url": "https://web.archive.org/web/20190822221227id_/https://cwaste.skolbloggen.se/",
+      "normalized_url": "https://cwaste.skolbloggen.se/"
+    },
+    {
+      "path": "om-froken-waste/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227062433id_/http://cwaste.skolbloggen.se:80/om-froken-waste/",
+      "final_url": "https://web.archive.org/web/20100227062433id_/http://cwaste.skolbloggen.se:80/om-froken-waste/",
+      "normalized_url": "http://cwaste.skolbloggen.se/om-froken-waste/"
+    },
+    {
+      "path": "om-tavlingsbidraget/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111401id_/http://cwaste.skolbloggen.se:80/om-tavlingsbidraget/",
+      "final_url": "https://web.archive.org/web/20180323111401id_/http://cwaste.skolbloggen.se:80/om-tavlingsbidraget/",
+      "normalized_url": "http://cwaste.skolbloggen.se/om-tavlingsbidraget/"
+    },
+    {
+      "path": "oppna-larresurser/csu-affordable-learning-solutions/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323110913id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/csu-affordable-learning-solutions/",
+      "final_url": "https://web.archive.org/web/20180323110913id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/csu-affordable-learning-solutions/",
+      "normalized_url": "http://cwaste.skolbloggen.se/oppna-larresurser/csu-affordable-learning-solutions/"
+    },
+    {
+      "path": "oppna-larresurser/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323110907id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/",
+      "final_url": "https://web.archive.org/web/20180323110907id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/",
+      "normalized_url": "http://cwaste.skolbloggen.se/oppna-larresurser/"
+    },
+    {
+      "path": "oppna-larresurser/itunes-u/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111625id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/itunes-u/",
+      "final_url": "https://web.archive.org/web/20180323111625id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/itunes-u/",
+      "normalized_url": "http://cwaste.skolbloggen.se/oppna-larresurser/itunes-u/"
+    },
+    {
+      "path": "oppna-larresurser/ne-skola/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323110917id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/ne-skola/",
+      "final_url": "https://web.archive.org/web/20180323110917id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/ne-skola/",
+      "normalized_url": "http://cwaste.skolbloggen.se/oppna-larresurser/ne-skola/"
+    },
+    {
+      "path": "oppna-larresurser/wikibooks/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111154id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/wikibooks/",
+      "final_url": "https://web.archive.org/web/20180323111154id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/wikibooks/",
+      "normalized_url": "http://cwaste.skolbloggen.se/oppna-larresurser/wikibooks/"
+    },
+    {
+      "path": "oppna-larresurser/wikiversity/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111630id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/wikiversity/",
+      "final_url": "https://web.archive.org/web/20180323111630id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/wikiversity/",
+      "normalized_url": "http://cwaste.skolbloggen.se/oppna-larresurser/wikiversity/"
+    },
+    {
+      "path": "oppna-larresurser/youtube-edu/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111406id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/youtube-edu/",
+      "final_url": "https://web.archive.org/web/20180323111406id_/http://cwaste.skolbloggen.se:80/oppna-larresurser/youtube-edu/",
+      "normalized_url": "http://cwaste.skolbloggen.se/oppna-larresurser/youtube-edu/"
+    },
+    {
+      "path": "presentation/din-presentation/index.html",
+      "fetch_url": "https://web.archive.org/web/20190806172305/http://cwaste.skolbloggen.se:80/presentation/din-presentation",
+      "final_url": "https://web.archive.org/web/20180323111416/http://cwaste.skolbloggen.se/presentation/din-presentation/",
+      "normalized_url": "http://cwaste.skolbloggen.se/presentation/din-presentation/"
+    },
+    {
+      "path": "presentation/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111411id_/http://cwaste.skolbloggen.se:80/presentation/",
+      "final_url": "https://web.archive.org/web/20180323111411id_/http://cwaste.skolbloggen.se:80/presentation/",
+      "normalized_url": "http://cwaste.skolbloggen.se/presentation/"
+    },
+    {
+      "path": "presentation/om-froken-waste/index.html",
+      "fetch_url": "https://web.archive.org/web/20180321045840id_/http://cwaste.skolbloggen.se:80/presentation/om-froken-waste/",
+      "final_url": "https://web.archive.org/web/20180321045840id_/http://cwaste.skolbloggen.se:80/presentation/om-froken-waste/",
+      "normalized_url": "http://cwaste.skolbloggen.se/presentation/om-froken-waste/"
+    },
+    {
+      "path": "redovisning/akademisk-hederlighet/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111159id_/http://cwaste.skolbloggen.se:80/redovisning/akademisk-hederlighet/",
+      "final_url": "https://web.archive.org/web/20180323111159id_/http://cwaste.skolbloggen.se:80/redovisning/akademisk-hederlighet/",
+      "normalized_url": "http://cwaste.skolbloggen.se/redovisning/akademisk-hederlighet/"
+    },
+    {
+      "path": "redovisning/akademisk-hederlighet/upphovsratt-och-creative-commons/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111635id_/http://cwaste.skolbloggen.se:80/redovisning/akademisk-hederlighet/upphovsratt-och-creative-commons/",
+      "final_url": "https://web.archive.org/web/20180323111635id_/http://cwaste.skolbloggen.se:80/redovisning/akademisk-hederlighet/upphovsratt-och-creative-commons/",
+      "normalized_url": "http://cwaste.skolbloggen.se/redovisning/akademisk-hederlighet/upphovsratt-och-creative-commons/"
+    },
+    {
+      "path": "redovisning/bilder-och-bildtexter/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111640id_/http://cwaste.skolbloggen.se:80/redovisning/bilder-och-bildtexter/",
+      "final_url": "https://web.archive.org/web/20180323111640id_/http://cwaste.skolbloggen.se:80/redovisning/bilder-och-bildtexter/",
+      "normalized_url": "http://cwaste.skolbloggen.se/redovisning/bilder-och-bildtexter/"
+    },
+    {
+      "path": "redovisning/bilder-som-du-far-anvanda-till-dina-redovisningar/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111421id_/http://cwaste.skolbloggen.se:80/redovisning/bilder-som-du-far-anvanda-till-dina-redovisningar/",
+      "final_url": "https://web.archive.org/web/20180323111421id_/http://cwaste.skolbloggen.se:80/redovisning/bilder-som-du-far-anvanda-till-dina-redovisningar/",
+      "normalized_url": "http://cwaste.skolbloggen.se/redovisning/bilder-som-du-far-anvanda-till-dina-redovisningar/"
+    },
+    {
+      "path": "redovisning/hur-du-hanterar-powerpoint/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111426id_/http://cwaste.skolbloggen.se:80/redovisning/hur-du-hanterar-powerpoint/",
+      "final_url": "https://web.archive.org/web/20180323111426id_/http://cwaste.skolbloggen.se:80/redovisning/hur-du-hanterar-powerpoint/",
+      "normalized_url": "http://cwaste.skolbloggen.se/redovisning/hur-du-hanterar-powerpoint/"
+    },
+    {
+      "path": "redovisning/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323110922id_/http://cwaste.skolbloggen.se:80/redovisning/",
+      "final_url": "https://web.archive.org/web/20180323110922id_/http://cwaste.skolbloggen.se:80/redovisning/",
+      "normalized_url": "http://cwaste.skolbloggen.se/redovisning/"
+    },
+    {
+      "path": "redovisning/overkurs/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111645id_/http://cwaste.skolbloggen.se:80/redovisning/overkurs/",
+      "final_url": "https://web.archive.org/web/20180323111645id_/http://cwaste.skolbloggen.se:80/redovisning/overkurs/",
+      "normalized_url": "http://cwaste.skolbloggen.se/redovisning/overkurs/"
+    },
+    {
+      "path": "redovisning/publicering/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111204id_/http://cwaste.skolbloggen.se:80/redovisning/publicering/",
+      "final_url": "https://web.archive.org/web/20180323111204id_/http://cwaste.skolbloggen.se:80/redovisning/publicering/",
+      "normalized_url": "http://cwaste.skolbloggen.se/redovisning/publicering/"
+    },
+    {
+      "path": "redovisning/tankekartor/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111431id_/http://cwaste.skolbloggen.se:80/redovisning/tankekartor/",
+      "final_url": "https://web.archive.org/web/20180323111431id_/http://cwaste.skolbloggen.se:80/redovisning/tankekartor/",
+      "normalized_url": "http://cwaste.skolbloggen.se/redovisning/tankekartor/"
+    },
+    {
+      "path": "redovisning/textformatering/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111438id_/http://cwaste.skolbloggen.se:80/redovisning/textformatering/",
+      "final_url": "https://web.archive.org/web/20180323111438id_/http://cwaste.skolbloggen.se:80/redovisning/textformatering/",
+      "normalized_url": "http://cwaste.skolbloggen.se/redovisning/textformatering/"
+    },
+    {
+      "path": "search/matris++referat/index.html",
+      "fetch_url": "https://web.archive.org/web/20170605221313id_/http://cwaste.skolbloggen.se:80/search/matris++referat",
+      "final_url": "https://web.archive.org/web/20170605221313id_/http://cwaste.skolbloggen.se:80/search/matris++referat",
+      "normalized_url": "http://cwaste.skolbloggen.se/search/matris++referat"
+    },
+    {
+      "path": "studieteknik/att-hitta-information/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111209id_/http://cwaste.skolbloggen.se:80/studieteknik/att-hitta-information/",
+      "final_url": "https://web.archive.org/web/20180323111209id_/http://cwaste.skolbloggen.se:80/studieteknik/att-hitta-information/",
+      "normalized_url": "http://cwaste.skolbloggen.se/studieteknik/att-hitta-information/"
+    },
+    {
+      "path": "studieteknik/att-vardera-information/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111214id_/http://cwaste.skolbloggen.se:80/studieteknik/att-vardera-information/",
+      "final_url": "https://web.archive.org/web/20180323111214id_/http://cwaste.skolbloggen.se:80/studieteknik/att-vardera-information/",
+      "normalized_url": "http://cwaste.skolbloggen.se/studieteknik/att-vardera-information/"
+    },
+    {
+      "path": "studieteknik/index.html",
+      "fetch_url": "https://web.archive.org/web/20180315041541id_/http://cwaste.skolbloggen.se:80/studieteknik/",
+      "final_url": "https://web.archive.org/web/20180315041541id_/http://cwaste.skolbloggen.se:80/studieteknik/",
+      "normalized_url": "http://cwaste.skolbloggen.se/studieteknik/"
+    },
+    {
+      "path": "studieteknik/kallkritik/arkiv-och-samlingar-i-din-narhet/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111650id_/http://cwaste.skolbloggen.se:80/studieteknik/kallkritik/arkiv-och-samlingar-i-din-narhet/",
+      "final_url": "https://web.archive.org/web/20180323111650id_/http://cwaste.skolbloggen.se:80/studieteknik/kallkritik/arkiv-och-samlingar-i-din-narhet/",
+      "normalized_url": "http://cwaste.skolbloggen.se/studieteknik/kallkritik/arkiv-och-samlingar-i-din-narhet/"
+    },
+    {
+      "path": "studieteknik/kallkritik/de-kallkritiska-principerna/index.html",
+      "fetch_url": "https://web.archive.org/web/20180325144204id_/http://cwaste.skolbloggen.se:80/studieteknik/kallkritik/de-kallkritiska-principerna/",
+      "final_url": "https://web.archive.org/web/20180325144204id_/http://cwaste.skolbloggen.se:80/studieteknik/kallkritik/de-kallkritiska-principerna/",
+      "normalized_url": "http://cwaste.skolbloggen.se/studieteknik/kallkritik/de-kallkritiska-principerna/"
+    },
+    {
+      "path": "studieteknik/kallkritik/index.html",
+      "fetch_url": "https://web.archive.org/web/20180119211317id_/http://cwaste.skolbloggen.se:80/studieteknik/kallkritik/",
+      "final_url": "https://web.archive.org/web/20180119211317id_/http://cwaste.skolbloggen.se:80/studieteknik/kallkritik/",
+      "normalized_url": "http://cwaste.skolbloggen.se/studieteknik/kallkritik/"
+    },
+    {
+      "path": "studieteknik/kallkritik/ovningar-i-kallkritik/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111219id_/http://cwaste.skolbloggen.se:80/studieteknik/kallkritik/ovningar-i-kallkritik/",
+      "final_url": "https://web.archive.org/web/20180323111219id_/http://cwaste.skolbloggen.se:80/studieteknik/kallkritik/ovningar-i-kallkritik/",
+      "normalized_url": "http://cwaste.skolbloggen.se/studieteknik/kallkritik/ovningar-i-kallkritik/"
+    },
+    {
+      "path": "studieteknik/sjalvskattning-av-studievanor/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111444id_/http://cwaste.skolbloggen.se:80/studieteknik/sjalvskattning-av-studievanor/",
+      "final_url": "https://web.archive.org/web/20180323111444id_/http://cwaste.skolbloggen.se:80/studieteknik/sjalvskattning-av-studievanor/",
+      "normalized_url": "http://cwaste.skolbloggen.se/studieteknik/sjalvskattning-av-studievanor/"
+    },
+    {
+      "path": "studieteknik/uppgift/index.html",
+      "fetch_url": "https://web.archive.org/web/20190823103348/http://cwaste.skolbloggen.se:80/studieteknik/uppgift",
+      "final_url": "https://web.archive.org/web/20180329122410/http://cwaste.skolbloggen.se/studieteknik/uppgift/",
+      "normalized_url": "http://cwaste.skolbloggen.se/studieteknik/uppgift/"
+    },
+    {
+      "path": "svenska/argumenterande-texter/argumentation-ett-exempel/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111225id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/argumentation-ett-exempel/",
+      "final_url": "https://web.archive.org/web/20180323111225id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/argumentation-ett-exempel/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/argumenterande-texter/argumentation-ett-exempel/"
+    },
+    {
+      "path": "svenska/argumenterande-texter/argumenterande-tal/index.html",
+      "fetch_url": "https://web.archive.org/web/20180227090539id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/argumenterande-tal/",
+      "final_url": "https://web.archive.org/web/20180227090539id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/argumenterande-tal/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/argumenterande-texter/argumenterande-tal/"
+    },
+    {
+      "path": "svenska/argumenterande-texter/index.html",
+      "fetch_url": "https://web.archive.org/web/20180325150029id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/",
+      "final_url": "https://web.archive.org/web/20180325150029id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/argumenterande-texter/"
+    },
+    {
+      "path": "svenska/argumenterande-texter/skriva-insandaredebattartikel/arbetsgang-vid-respons-och-bearbetning/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323110937id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/skriva-insandaredebattartikel/arbetsgang-vid-respons-och-bearbetning/",
+      "final_url": "https://web.archive.org/web/20180323110937id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/skriva-insandaredebattartikel/arbetsgang-vid-respons-och-bearbetning/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/argumenterande-texter/skriva-insandaredebattartikel/arbetsgang-vid-respons-och-bearbetning/"
+    },
+    {
+      "path": "svenska/argumenterande-texter/skriva-insandaredebattartikel/bedomning-av-skrivuppgift-skriva-insandaredebattartikel/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111454id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/skriva-insandaredebattartikel/bedomning-av-skrivuppgift-skriva-insandaredebattartikel/",
+      "final_url": "https://web.archive.org/web/20180323111454id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/skriva-insandaredebattartikel/bedomning-av-skrivuppgift-skriva-insandaredebattartikel/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/argumenterande-texter/skriva-insandaredebattartikel/bedomning-av-skrivuppgift-skriva-insandaredebattartikel/"
+    },
+    {
+      "path": "svenska/argumenterande-texter/skriva-insandaredebattartikel/index.html",
+      "fetch_url": "https://web.archive.org/web/20180325142712id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/skriva-insandaredebattartikel/",
+      "final_url": "https://web.archive.org/web/20180325142712id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/skriva-insandaredebattartikel/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/argumenterande-texter/skriva-insandaredebattartikel/"
+    },
+    {
+      "path": "svenska/argumenterande-texter/skriva-insandaredebattartikel/trackback/index.html",
+      "fetch_url": "https://web.archive.org/web/20111025085643/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/skriva-insandaredebattartikel/trackback/",
+      "final_url": "https://web.archive.org/web/20111025085643/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/skriva-insandaredebattartikel/trackback/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/argumenterande-texter/skriva-insandaredebattartikel/trackback/"
+    },
+    {
+      "path": "svenska/argumenterande-texter/skriva-insandaredebattartikel/vad-man-ska-tanka-pa-nar-man-skriver-argumenterande-texter/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323110942id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/skriva-insandaredebattartikel/vad-man-ska-tanka-pa-nar-man-skriver-argumenterande-texter/",
+      "final_url": "https://web.archive.org/web/20180323110942id_/http://cwaste.skolbloggen.se:80/svenska/argumenterande-texter/skriva-insandaredebattartikel/vad-man-ska-tanka-pa-nar-man-skriver-argumenterande-texter/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/argumenterande-texter/skriva-insandaredebattartikel/vad-man-ska-tanka-pa-nar-man-skriver-argumenterande-texter/"
+    },
+    {
+      "path": "svenska/bedomning/bedomning-av-muntliga-uppgifter/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111459id_/http://cwaste.skolbloggen.se:80/svenska/bedomning/bedomning-av-muntliga-uppgifter/",
+      "final_url": "https://web.archive.org/web/20180323111459id_/http://cwaste.skolbloggen.se:80/svenska/bedomning/bedomning-av-muntliga-uppgifter/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/bedomning/bedomning-av-muntliga-uppgifter/"
+    },
+    {
+      "path": "svenska/bedomning/bedomning-av-skriftliga-uppgifter/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111504id_/http://cwaste.skolbloggen.se:80/svenska/bedomning/bedomning-av-skriftliga-uppgifter/",
+      "final_url": "https://web.archive.org/web/20180323111504id_/http://cwaste.skolbloggen.se:80/svenska/bedomning/bedomning-av-skriftliga-uppgifter/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/bedomning/bedomning-av-skriftliga-uppgifter/"
+    },
+    {
+      "path": "svenska/bedomning/bedomning-av-skriftliga-uppgifter/matris-bedomning-av-skriftliga-uppgifter/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111509id_/http://cwaste.skolbloggen.se:80/svenska/bedomning/bedomning-av-skriftliga-uppgifter/matris-bedomning-av-skriftliga-uppgifter/",
+      "final_url": "https://web.archive.org/web/20180323111509id_/http://cwaste.skolbloggen.se:80/svenska/bedomning/bedomning-av-skriftliga-uppgifter/matris-bedomning-av-skriftliga-uppgifter/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/bedomning/bedomning-av-skriftliga-uppgifter/matris-bedomning-av-skriftliga-uppgifter/"
+    },
+    {
+      "path": "svenska/bedomning/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111655id_/http://cwaste.skolbloggen.se:80/svenska/bedomning/",
+      "final_url": "https://web.archive.org/web/20180323111655id_/http://cwaste.skolbloggen.se:80/svenska/bedomning/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/bedomning/"
+    },
+    {
+      "path": "svenska/berattelser/berattarkne/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111230id_/http://cwaste.skolbloggen.se:80/svenska/berattelser/berattarkne/",
+      "final_url": "https://web.archive.org/web/20180323111230id_/http://cwaste.skolbloggen.se:80/svenska/berattelser/berattarkne/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/berattelser/berattarkne/"
+    },
+    {
+      "path": "svenska/berattelser/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111514id_/http://cwaste.skolbloggen.se:80/svenska/berattelser/",
+      "final_url": "https://web.archive.org/web/20180323111514id_/http://cwaste.skolbloggen.se:80/svenska/berattelser/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/berattelser/"
+    },
+    {
+      "path": "svenska/berattelser/skriva-berattelser/huset/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323110947id_/http://cwaste.skolbloggen.se:80/svenska/berattelser/skriva-berattelser/huset/",
+      "final_url": "https://web.archive.org/web/20180323110947id_/http://cwaste.skolbloggen.se:80/svenska/berattelser/skriva-berattelser/huset/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/berattelser/skriva-berattelser/huset/"
+    },
+    {
+      "path": "svenska/berattelser/skriva-berattelser/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111519id_/http://cwaste.skolbloggen.se:80/svenska/berattelser/skriva-berattelser/",
+      "final_url": "https://web.archive.org/web/20180323111519id_/http://cwaste.skolbloggen.se:80/svenska/berattelser/skriva-berattelser/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/berattelser/skriva-berattelser/"
+    },
+    {
+      "path": "svenska/bild-och-film/hur-d-hanterar-bilder/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323110952id_/http://cwaste.skolbloggen.se:80/svenska/bild-och-film/hur-d-hanterar-bilder/",
+      "final_url": "https://web.archive.org/web/20180323110952id_/http://cwaste.skolbloggen.se:80/svenska/bild-och-film/hur-d-hanterar-bilder/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/bild-och-film/hur-d-hanterar-bilder/"
+    },
+    {
+      "path": "svenska/bild-och-film/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111235id_/http://cwaste.skolbloggen.se:80/svenska/bild-och-film/",
+      "final_url": "https://web.archive.org/web/20180323111235id_/http://cwaste.skolbloggen.se:80/svenska/bild-och-film/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/bild-och-film/"
+    },
+    {
+      "path": "svenska/bild-och-film/regler-vid-fotografering-pa-allmanna-platser/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111240id_/http://cwaste.skolbloggen.se:80/svenska/bild-och-film/regler-vid-fotografering-pa-allmanna-platser/",
+      "final_url": "https://web.archive.org/web/20180323111240id_/http://cwaste.skolbloggen.se:80/svenska/bild-och-film/regler-vid-fotografering-pa-allmanna-platser/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/bild-och-film/regler-vid-fotografering-pa-allmanna-platser/"
+    },
+    {
+      "path": "svenska/bild-och-film/regler-vid-fotografering-pa-allmanna-platser/trackback/index.html",
+      "fetch_url": "https://web.archive.org/web/20120830055323/http://cwaste.skolbloggen.se:80/svenska/bild-och-film/regler-vid-fotografering-pa-allmanna-platser/trackback/",
+      "final_url": "https://web.archive.org/web/20120830055323/http://cwaste.skolbloggen.se:80/svenska/bild-och-film/regler-vid-fotografering-pa-allmanna-platser/trackback/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/bild-och-film/regler-vid-fotografering-pa-allmanna-platser/trackback/"
+    },
+    {
+      "path": "svenska/dikter/diktanalys/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111524id_/http://cwaste.skolbloggen.se:80/svenska/dikter/diktanalys/",
+      "final_url": "https://web.archive.org/web/20180323111524id_/http://cwaste.skolbloggen.se:80/svenska/dikter/diktanalys/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/dikter/diktanalys/"
+    },
+    {
+      "path": "svenska/dikter/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323110958id_/http://cwaste.skolbloggen.se:80/svenska/dikter/",
+      "final_url": "https://web.archive.org/web/20180323110958id_/http://cwaste.skolbloggen.se:80/svenska/dikter/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/dikter/"
+    },
+    {
+      "path": "svenska/dikter/ovning-i-diktanalys/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111003id_/http://cwaste.skolbloggen.se:80/svenska/dikter/ovning-i-diktanalys/",
+      "final_url": "https://web.archive.org/web/20180323111003id_/http://cwaste.skolbloggen.se:80/svenska/dikter/ovning-i-diktanalys/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/dikter/ovning-i-diktanalys/"
+    },
+    {
+      "path": "svenska/dikter/skriva-dikter-ovning-i/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111245id_/http://cwaste.skolbloggen.se:80/svenska/dikter/skriva-dikter-ovning-i/",
+      "final_url": "https://web.archive.org/web/20180323111245id_/http://cwaste.skolbloggen.se:80/svenska/dikter/skriva-dikter-ovning-i/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/dikter/skriva-dikter-ovning-i/"
+    },
+    {
+      "path": "svenska/dikter/skriva-dikter-ovning-ii/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111008id_/http://cwaste.skolbloggen.se:80/svenska/dikter/skriva-dikter-ovning-ii/",
+      "final_url": "https://web.archive.org/web/20180323111008id_/http://cwaste.skolbloggen.se:80/svenska/dikter/skriva-dikter-ovning-ii/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/dikter/skriva-dikter-ovning-ii/"
+    },
+    {
+      "path": "svenska/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323110927id_/http://cwaste.skolbloggen.se:80/svenska/",
+      "final_url": "https://web.archive.org/web/20180323110927id_/http://cwaste.skolbloggen.se:80/svenska/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/"
+    },
+    {
+      "path": "svenska/instruktioner/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111700id_/http://cwaste.skolbloggen.se:80/svenska/instruktioner/",
+      "final_url": "https://web.archive.org/web/20180323111700id_/http://cwaste.skolbloggen.se:80/svenska/instruktioner/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/instruktioner/"
+    },
+    {
+      "path": "svenska/litteraturanalys-och-lasloggar/forfattarportratt/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111716id_/http://cwaste.skolbloggen.se:80/svenska/litteraturanalys-och-lasloggar/forfattarportratt/",
+      "final_url": "https://web.archive.org/web/20180323111716id_/http://cwaste.skolbloggen.se:80/svenska/litteraturanalys-och-lasloggar/forfattarportratt/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/litteraturanalys-och-lasloggar/forfattarportratt/"
+    },
+    {
+      "path": "svenska/litteraturanalys-och-lasloggar/forfattarportratt/trackback/index.html",
+      "fetch_url": "https://web.archive.org/web/20160416235826/http://cwaste.skolbloggen.se:80/svenska/litteraturanalys-och-lasloggar/forfattarportratt/trackback/",
+      "final_url": "https://web.archive.org/web/20160416235826/http://cwaste.skolbloggen.se:80/svenska/litteraturanalys-och-lasloggar/forfattarportratt/trackback/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/litteraturanalys-och-lasloggar/forfattarportratt/trackback/"
+    },
+    {
+      "path": "svenska/litteraturanalys-och-lasloggar/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111711id_/http://cwaste.skolbloggen.se:80/svenska/litteraturanalys-och-lasloggar/",
+      "final_url": "https://web.archive.org/web/20180323111711id_/http://cwaste.skolbloggen.se:80/svenska/litteraturanalys-och-lasloggar/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/litteraturanalys-och-lasloggar/"
+    },
+    {
+      "path": "svenska/litteraturanalys-och-lasloggar/laslogg-1-presentation-bokens-inledning-berattarteknik/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111250id_/http://cwaste.skolbloggen.se:80/svenska/litteraturanalys-och-lasloggar/laslogg-1-presentation-bokens-inledning-berattarteknik/",
+      "final_url": "https://web.archive.org/web/20180323111250id_/http://cwaste.skolbloggen.se:80/svenska/litteraturanalys-och-lasloggar/laslogg-1-presentation-bokens-inledning-berattarteknik/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/litteraturanalys-och-lasloggar/laslogg-1-presentation-bokens-inledning-berattarteknik/"
+    },
+    {
+      "path": "svenska/litteraturanalys-och-lasloggar/laslogg-2-miljo-personbeskrivn-huvudkonflikt/index.html",
+      "fetch_url": "https://web.archive.org/web/20180331174951id_/http://cwaste.skolbloggen.se:80/svenska/litteraturanalys-och-lasloggar/laslogg-2-miljo-personbeskrivn-huvudkonflikt/",
+      "final_url": "https://web.archive.org/web/20180331174951id_/http://cwaste.skolbloggen.se:80/svenska/litteraturanalys-och-lasloggar/laslogg-2-miljo-personbeskrivn-huvudkonflikt/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/litteraturanalys-och-lasloggar/laslogg-2-miljo-personbeskrivn-huvudkonflikt/"
+    },
+    {
+      "path": "svenska/litteraturanalys-och-lasloggar/laslogg-3-titel-form-dramaturgi-budskap/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111255id_/http://cwaste.skolbloggen.se:80/svenska/litteraturanalys-och-lasloggar/laslogg-3-titel-form-dramaturgi-budskap/",
+      "final_url": "https://web.archive.org/web/20180323111255id_/http://cwaste.skolbloggen.se:80/svenska/litteraturanalys-och-lasloggar/laslogg-3-titel-form-dramaturgi-budskap/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/litteraturanalys-och-lasloggar/laslogg-3-titel-form-dramaturgi-budskap/"
+    },
+    {
+      "path": "svenska/litteraturhistoria/1720-upplysningen/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111300id_/http://cwaste.skolbloggen.se:80/svenska/litteraturhistoria/1720-upplysningen/",
+      "final_url": "https://web.archive.org/web/20180323111300id_/http://cwaste.skolbloggen.se:80/svenska/litteraturhistoria/1720-upplysningen/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/litteraturhistoria/1720-upplysningen/"
+    },
+    {
+      "path": "svenska/litteraturhistoria/1790-romantiken/index.html",
+      "fetch_url": "https://web.archive.org/web/20180321045904id_/http://cwaste.skolbloggen.se:80/svenska/litteraturhistoria/1790-romantiken/",
+      "final_url": "https://web.archive.org/web/20180321045904id_/http://cwaste.skolbloggen.se:80/svenska/litteraturhistoria/1790-romantiken/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/litteraturhistoria/1790-romantiken/"
+    },
+    {
+      "path": "svenska/litteraturhistoria/1830-realismen/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111534id_/http://cwaste.skolbloggen.se:80/svenska/litteraturhistoria/1830-realismen/",
+      "final_url": "https://web.archive.org/web/20180323111534id_/http://cwaste.skolbloggen.se:80/svenska/litteraturhistoria/1830-realismen/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/litteraturhistoria/1830-realismen/"
+    },
+    {
+      "path": "svenska/litteraturhistoria/1910-modernismen/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111539id_/http://cwaste.skolbloggen.se:80/svenska/litteraturhistoria/1910-modernismen/",
+      "final_url": "https://web.archive.org/web/20180323111539id_/http://cwaste.skolbloggen.se:80/svenska/litteraturhistoria/1910-modernismen/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/litteraturhistoria/1910-modernismen/"
+    },
+    {
+      "path": "svenska/litteraturhistoria/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111529id_/http://cwaste.skolbloggen.se:80/svenska/litteraturhistoria/",
+      "final_url": "https://web.archive.org/web/20180323111529id_/http://cwaste.skolbloggen.se:80/svenska/litteraturhistoria/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/litteraturhistoria/"
+    },
+    {
+      "path": "svenska/nationellt-prov-i-svenska-b-kursen/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111305id_/http://cwaste.skolbloggen.se:80/svenska/nationellt-prov-i-svenska-b-kursen/",
+      "final_url": "https://web.archive.org/web/20180323111305id_/http://cwaste.skolbloggen.se:80/svenska/nationellt-prov-i-svenska-b-kursen/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/nationellt-prov-i-svenska-b-kursen/"
+    },
+    {
+      "path": "svenska/nationellt-prov-i-svenska-b-kursen/nationellt-prov/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111544id_/http://cwaste.skolbloggen.se:80/svenska/nationellt-prov-i-svenska-b-kursen/nationellt-prov/",
+      "final_url": "https://web.archive.org/web/20180323111544id_/http://cwaste.skolbloggen.se:80/svenska/nationellt-prov-i-svenska-b-kursen/nationellt-prov/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/nationellt-prov-i-svenska-b-kursen/nationellt-prov/"
+    },
+    {
+      "path": "svenska/nationellt-prov-i-svenska-b-kursen/nationellt-prov/trackback/index.html",
+      "fetch_url": "https://web.archive.org/web/20120902045911/http://cwaste.skolbloggen.se:80/svenska/nationellt-prov-i-svenska-b-kursen/nationellt-prov/trackback/",
+      "final_url": "https://web.archive.org/web/20120902045911/http://cwaste.skolbloggen.se:80/svenska/nationellt-prov-i-svenska-b-kursen/nationellt-prov/trackback/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/nationellt-prov-i-svenska-b-kursen/nationellt-prov/trackback/"
+    },
+    {
+      "path": "svenska/nationellt-prov-i-svenska-b-kursen/trackback/index.html",
+      "fetch_url": "https://web.archive.org/web/20120902045250/http://cwaste.skolbloggen.se:80/svenska/nationellt-prov-i-svenska-b-kursen/trackback/",
+      "final_url": "https://web.archive.org/web/20120902045250/http://cwaste.skolbloggen.se:80/svenska/nationellt-prov-i-svenska-b-kursen/trackback/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/nationellt-prov-i-svenska-b-kursen/trackback/"
+    },
+    {
+      "path": "svenska/referera/bedomning-av-referat/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323075624id_/http://cwaste.skolbloggen.se:80/svenska/referera/bedomning-av-referat/",
+      "final_url": "https://web.archive.org/web/20180323075624id_/http://cwaste.skolbloggen.se:80/svenska/referera/bedomning-av-referat/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/bedomning-av-referat/"
+    },
+    {
+      "path": "svenska/referera/ex-pa-kallhanvisning/index.html",
+      "fetch_url": "https://web.archive.org/web/20190823092943/http://cwaste.skolbloggen.se:80/svenska/referera/ex-pa-kallhanvisning",
+      "final_url": "https://web.archive.org/web/20180329122550/http://cwaste.skolbloggen.se/svenska/referera/ex-pa-kallhanvisning/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/ex-pa-kallhanvisning/"
+    },
+    {
+      "path": "svenska/referera/ex-pa-referatmarkorer/index.html",
+      "fetch_url": "https://web.archive.org/web/20190826201836/http://cwaste.skolbloggen.se:80/svenska/referera/ex-pa-referatmarkorer",
+      "final_url": "https://web.archive.org/web/20180313065533/http://cwaste.skolbloggen.se/svenska/referera/ex-pa-referatmarkorer/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/ex-pa-referatmarkorer/"
+    },
+    {
+      "path": "svenska/referera/ex-pa-referatmarkorer/trackback/index.html",
+      "fetch_url": "https://web.archive.org/web/20120910085136/http://cwaste.skolbloggen.se:80/svenska/referera/ex-pa-referatmarkorer/trackback/",
+      "final_url": "https://web.archive.org/web/20120910085136/http://cwaste.skolbloggen.se:80/svenska/referera/ex-pa-referatmarkorer/trackback/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/ex-pa-referatmarkorer/trackback/"
+    },
+    {
+      "path": "svenska/referera/fler-exempel/index.html",
+      "fetch_url": "https://web.archive.org/web/20190821233949/http://cwaste.skolbloggen.se:80/svenska/referera/fler-exempel",
+      "final_url": "https://web.archive.org/web/20180329122040/http://cwaste.skolbloggen.se/svenska/referera/fler-exempel/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/fler-exempel/"
+    },
+    {
+      "path": "svenska/referera/index.html",
+      "fetch_url": "https://web.archive.org/web/20190823093210/http://cwaste.skolbloggen.se:80/svenska/referera",
+      "final_url": "https://web.archive.org/web/20180329124146/http://cwaste.skolbloggen.se/svenska/referera/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/"
+    },
+    {
+      "path": "svenska/referera/ova-referatskrivning-attityder-kring-sprak/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111310id_/http://cwaste.skolbloggen.se:80/svenska/referera/ova-referatskrivning-attityder-kring-sprak/",
+      "final_url": "https://web.archive.org/web/20180323111310id_/http://cwaste.skolbloggen.se:80/svenska/referera/ova-referatskrivning-attityder-kring-sprak/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/ova-referatskrivning-attityder-kring-sprak/"
+    },
+    {
+      "path": "svenska/referera/ova-referatskrivning-klass-o-sprak/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111721id_/http://cwaste.skolbloggen.se:80/svenska/referera/ova-referatskrivning-klass-o-sprak/",
+      "final_url": "https://web.archive.org/web/20180323111721id_/http://cwaste.skolbloggen.se:80/svenska/referera/ova-referatskrivning-klass-o-sprak/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/ova-referatskrivning-klass-o-sprak/"
+    },
+    {
+      "path": "svenska/referera/ova-referatskrivning-nathat-bland-unga/index.html",
+      "fetch_url": "https://web.archive.org/web/20190806190635/http://cwaste.skolbloggen.se:80/svenska/referera/ova-referatskrivning-nathat-bland-unga",
+      "final_url": "https://web.archive.org/web/20180323195355/http://cwaste.skolbloggen.se/svenska/referera/ova-referatskrivning-nathat-bland-unga/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/ova-referatskrivning-nathat-bland-unga/"
+    },
+    {
+      "path": "svenska/referera/skriva-referat/ex-pa-kallhanvisning/index.html",
+      "fetch_url": "https://web.archive.org/web/20180227190503/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/ex-pa-kallhanvisning/",
+      "final_url": "https://web.archive.org/web/20180227190503/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/ex-pa-kallhanvisning/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/skriva-referat/ex-pa-kallhanvisning/"
+    },
+    {
+      "path": "svenska/referera/skriva-referat/ex-pa-referatmarkorer/index.html",
+      "fetch_url": "https://web.archive.org/web/20180227184909/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/ex-pa-referatmarkorer/",
+      "final_url": "https://web.archive.org/web/20180227184909/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/ex-pa-referatmarkorer/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/skriva-referat/ex-pa-referatmarkorer/"
+    },
+    {
+      "path": "svenska/referera/skriva-referat/fler-exempel/index.html",
+      "fetch_url": "https://web.archive.org/web/20110513042911/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/fler-exempel/",
+      "final_url": "https://web.archive.org/web/20110513042911/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/fler-exempel/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/skriva-referat/fler-exempel/"
+    },
+    {
+      "path": "svenska/referera/skriva-referat/index.html",
+      "fetch_url": "https://web.archive.org/web/20180331174956id_/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/",
+      "final_url": "https://web.archive.org/web/20180331174956id_/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/skriva-referat/"
+    },
+    {
+      "path": "svenska/referera/skriva-referat/ova-referatskrivning-klass-o-sprak/index.html",
+      "fetch_url": "https://web.archive.org/web/20110513042915/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/ova-referatskrivning-klass-o-sprak/",
+      "final_url": "https://web.archive.org/web/20110513042915/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/ova-referatskrivning-klass-o-sprak/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/skriva-referat/ova-referatskrivning-klass-o-sprak/"
+    },
+    {
+      "path": "svenska/referera/skriva-referat/ova-referatskrivning-nathat-bland-unga/index.html",
+      "fetch_url": "https://web.archive.org/web/20110513042921/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/ova-referatskrivning-nathat-bland-unga/",
+      "final_url": "https://web.archive.org/web/20110513042921/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/ova-referatskrivning-nathat-bland-unga/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/skriva-referat/ova-referatskrivning-nathat-bland-unga/"
+    },
+    {
+      "path": "svenska/referera/skriva-referat/trackback/index.html",
+      "fetch_url": "https://web.archive.org/web/20120910085140/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/trackback/",
+      "final_url": "https://web.archive.org/web/20120910085140/http://cwaste.skolbloggen.se:80/svenska/referera/skriva-referat/trackback/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/referera/skriva-referat/trackback/"
+    },
+    {
+      "path": "svenska/retorik/ett-exempel-som-inspirerar-mig-vad-tycker-du/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111013id_/http://cwaste.skolbloggen.se:80/svenska/retorik/ett-exempel-som-inspirerar-mig-vad-tycker-du/",
+      "final_url": "https://web.archive.org/web/20180323111013id_/http://cwaste.skolbloggen.se:80/svenska/retorik/ett-exempel-som-inspirerar-mig-vad-tycker-du/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/retorik/ett-exempel-som-inspirerar-mig-vad-tycker-du/"
+    },
+    {
+      "path": "svenska/retorik/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111549id_/http://cwaste.skolbloggen.se:80/svenska/retorik/",
+      "final_url": "https://web.archive.org/web/20180323111549id_/http://cwaste.skolbloggen.se:80/svenska/retorik/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/retorik/"
+    },
+    {
+      "path": "svenska/samarbetsskrivande/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111018id_/http://cwaste.skolbloggen.se:80/svenska/samarbetsskrivande/",
+      "final_url": "https://web.archive.org/web/20180323111018id_/http://cwaste.skolbloggen.se:80/svenska/samarbetsskrivande/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/samarbetsskrivande/"
+    },
+    {
+      "path": "svenska/skriva-referat/ex-pa-kallhanvisning/index.html",
+      "fetch_url": "https://web.archive.org/web/20120910090114/http://cwaste.skolbloggen.se:80/svenska/skriva-referat/ex-pa-kallhanvisning/",
+      "final_url": "https://web.archive.org/web/20120910090114/http://cwaste.skolbloggen.se:80/svenska/skriva-referat/ex-pa-kallhanvisning/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/skriva-referat/ex-pa-kallhanvisning/"
+    },
+    {
+      "path": "svenska/skriva-referat/ex-pa-referatmarkorer/index.html",
+      "fetch_url": "https://web.archive.org/web/20120902045049/http://cwaste.skolbloggen.se:80/svenska/skriva-referat/ex-pa-referatmarkorer/",
+      "final_url": "https://web.archive.org/web/20120902045049/http://cwaste.skolbloggen.se:80/svenska/skriva-referat/ex-pa-referatmarkorer/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/skriva-referat/ex-pa-referatmarkorer/"
+    },
+    {
+      "path": "svenska/skrivprocessen/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111321id_/http://cwaste.skolbloggen.se:80/svenska/skrivprocessen/",
+      "final_url": "https://web.archive.org/web/20180323111321id_/http://cwaste.skolbloggen.se:80/svenska/skrivprocessen/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/skrivprocessen/"
+    },
+    {
+      "path": "svenska/skrivprocessen/kommentera-blogginlagg/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111326id_/http://cwaste.skolbloggen.se:80/svenska/skrivprocessen/kommentera-blogginlagg/",
+      "final_url": "https://web.archive.org/web/20180323111326id_/http://cwaste.skolbloggen.se:80/svenska/skrivprocessen/kommentera-blogginlagg/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/skrivprocessen/kommentera-blogginlagg/"
+    },
+    {
+      "path": "svenska/skrivprocessen/responsgivning/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111554id_/http://cwaste.skolbloggen.se:80/svenska/skrivprocessen/responsgivning/",
+      "final_url": "https://web.archive.org/web/20180323111554id_/http://cwaste.skolbloggen.se:80/svenska/skrivprocessen/responsgivning/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/skrivprocessen/responsgivning/"
+    },
+    {
+      "path": "svenska/skrivprocessen/responsgivning/skriva-kommentarer/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111331id_/http://cwaste.skolbloggen.se:80/svenska/skrivprocessen/responsgivning/skriva-kommentarer/",
+      "final_url": "https://web.archive.org/web/20180323111331id_/http://cwaste.skolbloggen.se:80/svenska/skrivprocessen/responsgivning/skriva-kommentarer/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/skrivprocessen/responsgivning/skriva-kommentarer/"
+    },
+    {
+      "path": "svenska/skrivrad/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111726id_/http://cwaste.skolbloggen.se:80/svenska/skrivrad/",
+      "final_url": "https://web.archive.org/web/20180323111726id_/http://cwaste.skolbloggen.se:80/svenska/skrivrad/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/skrivrad/"
+    },
+    {
+      "path": "svenska/skrivrad/nagra-vanliga-misstag/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111732id_/http://cwaste.skolbloggen.se:80/svenska/skrivrad/nagra-vanliga-misstag/",
+      "final_url": "https://web.archive.org/web/20180323111732id_/http://cwaste.skolbloggen.se:80/svenska/skrivrad/nagra-vanliga-misstag/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/skrivrad/nagra-vanliga-misstag/"
+    },
+    {
+      "path": "svenska/soka-jobb/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111336id_/http://cwaste.skolbloggen.se:80/svenska/soka-jobb/",
+      "final_url": "https://web.archive.org/web/20180323111336id_/http://cwaste.skolbloggen.se:80/svenska/soka-jobb/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/soka-jobb/"
+    },
+    {
+      "path": "svenska/sprakhistoria/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111341id_/http://cwaste.skolbloggen.se:80/svenska/sprakhistoria/",
+      "final_url": "https://web.archive.org/web/20180323111341id_/http://cwaste.skolbloggen.se:80/svenska/sprakhistoria/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/sprakhistoria/"
+    },
+    {
+      "path": "svenska/talovningar/index.html",
+      "fetch_url": "https://web.archive.org/web/20180323111737id_/http://cwaste.skolbloggen.se:80/svenska/talovningar/",
+      "final_url": "https://web.archive.org/web/20180323111737id_/http://cwaste.skolbloggen.se:80/svenska/talovningar/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/talovningar/"
+    },
+    {
+      "path": "svenska/talovningar/trackback/index.html",
+      "fetch_url": "https://web.archive.org/web/20160402214914/http://cwaste.skolbloggen.se:80/svenska/talovningar/trackback/",
+      "final_url": "https://web.archive.org/web/20160402214914/http://cwaste.skolbloggen.se:80/svenska/talovningar/trackback/",
+      "normalized_url": "http://cwaste.skolbloggen.se/svenska/talovningar/trackback/"
+    },
+    {
+      "path": "tag/erfarenheter/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227124738id_/http://cwaste.skolbloggen.se:80/tag/erfarenheter/",
+      "final_url": "https://web.archive.org/web/20100227124738id_/http://cwaste.skolbloggen.se:80/tag/erfarenheter/",
+      "normalized_url": "http://cwaste.skolbloggen.se/tag/erfarenheter/"
+    },
+    {
+      "path": "tag/forvantningar/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227124743id_/http://cwaste.skolbloggen.se:80/tag/forvantningar/",
+      "final_url": "https://web.archive.org/web/20100227124743id_/http://cwaste.skolbloggen.se:80/tag/forvantningar/",
+      "normalized_url": "http://cwaste.skolbloggen.se/tag/forvantningar/"
+    },
+    {
+      "path": "tag/introduktion/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227062439id_/http://cwaste.skolbloggen.se:80/tag/introduktion/",
+      "final_url": "https://web.archive.org/web/20100227062439id_/http://cwaste.skolbloggen.se:80/tag/introduktion/",
+      "normalized_url": "http://cwaste.skolbloggen.se/tag/introduktion/"
+    },
+    {
+      "path": "tag/kursmal/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227124748id_/http://cwaste.skolbloggen.se:80/tag/kursmal/",
+      "final_url": "https://web.archive.org/web/20100227124748id_/http://cwaste.skolbloggen.se:80/tag/kursmal/",
+      "normalized_url": "http://cwaste.skolbloggen.se/tag/kursmal/"
+    },
+    {
+      "path": "tag/kursplan/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227124753id_/http://cwaste.skolbloggen.se:80/tag/kursplan/",
+      "final_url": "https://web.archive.org/web/20100227124753id_/http://cwaste.skolbloggen.se:80/tag/kursplan/",
+      "normalized_url": "http://cwaste.skolbloggen.se/tag/kursplan/"
+    },
+    {
+      "path": "tag/presentation/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227124758id_/http://cwaste.skolbloggen.se:80/tag/presentation/",
+      "final_url": "https://web.archive.org/web/20100227124758id_/http://cwaste.skolbloggen.se:80/tag/presentation/",
+      "normalized_url": "http://cwaste.skolbloggen.se/tag/presentation/"
+    },
+    {
+      "path": "tag/skolverket/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227123332id_/http://cwaste.skolbloggen.se:80/tag/skolverket/",
+      "final_url": "https://web.archive.org/web/20100227123332id_/http://cwaste.skolbloggen.se:80/tag/skolverket/",
+      "normalized_url": "http://cwaste.skolbloggen.se/tag/skolverket/"
+    },
+    {
+      "path": "tag/svenska-b/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227124803id_/http://cwaste.skolbloggen.se:80/tag/svenska-b/",
+      "final_url": "https://web.archive.org/web/20100227124803id_/http://cwaste.skolbloggen.se:80/tag/svenska-b/",
+      "normalized_url": "http://cwaste.skolbloggen.se/tag/svenska-b/"
+    },
+    {
+      "path": "tag/vecka-2/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227123337id_/http://cwaste.skolbloggen.se:80/tag/vecka-2/",
+      "final_url": "https://web.archive.org/web/20100227123337id_/http://cwaste.skolbloggen.se:80/tag/vecka-2/",
+      "normalized_url": "http://cwaste.skolbloggen.se/tag/vecka-2/"
+    },
+    {
+      "path": "tag/vecka-3/index.html",
+      "fetch_url": "https://web.archive.org/web/20100227123342id_/http://cwaste.skolbloggen.se:80/tag/vecka-3/",
+      "final_url": "https://web.archive.org/web/20100227123342id_/http://cwaste.skolbloggen.se:80/tag/vecka-3/",
+      "normalized_url": "http://cwaste.skolbloggen.se/tag/vecka-3/"
+    },
+    {
+      "path": "wp-load.html",
+      "fetch_url": "https://web.archive.org/web/20111025090235id_/http://cwaste.skolbloggen.se:80/wp-load.php",
+      "final_url": "https://web.archive.org/web/20111025090235id_/http://cwaste.skolbloggen.se:80/wp-load.php",
+      "normalized_url": "http://cwaste.skolbloggen.se/wp-load.php"
+    },
+    {
+      "path": "wp-signup.html",
+      "fetch_url": "https://web.archive.org/web/20100227124314/http://cwaste.skolbloggen.se:80/wp-signup.php",
+      "final_url": "https://web.archive.org/web/20100227124314/http://cwaste.skolbloggen.se:80/wp-signup.php",
+      "normalized_url": "http://cwaste.skolbloggen.se/wp-signup.php"
+    }
+  ],
+  "failed": []
+}

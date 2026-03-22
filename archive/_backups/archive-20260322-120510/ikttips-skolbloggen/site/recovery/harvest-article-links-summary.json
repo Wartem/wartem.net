@@ -1,0 +1,92 @@
+{
+  "seed_count": 26,
+  "listing_candidate_count": 0,
+  "candidate_count": 157,
+  "offset": 0,
+  "limit": 20,
+  "selected_count": 20,
+  "downloaded_count": 13,
+  "skipped_existing_count": 7,
+  "failed_count": 0,
+  "downloaded": [
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/10/29/hej-varlden/",
+      "kind": "post_like",
+      "path": "2010/10/29/hej-varlden/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/11/24/retorik/",
+      "kind": "post_like",
+      "path": "2010/11/24/retorik/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/11/25/kluriga-mattefragor/",
+      "kind": "post_like",
+      "path": "2010/11/25/kluriga-mattefragor/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/12/08/creative-commons-wikimedia-commons-och-flickr/",
+      "kind": "post_like",
+      "path": "2010/12/08/creative-commons-wikimedia-commons-och-flickr/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/12/08/webb-2-0-i-skolan-ett-exempel/",
+      "kind": "post_like",
+      "path": "2010/12/08/webb-2-0-i-skolan-ett-exempel/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/01/11/det-finns-olika-satt-att-lara-och-lara-ut/",
+      "kind": "post_like",
+      "path": "2011/01/11/det-finns-olika-satt-att-lara-och-lara-ut/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/02/andra-installningar-pa-bloggen/",
+      "kind": "post_like",
+      "path": "2011/02/02/andra-installningar-pa-bloggen/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/02/andra-utseende-pa-bloggen/",
+      "kind": "post_like",
+      "path": "2011/02/02/andra-utseende-pa-bloggen/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/02/lagga-till-anvandare-pa-bloggen/",
+      "kind": "post_like",
+      "path": "2011/02/02/lagga-till-anvandare-pa-bloggen/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/13/har-kan-du-lasa-mer-om-innovativa-skolprogrammet/",
+      "kind": "post_like",
+      "path": "2011/02/13/har-kan-du-lasa-mer-om-innovativa-skolprogrammet/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/13/ola-svahn-visade-webbresurs-i-kemi/",
+      "kind": "post_like",
+      "path": "2011/02/13/ola-svahn-visade-webbresurs-i-kemi/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/07/animationer-att-diskutera-i-samhallskunskapen/",
+      "kind": "post_like",
+      "path": "2011/03/07/animationer-att-diskutera-i-samhallskunskapen/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/08/lektionstips-sok-sommarjobb/",
+      "kind": "post_like",
+      "path": "2011/03/08/lektionstips-sok-sommarjobb/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    }
+  ],
+  "failed": []
+}

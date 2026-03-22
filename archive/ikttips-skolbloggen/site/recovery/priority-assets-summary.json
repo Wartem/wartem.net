@@ -1,0 +1,16 @@
+{
+  "raw_candidate_count": 37,
+  "filtered_candidate_count": 36,
+  "group_count": 36,
+  "offset": 0,
+  "processed_group_count": 36,
+  "downloaded_count": 34,
+  "skipped_existing_count": 0,
+  "failed_count": 2,
+  "host_patterns": [
+    "farm",
+    "live.staticflickr.com"
+  ],
+  "candidate_file": "ikttips-skolbloggen\\site\\recovery\\priority-assets-candidates.json",
+  "log_file": "ikttips-skolbloggen\\site\\recovery\\priority-assets-log.jsonl"
+}

@@ -1,0 +1,21 @@
+{
+  "candidate_count": 12,
+  "offset": 10,
+  "limit": 5,
+  "processed_count": 2,
+  "downloaded_count": 0,
+  "skipped_existing_count": 2,
+  "failed_count": 0,
+  "results": [
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/07/tips-nar-du-vill-dokumentera-ett-studiebesok/",
+      "path": "2010/06/07/tips-nar-du-vill-dokumentera-ett-studiebesok/index.html",
+      "status": "skipped_existing"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2011/04/13/1496/",
+      "path": "2011/04/13/1496/index.html",
+      "status": "skipped_existing"
+    }
+  ]
+}

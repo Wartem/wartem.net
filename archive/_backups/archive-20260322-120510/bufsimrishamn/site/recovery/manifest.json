@@ -1,0 +1,2287 @@
+{
+  "downloaded_count": 377,
+  "skipped_count": 0,
+  "failed_count": 3,
+  "downloaded": [
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2012/12/",
+      "kind": "other",
+      "path": "2012/12/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060003id_/https://bufsimrishamn.wordpress.com/2012/12/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/",
+      "kind": "homepage",
+      "path": "index.html",
+      "archive_url": "https://web.archive.org/web/20191018060043id_/https://bufsimrishamn.wordpress.com/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2013/01/",
+      "kind": "other",
+      "path": "2013/01/index.html",
+      "archive_url": "https://web.archive.org/web/20191018062445id_/https://bufsimrishamn.wordpress.com/2013/01/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2013/03/",
+      "kind": "other",
+      "path": "2013/03/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060159id_/https://bufsimrishamn.wordpress.com/2013/03/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2013/04/",
+      "kind": "other",
+      "path": "2013/04/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060047id_/https://bufsimrishamn.wordpress.com/2013/04/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2013/02/",
+      "kind": "other",
+      "path": "2013/02/index.html",
+      "archive_url": "https://web.archive.org/web/20191018061307id_/https://bufsimrishamn.wordpress.com/2013/02/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2013/10/",
+      "kind": "other",
+      "path": "2013/10/index.html",
+      "archive_url": "https://web.archive.org/web/20191212135304id_/https://bufsimrishamn.wordpress.com/2013/10/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2013/10/08/forstelarartjansterna-ar-nu-tillsatta-i-simrishamns-kommun/",
+      "kind": "post_like",
+      "path": "2013/10/08/forstelarartjansterna-ar-nu-tillsatta-i-simrishamns-kommun/index.html",
+      "archive_url": "https://web.archive.org/web/20140210210321id_/http://bufsimrishamn.wordpress.com/2013/10/08/forstelarartjansterna-ar-nu-tillsatta-i-simrishamns-kommun/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2013/09/",
+      "kind": "other",
+      "path": "2013/09/index.html",
+      "archive_url": "https://web.archive.org/web/20191018064335id_/https://bufsimrishamn.wordpress.com/2013/09/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2013/09/14/barn-och-utbildningsforvaltningen-immigrationsverket-och-de-asylsokande-som-nu-kommer-till-ostra-hoby-borrby-och-hammenhog/",
+      "kind": "post_like",
+      "path": "2013/09/14/barn-och-utbildningsforvaltningen-immigrationsverket-och-de-asylsokande-som-nu-kommer-till-ostra-hoby-borrby-och-hammenhog/index.html",
+      "archive_url": "https://web.archive.org/web/20140210172007id_/http://bufsimrishamn.wordpress.com/2013/09/14/barn-och-utbildningsforvaltningen-immigrationsverket-och-de-asylsokande-som-nu-kommer-till-ostra-hoby-borrby-och-hammenhog/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2013/10/25/borrby-forskola-har-gron-flagg/",
+      "kind": "post_like",
+      "path": "2013/10/25/borrby-forskola-har-gron-flagg/index.html",
+      "archive_url": "https://web.archive.org/web/20150818051623id_/https://bufsimrishamn.wordpress.com/2013/10/25/borrby-forskola-har-gron-flagg/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/01/29/nya-verktyg-ska-stodja-larandet/",
+      "kind": "post_like",
+      "path": "2014/01/29/nya-verktyg-ska-stodja-larandet/index.html",
+      "archive_url": "https://web.archive.org/web/20170628023643id_/https://bufsimrishamn.wordpress.com/2014/01/29/nya-verktyg-ska-stodja-larandet/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/01/29/nya-verktyg-ska-stodja-larandet/feed/",
+      "kind": "feed",
+      "path": "2014/01/29/nya-verktyg-ska-stodja-larandet/feed.xml",
+      "archive_url": "https://web.archive.org/web/20150813181632id_/https://bufsimrishamn.wordpress.com/2014/01/29/nya-verktyg-ska-stodja-larandet/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2013/10/08/forstelarartjansterna-ar-nu-tillsatta-i-simrishamns-kommun/feed/",
+      "kind": "feed",
+      "path": "2013/10/08/forstelarartjansterna-ar-nu-tillsatta-i-simrishamns-kommun/feed.xml",
+      "archive_url": "https://web.archive.org/web/20140210145844id_/http://bufsimrishamn.wordpress.com/2013/10/08/forstelarartjansterna-ar-nu-tillsatta-i-simrishamns-kommun/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2013/10/25/borrby-forskola-har-gron-flagg/feed/",
+      "kind": "feed",
+      "path": "2013/10/25/borrby-forskola-har-gron-flagg/feed.xml",
+      "archive_url": "https://web.archive.org/web/20131220080722id_/http://bufsimrishamn.wordpress.com/2013/10/25/borrby-forskola-har-gron-flagg/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/02/06/oppna-klassrumsdorrar-ger-inspiration/",
+      "kind": "post_like",
+      "path": "2014/02/06/oppna-klassrumsdorrar-ger-inspiration/index.html",
+      "archive_url": "https://web.archive.org/web/20170628015353id_/https://bufsimrishamn.wordpress.com/2014/02/06/oppna-klassrumsdorrar-ger-inspiration/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/03/13/lustfylld-lek-med-sprak/feed/",
+      "kind": "feed",
+      "path": "2014/03/13/lustfylld-lek-med-sprak/feed.xml",
+      "archive_url": "https://web.archive.org/web/20170629122800id_/https://bufsimrishamn.wordpress.com/2014/03/13/lustfylld-lek-med-sprak/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/03/13/lustfylld-lek-med-sprak/",
+      "kind": "post_like",
+      "path": "2014/03/13/lustfylld-lek-med-sprak/index.html",
+      "archive_url": "https://web.archive.org/web/20170625131353id_/https://bufsimrishamn.wordpress.com/2014/03/13/lustfylld-lek-med-sprak/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/03/20/det-satsas-pa-skolmaten-i-simrishamns-kommun/feed/",
+      "kind": "feed",
+      "path": "2014/03/20/det-satsas-pa-skolmaten-i-simrishamns-kommun/feed.xml",
+      "archive_url": "https://web.archive.org/web/20170625142934id_/https://bufsimrishamn.wordpress.com/2014/03/20/det-satsas-pa-skolmaten-i-simrishamns-kommun/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/03/31/vi-vill-hjalpa-vara-ungdomar-att-ma-bra/",
+      "kind": "post_like",
+      "path": "2014/03/31/vi-vill-hjalpa-vara-ungdomar-att-ma-bra/index.html",
+      "archive_url": "https://web.archive.org/web/20191212143223id_/https://bufsimrishamn.wordpress.com/2014/03/31/vi-vill-hjalpa-vara-ungdomar-att-ma-bra/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/03/31/vi-vill-hjalpa-vara-ungdomar-att-ma-bra/feed/",
+      "kind": "feed",
+      "path": "2014/03/31/vi-vill-hjalpa-vara-ungdomar-att-ma-bra/feed.xml",
+      "archive_url": "https://web.archive.org/web/20170705025447id_/https://bufsimrishamn.wordpress.com/2014/03/31/vi-vill-hjalpa-vara-ungdomar-att-ma-bra/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2013/05/",
+      "kind": "other",
+      "path": "2013/05/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130214id_/https://bufsimrishamn.wordpress.com/2013/05/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/03/20/det-satsas-pa-skolmaten-i-simrishamns-kommun/",
+      "kind": "post_like",
+      "path": "2014/03/20/det-satsas-pa-skolmaten-i-simrishamns-kommun/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130158id_/https://bufsimrishamn.wordpress.com/2014/03/20/det-satsas-pa-skolmaten-i-simrishamns-kommun/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/04/07/sarskilt-for-dig-som-har-barn-som-vill-ut/",
+      "kind": "post_like",
+      "path": "2014/04/07/sarskilt-for-dig-som-har-barn-som-vill-ut/index.html",
+      "archive_url": "https://web.archive.org/web/20170705023126id_/https://bufsimrishamn.wordpress.com/2014/04/07/sarskilt-for-dig-som-har-barn-som-vill-ut/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/04/07/sarskilt-for-dig-som-har-barn-som-vill-ut/feed/",
+      "kind": "feed",
+      "path": "2014/04/07/sarskilt-for-dig-som-har-barn-som-vill-ut/feed.xml",
+      "archive_url": "https://web.archive.org/web/20170725160136id_/https://bufsimrishamn.wordpress.com/2014/04/07/sarskilt-for-dig-som-har-barn-som-vill-ut/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/05/12/simrishamns-6-aringar-utforskar-ostersjon/",
+      "kind": "post_like",
+      "path": "2014/05/12/simrishamns-6-aringar-utforskar-ostersjon/index.html",
+      "archive_url": "https://web.archive.org/web/20170725161328id_/https://bufsimrishamn.wordpress.com/2014/05/12/simrishamns-6-aringar-utforskar-ostersjon/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/02/06/oppna-klassrumsdorrar-ger-inspiration/feed/",
+      "kind": "feed",
+      "path": "2014/02/06/oppna-klassrumsdorrar-ger-inspiration/feed.xml",
+      "archive_url": "https://web.archive.org/web/20170628002041id_/https://bufsimrishamn.wordpress.com/2014/02/06/oppna-klassrumsdorrar-ger-inspiration/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/06/02/nojda-barn-nar-skolmaten-blivit-battre/",
+      "kind": "post_like",
+      "path": "2014/06/02/nojda-barn-nar-skolmaten-blivit-battre/index.html",
+      "archive_url": "https://web.archive.org/web/20151201075021id_/https://bufsimrishamn.wordpress.com/2014/06/02/nojda-barn-nar-skolmaten-blivit-battre/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/06/02/nojda-barn-nar-skolmaten-blivit-battre/feed/",
+      "kind": "feed",
+      "path": "2014/06/02/nojda-barn-nar-skolmaten-blivit-battre/feed.xml",
+      "archive_url": "https://web.archive.org/web/20151201051205id_/https://bufsimrishamn.wordpress.com/2014/06/02/nojda-barn-nar-skolmaten-blivit-battre/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/05/19/matematiklyftet-ett-lyft-for-saval-elever-som-larare/",
+      "kind": "post_like",
+      "path": "2014/05/19/matematiklyftet-ett-lyft-for-saval-elever-som-larare/index.html",
+      "archive_url": "https://web.archive.org/web/20191116205250id_/https://bufsimrishamn.wordpress.com/2014/05/19/matematiklyftet-ett-lyft-for-saval-elever-som-larare/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/06/10/simrishamn-i-samarbete-med-barnombudsmannen-och-unicef/",
+      "kind": "post_like",
+      "path": "2014/06/10/simrishamn-i-samarbete-med-barnombudsmannen-och-unicef/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060023id_/https://bufsimrishamn.wordpress.com/2014/06/10/simrishamn-i-samarbete-med-barnombudsmannen-och-unicef/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/06/10/simrishamn-i-samarbete-med-barnombudsmannen-och-unicef/feed/",
+      "kind": "feed",
+      "path": "2014/06/10/simrishamn-i-samarbete-med-barnombudsmannen-och-unicef/feed.xml",
+      "archive_url": "https://web.archive.org/web/20151206051828id_/https://bufsimrishamn.wordpress.com/2014/06/10/simrishamn-i-samarbete-med-barnombudsmannen-och-unicef/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/06/25/unikt-samarbete-kring-utveckling-av-digitala-laromedel/feed/",
+      "kind": "feed",
+      "path": "2014/06/25/unikt-samarbete-kring-utveckling-av-digitala-laromedel/feed.xml",
+      "archive_url": "https://web.archive.org/web/20160125150512id_/https://bufsimrishamn.wordpress.com/2014/06/25/unikt-samarbete-kring-utveckling-av-digitala-laromedel/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/08/20/hjarnan-vill-ha-kul/",
+      "kind": "post_like",
+      "path": "2014/08/20/hjarnan-vill-ha-kul/index.html",
+      "archive_url": "https://web.archive.org/web/20191018055949id_/https://bufsimrishamn.wordpress.com/2014/08/20/hjarnan-vill-ha-kul/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/08/20/hjarnan-vill-ha-kul/feed/",
+      "kind": "feed",
+      "path": "2014/08/20/hjarnan-vill-ha-kul/feed.xml",
+      "archive_url": "https://web.archive.org/web/20170729065016id_/https://bufsimrishamn.wordpress.com/2014/08/20/hjarnan-vill-ha-kul/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/05/12/simrishamns-6-aringar-utforskar-ostersjon/feed/",
+      "kind": "feed",
+      "path": "2014/05/12/simrishamns-6-aringar-utforskar-ostersjon/feed.xml",
+      "archive_url": "https://web.archive.org/web/20170820062908id_/https://bufsimrishamn.wordpress.com/2014/05/12/simrishamns-6-aringar-utforskar-ostersjon/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/05/19/matematiklyftet-ett-lyft-for-saval-elever-som-larare/feed/",
+      "kind": "feed",
+      "path": "2014/05/19/matematiklyftet-ett-lyft-for-saval-elever-som-larare/feed.xml",
+      "archive_url": "https://web.archive.org/web/20151205134031id_/https://bufsimrishamn.wordpress.com/2014/05/19/matematiklyftet-ett-lyft-for-saval-elever-som-larare/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/09/02/rasten-en-viktig-del-av-barnens-skoldag/",
+      "kind": "post_like",
+      "path": "2014/09/02/rasten-en-viktig-del-av-barnens-skoldag/index.html",
+      "archive_url": "https://web.archive.org/web/20191018064930id_/https://bufsimrishamn.wordpress.com/2014/09/02/rasten-en-viktig-del-av-barnens-skoldag/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/10/07/simrishamns-kommun-satsar-pa-elevers-halsa/",
+      "kind": "post_like",
+      "path": "2014/10/07/simrishamns-kommun-satsar-pa-elevers-halsa/index.html",
+      "archive_url": "https://web.archive.org/web/20170525062217id_/https://bufsimrishamn.wordpress.com/2014/10/07/simrishamns-kommun-satsar-pa-elevers-halsa/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/10/24/nu-startar-bygget-av-osterlens-naturskola/",
+      "kind": "post_like",
+      "path": "2014/10/24/nu-startar-bygget-av-osterlens-naturskola/index.html",
+      "archive_url": "https://web.archive.org/web/20170525073448id_/https://bufsimrishamn.wordpress.com/2014/10/24/nu-startar-bygget-av-osterlens-naturskola/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/09/19/forskolebarnens-utveckling-dokumenteras-i-pluttra/",
+      "kind": "post_like",
+      "path": "2014/09/19/forskolebarnens-utveckling-dokumenteras-i-pluttra/index.html",
+      "archive_url": "https://web.archive.org/web/20191116220220id_/https://bufsimrishamn.wordpress.com/2014/09/19/forskolebarnens-utveckling-dokumenteras-i-pluttra/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/11/19/motiverade-elever-pa-fotbollsakademin/",
+      "kind": "post_like",
+      "path": "2014/11/19/motiverade-elever-pa-fotbollsakademin/index.html",
+      "archive_url": "https://web.archive.org/web/20170527061104id_/https://bufsimrishamn.wordpress.com/2014/11/19/motiverade-elever-pa-fotbollsakademin/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/11/30/ingela-ekdahl-johansson-prisad-for-sitt-arbete-med-barnlitteratur/",
+      "kind": "post_like",
+      "path": "2014/11/30/ingela-ekdahl-johansson-prisad-for-sitt-arbete-med-barnlitteratur/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060901id_/https://bufsimrishamn.wordpress.com/2014/11/30/ingela-ekdahl-johansson-prisad-for-sitt-arbete-med-barnlitteratur/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/12/16/simrishamns-kommun-ligger-i-framkant-i-arbetet-med-fns-barnkonvention/",
+      "kind": "post_like",
+      "path": "2014/12/16/simrishamns-kommun-ligger-i-framkant-i-arbetet-med-fns-barnkonvention/index.html",
+      "archive_url": "https://web.archive.org/web/20191212141717id_/https://bufsimrishamn.wordpress.com/2014/12/16/simrishamns-kommun-ligger-i-framkant-i-arbetet-med-fns-barnkonvention/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/10/20/mer-rorelse-for-hogre-maluppfyllelse/",
+      "kind": "post_like",
+      "path": "2014/10/20/mer-rorelse-for-hogre-maluppfyllelse/index.html",
+      "archive_url": "https://web.archive.org/web/20170525081316id_/https://bufsimrishamn.wordpress.com/2014/10/20/mer-rorelse-for-hogre-maluppfyllelse/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2014/06/25/unikt-samarbete-kring-utveckling-av-digitala-laromedel/",
+      "kind": "post_like",
+      "path": "2014/06/25/unikt-samarbete-kring-utveckling-av-digitala-laromedel/index.html",
+      "archive_url": "https://web.archive.org/web/20190822060602id_/https://bufsimrishamn.wordpress.com/2014/06/25/unikt-samarbete-kring-utveckling-av-digitala-laromedel/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/02/20/nova-academy-overtraffar-forvantningarna/",
+      "kind": "post_like",
+      "path": "2015/02/20/nova-academy-overtraffar-forvantningarna/index.html",
+      "archive_url": "https://web.archive.org/web/20160818194514id_/https://bufsimrishamn.wordpress.com/2015/02/20/nova-academy-overtraffar-forvantningarna/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/02/19/kurser-for-foraldrar-som-vill-samarbeta-med-sina-barn/",
+      "kind": "post_like",
+      "path": "2015/02/19/kurser-for-foraldrar-som-vill-samarbeta-med-sina-barn/index.html",
+      "archive_url": "https://web.archive.org/web/20190822055626id_/https://bufsimrishamn.wordpress.com/2015/02/19/kurser-for-foraldrar-som-vill-samarbeta-med-sina-barn/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/01/30/kulturskolan-i-nya-lokaler/",
+      "kind": "post_like",
+      "path": "2015/01/30/kulturskolan-i-nya-lokaler/index.html",
+      "archive_url": "https://web.archive.org/web/20160706100032id_/https://bufsimrishamn.wordpress.com/2015/01/30/kulturskolan-i-nya-lokaler/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/03/31/hjalp-for-separerade-foraldrar-att-se-till-barnens-basta/",
+      "kind": "post_like",
+      "path": "2015/03/31/hjalp-for-separerade-foraldrar-att-se-till-barnens-basta/index.html",
+      "archive_url": "https://web.archive.org/web/20190822044110id_/https://bufsimrishamn.wordpress.com/2015/03/31/hjalp-for-separerade-foraldrar-att-se-till-barnens-basta/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/03/23/besok-pa-fritidshemmet-bombibitt-i-kivik/",
+      "kind": "post_like",
+      "path": "2015/03/23/besok-pa-fritidshemmet-bombibitt-i-kivik/index.html",
+      "archive_url": "https://web.archive.org/web/20161002153938id_/https://bufsimrishamn.wordpress.com/2015/03/23/besok-pa-fritidshemmet-bombibitt-i-kivik/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/04/07/skolkommun-med-livskvalitet-pa-osterlen/",
+      "kind": "post_like",
+      "path": "2015/04/07/skolkommun-med-livskvalitet-pa-osterlen/index.html",
+      "archive_url": "https://web.archive.org/web/20161007090754id_/https://bufsimrishamn.wordpress.com/2015/04/07/skolkommun-med-livskvalitet-pa-osterlen/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/04/22/nova-academy-en-modern-gymnasieskola-med-eleven-i-centrum/",
+      "kind": "post_like",
+      "path": "2015/04/22/nova-academy-en-modern-gymnasieskola-med-eleven-i-centrum/index.html",
+      "archive_url": "https://web.archive.org/web/20190825141322id_/https://bufsimrishamn.wordpress.com/2015/04/22/nova-academy-en-modern-gymnasieskola-med-eleven-i-centrum/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/03/20/alla-barn-under-ett-tak-i-kivik/",
+      "kind": "post_like",
+      "path": "2015/03/20/alla-barn-under-ett-tak-i-kivik/index.html",
+      "archive_url": "https://web.archive.org/web/20161003043218id_/https://bufsimrishamn.wordpress.com/2015/03/20/alla-barn-under-ett-tak-i-kivik/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/05/04/simrishamn-en-skolkommun-pa-stadig-vag-uppat/",
+      "kind": "post_like",
+      "path": "2015/05/04/simrishamn-en-skolkommun-pa-stadig-vag-uppat/index.html",
+      "archive_url": "https://web.archive.org/web/20160425135142id_/https://bufsimrishamn.wordpress.com/2015/05/04/simrishamn-en-skolkommun-pa-stadig-vag-uppat/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/05/10/osterlengymnasiets-larlingselever-imponerar-del-1-av-2/",
+      "kind": "post_like",
+      "path": "2015/05/10/osterlengymnasiets-larlingselever-imponerar-del-1-av-2/index.html",
+      "archive_url": "https://web.archive.org/web/20160621141657id_/https://bufsimrishamn.wordpress.com/2015/05/10/osterlengymnasiets-larlingselever-imponerar-del-1-av-2/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/05/06/larlingsutbildningarna-pa-osterlengymnasiet-leder-ofta-till-jobb/",
+      "kind": "post_like",
+      "path": "2015/05/06/larlingsutbildningarna-pa-osterlengymnasiet-leder-ofta-till-jobb/index.html",
+      "archive_url": "https://web.archive.org/web/20191116205255id_/https://bufsimrishamn.wordpress.com/2015/05/06/larlingsutbildningarna-pa-osterlengymnasiet-leder-ofta-till-jobb/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/03/18/datainspektionen-godkanner-avtalet-mellan-utbildningsnamnden-i-simrishamns-kommun-och-google/",
+      "kind": "post_like",
+      "path": "2015/03/18/datainspektionen-godkanner-avtalet-mellan-utbildningsnamnden-i-simrishamns-kommun-och-google/index.html",
+      "archive_url": "https://web.archive.org/web/20201021013340id_/https://bufsimrishamn.wordpress.com/2015/03/18/datainspektionen-godkanner-avtalet-mellan-utbildningsnamnden-i-simrishamns-kommun-och-google/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/",
+      "kind": "post_like",
+      "path": "2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/index.html",
+      "archive_url": "https://web.archive.org/web/20190822055041id_/https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2015/",
+      "kind": "post_like",
+      "path": "2015/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2015/index.html",
+      "archive_url": "https://web.archive.org/web/20190919184844id_/https://bufsimrishamn.wordpress.com/2015/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2015/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/05/14/osterlengymnasiets-larlingselever-imponerar-del-2-av-2/",
+      "kind": "post_like",
+      "path": "2015/05/14/osterlengymnasiets-larlingselever-imponerar-del-2-av-2/index.html",
+      "archive_url": "https://web.archive.org/web/20190822055207id_/https://bufsimrishamn.wordpress.com/2015/05/14/osterlengymnasiets-larlingselever-imponerar-del-2-av-2/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/10/08/skolkorer-fran-simrishamns-kommun-sjunger-for-mangfald-och-tolerans/",
+      "kind": "post_like",
+      "path": "2015/10/08/skolkorer-fran-simrishamns-kommun-sjunger-for-mangfald-och-tolerans/index.html",
+      "archive_url": "https://web.archive.org/web/20190825134137id_/https://bufsimrishamn.wordpress.com/2015/10/08/skolkorer-fran-simrishamns-kommun-sjunger-for-mangfald-och-tolerans/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/10/13/simrishamn-pa-plats-15-av-sveriges-basta-skolkommuner/",
+      "kind": "post_like",
+      "path": "2015/10/13/simrishamn-pa-plats-15-av-sveriges-basta-skolkommuner/index.html",
+      "archive_url": "https://web.archive.org/web/20191116215743id_/https://bufsimrishamn.wordpress.com/2015/10/13/simrishamn-pa-plats-15-av-sveriges-basta-skolkommuner/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/11/05/barnkonsekvensanalyser-hjalper-oss-att-satta-barnen-i-centrum/",
+      "kind": "post_like",
+      "path": "2015/11/05/barnkonsekvensanalyser-hjalper-oss-att-satta-barnen-i-centrum/index.html",
+      "archive_url": "https://web.archive.org/web/20190822054232id_/https://bufsimrishamn.wordpress.com/2015/11/05/barnkonsekvensanalyser-hjalper-oss-att-satta-barnen-i-centrum/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/05/19/simrishamns-kommun-vann-arets-it-projekt-2015/",
+      "kind": "post_like",
+      "path": "2015/05/19/simrishamns-kommun-vann-arets-it-projekt-2015/index.html",
+      "archive_url": "https://web.archive.org/web/20170324213452id_/https://bufsimrishamn.wordpress.com/2015/05/19/simrishamns-kommun-vann-arets-it-projekt-2015/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/11/12/kommunpartner-till-sett-syd-i-malmo/",
+      "kind": "post_like",
+      "path": "2015/11/12/kommunpartner-till-sett-syd-i-malmo/index.html",
+      "archive_url": "https://web.archive.org/web/20190822055653id_/https://bufsimrishamn.wordpress.com/2015/11/12/kommunpartner-till-sett-syd-i-malmo/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/12/11/kulturgarantin-firar-10-ar/",
+      "kind": "post_like",
+      "path": "2015/12/11/kulturgarantin-firar-10-ar/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060029id_/https://bufsimrishamn.wordpress.com/2015/12/11/kulturgarantin-firar-10-ar/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2015/08/10/foraldrautbildningar-for-dig-som-vill-forbattra-relationen-till-dina-barn/",
+      "kind": "post_like",
+      "path": "2015/08/10/foraldrautbildningar-for-dig-som-vill-forbattra-relationen-till-dina-barn/index.html",
+      "archive_url": "https://web.archive.org/web/20190919193519id_/https://bufsimrishamn.wordpress.com/2015/08/10/foraldrautbildningar-for-dig-som-vill-forbattra-relationen-till-dina-barn/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2016/02/13/nara-samarbete-mellan-skola-och-socialtjanst-for-barnens-basta/",
+      "kind": "post_like",
+      "path": "2016/02/13/nara-samarbete-mellan-skola-och-socialtjanst-for-barnens-basta/index.html",
+      "archive_url": "https://web.archive.org/web/20190720142111id_/https://bufsimrishamn.wordpress.com/2016/02/13/nara-samarbete-mellan-skola-och-socialtjanst-for-barnens-basta/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/?openidserver=1",
+      "kind": "homepage",
+      "path": "index--96e6d6e5f2.html",
+      "archive_url": "https://web.archive.org/web/20170226115647id_/https://bufsimrishamn.wordpress.com/?openidserver=1"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2016/04/15/simrishamn-forst-med-kulturgaranti-i-skolan/",
+      "kind": "post_like",
+      "path": "2016/04/15/simrishamn-forst-med-kulturgaranti-i-skolan/index.html",
+      "archive_url": "https://web.archive.org/web/20190919194021id_/https://bufsimrishamn.wordpress.com/2016/04/15/simrishamn-forst-med-kulturgaranti-i-skolan/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/2016/02/15/barn-och-unga-hors-och-syns-i-simrishamn/",
+      "kind": "post_like",
+      "path": "2016/02/15/barn-och-unga-hors-och-syns-i-simrishamn/index.html",
+      "archive_url": "https://web.archive.org/web/20190822054028id_/https://bufsimrishamn.wordpress.com/2016/02/15/barn-och-unga-hors-och-syns-i-simrishamn/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/comments/feed/",
+      "kind": "feed",
+      "path": "comments/feed.xml",
+      "archive_url": "https://web.archive.org/web/20190209075413id_/https://bufsimrishamn.wordpress.com/comments/feed/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/?themes_on_signup_preview=1",
+      "kind": "homepage",
+      "path": "index--7fa7a37ca2.html",
+      "archive_url": "https://web.archive.org/web/20140311105725id_/http://bufsimrishamn.wordpress.com/?themes_on_signup_preview=1"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/osd.xml",
+      "kind": "other",
+      "path": "osd.html",
+      "archive_url": "https://web.archive.org/web/20180806223536id_/https://bufsimrishamn.wordpress.com/osd.xml"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/robots.txt",
+      "kind": "other",
+      "path": "robots.html",
+      "archive_url": "https://web.archive.org/web/20190808165954id_/https://bufsimrishamn.wordpress.com/robots.txt"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2013/04/17/barngruppen-blavinge/",
+      "kind": "post_like",
+      "path": "2013/04/17/barngruppen-blavinge/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043545id_/https://bufsimrishamn.wordpress.com/2013/04/17/barngruppen-blavinge/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/01/",
+      "kind": "other",
+      "path": "2014/01/index.html",
+      "archive_url": "https://web.archive.org/web/20191212141947id_/https://bufsimrishamn.wordpress.com/2014/01/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/author/bufsimrishamn/feed/",
+      "kind": "feed",
+      "path": "author/bufsimrishamn/feed.xml",
+      "archive_url": "https://web.archive.org/web/20140312001551id_/http://bufsimrishamn.wordpress.com/author/bufsimrishamn/feed/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/02/",
+      "kind": "other",
+      "path": "2014/02/index.html",
+      "archive_url": "https://web.archive.org/web/20190919192058id_/https://bufsimrishamn.wordpress.com/2014/02/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/03/",
+      "kind": "other",
+      "path": "2014/03/index.html",
+      "archive_url": "https://web.archive.org/web/20191018063953id_/https://bufsimrishamn.wordpress.com/2014/03/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/04/",
+      "kind": "other",
+      "path": "2014/04/index.html",
+      "archive_url": "https://web.archive.org/web/20191018062743id_/https://bufsimrishamn.wordpress.com/2014/04/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/05/",
+      "kind": "other",
+      "path": "2014/05/index.html",
+      "archive_url": "https://web.archive.org/web/20191212132559id_/https://bufsimrishamn.wordpress.com/2014/05/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/06/",
+      "kind": "other",
+      "path": "2014/06/index.html",
+      "archive_url": "https://web.archive.org/web/20191212131418id_/https://bufsimrishamn.wordpress.com/2014/06/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/08/",
+      "kind": "other",
+      "path": "2014/08/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060018id_/https://bufsimrishamn.wordpress.com/2014/08/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/09/",
+      "kind": "other",
+      "path": "2014/09/index.html",
+      "archive_url": "https://web.archive.org/web/20191212144137id_/https://bufsimrishamn.wordpress.com/2014/09/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/10/",
+      "kind": "other",
+      "path": "2014/10/index.html",
+      "archive_url": "https://web.archive.org/web/20191212143727id_/https://bufsimrishamn.wordpress.com/2014/10/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/feed/",
+      "kind": "feed",
+      "path": "feed.xml",
+      "archive_url": "https://web.archive.org/web/20180806233449id_/https://bufsimrishamn.wordpress.com/feed/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/10/20/mer-rorelse-for-hogre-maluppfyllelse/feed/",
+      "kind": "feed",
+      "path": "2014/10/20/mer-rorelse-for-hogre-maluppfyllelse/feed.xml",
+      "archive_url": "https://web.archive.org/web/20170525061236id_/https://bufsimrishamn.wordpress.com/2014/10/20/mer-rorelse-for-hogre-maluppfyllelse/feed/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/10/24/nu-startar-bygget-av-osterlens-naturskola/feed/",
+      "kind": "feed",
+      "path": "2014/10/24/nu-startar-bygget-av-osterlens-naturskola/feed.xml",
+      "archive_url": "https://web.archive.org/web/20170527054325id_/https://bufsimrishamn.wordpress.com/2014/10/24/nu-startar-bygget-av-osterlens-naturskola/feed/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/11/",
+      "kind": "other",
+      "path": "2014/11/index.html",
+      "archive_url": "https://web.archive.org/web/20191018070725id_/https://bufsimrishamn.wordpress.com/2014/11/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/11/19/motiverade-elever-pa-fotbollsakademin/dsc_0689/",
+      "kind": "other",
+      "path": "2014/11/19/motiverade-elever-pa-fotbollsakademin/dsc_0689/index.html",
+      "archive_url": "https://web.archive.org/web/20190822044124id_/https://bufsimrishamn.wordpress.com/2014/11/19/motiverade-elever-pa-fotbollsakademin/dsc_0689/"
+    },
+    {
+      "url": "http://bufsimrishamn.wordpress.com/author/bufsimrishamn/",
+      "kind": "other",
+      "path": "author/bufsimrishamn/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130209id_/https://bufsimrishamn.wordpress.com/author/bufsimrishamn/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/12/",
+      "kind": "other",
+      "path": "2014/12/index.html",
+      "archive_url": "https://web.archive.org/web/20191212141016id_/https://bufsimrishamn.wordpress.com/2014/12/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2014/12/16/simrishamns-kommun-ligger-i-framkant-i-arbetet-med-fns-barnkonvention/dsc_1249/",
+      "kind": "other",
+      "path": "2014/12/16/simrishamns-kommun-ligger-i-framkant-i-arbetet-med-fns-barnkonvention/dsc_1249/index.html",
+      "archive_url": "https://web.archive.org/web/20190720132947id_/https://bufsimrishamn.wordpress.com/2014/12/16/simrishamns-kommun-ligger-i-framkant-i-arbetet-med-fns-barnkonvention/dsc_1249/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/03/",
+      "kind": "other",
+      "path": "2015/03/index.html",
+      "archive_url": "https://web.archive.org/web/20191018072046id_/https://bufsimrishamn.wordpress.com/2015/03/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/04/",
+      "kind": "other",
+      "path": "2015/04/index.html",
+      "archive_url": "https://web.archive.org/web/20190919193251id_/https://bufsimrishamn.wordpress.com/2015/04/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0014/",
+      "kind": "other",
+      "path": "2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0014/index.html",
+      "archive_url": "https://web.archive.org/web/20170325024545id_/https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0014/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0021/",
+      "kind": "other",
+      "path": "2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0021/index.html",
+      "archive_url": "https://web.archive.org/web/20170324220904id_/https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0021/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0023/",
+      "kind": "other",
+      "path": "2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0023/index.html",
+      "archive_url": "https://web.archive.org/web/20170324212854id_/https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0023/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0010/",
+      "kind": "other",
+      "path": "2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0010/index.html",
+      "archive_url": "https://web.archive.org/web/20170324214510id_/https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0010/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0032/",
+      "kind": "other",
+      "path": "2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0032/index.html",
+      "archive_url": "https://web.archive.org/web/20170325032843id_/https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0032/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0025/",
+      "kind": "other",
+      "path": "2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0025/index.html",
+      "archive_url": "https://web.archive.org/web/20170324214528id_/https://bufsimrishamn.wordpress.com/2015/04/15/barngruppen-blavinge-for-barn-som-har-det-svart-hemma/dsc_0025/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/05/",
+      "kind": "other",
+      "path": "2015/05/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065457id_/https://bufsimrishamn.wordpress.com/2015/05/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/06/",
+      "kind": "other",
+      "path": "2015/06/index.html",
+      "archive_url": "https://web.archive.org/web/20191018064255id_/https://bufsimrishamn.wordpress.com/2015/06/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/08/",
+      "kind": "other",
+      "path": "2015/08/index.html",
+      "archive_url": "https://web.archive.org/web/20191212132910id_/https://bufsimrishamn.wordpress.com/2015/08/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/05/14/osterlengymnasiets-larlingselever-imponerar-del-2-av-2/etg_logo/",
+      "kind": "other",
+      "path": "2015/05/14/osterlengymnasiets-larlingselever-imponerar-del-2-av-2/etg_logo/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043616id_/https://bufsimrishamn.wordpress.com/2015/05/14/osterlengymnasiets-larlingselever-imponerar-del-2-av-2/etg_logo/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/01/",
+      "kind": "other",
+      "path": "2015/01/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060035id_/https://bufsimrishamn.wordpress.com/2015/01/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/02/",
+      "kind": "other",
+      "path": "2015/02/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130204id_/https://bufsimrishamn.wordpress.com/2015/02/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/10/",
+      "kind": "other",
+      "path": "2015/10/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060426id_/https://bufsimrishamn.wordpress.com/2015/10/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/11/",
+      "kind": "other",
+      "path": "2015/11/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060103id_/https://bufsimrishamn.wordpress.com/2015/11/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/12/",
+      "kind": "other",
+      "path": "2015/12/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130235id_/https://bufsimrishamn.wordpress.com/2015/12/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/12/11/kulturgarantin-firar-10-ar/barns-ratt-till-kultur/",
+      "kind": "other",
+      "path": "2015/12/11/kulturgarantin-firar-10-ar/barns-ratt-till-kultur/index.html",
+      "archive_url": "https://web.archive.org/web/20190822050609id_/https://bufsimrishamn.wordpress.com/2015/12/11/kulturgarantin-firar-10-ar/barns-ratt-till-kultur/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/12/11/kulturgarantin-firar-10-ar/kulturgaranti/",
+      "kind": "other",
+      "path": "2015/12/11/kulturgarantin-firar-10-ar/kulturgaranti/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043933id_/https://bufsimrishamn.wordpress.com/2015/12/11/kulturgarantin-firar-10-ar/kulturgaranti/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/02/09/skolinspektionen-besoker-simrishamns-kommun/loggavanster/",
+      "kind": "other",
+      "path": "2016/02/09/skolinspektionen-besoker-simrishamns-kommun/loggavanster/index.html",
+      "archive_url": "https://web.archive.org/web/20190822055919id_/https://bufsimrishamn.wordpress.com/2016/02/09/skolinspektionen-besoker-simrishamns-kommun/loggavanster/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2015/09/",
+      "kind": "other",
+      "path": "2015/09/index.html",
+      "archive_url": "https://web.archive.org/web/20191212131721id_/https://bufsimrishamn.wordpress.com/2015/09/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/02/17/vad-hander-pa-nova-academy-just-nu/amp/",
+      "kind": "other",
+      "path": "2016/02/17/vad-hander-pa-nova-academy-just-nu/amp/index.html",
+      "archive_url": "https://web.archive.org/web/20160922163025id_/https://bufsimrishamn.wordpress.com/2016/02/17/vad-hander-pa-nova-academy-just-nu/amp/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/03/",
+      "kind": "other",
+      "path": "2016/03/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060412id_/https://bufsimrishamn.wordpress.com/2016/03/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/03/14/simrishamns-kommun-nominerad-till-guldtrappan/",
+      "kind": "post_like",
+      "path": "2016/03/14/simrishamns-kommun-nominerad-till-guldtrappan/index.html",
+      "archive_url": "https://web.archive.org/web/20170325014535id_/https://bufsimrishamn.wordpress.com/2016/03/14/simrishamns-kommun-nominerad-till-guldtrappan/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/02/",
+      "kind": "other",
+      "path": "2016/02/index.html",
+      "archive_url": "https://web.archive.org/web/20191018061521id_/https://bufsimrishamn.wordpress.com/2016/02/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/01/",
+      "kind": "other",
+      "path": "2016/01/index.html",
+      "archive_url": "https://web.archive.org/web/20191212133810id_/https://bufsimrishamn.wordpress.com/2016/01/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/03/14/simrishamns-kommun-nominerad-till-guldtrappan/guldtrappan/",
+      "kind": "other",
+      "path": "2016/03/14/simrishamns-kommun-nominerad-till-guldtrappan/guldtrappan/index.html",
+      "archive_url": "https://web.archive.org/web/20170325035636id_/https://bufsimrishamn.wordpress.com/2016/03/14/simrishamns-kommun-nominerad-till-guldtrappan/guldtrappan/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/03/14/simrishamns-kommun-nominerad-till-guldtrappan/amp/",
+      "kind": "other",
+      "path": "2016/03/14/simrishamns-kommun-nominerad-till-guldtrappan/amp/index.html",
+      "archive_url": "https://web.archive.org/web/20160921023140id_/https://bufsimrishamn.wordpress.com/2016/03/14/simrishamns-kommun-nominerad-till-guldtrappan/amp/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/04/05/vad-hander-pa-osterlengymnasiet-just-nu/",
+      "kind": "post_like",
+      "path": "2016/04/05/vad-hander-pa-osterlengymnasiet-just-nu/index.html",
+      "archive_url": "https://web.archive.org/web/20160921082648id_/https://bufsimrishamn.wordpress.com/2016/04/05/vad-hander-pa-osterlengymnasiet-just-nu/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/04/05/vad-hander-pa-osterlengymnasiet-just-nu/amp/",
+      "kind": "other",
+      "path": "2016/04/05/vad-hander-pa-osterlengymnasiet-just-nu/amp/index.html",
+      "archive_url": "https://web.archive.org/web/20160922101943id_/https://bufsimrishamn.wordpress.com/2016/04/05/vad-hander-pa-osterlengymnasiet-just-nu/amp/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/04/",
+      "kind": "other",
+      "path": "2016/04/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060057id_/https://bufsimrishamn.wordpress.com/2016/04/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/04/14/stor-efterfragan-pa-larlingar-inom-restaurangnaringen/",
+      "kind": "post_like",
+      "path": "2016/04/14/stor-efterfragan-pa-larlingar-inom-restaurangnaringen/index.html",
+      "archive_url": "https://web.archive.org/web/20170210064406id_/https://bufsimrishamn.wordpress.com/2016/04/14/stor-efterfragan-pa-larlingar-inom-restaurangnaringen/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/03/14/simrishamns-kommun-nominerad-till-guldtrappan/feed/",
+      "kind": "feed",
+      "path": "2016/03/14/simrishamns-kommun-nominerad-till-guldtrappan/feed.xml",
+      "archive_url": "https://web.archive.org/web/20160921083641id_/https://bufsimrishamn.wordpress.com/2016/03/14/simrishamns-kommun-nominerad-till-guldtrappan/feed/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/04/05/vad-hander-pa-osterlengymnasiet-just-nu/feed/",
+      "kind": "feed",
+      "path": "2016/04/05/vad-hander-pa-osterlengymnasiet-just-nu/feed.xml",
+      "archive_url": "https://web.archive.org/web/20160922102942id_/https://bufsimrishamn.wordpress.com/2016/04/05/vad-hander-pa-osterlengymnasiet-just-nu/feed/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/04/17/osterlengymnasiet-erbjuder-etg-utbildning-for-blivande-elektriker/",
+      "kind": "post_like",
+      "path": "2016/04/17/osterlengymnasiet-erbjuder-etg-utbildning-for-blivande-elektriker/index.html",
+      "archive_url": "https://web.archive.org/web/20170208173018id_/https://bufsimrishamn.wordpress.com/2016/04/17/osterlengymnasiet-erbjuder-etg-utbildning-for-blivande-elektriker/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/04/17/osterlengymnasiet-erbjuder-etg-utbildning-for-blivande-elektriker/elprogrammet-med-etg-kristers-elever-vt2016-15/",
+      "kind": "other",
+      "path": "2016/04/17/osterlengymnasiet-erbjuder-etg-utbildning-for-blivande-elektriker/elprogrammet-med-etg-kristers-elever-vt2016-15/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043554id_/https://bufsimrishamn.wordpress.com/2016/04/17/osterlengymnasiet-erbjuder-etg-utbildning-for-blivande-elektriker/elprogrammet-med-etg-kristers-elever-vt2016-15/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/04/17/osterlengymnasiet-erbjuder-etg-utbildning-for-blivande-elektriker/elprogrammet-med-etg-kristers-elever-vt2016-19/",
+      "kind": "other",
+      "path": "2016/04/17/osterlengymnasiet-erbjuder-etg-utbildning-for-blivande-elektriker/elprogrammet-med-etg-kristers-elever-vt2016-19/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045230id_/https://bufsimrishamn.wordpress.com/2016/04/17/osterlengymnasiet-erbjuder-etg-utbildning-for-blivande-elektriker/elprogrammet-med-etg-kristers-elever-vt2016-19/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/",
+      "kind": "other",
+      "path": "2016/05/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130230id_/https://bufsimrishamn.wordpress.com/2016/05/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/03/simrishamns-skolor-klattrar-ytterligare-i-oppna-jamforelser/appelblom/",
+      "kind": "other",
+      "path": "2016/05/03/simrishamns-skolor-klattrar-ytterligare-i-oppna-jamforelser/appelblom/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043609id_/https://bufsimrishamn.wordpress.com/2016/05/03/simrishamns-skolor-klattrar-ytterligare-i-oppna-jamforelser/appelblom/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/03/simrishamns-skolor-klattrar-ytterligare-i-oppna-jamforelser/oppna-jamforelser-2/",
+      "kind": "other",
+      "path": "2016/05/03/simrishamns-skolor-klattrar-ytterligare-i-oppna-jamforelser/oppna-jamforelser-2/index.html",
+      "archive_url": "https://web.archive.org/web/20190822051145id_/https://bufsimrishamn.wordpress.com/2016/05/03/simrishamns-skolor-klattrar-ytterligare-i-oppna-jamforelser/oppna-jamforelser-2/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/04/17/osterlengymnasiet-erbjuder-etg-utbildning-for-blivande-elektriker/elprogrammet-med-etg-kristers-elever-vt2016-4/",
+      "kind": "other",
+      "path": "2016/04/17/osterlengymnasiet-erbjuder-etg-utbildning-for-blivande-elektriker/elprogrammet-med-etg-kristers-elever-vt2016-4/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045245id_/https://bufsimrishamn.wordpress.com/2016/04/17/osterlengymnasiet-erbjuder-etg-utbildning-for-blivande-elektriker/elprogrammet-med-etg-kristers-elever-vt2016-4/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/10/nova-acdemy-far-spetsutbildning/",
+      "kind": "post_like",
+      "path": "2016/05/10/nova-acdemy-far-spetsutbildning/index.html",
+      "archive_url": "https://web.archive.org/web/20190822055833id_/https://bufsimrishamn.wordpress.com/2016/05/10/nova-acdemy-far-spetsutbildning/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/10/nova-acdemy-far-spetsutbildning/eva-andreas-och-jeaninne/",
+      "kind": "other",
+      "path": "2016/05/10/nova-acdemy-far-spetsutbildning/eva-andreas-och-jeaninne/index.html",
+      "archive_url": "https://web.archive.org/web/20190822052704id_/https://bufsimrishamn.wordpress.com/2016/05/10/nova-acdemy-far-spetsutbildning/eva-andreas-och-jeaninne/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/12/barn-berattar-hur-de-vill-paverka-skola-och-fritids/",
+      "kind": "post_like",
+      "path": "2016/05/12/barn-berattar-hur-de-vill-paverka-skola-och-fritids/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045522id_/https://bufsimrishamn.wordpress.com/2016/05/12/barn-berattar-hur-de-vill-paverka-skola-och-fritids/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/12/barn-berattar-hur-de-vill-paverka-skola-och-fritids/rbs-fem-grundstenar-2/",
+      "kind": "other",
+      "path": "2016/05/12/barn-berattar-hur-de-vill-paverka-skola-och-fritids/rbs-fem-grundstenar-2/index.html",
+      "archive_url": "https://web.archive.org/web/20190720134855id_/https://bufsimrishamn.wordpress.com/2016/05/12/barn-berattar-hur-de-vill-paverka-skola-och-fritids/rbs-fem-grundstenar-2/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/19/vattenfaglar-stalls-ut-pa-valfisken/faglar/",
+      "kind": "other",
+      "path": "2016/05/19/vattenfaglar-stalls-ut-pa-valfisken/faglar/index.html",
+      "archive_url": "https://web.archive.org/web/20190822050725id_/https://bufsimrishamn.wordpress.com/2016/05/19/vattenfaglar-stalls-ut-pa-valfisken/faglar/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/10/nova-acdemy-far-spetsutbildning/sony-dsc/",
+      "kind": "other",
+      "path": "2016/05/10/nova-acdemy-far-spetsutbildning/sony-dsc/index.html",
+      "archive_url": "https://web.archive.org/web/20190822054449id_/https://bufsimrishamn.wordpress.com/2016/05/10/nova-acdemy-far-spetsutbildning/sony-dsc/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/19/vattenfaglar-stalls-ut-pa-valfisken/tema-vatten-sarskolan-4/",
+      "kind": "other",
+      "path": "2016/05/19/vattenfaglar-stalls-ut-pa-valfisken/tema-vatten-sarskolan-4/index.html",
+      "archive_url": "https://web.archive.org/web/20190822054552id_/https://bufsimrishamn.wordpress.com/2016/05/19/vattenfaglar-stalls-ut-pa-valfisken/tema-vatten-sarskolan-4/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/19/vattenfaglar-stalls-ut-pa-valfisken/",
+      "kind": "post_like",
+      "path": "2016/05/19/vattenfaglar-stalls-ut-pa-valfisken/index.html",
+      "archive_url": "https://web.archive.org/web/20190822052857id_/https://bufsimrishamn.wordpress.com/2016/05/19/vattenfaglar-stalls-ut-pa-valfisken/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/28/barn-gor-ratt-om-de-kan/ross-greene-barn-gor-ratt-om-de-kan-1-1/",
+      "kind": "other",
+      "path": "2016/05/28/barn-gor-ratt-om-de-kan/ross-greene-barn-gor-ratt-om-de-kan-1-1/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045205id_/https://bufsimrishamn.wordpress.com/2016/05/28/barn-gor-ratt-om-de-kan/ross-greene-barn-gor-ratt-om-de-kan-1-1/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2016/",
+      "kind": "post_like",
+      "path": "2016/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2016/index.html",
+      "archive_url": "https://web.archive.org/web/20170324151431id_/https://bufsimrishamn.wordpress.com/2016/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2016/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/12/barn-berattar-hur-de-vill-paverka-skola-och-fritids/mal-ur-laroplan-for-podden1/",
+      "kind": "other",
+      "path": "2016/05/12/barn-berattar-hur-de-vill-paverka-skola-och-fritids/mal-ur-laroplan-for-podden1/index.html",
+      "archive_url": "https://web.archive.org/web/20190720133222id_/https://bufsimrishamn.wordpress.com/2016/05/12/barn-berattar-hur-de-vill-paverka-skola-och-fritids/mal-ur-laroplan-for-podden1/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2016/16381360022_96448aa651_m/",
+      "kind": "other",
+      "path": "2016/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2016/16381360022_96448aa651_m/index.html",
+      "archive_url": "https://web.archive.org/web/20170325014718id_/https://bufsimrishamn.wordpress.com/2016/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2016/16381360022_96448aa651_m/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2016/15759821564_8d6671ab96_z/",
+      "kind": "other",
+      "path": "2016/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2016/15759821564_8d6671ab96_z/index.html",
+      "archive_url": "https://web.archive.org/web/20170324214446id_/https://bufsimrishamn.wordpress.com/2016/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2016/15759821564_8d6671ab96_z/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2016/24696995562_ec8c63f245_m/",
+      "kind": "other",
+      "path": "2016/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2016/24696995562_ec8c63f245_m/index.html",
+      "archive_url": "https://web.archive.org/web/20170325035546id_/https://bufsimrishamn.wordpress.com/2016/06/05/simrishamn-ar-skanes-basta-kulturskolekommun-2016/24696995562_ec8c63f245_m/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/",
+      "kind": "post_like",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/index.html",
+      "archive_url": "https://web.archive.org/web/20190822060136id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/05/28/barn-gor-ratt-om-de-kan/",
+      "kind": "post_like",
+      "path": "2016/05/28/barn-gor-ratt-om-de-kan/index.html",
+      "archive_url": "https://web.archive.org/web/20190822060416id_/https://bufsimrishamn.wordpress.com/2016/05/28/barn-gor-ratt-om-de-kan/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-16/",
+      "kind": "other",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-16/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045540id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-16/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-2/",
+      "kind": "other",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-2/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043636id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-2/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-49/",
+      "kind": "other",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-49/index.html",
+      "archive_url": "https://web.archive.org/web/20170324212914id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-49/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-32/",
+      "kind": "other",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-32/index.html",
+      "archive_url": "https://web.archive.org/web/20170324182114id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-32/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-59/",
+      "kind": "other",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-59/index.html",
+      "archive_url": "https://web.archive.org/web/20170325035559id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-59/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-6/",
+      "kind": "other",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-6/index.html",
+      "archive_url": "https://web.archive.org/web/20190825140354id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-6/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-75-2/",
+      "kind": "other",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-75-2/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043743id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-75-2/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-85/",
+      "kind": "other",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-85/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043529id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-85/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-13/",
+      "kind": "other",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-13/index.html",
+      "archive_url": "https://web.archive.org/web/20190825140146id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-13/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-89/",
+      "kind": "other",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-89/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045115id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-89/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-86/",
+      "kind": "other",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-86/index.html",
+      "archive_url": "https://web.archive.org/web/20190822052303id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-86/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/22/simrishamns-kommun-har-fatt-utmarkelsen-guldtrappan/",
+      "kind": "post_like",
+      "path": "2016/06/22/simrishamns-kommun-har-fatt-utmarkelsen-guldtrappan/index.html",
+      "archive_url": "https://web.archive.org/web/20170325032819id_/https://bufsimrishamn.wordpress.com/2016/06/22/simrishamns-kommun-har-fatt-utmarkelsen-guldtrappan/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/07/",
+      "kind": "other",
+      "path": "2016/07/index.html",
+      "archive_url": "https://web.archive.org/web/20191212142653id_/https://bufsimrishamn.wordpress.com/2016/07/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/07/06/stor-nationell-satsning-pa-yrkesutbildningar/tavling-i-att-styla-skyltdocka-1/",
+      "kind": "other",
+      "path": "2016/07/06/stor-nationell-satsning-pa-yrkesutbildningar/tavling-i-att-styla-skyltdocka-1/index.html",
+      "archive_url": "https://web.archive.org/web/20170325033427id_/https://bufsimrishamn.wordpress.com/2016/07/06/stor-nationell-satsning-pa-yrkesutbildningar/tavling-i-att-styla-skyltdocka-1/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-60/",
+      "kind": "other",
+      "path": "2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-60/index.html",
+      "archive_url": "https://web.archive.org/web/20170324152105id_/https://bufsimrishamn.wordpress.com/2016/06/17/kompetensutveckling-inom-integration-och-kulturmoten/integration-och-kulturmoten-60/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/08/",
+      "kind": "other",
+      "path": "2016/08/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065759id_/https://bufsimrishamn.wordpress.com/2016/08/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/08/23/atta-larare-nominerade-till-prestigefyllt-lararstipendium/",
+      "kind": "post_like",
+      "path": "2016/08/23/atta-larare-nominerade-till-prestigefyllt-lararstipendium/index.html",
+      "archive_url": "https://web.archive.org/web/20170324164227id_/https://bufsimrishamn.wordpress.com/2016/08/23/atta-larare-nominerade-till-prestigefyllt-lararstipendium/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/09/05/barngruppen-blavinge-for-barn-som-har-det-svart-hemma-2/",
+      "kind": "post_like",
+      "path": "2016/09/05/barngruppen-blavinge-for-barn-som-har-det-svart-hemma-2/index.html",
+      "archive_url": "https://web.archive.org/web/20170226115611id_/https://bufsimrishamn.wordpress.com/2016/09/05/barngruppen-blavinge-for-barn-som-har-det-svart-hemma-2/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/09/21/ungdomar-coachas-till-att-fullfolja-studier-och-gora-yrkesval/amp/",
+      "kind": "other",
+      "path": "2016/09/21/ungdomar-coachas-till-att-fullfolja-studier-och-gora-yrkesval/amp/index.html",
+      "archive_url": "https://web.archive.org/web/20170226051319id_/https://bufsimrishamn.wordpress.com/2016/09/21/ungdomar-coachas-till-att-fullfolja-studier-och-gora-yrkesval/amp/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/09/",
+      "kind": "other",
+      "path": "2016/09/index.html",
+      "archive_url": "https://web.archive.org/web/20191212135956id_/https://bufsimrishamn.wordpress.com/2016/09/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/11/",
+      "kind": "other",
+      "path": "2016/11/index.html",
+      "archive_url": "https://web.archive.org/web/20191212134207id_/https://bufsimrishamn.wordpress.com/2016/11/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/09/21/ungdomar-coachas-till-att-fullfolja-studier-och-gora-yrkesval/feed/",
+      "kind": "feed",
+      "path": "2016/09/21/ungdomar-coachas-till-att-fullfolja-studier-och-gora-yrkesval/feed.xml",
+      "archive_url": "https://web.archive.org/web/20170226115809id_/https://bufsimrishamn.wordpress.com/2016/09/21/ungdomar-coachas-till-att-fullfolja-studier-och-gora-yrkesval/feed/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/09/21/ungdomar-coachas-till-att-fullfolja-studier-och-gora-yrkesval/",
+      "kind": "post_like",
+      "path": "2016/09/21/ungdomar-coachas-till-att-fullfolja-studier-och-gora-yrkesval/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045825id_/https://bufsimrishamn.wordpress.com/2016/09/21/ungdomar-coachas-till-att-fullfolja-studier-och-gora-yrkesval/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/11/10/simrishamns-kommun-far-topplacering-i-basta-skolkommun-2016/",
+      "kind": "post_like",
+      "path": "2016/11/10/simrishamns-kommun-far-topplacering-i-basta-skolkommun-2016/index.html",
+      "archive_url": "https://web.archive.org/web/20190825140407id_/https://bufsimrishamn.wordpress.com/2016/11/10/simrishamns-kommun-far-topplacering-i-basta-skolkommun-2016/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/12/",
+      "kind": "other",
+      "path": "2016/12/index.html",
+      "archive_url": "https://web.archive.org/web/20191212132841id_/https://bufsimrishamn.wordpress.com/2016/12/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/12/06/aktivt-ledarskap-i-skolan/",
+      "kind": "post_like",
+      "path": "2016/12/06/aktivt-ledarskap-i-skolan/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043620id_/https://bufsimrishamn.wordpress.com/2016/12/06/aktivt-ledarskap-i-skolan/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/01/",
+      "kind": "other",
+      "path": "2017/01/index.html",
+      "archive_url": "https://web.archive.org/web/20191212142233id_/https://bufsimrishamn.wordpress.com/2017/01/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/02/02/utbildningar-med-barn-i-fokus/",
+      "kind": "post_like",
+      "path": "2017/02/02/utbildningar-med-barn-i-fokus/index.html",
+      "archive_url": "https://web.archive.org/web/20190822044806id_/https://bufsimrishamn.wordpress.com/2017/02/02/utbildningar-med-barn-i-fokus/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/03/",
+      "kind": "other",
+      "path": "2017/03/index.html",
+      "archive_url": "https://web.archive.org/web/20191212135533id_/https://bufsimrishamn.wordpress.com/2017/03/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/03/25/kommunens-alla-tvaor-spelar-klappar-och-sjunger-i-kulturskolans-musikverkstader/",
+      "kind": "post_like",
+      "path": "2017/03/25/kommunens-alla-tvaor-spelar-klappar-och-sjunger-i-kulturskolans-musikverkstader/index.html",
+      "archive_url": "https://web.archive.org/web/20191116213336id_/https://bufsimrishamn.wordpress.com/2017/03/25/kommunens-alla-tvaor-spelar-klappar-och-sjunger-i-kulturskolans-musikverkstader/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/07/06/stor-nationell-satsning-pa-yrkesutbildningar/",
+      "kind": "post_like",
+      "path": "2016/07/06/stor-nationell-satsning-pa-yrkesutbildningar/index.html",
+      "archive_url": "https://web.archive.org/web/20170325033728id_/https://bufsimrishamn.wordpress.com/2016/07/06/stor-nationell-satsning-pa-yrkesutbildningar/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/03/25/kommunens-alla-tvaor-spelar-klappar-och-sjunger-i-kulturskolans-musikverkstader/kulturskolan-prova-pa-instrument-mars-2017-159/",
+      "kind": "other",
+      "path": "2017/03/25/kommunens-alla-tvaor-spelar-klappar-och-sjunger-i-kulturskolans-musikverkstader/kulturskolan-prova-pa-instrument-mars-2017-159/index.html",
+      "archive_url": "https://web.archive.org/web/20191116214147id_/https://bufsimrishamn.wordpress.com/2017/03/25/kommunens-alla-tvaor-spelar-klappar-och-sjunger-i-kulturskolans-musikverkstader/kulturskolan-prova-pa-instrument-mars-2017-159/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/03/25/kommunens-alla-tvaor-spelar-klappar-och-sjunger-i-kulturskolans-musikverkstader/kulturskolan-prova-pa-instrument-mars-2017-67/",
+      "kind": "other",
+      "path": "2017/03/25/kommunens-alla-tvaor-spelar-klappar-och-sjunger-i-kulturskolans-musikverkstader/kulturskolan-prova-pa-instrument-mars-2017-67/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043525id_/https://bufsimrishamn.wordpress.com/2017/03/25/kommunens-alla-tvaor-spelar-klappar-och-sjunger-i-kulturskolans-musikverkstader/kulturskolan-prova-pa-instrument-mars-2017-67/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/12/06/aktivt-ledarskap-i-skolan/alis-om-oppenhet-forsvar/",
+      "kind": "other",
+      "path": "2016/12/06/aktivt-ledarskap-i-skolan/alis-om-oppenhet-forsvar/index.html",
+      "archive_url": "https://web.archive.org/web/20190825131716id_/https://bufsimrishamn.wordpress.com/2016/12/06/aktivt-ledarskap-i-skolan/alis-om-oppenhet-forsvar/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/02/",
+      "kind": "other",
+      "path": "2017/02/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065415id_/https://bufsimrishamn.wordpress.com/2017/02/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/03/25/kommunens-alla-tvaor-spelar-klappar-och-sjunger-i-kulturskolans-musikverkstader/kulturskolan-prova-pa-instrument-mars-2017-63/",
+      "kind": "other",
+      "path": "2017/03/25/kommunens-alla-tvaor-spelar-klappar-och-sjunger-i-kulturskolans-musikverkstader/kulturskolan-prova-pa-instrument-mars-2017-63/index.html",
+      "archive_url": "https://web.archive.org/web/20190822052941id_/https://bufsimrishamn.wordpress.com/2017/03/25/kommunens-alla-tvaor-spelar-klappar-och-sjunger-i-kulturskolans-musikverkstader/kulturskolan-prova-pa-instrument-mars-2017-63/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/06/",
+      "kind": "other",
+      "path": "2017/06/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060709id_/https://bufsimrishamn.wordpress.com/2017/06/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/06/17/student-2017/",
+      "kind": "post_like",
+      "path": "2017/06/17/student-2017/index.html",
+      "archive_url": "https://web.archive.org/web/20191212142424id_/https://bufsimrishamn.wordpress.com/2017/06/17/student-2017/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/04/",
+      "kind": "other",
+      "path": "2017/04/index.html",
+      "archive_url": "https://web.archive.org/web/20191212134152id_/https://bufsimrishamn.wordpress.com/2017/04/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/",
+      "kind": "other",
+      "path": "2017/08/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130240id_/https://bufsimrishamn.wordpress.com/2017/08/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/?shared=email&msg=fail",
+      "kind": "post_like",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/index--5008d03ae2.html",
+      "archive_url": "https://web.archive.org/web/20190822055502id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/?shared=email&msg=fail"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-14/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-14/index.html",
+      "archive_url": "https://web.archive.org/web/20190919184932id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-14/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/",
+      "kind": "post_like",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130153id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-17/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-17/index.html",
+      "archive_url": "https://web.archive.org/web/20190919190150id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-17/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-19/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-19/index.html",
+      "archive_url": "https://web.archive.org/web/20191212143650id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-19/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-24/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-24/index.html",
+      "archive_url": "https://web.archive.org/web/20190919184836id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-24/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-31/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-31/index.html",
+      "archive_url": "https://web.archive.org/web/20191212135341id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-31/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-25/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-25/index.html",
+      "archive_url": "https://web.archive.org/web/20191212141506id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-25/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-34/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-34/index.html",
+      "archive_url": "https://web.archive.org/web/20190919192742id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-34/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-33/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-33/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130224id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-33/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-40/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-40/index.html",
+      "archive_url": "https://web.archive.org/web/20190919191302id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-40/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-36/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-36/index.html",
+      "archive_url": "https://web.archive.org/web/20201201014732id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-36/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/05/",
+      "kind": "other",
+      "path": "2017/05/index.html",
+      "archive_url": "https://web.archive.org/web/20191212132827id_/https://bufsimrishamn.wordpress.com/2017/05/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-58/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-58/index.html",
+      "archive_url": "https://web.archive.org/web/20190919184900id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-58/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-32/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-32/index.html",
+      "archive_url": "https://web.archive.org/web/20201201020219id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-32/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-67/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-67/index.html",
+      "archive_url": "https://web.archive.org/web/20191116205301id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-67/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-69/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-69/index.html",
+      "archive_url": "https://web.archive.org/web/20200812211318id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-69/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-78/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-78/index.html",
+      "archive_url": "https://web.archive.org/web/20201201023606id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-78/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-72/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-72/index.html",
+      "archive_url": "https://web.archive.org/web/20200812202810id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-72/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-66/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-66/index.html",
+      "archive_url": "https://web.archive.org/web/20190919185703id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-66/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/10img_7923/",
+      "kind": "other",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/10img_7923/index.html",
+      "archive_url": "https://web.archive.org/web/20191212140609id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/10img_7923/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/",
+      "kind": "post_like",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/index.html",
+      "archive_url": "https://web.archive.org/web/20191212132118id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-59/",
+      "kind": "other",
+      "path": "2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-59/index.html",
+      "archive_url": "https://web.archive.org/web/20191212142748id_/https://bufsimrishamn.wordpress.com/2017/08/26/invigning-pa-simrislundsskolan/nya-lokaler-simrislundsskolan-2017-59/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/11img_7925/",
+      "kind": "other",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/11img_7925/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060052id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/11img_7925/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/13img_7932/",
+      "kind": "other",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/13img_7932/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065157id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/13img_7932/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/1img_7901/",
+      "kind": "other",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/1img_7901/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130347id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/1img_7901/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/29img_7998/",
+      "kind": "other",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/29img_7998/index.html",
+      "archive_url": "https://web.archive.org/web/20191212133413id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/29img_7998/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/27img_7986/",
+      "kind": "other",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/27img_7986/index.html",
+      "archive_url": "https://web.archive.org/web/20191018055943id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/27img_7986/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/35img_8019/",
+      "kind": "other",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/35img_8019/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060108id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/35img_8019/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/4img_7903/",
+      "kind": "other",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/4img_7903/index.html",
+      "archive_url": "https://web.archive.org/web/20191212131237id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/4img_7903/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/54img_8080/",
+      "kind": "other",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/54img_8080/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130255id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/54img_8080/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/43img_8044/",
+      "kind": "other",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/43img_8044/index.html",
+      "archive_url": "https://web.archive.org/web/20191212134012id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/43img_8044/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/57img_8092/",
+      "kind": "other",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/57img_8092/index.html",
+      "archive_url": "https://web.archive.org/web/20191212140754id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/57img_8092/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/26/aktivt-foraldraskap-firade-20-ar/",
+      "kind": "post_like",
+      "path": "2017/09/26/aktivt-foraldraskap-firade-20-ar/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130245id_/https://bufsimrishamn.wordpress.com/2017/09/26/aktivt-foraldraskap-firade-20-ar/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/26/aktivt-foraldraskap-firade-20-ar/img_7042/",
+      "kind": "other",
+      "path": "2017/09/26/aktivt-foraldraskap-firade-20-ar/img_7042/index.html",
+      "archive_url": "https://web.archive.org/web/20191212134248id_/https://bufsimrishamn.wordpress.com/2017/09/26/aktivt-foraldraskap-firade-20-ar/img_7042/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/42img_8043/",
+      "kind": "other",
+      "path": "2017/09/25/appelmarknad-pa-osterlen/42img_8043/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130705id_/https://bufsimrishamn.wordpress.com/2017/09/25/appelmarknad-pa-osterlen/42img_8043/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/26/aktivt-foraldraskap-firade-20-ar/img_7040/",
+      "kind": "other",
+      "path": "2017/09/26/aktivt-foraldraskap-firade-20-ar/img_7040/index.html",
+      "archive_url": "https://web.archive.org/web/20191212141259id_/https://bufsimrishamn.wordpress.com/2017/09/26/aktivt-foraldraskap-firade-20-ar/img_7040/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/26/aktivt-foraldraskap-firade-20-ar/img_7076/",
+      "kind": "other",
+      "path": "2017/09/26/aktivt-foraldraskap-firade-20-ar/img_7076/index.html",
+      "archive_url": "https://web.archive.org/web/20191212132157id_/https://bufsimrishamn.wordpress.com/2017/09/26/aktivt-foraldraskap-firade-20-ar/img_7076/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/26/aktivt-foraldraskap-firade-20-ar/img_7043/",
+      "kind": "other",
+      "path": "2017/09/26/aktivt-foraldraskap-firade-20-ar/img_7043/index.html",
+      "archive_url": "https://web.archive.org/web/20191212143305id_/https://bufsimrishamn.wordpress.com/2017/09/26/aktivt-foraldraskap-firade-20-ar/img_7043/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp1/",
+      "kind": "other",
+      "path": "2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp1/index.html",
+      "archive_url": "https://web.archive.org/web/20191212133834id_/https://bufsimrishamn.wordpress.com/2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp1/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp2/",
+      "kind": "other",
+      "path": "2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp2/index.html",
+      "archive_url": "https://web.archive.org/web/20191212143855id_/https://bufsimrishamn.wordpress.com/2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp2/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/10/",
+      "kind": "other",
+      "path": "2017/10/index.html",
+      "archive_url": "https://web.archive.org/web/20191212144012id_/https://bufsimrishamn.wordpress.com/2017/10/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/",
+      "kind": "post_like",
+      "path": "2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/index.html",
+      "archive_url": "https://web.archive.org/web/20191018063431id_/https://bufsimrishamn.wordpress.com/2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp3/",
+      "kind": "other",
+      "path": "2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp3/index.html",
+      "archive_url": "https://web.archive.org/web/20191212132847id_/https://bufsimrishamn.wordpress.com/2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp3/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp6/",
+      "kind": "other",
+      "path": "2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp6/index.html",
+      "archive_url": "https://web.archive.org/web/20191212141825id_/https://bufsimrishamn.wordpress.com/2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp6/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp4/",
+      "kind": "other",
+      "path": "2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp4/index.html",
+      "archive_url": "https://web.archive.org/web/20191212142846id_/https://bufsimrishamn.wordpress.com/2017/10/03/simrishamn-satsar-pa-skolbibliotek-och-barns-och-ungas-lasning/grupp4/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/11/07/pa-piratenskolan-fn-dagen-och-folkskolan-175-ar/",
+      "kind": "post_like",
+      "path": "2017/11/07/pa-piratenskolan-fn-dagen-och-folkskolan-175-ar/index.html",
+      "archive_url": "https://web.archive.org/web/20191018070633id_/https://bufsimrishamn.wordpress.com/2017/11/07/pa-piratenskolan-fn-dagen-och-folkskolan-175-ar/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/10/26/sett-syd-motesplatsen-inom-det-moderna-och-innovativa-larandet/",
+      "kind": "post_like",
+      "path": "2017/10/26/sett-syd-motesplatsen-inom-det-moderna-och-innovativa-larandet/index.html",
+      "archive_url": "https://web.archive.org/web/20190919192812id_/https://bufsimrishamn.wordpress.com/2017/10/26/sett-syd-motesplatsen-inom-det-moderna-och-innovativa-larandet/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/12/",
+      "kind": "other",
+      "path": "2017/12/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065729id_/https://bufsimrishamn.wordpress.com/2017/12/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/11/17/20-november-webbsant-seminarium-barnratt-i-praktiken/",
+      "kind": "post_like",
+      "path": "2017/11/17/20-november-webbsant-seminarium-barnratt-i-praktiken/index.html",
+      "archive_url": "https://web.archive.org/web/20191018061602id_/https://bufsimrishamn.wordpress.com/2017/11/17/20-november-webbsant-seminarium-barnratt-i-praktiken/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/12/05/kulturpedagogiska-enheten/",
+      "kind": "post_like",
+      "path": "2017/12/05/kulturpedagogiska-enheten/index.html",
+      "archive_url": "https://web.archive.org/web/20191212141726id_/https://bufsimrishamn.wordpress.com/2017/12/05/kulturpedagogiska-enheten/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/11/",
+      "kind": "other",
+      "path": "2017/11/index.html",
+      "archive_url": "https://web.archive.org/web/20191212142623id_/https://bufsimrishamn.wordpress.com/2017/11/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2018/03/22/kickoff-for-ny-forskoleorganisation/",
+      "kind": "post_like",
+      "path": "2018/03/22/kickoff-for-ny-forskoleorganisation/index.html",
+      "archive_url": "https://web.archive.org/web/20190919191415id_/https://bufsimrishamn.wordpress.com/2018/03/22/kickoff-for-ny-forskoleorganisation/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2018/03/",
+      "kind": "other",
+      "path": "2018/03/index.html",
+      "archive_url": "https://web.archive.org/web/20191018072327id_/https://bufsimrishamn.wordpress.com/2018/03/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/arbetsmarknadskunskap/",
+      "kind": "category",
+      "path": "category/arbetsmarknadskunskap/index.html",
+      "archive_url": "https://web.archive.org/web/20191212134753id_/https://bufsimrishamn.wordpress.com/category/arbetsmarknadskunskap/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/arbeta-i-simrishamns-kommun/",
+      "kind": "category",
+      "path": "category/arbeta-i-simrishamns-kommun/index.html",
+      "archive_url": "https://web.archive.org/web/20191212135204id_/https://bufsimrishamn.wordpress.com/category/arbeta-i-simrishamns-kommun/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/barns-och-ungas-rattigheter/page/2/",
+      "kind": "category",
+      "path": "category/barns-och-ungas-rattigheter/page/2/index.html",
+      "archive_url": "https://web.archive.org/web/20190822052016id_/https://bufsimrishamn.wordpress.com/category/barns-och-ungas-rattigheter/page/2/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/barns-och-ungas-rattigheter/",
+      "kind": "category",
+      "path": "category/barns-och-ungas-rattigheter/index.html",
+      "archive_url": "https://web.archive.org/web/20201201013531id_/https://bufsimrishamn.wordpress.com/category/barns-och-ungas-rattigheter/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/12/01/oppet-hus-pa-osterlengymnasiet/",
+      "kind": "post_like",
+      "path": "2017/12/01/oppet-hus-pa-osterlengymnasiet/index.html",
+      "archive_url": "https://web.archive.org/web/20190919194550id_/https://bufsimrishamn.wordpress.com/2017/12/01/oppet-hus-pa-osterlengymnasiet/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/11/28/biblioteksinvigning/",
+      "kind": "post_like",
+      "path": "2017/11/28/biblioteksinvigning/index.html",
+      "archive_url": "https://web.archive.org/web/20190919190723id_/https://bufsimrishamn.wordpress.com/2017/11/28/biblioteksinvigning/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/fritidshem/",
+      "kind": "category",
+      "path": "category/fritidshem/index.html",
+      "archive_url": "https://web.archive.org/web/20191018070833id_/https://bufsimrishamn.wordpress.com/category/fritidshem/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/elevhalsa/",
+      "kind": "category",
+      "path": "category/elevhalsa/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065805id_/https://bufsimrishamn.wordpress.com/category/elevhalsa/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/grundskola/",
+      "kind": "category",
+      "path": "category/grundskola/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065515id_/https://bufsimrishamn.wordpress.com/category/grundskola/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/gymnasium/",
+      "kind": "category",
+      "path": "category/gymnasium/index.html",
+      "archive_url": "https://web.archive.org/web/20191018071849id_/https://bufsimrishamn.wordpress.com/category/gymnasium/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/gymnasieval/",
+      "kind": "category",
+      "path": "category/gymnasieval/index.html",
+      "archive_url": "https://web.archive.org/web/20191018055956id_/https://bufsimrishamn.wordpress.com/category/gymnasieval/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/informations-och-kommunikationsteknik/",
+      "kind": "category",
+      "path": "category/informations-och-kommunikationsteknik/index.html",
+      "archive_url": "https://web.archive.org/web/20191212131952id_/https://bufsimrishamn.wordpress.com/category/informations-och-kommunikationsteknik/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/kulturskola-kulturgaranti/",
+      "kind": "category",
+      "path": "category/kulturskola-kulturgaranti/index.html",
+      "archive_url": "https://web.archive.org/web/20191018062811id_/https://bufsimrishamn.wordpress.com/category/kulturskola-kulturgaranti/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/forskola-och-pedagogisk-omsorg/",
+      "kind": "category",
+      "path": "category/forskola-och-pedagogisk-omsorg/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065011id_/https://bufsimrishamn.wordpress.com/category/forskola-och-pedagogisk-omsorg/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/bibliotek/",
+      "kind": "category",
+      "path": "category/bibliotek/index.html",
+      "archive_url": "https://web.archive.org/web/20191018071743id_/https://bufsimrishamn.wordpress.com/category/bibliotek/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/naturskola-naturgaranti/",
+      "kind": "category",
+      "path": "category/naturskola-naturgaranti/index.html",
+      "archive_url": "https://web.archive.org/web/20190919184928id_/https://bufsimrishamn.wordpress.com/category/naturskola-naturgaranti/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/osterlengymnasiet/",
+      "kind": "category",
+      "path": "category/osterlengymnasiet/index.html",
+      "archive_url": "https://web.archive.org/web/20191212133925id_/https://bufsimrishamn.wordpress.com/category/osterlengymnasiet/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/personal/",
+      "kind": "category",
+      "path": "category/personal/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130250id_/https://bufsimrishamn.wordpress.com/category/personal/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/pristagare/",
+      "kind": "category",
+      "path": "category/pristagare/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065220id_/https://bufsimrishamn.wordpress.com/category/pristagare/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/uncategorized/",
+      "kind": "category",
+      "path": "category/uncategorized/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065943id_/https://bufsimrishamn.wordpress.com/category/uncategorized/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/page/2/",
+      "kind": "pagination",
+      "path": "page/2/index.html",
+      "archive_url": "https://web.archive.org/web/20191212143316id_/https://bufsimrishamn.wordpress.com/page/2/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/sarskola/",
+      "kind": "category",
+      "path": "category/sarskola/index.html",
+      "archive_url": "https://web.archive.org/web/20191018071015id_/https://bufsimrishamn.wordpress.com/category/sarskola/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/category/nyanlanda/",
+      "kind": "category",
+      "path": "category/nyanlanda/index.html",
+      "archive_url": "https://web.archive.org/web/20190919184915id_/https://bufsimrishamn.wordpress.com/category/nyanlanda/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/aktivt-ledarskap-i-skolan/",
+      "kind": "tag",
+      "path": "tag/aktivt-ledarskap-i-skolan/index.html",
+      "archive_url": "https://web.archive.org/web/20190822053037id_/https://bufsimrishamn.wordpress.com/tag/aktivt-ledarskap-i-skolan/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/active-parenting/",
+      "kind": "tag",
+      "path": "tag/active-parenting/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043904id_/https://bufsimrishamn.wordpress.com/tag/active-parenting/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/aktivt-foraldraskap/",
+      "kind": "tag",
+      "path": "tag/aktivt-foraldraskap/index.html",
+      "archive_url": "https://web.archive.org/web/20190822050747id_/https://bufsimrishamn.wordpress.com/tag/aktivt-foraldraskap/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/anders-lind/",
+      "kind": "tag",
+      "path": "tag/anders-lind/index.html",
+      "archive_url": "https://web.archive.org/web/20191018070907id_/https://bufsimrishamn.wordpress.com/tag/anders-lind/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/amnesovergripande/",
+      "kind": "tag",
+      "path": "tag/amnesovergripande/index.html",
+      "archive_url": "https://web.archive.org/web/20190822060429id_/https://bufsimrishamn.wordpress.com/tag/amnesovergripande/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/anna-leithe/",
+      "kind": "tag",
+      "path": "tag/anna-leithe/index.html",
+      "archive_url": "https://web.archive.org/web/20190822051927id_/https://bufsimrishamn.wordpress.com/tag/anna-leithe/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/anne-brage/",
+      "kind": "tag",
+      "path": "tag/anne-brage/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065431id_/https://bufsimrishamn.wordpress.com/tag/anne-brage/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/apl/",
+      "kind": "tag",
+      "path": "tag/apl/index.html",
+      "archive_url": "https://web.archive.org/web/20170324214544id_/https://bufsimrishamn.wordpress.com/tag/apl/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/barnbocker/",
+      "kind": "tag",
+      "path": "tag/barnbocker/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045546id_/https://bufsimrishamn.wordpress.com/tag/barnbocker/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/alis/",
+      "kind": "tag",
+      "path": "tag/alis/index.html",
+      "archive_url": "https://web.archive.org/web/20190822054654id_/https://bufsimrishamn.wordpress.com/tag/alis/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/anders-johnsson/",
+      "kind": "tag",
+      "path": "tag/anders-johnsson/index.html",
+      "archive_url": "https://web.archive.org/web/20191018071255id_/https://bufsimrishamn.wordpress.com/tag/anders-johnsson/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/barngruppen-blavinge/",
+      "kind": "tag",
+      "path": "tag/barngruppen-blavinge/index.html",
+      "archive_url": "https://web.archive.org/web/20191018061504id_/https://bufsimrishamn.wordpress.com/tag/barngruppen-blavinge/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/benka-di/",
+      "kind": "tag",
+      "path": "tag/benka-di/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043605id_/https://bufsimrishamn.wordpress.com/tag/benka-di/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/biff/",
+      "kind": "tag",
+      "path": "tag/biff/index.html",
+      "archive_url": "https://web.archive.org/web/20191116214649id_/https://bufsimrishamn.wordpress.com/tag/biff/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/barns-ratt/",
+      "kind": "tag",
+      "path": "tag/barns-ratt/index.html",
+      "archive_url": "https://web.archive.org/web/20190822044848id_/https://bufsimrishamn.wordpress.com/tag/barns-ratt/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/bo-kristoffersson/",
+      "kind": "tag",
+      "path": "tag/bo-kristoffersson/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060704id_/https://bufsimrishamn.wordpress.com/tag/bo-kristoffersson/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/carina-gimmerstedt/",
+      "kind": "tag",
+      "path": "tag/carina-gimmerstedt/index.html",
+      "archive_url": "https://web.archive.org/web/20190822051440id_/https://bufsimrishamn.wordpress.com/tag/carina-gimmerstedt/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/barnkonsekvensanalys/",
+      "kind": "tag",
+      "path": "tag/barnkonsekvensanalys/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045811id_/https://bufsimrishamn.wordpress.com/tag/barnkonsekvensanalys/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/barnkonventionen/",
+      "kind": "tag",
+      "path": "tag/barnkonventionen/index.html",
+      "archive_url": "https://web.archive.org/web/20190720132951id_/https://bufsimrishamn.wordpress.com/tag/barnkonventionen/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/daniel-barker/",
+      "kind": "tag",
+      "path": "tag/daniel-barker/index.html",
+      "archive_url": "https://web.archive.org/web/20191018063315id_/https://bufsimrishamn.wordpress.com/tag/daniel-barker/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/dans/",
+      "kind": "tag",
+      "path": "tag/dans/index.html",
+      "archive_url": "https://web.archive.org/web/20190822052320id_/https://bufsimrishamn.wordpress.com/tag/dans/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/charlotta-wasteson/",
+      "kind": "tag",
+      "path": "tag/charlotta-wasteson/index.html",
+      "archive_url": "https://web.archive.org/web/20190822060447id_/https://bufsimrishamn.wordpress.com/tag/charlotta-wasteson/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/digitala-verktyg/",
+      "kind": "tag",
+      "path": "tag/digitala-verktyg/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045152id_/https://bufsimrishamn.wordpress.com/tag/digitala-verktyg/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/elevhalsa-2/",
+      "kind": "tag",
+      "path": "tag/elevhalsa-2/index.html",
+      "archive_url": "https://web.archive.org/web/20190825140429id_/https://bufsimrishamn.wordpress.com/tag/elevhalsa-2/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/elevhalsopedagog/",
+      "kind": "tag",
+      "path": "tag/elevhalsopedagog/index.html",
+      "archive_url": "https://web.archive.org/web/20191116205327id_/https://bufsimrishamn.wordpress.com/tag/elevhalsopedagog/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/ett-aktivt-foraldraskap/",
+      "kind": "tag",
+      "path": "tag/ett-aktivt-foraldraskap/index.html",
+      "archive_url": "https://web.archive.org/web/20191116220112id_/https://bufsimrishamn.wordpress.com/tag/ett-aktivt-foraldraskap/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/estetiska-programmet/",
+      "kind": "tag",
+      "path": "tag/estetiska-programmet/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045215id_/https://bufsimrishamn.wordpress.com/tag/estetiska-programmet/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/eva-klarberg/",
+      "kind": "tag",
+      "path": "tag/eva-klarberg/index.html",
+      "archive_url": "https://web.archive.org/web/20190822051640id_/https://bufsimrishamn.wordpress.com/tag/eva-klarberg/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/film/",
+      "kind": "tag",
+      "path": "tag/film/index.html",
+      "archive_url": "https://web.archive.org/web/20191018064134id_/https://bufsimrishamn.wordpress.com/tag/film/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/flipped-classroom/",
+      "kind": "tag",
+      "path": "tag/flipped-classroom/index.html",
+      "archive_url": "https://web.archive.org/web/20191018062451id_/https://bufsimrishamn.wordpress.com/tag/flipped-classroom/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/elevvard/",
+      "kind": "tag",
+      "path": "tag/elevvard/index.html",
+      "archive_url": "https://web.archive.org/web/20190822055649id_/https://bufsimrishamn.wordpress.com/tag/elevvard/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/engelska/",
+      "kind": "tag",
+      "path": "tag/engelska/index.html",
+      "archive_url": "https://web.archive.org/web/20190822055841id_/https://bufsimrishamn.wordpress.com/tag/engelska/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/fns-barnkonvention/",
+      "kind": "tag",
+      "path": "tag/fns-barnkonvention/index.html",
+      "archive_url": "https://web.archive.org/web/20191018064457id_/https://bufsimrishamn.wordpress.com/tag/fns-barnkonvention/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/foraldragrupper/",
+      "kind": "tag",
+      "path": "tag/foraldragrupper/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043450id_/https://bufsimrishamn.wordpress.com/tag/foraldragrupper/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/grodan-priset/",
+      "kind": "tag",
+      "path": "tag/grodan-priset/index.html",
+      "archive_url": "https://web.archive.org/web/20190822052421id_/https://bufsimrishamn.wordpress.com/tag/grodan-priset/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/garsnas-skola/",
+      "kind": "tag",
+      "path": "tag/garsnas-skola/index.html",
+      "archive_url": "https://web.archive.org/web/20190822044258id_/https://bufsimrishamn.wordpress.com/tag/garsnas-skola/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/grundsarskola/",
+      "kind": "tag",
+      "path": "tag/grundsarskola/index.html",
+      "archive_url": "https://web.archive.org/web/20190822060525id_/https://bufsimrishamn.wordpress.com/tag/grundsarskola/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/fn/",
+      "kind": "tag",
+      "path": "tag/fn/index.html",
+      "archive_url": "https://web.archive.org/web/20190822054055id_/https://bufsimrishamn.wordpress.com/tag/fn/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/gymnasiesarskola/",
+      "kind": "tag",
+      "path": "tag/gymnasiesarskola/index.html",
+      "archive_url": "https://web.archive.org/web/20190822054100id_/https://bufsimrishamn.wordpress.com/tag/gymnasiesarskola/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/gunilla-sjoholm/",
+      "kind": "tag",
+      "path": "tag/gunilla-sjoholm/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060344id_/https://bufsimrishamn.wordpress.com/tag/gunilla-sjoholm/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/gymnasium-2/",
+      "kind": "tag",
+      "path": "tag/gymnasium-2/index.html",
+      "archive_url": "https://web.archive.org/web/20170325021718id_/https://bufsimrishamn.wordpress.com/tag/gymnasium-2/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/foraldrautbildning/",
+      "kind": "tag",
+      "path": "tag/foraldrautbildning/index.html",
+      "archive_url": "https://web.archive.org/web/20191116214829id_/https://bufsimrishamn.wordpress.com/tag/foraldrautbildning/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/jorgen-hellgren/",
+      "kind": "tag",
+      "path": "tag/jorgen-hellgren/index.html",
+      "archive_url": "https://web.archive.org/web/20190822050941id_/https://bufsimrishamn.wordpress.com/tag/jorgen-hellgren/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/joel-brage/",
+      "kind": "tag",
+      "path": "tag/joel-brage/index.html",
+      "archive_url": "https://web.archive.org/web/20191018072438id_/https://bufsimrishamn.wordpress.com/tag/joel-brage/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/ingela-ekdahl-johansson/",
+      "kind": "tag",
+      "path": "tag/ingela-ekdahl-johansson/index.html",
+      "archive_url": "https://web.archive.org/web/20191018064702id_/https://bufsimrishamn.wordpress.com/tag/ingela-ekdahl-johansson/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/grundskola/",
+      "kind": "tag",
+      "path": "tag/grundskola/index.html",
+      "archive_url": "https://web.archive.org/web/20170325032901id_/https://bufsimrishamn.wordpress.com/tag/grundskola/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/katrin-osterberg/",
+      "kind": "tag",
+      "path": "tag/katrin-osterberg/index.html",
+      "archive_url": "https://web.archive.org/web/20191018071233id_/https://bufsimrishamn.wordpress.com/tag/katrin-osterberg/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/kanslor/",
+      "kind": "tag",
+      "path": "tag/kanslor/index.html",
+      "archive_url": "https://web.archive.org/web/20191018072204id_/https://bufsimrishamn.wordpress.com/tag/kanslor/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/koordinator/",
+      "kind": "tag",
+      "path": "tag/koordinator/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045154id_/https://bufsimrishamn.wordpress.com/tag/koordinator/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/kerstin-sjolin/",
+      "kind": "tag",
+      "path": "tag/kerstin-sjolin/index.html",
+      "archive_url": "https://web.archive.org/web/20190825131704id_/https://bufsimrishamn.wordpress.com/tag/kerstin-sjolin/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/karna-nystrom/",
+      "kind": "tag",
+      "path": "tag/karna-nystrom/index.html",
+      "archive_url": "https://web.archive.org/web/20190822050301id_/https://bufsimrishamn.wordpress.com/tag/karna-nystrom/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/kristina-martensson/",
+      "kind": "tag",
+      "path": "tag/kristina-martensson/index.html",
+      "archive_url": "https://web.archive.org/web/20191018060837id_/https://bufsimrishamn.wordpress.com/tag/kristina-martensson/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/kulturgaranti/",
+      "kind": "tag",
+      "path": "tag/kulturgaranti/index.html",
+      "archive_url": "https://web.archive.org/web/20191018061538id_/https://bufsimrishamn.wordpress.com/tag/kulturgaranti/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/laslust/",
+      "kind": "tag",
+      "path": "tag/laslust/index.html",
+      "archive_url": "https://web.archive.org/web/20191018071524id_/https://bufsimrishamn.wordpress.com/tag/laslust/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/lin-education/",
+      "kind": "tag",
+      "path": "tag/lin-education/index.html",
+      "archive_url": "https://web.archive.org/web/20190822055432id_/https://bufsimrishamn.wordpress.com/tag/lin-education/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/lena-maria-fistarol/",
+      "kind": "tag",
+      "path": "tag/lena-maria-fistarol/index.html",
+      "archive_url": "https://web.archive.org/web/20191018070425id_/https://bufsimrishamn.wordpress.com/tag/lena-maria-fistarol/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/litteratur/",
+      "kind": "tag",
+      "path": "tag/litteratur/index.html",
+      "archive_url": "https://web.archive.org/web/20191018063628id_/https://bufsimrishamn.wordpress.com/tag/litteratur/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/madeleine-liwell-jeppsson/",
+      "kind": "tag",
+      "path": "tag/madeleine-liwell-jeppsson/index.html",
+      "archive_url": "https://web.archive.org/web/20190919184850id_/https://bufsimrishamn.wordpress.com/tag/madeleine-liwell-jeppsson/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/love-hellgren/",
+      "kind": "tag",
+      "path": "tag/love-hellgren/index.html",
+      "archive_url": "https://web.archive.org/web/20191018071940id_/https://bufsimrishamn.wordpress.com/tag/love-hellgren/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/marching-for-love/",
+      "kind": "tag",
+      "path": "tag/marching-for-love/index.html",
+      "archive_url": "https://web.archive.org/web/20190822050403id_/https://bufsimrishamn.wordpress.com/tag/marching-for-love/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/marianne-andersson/",
+      "kind": "tag",
+      "path": "tag/marianne-andersson/index.html",
+      "archive_url": "https://web.archive.org/web/20191116215746id_/https://bufsimrishamn.wordpress.com/tag/marianne-andersson/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/magdalena-jakobsson/",
+      "kind": "tag",
+      "path": "tag/magdalena-jakobsson/index.html",
+      "archive_url": "https://web.archive.org/web/20191116205306id_/https://bufsimrishamn.wordpress.com/tag/magdalena-jakobsson/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/marie-rosendahl/",
+      "kind": "tag",
+      "path": "tag/marie-rosendahl/index.html",
+      "archive_url": "https://web.archive.org/web/20190825133430id_/https://bufsimrishamn.wordpress.com/tag/marie-rosendahl/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/marten-hard/",
+      "kind": "tag",
+      "path": "tag/marten-hard/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045817id_/https://bufsimrishamn.wordpress.com/tag/marten-hard/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/maria-tegner/",
+      "kind": "tag",
+      "path": "tag/maria-tegner/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045533id_/https://bufsimrishamn.wordpress.com/tag/maria-tegner/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/naturskolan-osterlen/",
+      "kind": "tag",
+      "path": "tag/naturskolan-osterlen/index.html",
+      "archive_url": "https://web.archive.org/web/20201021010559id_/https://bufsimrishamn.wordpress.com/tag/naturskolan-osterlen/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/martin-laps/",
+      "kind": "tag",
+      "path": "tag/martin-laps/index.html",
+      "archive_url": "https://web.archive.org/web/20190822054551id_/https://bufsimrishamn.wordpress.com/tag/martin-laps/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/nova-academy/",
+      "kind": "tag",
+      "path": "tag/nova-academy/index.html",
+      "archive_url": "https://web.archive.org/web/20190822044144id_/https://bufsimrishamn.wordpress.com/tag/nova-academy/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/marie-lundin/",
+      "kind": "tag",
+      "path": "tag/marie-lundin/index.html",
+      "archive_url": "https://web.archive.org/web/20191018064632id_/https://bufsimrishamn.wordpress.com/tag/marie-lundin/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/lararforbundet/",
+      "kind": "tag",
+      "path": "tag/lararforbundet/index.html",
+      "archive_url": "https://web.archive.org/web/20190825135028id_/https://bufsimrishamn.wordpress.com/tag/lararforbundet/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/nova-performing-arts/",
+      "kind": "tag",
+      "path": "tag/nova-performing-arts/index.html",
+      "archive_url": "https://web.archive.org/web/20190822051238id_/https://bufsimrishamn.wordpress.com/tag/nova-performing-arts/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/omvanda-klassrummet/",
+      "kind": "tag",
+      "path": "tag/omvanda-klassrummet/index.html",
+      "archive_url": "https://web.archive.org/web/20190822044940id_/https://bufsimrishamn.wordpress.com/tag/omvanda-klassrummet/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/oppna-jamforelser/",
+      "kind": "tag",
+      "path": "tag/oppna-jamforelser/index.html",
+      "archive_url": "https://web.archive.org/web/20190822060223id_/https://bufsimrishamn.wordpress.com/tag/oppna-jamforelser/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/niclas-bjornen/",
+      "kind": "tag",
+      "path": "tag/niclas-bjornen/index.html",
+      "archive_url": "https://web.archive.org/web/20191116214012id_/https://bufsimrishamn.wordpress.com/tag/niclas-bjornen/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/patricia-diaz/",
+      "kind": "tag",
+      "path": "tag/patricia-diaz/index.html",
+      "archive_url": "https://web.archive.org/web/20191018064127id_/https://bufsimrishamn.wordpress.com/tag/patricia-diaz/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/pedagogisk-dokumentation/",
+      "kind": "tag",
+      "path": "tag/pedagogisk-dokumentation/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045754id_/https://bufsimrishamn.wordpress.com/tag/pedagogisk-dokumentation/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/piratenskolan/",
+      "kind": "tag",
+      "path": "tag/piratenskolan/index.html",
+      "archive_url": "https://web.archive.org/web/20190822060658id_/https://bufsimrishamn.wordpress.com/tag/piratenskolan/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/pluttra/",
+      "kind": "tag",
+      "path": "tag/pluttra/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043739id_/https://bufsimrishamn.wordpress.com/tag/pluttra/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/rachel-tess/",
+      "kind": "tag",
+      "path": "tag/rachel-tess/index.html",
+      "archive_url": "https://web.archive.org/web/20190822053843id_/https://bufsimrishamn.wordpress.com/tag/rachel-tess/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/praktik/",
+      "kind": "tag",
+      "path": "tag/praktik/index.html",
+      "archive_url": "https://web.archive.org/web/20170324212725id_/https://bufsimrishamn.wordpress.com/tag/praktik/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/rankning/",
+      "kind": "tag",
+      "path": "tag/rankning/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043735id_/https://bufsimrishamn.wordpress.com/tag/rankning/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/osterlengymnasiet/",
+      "kind": "tag",
+      "path": "tag/osterlengymnasiet/index.html",
+      "archive_url": "https://web.archive.org/web/20191212130721id_/https://bufsimrishamn.wordpress.com/tag/osterlengymnasiet/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/radda-barnen/",
+      "kind": "tag",
+      "path": "tag/radda-barnen/index.html",
+      "archive_url": "https://web.archive.org/web/20191116220847id_/https://bufsimrishamn.wordpress.com/tag/radda-barnen/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/riksintag/",
+      "kind": "tag",
+      "path": "tag/riksintag/index.html",
+      "archive_url": "https://web.archive.org/web/20190822050021id_/https://bufsimrishamn.wordpress.com/tag/riksintag/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/rbs/",
+      "kind": "tag",
+      "path": "tag/rbs/index.html",
+      "archive_url": "https://web.archive.org/web/20190919190745id_/https://bufsimrishamn.wordpress.com/tag/rbs/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/peggy-rydemalm/",
+      "kind": "tag",
+      "path": "tag/peggy-rydemalm/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065508id_/https://bufsimrishamn.wordpress.com/tag/peggy-rydemalm/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/riksrekryterande-spetsutbildning/",
+      "kind": "tag",
+      "path": "tag/riksrekryterande-spetsutbildning/index.html",
+      "archive_url": "https://web.archive.org/web/20190822045653id_/https://bufsimrishamn.wordpress.com/tag/riksrekryterande-spetsutbildning/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/rattighetsbaserad-skola/",
+      "kind": "tag",
+      "path": "tag/rattighetsbaserad-skola/index.html",
+      "archive_url": "https://web.archive.org/web/20191018065825id_/https://bufsimrishamn.wordpress.com/tag/rattighetsbaserad-skola/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/sarskola/",
+      "kind": "tag",
+      "path": "tag/sarskola/index.html",
+      "archive_url": "https://web.archive.org/web/20190822053218id_/https://bufsimrishamn.wordpress.com/tag/sarskola/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/sara-ytell/",
+      "kind": "tag",
+      "path": "tag/sara-ytell/index.html",
+      "archive_url": "https://web.archive.org/web/20191116220223id_/https://bufsimrishamn.wordpress.com/tag/sara-ytell/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/skl/",
+      "kind": "tag",
+      "path": "tag/skl/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043557id_/https://bufsimrishamn.wordpress.com/tag/skl/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/simrislundsskolan/",
+      "kind": "tag",
+      "path": "tag/simrislundsskolan/index.html",
+      "archive_url": "https://web.archive.org/web/20191116212628id_/https://bufsimrishamn.wordpress.com/tag/simrislundsskolan/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/separation/",
+      "kind": "tag",
+      "path": "tag/separation/index.html",
+      "archive_url": "https://web.archive.org/web/20191116205924id_/https://bufsimrishamn.wordpress.com/tag/separation/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/star-for-life/",
+      "kind": "tag",
+      "path": "tag/star-for-life/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043713id_/https://bufsimrishamn.wordpress.com/tag/star-for-life/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/socionom/",
+      "kind": "tag",
+      "path": "tag/socionom/index.html",
+      "archive_url": "https://web.archive.org/web/20191116220138id_/https://bufsimrishamn.wordpress.com/tag/socionom/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/spetsutbildning/",
+      "kind": "tag",
+      "path": "tag/spetsutbildning/index.html",
+      "archive_url": "https://web.archive.org/web/20190822050247id_/https://bufsimrishamn.wordpress.com/tag/spetsutbildning/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/sveriges-kommuner-och-landsting/",
+      "kind": "tag",
+      "path": "tag/sveriges-kommuner-och-landsting/index.html",
+      "archive_url": "https://web.archive.org/web/20190822050211id_/https://bufsimrishamn.wordpress.com/tag/sveriges-kommuner-och-landsting/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/sylvia-carlsdotter/",
+      "kind": "tag",
+      "path": "tag/sylvia-carlsdotter/index.html",
+      "archive_url": "https://web.archive.org/web/20191018064217id_/https://bufsimrishamn.wordpress.com/tag/sylvia-carlsdotter/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/traningsskola/",
+      "kind": "tag",
+      "path": "tag/traningsskola/index.html",
+      "archive_url": "https://web.archive.org/web/20190822051749id_/https://bufsimrishamn.wordpress.com/tag/traningsskola/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/tema/",
+      "kind": "tag",
+      "path": "tag/tema/index.html",
+      "archive_url": "https://web.archive.org/web/20190822060015id_/https://bufsimrishamn.wordpress.com/tag/tema/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/ungdomens-hus/",
+      "kind": "tag",
+      "path": "tag/ungdomens-hus/index.html",
+      "archive_url": "https://web.archive.org/web/20190825141630id_/https://bufsimrishamn.wordpress.com/tag/ungdomens-hus/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/ungdomspolitiskt-rad/",
+      "kind": "tag",
+      "path": "tag/ungdomspolitiskt-rad/index.html",
+      "archive_url": "https://web.archive.org/web/20190822043720id_/https://bufsimrishamn.wordpress.com/tag/ungdomspolitiskt-rad/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/webbaserat/",
+      "kind": "tag",
+      "path": "tag/webbaserat/index.html",
+      "archive_url": "https://web.archive.org/web/20190822044128id_/https://bufsimrishamn.wordpress.com/tag/webbaserat/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/unicef/",
+      "kind": "tag",
+      "path": "tag/unicef/index.html",
+      "archive_url": "https://web.archive.org/web/20190822044033id_/https://bufsimrishamn.wordpress.com/tag/unicef/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/sankt-olofs-skola/",
+      "kind": "tag",
+      "path": "tag/sankt-olofs-skola/index.html",
+      "archive_url": "https://web.archive.org/web/20190825131711id_/https://bufsimrishamn.wordpress.com/tag/sankt-olofs-skola/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/tavling/",
+      "kind": "tag",
+      "path": "tag/tavling/index.html",
+      "archive_url": "https://web.archive.org/web/20170325034151id_/https://bufsimrishamn.wordpress.com/tag/tavling/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/yrke/",
+      "kind": "tag",
+      "path": "tag/yrke/index.html",
+      "archive_url": "https://web.archive.org/web/20170325035541id_/https://bufsimrishamn.wordpress.com/tag/yrke/"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/tag/yrkesutbildning/",
+      "kind": "tag",
+      "path": "tag/yrkesutbildning/index.html",
+      "archive_url": "https://web.archive.org/web/20170325034120id_/https://bufsimrishamn.wordpress.com/tag/yrkesutbildning/"
+    }
+  ],
+  "skipped": [],
+  "failed": [
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/02/17/vad-hander-pa-nova-academy-just-nu/",
+      "archive_url": "https://web.archive.org/web/20160921082643id_/https://bufsimrishamn.wordpress.com/2016/02/17/vad-hander-pa-nova-academy-just-nu/",
+      "error": "<urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2016/06/",
+      "archive_url": "https://web.archive.org/web/20191212144046id_/https://bufsimrishamn.wordpress.com/2016/06/",
+      "error": "<urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>"
+    },
+    {
+      "url": "https://bufsimrishamn.wordpress.com/2017/09/",
+      "archive_url": "https://web.archive.org/web/20191018072732id_/https://bufsimrishamn.wordpress.com/2017/09/",
+      "error": "<urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>"
+    }
+  ]
+}

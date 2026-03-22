@@ -1,0 +1,105 @@
+{
+  "target_count": 24,
+  "downloaded_count": 17,
+  "failed_count": 7,
+  "downloaded": [
+    {
+      "path": "2010/01/18/varfor-pedagogisk-dokumentation/index.html",
+      "archive_url": "https://web.archive.org/web/20130522203619/http://cwasteson.skolbloggen.se/2010/01/18/varfor-pedagogisk-dokumentation/"
+    },
+    {
+      "path": "2010/06/07/medier-i-undervisningen/index.html",
+      "archive_url": "https://web.archive.org/web/20100621114248/http://cwasteson.skolbloggen.se:80/2010/06/07/medier-i-undervisningen/"
+    },
+    {
+      "path": "2010/06/07/tips-nar-du-vill-dokumentera-ett-studiebesok/index.html",
+      "archive_url": "https://web.archive.org/web/20100621114253/http://cwasteson.skolbloggen.se:80/2010/06/07/tips-nar-du-vill-dokumentera-ett-studiebesok/"
+    },
+    {
+      "path": "2010/06/10/en-wiki-for-larare-pa-natet/index.html",
+      "archive_url": "https://web.archive.org/web/20100621114258/http://cwasteson.skolbloggen.se:80/2010/06/10/en-wiki-for-larare-pa-natet/"
+    },
+    {
+      "path": "2010/06/12/google-reader-bade-van-och-fiende/index.html",
+      "archive_url": "https://web.archive.org/web/20100621120704/http://cwasteson.skolbloggen.se:80/2010/06/12/google-reader-bade-van-och-fiende/"
+    },
+    {
+      "path": "2010/06/13/google-docs-for-fildelning-och-samarbete/index.html",
+      "archive_url": "https://web.archive.org/web/20100621120719/http://cwasteson.skolbloggen.se:80/2010/06/13/google-docs-for-fildelning-och-samarbete/"
+    },
+    {
+      "path": "2010/06/15/traffande-beskrivning-av-problemlosning/index.html",
+      "archive_url": "https://web.archive.org/web/20100621120724/http://cwasteson.skolbloggen.se:80/2010/06/15/traffande-beskrivning-av-problemlosning/"
+    },
+    {
+      "path": "2010/09/18/uppstramningen-framst-mot-de-svaga/index.html",
+      "archive_url": "https://web.archive.org/web/20120126044118/http://cwasteson.skolbloggen.se/2010/09/18/uppstramningen-framst-mot-de-svaga/"
+    },
+    {
+      "path": "2010/09/21/pippi-och-forebilder/index.html",
+      "archive_url": "https://web.archive.org/web/20120308021740/http://cwasteson.skolbloggen.se:80/2010/09/21/pippi-och-forebilder/"
+    },
+    {
+      "path": "2010/09/22/rwandas-kvinnor-far-allt-mer-makt/index.html",
+      "archive_url": "https://web.archive.org/web/20120126051211/http://cwasteson.skolbloggen.se/2010/09/22/rwandas-kvinnor-far-allt-mer-makt/"
+    },
+    {
+      "path": "2010/09/23/var-framtid-med-sverigedemokraterna/index.html",
+      "archive_url": "https://web.archive.org/web/20120126044344/http://cwasteson.skolbloggen.se/2010/09/23/var-framtid-med-sverigedemokraterna/"
+    },
+    {
+      "path": "2010/09/25/lashunger-kan-kopplas-till-stordad/index.html",
+      "archive_url": "https://web.archive.org/web/20120126081116/http://cwasteson.skolbloggen.se/2010/09/25/lashunger-kan-kopplas-till-stordad/"
+    },
+    {
+      "path": "2010/10/06/vi-lar-som-vi-lever/index.html",
+      "archive_url": "https://web.archive.org/web/20120126042231/http://cwasteson.skolbloggen.se/2010/10/06/vi-lar-som-vi-lever/"
+    },
+    {
+      "path": "2010/11/02/ta-tillvara-fordelarna-och-undvik-fallgroparna/index.html",
+      "archive_url": "https://web.archive.org/web/20120126091856/http://cwasteson.skolbloggen.se/2010/11/02/ta-tillvara-fordelarna-och-undvik-fallgroparna/"
+    },
+    {
+      "path": "2011/04/13/1496/index.html",
+      "archive_url": "https://web.archive.org/web/20170128144647/http://cwasteson.skolbloggen.se/2011/04/13/1496/"
+    },
+    {
+      "path": "2011/04/29/en-forfarlig-paskhelg-pa-osterlen/index.html",
+      "archive_url": "https://web.archive.org/web/20120126060026/http://cwasteson.skolbloggen.se/2011/04/29/en-forfarlig-paskhelg-pa-osterlen/"
+    },
+    {
+      "path": "2011/09/28/nu-skriver-jag-dar-istallet/index.html",
+      "archive_url": "https://web.archive.org/web/20190819164826/https://cwasteson.skolbloggen.se/2011/09/28/nu-skriver-jag-dar-istallet/"
+    }
+  ],
+  "failed": [
+    {
+      "path": "2010/05/13/kan-du-forlata/index.html",
+      "error": "not-found-in-inventory"
+    },
+    {
+      "path": "2010/05/21/bild-hamta-och-hantera/index.html",
+      "error": "not-found-in-inventory"
+    },
+    {
+      "path": "2010/06/06/jag-provar-blogger/index.html",
+      "error": "not-found-in-inventory"
+    },
+    {
+      "path": "2010/06/12/twitter-kraver-en-insats-men-kan-ge-mycket-tillbaka/index.html",
+      "error": "not-found-in-inventory"
+    },
+    {
+      "path": "2010/06/13/en-mindmap-over-google-dokument/index.html",
+      "error": "not-found-in-inventory"
+    },
+    {
+      "path": "2010/06/14/faror-pa-natet/index.html",
+      "error": "not-found-in-inventory"
+    },
+    {
+      "path": "2010/09/14/nagra-ord-om-lashunger/index.html",
+      "error": "not-found-in-inventory"
+    }
+  ]
+}

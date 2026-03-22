@@ -1,0 +1,11 @@
+{
+  "raw_candidate_count": 2459,
+  "group_count": 474,
+  "offset": 0,
+  "processed_group_count": 1,
+  "downloaded_count": 0,
+  "skipped_existing_count": 0,
+  "failed_count": 1,
+  "candidate_file": "site\\recovery\\priority-assets-candidates.json",
+  "log_file": "site\\recovery\\priority-assets-log.jsonl"
+}

@@ -1,0 +1,1166 @@
+{
+  "mode": "html-subset",
+  "downloaded_count": 193,
+  "failed_count": 0,
+  "downloaded": [
+    {
+      "url": "http://cwastes.skolbloggen.se/",
+      "kind": "homepage",
+      "path": "index.html",
+      "archive_url": "https://web.archive.org/web/20180323180418id_/http://cwastes.skolbloggen.se/"
+    },
+    {
+      "url": "https://cwastes.skolbloggen.se/",
+      "kind": "homepage",
+      "path": "index.html",
+      "archive_url": "https://web.archive.org/web/20181204134544id_/https://cwastes.skolbloggen.se/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/01/",
+      "kind": "other",
+      "path": "2010/01/index.html",
+      "archive_url": "https://web.archive.org/web/20180220112402id_/http://cwastes.skolbloggen.se:80/2010/01/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/01/14/en-digital-invandrare-tipsar/",
+      "kind": "post_like",
+      "path": "2010/01/14/en-digital-invandrare-tipsar/index.html",
+      "archive_url": "https://web.archive.org/web/20110325021152id_/http://cwastes.skolbloggen.se:80/2010/01/14/en-digital-invandrare-tipsar/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/01/22/hur-byter-man-avatar/",
+      "kind": "post_like",
+      "path": "2010/01/22/hur-byter-man-avatar/index.html",
+      "archive_url": "https://web.archive.org/web/20130719055231id_/http://cwastes.skolbloggen.se:80/2010/01/22/hur-byter-man-avatar/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/01/22/hur-man-byter-utseende-pa-sin-blogg/comment-page-1/",
+      "kind": "other",
+      "path": "2010/01/22/hur-man-byter-utseende-pa-sin-blogg/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20100222053152id_/http://cwastes.skolbloggen.se:80/2010/01/22/hur-man-byter-utseende-pa-sin-blogg/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/01/22/hur-man-gor-for-att-lagga-till-en-ny-anvandare-2/",
+      "kind": "post_like",
+      "path": "2010/01/22/hur-man-gor-for-att-lagga-till-en-ny-anvandare-2/index.html",
+      "archive_url": "https://web.archive.org/web/20130716045400id_/http://cwastes.skolbloggen.se:80/2010/01/22/hur-man-gor-for-att-lagga-till-en-ny-anvandare-2/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/01/22/test-youtube-klipp-i-ett-inlagg/",
+      "kind": "post_like",
+      "path": "2010/01/22/test-youtube-klipp-i-ett-inlagg/index.html",
+      "archive_url": "https://web.archive.org/web/20130719040257id_/http://cwastes.skolbloggen.se:80/2010/01/22/test-youtube-klipp-i-ett-inlagg/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/01/28/voddler/",
+      "kind": "post_like",
+      "path": "2010/01/28/voddler/index.html",
+      "archive_url": "https://web.archive.org/web/20100222064248id_/http://cwastes.skolbloggen.se:80/2010/01/28/voddler/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/01/31/samlarobjkt-eller-revirmarkering-for-unga-man/",
+      "kind": "post_like",
+      "path": "2010/01/31/samlarobjkt-eller-revirmarkering-for-unga-man/index.html",
+      "archive_url": "https://web.archive.org/web/20100222063650id_/http://cwastes.skolbloggen.se:80/2010/01/31/samlarobjkt-eller-revirmarkering-for-unga-man/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/01/31/vad-ar-vackert/",
+      "kind": "post_like",
+      "path": "2010/01/31/vad-ar-vackert/index.html",
+      "archive_url": "https://web.archive.org/web/20100222064253id_/http://cwastes.skolbloggen.se:80/2010/01/31/vad-ar-vackert/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/02/",
+      "kind": "other",
+      "path": "2010/02/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235726id_/http://cwastes.skolbloggen.se:80/2010/02/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/02/05/gratisprogram/",
+      "kind": "post_like",
+      "path": "2010/02/05/gratisprogram/index.html",
+      "archive_url": "https://web.archive.org/web/20100410115453id_/http://cwastes.skolbloggen.se:80/2010/02/05/gratisprogram/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/02/05/gratisprogram/comment-page-1/",
+      "kind": "other",
+      "path": "2010/02/05/gratisprogram/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20100222053155id_/http://cwastes.skolbloggen.se:80/2010/02/05/gratisprogram/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/02/06/%E2%80%9Cone-for-one%E2%80%9D-%E2%80%93-om-inbaddad-givmildhet/",
+      "kind": "post_like",
+      "path": "2010/02/06/%E2%80%9Cone-for-one%E2%80%9D-%E2%80%93-om-inbaddad-givmildhet/index.html",
+      "archive_url": "https://web.archive.org/web/20100222053201id_/http://cwastes.skolbloggen.se:80/2010/02/06/%E2%80%9Cone-for-one%E2%80%9D-%E2%80%93-om-inbaddad-givmildhet/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/02/06/%E2%80%9Cone-for-one%E2%80%9D-%E2%80%93-om-inbaddad-givmildhet/comment-page-1/",
+      "kind": "other",
+      "path": "2010/02/06/%E2%80%9Cone-for-one%E2%80%9D-%E2%80%93-om-inbaddad-givmildhet/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20100223090344id_/http://cwastes.skolbloggen.se:80/2010/02/06/%E2%80%9Cone-for-one%E2%80%9D-%E2%80%93-om-inbaddad-givmildhet/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/02/07/ar-ny-teknik-farlig/",
+      "kind": "post_like",
+      "path": "2010/02/07/ar-ny-teknik-farlig/index.html",
+      "archive_url": "https://web.archive.org/web/20100222053205id_/http://cwastes.skolbloggen.se:80/2010/02/07/ar-ny-teknik-farlig/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/02/15/lar-dig-mer-om-trollen-pa-natet/",
+      "kind": "post_like",
+      "path": "2010/02/15/lar-dig-mer-om-trollen-pa-natet/index.html",
+      "archive_url": "https://web.archive.org/web/20100222035713id_/http://cwastes.skolbloggen.se:80/2010/02/15/lar-dig-mer-om-trollen-pa-natet/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/02/17/kanner-du-igen-affarsiden/",
+      "kind": "post_like",
+      "path": "2010/02/17/kanner-du-igen-affarsiden/index.html",
+      "archive_url": "https://web.archive.org/web/20100222035718id_/http://cwastes.skolbloggen.se:80/2010/02/17/kanner-du-igen-affarsiden/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/02/17/svensk-engelskt-lexikon-pa-natet/",
+      "kind": "post_like",
+      "path": "2010/02/17/svensk-engelskt-lexikon-pa-natet/index.html",
+      "archive_url": "https://web.archive.org/web/20140305234649id_/http://cwastes.skolbloggen.se:80/2010/02/17/svensk-engelskt-lexikon-pa-natet/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/02/17/svensk-engelskt-lexikon-pa-natet/comment-page-1/",
+      "kind": "other",
+      "path": "2010/02/17/svensk-engelskt-lexikon-pa-natet/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20100324152313id_/http://cwastes.skolbloggen.se:80/2010/02/17/svensk-engelskt-lexikon-pa-natet/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/02/19/klotterplank/",
+      "kind": "post_like",
+      "path": "2010/02/19/klotterplank/index.html",
+      "archive_url": "https://web.archive.org/web/20100222053210id_/http://cwastes.skolbloggen.se:80/2010/02/19/klotterplank/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/03/",
+      "kind": "other",
+      "path": "2010/03/index.html",
+      "archive_url": "https://web.archive.org/web/20180218000826id_/http://cwastes.skolbloggen.se:80/2010/03/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/04/",
+      "kind": "other",
+      "path": "2010/04/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235636id_/http://cwastes.skolbloggen.se:80/2010/04/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/05/",
+      "kind": "other",
+      "path": "2010/05/index.html",
+      "archive_url": "https://web.archive.org/web/20180220113852id_/http://cwastes.skolbloggen.se:80/2010/05/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/06/",
+      "kind": "other",
+      "path": "2010/06/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235507id_/http://cwastes.skolbloggen.se:80/2010/06/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/07/",
+      "kind": "other",
+      "path": "2010/07/index.html",
+      "archive_url": "https://web.archive.org/web/20180220112445id_/http://cwastes.skolbloggen.se:80/2010/07/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/07/05/har-du-langtrakigt-i-sommar/",
+      "kind": "post_like",
+      "path": "2010/07/05/har-du-langtrakigt-i-sommar/index.html",
+      "archive_url": "https://web.archive.org/web/20110514123541id_/http://cwastes.skolbloggen.se:80/2010/07/05/har-du-langtrakigt-i-sommar/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/07/17/vad-lar-du-dig-nar-du-spelar-wow/",
+      "kind": "post_like",
+      "path": "2010/07/17/vad-lar-du-dig-nar-du-spelar-wow/index.html",
+      "archive_url": "https://web.archive.org/web/20110826064308id_/http://cwastes.skolbloggen.se:80/2010/07/17/vad-lar-du-dig-nar-du-spelar-wow/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/07/25/pinsamt-inom-it/",
+      "kind": "post_like",
+      "path": "2010/07/25/pinsamt-inom-it/index.html",
+      "archive_url": "https://web.archive.org/web/20110514123535id_/http://cwastes.skolbloggen.se:80/2010/07/25/pinsamt-inom-it/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/08/",
+      "kind": "other",
+      "path": "2010/08/index.html",
+      "archive_url": "https://web.archive.org/web/20180220112450id_/http://cwastes.skolbloggen.se:80/2010/08/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/08/06/rosling-statistik-och-gapminder/",
+      "kind": "post_like",
+      "path": "2010/08/06/rosling-statistik-och-gapminder/index.html",
+      "archive_url": "https://web.archive.org/web/20110315085805id_/http://cwastes.skolbloggen.se:80/2010/08/06/rosling-statistik-och-gapminder/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/08/08/photoshop-missar/",
+      "kind": "post_like",
+      "path": "2010/08/08/photoshop-missar/index.html",
+      "archive_url": "https://web.archive.org/web/20110315162703id_/http://cwastes.skolbloggen.se:80/2010/08/08/photoshop-missar/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/08/08/photoshop-missar/comment-page-1/",
+      "kind": "other",
+      "path": "2010/08/08/photoshop-missar/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20110315054650id_/http://cwastes.skolbloggen.se:80/2010/08/08/photoshop-missar/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/08/09/slow-reading-movement/",
+      "kind": "post_like",
+      "path": "2010/08/09/slow-reading-movement/index.html",
+      "archive_url": "https://web.archive.org/web/20110315085827id_/http://cwastes.skolbloggen.se:80/2010/08/09/slow-reading-movement/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/08/22/framtidsspaning-via-sokstatistik/",
+      "kind": "post_like",
+      "path": "2010/08/22/framtidsspaning-via-sokstatistik/index.html",
+      "archive_url": "https://web.archive.org/web/20110320090735id_/http://cwastes.skolbloggen.se:80/2010/08/22/framtidsspaning-via-sokstatistik/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/08/29/projektarbetstider/",
+      "kind": "post_like",
+      "path": "2010/08/29/projektarbetstider/index.html",
+      "archive_url": "https://web.archive.org/web/20110320125703id_/http://cwastes.skolbloggen.se:80/2010/08/29/projektarbetstider/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/08/29/valtider-och-twitter/",
+      "kind": "post_like",
+      "path": "2010/08/29/valtider-och-twitter/index.html",
+      "archive_url": "https://web.archive.org/web/20110320090743id_/http://cwastes.skolbloggen.se:80/2010/08/29/valtider-och-twitter/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/08/31/ska-lararen-behalla-badkladerna-pa/",
+      "kind": "post_like",
+      "path": "2010/08/31/ska-lararen-behalla-badkladerna-pa/index.html",
+      "archive_url": "https://web.archive.org/web/20110510203729id_/http://cwastes.skolbloggen.se:80/2010/08/31/ska-lararen-behalla-badkladerna-pa/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/09/",
+      "kind": "other",
+      "path": "2010/09/index.html",
+      "archive_url": "https://web.archive.org/web/20180220112456id_/http://cwastes.skolbloggen.se:80/2010/09/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/09/03/halva-matte-b-pa-en-genomgang/",
+      "kind": "post_like",
+      "path": "2010/09/03/halva-matte-b-pa-en-genomgang/index.html",
+      "archive_url": "https://web.archive.org/web/20110825114745id_/http://cwastes.skolbloggen.se:80/2010/09/03/halva-matte-b-pa-en-genomgang/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/09/03/halva-matte-b-pa-en-genomgang/comment-page-1/",
+      "kind": "other",
+      "path": "2010/09/03/halva-matte-b-pa-en-genomgang/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20101106132535id_/http://cwastes.skolbloggen.se:80/2010/09/03/halva-matte-b-pa-en-genomgang/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/09/06/far-man-ata-glass-har-fragar-sig-fotografen/",
+      "kind": "post_like",
+      "path": "2010/09/06/far-man-ata-glass-har-fragar-sig-fotografen/index.html",
+      "archive_url": "https://web.archive.org/web/20110510213327id_/http://cwastes.skolbloggen.se:80/2010/09/06/far-man-ata-glass-har-fragar-sig-fotografen/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/09/06/far-man-ata-glass-har-fragar-sig-fotografen/comment-page-1/",
+      "kind": "other",
+      "path": "2010/09/06/far-man-ata-glass-har-fragar-sig-fotografen/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20110315054826id_/http://cwastes.skolbloggen.se:80/2010/09/06/far-man-ata-glass-har-fragar-sig-fotografen/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/09/07/tysklands-karnkraft/",
+      "kind": "post_like",
+      "path": "2010/09/07/tysklands-karnkraft/index.html",
+      "archive_url": "https://web.archive.org/web/20110315054653id_/http://cwastes.skolbloggen.se:80/2010/09/07/tysklands-karnkraft/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/10/",
+      "kind": "other",
+      "path": "2010/10/index.html",
+      "archive_url": "https://web.archive.org/web/20180220110829id_/http://cwastes.skolbloggen.se:80/2010/10/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/10/14/pelle-snickars-pa-svt-play/",
+      "kind": "post_like",
+      "path": "2010/10/14/pelle-snickars-pa-svt-play/index.html",
+      "archive_url": "https://web.archive.org/web/20160701002659id_/http://cwastes.skolbloggen.se:80/2010/10/14/pelle-snickars-pa-svt-play/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/10/15/hardare-tag-mot-rokning-pa-skolorna/",
+      "kind": "post_like",
+      "path": "2010/10/15/hardare-tag-mot-rokning-pa-skolorna/index.html",
+      "archive_url": "https://web.archive.org/web/20160929074631id_/http://cwastes.skolbloggen.se:80/2010/10/15/hardare-tag-mot-rokning-pa-skolorna/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/10/17/debattartikel-legalisera-sexkop/",
+      "kind": "post_like",
+      "path": "2010/10/17/debattartikel-legalisera-sexkop/index.html",
+      "archive_url": "https://web.archive.org/web/20170704225518id_/http://cwastes.skolbloggen.se:80/2010/10/17/debattartikel-legalisera-sexkop/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/10/18/har-du-fattat-hur-stort-afrika-ar/",
+      "kind": "post_like",
+      "path": "2010/10/18/har-du-fattat-hur-stort-afrika-ar/index.html",
+      "archive_url": "https://web.archive.org/web/20160618131035id_/http://cwastes.skolbloggen.se:80/2010/10/18/har-du-fattat-hur-stort-afrika-ar/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/10/18/sank-den-allmanna-rostrattsaldern-till-16-ar/",
+      "kind": "post_like",
+      "path": "2010/10/18/sank-den-allmanna-rostrattsaldern-till-16-ar/index.html",
+      "archive_url": "https://web.archive.org/web/20160816065332id_/http://cwastes.skolbloggen.se:80/2010/10/18/sank-den-allmanna-rostrattsaldern-till-16-ar/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/10/20/framtidens-satt-att-studera/",
+      "kind": "post_like",
+      "path": "2010/10/20/framtidens-satt-att-studera/index.html",
+      "archive_url": "https://web.archive.org/web/20160618133437id_/http://cwastes.skolbloggen.se:80/2010/10/20/framtidens-satt-att-studera/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/10/28/vilken-bild-ger-du-av-dig-sjalv-pa-natet/comment-page-1/",
+      "kind": "other",
+      "path": "2010/10/28/vilken-bild-ger-du-av-dig-sjalv-pa-natet/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20110528005716id_/http://cwastes.skolbloggen.se:80/2010/10/28/vilken-bild-ger-du-av-dig-sjalv-pa-natet/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/11/",
+      "kind": "other",
+      "path": "2010/11/index.html",
+      "archive_url": "https://web.archive.org/web/20180218000831id_/http://cwastes.skolbloggen.se:80/2010/11/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/11/07/nivagrupperade-klasser-och-elitklasser-gynnar-alla-elever/comment-page-1/",
+      "kind": "other",
+      "path": "2010/11/07/nivagrupperade-klasser-och-elitklasser-gynnar-alla-elever/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20110513235521id_/http://cwastes.skolbloggen.se:80/2010/11/07/nivagrupperade-klasser-och-elitklasser-gynnar-alla-elever/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/11/11/ingen-radsla/comment-page-1/",
+      "kind": "other",
+      "path": "2010/11/11/ingen-radsla/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20180228155251id_/http://cwastes.skolbloggen.se:80/2010/11/11/ingen-radsla/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/11/14/ett-ansprakslost-men-daligt-forslag/",
+      "kind": "post_like",
+      "path": "2010/11/14/ett-ansprakslost-men-daligt-forslag/index.html",
+      "archive_url": "https://web.archive.org/web/20170930055235id_/http://cwastes.skolbloggen.se:80/2010/11/14/ett-ansprakslost-men-daligt-forslag/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/11/14/kroppsspraket-ljuger-inte/",
+      "kind": "post_like",
+      "path": "2010/11/14/kroppsspraket-ljuger-inte/index.html",
+      "archive_url": "https://web.archive.org/web/20171001064557id_/http://cwastes.skolbloggen.se:80/2010/11/14/kroppsspraket-ljuger-inte/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/11/14/sprak-ar-makt-men-inte-alltid-som-du-tror/",
+      "kind": "post_like",
+      "path": "2010/11/14/sprak-ar-makt-men-inte-alltid-som-du-tror/index.html",
+      "archive_url": "https://web.archive.org/web/20170927140256id_/http://cwastes.skolbloggen.se:80/2010/11/14/sprak-ar-makt-men-inte-alltid-som-du-tror/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/11/14/sprak-ar-makt-men-inte-alltid-som-du-tror/comment-page-1/",
+      "kind": "other",
+      "path": "2010/11/14/sprak-ar-makt-men-inte-alltid-som-du-tror/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20110325021202id_/http://cwastes.skolbloggen.se:80/2010/11/14/sprak-ar-makt-men-inte-alltid-som-du-tror/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/11/15/kommunikation-%E2%80%93-pa-olika-niva/",
+      "kind": "post_like",
+      "path": "2010/11/15/kommunikation-%E2%80%93-pa-olika-niva/index.html",
+      "archive_url": "https://web.archive.org/web/20110513235227id_/http://cwastes.skolbloggen.se:80/2010/11/15/kommunikation-%E2%80%93-pa-olika-niva/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/11/15/nathatet-okar-flest-bland-ungdomar/",
+      "kind": "post_like",
+      "path": "2010/11/15/nathatet-okar-flest-bland-ungdomar/index.html",
+      "archive_url": "https://web.archive.org/web/20110513235526id_/http://cwastes.skolbloggen.se:80/2010/11/15/nathatet-okar-flest-bland-ungdomar/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/11/15/talande-gester/",
+      "kind": "post_like",
+      "path": "2010/11/15/talande-gester/index.html",
+      "archive_url": "https://web.archive.org/web/20110514000451id_/http://cwastes.skolbloggen.se:80/2010/11/15/talande-gester/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/11/15/tranbar-ar-tranbar-%E2%80%93-var-de-an-vaxer/",
+      "kind": "post_like",
+      "path": "2010/11/15/tranbar-ar-tranbar-%E2%80%93-var-de-an-vaxer/index.html",
+      "archive_url": "https://web.archive.org/web/20170825015929id_/http://cwastes.skolbloggen.se:80/2010/11/15/tranbar-ar-tranbar-%E2%80%93-var-de-an-vaxer/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/11/15/varfor-kan-inte-alla-teckensprak/",
+      "kind": "post_like",
+      "path": "2010/11/15/varfor-kan-inte-alla-teckensprak/index.html",
+      "archive_url": "https://web.archive.org/web/20110513235230id_/http://cwastes.skolbloggen.se:80/2010/11/15/varfor-kan-inte-alla-teckensprak/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/",
+      "kind": "other",
+      "path": "2010/12/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235318id_/http://cwastes.skolbloggen.se:80/2010/12/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/12/trottnat-pa-facebook/",
+      "kind": "post_like",
+      "path": "2010/12/12/trottnat-pa-facebook/index.html",
+      "archive_url": "https://web.archive.org/web/20180317095359id_/http://cwastes.skolbloggen.se:80/2010/12/12/trottnat-pa-facebook/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/13/henning-mankell/",
+      "kind": "post_like",
+      "path": "2010/12/13/henning-mankell/index.html",
+      "archive_url": "https://web.archive.org/web/20180317095229id_/http://cwastes.skolbloggen.se:80/2010/12/13/henning-mankell/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/13/henning-mankell/comment-page-1/",
+      "kind": "other",
+      "path": "2010/12/13/henning-mankell/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20130511020635id_/http://cwastes.skolbloggen.se/2010/12/13/henning-mankell/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/13/per-christan-jersild/",
+      "kind": "post_like",
+      "path": "2010/12/13/per-christan-jersild/index.html",
+      "archive_url": "https://web.archive.org/web/20180319142622id_/http://cwastes.skolbloggen.se:80/2010/12/13/per-christan-jersild/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/14/d-h-lawrence/",
+      "kind": "post_like",
+      "path": "2010/12/14/d-h-lawrence/index.html",
+      "archive_url": "https://web.archive.org/web/20160308181144id_/http://cwastes.skolbloggen.se:80/2010/12/14/d-h-lawrence/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/14/svenska-eller-engelska-2/",
+      "kind": "post_like",
+      "path": "2010/12/14/svenska-eller-engelska-2/index.html",
+      "archive_url": "https://web.archive.org/web/20170810085912id_/http://cwastes.skolbloggen.se:80/2010/12/14/svenska-eller-engelska-2/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/14/svenska-eller-engelska-2/comment-page-1/",
+      "kind": "other",
+      "path": "2010/12/14/svenska-eller-engelska-2/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20120917234003id_/http://cwastes.skolbloggen.se:80/2010/12/14/svenska-eller-engelska-2/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/14/svenska-eller-engelska/",
+      "kind": "post_like",
+      "path": "2010/12/14/svenska-eller-engelska/index.html",
+      "archive_url": "https://web.archive.org/web/20170905060242id_/http://cwastes.skolbloggen.se:80/2010/12/14/svenska-eller-engelska/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/16/skaningen-och-berattaren-fritiof-nilsson-piraten/",
+      "kind": "post_like",
+      "path": "2010/12/16/skaningen-och-berattaren-fritiof-nilsson-piraten/index.html",
+      "archive_url": "https://web.archive.org/web/20160508132139id_/http://cwastes.skolbloggen.se:80/2010/12/16/skaningen-och-berattaren-fritiof-nilsson-piraten/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/18/astrid-lindgren/",
+      "kind": "post_like",
+      "path": "2010/12/18/astrid-lindgren/index.html",
+      "archive_url": "https://web.archive.org/web/20160308181024id_/http://cwastes.skolbloggen.se:80/2010/12/18/astrid-lindgren/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/18/hyllad-forfattare-som-garna-varit-utan-berommelsen/",
+      "kind": "post_like",
+      "path": "2010/12/18/hyllad-forfattare-som-garna-varit-utan-berommelsen/index.html",
+      "archive_url": "https://web.archive.org/web/20110513235413id_/http://cwastes.skolbloggen.se:80/2010/12/18/hyllad-forfattare-som-garna-varit-utan-berommelsen/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/19/h-p-lovecraft-%E2%80%93-den-moderna-skrackens-fader/",
+      "kind": "post_like",
+      "path": "2010/12/19/h-p-lovecraft-%E2%80%93-den-moderna-skrackens-fader/index.html",
+      "archive_url": "https://web.archive.org/web/20110514000401id_/http://cwastes.skolbloggen.se:80/2010/12/19/h-p-lovecraft-%E2%80%93-den-moderna-skrackens-fader/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/19/isaac-asimov/",
+      "kind": "post_like",
+      "path": "2010/12/19/isaac-asimov/index.html",
+      "archive_url": "https://web.archive.org/web/20180213154730id_/http://cwastes.skolbloggen.se:80/2010/12/19/isaac-asimov/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/19/maria-gripe/",
+      "kind": "post_like",
+      "path": "2010/12/19/maria-gripe/index.html",
+      "archive_url": "https://web.archive.org/web/20110513235418id_/http://cwastes.skolbloggen.se:80/2010/12/19/maria-gripe/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/19/vilhelm-moberg/",
+      "kind": "post_like",
+      "path": "2010/12/19/vilhelm-moberg/index.html",
+      "archive_url": "https://web.archive.org/web/20110528010915id_/http://cwastes.skolbloggen.se:80/2010/12/19/vilhelm-moberg/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/19/vilhelm-moberg/comment-page-1/",
+      "kind": "other",
+      "path": "2010/12/19/vilhelm-moberg/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20180220104828id_/http://cwastes.skolbloggen.se:80/2010/12/19/vilhelm-moberg/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/20/c-s-lewis/",
+      "kind": "post_like",
+      "path": "2010/12/20/c-s-lewis/index.html",
+      "archive_url": "https://web.archive.org/web/20110527164315id_/http://cwastes.skolbloggen.se:80/2010/12/20/c-s-lewis/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/20/john-steinbeck/",
+      "kind": "post_like",
+      "path": "2010/12/20/john-steinbeck/index.html",
+      "archive_url": "https://web.archive.org/web/20180213154710id_/http://cwastes.skolbloggen.se:80/2010/12/20/john-steinbeck/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/20/john-steinbeck/comment-page-1/",
+      "kind": "other",
+      "path": "2010/12/20/john-steinbeck/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20180220105230id_/http://cwastes.skolbloggen.se:80/2010/12/20/john-steinbeck/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/20/vem-var-franz-kafka/",
+      "kind": "post_like",
+      "path": "2010/12/20/vem-var-franz-kafka/index.html",
+      "archive_url": "https://web.archive.org/web/20180314154647id_/http://cwastes.skolbloggen.se:80/2010/12/20/vem-var-franz-kafka/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/20/zadie-smith/",
+      "kind": "post_like",
+      "path": "2010/12/20/zadie-smith/index.html",
+      "archive_url": "https://web.archive.org/web/20110527163950id_/http://cwastes.skolbloggen.se:80/2010/12/20/zadie-smith/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/21/1900-talsforfattare-hjalmar-soderberg/",
+      "kind": "post_like",
+      "path": "2010/12/21/1900-talsforfattare-hjalmar-soderberg/index.html",
+      "archive_url": "https://web.archive.org/web/20110527163912id_/http://cwastes.skolbloggen.se:80/2010/12/21/1900-talsforfattare-hjalmar-soderberg/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2010/12/30/nyfiken-pa-latinamerika/",
+      "kind": "post_like",
+      "path": "2010/12/30/nyfiken-pa-latinamerika/index.html",
+      "archive_url": "https://web.archive.org/web/20110527164400id_/http://cwastes.skolbloggen.se:80/2010/12/30/nyfiken-pa-latinamerika/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/01/",
+      "kind": "other",
+      "path": "2011/01/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235514id_/http://cwastes.skolbloggen.se:80/2011/01/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/01/28/1450/",
+      "kind": "post_like",
+      "path": "2011/01/28/1450/index.html",
+      "archive_url": "https://web.archive.org/web/20110527164517id_/http://cwastes.skolbloggen.se:80/2011/01/28/1450/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/03/03/har-du-testat-att-gora-en-voki/comment-page-1/",
+      "kind": "other",
+      "path": "2011/03/03/har-du-testat-att-gora-en-voki/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20110315085842id_/http://cwastes.skolbloggen.se:80/2011/03/03/har-du-testat-att-gora-en-voki/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/05/",
+      "kind": "other",
+      "path": "2011/05/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235519id_/http://cwastes.skolbloggen.se:80/2011/05/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/05/13/netikett/",
+      "kind": "post_like",
+      "path": "2011/05/13/netikett/index.html",
+      "archive_url": "https://web.archive.org/web/20110528010411id_/http://cwastes.skolbloggen.se:80/2011/05/13/netikett/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/05/19/tre-systrar-pa-teaterhogskolan-i-malmo/",
+      "kind": "post_like",
+      "path": "2011/05/19/tre-systrar-pa-teaterhogskolan-i-malmo/index.html",
+      "archive_url": "https://web.archive.org/web/20110528010245id_/http://cwastes.skolbloggen.se:80/2011/05/19/tre-systrar-pa-teaterhogskolan-i-malmo/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/06/",
+      "kind": "other",
+      "path": "2011/06/index.html",
+      "archive_url": "https://web.archive.org/web/20180220111328id_/http://cwastes.skolbloggen.se:80/2011/06/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/06/01/natmobbning/comment-page-1/",
+      "kind": "other",
+      "path": "2011/06/01/natmobbning/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20180228161810id_/http://cwastes.skolbloggen.se:80/2011/06/01/natmobbning/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/09/",
+      "kind": "other",
+      "path": "2011/09/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235524id_/http://cwastes.skolbloggen.se:80/2011/09/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/09/16/om-man-skulle-gora-en-bokpresentation-av-till-exempel-gosta-berlings-saga/",
+      "kind": "post_like",
+      "path": "2011/09/16/om-man-skulle-gora-en-bokpresentation-av-till-exempel-gosta-berlings-saga/index.html",
+      "archive_url": "https://web.archive.org/web/20170710083912id_/http://cwastes.skolbloggen.se:80/2011/09/16/om-man-skulle-gora-en-bokpresentation-av-till-exempel-gosta-berlings-saga/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/09/21/bokpresentation-robinson-crusoe/",
+      "kind": "post_like",
+      "path": "2011/09/21/bokpresentation-robinson-crusoe/index.html",
+      "archive_url": "https://web.archive.org/web/20180329123421id_/http://cwastes.skolbloggen.se:80/2011/09/21/bokpresentation-robinson-crusoe/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/10/",
+      "kind": "other",
+      "path": "2011/10/index.html",
+      "archive_url": "https://web.archive.org/web/20180220114131id_/http://cwastes.skolbloggen.se:80/2011/10/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/10/03/nathat-2/",
+      "kind": "post_like",
+      "path": "2011/10/03/nathat-2/index.html",
+      "archive_url": "https://web.archive.org/web/20180331025040id_/http://cwastes.skolbloggen.se:80/2011/10/03/nathat-2/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/10/07/1561/",
+      "kind": "post_like",
+      "path": "2011/10/07/1561/index.html",
+      "archive_url": "https://web.archive.org/web/20171216090528id_/http://cwastes.skolbloggen.se:80/2011/10/07/1561/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/10/07/1561/comment-page-1/",
+      "kind": "other",
+      "path": "2011/10/07/1561/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20180317213220id_/http://cwastes.skolbloggen.se:80/2011/10/07/1561/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/10/11/bokcirkel-om-gosta-berlings-saga-av-selma-lagerlof/",
+      "kind": "post_like",
+      "path": "2011/10/11/bokcirkel-om-gosta-berlings-saga-av-selma-lagerlof/index.html",
+      "archive_url": "https://web.archive.org/web/20171216045946id_/http://cwastes.skolbloggen.se:80/2011/10/11/bokcirkel-om-gosta-berlings-saga-av-selma-lagerlof/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/10/13/frankenstein-bokpresentation/comment-page-1/",
+      "kind": "other",
+      "path": "2011/10/13/frankenstein-bokpresentation/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20180321032832id_/http://cwastes.skolbloggen.se:80/2011/10/13/frankenstein-bokpresentation/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/10/18/1584/",
+      "kind": "post_like",
+      "path": "2011/10/18/1584/index.html",
+      "archive_url": "https://web.archive.org/web/20170324020831id_/http://cwastes.skolbloggen.se:80/2011/10/18/1584/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/10/25/bokpresentation-robinson-crusoe-2/comment-page-1/",
+      "kind": "other",
+      "path": "2011/10/25/bokpresentation-robinson-crusoe-2/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20160729030808id_/http://cwastes.skolbloggen.se:80/2011/10/25/bokpresentation-robinson-crusoe-2/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/10/25/med-hjartat-i-1940-talet/comment-page-1/",
+      "kind": "other",
+      "path": "2011/10/25/med-hjartat-i-1940-talet/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235641id_/http://cwastes.skolbloggen.se:80/2011/10/25/med-hjartat-i-1940-talet/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/10/25/vaxandet-som-process/",
+      "kind": "post_like",
+      "path": "2011/10/25/vaxandet-som-process/index.html",
+      "archive_url": "https://web.archive.org/web/20130615045339id_/http://cwastes.skolbloggen.se:80/2011/10/25/vaxandet-som-process/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/10/26/flyga-drake-elevtext/",
+      "kind": "post_like",
+      "path": "2011/10/26/flyga-drake-elevtext/index.html",
+      "archive_url": "https://web.archive.org/web/20161115215627id_/http://cwastes.skolbloggen.se:80/2011/10/26/flyga-drake-elevtext/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/10/27/inre-och-yttre-resor/comment-page-1/",
+      "kind": "other",
+      "path": "2011/10/27/inre-och-yttre-resor/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20180220110726id_/http://cwastes.skolbloggen.se:80/2011/10/27/inre-och-yttre-resor/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/11/",
+      "kind": "other",
+      "path": "2011/11/index.html",
+      "archive_url": "https://web.archive.org/web/20180220113845id_/http://cwastes.skolbloggen.se:80/2011/11/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/11/14/flyga-drake-elevtext-2/",
+      "kind": "post_like",
+      "path": "2011/11/14/flyga-drake-elevtext-2/index.html",
+      "archive_url": "https://web.archive.org/web/20170512124658id_/http://cwastes.skolbloggen.se:80/2011/11/14/flyga-drake-elevtext-2/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/11/14/flyga-drake-elevtext-3/",
+      "kind": "post_like",
+      "path": "2011/11/14/flyga-drake-elevtext-3/index.html",
+      "archive_url": "https://web.archive.org/web/20120115074721id_/http://cwastes.skolbloggen.se:80/2011/11/14/flyga-drake-elevtext-3/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/11/14/inre-resor-elevtext/",
+      "kind": "post_like",
+      "path": "2011/11/14/inre-resor-elevtext/index.html",
+      "archive_url": "https://web.archive.org/web/20120115122054id_/http://cwastes.skolbloggen.se:80/2011/11/14/inre-resor-elevtext/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/11/15/din-stund-pa-jorden/",
+      "kind": "post_like",
+      "path": "2011/11/15/din-stund-pa-jorden/index.html",
+      "archive_url": "https://web.archive.org/web/20120115080112id_/http://cwastes.skolbloggen.se:80/2011/11/15/din-stund-pa-jorden/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2011/12/",
+      "kind": "other",
+      "path": "2011/12/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235731id_/http://cwastes.skolbloggen.se:80/2011/12/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/",
+      "kind": "other",
+      "path": "2012/03/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235138id_/http://cwastes.skolbloggen.se:80/2012/03/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/20/att-vara-organiserad-eller-ej/",
+      "kind": "post_like",
+      "path": "2012/03/20/att-vara-organiserad-eller-ej/index.html",
+      "archive_url": "https://web.archive.org/web/20120917233813id_/http://cwastes.skolbloggen.se:80/2012/03/20/att-vara-organiserad-eller-ej/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/20/att-vara-organiserad-eller-ej/comment-page-1/",
+      "kind": "other",
+      "path": "2012/03/20/att-vara-organiserad-eller-ej/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20120917235622id_/http://cwastes.skolbloggen.se:80/2012/03/20/att-vara-organiserad-eller-ej/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/20/kollektivavtal-borde-vara-en-sjalvklarhet/",
+      "kind": "post_like",
+      "path": "2012/03/20/kollektivavtal-borde-vara-en-sjalvklarhet/index.html",
+      "archive_url": "https://web.archive.org/web/20180220112501id_/http://cwastes.skolbloggen.se:80/2012/03/20/kollektivavtal-borde-vara-en-sjalvklarhet/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/20/kollektivavtal-borde-vara-en-sjalvklarhet/comment-page-1/",
+      "kind": "other",
+      "path": "2012/03/20/kollektivavtal-borde-vara-en-sjalvklarhet/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20120917233626id_/http://cwastes.skolbloggen.se:80/2012/03/20/kollektivavtal-borde-vara-en-sjalvklarhet/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/20/kop-inte-klader-som-ar-tillverkade-av-barnarbetare/",
+      "kind": "post_like",
+      "path": "2012/03/20/kop-inte-klader-som-ar-tillverkade-av-barnarbetare/index.html",
+      "archive_url": "https://web.archive.org/web/20120917234416id_/http://cwastes.skolbloggen.se:80/2012/03/20/kop-inte-klader-som-ar-tillverkade-av-barnarbetare/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/20/kop-inte-klader-som-ar-tillverkade-av-barnarbetare/comment-page-1/",
+      "kind": "other",
+      "path": "2012/03/20/kop-inte-klader-som-ar-tillverkade-av-barnarbetare/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235323id_/http://cwastes.skolbloggen.se:80/2012/03/20/kop-inte-klader-som-ar-tillverkade-av-barnarbetare/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/20/varldshandeln-gynnar-mest-de-rika-landerna/",
+      "kind": "post_like",
+      "path": "2012/03/20/varldshandeln-gynnar-mest-de-rika-landerna/index.html",
+      "archive_url": "https://web.archive.org/web/20120917233631id_/http://cwastes.skolbloggen.se:80/2012/03/20/varldshandeln-gynnar-mest-de-rika-landerna/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/20/varldshandeln-gynnar-mest-de-rika-landerna/comment-page-1/",
+      "kind": "other",
+      "path": "2012/03/20/varldshandeln-gynnar-mest-de-rika-landerna/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20120917235943id_/http://cwastes.skolbloggen.se:80/2012/03/20/varldshandeln-gynnar-mest-de-rika-landerna/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/26/byt-ut-gammal-elutrustningen-pa-elprogrammen-i-gymnasieskolor/",
+      "kind": "post_like",
+      "path": "2012/03/26/byt-ut-gammal-elutrustningen-pa-elprogrammen-i-gymnasieskolor/index.html",
+      "archive_url": "https://web.archive.org/web/20180220113857id_/http://cwastes.skolbloggen.se:80/2012/03/26/byt-ut-gammal-elutrustningen-pa-elprogrammen-i-gymnasieskolor/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/26/byt-ut-gammal-elutrustningen-pa-elprogrammen-i-gymnasieskolor/comment-page-1/",
+      "kind": "other",
+      "path": "2012/03/26/byt-ut-gammal-elutrustningen-pa-elprogrammen-i-gymnasieskolor/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20120917235627id_/http://cwastes.skolbloggen.se:80/2012/03/26/byt-ut-gammal-elutrustningen-pa-elprogrammen-i-gymnasieskolor/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/26/kop-inte-klader-som-ar-tillverkade-under-daliga-arbetsforhallanden/",
+      "kind": "post_like",
+      "path": "2012/03/26/kop-inte-klader-som-ar-tillverkade-under-daliga-arbetsforhallanden/index.html",
+      "archive_url": "https://web.archive.org/web/20180220104833id_/http://cwastes.skolbloggen.se:80/2012/03/26/kop-inte-klader-som-ar-tillverkade-under-daliga-arbetsforhallanden/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/26/kop-inte-klader-som-ar-tillverkade-under-daliga-arbetsforhallanden/comment-page-1/",
+      "kind": "other",
+      "path": "2012/03/26/kop-inte-klader-som-ar-tillverkade-under-daliga-arbetsforhallanden/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20120918001310id_/http://cwastes.skolbloggen.se:80/2012/03/26/kop-inte-klader-som-ar-tillverkade-under-daliga-arbetsforhallanden/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/26/lego-som-lego/",
+      "kind": "post_like",
+      "path": "2012/03/26/lego-som-lego/index.html",
+      "archive_url": "https://web.archive.org/web/20180220110731id_/http://cwastes.skolbloggen.se:80/2012/03/26/lego-som-lego/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/26/lego-som-lego/comment-page-1/",
+      "kind": "other",
+      "path": "2012/03/26/lego-som-lego/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20120917233818id_/http://cwastes.skolbloggen.se:80/2012/03/26/lego-som-lego/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/29/hogre-standard-pa-lararna/",
+      "kind": "post_like",
+      "path": "2012/03/29/hogre-standard-pa-lararna/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235328id_/http://cwastes.skolbloggen.se:80/2012/03/29/hogre-standard-pa-lararna/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/29/hogre-standard-pa-lararna/comment-page-1/",
+      "kind": "other",
+      "path": "2012/03/29/hogre-standard-pa-lararna/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20180218000836id_/http://cwastes.skolbloggen.se:80/2012/03/29/hogre-standard-pa-lararna/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/29/hur-ar-en-bra-ledare/",
+      "kind": "post_like",
+      "path": "2012/03/29/hur-ar-en-bra-ledare/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235529id_/http://cwastes.skolbloggen.se:80/2012/03/29/hur-ar-en-bra-ledare/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/29/hur-ar-en-bra-ledare/comment-page-1/",
+      "kind": "other",
+      "path": "2012/03/29/hur-ar-en-bra-ledare/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20130225200513id_/http://cwastes.skolbloggen.se:80/2012/03/29/hur-ar-en-bra-ledare/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/29/mer-utbildning-for-praktikledare/",
+      "kind": "post_like",
+      "path": "2012/03/29/mer-utbildning-for-praktikledare/index.html",
+      "archive_url": "https://web.archive.org/web/20180220105235id_/http://cwastes.skolbloggen.se:80/2012/03/29/mer-utbildning-for-praktikledare/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/03/29/mer-utbildning-for-praktikledare/comment-page-1/",
+      "kind": "other",
+      "path": "2012/03/29/mer-utbildning-for-praktikledare/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20180220112506id_/http://cwastes.skolbloggen.se:80/2012/03/29/mer-utbildning-for-praktikledare/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/04/",
+      "kind": "other",
+      "path": "2012/04/index.html",
+      "archive_url": "https://web.archive.org/web/20180218000841id_/http://cwastes.skolbloggen.se:80/2012/04/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/04/12/alla-butiker-borde-anvanda-sig-av-nathandel/",
+      "kind": "post_like",
+      "path": "2012/04/12/alla-butiker-borde-anvanda-sig-av-nathandel/index.html",
+      "archive_url": "https://web.archive.org/web/20180130174731id_/http://cwastes.skolbloggen.se:80/2012/04/12/alla-butiker-borde-anvanda-sig-av-nathandel/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/04/12/alla-butiker-borde-anvanda-sig-av-nathandel/comment-page-1/",
+      "kind": "other",
+      "path": "2012/04/12/alla-butiker-borde-anvanda-sig-av-nathandel/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20120917235437id_/http://cwastes.skolbloggen.se:80/2012/04/12/alla-butiker-borde-anvanda-sig-av-nathandel/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/04/26/att-sanka-ungdomslonerna-ar-daligt/",
+      "kind": "post_like",
+      "path": "2012/04/26/att-sanka-ungdomslonerna-ar-daligt/index.html",
+      "archive_url": "https://web.archive.org/web/20180130182516id_/http://cwastes.skolbloggen.se:80/2012/04/26/att-sanka-ungdomslonerna-ar-daligt/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/04/26/sank-priserna-pa-kollektivtrafiken/",
+      "kind": "post_like",
+      "path": "2012/04/26/sank-priserna-pa-kollektivtrafiken/index.html",
+      "archive_url": "https://web.archive.org/web/20180320230440id_/http://cwastes.skolbloggen.se:80/2012/04/26/sank-priserna-pa-kollektivtrafiken/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/05/",
+      "kind": "other",
+      "path": "2012/05/index.html",
+      "archive_url": "https://web.archive.org/web/20180220110834id_/http://cwastes.skolbloggen.se:80/2012/05/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/05/08/mer-praktik-for-gymnasieelever/",
+      "kind": "post_like",
+      "path": "2012/05/08/mer-praktik-for-gymnasieelever/index.html",
+      "archive_url": "https://web.archive.org/web/20180220110236id_/http://cwastes.skolbloggen.se:80/2012/05/08/mer-praktik-for-gymnasieelever/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/05/28/anonyma-brev/",
+      "kind": "post_like",
+      "path": "2012/05/28/anonyma-brev/index.html",
+      "archive_url": "https://web.archive.org/web/20180218000418id_/http://cwastes.skolbloggen.se:80/2012/05/28/anonyma-brev/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/05/28/att-gor-varlden-battre/",
+      "kind": "post_like",
+      "path": "2012/05/28/att-gor-varlden-battre/index.html",
+      "archive_url": "https://web.archive.org/web/20180220112511id_/http://cwastes.skolbloggen.se:80/2012/05/28/att-gor-varlden-battre/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/05/28/att-gora-varlden-till-en-battre-plats/",
+      "kind": "post_like",
+      "path": "2012/05/28/att-gora-varlden-till-en-battre-plats/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235143id_/http://cwastes.skolbloggen.se:80/2012/05/28/att-gora-varlden-till-en-battre-plats/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/05/28/att-gora-varlden-till-en-battre-plats/comment-page-1/",
+      "kind": "other",
+      "path": "2012/05/28/att-gora-varlden-till-en-battre-plats/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20120917235652id_/http://cwastes.skolbloggen.se:80/2012/05/28/att-gora-varlden-till-en-battre-plats/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/05/28/en-liten-garning-kan-gora-stor-skillnad/",
+      "kind": "post_like",
+      "path": "2012/05/28/en-liten-garning-kan-gora-stor-skillnad/index.html",
+      "archive_url": "https://web.archive.org/web/20180218000847id_/http://cwastes.skolbloggen.se:80/2012/05/28/en-liten-garning-kan-gora-stor-skillnad/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/05/28/hur-kan-vi-forandra-varlden-till-det-battre/",
+      "kind": "post_like",
+      "path": "2012/05/28/hur-kan-vi-forandra-varlden-till-det-battre/index.html",
+      "archive_url": "https://web.archive.org/web/20180220112518id_/http://cwastes.skolbloggen.se:80/2012/05/28/hur-kan-vi-forandra-varlden-till-det-battre/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/05/28/ler-du-sa-ler-varlden-tillbaka/",
+      "kind": "post_like",
+      "path": "2012/05/28/ler-du-sa-ler-varlden-tillbaka/index.html",
+      "archive_url": "https://web.archive.org/web/20180220110336id_/http://cwastes.skolbloggen.se:80/2012/05/28/ler-du-sa-ler-varlden-tillbaka/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/06/",
+      "kind": "other",
+      "path": "2012/06/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235333id_/http://cwastes.skolbloggen.se:80/2012/06/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/06/05/att-kopa-aktier-ar-inte-farligt/",
+      "kind": "post_like",
+      "path": "2012/06/05/att-kopa-aktier-ar-inte-farligt/index.html",
+      "archive_url": "https://web.archive.org/web/20180220112133id_/http://cwastes.skolbloggen.se:80/2012/06/05/att-kopa-aktier-ar-inte-farligt/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/06/05/infor-undervisning-om-arbetsratt/",
+      "kind": "post_like",
+      "path": "2012/06/05/infor-undervisning-om-arbetsratt/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235737id_/http://cwastes.skolbloggen.se:80/2012/06/05/infor-undervisning-om-arbetsratt/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/06/05/mediciner-gor-mer-nytta-an-skada/",
+      "kind": "post_like",
+      "path": "2012/06/05/mediciner-gor-mer-nytta-an-skada/index.html",
+      "archive_url": "https://web.archive.org/web/20180220114132id_/http://cwastes.skolbloggen.se:80/2012/06/05/mediciner-gor-mer-nytta-an-skada/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/06/05/svensk-vapenexport/",
+      "kind": "post_like",
+      "path": "2012/06/05/svensk-vapenexport/index.html",
+      "archive_url": "https://web.archive.org/web/20180220111333id_/http://cwastes.skolbloggen.se:80/2012/06/05/svensk-vapenexport/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/06/05/vi-bor-idrotta-mer-an-vad-vi-gor-idag/",
+      "kind": "post_like",
+      "path": "2012/06/05/vi-bor-idrotta-mer-an-vad-vi-gor-idag/index.html",
+      "archive_url": "https://web.archive.org/web/20180220113413id_/http://cwastes.skolbloggen.se:80/2012/06/05/vi-bor-idrotta-mer-an-vad-vi-gor-idag/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/06/05/vi-bor-idrotta-mer-an-vad-vi-gor-idag/comment-page-1/",
+      "kind": "other",
+      "path": "2012/06/05/vi-bor-idrotta-mer-an-vad-vi-gor-idag/comment-page-1/index.html",
+      "archive_url": "https://web.archive.org/web/20180220113902id_/http://cwastes.skolbloggen.se:80/2012/06/05/vi-bor-idrotta-mer-an-vad-vi-gor-idag/comment-page-1/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/06/07/forgylla-nagons-vardag/",
+      "kind": "post_like",
+      "path": "2012/06/07/forgylla-nagons-vardag/index.html",
+      "archive_url": "https://web.archive.org/web/20180218000852id_/http://cwastes.skolbloggen.se:80/2012/06/07/forgylla-nagons-vardag/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/06/07/hur-pantar-du/",
+      "kind": "post_like",
+      "path": "2012/06/07/hur-pantar-du/index.html",
+      "archive_url": "https://web.archive.org/web/20180220104838id_/http://cwastes.skolbloggen.se:80/2012/06/07/hur-pantar-du/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/10/",
+      "kind": "other",
+      "path": "2012/10/index.html",
+      "archive_url": "https://web.archive.org/web/20180220114136id_/http://cwastes.skolbloggen.se:80/2012/10/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2012/10/16/hur-kan-vi-gora-varlden-battre-elevtext/",
+      "kind": "post_like",
+      "path": "2012/10/16/hur-kan-vi-gora-varlden-battre-elevtext/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235742id_/http://cwastes.skolbloggen.se:80/2012/10/16/hur-kan-vi-gora-varlden-battre-elevtext/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2013/06/",
+      "kind": "other",
+      "path": "2013/06/index.html",
+      "archive_url": "https://web.archive.org/web/20180220110341id_/http://cwastes.skolbloggen.se:80/2013/06/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2013/06/03/fordelar-med-genteknik-vad-galler-medicinsk-utveckling/",
+      "kind": "post_like",
+      "path": "2013/06/03/fordelar-med-genteknik-vad-galler-medicinsk-utveckling/index.html",
+      "archive_url": "https://web.archive.org/web/20180130181153id_/http://cwastes.skolbloggen.se:80/2013/06/03/fordelar-med-genteknik-vad-galler-medicinsk-utveckling/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/2013/06/03/gmo-odlad-mat-ar-bra-for-manniskan-och-miljon/",
+      "kind": "post_like",
+      "path": "2013/06/03/gmo-odlad-mat-ar-bra-for-manniskan-och-miljon/index.html",
+      "archive_url": "https://web.archive.org/web/20170612151513id_/http://cwastes.skolbloggen.se:80/2013/06/03/gmo-odlad-mat-ar-bra-for-manniskan-och-miljon/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/author/cwaste/",
+      "kind": "other",
+      "path": "author/cwaste/index.html",
+      "archive_url": "https://web.archive.org/web/20170613045858id_/http://cwastes.skolbloggen.se:80/author/cwaste/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/author/filippabackvall/",
+      "kind": "other",
+      "path": "author/filippabackvall/index.html",
+      "archive_url": "https://web.archive.org/web/20171216161309id_/http://cwastes.skolbloggen.se:80/author/filippabackvall/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/author/hagstrom/",
+      "kind": "other",
+      "path": "author/hagstrom/index.html",
+      "archive_url": "https://web.archive.org/web/20120917235256id_/http://cwastes.skolbloggen.se:80/author/hagstrom/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/author/nylander/",
+      "kind": "other",
+      "path": "author/nylander/index.html",
+      "archive_url": "https://web.archive.org/web/20180318064314id_/http://cwastes.skolbloggen.se:80/author/nylander/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/author/plugglisa/",
+      "kind": "other",
+      "path": "author/plugglisa/index.html",
+      "archive_url": "https://web.archive.org/web/20180216083218id_/http://cwastes.skolbloggen.se:80/author/plugglisa/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/1900-talsforfattare/",
+      "kind": "category",
+      "path": "category/1900-talsforfattare/index.html",
+      "archive_url": "https://web.archive.org/web/20180215083310id_/http://cwastes.skolbloggen.se:80/category/1900-talsforfattare/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/diskussionreflektion/",
+      "kind": "category",
+      "path": "category/diskussionreflektion/index.html",
+      "archive_url": "https://web.archive.org/web/20180218000423id_/http://cwastes.skolbloggen.se:80/category/diskussionreflektion/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/diskutera/",
+      "kind": "category",
+      "path": "category/diskutera/index.html",
+      "archive_url": "https://web.archive.org/web/20180130173726id_/http://cwastes.skolbloggen.se:80/category/diskutera/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/forbattra-varlden/",
+      "kind": "category",
+      "path": "category/forbattra-varlden/index.html",
+      "archive_url": "https://web.archive.org/web/20180220104843id_/http://cwastes.skolbloggen.se:80/category/forbattra-varlden/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/gott-och-blandat/",
+      "kind": "category",
+      "path": "category/gott-och-blandat/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235148id_/http://cwastes.skolbloggen.se:80/category/gott-och-blandat/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/humor/",
+      "kind": "category",
+      "path": "category/humor/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235339id_/http://cwastes.skolbloggen.se:80/category/humor/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/ikt-verktyg/",
+      "kind": "category",
+      "path": "category/ikt-verktyg/index.html",
+      "archive_url": "https://web.archive.org/web/20180220111338id_/http://cwastes.skolbloggen.se:80/category/ikt-verktyg/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/instruktion/",
+      "kind": "category",
+      "path": "category/instruktion/index.html",
+      "archive_url": "https://web.archive.org/web/20180220112408id_/http://cwastes.skolbloggen.se:80/category/instruktion/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/kom-igang-med-skolbloggen-se/",
+      "kind": "category",
+      "path": "category/kom-igang-med-skolbloggen-se/index.html",
+      "archive_url": "https://web.archive.org/web/20180220110839id_/http://cwastes.skolbloggen.se:80/category/kom-igang-med-skolbloggen-se/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/netikett/",
+      "kind": "category",
+      "path": "category/netikett/index.html",
+      "archive_url": "https://web.archive.org/web/20180220114513id_/http://cwastes.skolbloggen.se:80/category/netikett/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/okategoriserad/",
+      "kind": "category",
+      "path": "category/okategoriserad/index.html",
+      "archive_url": "https://web.archive.org/web/20180218000428id_/http://cwastes.skolbloggen.se:80/category/okategoriserad/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/oppna-larresurser/",
+      "kind": "category",
+      "path": "category/oppna-larresurser/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235534id_/http://cwastes.skolbloggen.se:80/category/oppna-larresurser/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/teater/",
+      "kind": "category",
+      "path": "category/teater/index.html",
+      "archive_url": "https://web.archive.org/web/20180220111343id_/http://cwastes.skolbloggen.se:80/category/teater/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/tema-genteknik/",
+      "kind": "category",
+      "path": "category/tema-genteknik/index.html",
+      "archive_url": "https://web.archive.org/web/20180220104848id_/http://cwastes.skolbloggen.se:80/category/tema-genteknik/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/tema-klassiker-romaner/",
+      "kind": "category",
+      "path": "category/tema-klassiker-romaner/index.html",
+      "archive_url": "https://web.archive.org/web/20180220113908id_/http://cwastes.skolbloggen.se:80/category/tema-klassiker-romaner/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/tema-resor/",
+      "kind": "category",
+      "path": "category/tema-resor/index.html",
+      "archive_url": "https://web.archive.org/web/20180218000857id_/http://cwastes.skolbloggen.se:80/category/tema-resor/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/tema-sprak/",
+      "kind": "category",
+      "path": "category/tema-sprak/index.html",
+      "archive_url": "https://web.archive.org/web/20180309155634id_/http://cwastes.skolbloggen.se:80/category/tema-sprak/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/tips/",
+      "kind": "category",
+      "path": "category/tips/index.html",
+      "archive_url": "https://web.archive.org/web/20180220112524id_/http://cwastes.skolbloggen.se:80/category/tips/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/category/webbstjarnan/",
+      "kind": "category",
+      "path": "category/webbstjarnan/index.html",
+      "archive_url": "https://web.archive.org/web/20180220111348id_/http://cwastes.skolbloggen.se:80/category/webbstjarnan/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/om/",
+      "kind": "other",
+      "path": "om/index.html",
+      "archive_url": "https://web.archive.org/web/20180217235539id_/http://cwastes.skolbloggen.se:80/om/"
+    },
+    {
+      "url": "http://cwastes.skolbloggen.se/page/2/",
+      "kind": "pagination",
+      "path": "page/2/index.html",
+      "archive_url": "https://web.archive.org/web/20130225201332id_/http://cwastes.skolbloggen.se:80/page/2/"
+    }
+  ],
+  "failed": []
+}

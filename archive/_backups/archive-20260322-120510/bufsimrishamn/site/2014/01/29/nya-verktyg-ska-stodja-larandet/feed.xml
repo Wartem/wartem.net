@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+	
+	>
+<channel>
+	<title>Kommentarer till Nya digitala verktyg ska stödja lärandet</title>
+	<atom:link href="https://bufsimrishamn.wordpress.com/2014/01/29/nya-verktyg-ska-stodja-larandet/feed/" rel="self" type="application/rss+xml" />
+	<link>https://bufsimrishamn.wordpress.com/2014/01/29/nya-verktyg-ska-stodja-larandet/</link>
+	<description>Barn- och utbildningschefen i Simrishamns kommun informerar</description>
+	<lastBuildDate>Tue, 19 May 2015 09:52:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.com/</generator>
+	<item>
+		<title>Av: Förvaltningschef</title>
+		<link>https://bufsimrishamn.wordpress.com/2014/01/29/nya-verktyg-ska-stodja-larandet/comment-page-1/#comment-15</link>
+		<dc:creator><![CDATA[Förvaltningschef]]></dc:creator>
+		<pubDate>Fri, 16 May 2014 12:19:16 +0000</pubDate>
+		<guid isPermaLink="false">http://bufsimrishamn.wordpress.com/?p=3#comment-15</guid>
+		<description><![CDATA[Intressant läsning! Tack för länken och för de många tipsen på vidareläsning!]]></description>
+		<content:encoded><![CDATA[<p>Intressant läsning! Tack för länken och för de många tipsen på vidareläsning!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Av: niiloa</title>
+		<link>https://bufsimrishamn.wordpress.com/2014/01/29/nya-verktyg-ska-stodja-larandet/comment-page-1/#comment-14</link>
+		<dc:creator><![CDATA[niiloa]]></dc:creator>
+		<pubDate>Wed, 14 May 2014 05:12:25 +0000</pubDate>
+		<guid isPermaLink="false">http://bufsimrishamn.wordpress.com/?p=3#comment-14</guid>
+		<description><![CDATA[Kul att Simrishamn hakar på GAFE! Jag har implementerat en pilot på Tunaskolan i Luleå och erfarenheterna är mycket goda. Har också skrivit lite mer om molntjänsterna generellt och GAFE i synnerhet, se här http://bit.ly/SkolanMolnet]]></description>
+		<content:encoded><![CDATA[<p>Kul att Simrishamn hakar på GAFE! Jag har implementerat en pilot på Tunaskolan i Luleå och erfarenheterna är mycket goda. Har också skrivit lite mer om molntjänsterna generellt och GAFE i synnerhet, se här <a href="http://bit.ly/SkolanMolnet" rel="nofollow">http://bit.ly/SkolanMolnet</a></p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

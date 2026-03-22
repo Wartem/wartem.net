@@ -5,12 +5,13 @@ import html
 import json
 import posixpath
 import re
-from urllib.parse import quote_plus
+from urllib.parse import quote_plus, urlsplit
 from dataclasses import dataclass
 from pathlib import Path, PurePosixPath
 
 THEME_RELATIVE_PATH = "_recovery/recovery.css"
 SEARCH_SCRIPT_RELATIVE_PATH = "_recovery/recovery-search.js"
+TOPBAR_SCRIPT_RELATIVE_PATH = "_recovery/recovery-topbar.js"
 ROBOTS_META_TAG = '<meta name="robots" content="noindex, nofollow, noarchive" />'
 ROBOTS_TXT_CONTENT = "User-agent: *\nDisallow: /\n"
 HTACCESS_CONTENT = """<IfModule mod_headers.c>
@@ -36,8 +37,19 @@ img{max-width:100%;height:auto}
 .entry-content blockquote{border-left:4px solid var(--accent);background:#e6f2f2;padding:.8rem 1rem}
 .recovery-topbar{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(17,36,35,.94);color:#f5f3ee;border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(12px)}
 .recovery-topbar__inner{max-width:calc(var(--max) + 2rem);margin:0 auto;display:grid;grid-template-columns:auto 1fr auto;gap:.75rem 1rem;align-items:center;padding:.8rem 1rem}
+.recovery-topbar__brand{display:inline-flex;align-items:center;font-weight:700;color:#f5f3ee;text-decoration:none;padding:0;background:none;border-radius:0}
 .recovery-topbar nav{display:flex;flex-wrap:wrap;gap:.65rem}
 .recovery-topbar a{color:#d7f1ef;text-decoration:none;padding:.3rem .65rem;border-radius:999px;background:rgba(215,241,239,.08)}
+.recovery-topbar__rootlink{margin-left:auto;background:#d7f1ef!important;color:#123130!important;font-weight:700}
+.recovery-collection-menu{position:relative}
+.recovery-collection-menu summary{list-style:none;cursor:pointer;color:#d7f1ef;padding:.3rem .65rem;border-radius:999px;background:rgba(215,241,239,.08)}
+.recovery-collection-menu summary::-webkit-details-marker{display:none}
+.recovery-collection-menu[open] summary{background:rgba(215,241,239,.16)}
+.recovery-collection-menu__panel{position:absolute;top:calc(100% + .45rem);left:0;min-width:18rem;max-width:min(28rem,80vw);padding:.5rem;background:#173331;border:1px solid rgba(255,255,255,.1);border-radius:14px;box-shadow:0 18px 34px rgba(0,0,0,.24);display:grid;gap:.2rem}
+.recovery-collection-menu__panel a{display:block;background:transparent;padding:.55rem .7rem;border-radius:10px}
+.recovery-collection-menu__panel a:hover{background:rgba(215,241,239,.1)}
+.recovery-collection-menu__panel strong{display:block;color:#fff;font-size:.94rem}
+.recovery-collection-menu__panel span{display:block;color:#c5dad8;font-size:.82rem}
 .recovery-topbar__search form{display:flex;gap:.5rem}
 .recovery-topbar__search input{width:min(18rem,42vw);padding:.55rem .9rem;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);color:#fff}
 .recovery-topbar__search button{padding:.55rem .9rem;border:0;border-radius:999px;background:#d7f1ef;color:#123130;font-weight:700}
@@ -124,10 +136,12 @@ img{max-width:100%;height:auto}
 .recovery-listing-card__media img{width:100%;margin:0}
 .recovery-listing-card__date{font-weight:700;color:#0a4d52}
 .recovery-listing-card__title-link{text-decoration:none}
-.single #main,.single-post #main,.post-template-default #main{display:block!important;grid-template-columns:minmax(0,1fr)}
+.single #main,.single-post #main,.post-template-default #main,.recovery-kind-post #main{display:block!important;grid-template-columns:minmax(0,1fr)}
+.recovery-kind-post #header,.recovery-kind-post #sub-header,.recovery-kind-post #sidebar,.recovery-kind-post #access{display:none!important}
+.recovery-kind-post #page{max-width:min(var(--measure) + 8rem,var(--max))}
 .single #primary,.single-post #primary,.post-template-default #primary{display:block!important;float:none!important;width:100%!important;max-width:none!important;margin:0!important;padding:0}
 .single #secondary,.single-post #secondary,.post-template-default #secondary,.single #tertiary,.single-post #tertiary,.post-template-default #tertiary{display:none!important}
-.single #content,.single-post #content,.post-template-default #content{display:block!important;float:none!important;width:100%!important;max-width:none!important;margin:0!important;padding:1.65rem clamp(1rem,2vw,1.85rem) 2.4rem}
+.single #content,.single-post #content,.post-template-default #content,.recovery-kind-post #content,.recovery-kind-post .wrapper>#content{display:block!important;float:none!important;width:100%!important;max-width:none!important;margin:0 auto!important;padding:1.65rem clamp(1rem,2vw,1.85rem) 2.4rem}
 .single #content > .recovery-context,.single-post #content > .recovery-context,.post-template-default #content > .recovery-context{max-width:var(--measure);margin-left:auto;margin-right:auto}
 .single #masthead,.single-post #masthead,.post-template-default #masthead{padding-bottom:0;background:linear-gradient(180deg,#fffdf8 0%,#fbf7ef 100%)}
 .single #masthead a,.single-post #masthead a,.post-template-default #masthead a{display:block}
@@ -149,6 +163,46 @@ img{max-width:100%;height:auto}
 .single .entry-content ul,.single .entry-content ol,.single-post .entry-content ul,.single-post .entry-content ol,.post-template-default .entry-content ul,.post-template-default .entry-content ol{padding-left:1.3rem}
 .single .entry-content img,.single-post .entry-content img,.post-template-default .entry-content img{display:block;max-width:100%!important;height:auto!important;border-radius:14px}
 .single .entry-content a > img,.single-post .entry-content a > img,.post-template-default .entry-content a > img{box-shadow:0 18px 38px rgba(55,42,14,.11)}
+.single .recovery-sidepanel,.single-post .recovery-sidepanel,.post-template-default .recovery-sidepanel{float:right;width:min(18rem,42%);margin:.2rem 0 1.2rem 1.4rem;padding:1rem 1.05rem;border:1px solid var(--border);border-radius:16px;background:linear-gradient(180deg,#f7f1e6 0%,#fbf7ef 100%);box-shadow:0 12px 28px rgba(55,42,14,.07)}
+.single .recovery-sidepanel h3,.single-post .recovery-sidepanel h3,.post-template-default .recovery-sidepanel h3{margin:0 0 .7rem;font-size:1rem;line-height:1.2;color:#0a4d52}
+.single .recovery-sidepanel p,.single-post .recovery-sidepanel p,.post-template-default .recovery-sidepanel p,.single .recovery-sidepanel ul,.single-post .recovery-sidepanel ul,.post-template-default .recovery-sidepanel ul,.single .recovery-sidepanel ol,.single-post .recovery-sidepanel ol,.post-template-default .recovery-sidepanel ol,.single .recovery-sidepanel small,.single-post .recovery-sidepanel small,.post-template-default .recovery-sidepanel small{margin:.45rem 0;font-size:.95rem;line-height:1.6}
+.single .recovery-sidepanel a,.single-post .recovery-sidepanel a,.post-template-default .recovery-sidepanel a{text-decoration:none}
+.single .recovery-sidepanel small,.single-post .recovery-sidepanel small,.post-template-default .recovery-sidepanel small{display:block;color:var(--muted)}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #main{display:block!important;grid-template-columns:minmax(0,1fr)}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #top{padding:.85rem 1.15rem 0}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #header .wrapper{padding:.15rem 1.15rem .95rem}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #blog-title{display:block;margin:.15rem 0 .35rem}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #blog-description{margin:0}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #content{display:block!important;float:none!important;width:100%!important;max-width:none!important;margin:0!important;padding:1.45rem clamp(1rem,2vw,1.6rem) 2rem}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #sidebar,.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #secondary,.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #tertiary,.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #primary-sidebar,.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #secondary-sidebar{display:none!important}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #header #navigation,.recovery-site-cwaste-skolbloggen-se.recovery-kind-other #sub-header{display:none!important}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc{float:right;width:min(23rem,44%);max-height:calc(100vh - 8rem);overflow:auto;margin:.15rem 0 1.25rem 1.4rem;padding:1rem 1.05rem;border:1px solid var(--border);border-radius:16px;background:linear-gradient(180deg,#f7f1e6 0%,#fbf7ef 100%);box-shadow:0 12px 28px rgba(55,42,14,.07)}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc h3{margin:0 0 .65rem;font-size:1rem;line-height:1.2;color:#0a4d52}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc .nav,.recovery-site-cwaste-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc ul{list-style:none;margin:.35rem 0 0;padding-left:0}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc li{margin:.18rem 0}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc li ul{padding-left:.9rem;margin-top:.2rem;border-left:1px solid rgba(13,110,115,.16)}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc a{text-decoration:none}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc .recovery-sidepanel__section + .recovery-sidepanel__section{margin-top:1rem;padding-top:.85rem;border-top:1px solid var(--border)}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc .recovery-sidepanel__section-title{display:block;font-weight:700;color:#0a4d52;margin-bottom:.45rem}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other .recovery-generated-overview{padding-right:.2rem}
+.recovery-site-cwaste-skolbloggen-se.recovery-kind-other .entry-content::after{content:"";display:block;clear:both}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #main{display:block!important;grid-template-columns:minmax(0,1fr)}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #top{padding:.85rem 1.15rem 0}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #header .wrapper{padding:.15rem 1.15rem .95rem}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #blog-title{display:block;margin:.15rem 0 .35rem}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #blog-description{margin:0}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #content{display:block!important;float:none!important;width:100%!important;max-width:none!important;margin:0!important;padding:1.45rem clamp(1rem,2vw,1.6rem) 2rem}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #sidebar,.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #secondary,.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #tertiary,.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #primary-sidebar,.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #secondary-sidebar{display:none!important}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #header #navigation,.recovery-site-ikttips-skolbloggen-se.recovery-kind-other #sub-header{display:none!important}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc{float:right;width:min(23rem,44%);max-height:calc(100vh - 8rem);overflow:auto;margin:.15rem 0 1.25rem 1.4rem;padding:1rem 1.05rem;border:1px solid var(--border);border-radius:16px;background:linear-gradient(180deg,#f7f1e6 0%,#fbf7ef 100%);box-shadow:0 12px 28px rgba(55,42,14,.07)}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc h3{margin:0 0 .65rem;font-size:1rem;line-height:1.2;color:#0a4d52}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc .nav,.recovery-site-ikttips-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc ul{list-style:none;margin:.35rem 0 0;padding-left:0}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc li{margin:.18rem 0}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc li ul{padding-left:.9rem;margin-top:.2rem;border-left:1px solid rgba(13,110,115,.16)}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc a{text-decoration:none}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc .recovery-sidepanel__section + .recovery-sidepanel__section{margin-top:1rem;padding-top:.85rem;border-top:1px solid var(--border)}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other .recovery-sidepanel--toc .recovery-sidepanel__section-title{display:block;font-weight:700;color:#0a4d52;margin-bottom:.45rem}
+.recovery-site-ikttips-skolbloggen-se.recovery-kind-other .entry-content::after{content:"";display:block;clear:both}
 .single .alignleft,.single .alignright,.single .aligncenter,.single-post .alignleft,.single-post .alignright,.single-post .aligncenter,.post-template-default .alignleft,.post-template-default .alignright,.post-template-default .aligncenter,.single .wp-caption.alignleft,.single .wp-caption.alignright,.single .wp-caption.aligncenter,.single-post .wp-caption.alignleft,.single-post .wp-caption.alignright,.single-post .wp-caption.aligncenter,.post-template-default .wp-caption.alignleft,.post-template-default .wp-caption.alignright,.post-template-default .wp-caption.aligncenter{float:none!important;display:block!important;margin:1.6rem auto!important}
 .single .wp-caption,.single-post .wp-caption,.post-template-default .wp-caption{width:min(100%,var(--measure))!important;max-width:100%!important;padding:.7rem;border:1px solid var(--border);border-radius:16px;background:var(--paper-alt);box-shadow:0 16px 35px rgba(55,42,14,.08)}
 .single .wp-caption img,.single-post .wp-caption img,.post-template-default .wp-caption img{width:100%!important;height:auto!important;margin:0}
@@ -168,14 +222,56 @@ img{max-width:100%;height:auto}
 .single .tiled-gallery .gallery-row,.single-post .tiled-gallery .gallery-row,.post-template-default .tiled-gallery .gallery-row,.single .tiled-gallery .gallery-group,.single-post .tiled-gallery .gallery-group,.post-template-default .tiled-gallery .gallery-group{width:100%!important;height:auto!important;display:flex;flex-wrap:wrap;gap:.6rem}
 .single .tiled-gallery-item,.single-post .tiled-gallery-item,.post-template-default .tiled-gallery-item{width:calc(50% - .3rem)!important;height:auto!important;flex:1 1 240px}
 .single .tiled-gallery-item img,.single-post .tiled-gallery-item img,.post-template-default .tiled-gallery-item img{width:100%!important;height:auto!important;display:block;border-radius:10px}
-.single #comments,.single-post #comments,.post-template-default #comments{display:none}
+.single #comments,.single-post #comments,.post-template-default #comments,.recovery-kind-post #comments{display:block;max-width:var(--measure);margin:2.4rem auto 0;padding:1.35rem 1.4rem;border-top:1px solid var(--border);background:#fbf7ef;border-radius:16px}
+.single #comments .commentlist,.single-post #comments .commentlist,.post-template-default #comments .commentlist{margin:1rem 0 0;padding-left:1.2rem}
+.single #comments .comment,.single-post #comments .comment,.post-template-default #comments .comment{margin-bottom:1rem}
+.recovery-kind-post .pagination-single{max-width:var(--measure);display:flex;justify-content:space-between;gap:1rem;margin:2rem auto 0;padding:1rem 1.1rem;border:1px solid var(--border);border-radius:14px;background:linear-gradient(180deg,#f7f1e6 0%,#fbf7ef 100%)}
+.recovery-kind-post .pagination-single .next{text-align:right;margin-left:auto}
 .wpcnt,[id^="atatags-"],script,.sharedaddy,.sd-content,.jp-relatedposts,.widget_facebook_likebox,.widget_wpcom_social_media_icons_widget,.widget_flickr,.widget_twitter_timeline,.widget_links,.widget_text .wpcnt,#access,.menu-toggle,.comments-link,.assistive-text.section-heading,[id^="like-post-wrapper-"]{display:none!important}
-@media (max-width:980px){.recovery-topbar__inner{grid-template-columns:1fr}.recovery-topbar__search,.recovery-topbar__search form,.recovery-topbar__search input{width:100%}.recovery-search-controls,.recovery-browse-layout{grid-template-columns:1fr}}
-@media (max-width:900px){#main{grid-template-columns:1fr}#secondary{border-left:0;border-top:1px solid var(--border)}.recovery-hero{grid-template-columns:1fr}#primary,#secondary,.recovery-catalog{padding:1.2rem}.recovery-list{columns:1}.archive #content,.category #content,.tag #content,.author #content,.blog #content,.single #content,.single-post #content,.post-template-default #content{padding:1rem}.archive #nav-above,.category #nav-above,.tag #nav-above,.author #nav-above,.blog #nav-above,.archive #nav-below,.category #nav-below,.tag #nav-below,.author #nav-below,.blog #nav-below,.single #nav-above,.single-post #nav-above,.post-template-default #nav-above,.single #nav-below,.single-post #nav-below,.post-template-default #nav-below,.recovery-section-header{flex-direction:column;align-items:flex-start}.archive #nav-above .nav-next,.category #nav-above .nav-next,.tag #nav-above .nav-next,.author #nav-above .nav-next,.blog #nav-above .nav-next,.archive #nav-below .nav-next,.category #nav-below .nav-next,.tag #nav-below .nav-next,.author #nav-below .nav-next,.blog #nav-below .nav-next,.single #nav-above .nav-previous,.single-post #nav-above .nav-previous,.post-template-default #nav-above .nav-previous,.single #nav-below .nav-previous,.single-post #nav-below .nav-previous,.post-template-default #nav-below .nav-previous,.single #nav-above .nav-next,.single-post #nav-above .nav-next,.post-template-default #nav-above .nav-next,.single #nav-below .nav-next,.single-post #nav-below .nav-next,.post-template-default #nav-below .nav-next{max-width:none;text-align:left;margin-left:0}.recovery-listing-card__body{grid-template-columns:1fr}.single .tiled-gallery-item,.single-post .tiled-gallery-item,.post-template-default .tiled-gallery-item{width:100%!important;flex-basis:100%}}
+@media (max-width:980px){body.recovery-enhanced{padding-top:8.2rem}.recovery-topbar__inner{grid-template-columns:1fr}.recovery-topbar__search,.recovery-topbar__search form,.recovery-topbar__search input{width:100%}.recovery-search-controls,.recovery-browse-layout{grid-template-columns:1fr}}
+@media (max-width:900px){#main{grid-template-columns:1fr}#secondary{border-left:0;border-top:1px solid var(--border)}.recovery-hero{grid-template-columns:1fr}#primary,#secondary,.recovery-catalog{padding:1.2rem}.recovery-list{columns:1}.archive #content,.category #content,.tag #content,.author #content,.blog #content,.single #content,.single-post #content,.post-template-default #content,.recovery-kind-post #content,.recovery-kind-post .wrapper>#content{padding:1rem}.archive #nav-above,.category #nav-above,.tag #nav-above,.author #nav-above,.blog #nav-above,.archive #nav-below,.category #nav-below,.tag #nav-below,.author #nav-below,.blog #nav-below,.single #nav-above,.single-post #nav-above,.post-template-default #nav-above,.single #nav-below,.single-post #nav-below,.post-template-default #nav-below,.recovery-section-header{flex-direction:column;align-items:flex-start}.archive #nav-above .nav-next,.category #nav-above .nav-next,.tag #nav-above .nav-next,.author #nav-above .nav-next,.blog #nav-above .nav-next,.archive #nav-below .nav-next,.category #nav-below .nav-next,.tag #nav-below .nav-next,.author #nav-below .nav-next,.blog #nav-below .nav-next,.single #nav-above .nav-previous,.single-post #nav-above .nav-previous,.post-template-default #nav-above .nav-previous,.single #nav-below .nav-previous,.single-post #nav-below .nav-previous,.post-template-default #nav-below .nav-previous,.single #nav-above .nav-next,.single-post #nav-above .nav-next,.post-template-default #nav-above .nav-next,.single #nav-below .nav-next,.single-post #nav-below .nav-next,.post-template-default #nav-below .nav-next,.recovery-kind-post .pagination-single{max-width:none;text-align:left;margin-left:0;flex-direction:column}.recovery-listing-card__body{grid-template-columns:1fr}.single .tiled-gallery-item,.single-post .tiled-gallery-item,.post-template-default .tiled-gallery-item{width:100%!important;flex-basis:100%}.single .recovery-sidepanel,.single-post .recovery-sidepanel,.post-template-default .recovery-sidepanel{float:none;width:auto;margin:1rem 0}}
 """
 
 SEARCH_SCRIPT = r"""
 (function(){function n(t){return(t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}function e(t){return String(t||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}function m(d,terms){if(!terms.length)return true;var h=n([d.title,d.kind_label,d.path,d.summary].join(" "));return terms.every(function(term){return h.indexOf(term)!==-1})}function render(docs){var c=document.querySelector("[data-search-results]"),meta=document.querySelector("[data-search-meta]");if(!c||!meta)return;meta.textContent=docs.length?(docs.length+" traffar"):"Inga traffar";if(!docs.length){c.innerHTML='<div class="recovery-empty">Ingen sida matchade sokningen.</div>';return}c.innerHTML=docs.map(function(d){return '<article class="recovery-result"><h3><a href="../'+encodeURI(d.path)+'">'+e(d.title)+'</a></h3><div class="recovery-result__meta">'+e([d.kind_label,d.date_label].filter(Boolean).join(" · "))+'</div>'+(d.summary?'<p>'+e(d.summary)+'</p>':'')+'<p class="recovery-result__path">'+e(d.path)+'</p></article>'}).join("")}function apply(index){var q=document.querySelector("[data-search-query]").value||"",y=document.querySelector("[data-search-year]").value||"all",k=(document.querySelector("[data-search-kind].is-active")||{}).dataset.searchKind||"all",terms=n(q).split(/\s+/).filter(Boolean),docs=index.filter(function(d){if(k!=="all"&&d.kind!==k)return false;if(y!=="all"&&String(d.year||"")!==y)return false;return m(d,terms)});docs.sort(function(a,b){return (a.sort_date||"")<(b.sort_date||"")?1:-1});render(docs.slice(0,250));var u=new URL(window.location.href);q?u.searchParams.set("q",q):u.searchParams.delete("q");k!=="all"?u.searchParams.set("kind",k):u.searchParams.delete("kind");y!=="all"?u.searchParams.set("year",y):u.searchParams.delete("year");history.replaceState(null,"",u.toString())}fetch("./search-index.json").then(function(r){return r.json()}).then(function(index){var u=new URL(window.location.href),q=document.querySelector("[data-search-query]"),y=document.querySelector("[data-search-year]");q.value=u.searchParams.get("q")||"";if(u.searchParams.get("year"))y.value=u.searchParams.get("year");document.querySelectorAll("[data-search-kind]").forEach(function(b){if(b.dataset.searchKind===(u.searchParams.get("kind")||"all"))b.classList.add("is-active");b.addEventListener("click",function(){document.querySelectorAll("[data-search-kind]").forEach(function(x){x.classList.remove("is-active")});b.classList.add("is-active");apply(index)})});q.addEventListener("input",function(){apply(index)});y.addEventListener("change",function(){apply(index)});document.querySelector("[data-search-form]").addEventListener("submit",function(ev){ev.preventDefault();apply(index)});apply(index)}).catch(function(){var c=document.querySelector("[data-search-results]"),m=document.querySelector("[data-search-meta]");if(m)m.textContent="Sokindex kunde inte lasas";if(c)c.innerHTML='<div class="recovery-empty">Det gick inte att lasa sokindexet.</div>'})})();
+"""
+
+TOPBAR_SCRIPT = r"""
+(function(){
+  function closeMenus(exceptMenu){
+    document.querySelectorAll(".recovery-collection-menu[open]").forEach(function(menu){
+      if(menu !== exceptMenu){
+        menu.removeAttribute("open");
+      }
+    });
+  }
+  document.addEventListener("click", function(event){
+    var menu = event.target.closest(".recovery-collection-menu");
+    if(menu){
+      closeMenus(menu);
+      return;
+    }
+    closeMenus(null);
+  });
+  document.addEventListener("keydown", function(event){
+    if(event.key === "Escape"){
+      closeMenus(null);
+    }
+  });
+  document.querySelectorAll(".recovery-collection-menu summary").forEach(function(summary){
+    summary.addEventListener("click", function(){
+      var menu = summary.closest(".recovery-collection-menu");
+      if(!menu){
+        return;
+      }
+      setTimeout(function(){
+        if(menu.hasAttribute("open")){
+          closeMenus(menu);
+        }
+      }, 0);
+    });
+  });
+})();
 """
 
 
@@ -206,9 +302,32 @@ class PostRecord:
     tags: list[tuple[str, str]]
 
 
+@dataclass
+class CollectionNavItem:
+    title: str
+    href: str
+
+
+CURRENT_COLLECTION_ITEMS: list[CollectionNavItem] = []
+
+
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Enhance the recovered site with local navigation and search.")
     parser.add_argument("--site-dir", default="site")
+    parser.add_argument("--site-title", default="Barn- och utbildning Simrishamn")
+    parser.add_argument("--site-label", default="BUF Simrishamn")
+    parser.add_argument(
+        "--site-intro",
+        default="Detta är en lokal, återställd version av den borttagna sajten. Startsidan är omgjord för att göra materialet mer läsbart och lättare att hitta i.",
+    )
+    parser.add_argument("--collection-file", default="")
+    parser.add_argument("--collection-slug", default="")
+    parser.add_argument("--cleanup-level", choices=["none", "minimal", "aggressive"], default="none")
+    parser.add_argument(
+        "--allow-destructive-cleanup",
+        action="store_true",
+        help="Required to run any cleanup that can remove legacy HTML blocks.",
+    )
     return parser.parse_args(argv)
 
 
@@ -221,11 +340,18 @@ def relpath_to_theme(html_path: Path, site_dir: Path) -> str:
     return ("../" * depth) + THEME_RELATIVE_PATH
 
 
+def relpath_to_topbar_script(html_path: Path, site_dir: Path) -> str:
+    depth = len([part for part in html_path.relative_to(site_dir).as_posix().split("/")[:-1] if part])
+    return ("../" * depth) + TOPBAR_SCRIPT_RELATIVE_PATH
+
+
 def classify_path(relative: str) -> tuple[str, int | None, int | None, int | None]:
     if relative == "index.html":
         return "home", None, None, None
     if relative == "browse/index.html":
         return "browse", None, None, None
+    if relative.endswith("/feed/index.html") or relative == "feed/index.html":
+        return "feed", None, None, None
     post_match = re.match(r"(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/[^/]+/index\.html$", relative)
     if post_match:
         return "post", int(post_match.group("year")), int(post_match.group("month")), int(post_match.group("day"))
@@ -253,7 +379,7 @@ def kind_label(kind: str) -> str:
         "tag": "Tagg",
         "pagination": "Paginering",
         "feed": "Flöde",
-        "other": "Sida",
+        "other": "Innehållssida",
     }.get(kind, "Sida")
 
 
@@ -265,11 +391,115 @@ def date_label(year: int | None, month: int | None, day: int | None) -> str:
     return f"{year:04d}" if year else ""
 
 
+def maybe_fix_mojibake(text: str) -> str:
+    markers = ("Ã", "Â", "â", "¤", "�")
+    if not text or not any(marker in text for marker in markers):
+        return text
+    try:
+        repaired = text.encode("latin-1").decode("utf-8")
+    except UnicodeError:
+        return text
+    original_score = sum(text.count(marker) for marker in markers)
+    repaired_score = sum(repaired.count(marker) for marker in markers)
+    return repaired if repaired_score < original_score else text
+
+
+def repair_common_mojibake_sequences(text: str) -> str:
+    replacements = {
+        "Ã¥": "å",
+        "Ã¤": "ä",
+        "Ã¶": "ö",
+        "Ã…": "Å",
+        "Ã„": "Ä",
+        "Ã–": "Ö",
+        "Ã©": "é",
+        "Ã‰": "É",
+        "Â»": "»",
+        "Â«": "«",
+        "Â": "",
+        "â€“": "–",
+        "â€”": "—",
+        "â€œ": "“",
+        "â€": "”",
+        "â€˜": "‘",
+        "â€™": "’",
+        "â€¦": "…",
+    }
+    fixed = text
+    for source, target in replacements.items():
+        fixed = fixed.replace(source, target)
+    return fixed
+
+
+def normalize_display_text(text: str) -> str:
+    fixed = repair_common_mojibake_sequences(maybe_fix_mojibake(html.unescape(text or ""))).strip()
+    fixed = re.sub(r"^\s*(?:&raquo;|»)\s*", "", fixed)
+    fixed = re.sub(r"\s+Bollplanket\s*$", "", fixed).strip()
+    return fixed
+
+
+def site_class(site_label: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", (site_label or "").lower()).strip("-")
+    return f"recovery-site-{slug}" if slug else "recovery-site-unknown"
+
+
+def strip_html_text(text: str) -> str:
+    return normalize_display_text(re.sub(r"<[^>]+>", " ", text or ""))
+
+
+def is_probable_spam_comment(comment_html: str) -> bool:
+    plain = strip_html_text(comment_html).lower()
+    hrefs = re.findall(r'href=["\']([^"\']+)["\']', comment_html, flags=re.IGNORECASE)
+    suspicious_host = any(
+        re.search(r"https?://", href, flags=re.IGNORECASE)
+        and not re.search(
+            r"(?:^https?://)?(?:[^/]+\.)?(?:skolbloggen\.se|blogspot\.com|blogger\.com|wordpress\.com)(?:/|$)",
+            href,
+            flags=re.IGNORECASE,
+        )
+        for href in hrefs
+    )
+    suspicious_name = bool(
+        re.search(
+            r"\b(?:casino|loan|credit|seo|marketing|renovation|roofing|plumbing|supplier|furniture|real\s*estate)\b",
+            plain,
+            flags=re.IGNORECASE,
+        )
+        or re.search(r"[a-z0-9]+(?:-[a-z0-9]+){1,}", plain)
+    )
+    suspicious_body = bool(
+        re.search(
+            r"\b(?:net worth|montreal area|project manager|material suppliers|furniture outlets|owning a home|renovation work|real estate|payday loan|online casino|essay writing|seo services|viagra)\b",
+            plain,
+            flags=re.IGNORECASE,
+        )
+    )
+    english_seo_style = bool(
+        suspicious_host
+        and re.search(r"\b(?:the|and|you|your|home|work|project|suppliers|manager|increase)\b", plain)
+        and not re.search(r"\b(?:och|att|det|som|jag|inte|med|för|på|är|du)\b", plain)
+    )
+    return sum([suspicious_host, suspicious_name, suspicious_body, english_seo_style]) >= 2
+
+
+def remove_probable_spam_comments(html_text: str) -> str:
+    pattern = re.compile(r'(<li\b[^>]*\bid=["\']comment-\d+["\'][^>]*>.*?</li>)', flags=re.IGNORECASE | re.DOTALL)
+
+    def replace(match: re.Match[str]) -> str:
+        comment_html = match.group(1)
+        return "" if is_probable_spam_comment(comment_html) else comment_html
+
+    cleaned = pattern.sub(replace, html_text)
+    cleaned = re.sub(r"<ol class=\"commentlist\">\s*</ol>", "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r"<ul id=\"comments\" class=\"commentlist\">\s*</ul>", "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    return cleaned
+
+
 def extract_title(html_text: str) -> str:
     for pattern in (r'<h1 class="page-title">(.*?)</h1>', r'<h1 class="entry-title">(.*?)</h1>', r'<h1 class="entry-title"><a [^>]+>(.*?)</a></h1>', r"<title>(.*?)</title>"):
         match = re.search(pattern, html_text, flags=re.IGNORECASE | re.DOTALL)
         if match:
-            return html.unescape(re.sub(r"<[^>]+>", "", match.group(1))).strip()
+            return normalize_display_text(re.sub(r"<[^>]+>", "", match.group(1)))
     return "Utan titel"
 
 
@@ -277,10 +507,63 @@ def extract_summary(html_text: str) -> str:
     for pattern in (r'<div class="entry-summary">(.*?)</div>', r'<div class="entry-content">(.*?)</div>', r"<p>(.*?)</p>"):
         match = re.search(pattern, html_text, flags=re.IGNORECASE | re.DOTALL)
         if match:
-            text = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", match.group(1)))).strip()
+            text = normalize_display_text(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", match.group(1))))
             if text:
                 return text[:220].rstrip() + ("..." if len(text) > 220 else "")
     return ""
+
+
+def is_reconstructed_post_summary(summary: str) -> bool:
+    normalized = normalize_display_text(summary).lower()
+    return normalized.startswith("den fullständiga artikelsidan kunde inte återfinnas som egen capture i wayback machine")
+
+
+def split_post_pages(pages: list[PageMeta]) -> tuple[list[PageMeta], list[PageMeta]]:
+    full_posts: list[PageMeta] = []
+    reconstructed_posts: list[PageMeta] = []
+    for page in pages:
+        if page.kind != "post":
+            continue
+        if is_reconstructed_post_summary(page.summary):
+            reconstructed_posts.append(page)
+        else:
+            full_posts.append(page)
+    return full_posts, reconstructed_posts
+
+
+def is_content_page(page: PageMeta) -> bool:
+    if page.kind != "other":
+        return False
+    lowered = page.path.lower()
+    if lowered.startswith("author/") or lowered.startswith("search/"):
+        return False
+    if lowered in {"wp-load.html", "wp-signup.html"}:
+        return False
+    if "/trackback/" in lowered or lowered.endswith("/trackback/index.html"):
+        return False
+    return True
+
+
+def content_pages_by_section(pages: list[PageMeta]) -> list[tuple[str, str, list[PageMeta]]]:
+    groups: dict[str, list[PageMeta]] = {}
+    for page in pages:
+        if not is_content_page(page):
+            continue
+        cleaned = page.path.removesuffix("/index.html").strip("/")
+        if not cleaned:
+            continue
+        root = cleaned.split("/")[0]
+        groups.setdefault(root, []).append(page)
+
+    ranked: list[tuple[str, str, list[PageMeta]]] = []
+    for root, group_pages in groups.items():
+        root_index = f"{root}/index.html"
+        root_page = next((page for page in group_pages if page.path == root_index), None)
+        target = root_page.path if root_page else sorted(group_pages, key=lambda page: (page.path.count("/"), page.title.lower()))[0].path
+        ranked.append((pretty_slug(root_index), target, sorted(group_pages, key=lambda page: (page.path.count("/"), page.title.lower()))))
+
+    ranked.sort(key=lambda item: (-len(item[2]), item[0].lower()))
+    return ranked
 
 
 def pretty_slug(relative: str) -> str:
@@ -316,7 +599,14 @@ def build_topbar_search(prefix: str) -> str:
     return f'<div class="recovery-topbar__search"><form action="{prefix}browse/index.html" method="get"><input type="search" name="q" placeholder="Sök bland artiklar och sidor" /><button type="submit">Sök</button></form></div>'
 
 
-def build_browse_page(pages: list[PageMeta], post_records: list[PostRecord]) -> str:
+def build_topbar_brand(label: str) -> str:
+    return f'<a class="recovery-topbar__brand" href="index.html">{html.escape(label)}</a>'
+
+
+def build_browse_page(pages: list[PageMeta], post_records: list[PostRecord], site_label: str = "BUF Simrishamn", collection_items: list[CollectionNavItem] | None = None) -> str:
+    full_posts, reconstructed_posts = split_post_pages(pages)
+    content_pages = [page for page in pages if is_content_page(page)]
+    section_groups = content_pages_by_section(pages)
     posts = sorted((p for p in pages if p.kind == "post"), key=lambda p: (p.year or 0, p.month or 0, p.day or 0, p.path), reverse=True)
     archives = sorted((p for p in pages if p.kind == "archive"), key=lambda p: (p.year or 0, p.month or 0), reverse=True)
     categories = sorted((p for p in pages if p.kind == "category"), key=lambda p: p.title.lower())
@@ -333,35 +623,48 @@ def build_browse_page(pages: list[PageMeta], post_records: list[PostRecord]) -> 
             category_counts[href] = category_counts.get(href, 0) + 1
         for href, _ in record.tags:
             tag_counts[href] = tag_counts.get(href, 0) + 1
+    visible_archives = [page for page in archives if archive_counts.get(page.path, 0) > 0] or archives
+    visible_categories = [page for page in categories if category_counts.get(page.path, 0) > 0] or categories
+    visible_tags = [page for page in tags if tag_counts.get(page.path, 0) > 0] or tags
     recent_cards = "\n".join(
         f'<li><a href="../{p.path}"><strong>{html.escape(p.title)}</strong><span>{html.escape(p.date_label or "Artikel")}</span></a></li>'
         for p in posts[:10]
     )
     archive_cards = "\n".join(
         f'<li><a href="../{p.path}"><strong>{p.year:04d}-{p.month:02d}</strong><span>{archive_counts.get(p.path, 0)} artiklar</span></a></li>'
-        for p in archives[:14]
+        for p in visible_archives[:14]
         if p.year and p.month
     )
     category_cards = "\n".join(
         f'<li><a href="../{p.path}"><strong>{html.escape(pretty_slug(p.path))}</strong><span>{category_counts.get(p.path, 0)} artiklar</span></a></li>'
-        for p in sorted(categories, key=lambda page: (-category_counts.get(page.path, 0), page.title.lower()))[:14]
+        for p in sorted(visible_categories, key=lambda page: (-category_counts.get(page.path, 0), page.title.lower()))[:14]
     )
     tag_cloud = " ".join(
         f'<a class="recovery-chip" href="../{p.path}">{html.escape(pretty_slug(p.path))} <strong>{tag_counts.get(p.path, 0)}</strong></a>'
-        for p in sorted(tags, key=lambda page: (-tag_counts.get(page.path, 0), page.title.lower()))[:36]
+        for p in sorted(visible_tags, key=lambda page: (-tag_counts.get(page.path, 0), page.title.lower()))[:36]
     )
     archive_list = "\n".join(
         f'<li><a href="../{p.path}"><strong>{p.year:04d}-{p.month:02d}</strong><span>{archive_counts.get(p.path, 0)} artiklar</span></a></li>'
-        for p in archives[:48]
+        for p in visible_archives[:48]
         if p.year and p.month
     )
     category_list = "\n".join(
         f'<li><a href="../{p.path}"><strong>{html.escape(pretty_slug(p.path))}</strong><span>{category_counts.get(p.path, 0)} artiklar</span></a></li>'
-        for p in sorted(categories, key=lambda page: (-category_counts.get(page.path, 0), page.title.lower()))[:60]
+        for p in sorted(visible_categories, key=lambda page: (-category_counts.get(page.path, 0), page.title.lower()))[:60]
     )
     tag_list = "\n".join(
         f'<li><a href="../{p.path}"><strong>{html.escape(pretty_slug(p.path))}</strong><span>{tag_counts.get(p.path, 0)} artiklar</span></a></li>'
-        for p in sorted(tags, key=lambda page: (-tag_counts.get(page.path, 0), page.title.lower()))[:108]
+        for p in sorted(visible_tags, key=lambda page: (-tag_counts.get(page.path, 0), page.title.lower()))[:108]
+    )
+    section_cards = "\n".join(
+        (
+            '<article class="recovery-card recovery-card--dense">'
+            f'<div class="recovery-card__header"><h2><a href="../{href}">{html.escape(title)}</a></h2><span class="recovery-meta">{len(group_pages)} sidor</span></div>'
+            f'<ul class="recovery-link-list">{"".join(f"<li><a href=\"../{page.path}\"><strong>{html.escape(page.title)}</strong><span>{html.escape(page.kind_label)}</span></a></li>" for page in group_pages[:5])}</ul>'
+            f'<p class="recovery-card__footer"><a href="../{href}">Öppna avdelningen</a></p>'
+            "</article>"
+        )
+        for title, href, group_pages in section_groups[:10]
     )
     return f"""<!DOCTYPE html>
 <html lang="sv">
@@ -372,18 +675,20 @@ def build_browse_page(pages: list[PageMeta], post_records: list[PostRecord]) -> 
 {ROBOTS_META_TAG}
 <link rel="stylesheet" href="../{THEME_RELATIVE_PATH}" />
 <script defer src="../{SEARCH_SCRIPT_RELATIVE_PATH}"></script>
+<script defer src="../{TOPBAR_SCRIPT_RELATIVE_PATH}"></script>
 </head>
 <body class="recovery-enhanced">
-<div class="recovery-topbar"><div class="recovery-topbar__inner"><strong>BUF Simrishamn</strong><nav><a href="../index.html">Startsida</a><a href="index.html">Utforska</a><a href="../recovery/index.html">Rapport</a></nav>{build_topbar_search("../")}</div></div>
+{build_topbar("browse/index.html", site_label, collection_items)}
 <main class="recovery-catalog">
 <section class="recovery-browse-layout">
 <div class="recovery-browse-main">
-<section id="search" class="recovery-section recovery-search-panel"><div class="recovery-section-header"><div><h2>S\u00f6k i den lokala kopian</h2><p>S\u00f6k i titlar, sammanfattningar, kategorier, taggar och \u00e5r. Resultaten uppdateras direkt.</p></div></div><form data-search-form><div class="recovery-search-controls"><div class="recovery-field"><label for="recovery-search-query">S\u00f6kord</label><input id="recovery-search-query" data-search-query type="search" placeholder="Titel, \u00e4mne, person, kategori..." /></div><div class="recovery-field"><label for="recovery-search-year">\u00c5r</label><select id="recovery-search-year" data-search-year><option value="all">Alla \u00e5r</option>{year_options}</select></div></div><div class="recovery-filter-row" aria-label="Filtrera p\u00e5 typ"><button type="button" class="is-active" data-search-kind="all">Allt</button><button type="button" data-search-kind="post">Artiklar</button><button type="button" data-search-kind="archive">Arkiv</button><button type="button" data-search-kind="category">Kategorier</button><button type="button" data-search-kind="tag">Taggar</button><button type="button" data-search-kind="other">\u00d6vriga sidor</button><button type="button" data-search-kind="feed">Fl\u00f6den</button></div></form><div class="recovery-results-meta" data-search-meta>Laddar s\u00f6kindex...</div><div class="recovery-results" data-search-results></div></section>
+<section id="search" class="recovery-section recovery-search-panel"><div class="recovery-section-header"><div><h2>S\u00f6k i den lokala kopian</h2><p>S\u00f6k i titlar, sammanfattningar, kategorier, taggar och \u00e5r. Resultaten uppdateras direkt.</p></div></div><form data-search-form><div class="recovery-search-controls"><div class="recovery-field"><label for="recovery-search-query">S\u00f6kord</label><input id="recovery-search-query" data-search-query type="search" placeholder="Titel, \u00e4mne, person, kategori..." /></div><div class="recovery-field"><label for="recovery-search-year">\u00c5r</label><select id="recovery-search-year" data-search-year><option value="all">Alla \u00e5r</option>{year_options}</select></div></div><div class="recovery-filter-row" aria-label="Filtrera p\u00e5 typ"><button type="button" class="is-active" data-search-kind="all">Allt</button><button type="button" data-search-kind="post">Artiklar</button><button type="button" data-search-kind="archive">Arkiv</button><button type="button" data-search-kind="category">Kategorier</button><button type="button" data-search-kind="tag">Taggar</button><button type="button" data-search-kind="other">Inneh\u00e5llssidor</button><button type="button" data-search-kind="feed">Fl\u00f6den</button></div></form><div class="recovery-results-meta" data-search-meta>Laddar s\u00f6kindex...</div><div class="recovery-results" data-search-results></div></section>
+<section id="sections" class="recovery-section"><div class="recovery-section-header"><div><h2>St\u00f6rre inneh\u00e5llsavdelningar</h2><p>Den h\u00e4r sajten best\u00e5r till stor del av \u00e4mnessidor och undervisningsmaterial, inte bara bloggposter.</p></div><span class="recovery-meta">{len(content_pages)} inneh\u00e5llssidor</span></div><div class="recovery-grid recovery-grid--balanced">{section_cards}</div></section>
 </div>
 <aside class="recovery-browse-sidebar">
 <section id="categories" class="recovery-card recovery-card--dense"><div class="recovery-card__header"><h2>Alla kategorier</h2><span class="recovery-meta">{len(categories)} st</span></div><ul class="recovery-link-list">{category_list}</ul></section>
 <section id="archives" class="recovery-card recovery-card--dense"><div class="recovery-card__header"><h2>Alla m\u00e5nadsarkiv</h2><span class="recovery-meta">{len(archives)} st</span></div><ul class="recovery-link-list">{archive_list}</ul></section>
-<section id="recent" class="recovery-card recovery-card--dense"><div class="recovery-card__header"><h2>Senaste artiklar</h2><span class="recovery-meta">{len(posts)} totalt</span></div><ul class="recovery-link-list">{recent_cards}</ul><p class="recovery-card__footer"><a href="#search">S\u00f6k bland alla artiklar</a></p></section>
+<section id="recent" class="recovery-card recovery-card--dense"><div class="recovery-card__header"><h2>Senaste poster</h2><span class="recovery-meta">{len(full_posts)} artikelsidor, {len(reconstructed_posts)} rekonstruerade poster</span></div><ul class="recovery-link-list">{recent_cards}</ul><p class="recovery-card__footer"><a href="#search">S\u00f6k bland alla poster</a></p></section>
 <section id="tags" class="recovery-card recovery-card--dense recovery-tag-panel"><div class="recovery-card__header"><h2>Taggar</h2><span class="recovery-meta">{len(tags)} st</span></div><div class="recovery-tag-cloud">{tag_cloud}</div><ul class="recovery-link-list">{tag_list}</ul></section>
 </aside>
 </section>
@@ -392,7 +697,15 @@ def build_browse_page(pages: list[PageMeta], post_records: list[PostRecord]) -> 
 </html>"""
 
 
-def build_home_page(pages: list[PageMeta]) -> str:
+def build_home_page(
+    pages: list[PageMeta],
+    site_title: str = "Barn- och utbildning Simrishamn",
+    site_label: str = "BUF Simrishamn",
+    site_intro: str = "Detta är en lokal, återställd version av den borttagna sajten. Startsidan är omgjord för att göra materialet mer läsbart och lättare att hitta i.",
+) -> str:
+    full_posts, reconstructed_posts = split_post_pages(pages)
+    content_pages = [page for page in pages if is_content_page(page)]
+    section_groups = content_pages_by_section(pages)
     posts = sorted((p for p in pages if p.kind == "post"), key=lambda p: (p.year or 0, p.month or 0, p.day or 0, p.path), reverse=True)
     years = sorted({p.year for p in posts if p.year is not None}, reverse=True)
     by_year: dict[int, list[PageMeta]] = {year: [] for year in years}
@@ -400,26 +713,39 @@ def build_home_page(pages: list[PageMeta]) -> str:
         if post.year is not None:
             by_year.setdefault(post.year, []).append(post)
     year_cards = "\n".join(
-        f'<article class="recovery-card"><h2><a href="browse/index.html?year={year}&kind=post">{year}</a></h2><p class="recovery-meta">{len(by_year[year])} artiklar</p><p><a class="recovery-chip" href="browse/index.html?year={year}&kind=post">Visa artiklar fr\u00e5n {year}</a></p></article>'
+        f'<article class="recovery-card"><h2><a href="browse/index.html?year={year}&kind=post">{year}</a></h2><p class="recovery-meta">{len(by_year[year])} poster</p><p><a class="recovery-chip" href="browse/index.html?year={year}&kind=post">Visa poster fr\u00e5n {year}</a></p></article>'
         for year in years
     )
     latest = "\n".join(f'<li><a href="{p.path}">{html.escape(p.title)}</a></li>' for p in posts[:18])
-    year_summary = "\n".join(f"<li><strong>{year}</strong>: {len(by_year[year])} artiklar</li>" for year in years)
+    year_summary = "\n".join(f"<li><strong>{year}</strong>: {len(by_year[year])} poster</li>" for year in years)
+    section_cards = "\n".join(
+        (
+            '<article class="recovery-card">'
+            f'<h2><a href="{href}">{html.escape(title)}</a></h2>'
+            f'<p class="recovery-meta">{len(group_pages)} innehållssidor</p>'
+            f'<p>{" · ".join(f"<a href=\"{page.path}\">{html.escape(page.title)}</a>" for page in group_pages[:4])}</p>'
+            f'<p><a class="recovery-chip" href="{href}">Öppna avdelningen</a></p>'
+            "</article>"
+        )
+        for title, href, group_pages in section_groups[:10]
+    )
     return f"""<!DOCTYPE html>
 <html lang="sv">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Barn- och utbildning Simrishamn</title>
+<title>{html.escape(site_title)}</title>
 {ROBOTS_META_TAG}
 <link rel="stylesheet" href="{THEME_RELATIVE_PATH}" />
+<script defer src="{TOPBAR_SCRIPT_RELATIVE_PATH}"></script>
 </head>
 <body class="recovery-enhanced">
-<div class="recovery-topbar"><div class="recovery-topbar__inner"><strong>BUF Simrishamn</strong><nav><a href="index.html">Startsida</a><a href="browse/index.html">Utforska</a><a href="recovery/index.html">Rapport</a></nav>{build_topbar_search("")}</div></div>
+{build_topbar("index.html", site_label, CURRENT_COLLECTION_ITEMS)}
 <main class="recovery-catalog">
-<div class="recovery-hero"><section class="recovery-intro"><h1>Barn- och utbildning Simrishamn</h1><p>Detta \u00e4r en lokal, \u00e5terst\u00e4lld version av den borttagna sajten. Startsidan \u00e4r omgjord f\u00f6r att g\u00f6ra materialet mer l\u00e4sbart och l\u00e4ttare att hitta i.</p><div class="recovery-quicklinks"><a href="browse/index.html">\u00d6ppna utforskaren</a><a href="browse/index.html#search">S\u00f6k direkt</a><a href="recovery/index.html">L\u00e4s rapporten</a></div></section><section class="recovery-card"><h2>Tidslinje</h2><ul>{year_summary}</ul></section></div>
+<div class="recovery-hero"><section class="recovery-intro"><h1>{html.escape(site_title)}</h1><p>{html.escape(site_intro)}</p><div class="recovery-quicklinks"><a href="browse/index.html">\u00d6ppna utforskaren</a><a href="browse/index.html#search">S\u00f6k direkt</a><a href="recovery/index.html">L\u00e4s rapporten</a></div></section><section class="recovery-card"><h2>Tidslinje</h2><ul>{year_summary}</ul><p class="recovery-meta">{len(full_posts)} artikelsidor, {len(reconstructed_posts)} rekonstruerade poster och {len(content_pages)} innehållssidor i den lokala kopian.</p></section></div>
 <section class="recovery-section"><h2>\u00c5r f\u00f6r \u00e5r</h2><div class="recovery-grid">{year_cards}</div></section>
-<section class="recovery-section"><h2>Senast \u00e5terfunna artiklar</h2><ul class="recovery-list">{latest}</ul></section>
+<section class="recovery-section"><h2>Större innehållsavdelningar</h2><div class="recovery-grid recovery-grid--balanced">{section_cards}</div></section>
+<section class="recovery-section"><h2>Senast \u00e5terfunna poster</h2><ul class="recovery-list">{latest}</ul></section>
 <section class="recovery-section"><h2>Orientering</h2><div class="recovery-grid"><article class="recovery-card"><h2>Utforska allt</h2><p>S\u00f6k och filtrera bland artiklar, arkiv, kategorier och taggar.</p><p><a class="recovery-chip" href="browse/index.html">Till utforskaren</a></p></article><article class="recovery-card"><h2>Kategorier och taggar</h2><p>Om du letar efter \u00e4mnen eller personer \u00e4r taggar och kategorier ofta snabbaste v\u00e4gen.</p><p><a class="recovery-chip" href="browse/index.html#categories">Kategorier</a> <a class="recovery-chip" href="browse/index.html#tags">Taggar</a></p></article></div></section>
 </main>
 </body>
@@ -435,15 +761,30 @@ def load_json_file(path: Path) -> dict[str, object]:
         return {}
 
 
-def build_report_page(site_dir: Path, pages: list[PageMeta]) -> str:
+def build_report_page(
+    site_dir: Path,
+    pages: list[PageMeta],
+    site_title: str = "Barn- och utbildning Simrishamn",
+    site_label: str = "BUF Simrishamn",
+) -> str:
     manifest = load_json_file(site_dir / "recovery" / "manifest.json")
     summary = load_json_file(site_dir.parent / "out" / "summary.json")
     assets_summary = load_json_file(site_dir / "recovery" / "assets-summary.json")
     priority_assets_summary = load_json_file(site_dir / "recovery" / "priority-assets-summary.json")
-    post_count = sum(1 for page in pages if page.kind == "post")
+    full_posts, reconstructed_posts = split_post_pages(pages)
+    post_count = len(full_posts)
+    reconstructed_post_count = len(reconstructed_posts)
     archive_count = sum(1 for page in pages if page.kind == "archive")
     tag_count = sum(1 for page in pages if page.kind == "tag")
     category_count = sum(1 for page in pages if page.kind == "category")
+    pagination_count = sum(1 for page in pages if page.kind == "pagination")
+    home_count = sum(1 for page in pages if page.kind == "home")
+    browse_count = sum(1 for page in pages if page.kind == "browse")
+    other_count = sum(1 for page in pages if page.kind == "other")
+    feed_count = sum(1 for page in pages if page.kind == "feed")
+    taxonomy_count = archive_count + category_count + tag_count
+    navigation_count = home_count + browse_count + pagination_count + other_count + feed_count
+    local_page_count = len(pages)
     downloaded_count = int(manifest.get("downloaded_count", 0) or 0)
     skipped_count = int(manifest.get("skipped_count", 0) or 0)
     failed_count = int(manifest.get("failed_count", 0) or 0)
@@ -451,7 +792,12 @@ def build_report_page(site_dir: Path, pages: list[PageMeta]) -> str:
     capture_count = int(summary.get("capture_count", 0) or 0)
     asset_downloaded_count = int(assets_summary.get("downloaded_count", 0) or 0)
     priority_group_count = int(priority_assets_summary.get("group_count", 0) or 0)
+    priority_downloaded_count = int(priority_assets_summary.get("downloaded_count", 0) or 0)
     priority_failed_count = int(priority_assets_summary.get("failed_count", 0) or 0)
+    local_asset_count = sum(1 for path in (site_dir / "_assets").rglob("*") if path.is_file()) if (site_dir / "_assets").exists() else 0
+    if asset_downloaded_count == 0 and priority_downloaded_count:
+        asset_downloaded_count = priority_downloaded_count
+    asset_downloaded_count = max(asset_downloaded_count, priority_downloaded_count, local_asset_count)
     kind_counts = summary.get("kind_counts", {}) if isinstance(summary.get("kind_counts"), dict) else {}
     kind_list = "".join(
         f"<li><strong>{html.escape(str(kind))}</strong>: {html.escape(str(count))}</li>"
@@ -465,14 +811,15 @@ def build_report_page(site_dir: Path, pages: list[PageMeta]) -> str:
 <title>Återställningsrapport</title>
 {ROBOTS_META_TAG}
 <link rel="stylesheet" href="../{THEME_RELATIVE_PATH}" />
+<script defer src="../{TOPBAR_SCRIPT_RELATIVE_PATH}"></script>
 </head>
 <body class="recovery-enhanced">
-<div class="recovery-topbar"><div class="recovery-topbar__inner"><strong>BUF Simrishamn</strong><nav><a href="../index.html">Startsida</a><a href="../browse/index.html">Utforska</a><a href="index.html">Rapport</a></nav>{build_topbar_search("../")}</div></div>
+{build_topbar("recovery/index.html", site_label, CURRENT_COLLECTION_ITEMS)}
 <main class="recovery-catalog">
 <div class="recovery-hero">
 <section class="recovery-intro">
 <h1>Återställningsrapport</h1>
-<p>Den här sidan sammanfattar vad som faktiskt har återställts lokalt, vilka datakällor som användes och vilka delar som fortfarande bara finns som rådata eller delvis kompletterad media.</p>
+<p>Den här sidan sammanfattar vad som faktiskt har återställts lokalt för {html.escape(site_title)}, vilka datakällor som användes och vilka delar som fortfarande bara finns som rådata eller delvis kompletterad media.</p>
 <div class="recovery-quicklinks"><a href="../index.html">Till startsidan</a><a href="../browse/index.html">Öppna utforskaren</a><a href="../browse/index.html?kind=post">Visa artiklar</a></div>
 </section>
 <section class="recovery-card">
@@ -483,7 +830,7 @@ def build_report_page(site_dir: Path, pages: list[PageMeta]) -> str:
 </div>
 <section class="recovery-section">
 <div class="recovery-grid">
-<article class="recovery-card"><h2>Återställda sidor</h2><p><strong>{post_count}</strong> artiklar, <strong>{archive_count}</strong> månadsarkiv, <strong>{category_count}</strong> kategorier och <strong>{tag_count}</strong> taggsidor finns lokalt.</p></article>
+<article class="recovery-card"><h2>Återställda sidor</h2><p><strong>{local_page_count}</strong> lokala HTML-sidor totalt.</p><ul><li><strong>Artikelsidor:</strong> {post_count}</li><li><strong>Rekonstruerade artikelposter:</strong> {reconstructed_post_count}</li><li><strong>Navigationssidor:</strong> {navigation_count}</li><li><strong>Tagg/Kategori/Arkiv:</strong> {taxonomy_count}</li><li><strong>Assets:</strong> {asset_downloaded_count}</li></ul></article>
 <article class="recovery-card"><h2>CDX-inventering</h2><p><strong>{unique_url_count}</strong> unika URL:er och <strong>{capture_count}</strong> captures i sammanställningen från CDX.</p></article>
 <article class="recovery-card"><h2>Media</h2><p><strong>{asset_downloaded_count}</strong> assets hämtade i stegvisa batchar. Prioriterad mediaanalys omfattade <strong>{priority_group_count}</strong> grupper och gav <strong>{priority_failed_count}</strong> kvarstående fel i senaste snabbspåret.</p></article>
 </div>
@@ -507,7 +854,7 @@ def build_report_page(site_dir: Path, pages: list[PageMeta]) -> str:
 </article>
 <article class="recovery-card">
 <h2>Tolkning</h2>
-<p>Lokalsajten är avsedd som en läsbar arkivkopia. Interaktiva WordPress-funktioner, kommentarer, cookie-dialoger och prenumerationswidgetar har därför tagits bort, medan innehåll, intern navigering och arkivstruktur har behållits eller byggts om för statisk visning.</p>
+<p>Lokalsajten är avsedd som en läsbar arkivkopia. Interaktiva WordPress-funktioner, inloggning, registrering, cookie-dialoger och annan teknisk plattformsbrus har därför tagits bort, medan publicerat innehåll, bevarade kommentarer, intern navigering och arkivstruktur har behållits eller byggts om för statisk visning.</p>
 </article>
 </div>
 </section>
@@ -517,6 +864,7 @@ def build_report_page(site_dir: Path, pages: list[PageMeta]) -> str:
 
 
 def clean_html(html_text: str) -> str:
+    html_text = maybe_fix_mojibake(html_text)
     patterns = [
         r"<script\b[^>]*>.*?</script>",
         r'<link\b[^>]+rel="dns-prefetch"[^>]*>\s*',
@@ -543,10 +891,26 @@ def clean_html(html_text: str) -> str:
         r'<div id="likes-other-gravatars"[^>]*>.*?</div>\s*',
         r'<iframe[^>]+id="likes-master"[^>]*>.*?</iframe>\s*',
         r'<div id="jp-post-flair"[^>]*>.*?</div>\s*',
-        r'<div id="comments">.*?</div><!-- #comments -->\s*',
+        r'<li[^>]*id="bp-adminbar-[^"]*"[^>]*>.*?</li>\s*',
+        r'<li[^>]*class="[^"]*\bbp-login\b[^"]*"[^>]*>.*?</li>\s*',
+        r'<li[^>]*class="[^"]*\bbp-signup\b[^"]*"[^>]*>.*?</li>\s*',
+        r'<form\b[^>]*id="adminloginform"[^>]*>.*?</form>\s*',
+        r'<form\b[^>]*action="[^"]*wp-login\.php"[^>]*>.*?</form>\s*',
+        r'<li>\s*<a href="[^"]*wp-login\.php\?action=register"[^>]*>Registrera</a>\s*</li>\s*',
+        r'<li>\s*<a href="[^"]*wp-login\.php"[^>]*>Logga in</a>\s*</li>\s*',
+        r'<li[^>]*class="secondary"[^>]*>\s*<a href="[^"]*wp-login\.php(?:\?action=register)?"[^>]*>(?:Registrera|Logga in)</a>\s*</li>\s*',
         r'<div id="respond"[^>]*>.*?</div><!-- #respond -->\s*',
+        r'<div id="respond"[^>]*>.*?</div>\s*',
         r'<form\b[^>]*id="commentform"[^>]*>.*?</form>\s*',
+        r'<form\b[^>]*class="comment-form"[^>]*>.*?</form>\s*',
         r'<a [^>]*class="comment-reply-link"[^>]*>.*?</a>\s*',
+        r'<h3[^>]*id="reply-title"[^>]*>.*?</h3>\s*',
+        r'<p class="must-log-in">.*?</p>\s*',
+        r'<p class="comment-notes">.*?</p>\s*',
+        r'<p[^>]*id="you-must-be-logged-in-to-comment"[^>]*>.*?</p>\s*',
+        r'<p[^>]*>\s*Stay in touch with the conversation.*?</p>\s*',
+        r'<h3[^>]*class="pings"[^>]*>.*?</h3>\s*',
+        r'<ol[^>]*class="[^"]*\bpinglist\b[^"]*\bcommentlist\b[^"]*"[^>]*>.*?</ol>\s*',
         r'<footer id="colophon"[^>]*>.*?</footer><!-- #colophon -->\s*',
         r'<aside id="meta-[^"]*" class="widget widget_meta">.*?</aside>\s*',
         r'<aside id="blog_subscription-[^"]*" class="widget widget_blog_subscription[^"]*">.*?</aside>\s*',
@@ -560,20 +924,193 @@ def clean_html(html_text: str) -> str:
         r'<aside id="archives-[^"]*" class="widget widget_archive">.*?</aside>\s*',
         r'<aside id="categories-[^"]*" class="widget widget_categories">.*?</aside>\s*',
         r'<aside id="recent-posts-[^"]*" class="widget widget_recent_entries">.*?</aside>\s*',
+        r'<div id="carrington-subscribe" class="widget">.*?</div>\s*',
+        r'<div id="linkcat-[^"]*" class="widget widget_links">.*?</div>\s*',
+        r'<li id="recent-comments-[^"]*" class="widget[^"]*widget_recent_comments[^"]*">.*?</li>\s*',
+        r'<li id="tag_cloud-[^"]*" class="widget[^"]*widget_tag_cloud[^"]*">.*?</li>\s*',
+        r'<li id="archives-[^"]*" class="widget[^"]*widget_archive[^"]*">.*?</li>\s*',
+        r'<li id="categories-[^"]*" class="widget[^"]*widget_categories[^"]*">.*?</li>\s*',
+        r'<li id="recent-posts-[^"]*" class="widget[^"]*widget_recent_entries[^"]*">.*?</li>\s*',
+        r'<li id="pages-[^"]*" class="widget[^"]*widget_pages[^"]*">.*?</li>\s*',
+        r'<li id="linkcat-[^"]*" class="widget[^"]*widget_links[^"]*">.*?</li>\s*',
+        r'<div id="recent-comments-[^"]*" class="widget[^"]*widget_recent_comments[^"]*">.*?</div>\s*',
+        r'<div id="tag_cloud-[^"]*" class="widget[^"]*widget_tag_cloud[^"]*">.*?</div>\s*',
+        r'<div id="archives-[^"]*" class="widget[^"]*widget_archive[^"]*">.*?</div>\s*',
+        r'<div id="categories-[^"]*" class="widget[^"]*widget_categories[^"]*">.*?</div>\s*',
+        r'<div id="recent-posts-[^"]*" class="widget[^"]*widget_recent_entries[^"]*">.*?</div>\s*',
+        r'<div id="pages-[^"]*" class="widget[^"]*widget_pages[^"]*">.*?</div>\s*',
+        r'<li id="search-[^"]*" class="widget widget_search">.*?</li>\s*',
+        r'<div id="search-[^"]*" class="widget widget_search">.*?</div>\s*',
+        r'<li id="meta-[^"]*" class="widget widget_meta">.*?</li>\s*',
+        r'<form method="get" id="cfct-search" .*?</form>\s*',
         r'<div style="display:none">\s*</div>\s*',
         r'<noscript><img src="https://pixel\.wp\.com/b\.gif[^"]*"[^>]*></noscript>\s*',
     ]
     cleaned = html_text
     for pattern in patterns:
         cleaned = re.sub(pattern, "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<div id="wpadminbar"[^>]*>.*?</div>\s*', "", cleaned, count=1, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<li[^>]*id="wp-admin-bar-lostpassword"[^>]*>.*?</li>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<li[^>]*id="wp-admin-bar-register"[^>]*>.*?</li>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(
+        r'<!-- footer .*?-->\s*(?:<div id="footer">.*?(?:</div>\s*<!-- /footer -->|</div>)\s*)?',
+        "",
+        cleaned,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    cleaned = re.sub(r'<div id="footer">.*?(?:</div>\s*<!-- /footer -->|</div>)', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'&copy;\s*\d{4}\s+[^<]*Theme:.*?(?:Hosted by\s*<a[^>]+>Skolbloggen</a>)?\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<a href="http://wordpress\.org">WordPress</a>\.\s*Powered by\s*<a href="http://wordpressmu\.org">WordPress MU</a>\.\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<br\s*/?>\s*Powered by\s*<a href="http://mu\.wordpress\.org">WordPress MU</a>\s*&amp;\s*designed by\s*<a href="http://ifelse\.co\.uk">Phu Ly</a>\.\s*Powered by\s*<a href="http://wordpressmu\.org">WordPress MU</a>\.\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'Powered by\s*<a[^>]+>\s*WordPress MU\s*</a>\.?\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'Proudly powered by\s*<a[^>]+>\s*WordPress\s*</a>\s*and\s*<a[^>]+>\s*Carrington\s*</a>\.?\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'Carrington Theme by\s*<a[^>]+>.*?</a>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'Powered by WordPress\.\s*Built on the\s*Thematic Theme Framework\.?\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'Built on the\s*<a[^>]+>\s*Thematic Theme Framework\s*</a>\.?\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'Hosted by\s*<a[^>]+>\s*Skolbloggen\s*</a>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'Theme:\s*[^<]+by\s*<a[^>]+>.*?</a>\.?\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<p id="generator-link">.*?</p>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<p id="developer-link">.*?</p>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<a class="screen-reader-shortcut" href="#wp-toolbar"[^>]*>Hoppa till verktygsfältet</a>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<li class="alt"><a href="https?://skolbloggen\.se/groups/\?random-group"[^>]*>.*?</a></li>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<li>\s*<a href="https?://skolbloggen\.se/blogs/\?random-blog"[^>]*>.*?</a>\s*</li>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<li>\s*<a href="https?://skolbloggen\.se/register/"[^>]*>Registrera</a>\s*</li>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<li>\s*<a href="https?://wordpress\.org/"[^>]*>WordPress\.org</a>\s*</li>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'</form><div class="clear"></div></div>', "", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'</li></ul></li>\s*<li class="alt"><a href="https?://skolbloggen\.se/groups/\?random-group"[^>]*>.*$', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<!-- Generated in .*?seconds\.\s*\(\d+\s*q\)\s*-->', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<!--\s*#wp-admin-bar\s*-->', "", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'<!--\s*/footer\s*-->', "", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'<div id="secondary"[^>]*>.*?</div>\s*(?:<!--\s*#secondary.*?-->)?', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<div id="tertiary"[^>]*>.*?</div>\s*(?:<!--\s*#tertiary.*?-->)?', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<aside id="secondary"[^>]*>.*?</aside>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r'<aside id="tertiary"[^>]*>.*?</aside>\s*', "", cleaned, flags=re.IGNORECASE | re.DOTALL)
     cleaned = re.sub(r'(</div><!-- #page -->).*?(</body>)', r"\1\n\n\2", cleaned, flags=re.IGNORECASE | re.DOTALL)
     cleaned = re.sub(r'<!-- #masthead -->', "", cleaned, flags=re.IGNORECASE)
     return cleaned
 
 
-def build_topbar(relative: str) -> str:
+def minimal_clean_html(html_text: str) -> str:
+    cleaned = maybe_fix_mojibake(html_text)
+    safe_patterns = [
+        r'<!-- BEGIN WAYBACK TOOLBAR INSERT -->.*?<!-- END WAYBACK TOOLBAR INSERT -->\s*',
+        r'<link rel="stylesheet" type="text/css" href="https://web-static\.archive\.org/_static/css/banner-styles\.css[^"]*" */?>\s*',
+        r'<link rel="stylesheet" type="text/css" href="https://web-static\.archive\.org/_static/css/iconochive\.css[^"]*" */?>\s*',
+        r'<div id="wm-ipp-print">.*?</div>\s*',
+        r"<script\b[^>]*>.*?</script>",
+        r'<li[^>]*id="bp-adminbar-[^"]*"[^>]*>.*?</li>\s*',
+        r'<li[^>]*class="[^"]*\bbp-login\b[^"]*"[^>]*>.*?</li>\s*',
+        r'<li[^>]*class="[^"]*\bbp-signup\b[^"]*"[^>]*>.*?</li>\s*',
+        r'<li[^>]*id="wp-admin-bar-lostpassword"[^>]*>.*?</li>\s*',
+        r'<li[^>]*id="wp-admin-bar-register"[^>]*>.*?</li>\s*',
+        r'<form\b[^>]*id="adminloginform"[^>]*>.*?</form>\s*',
+        r'<form\b[^>]*action="[^"]*wp-login\.php"[^>]*>.*?</form>\s*',
+        r'<li>\s*<a href="[^"]*wp-login\.php\?action=register"[^>]*>Registrera</a>\s*</li>\s*',
+        r'<li>\s*<a href="[^"]*wp-login\.php"[^>]*>Logga in</a>\s*</li>\s*',
+        r'<li[^>]*class="secondary"[^>]*>\s*<a href="[^"]*wp-login\.php(?:\?action=register)?"[^>]*>(?:Registrera|Logga in)</a>\s*</li>\s*',
+        r'<div id="respond"[^>]*>.*?</div><!-- #respond -->\s*',
+        r'<div id="respond"[^>]*>.*?</div>\s*',
+        r'<form\b[^>]*id="commentform"[^>]*>.*?</form>\s*',
+        r'<form\b[^>]*class="comment-form"[^>]*>.*?</form>\s*',
+        r'<a [^>]*class="comment-reply-link"[^>]*>.*?</a>\s*',
+        r'<h3[^>]*id="reply-title"[^>]*>.*?</h3>\s*',
+        r'<p class="must-log-in">.*?</p>\s*',
+        r'<p class="comment-notes">.*?</p>\s*',
+        r'<p[^>]*id="you-must-be-logged-in-to-comment"[^>]*>.*?</p>\s*',
+        r'<p[^>]*>\s*Stay in touch with the conversation.*?</p>\s*',
+        r'<h3[^>]*class="pings"[^>]*>.*?</h3>\s*',
+        r'<ol[^>]*class="[^"]*\bpinglist\b[^"]*\bcommentlist\b[^"]*"[^>]*>.*?</ol>\s*',
+        r'<a class="screen-reader-shortcut" href="#wp-toolbar"[^>]*>Hoppa till verktygsf[^<]*</a>\s*',
+        r'<!--\s*#wp-admin-bar\s*-->',
+    ]
+    for pattern in safe_patterns:
+        cleaned = re.sub(pattern, "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    return cleaned
+
+
+def unwrap_wayback_url(url: str) -> str:
+    match = re.match(r"^https?://web\.archive\.org/web/\d+(?:[a-z_]+)?/(https?://.+)$", url, flags=re.IGNORECASE)
+    if match:
+        return match.group(1)
+    return url
+
+
+def lift_repeated_post_links(html_text: str) -> str:
+    panel_blocks: list[str] = []
+    html_text = re.sub(r'<aside class="recovery-sidepanel">.*?</aside>\s*', "", html_text, flags=re.IGNORECASE | re.DOTALL)
+
+    def capture(pattern: str, text: str) -> str:
+        def repl(match: re.Match[str]) -> str:
+            block = match.group(0).strip()
+            if block and block not in panel_blocks:
+                panel_blocks.append(block)
+            return ""
+
+        return re.sub(pattern, repl, text, count=1, flags=re.IGNORECASE | re.DOTALL)
+
+    updated = html_text
+    updated = capture(r'<p class="postmetadata[^"]*">.*?</p>', updated)
+    updated = capture(r'<p class="postfeedback">.*?</p>', updated)
+    updated = capture(r'<p class="metadata">.*?(?:Etiketter:|Filed under|This entry was posted).*?</p>', updated)
+
+    if not panel_blocks:
+        return updated
+
+    panel_content = "".join(block for block in panel_blocks if re.sub(r"<[^>]+>", "", block).strip())
+    if not panel_content:
+        return updated
+    panel_html = '<aside class="recovery-sidepanel"><h3>Artikelinfo</h3>' + panel_content + "</aside>"
+    for marker in ('<div class="entrytext">', '<div class="postentry">', '<div class="entry-content">'):
+        if marker in updated:
+            return updated.replace(marker, marker + panel_html, 1)
+    return updated
+
+
+def load_collection_nav(site_dir: Path, collection_file: str, collection_slug: str) -> list[CollectionNavItem]:
+    if not collection_file or not collection_slug:
+        return []
+    collection_path = Path(collection_file)
+    if not collection_path.is_absolute():
+        collection_path = collection_path.resolve()
+    if not collection_path.exists():
+        return []
+    try:
+        payload = json.loads(collection_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    current_site_slug = site_dir.parent.name
+    for collection in payload.get("collections", []):
+        if collection.get("slug") != collection_slug:
+            continue
+        items: list[CollectionNavItem] = []
+        for entry in collection.get("entries", []):
+            local_path = entry.get("local_path")
+            if not local_path:
+                continue
+            entry_slug = PurePosixPath(local_path).parts[0]
+            if entry_slug == current_site_slug:
+                continue
+            href = PurePosixPath(*PurePosixPath(local_path).parts).as_posix()
+            items.append(CollectionNavItem(title=entry.get("title", entry_slug), href=href))
+        return items
+    return []
+
+
+def build_collection_menu(prefix: str, items: list[CollectionNavItem]) -> str:
+    if not items:
+        return ""
+    archive_prefix = prefix + "../../"
+    links = "".join(
+        f'<a href="{html.escape(archive_prefix + item.href)}"><strong>{html.escape(item.title)}</strong><span>{html.escape(item.href.replace("/site/index.html", ""))}</span></a>'
+        for item in items
+    )
+    return f'<details class="recovery-collection-menu"><summary>Samlingen</summary><div class="recovery-collection-menu__panel">{links}</div></details>'
+
+
+def build_topbar(relative: str, site_label: str, collection_items: list[CollectionNavItem] | None = None) -> str:
     prefix = "../" * len([part for part in relative.split("/")[:-1] if part])
-    return f'<div class="recovery-topbar"><div class="recovery-topbar__inner"><strong>BUF Simrishamn</strong><nav><a href="{prefix}index.html">Startsida</a><a href="{prefix}browse/index.html">Utforska</a><a href="{prefix}recovery/index.html">Rapport</a></nav>{build_topbar_search(prefix)}</div></div>'
+    collection_menu = build_collection_menu(prefix, collection_items or [])
+    return f'<div class="recovery-topbar"><div class="recovery-topbar__inner"><a class="recovery-topbar__brand" href="{prefix}index.html">{html.escape(site_label)}</a><nav>{collection_menu}<a href="{prefix}browse/index.html">Utforska</a><a href="{prefix}recovery/index.html">Rapport</a><a class="recovery-topbar__rootlink" href="{prefix}../../index.html">← Till arkivet</a></nav>{build_topbar_search(prefix)}</div></div>'
 
 
 def build_context_box(meta: PageMeta, relative: str) -> str:
@@ -601,12 +1138,24 @@ def build_context_box(meta: PageMeta, relative: str) -> str:
 
 def extract_taxonomy_pairs(html_text: str, class_name: str, base_relative: str) -> list[tuple[str, str]]:
     match = re.search(rf'<p class="{class_name}[^"]*">(.*?)</p>', html_text, flags=re.IGNORECASE | re.DOTALL)
-    if not match:
-        return []
-    pairs = re.findall(r'<a [^>]*href="([^"]+)"[^>]*>(.*?)</a>', match.group(1), flags=re.IGNORECASE | re.DOTALL)
+    pairs: list[tuple[str, str]] = []
+    if match:
+        pairs = re.findall(r'<a [^>]*href="([^"]+)"[^>]*>(.*?)</a>', match.group(1), flags=re.IGNORECASE | re.DOTALL)
+    elif class_name == "cat-links":
+        pairs = re.findall(
+            r'<a [^>]*href="([^"]+)"[^>]*rel="category tag"[^>]*>(.*?)</a>',
+            html_text,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+    elif class_name == "tag-links":
+        pairs = re.findall(
+            r'<a [^>]*href="([^"]+)"[^>]*rel="tag"[^>]*>(.*?)</a>',
+            html_text,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
     result: list[tuple[str, str]] = []
     for href, label in pairs:
-        text = html.unescape(re.sub(r"<[^>]+>", "", label)).strip()
+        text = normalize_display_text(re.sub(r"<[^>]+>", "", label))
         normalized = normalize_local_href(base_relative, href) or href
         if text:
             result.append((normalized, text))
@@ -640,10 +1189,52 @@ def build_post_records(site_dir: Path, pages: list[PageMeta]) -> list[PostRecord
 def normalize_local_href(base_relative: str, href: str) -> str | None:
     if not href or href.startswith(("#", "mailto:", "tel:")):
         return None
+    href = unwrap_wayback_url(href)
     if re.match(r"^[a-z]+://", href, flags=re.IGNORECASE):
+        parsed = urlsplit(href)
+        if parsed.path:
+            base = PurePosixPath(parsed.path.lstrip("/"))
+            if parsed.path.endswith("/"):
+                return str(base / "index.html")
+            suffix = base.suffix
+            if suffix:
+                return str(base.with_name(base.stem + ".html"))
+            return str(base / "index.html")
         return None
     base_dir = PurePosixPath(base_relative).parent.as_posix()
     return posixpath.normpath(posixpath.join(base_dir, href))
+
+
+def rewrite_internal_anchors(html_text: str, meta: PageMeta, pages_by_path: dict[str, PageMeta], site_label: str) -> str:
+    site_host = site_label.strip().lower()
+
+    def replace_anchor(match: re.Match[str]) -> str:
+        href = match.group("href")
+        if not href or href.startswith(("#", "mailto:", "tel:", "javascript:")):
+            return match.group(0)
+
+        unwrapped_href = unwrap_wayback_url(href)
+        parsed = urlsplit(unwrapped_href)
+        if parsed.scheme and parsed.netloc and parsed.netloc.lower() != site_host:
+            return match.group(0)
+
+        normalized = normalize_local_href(meta.path, unwrapped_href)
+        if not normalized or normalized not in pages_by_path:
+            return match.group(0)
+
+        rewritten = posixpath.relpath(normalized, posixpath.dirname(meta.path))
+        if parsed.query:
+            rewritten += f"?{parsed.query}"
+        if parsed.fragment:
+            rewritten += f"#{parsed.fragment}"
+        return match.group(0).replace(href, rewritten, 1)
+
+    return re.sub(
+        r'<a\b(?P<prefix>[^>]*?)\bhref=(?P<quote>"|\')(?P<href>.*?)(?P=quote)',
+        replace_anchor,
+        html_text,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
 
 
 def extract_first_image(article_html: str) -> tuple[str, str] | None:
@@ -662,7 +1253,7 @@ def extract_author_name(article_html: str) -> str:
     match = re.search(r'<span class="author vcard">.*?<a [^>]*>(.*?)</a>', article_html, flags=re.IGNORECASE | re.DOTALL)
     if not match:
         return ""
-    return html.unescape(re.sub(r"<[^>]+>", "", match.group(1))).strip()
+    return normalize_display_text(re.sub(r"<[^>]+>", "", match.group(1)))
 
 
 def extract_category_links(article_html: str) -> list[tuple[str, str]]:
@@ -814,16 +1405,244 @@ def rewrite_listing_articles(html_text: str, meta: PageMeta, pages_by_path: dict
     return re.sub(r"<article\b[^>]*class=\"[^\"]*\bpost\b[^\"]*\"[^>]*>.*?</article>", replace_article, html_text, flags=re.IGNORECASE | re.DOTALL)
 
 
-def inject_theme(html_text: str, theme_href: str, topbar: str, context_box: str, meta: PageMeta, pages_by_path: dict[str, PageMeta], post_records: list[PostRecord]) -> str:
-    updated = clean_html(html_text)
+def strip_existing_topbar(html_text: str) -> str:
+    marker = '<div class="recovery-topbar"'
+    start = html_text.find(marker)
+    if start == -1:
+        return html_text
+    depth = 0
+    div_token = re.compile(r"</?div\b", flags=re.IGNORECASE)
+    for match in div_token.finditer(html_text, start):
+        token = match.group(0).lower()
+        if token.startswith("</"):
+            depth -= 1
+            if depth == 0:
+                close = re.search(r"</div\s*>", html_text[match.start() :], flags=re.IGNORECASE)
+                if close:
+                    end = match.start() + close.end()
+                    return html_text[:start] + html_text[end:]
+                break
+        else:
+            depth += 1
+    return html_text
+
+
+def promote_cwaste_navigation_panel(html_text: str, meta: PageMeta, site_label: str) -> str:
+    if site_label != "cwaste.skolbloggen.se" or meta.kind != "other":
+        return html_text
+    if "recovery-sidepanel--toc" in html_text:
+        return html_text
+
+    nav_match = re.search(r'(<div id="navigation">.*?</div><!-- #navigation -->)', html_text, flags=re.IGNORECASE | re.DOTALL)
+    categories_match = re.search(r'(<div id="all-categories">.*?</div><!-- #list-categories -->)', html_text, flags=re.IGNORECASE | re.DOTALL)
+    if not nav_match:
+        return html_text
+
+    navigation_html = re.sub(r'<li class="secondary">.*?</li>', "", nav_match.group(1), flags=re.IGNORECASE | re.DOTALL)
+    categories_html = categories_match.group(1) if categories_match else ""
+
+    panel_parts = [
+        '<aside class="recovery-sidepanel recovery-sidepanel--toc">',
+        '<div class="recovery-sidepanel__section"><h3>Avdelningar</h3>',
+        navigation_html,
+        "</div>",
+    ]
+    if categories_html:
+        panel_parts.extend(
+            [
+                '<div class="recovery-sidepanel__section">',
+                '<span class="recovery-sidepanel__section-title">Kategorier</span>',
+                categories_html,
+                "</div>",
+            ]
+        )
+    panel_parts.append("</aside>")
+    panel_html = "".join(panel_parts)
+
+    if '<div class="entry-content' in html_text:
+        return html_text.replace('<div class="entry-content', panel_html + '<div class="entry-content', 1)
+    return html_text
+
+
+def promote_ikttips_navigation_panel(html_text: str, meta: PageMeta, site_label: str) -> str:
+    if site_label != "ikttips.skolbloggen.se" or meta.kind != "other":
+        return html_text
+    if "recovery-sidepanel--toc" in html_text:
+        return html_text
+
+    nav_match = re.search(r'(<div id="navigation">.*?</div><!-- #navigation -->)', html_text, flags=re.IGNORECASE | re.DOTALL)
+    categories_match = re.search(r'(<div id="all-categories">.*?</div>\s*</div><!-- \.wrapper -->)', html_text, flags=re.IGNORECASE | re.DOTALL)
+    if not nav_match:
+        return html_text
+
+    navigation_html = re.sub(r'<li class="secondary">.*?</li>', "", nav_match.group(1), flags=re.IGNORECASE | re.DOTALL)
+    categories_html = categories_match.group(1) if categories_match else ""
+    categories_html = re.sub(r'<form\b.*?</form>', "", categories_html, flags=re.IGNORECASE | re.DOTALL)
+
+    panel_parts = [
+        '<aside class="recovery-sidepanel recovery-sidepanel--toc">',
+        '<div class="recovery-sidepanel__section"><h3>Avdelningar</h3>',
+        navigation_html,
+        "</div>",
+    ]
+    if categories_html:
+        panel_parts.extend(
+            [
+                '<div class="recovery-sidepanel__section">',
+                '<span class="recovery-sidepanel__section-title">Kategorier</span>',
+                categories_html,
+                "</div>",
+            ]
+        )
+    panel_parts.append("</aside>")
+    panel_html = "".join(panel_parts)
+
+    if '<div class="entry-content' in html_text:
+        return html_text.replace('<div class="entry-content', panel_html + '<div class="entry-content', 1)
+    return html_text
+
+
+def cwaste_section_descendants(meta: PageMeta, pages_by_path: dict[str, PageMeta]) -> list[PageMeta]:
+    if meta.kind != "other":
+        return []
+    base = meta.path.removesuffix("index.html")
+    return sorted(
+        (
+            page
+            for page in pages_by_path.values()
+            if is_content_page(page) and page.path != meta.path and page.path.startswith(base)
+        ),
+        key=lambda page: (page.path.count("/"), page.title.lower(), page.path.lower()),
+    )
+
+
+def entry_content_text_length(html_text: str) -> int:
+    match = re.search(r'<div class="entry-content[^"]*">(.*?)</div><!--/entry-content-->', html_text, flags=re.IGNORECASE | re.DOTALL)
+    if not match:
+        match = re.search(r'<div class="entry-content[^"]*">(.*?)</div>', html_text, flags=re.IGNORECASE | re.DOTALL)
+    if not match:
+        return 0
+    text = normalize_display_text(re.sub(r"<[^>]+>", " ", match.group(1)))
+    text = re.sub(r"\s+", " ", text).strip()
+    return len(text)
+
+
+def build_cwaste_section_overview(meta: PageMeta, pages_by_path: dict[str, PageMeta]) -> str:
+    descendants = cwaste_section_descendants(meta, pages_by_path)
+    if not descendants:
+        return ""
+
+    base = meta.path.removesuffix("index.html")
+    grouped: dict[str, list[PageMeta]] = {}
+    top_level_pages: list[PageMeta] = []
+    for page in descendants:
+        remainder = page.path[len(base) :].removesuffix("/index.html").strip("/")
+        if not remainder:
+            continue
+        parts = remainder.split("/")
+        if len(parts) == 1:
+            top_level_pages.append(page)
+            continue
+        grouped.setdefault(parts[0], []).append(page)
+
+    cards: list[str] = []
+    if top_level_pages:
+        top_links = "".join(
+            f'<li><a href="{html.escape(posixpath.relpath(page.path, posixpath.dirname(meta.path)))}"><strong>{html.escape(page.title)}</strong><span>{html.escape(page.kind_label)}</span></a></li>'
+            for page in top_level_pages[:12]
+        )
+        cards.append(
+            '<article class="recovery-card recovery-card--dense recovery-generated-overview__group">'
+            '<div class="recovery-card__header"><h3>Direktsidor</h3></div>'
+            f'<ul class="recovery-link-list">{top_links}</ul>'
+            "</article>"
+        )
+
+    for slug, pages in sorted(grouped.items(), key=lambda item: (-len(item[1]), item[0].lower())):
+        group_root_path = f"{base}{slug}/index.html"
+        group_root = pages_by_path.get(group_root_path)
+        group_title = group_root.title if group_root else pretty_slug(group_root_path)
+        display_pages = ([group_root] if group_root else []) + [page for page in pages if page.path != group_root_path]
+        links = "".join(
+            f'<li><a href="{html.escape(posixpath.relpath(page.path, posixpath.dirname(meta.path)))}"><strong>{html.escape(page.title)}</strong><span>{html.escape(page.kind_label)}</span></a></li>'
+            for page in display_pages[:8]
+        )
+        footer = ""
+        if len(display_pages) > 8:
+            footer = f'<p class="recovery-card__footer"><a href="{html.escape(posixpath.relpath(group_root_path if group_root else display_pages[0].path, posixpath.dirname(meta.path)))}">Öppna hela avdelningen</a></p>'
+        cards.append(
+            '<article class="recovery-card recovery-card--dense recovery-generated-overview__group">'
+            f'<div class="recovery-card__header"><h3>{html.escape(group_title)}</h3><span class="recovery-meta">{len(display_pages)} sidor</span></div>'
+            f'<ul class="recovery-link-list">{links}</ul>'
+            f"{footer}"
+            "</article>"
+        )
+
+    return (
+        '<section class="recovery-generated-overview recovery-section">'
+        f'<div class="recovery-section-header"><div><h2>Innehåll i avdelningen</h2><p>Den här sidan fungerar som ingång till materialet under {html.escape(meta.title)}.</p></div>'
+        f'<span class="recovery-meta">{len(descendants)} innehållssidor</span></div>'
+        f'<div class="recovery-grid recovery-grid--balanced">{"".join(cards)}</div>'
+        "</section>"
+    )
+
+
+def inject_cwaste_section_overview(html_text: str, meta: PageMeta, pages_by_path: dict[str, PageMeta], site_label: str) -> str:
+    if site_label != "cwaste.skolbloggen.se" or meta.kind != "other":
+        return html_text
+    if "recovery-generated-overview" in html_text:
+        return html_text
+    overview_html = build_cwaste_section_overview(meta, pages_by_path)
+    if not overview_html:
+        return html_text
+
+    def replace_entry_content(match: re.Match[str]) -> str:
+        opening = match.group(1)
+        inner = match.group(2)
+        closing = match.group(3)
+        text_length = len(re.sub(r"\s+", " ", normalize_display_text(re.sub(r"<[^>]+>", " ", inner))).strip())
+        if text_length <= 40:
+            return f"{opening}\n{overview_html}\n{closing}"
+        return f"{opening}{inner}\n{overview_html}\n{closing}"
+
+    updated, count = re.subn(
+        r'(<div class="entry-content[^"]*">)(.*?)(</div><!--/entry-content-->)',
+        replace_entry_content,
+        html_text,
+        count=1,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    if count:
+        return updated
+    return html_text
+
+
+def inject_theme(html_text: str, theme_href: str, topbar: str, context_box: str, meta: PageMeta, pages_by_path: dict[str, PageMeta], post_records: list[PostRecord], site_label: str, cleanup_level: str = "none") -> str:
+    if cleanup_level == "aggressive":
+        updated = clean_html(html_text)
+    elif cleanup_level == "minimal":
+        updated = minimal_clean_html(html_text)
+    else:
+        updated = html_text
+    if meta.kind == "post" and cleanup_level == "aggressive":
+        updated = re.sub(r'(<div id="page">\s*).*?(?=<div id="main")', r"\1", updated, count=1, flags=re.IGNORECASE | re.DOTALL)
+        updated = re.sub(r'<div id="sidebar"[^>]*>.*?</div><!-- #sidebar -->\s*', "", updated, flags=re.IGNORECASE | re.DOTALL)
+        updated = re.sub(r'<div id="primary-sidebar"[^>]*>.*?</div><!-- #primary-sidebar -->\s*', "", updated, flags=re.IGNORECASE | re.DOTALL)
+        updated = re.sub(r'<div id="secondary-sidebar"[^>]*>.*?</div><!-- #secondary-sidebar -->\s*', "", updated, flags=re.IGNORECASE | re.DOTALL)
     if meta.kind in {"archive", "category", "tag"}:
         updated = rebuild_listing_page(updated, meta, context_box, post_records)
     else:
         updated = rewrite_listing_articles(updated, meta, pages_by_path)
+    if meta.kind == "post":
+        updated = lift_repeated_post_links(updated)
+    updated = rewrite_internal_anchors(updated, meta, pages_by_path, site_label)
     if 'name="robots"' not in updated.lower():
         updated = updated.replace("</head>", f"{ROBOTS_META_TAG}\n</head>")
     if THEME_RELATIVE_PATH not in updated:
         updated = updated.replace("</head>", f'<link rel="stylesheet" href="{theme_href}" />\n</head>')
+    topbar_script_href = theme_href.replace(THEME_RELATIVE_PATH, TOPBAR_SCRIPT_RELATIVE_PATH)
+    if TOPBAR_SCRIPT_RELATIVE_PATH not in updated:
+        updated = updated.replace("</head>", f'<script defer src="{topbar_script_href}"></script>\n</head>')
     body_match = re.search(r"<body([^>]*)>", updated, flags=re.IGNORECASE)
     if body_match:
         attrs = body_match.group(1)
@@ -836,17 +1655,26 @@ def inject_theme(html_text: str, theme_href: str, topbar: str, context_box: str,
                         classes.append(item)
             if "recovery-enhanced" not in classes:
                 classes.append("recovery-enhanced")
+            kind_class = f"recovery-kind-{meta.kind}"
+            if kind_class not in classes:
+                classes.append(kind_class)
+            current_site_class = site_class(site_label)
+            if current_site_class not in classes:
+                classes.append(current_site_class)
             attrs = re.sub(r'\s*class="[^"]*"', "", attrs, flags=re.IGNORECASE) + f' class="{" ".join(classes)}"'
         else:
-            attrs = attrs + ' class="recovery-enhanced"'
+            attrs = attrs + f' class="recovery-enhanced recovery-kind-{meta.kind} {site_class(site_label)}"'
         updated = re.sub(r"<body([^>]*)>", f"<body{attrs}>", updated, count=1, flags=re.IGNORECASE)
-    if "recovery-topbar" not in updated:
-        updated = re.sub(r"(<body[^>]*>)", r"\1\n" + topbar, updated, count=1, flags=re.IGNORECASE)
+    updated = strip_existing_topbar(updated)
+    updated = re.sub(r"(<body[^>]*>)", r"\1\n" + topbar, updated, count=1, flags=re.IGNORECASE)
+    updated = promote_cwaste_navigation_panel(updated, meta, site_label)
+    updated = promote_ikttips_navigation_panel(updated, meta, site_label)
+    updated = inject_cwaste_section_overview(updated, meta, pages_by_path, site_label)
     if meta.kind not in {"archive", "category", "tag"} and "recovery-context" not in updated:
         updated = updated.replace('<div id="content" role="main">', f'<div id="content" role="main">\n{context_box}', 1)
     if meta.kind == "pagination" and "recovery-listing-tools" not in updated:
         updated = updated.replace(context_box, context_box + "\n" + build_listing_tools(meta, meta.path), 1)
-    return updated
+    return repair_common_mojibake_sequences(updated)
 
 
 def write_support_files(site_dir: Path, pages: list[PageMeta]) -> None:
@@ -856,6 +1684,9 @@ def write_support_files(site_dir: Path, pages: list[PageMeta]) -> None:
     search_script_path = site_dir / SEARCH_SCRIPT_RELATIVE_PATH
     search_script_path.parent.mkdir(parents=True, exist_ok=True)
     search_script_path.write_text(SEARCH_SCRIPT.strip() + "\n", encoding="utf-8")
+    topbar_script_path = site_dir / TOPBAR_SCRIPT_RELATIVE_PATH
+    topbar_script_path.parent.mkdir(parents=True, exist_ok=True)
+    topbar_script_path.write_text(TOPBAR_SCRIPT.strip() + "\n", encoding="utf-8")
     browse_dir = site_dir / "browse"
     browse_dir.mkdir(parents=True, exist_ok=True)
     (browse_dir / "search-index.json").write_text(json.dumps(search_index_records(pages), ensure_ascii=False, indent=2), encoding="utf-8")
@@ -864,19 +1695,33 @@ def write_support_files(site_dir: Path, pages: list[PageMeta]) -> None:
 
 
 def run(argv: list[str] | None = None) -> int:
+    global CURRENT_COLLECTION_ITEMS
     args = parse_args(argv)
+    if args.cleanup_level != "none" and not args.allow_destructive_cleanup:
+        raise SystemExit("Refusing to run cleanup without --allow-destructive-cleanup")
     site_dir = Path(args.site_dir)
     pages = build_page_meta(site_dir)
     pages_by_path = {page.path: page for page in pages}
     post_records = build_post_records(site_dir, pages)
+    collection_items = load_collection_nav(site_dir, args.collection_file, args.collection_slug)
+    CURRENT_COLLECTION_ITEMS = collection_items
     write_support_files(site_dir, pages)
     browse_dir = site_dir / "browse"
     browse_dir.mkdir(parents=True, exist_ok=True)
-    (browse_dir / "index.html").write_text(build_browse_page(pages, post_records), encoding="utf-8")
-    (site_dir / "index.html").write_text(build_home_page(pages), encoding="utf-8")
+    (browse_dir / "index.html").write_text(
+        repair_common_mojibake_sequences(build_browse_page(pages, post_records, args.site_label, collection_items)),
+        encoding="utf-8",
+    )
+    (site_dir / "index.html").write_text(
+        repair_common_mojibake_sequences(build_home_page(pages, args.site_title, args.site_label, args.site_intro)),
+        encoding="utf-8",
+    )
     recovery_dir = site_dir / "recovery"
     recovery_dir.mkdir(parents=True, exist_ok=True)
-    (recovery_dir / "index.html").write_text(build_report_page(site_dir, pages), encoding="utf-8")
+    (recovery_dir / "index.html").write_text(
+        repair_common_mojibake_sequences(build_report_page(site_dir, pages, args.site_title, args.site_label)),
+        encoding="utf-8",
+    )
     for html_path in iter_html_files(site_dir):
         if html_path.relative_to(site_dir).as_posix() in {"browse/index.html", "index.html", "recovery/index.html"}:
             continue
@@ -888,11 +1733,13 @@ def run(argv: list[str] | None = None) -> int:
         updated = inject_theme(
             html_text,
             relpath_to_theme(html_path, site_dir),
-            build_topbar(relative),
+            build_topbar(relative, args.site_label, collection_items),
             build_context_box(meta, relative),
             meta,
             pages_by_path,
             post_records,
+            args.site_label,
+            args.cleanup_level,
         )
         html_path.write_text(updated, encoding="utf-8")
     return 0

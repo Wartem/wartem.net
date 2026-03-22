@@ -1,0 +1,11 @@
+{
+  "url": "https://web.archive.org/web/20120426082612id_/http://ikttips.skolbloggen.se:80/search/babla",
+  "source": "backup_first_inventory.py",
+  "body_path": "f813173cb88599d60874fe2ba570e66e998d088c.html",
+  "requested_url": "https://web.archive.org/web/20120426082612id_/http://ikttips.skolbloggen.se:80/search/babla",
+  "final_url": "https://web.archive.org/web/20120426082612id_/http://ikttips.skolbloggen.se:80/search/babla",
+  "normalized_url": "http://ikttips.skolbloggen.se/search/babla",
+  "best_wayback_url": "https://web.archive.org/web/20120426082612/http://ikttips.skolbloggen.se:80/search/babla",
+  "best_statuscode": "200",
+  "content_type": "text/html"
+}

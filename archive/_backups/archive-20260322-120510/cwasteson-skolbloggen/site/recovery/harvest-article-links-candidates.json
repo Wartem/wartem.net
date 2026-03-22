@@ -1,0 +1,516 @@
+{
+  "seed_count": 26,
+  "listing_candidate_count": 107,
+  "local_link_candidate_count": 47,
+  "candidate_count": 117,
+  "candidate_urls": [
+    "http://cwasteson.skolbloggen.se/2010/01/18/att-lara-pa-distans/",
+    "http://cwasteson.skolbloggen.se/2010/01/19/en-portfolio-for-larande/",
+    "http://cwasteson.skolbloggen.se/2010/01/20/digitala-portfolior/",
+    "http://cwasteson.skolbloggen.se/2010/01/21/digital-portfolio-med-powerpoint/",
+    "http://cwasteson.skolbloggen.se/2010/01/25/podsandning-med-blip-tv/",
+    "http://cwasteson.skolbloggen.se/2010/01/25/podsandning-med-scamportfolio/",
+    "http://cwasteson.skolbloggen.se/2010/01/27/att-askadliggora-med-wordle/",
+    "http://cwasteson.skolbloggen.se/2010/01/27/instruktionsfilm-for-wordle/",
+    "http://cwasteson.skolbloggen.se/2010/01/30/bloggen-i-skolan/",
+    "http://cwasteson.skolbloggen.se/2010/01/30/podsandning-med-wordpress/",
+    "http://cwasteson.skolbloggen.se/2010/01/31/podsandning-skapar-mening/",
+    "http://cwasteson.skolbloggen.se/2010/02/01/att-lara-sig-podsandning/",
+    "http://cwasteson.skolbloggen.se/2010/02/01/jag-alskar-att-aka-buss/",
+    "http://cwasteson.skolbloggen.se/2010/02/02/bloggande-bestar-av-givande-och-tagande/",
+    "http://cwasteson.skolbloggen.se/2010/02/03/tva-saker-angrar-jag/",
+    "http://cwasteson.skolbloggen.se/2010/02/06/kallkritik-%e2%80%93-viktigare-an-nagonsin/",
+    "http://cwasteson.skolbloggen.se/2010/02/08/sociala-medier-pa-folkuniversitetet/",
+    "http://cwasteson.skolbloggen.se/2010/02/09/skriva-for-att-lara/",
+    "http://cwasteson.skolbloggen.se/2010/02/10/lamplighetstest-av-larare/",
+    "http://cwasteson.skolbloggen.se/2010/02/13/cheat-neutral/",
+    "http://cwasteson.skolbloggen.se/2010/02/13/surfandet-stjal-tid-och-gor-dig-otalig/",
+    "http://cwasteson.skolbloggen.se/2010/02/15/att-lara-sig-undvika-faror-pa-natet/",
+    "http://cwasteson.skolbloggen.se/2010/02/15/tips-nar-du-ska-skriva-texter-for-webben/",
+    "http://cwasteson.skolbloggen.se/2010/02/17/borde-vi-inte-alla-visa-tacksamhet/",
+    "http://cwasteson.skolbloggen.se/2010/02/17/svenska-skrivregler-har-utvidgats/",
+    "http://cwasteson.skolbloggen.se/2010/02/18/extra-tid-foder-kreativitet/",
+    "http://cwasteson.skolbloggen.se/2010/02/19/textvard/",
+    "http://cwasteson.skolbloggen.se/2010/03/07/att-sprida-material-med-google-docs/",
+    "http://cwasteson.skolbloggen.se/2010/03/07/vart-forhallande-till-sociala-medie/",
+    "http://cwasteson.skolbloggen.se/2010/03/12/hur-kanns-det-nar-andra-klipp-o-klistrar/",
+    "http://cwasteson.skolbloggen.se/2010/03/13/varfor-ska-vi-jobba-med-bilder-och-medier-pa-svenskan/",
+    "http://cwasteson.skolbloggen.se/2010/03/16/jag-ar-lite-avundsjuk/",
+    "http://cwasteson.skolbloggen.se/2010/03/17/tvn-som-klokburk/",
+    "http://cwasteson.skolbloggen.se/2010/03/18/den-skona-formen-ar-anvandbar/",
+    "http://cwasteson.skolbloggen.se/2010/03/19/kreativitet-kraver-avkoppling/",
+    "http://cwasteson.skolbloggen.se/2010/03/20/amneskunskaper-behovs-vid-kallkritik/",
+    "http://cwasteson.skolbloggen.se/2010/03/20/skolbloggen-se/",
+    "http://cwasteson.skolbloggen.se/2010/03/22/tryggt-men-trakigt-for-unga-i-simrishamn/",
+    "http://cwasteson.skolbloggen.se/2010/03/28/glad-pask/",
+    "http://cwasteson.skolbloggen.se/2010/04/08/lycka-ar-att-kanna-att-man-kampat/",
+    "http://cwasteson.skolbloggen.se/2010/04/08/sprakkontrollen-ar-ett-bra-stod-vid-korrekturlasning/",
+    "http://cwasteson.skolbloggen.se/2010/04/11/vilket-typsnitt-ar-bast/",
+    "http://cwasteson.skolbloggen.se/2010/04/12/provar-att-lagga-in-en-film-fran-mitt-flickr-konto/",
+    "http://cwasteson.skolbloggen.se/2010/04/16/forskningsnatet-skane-skapar-kontakter-mellan-gymnasieskolor-och-forskare/",
+    "http://cwasteson.skolbloggen.se/2010/04/17/kurs-i-sociala-medier/",
+    "http://cwasteson.skolbloggen.se/2010/04/21/google-dokuments-i-skolan/",
+    "http://cwasteson.skolbloggen.se/2010/04/21/mina-erfarenheter-av-flickr/",
+    "http://cwasteson.skolbloggen.se/2010/04/21/simrishamn-i-april-i/",
+    "http://cwasteson.skolbloggen.se/2010/04/21/simrishamn-i-april-ii/",
+    "http://cwasteson.skolbloggen.se/2010/04/22/kul-med-srs-webbradio/",
+    "http://cwasteson.skolbloggen.se/2010/04/25/nyfiken-pa-simrishamns-bibliotek/",
+    "http://cwasteson.skolbloggen.se/2010/04/26/vad-kommer-istallet-for-ning/",
+    "http://cwasteson.skolbloggen.se/2010/04/29/det-offentliga-spraket-ska-vara-begripligt/",
+    "http://cwasteson.skolbloggen.se/2010/04/30/om-skolan-skulle-ge-ut-ett-nyhetsbrev-del-3/",
+    "http://cwasteson.skolbloggen.se/2010/05/01/att-erbjuda-sina-kunskaper/",
+    "http://cwasteson.skolbloggen.se/2010/05/03/lagga-upp-och-sprida-filmer-via-youtube/",
+    "http://cwasteson.skolbloggen.se/2010/05/03/provar-animotos-bildspel/",
+    "http://cwasteson.skolbloggen.se/2010/05/04/att-dokumentera-studiebesok/",
+    "http://cwasteson.skolbloggen.se/2010/05/06/att-bearbeta-dokumentationen/",
+    "http://cwasteson.skolbloggen.se/2010/05/10/har-du-svart-for-att-bestamma-dig/",
+    "http://cwasteson.skolbloggen.se/2010/05/10/kommer-ni-ihag-snon-som-foll-i-fjol/",
+    "http://cwasteson.skolbloggen.se/2010/05/11/riktigt-bra-musik-ar-nagot-alldeles-extra/",
+    "http://cwasteson.skolbloggen.se/2010/05/13/kan-du-forlata/",
+    "http://cwasteson.skolbloggen.se/2010/05/15/ar-jag-pim-klar/",
+    "http://cwasteson.skolbloggen.se/2010/05/16/hantera-filer-och-mappar/",
+    "http://cwasteson.skolbloggen.se/2010/05/16/vad-gor-dig-motiverad/",
+    "http://cwasteson.skolbloggen.se/2010/05/19/leker-med-bildredigeringsprogram/",
+    "http://cwasteson.skolbloggen.se/2010/05/20/hantera-datorns-utseende/",
+    "http://cwasteson.skolbloggen.se/2010/05/21/bild-hamta-och-hantera/",
+    "http://cwasteson.skolbloggen.se/2010/06/06/jag-provar-blogger/",
+    "http://cwasteson.skolbloggen.se/2010/06/07/medier-i-undervisningen/",
+    "http://cwasteson.skolbloggen.se/2010/06/07/tips-nar-du-vill-dokumentera-ett-studiebesok/",
+    "http://cwasteson.skolbloggen.se/2010/06/10/en-wiki-for-larare-pa-natet/",
+    "http://cwasteson.skolbloggen.se/2010/06/12/google-reader-bade-van-och-fiende/",
+    "http://cwasteson.skolbloggen.se/2010/06/12/twitter-kraver-en-insats-men-kan-ge-mycket-tillbaka/",
+    "http://cwasteson.skolbloggen.se/2010/06/13/en-mindmap-over-google-dokument/",
+    "http://cwasteson.skolbloggen.se/2010/06/13/google-docs-for-fildelning-och-samarbete/",
+    "http://cwasteson.skolbloggen.se/2010/06/14/faror-pa-natet/",
+    "http://cwasteson.skolbloggen.se/2010/06/15/traffande-beskrivning-av-problemlosning/",
+    "http://cwasteson.skolbloggen.se/2010/06/19/karlek-och-hat/",
+    "http://cwasteson.skolbloggen.se/2010/06/21/sa-har-funkar-wikipedia/",
+    "http://cwasteson.skolbloggen.se/2010/06/21/utbildar-skolan-bort-barnens-kreativitet/",
+    "http://cwasteson.skolbloggen.se/2010/06/23/medieradet-om-mediers-paverkan/",
+    "http://cwasteson.skolbloggen.se/2010/06/28/jag-hinner-inte/",
+    "http://cwasteson.skolbloggen.se/2010/06/30/mp3-pa-blip-tv/",
+    "http://cwasteson.skolbloggen.se/2010/07/14/upphovsratt-pa-internet/",
+    "http://cwasteson.skolbloggen.se/2010/07/18/integritet-pa-internet/",
+    "http://cwasteson.skolbloggen.se/2010/08/15/mobilen-i-undervisningen/",
+    "http://cwasteson.skolbloggen.se/2010/08/25/lc200n-digital-kompetens-och-larande-ii/",
+    "http://cwasteson.skolbloggen.se/2010/08/25/projektarbete-i-kursen-lc100n-digital-kompetens-pa-kth/",
+    "http://cwasteson.skolbloggen.se/2010/08/26/behovs-dagslandor-eller-myror-i-skolpolitiken/",
+    "http://cwasteson.skolbloggen.se/2010/08/27/jisses-jesus/",
+    "http://cwasteson.skolbloggen.se/2010/08/27/svenssons-bildning-pa-internet/",
+    "http://cwasteson.skolbloggen.se/2010/08/31/ska-lararen-behalla-badkladerna-pa/",
+    "http://cwasteson.skolbloggen.se/2010/09/02/nojeslasning-kan-vara-kostsam-for-institutionerna/",
+    "http://cwasteson.skolbloggen.se/2010/09/14/nagra-ord-om-lashunger/",
+    "http://cwasteson.skolbloggen.se/2010/09/18/uppstramningen-framst-mot-de-svaga/",
+    "http://cwasteson.skolbloggen.se/2010/09/21/pippi-och-forebilder/",
+    "http://cwasteson.skolbloggen.se/2010/09/22/rwandas-kvinnor-far-allt-mer-makt/",
+    "http://cwasteson.skolbloggen.se/2010/09/23/var-framtid-med-sverigedemokraterna/",
+    "http://cwasteson.skolbloggen.se/2010/09/25/lashunger-kan-kopplas-till-stordad/",
+    "http://cwasteson.skolbloggen.se/2010/10/06/vi-lar-som-vi-lever/",
+    "http://cwasteson.skolbloggen.se/2010/11/02/ta-tillvara-fordelarna-och-undvik-fallgroparna/",
+    "http://cwasteson.skolbloggen.se/2011/04/13/1496/",
+    "http://cwasteson.skolbloggen.se/2011/04/29/en-forfarlig-paskhelg-pa-osterlen/",
+    "http://cwasteson.skolbloggen.se/2011/09/28/nu-skriver-jag-dar-istallet/",
+    "http://cwasteson.skolbloggen.se/",
+    "http://cwasteson.skolbloggen.se/category/funderingar/",
+    "http://cwasteson.skolbloggen.se/category/internet/",
+    "http://cwasteson.skolbloggen.se/om/",
+    "https://cwasteson.skolbloggen.se/",
+    "https://cwasteson.skolbloggen.se/category/bokpresentation/index.html",
+    "https://cwasteson.skolbloggen.se/category/forskning/index.html",
+    "https://cwasteson.skolbloggen.se/category/funderingar/index.html",
+    "https://cwasteson.skolbloggen.se/category/internet/index.html",
+    "https://cwasteson.skolbloggen.se/category/pim/index.html",
+    "https://cwasteson.skolbloggen.se/category/utbildning/index.html"
+  ],
+  "listing_scans": [
+    {
+      "seed": "http://cwasteson.skolbloggen.se/",
+      "capture_count": 4,
+      "captures": [
+        {
+          "timestamp": "20190819164747",
+          "original": "https://cwasteson.skolbloggen.se/",
+          "archive_url": "https://web.archive.org/web/20190819164747id_/https://cwasteson.skolbloggen.se/",
+          "extracted_count": 0
+        },
+        {
+          "timestamp": "20190119010415",
+          "original": "https://cwasteson.skolbloggen.se/",
+          "archive_url": "https://web.archive.org/web/20190119010415id_/https://cwasteson.skolbloggen.se/",
+          "extracted_count": 0
+        },
+        {
+          "timestamp": "20180313151856",
+          "original": "http://cwasteson.skolbloggen.se/",
+          "archive_url": "https://web.archive.org/web/20180313151856id_/http://cwasteson.skolbloggen.se/",
+          "extracted_count": 14
+        },
+        {
+          "timestamp": "20180213154738",
+          "original": "http://cwasteson.skolbloggen.se:80/",
+          "archive_url": "https://web.archive.org/web/20180213154738id_/http://cwasteson.skolbloggen.se:80/",
+          "extracted_count": 14
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/2010/01/",
+      "capture_count": 1,
+      "captures": [
+        {
+          "timestamp": "20100817215520",
+          "original": "http://cwasteson.skolbloggen.se/2010/01/",
+          "archive_url": "https://web.archive.org/web/20100817215520id_/http://cwasteson.skolbloggen.se/2010/01/",
+          "extracted_count": 23
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/2010/02/",
+      "capture_count": 1,
+      "captures": [
+        {
+          "timestamp": "20100817215451",
+          "original": "http://cwasteson.skolbloggen.se/2010/02/",
+          "archive_url": "https://web.archive.org/web/20100817215451id_/http://cwasteson.skolbloggen.se/2010/02/",
+          "extracted_count": 21
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/2010/03/",
+      "capture_count": 1,
+      "captures": [
+        {
+          "timestamp": "20100817215437",
+          "original": "http://cwasteson.skolbloggen.se/2010/03/",
+          "archive_url": "https://web.archive.org/web/20100817215437id_/http://cwasteson.skolbloggen.se/2010/03/",
+          "extracted_count": 21
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/2010/04/",
+      "capture_count": 1,
+      "captures": [
+        {
+          "timestamp": "20100817215422",
+          "original": "http://cwasteson.skolbloggen.se/2010/04/",
+          "archive_url": "https://web.archive.org/web/20100817215422id_/http://cwasteson.skolbloggen.se/2010/04/",
+          "extracted_count": 24
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/2010/05/",
+      "capture_count": 1,
+      "captures": [
+        {
+          "timestamp": "20100817215357",
+          "original": "http://cwasteson.skolbloggen.se/2010/05/",
+          "archive_url": "https://web.archive.org/web/20100817215357id_/http://cwasteson.skolbloggen.se/2010/05/",
+          "extracted_count": 22
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/2010/06/",
+      "capture_count": 1,
+      "captures": [
+        {
+          "timestamp": "20100817215338",
+          "original": "http://cwasteson.skolbloggen.se/2010/06/",
+          "archive_url": "https://web.archive.org/web/20100817215338id_/http://cwasteson.skolbloggen.se/2010/06/",
+          "extracted_count": 14
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/2010/07/",
+      "capture_count": 1,
+      "captures": [
+        {
+          "timestamp": "20100817215330",
+          "original": "http://cwasteson.skolbloggen.se/2010/07/",
+          "archive_url": "https://web.archive.org/web/20100817215330id_/http://cwasteson.skolbloggen.se/2010/07/",
+          "extracted_count": 11
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/2010/08/",
+      "capture_count": 1,
+      "captures": [
+        {
+          "timestamp": "20100817215320",
+          "original": "http://cwasteson.skolbloggen.se/2010/08/",
+          "archive_url": "https://web.archive.org/web/20100817215320id_/http://cwasteson.skolbloggen.se/2010/08/",
+          "extracted_count": 11
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/bokpresentation/",
+      "capture_count": 3,
+      "captures": [
+        {
+          "timestamp": "20120126082431",
+          "original": "http://cwasteson.skolbloggen.se/category/bokpresentation/",
+          "archive_url": "https://web.archive.org/web/20120126082431id_/http://cwasteson.skolbloggen.se/category/bokpresentation/",
+          "extracted_count": 18
+        },
+        {
+          "timestamp": "20100820163115",
+          "original": "http://cwasteson.skolbloggen.se/category/bokpresentation/",
+          "archive_url": "https://web.archive.org/web/20100820163115id_/http://cwasteson.skolbloggen.se/category/bokpresentation/",
+          "extracted_count": 20
+        },
+        {
+          "timestamp": "20100227062515",
+          "original": "http://cwasteson.skolbloggen.se:80/category/bokpresentation/",
+          "archive_url": "https://web.archive.org/web/20100227062515id_/http://cwasteson.skolbloggen.se:80/category/bokpresentation/",
+          "extracted_count": 10
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/bokpresentation/feed/",
+      "capture_count": 0,
+      "captures": []
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/forskning/",
+      "capture_count": 2,
+      "captures": [
+        {
+          "timestamp": "20120126003704",
+          "original": "http://cwasteson.skolbloggen.se/category/forskning/",
+          "archive_url": "https://web.archive.org/web/20120126003704id_/http://cwasteson.skolbloggen.se/category/forskning/",
+          "extracted_count": 16
+        },
+        {
+          "timestamp": "20100821093746",
+          "original": "http://cwasteson.skolbloggen.se/category/forskning/",
+          "archive_url": "https://web.archive.org/web/20100821093746id_/http://cwasteson.skolbloggen.se/category/forskning/",
+          "extracted_count": 14
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/forskning/feed/",
+      "capture_count": 0,
+      "captures": []
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/funderingar/",
+      "capture_count": 4,
+      "captures": [
+        {
+          "timestamp": "20120303061801",
+          "original": "http://cwasteson.skolbloggen.se:80/category/funderingar/",
+          "archive_url": "https://web.archive.org/web/20120303061801id_/http://cwasteson.skolbloggen.se:80/category/funderingar/",
+          "extracted_count": 13
+        },
+        {
+          "timestamp": "20120126070232",
+          "original": "http://cwasteson.skolbloggen.se/category/funderingar/",
+          "archive_url": "https://web.archive.org/web/20120126070232id_/http://cwasteson.skolbloggen.se/category/funderingar/",
+          "extracted_count": 13
+        },
+        {
+          "timestamp": "20100820163141",
+          "original": "http://cwasteson.skolbloggen.se/category/funderingar/",
+          "archive_url": "https://web.archive.org/web/20100820163141id_/http://cwasteson.skolbloggen.se/category/funderingar/",
+          "extracted_count": 13
+        },
+        {
+          "timestamp": "20100227025329",
+          "original": "http://cwasteson.skolbloggen.se:80/category/funderingar/",
+          "archive_url": "https://web.archive.org/web/20100227025329id_/http://cwasteson.skolbloggen.se:80/category/funderingar/",
+          "extracted_count": 13
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/funderingar/feed/",
+      "capture_count": 0,
+      "captures": []
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/internet/",
+      "capture_count": 3,
+      "captures": [
+        {
+          "timestamp": "20120126030735",
+          "original": "http://cwasteson.skolbloggen.se/category/internet/",
+          "archive_url": "https://web.archive.org/web/20120126030735id_/http://cwasteson.skolbloggen.se/category/internet/",
+          "extracted_count": 19
+        },
+        {
+          "timestamp": "20100820163036",
+          "original": "http://cwasteson.skolbloggen.se/category/internet/",
+          "archive_url": "https://web.archive.org/web/20100820163036id_/http://cwasteson.skolbloggen.se/category/internet/",
+          "extracted_count": 16
+        },
+        {
+          "timestamp": "20100227062211",
+          "original": "http://cwasteson.skolbloggen.se:80/category/internet/",
+          "archive_url": "https://web.archive.org/web/20100227062211id_/http://cwasteson.skolbloggen.se:80/category/internet/",
+          "extracted_count": 8
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/internet/feed/",
+      "capture_count": 0,
+      "captures": []
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/okategoriserad/",
+      "capture_count": 2,
+      "captures": [
+        {
+          "timestamp": "20100820163012",
+          "original": "http://cwasteson.skolbloggen.se/category/okategoriserad/",
+          "archive_url": "https://web.archive.org/web/20100820163012id_/http://cwasteson.skolbloggen.se/category/okategoriserad/",
+          "extracted_count": 14
+        },
+        {
+          "timestamp": "20100621114313",
+          "original": "http://cwasteson.skolbloggen.se:80/category/okategoriserad/",
+          "archive_url": "https://web.archive.org/web/20100621114313id_/http://cwasteson.skolbloggen.se:80/category/okategoriserad/",
+          "extracted_count": 14
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/okategoriserad/feed/",
+      "capture_count": 0,
+      "captures": []
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/pim/",
+      "capture_count": 1,
+      "captures": [
+        {
+          "timestamp": "20100821011727",
+          "original": "http://cwasteson.skolbloggen.se/category/pim/",
+          "archive_url": "https://web.archive.org/web/20100821011727id_/http://cwasteson.skolbloggen.se/category/pim/",
+          "extracted_count": 14
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/pim/feed/",
+      "capture_count": 0,
+      "captures": []
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/utbildning/",
+      "capture_count": 4,
+      "captures": [
+        {
+          "timestamp": "20120308033303",
+          "original": "http://cwasteson.skolbloggen.se:80/category/utbildning/",
+          "archive_url": "https://web.archive.org/web/20120308033303id_/http://cwasteson.skolbloggen.se:80/category/utbildning/",
+          "extracted_count": 16
+        },
+        {
+          "timestamp": "20120126063513",
+          "original": "http://cwasteson.skolbloggen.se/category/utbildning/",
+          "archive_url": "https://web.archive.org/web/20120126063513id_/http://cwasteson.skolbloggen.se/category/utbildning/",
+          "extracted_count": 16
+        },
+        {
+          "timestamp": "20100820163213",
+          "original": "http://cwasteson.skolbloggen.se/category/utbildning/",
+          "archive_url": "https://web.archive.org/web/20100820163213id_/http://cwasteson.skolbloggen.se/category/utbildning/",
+          "extracted_count": 16
+        },
+        {
+          "timestamp": "20100227062216",
+          "original": "http://cwasteson.skolbloggen.se:80/category/utbildning/",
+          "archive_url": "https://web.archive.org/web/20100227062216id_/http://cwasteson.skolbloggen.se:80/category/utbildning/",
+          "extracted_count": 15
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/category/utbildning/feed/",
+      "capture_count": 0,
+      "captures": []
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/om/",
+      "capture_count": 4,
+      "captures": [
+        {
+          "timestamp": "20120126013804",
+          "original": "http://cwasteson.skolbloggen.se/om/",
+          "archive_url": "https://web.archive.org/web/20120126013804id_/http://cwasteson.skolbloggen.se/om/",
+          "extracted_count": 1
+        },
+        {
+          "timestamp": "20100821003542",
+          "original": "http://cwasteson.skolbloggen.se/om/",
+          "archive_url": "https://web.archive.org/web/20100821003542id_/http://cwasteson.skolbloggen.se/om/",
+          "extracted_count": 11
+        },
+        {
+          "timestamp": "20100621114323",
+          "original": "http://cwasteson.skolbloggen.se:80/om/",
+          "archive_url": "https://web.archive.org/web/20100621114323id_/http://cwasteson.skolbloggen.se:80/om/",
+          "extracted_count": 11
+        },
+        {
+          "timestamp": "20100302131547",
+          "original": "http://cwasteson.skolbloggen.se:80/om/",
+          "archive_url": "https://web.archive.org/web/20100302131547id_/http://cwasteson.skolbloggen.se:80/om/",
+          "extracted_count": 7
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/page/2/",
+      "capture_count": 3,
+      "captures": [
+        {
+          "timestamp": "20120126045337",
+          "original": "http://cwasteson.skolbloggen.se/page/2/",
+          "archive_url": "https://web.archive.org/web/20120126045337id_/http://cwasteson.skolbloggen.se/page/2/",
+          "extracted_count": 21
+        },
+        {
+          "timestamp": "20100821003528",
+          "original": "http://cwasteson.skolbloggen.se/page/2/",
+          "archive_url": "https://web.archive.org/web/20100821003528id_/http://cwasteson.skolbloggen.se/page/2/",
+          "extracted_count": 21
+        },
+        {
+          "timestamp": "20100303002331",
+          "original": "http://cwasteson.skolbloggen.se:80/page/2/",
+          "archive_url": "https://web.archive.org/web/20100303002331id_/http://cwasteson.skolbloggen.se:80/page/2/",
+          "extracted_count": 19
+        }
+      ]
+    },
+    {
+      "seed": "http://cwasteson.skolbloggen.se/page/6",
+      "capture_count": 2,
+      "captures": [
+        {
+          "timestamp": "20170704113908",
+          "original": "http://cwasteson.skolbloggen.se:80/page/6/",
+          "archive_url": "https://web.archive.org/web/20170704113908id_/http://cwasteson.skolbloggen.se:80/page/6/",
+          "extracted_count": 21
+        },
+        {
+          "timestamp": "20170602224518",
+          "original": "http://cwasteson.skolbloggen.se:80/page/6/",
+          "archive_url": "https://web.archive.org/web/20170602224518id_/http://cwasteson.skolbloggen.se:80/page/6/",
+          "extracted_count": 21
+        }
+      ]
+    }
+  ]
+}

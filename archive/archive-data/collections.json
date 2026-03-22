@@ -1,0 +1,203 @@
+{
+  "site": {
+    "title": "Digitalt arkiv",
+    "tagline": "Ett lokalt nav för återställda, kartlagda och planerade webbarkiv.",
+    "summary": "Det här arkivet samlar lokala kopior av borttagna sajter, forskningsunderlag inför kommande återställningar och tydliga statusmarkeringar för vad som redan finns läsbart lokalt.",
+    "status_scale": [
+      "extern referens",
+      "kandidat",
+      "redo för inventering",
+      "inventerad",
+      "delvis återställd",
+      "återställd"
+    ]
+  },
+  "about": [
+    "Arkivet är byggt för att kunna bära flera samlingar över tid. Varje återställd sajt får ligga kvar i en egen toppnivåmapp, medan startsidan i archive fungerar som katalog, orientering och dokumentation.",
+    "Målet är inte bara att länka till filer, utan att ge sammanhang: vad sajten var, varför den är värd att bevara, hur stark attribueringen är och vad som återstår innan en full lokal återställning är klar."
+  ],
+  "standalone_sites": [
+    {
+      "slug": "bufsimrishamn",
+      "title": "Barn- och utbildning Simrishamn",
+      "summary": "Återställd lokal kopia av en borttagen WordPress-sajt med lokal sökfunktion, årsöversikter och återställningsrapport.",
+      "status": "återställd",
+      "local_path": "bufsimrishamn/site/index.html"
+    }
+  ],
+  "collections": [
+    {
+      "slug": "charlotta-wasteson",
+      "title": "Charlotta Wasteson",
+      "summary": "Kartläggning av Charlotta Wastesons publika bloggar, skolbloggar och tillhörande återställningsspår.",
+      "status": "pågående kartläggning",
+      "intro": [
+        "Charlotta Wastesons digitala publicering rör sig mellan pedagogik, IKT, skolutveckling, kultur och lokal offentlighet. Materialet pekar på ett sammanhållet publiceringsmönster där en aktiv huvudblogg samspelar med flera specialiserade eller äldre bloggar på Skolbloggen.",
+        "Den här samlingen är utformad för att hålla isär säkert verifierade sajter, sannolika kandidater och rena referenskällor. Varje post dokumenterar varför sajten finns med, hur stark kopplingen är och vilken återställningsstatus som gäller lokalt i archive."
+      ],
+      "entries": [
+        {
+          "slug": "cwasteson-blogspot",
+          "title": "Charlotta Wastesons bollplank",
+          "canonical_url": "http://cwasteson.blogspot.com/",
+          "platform": "Blogger",
+          "confidence": "verifierad",
+          "status": "extern referens",
+          "owner_relation": "Huvudblogg och primär referenspunkt för Charlotta Wastesons offentliga skrivande.",
+          "summary_long": "Detta är Charlotta Wastesons tydligast identifierade huvudblogg. Den fungerar som nav för hennes längre resonemang om pedagogik, IKT, kultur, vardagsobservationer och senare lokalpolitiska frågor i Simrishamn. Bloggen används i samlingen som en aktiv referenskälla, inte som första återställningsmål, eftersom den fortfarande är tillgänglig och samtidigt innehåller hänvisningar till äldre eller övergivna publiceringsytor.",
+          "evidence": [
+            "Identifierad som hennes huvudblogg med titeln \"Charlotta Wastesons bollplank\".",
+            "Om-sidan pekar tillbaka på äldre bloggspår och beskriver en tidigare WordPress-närvaro.",
+            "Researchmaterialet beskriver bloggen som fortsatt aktiv och central för hennes digitala identitet."
+          ],
+          "wayback_links": [
+            {
+              "label": "Wayback Machine för huvudbloggen",
+              "url": "https://web.archive.org/web/*/http://cwasteson.blogspot.com/"
+            },
+            {
+              "label": "Wayback Machine för om-sidan",
+              "url": "https://web.archive.org/web/*/http://cwasteson.blogspot.com/p/om-mig.html"
+            }
+          ]
+        },
+        {
+          "slug": "cwasteson-skolbloggen",
+          "title": "Bollplanket",
+          "canonical_url": "http://cwasteson.skolbloggen.se/",
+          "platform": "Skolbloggen",
+          "confidence": "verifierad",
+          "status": "delvis återställd",
+          "owner_relation": "Tydligt kopplad till Charlotta Wasteson som en äldre skolblogg/WordPress-yta.",
+          "summary_long": "Den här adressen framstår som den viktigaste borttagna bloggen att börja med. Flera spår beskriver den som hennes äldre Bollplanket på Skolbloggen, alltså den WordPress-baserade föregångaren till den mer kända Blogger-bloggen. Första HTML-passet är nu delvis återställt lokalt med ett urval artiklar och arkivsidor, och den fungerar därför redan som pilot för den fortsatta återställningen.",
+          "evidence": [
+            "Listad i researchmaterialet som äldre WordPress-blogg på Skolbloggen.",
+            "Beskrivs som föregångare till den senare Blogger-bloggen.",
+            "Har både tydlig URL och tydlig tematisk koppling till hennes pedagogiska skrivande."
+          ],
+          "wayback_links": [
+            {
+              "label": "Wayback Machine för cwasteson.skolbloggen.se",
+              "url": "https://web.archive.org/web/*/http://cwasteson.skolbloggen.se/"
+            }
+          ],
+          "local_path": "cwasteson-skolbloggen/site/index.html"
+        },
+        {
+          "slug": "cwaste-skolbloggen",
+          "title": "Fröken Wastesons länksida",
+          "canonical_url": "http://cwaste.skolbloggen.se/",
+          "platform": "Skolbloggen",
+          "confidence": "verifierad",
+          "status": "delvis återställd",
+          "owner_relation": "Tydligt kopplad resurs- och ämnessida under Charlotta Wastesons namnvariant CWaste.",
+          "summary_long": "Fröken Wastesons länksida verkar ha fungerat som en resursbank för undervisning i svenska på gymnasiet. Den är viktig inte bara för vad den kan innehålla i sig, utan också för att länksamlingar ofta pekar vidare till fler relaterade bloggar, elevsidor och externa resurser. En första HTML-baserad lokal återställning finns nu på plats med startsida, inlägg, kategorier, taggar och ett stort urval statiska resurssidor. Sajten bör därför räknas som delvis återställd, samtidigt som fler mediafiler och finputsning återstår.",
+          "evidence": [
+            "Förekommer som tydligt namngiven Skolbloggen-adress i researchmaterialet.",
+            "Beskrivs som en ämnes- och resursinriktad sida för svenska på gymnasiet.",
+            "Aliaset CWaste återkommer i de övriga spåren kring Charlotta Wasteson."
+          ],
+          "wayback_links": [
+            {
+              "label": "Wayback Machine för cwaste.skolbloggen.se",
+              "url": "https://web.archive.org/web/*/http://cwaste.skolbloggen.se/"
+            }
+          ],
+          "local_path": "cwaste-skolbloggen/site/index.html"
+        },
+        {
+          "slug": "ikttips-skolbloggen",
+          "title": "IKT-tips",
+          "canonical_url": "http://ikttips.skolbloggen.se/",
+          "platform": "Skolbloggen",
+          "confidence": "verifierad",
+          "status": "delvis återställd",
+          "owner_relation": "Tydligt kopplad IKT-blogg med pedagogiskt fokus.",
+          "summary_long": "IKT-tips framstår som en renodlad pedagogisk arbetsyta med inriktning på digitala verktyg, upphovsrätt, plagiat och praktisk användning av nätet i undervisningen. Den här typen av sajt är särskilt värdefull att återställa eftersom den både bär innehållshistorik och visar hur digitalisering av skolan diskuterades under den period då Charlotta Wasteson var aktiv som pedagog och IKT-inriktad bloggare. Ett första HTML-baserat lokalt återställningspass finns nu på plats med startsida, artiklar, kategorier, arkiv och ett större urval statiska resurssidor, vilket gör att sajten bör räknas som delvis återställd även om vidare mediakomplettering återstår.",
+          "evidence": [
+            "Finns uttryckligen listad i researchmaterialet.",
+            "Researchen innehåller även identifierade undersidor om upphovsrätt och plagiat.",
+            "Temat stämmer direkt med Charlotta Wastesons dokumenterade roll som IKT-pedagog."
+          ],
+          "wayback_links": [
+            {
+              "label": "Wayback Machine för ikttips.skolbloggen.se",
+              "url": "https://web.archive.org/web/*/http://ikttips.skolbloggen.se/"
+            },
+            {
+              "label": "Wayback Machine för upphovsrättssidan",
+              "url": "https://web.archive.org/web/*/http://ikttips.skolbloggen.se/lag-och-ratt/upphovsratt/"
+            }
+          ],
+          "local_path": "ikttips-skolbloggen/site/index.html"
+        },
+        {
+          "slug": "cwastes-skolbloggen",
+          "title": "Klassblogg svenska",
+          "canonical_url": "http://cwastes.skolbloggen.se/",
+          "platform": "Skolbloggen",
+          "confidence": "sannolik",
+          "status": "delvis återställd",
+          "owner_relation": "Starkt indikativ elev- eller kursblogg med tydlig namnkoppling men svagare direkt attribution.",
+          "summary_long": "Den här bloggen är inte lika starkt verifierad som de tre tydligaste huvudspåren, men kombinationen av URL-namn, skolkontext och beskrivningen av en klassblogg för svenskaelever gör den relevant att ta med redan nu. Den första lokala återställningen visar en omfattande elev- och klassrumsnära publicering med över hundra artiklar, månadsarkiv, kategorier och flera författarsidor där aliaset cwaste förekommer tillsammans med elevnamn. Det stärker bilden av sajten som en kurs- eller klassblogg i direkt anslutning till Charlotta Wastesons undervisning, även om attribueringen fortsatt markeras som sannolik och inte helt slutgiltigt bevisad.",
+          "evidence": [
+            "URL-namnet ligger mycket nära övriga Wasteson-varianter.",
+            "Researchmaterialet beskriver den som en klassblogg för hennes svenskundervisning.",
+            "Attribueringen är sannolik men inte lika uttryckligt bekräftad som för cwasteson och cwaste."
+          ],
+          "wayback_links": [
+            {
+              "label": "Wayback Machine för cwastes.skolbloggen.se",
+              "url": "https://web.archive.org/web/*/http://cwastes.skolbloggen.se/"
+            }
+          ],
+          "local_path": "cwastes-skolbloggen/site/index.html"
+        },
+        {
+          "slug": "smeste09-skolbloggen",
+          "title": "Kursblogg Svenska (smeste09)",
+          "canonical_url": "http://smeste09.skolbloggen.se/",
+          "platform": "Skolbloggen",
+          "confidence": "sannolik",
+          "status": "delvis återställd",
+          "owner_relation": "Sannolik klass- eller kursblogg i direkt pedagogiskt sammanhang.",
+          "summary_long": "smeste09 pekas ut som en kursblogg där veckoplanering, uppgifter och respons verkar ha organiserats för en specifik klass. Den hör hemma i samlingen eftersom den breddar bilden av Charlotta Wastesons publicering från personlig bloggning till konkret kursadministration och klassrumsnära användning. Den första lokala återställningen visar nu en sammanhållen kursyta med svenska B-material, introduktionsposter, uppgifter, referat, respons och sidor som veckoplanering och URKUND-inlämning. Attribueringen markeras fortfarande som sannolik snarare än fullt bevisad, men sajtens innehåll och struktur ligger tydligt i linje med övriga pedagogiska spår kring Charlotta Wasteson.",
+          "evidence": [
+            "Researchmaterialet nämner adressen som kursblogg för svenska.",
+            "Beskrivningen stämmer med dokumenterade undervisningsmönster i de övriga bloggarna.",
+            "Saknar lika stark direkt självattribuering som huvudbloggarna och markeras därför som sannolik."
+          ],
+          "wayback_links": [
+            {
+              "label": "Wayback Machine för smeste09.skolbloggen.se",
+              "url": "https://web.archive.org/web/*/http://smeste09.skolbloggen.se/"
+            }
+          ],
+          "local_path": "smeste09-skolbloggen/site/index.html"
+        },
+        {
+          "slug": "bufsimrishamn-charlotta",
+          "title": "Barn- och utbildning Simrishamn",
+          "canonical_url": "https://bufsimrishamn.wordpress.com/",
+          "platform": "WordPress",
+          "confidence": "verifierad",
+          "status": "återställd",
+          "owner_relation": "Kommunal sajt där Charlotta Wasteson förekommer i professionell kontext och där hennes verksamhet inom barn- och utbildningsförvaltningen är en del av det dokumenterade materialet.",
+          "summary_long": "Den här återställda WordPress-sajten hör inte till Charlotta Wastesons personliga bloggspår, men den är relevant i samlingen eftersom den dokumenterar den institutionella miljö där hon verkade som pedagog och kommunikatör i Simrishamn. Sajten fungerar därför som ett viktigt kontextarkiv bredvid skolbloggarna: inte som en privat eller personlig blogg, utan som en lokal offentlig verksamhetssajt med koppling till hennes yrkesroll och det utbildningshistoriska sammanhang där flera av de andra spåren hör hemma.",
+          "evidence": [
+            "Sajten är redan återställd lokalt i archive som en fullständig WordPress-kopia.",
+            "Materialet knyter an till Simrishamns barn- och utbildningsverksamhet, där Charlotta Wasteson förekommer i professionell kontext.",
+            "Posten fungerar som kontextmaterial i samlingen snarare än som ett personligt bloggspår."
+          ],
+          "wayback_links": [
+            {
+              "label": "Wayback Machine för bufsimrishamn.wordpress.com",
+              "url": "https://web.archive.org/web/*/https://bufsimrishamn.wordpress.com/"
+            }
+          ],
+          "local_path": "bufsimrishamn/site/index.html"
+        }
+      ]
+    }
+  ]
+}

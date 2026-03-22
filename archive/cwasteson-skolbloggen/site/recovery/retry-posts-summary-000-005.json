@@ -1,0 +1,36 @@
+{
+  "candidate_count": 12,
+  "offset": 0,
+  "limit": 5,
+  "processed_count": 5,
+  "downloaded_count": 0,
+  "skipped_existing_count": 5,
+  "failed_count": 0,
+  "results": [
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/09/14/nagra-ord-om-lashunger/",
+      "path": "2010/09/14/nagra-ord-om-lashunger/index.html",
+      "status": "skipped_existing"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se:80/2010/02/15/att-lara-sig-undvika-faror-pa-natet/",
+      "path": "2010/02/15/att-lara-sig-undvika-faror-pa-natet/index.html",
+      "status": "skipped_existing"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se:80/2010/05/21/bild-hamta-och-hantera/",
+      "path": "2010/05/21/bild-hamta-och-hantera/index.html",
+      "status": "skipped_existing"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se:80/2010/06/06/jag-provar-blogger/",
+      "path": "2010/06/06/jag-provar-blogger/index.html",
+      "status": "skipped_existing"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se:80/2010/06/12/twitter-kraver-en-insats-men-kan-ge-mycket-tillbaka/",
+      "path": "2010/06/12/twitter-kraver-en-insats-men-kan-ge-mycket-tillbaka/index.html",
+      "status": "skipped_existing"
+    }
+  ]
+}
