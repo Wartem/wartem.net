@@ -1,0 +1,128 @@
+{
+  "seed_count": 26,
+  "listing_candidate_count": 107,
+  "candidate_count": 167,
+  "offset": "manual-snippet-pass",
+  "limit": 19,
+  "selected_count": 19,
+  "downloaded_count": 19,
+  "skipped_existing_count": 0,
+  "failed_count": 0,
+  "downloaded": [
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/15/ar-jag-pim-klar/",
+      "kind": "post_like",
+      "path": "2010/05/15/ar-jag-pim-klar/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/16/hantera-filer-och-mappar/",
+      "kind": "post_like",
+      "path": "2010/05/16/hantera-filer-och-mappar/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/16/vad-gor-dig-motiverad/",
+      "kind": "post_like",
+      "path": "2010/05/16/vad-gor-dig-motiverad/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/19/leker-med-bildredigeringsprogram/",
+      "kind": "post_like",
+      "path": "2010/05/19/leker-med-bildredigeringsprogram/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/20/hantera-datorns-utseende/",
+      "kind": "post_like",
+      "path": "2010/05/20/hantera-datorns-utseende/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/21/sa-har-funkar-wikipedia/",
+      "kind": "post_like",
+      "path": "2010/06/21/sa-har-funkar-wikipedia/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/21/utbildar-skolan-bort-barnens-kreativitet/",
+      "kind": "post_like",
+      "path": "2010/06/21/utbildar-skolan-bort-barnens-kreativitet/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/23/medieradet-om-mediers-paverkan/",
+      "kind": "post_like",
+      "path": "2010/06/23/medieradet-om-mediers-paverkan/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/28/jag-hinner-inte/",
+      "kind": "post_like",
+      "path": "2010/06/28/jag-hinner-inte/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/30/mp3-pa-blip-tv/",
+      "kind": "post_like",
+      "path": "2010/06/30/mp3-pa-blip-tv/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/07/14/upphovsratt-pa-internet/",
+      "kind": "post_like",
+      "path": "2010/07/14/upphovsratt-pa-internet/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/15/mobilen-i-undervisningen/",
+      "kind": "post_like",
+      "path": "2010/08/15/mobilen-i-undervisningen/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/25/lc200n-digital-kompetens-och-larande-ii/",
+      "kind": "post_like",
+      "path": "2010/08/25/lc200n-digital-kompetens-och-larande-ii/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/25/projektarbete-i-kursen-lc100n-digital-kompetens-pa-kth/",
+      "kind": "post_like",
+      "path": "2010/08/25/projektarbete-i-kursen-lc100n-digital-kompetens-pa-kth/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/26/behovs-dagslandor-eller-myror-i-skolpolitiken/",
+      "kind": "post_like",
+      "path": "2010/08/26/behovs-dagslandor-eller-myror-i-skolpolitiken/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/27/jisses-jesus/",
+      "kind": "post_like",
+      "path": "2010/08/27/jisses-jesus/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/27/svenssons-bildning-pa-internet/",
+      "kind": "post_like",
+      "path": "2010/08/27/svenssons-bildning-pa-internet/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/31/ska-lararen-behalla-badkladerna-pa/",
+      "kind": "post_like",
+      "path": "2010/08/31/ska-lararen-behalla-badkladerna-pa/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/09/02/nojeslasning-kan-vara-kostsam-for-institutionerna/",
+      "kind": "post_like",
+      "path": "2010/09/02/nojeslasning-kan-vara-kostsam-for-institutionerna/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    }
+  ],
+  "failed": []
+}

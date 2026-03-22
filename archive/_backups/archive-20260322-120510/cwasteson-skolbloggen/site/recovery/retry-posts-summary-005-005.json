@@ -1,0 +1,37 @@
+{
+  "candidate_count": 12,
+  "offset": 5,
+  "limit": 5,
+  "processed_count": 5,
+  "downloaded_count": 1,
+  "skipped_existing_count": 4,
+  "failed_count": 0,
+  "results": [
+    {
+      "url": "http://cwasteson.skolbloggen.se:80/2010/05/13/kan-du-forlata/",
+      "path": "2010/05/13/kan-du-forlata/index.html",
+      "status": "downloaded",
+      "archive_url": "https://web.archive.org/web/20100621013821id_/http://cwasteson.skolbloggen.se:80/2010/05/13/kan-du-forlata/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se:80/2010/06/13/en-mindmap-over-google-dokument/",
+      "path": "2010/06/13/en-mindmap-over-google-dokument/index.html",
+      "status": "skipped_existing"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se:80/2010/06/14/faror-pa-natet/",
+      "path": "2010/06/14/faror-pa-natet/index.html",
+      "status": "skipped_existing"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/10/lamplighetstest-av-larare/",
+      "path": "2010/02/10/lamplighetstest-av-larare/index.html",
+      "status": "skipped_existing"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/13/surfandet-stjal-tid-och-gor-dig-otalig/",
+      "path": "2010/02/13/surfandet-stjal-tid-och-gor-dig-otalig/index.html",
+      "status": "skipped_existing"
+    }
+  ]
+}

@@ -73,13 +73,13 @@ class HtmlRewriteTests(unittest.TestCase):
         link_map = {
             "https://example.com/": "index.html",
             "https://example.com/2015/12/11/post/": "2015/12/11/post/index.html",
-            "https://example.com/wp-content/uploads/img.jpg": "wp-content/uploads/img.jpg",
+            "https://cdn.example.com/img.jpg": "wp-content/uploads/img.jpg",
         }
         html = """
         <html><body>
         <a href="https://example.com/">Hem</a>
         <a href="/2015/12/11/post/">Post</a>
-        <img src="/wp-content/uploads/img.jpg" />
+        <img src="https://cdn.example.com/img.jpg" />
         </body></html>
         """
 
@@ -92,7 +92,33 @@ class HtmlRewriteTests(unittest.TestCase):
 
         self.assertIn('href="../../../../index.html"', rewritten)
         self.assertIn('href="index.html"', rewritten)
-        self.assertIn('src="../../../../wp-content/uploads/img.jpg"', rewritten)
+        self.assertIn('src="https://cdn.example.com/img.jpg"', rewritten)
+        self.assertIn('data-local-src="../../../../wp-content/uploads/img.jpg"', rewritten)
+        self.assertIn('onerror="this.onerror=null;if(this.dataset.localSrc){this.removeAttribute(', rewritten)
+
+    def test_preserves_external_image_as_primary_when_rewriting_already_localized_html(self):
+        link_map = {
+            "https://cdn.example.com/img.jpg": "wp-content/uploads/img.jpg",
+        }
+        html = """
+        <html><body>
+        <img
+          src="../../../../wp-content/uploads/img.jpg"
+          data-original-src="https://cdn.example.com/img.jpg"
+        />
+        </body></html>
+        """
+
+        rewritten = reconstruct_site.rewrite_html(
+            html,
+            "https://example.com/2015/12/11/post/",
+            "2015/12/11/post/index.html",
+            link_map,
+        )
+
+        self.assertIn('src="https://cdn.example.com/img.jpg"', rewritten)
+        self.assertIn('data-local-src="../../../../wp-content/uploads/img.jpg"', rewritten)
+        self.assertIn('data-original-src="https://cdn.example.com/img.jpg"', rewritten)
 
     def test_extract_asset_urls_finds_files_wordpress_images(self):
         html = """
@@ -106,6 +132,23 @@ class HtmlRewriteTests(unittest.TestCase):
 
         self.assertIn("http://bufsimrishamn.files.wordpress.com/2014/02/dsc_0244.jpg?w=352&h=234", assets)
         self.assertIn("http://bufsimrishamn.files.wordpress.com/2014/02/dsc_0244.jpg", assets)
+
+    def test_extract_asset_urls_can_include_extra_asset_hosts(self):
+        html = """
+        <html><body>
+        <img src="https://blogger.googleusercontent.com/img/a/sample.jpg" />
+        </body></html>
+        """
+
+        assets = reconstruct_site.extract_asset_urls(
+            html,
+            "https://cwasteson.blogspot.com/",
+            "cwasteson.blogspot.com",
+            extra_asset_hosts=["blogger.googleusercontent.com"],
+            primary_media_path_prefixes=[],
+        )
+
+        self.assertIn("https://blogger.googleusercontent.com/img/a/sample.jpg", assets)
 
 
 class ManifestTests(unittest.TestCase):

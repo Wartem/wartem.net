@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?><feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xmlns:thr="http://purl.org/syndication/thread/1.0"
+  xml:lang="en"
+  xml:base="http://cwasteson.skolbloggen.se/wp-atom.php"
+   >
+	<title type="text">Bollplanket</title>
+	<subtitle type="text">en gymnasielärares funderingar</subtitle>
+
+	<updated>2010-08-15T10:01:10Z</updated>
+	<generator uri="http://wordpress.org/" version="2.9.2">WordPress</generator>
+
+	<link rel="alternate" type="text/html" href="http://cwasteson.skolbloggen.se" />
+	<id>http://cwasteson.skolbloggen.se/feed/atom/</id>
+	<link rel="self" type="application/atom+xml" href="http://cwasteson.skolbloggen.se/feed/atom/" />
+
+			<entry>
+		<author>
+			<name>cwaste</name>
+						<uri>http://skolbloggen.se/members/cwaste/</uri>
+					</author>
+		<title type="html"><![CDATA[Mobilen i undervisningen]]></title>
+		<link rel="alternate" type="text/html" href="http://cwasteson.skolbloggen.se/2010/08/15/mobilen-i-undervisningen/" />
+		<id>http://cwasteson.skolbloggen.se/?p=1324</id>
+		<updated>2010-08-15T10:01:10Z</updated>
+		<published>2010-08-15T10:01:10Z</published>
+		<category scheme="http://cwasteson.skolbloggen.se" term="Okategoriserad" />		<summary type="html"><![CDATA[När kan man ha nytta av mobiltelefoner i undervisningen? Vid enkla uträkningar med miniräknarfunktionen, fotografering,  filmning, kanske stavningskontroll, eller vad tycker ni att den är bäst till?
+Mobilen är bra för att den är just mobil &#8211; det vill säga lätt  att ta med sig överallt &#8211; och för att den, trots sin litenhet, [...]]]></summary>
+		<content type="html" xml:base="http://cwasteson.skolbloggen.se/2010/08/15/mobilen-i-undervisningen/"><![CDATA[<p>När kan man ha nytta av mobiltelefoner i undervisningen? Vid enkla uträkningar med miniräknarfunktionen, fotografering,  filmning, kanske stavningskontroll, eller vad tycker ni att den är bäst till?</p>
+<p>Mobilen är bra för att den är just mobil &#8211; det vill säga lätt  att ta med sig överallt &#8211; och för att den, trots sin litenhet, har många någorlunda välfungerande funktioner. Men ska man filma med hög  kvalitet är oftast en filmkamera bättre, ska man fotografera är oftast  en systemkamera bättre, ska man läsa och skriva texter är oftast en bok  eller en dator bättre, ska man söka information på nätet är en dator  bättre &#8230;</p>
+<p>Mobiler i  undervisningen får inte bli kejsarens nya kläder, utan vår användning  måste vara väl genomtänkt! Jag skulle vilja se en undersökning som  visar vad kan man använda  mobilerna till som gör att eleverna verkligen lär sig bättre och  effektivare. När är mobilen bättre än andra (ofta  mer specialiserade) verktyg?</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://cwasteson.skolbloggen.se/2010/08/15/mobilen-i-undervisningen/#comments" thr:count="1"/>
+		<link rel="replies" type="application/atom+xml" href="http://cwasteson.skolbloggen.se/2010/08/15/mobilen-i-undervisningen/feed/atom/" thr:count="1"/>
+		<thr:total>1</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>cwaste</name>
+						<uri>http://skolbloggen.se/members/cwaste/</uri>
+					</author>
+		<title type="html"><![CDATA[Integritet på Internet]]></title>
+		<link rel="alternate" type="text/html" href="http://cwasteson.skolbloggen.se/2010/07/18/integritet-pa-internet/" />
+		<id>http://cwasteson.skolbloggen.se/?p=1315</id>
+		<updated>2010-07-18T07:18:32Z</updated>
+		<published>2010-07-18T07:12:51Z</published>
+		<category scheme="http://cwasteson.skolbloggen.se" term="Internet" /><category scheme="http://cwasteson.skolbloggen.se" term="bokpresentation" /><category scheme="http://cwasteson.skolbloggen.se" term="funderingar" /><category scheme="http://cwasteson.skolbloggen.se" term="utbildning" /><category scheme="http://cwasteson.skolbloggen.se" term="integritet" />		<summary type="html"><![CDATA[Jag tycker att det är bra om eleverna har tillgång till Wikipedia, Flickr, Facebook och Bilddagboken etc även från skolans datorer. De behöver träna sig att använda källkritik såväl när de läser kompisarnas inlägg på Facebook som artiklarna på Wikipedia, och vi kan i skolan ha bra diskussioner kring hur man kan använda dessa verktyg [...]]]></summary>
+		<content type="html" xml:base="http://cwasteson.skolbloggen.se/2010/07/18/integritet-pa-internet/"><![CDATA[<p>Jag tycker att det är bra om eleverna har tillgång till Wikipedia, Flickr, Facebook och Bilddagboken etc även från skolans datorer. De behöver träna sig att använda källkritik såväl när de läser kompisarnas inlägg på Facebook som artiklarna på Wikipedia, och vi kan i skolan ha bra diskussioner kring hur man kan använda dessa verktyg och vad man kan och bör tänka på när man läser, tittar på andras bilder, skriver och lägger ut egna bilder.</p>
+<p>Jag tycker att det är en lagom självcensur att tänka att det man skriver och lägger ut, ska kunna ses av alla, det vill säga av såväl chefen och kollegorna, som ens föräldrar och eventuella barn &#8230; Även om man sedan väljer att inte göra materialet så öppet, tycker jag att detta är en bra riktlinje. Vem vet säkert vart ens mer privata bilder och statusuppdateringar kan ta vägen om man lägger dem på Internet?</p>
+<p>Generellt uppmuntrar jag mina elever att låta sina texter och bilder  vara öppna för alla att se på Internet. Samtidigt råder jag dem alltså att inte  lägga upp saker som de tycker är pinsamma för dem själva eller deras  kompisar eller som de misstänker skulle kunna missförstås av  utomstående.</p>
+<p>I häftet <em>Ungas integritet på nätet. En guide för föräldrar,  pedagoger och andra viktiga vuxna</em> av Johnny Lindqvist och Ewa  Thorslund får man bland annat tips kring vad man ska tänka på när man  lämnar ut material om sig själv på nätet (Lindqvist &amp; Thorslund  2009, s 17-22). Där finns också mycket bra övningar och  diskussionsmaterial med konkreta exempel på trovärdiga situationer och  problem som kan uppstå (Lindqvist &amp; Thorslund 2009, s 57-66).</p>
+<p>Detta häfte är mycket bra att utgå ifrån  för oss som jobbar i skolan!</p>
+<p><strong>Vill du läsa häftet?</strong></p>
+<p>Lindqvist,<em> </em>Johnny och Thorslund,<em> </em>Ewa (2009), <em>Ungas integritet på nätet. En guide för föräldrar, pedagoger och andra viktiga vuxna</em>, .SE:s Internetguide, nr 5, Stockholm: Stiftelsen för Internetinfrastruktur. Hela häftet kan laddas ner som en pdf här:</p>
+<p><a href="http://www.medieradet.se/upload/Broschyrer_PDF/Ungas_integritet.pdf">http://www.medieradet.se/upload/Broschyrer_PDF/Ungas_integritet.pdf</a></p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://cwasteson.skolbloggen.se/2010/07/18/integritet-pa-internet/#comments" thr:count="2"/>
+		<link rel="replies" type="application/atom+xml" href="http://cwasteson.skolbloggen.se/2010/07/18/integritet-pa-internet/feed/atom/" thr:count="2"/>
+		<thr:total>2</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>cwaste</name>
+						<uri>http://skolbloggen.se/members/cwaste/</uri>
+					</author>
+		<title type="html"><![CDATA[Upphovsrätt på Internet]]></title>
+		<link rel="alternate" type="text/html" href="http://cwasteson.skolbloggen.se/2010/07/14/upphovsratt-pa-internet/" />
+		<id>http://cwasteson.skolbloggen.se/?p=1306</id>
+		<updated>2010-07-14T21:11:23Z</updated>
+		<published>2010-07-14T09:45:10Z</published>
+		<category scheme="http://cwasteson.skolbloggen.se" term="Internet" /><category scheme="http://cwasteson.skolbloggen.se" term="bokpresentation" /><category scheme="http://cwasteson.skolbloggen.se" term="funderingar" /><category scheme="http://cwasteson.skolbloggen.se" term="upphovsrätt" />		<summary type="html"><![CDATA[Alla som skapar något har automatiskt upphovsrätt till sitt material. Med hjälp av olika typer av licenser kan man, om man vill, underlätta för andra att på ett lagligt sätt använda ens verk. För att lära mig mer om detta har jag läst häftet Copyright  &#8211; Copyleft. En guide om upphovsrätt och licenser på nätet [...]]]></summary>
+		<content type="html" xml:base="http://cwasteson.skolbloggen.se/2010/07/14/upphovsratt-pa-internet/"><![CDATA[<p>Alla som skapar något har automatiskt upphovsrätt till sitt material. Med hjälp av olika typer av licenser kan man, om man vill, underlätta för andra att på ett lagligt sätt använda ens verk. För att lära mig mer om detta har jag läst häftet <em>Copyright  &#8211; Copyleft. En guide om upphovsrätt och licenser på nätet</em> av Mahtias Klang.</p>
+<p>Klang berättar att det är formen och inte idéerna i sig som skyddas (Klang 2008, s 10). Detta tycker jag är logiskt och bra. Tänk om människor hade kunnat ta patent på sina idéer! Då skulle mänskligheten inte ha samma möjligheter till utveckling. Samtidigt är det bra att man kan skydda formen, för det kan innebära ett sätt att få betalt för det jobb man lagt ner för att förverkliga sina idéer.</p>
+<p>Klang berättar även att det finns två olika typer av rättigheter: ideella och ekonomiska. De ideella rättigheterna innebär att upphovsmannen ska namnges när verket används och att han eller hon kan neka till ändringar i verket eller att verket sprids på ett sätt som han eller hon upplever som kränkande. De ekonomiska rättigheterna innebär att upphovsmannen kan förbjuda eller begränsa kopiering och spridning av verket. Båda typerna av rättigheter kan man välja att avstå ifrån, men bara den senare kan överlåtas (Klang 2009, s 10).</p>
+<p>Klang går igenom olika typer av licenser som styr de ekonomiska rättigheterna och talar om vilka rättigheter och skyldigheter som är kopplade till olika verk. Jag själv använder mig mycket av Creative Commons licenser och har valt att lägga många av mina bilder på Flickr som ”Erkännande”. Jag tillåter därmed såväl bearbetningar som att man tjänar pengar på mina bilder – under förutsättning att man visar att jag är upphovsmannen. Därför blev jag lättad över att läsa att man har rätt till att ens verk ska behandlas med respekt, även om man väljer att tillåta bearbetningar.</p>
+<p><strong>Vill du läsa häftet i sin helhet?</strong></p>
+<p>Klang,<em> </em>Mahtias (2009), <em>Copyright  &#8211; Copyleft. En guide om upphovsrätt och licenser på nätet</em> .SE:s Internetguide nr 6, Stockholm: Stiftelsen för Internetinfrastruktur. Hela häftet kan laddas ner som pdf här:</p>
+<p><a href="http://www.iis.se/docs/Copyright_copyleft_webb.pdf">http://www.iis.se/docs/Copyright_copyleft_webb.pdf</a></p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://cwasteson.skolbloggen.se/2010/07/14/upphovsratt-pa-internet/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://cwasteson.skolbloggen.se/2010/07/14/upphovsratt-pa-internet/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>cwaste</name>
+						<uri>http://skolbloggen.se/members/cwaste/</uri>
+					</author>
+		<title type="html"><![CDATA[Mp3 på blip.tv]]></title>
+		<link rel="alternate" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/30/mp3-pa-blip-tv/" />
+		<id>http://cwasteson.skolbloggen.se/?p=1298</id>
+		<updated>2010-06-30T20:38:04Z</updated>
+		<published>2010-06-30T20:37:33Z</published>
+		<category scheme="http://cwasteson.skolbloggen.se" term="Internet" /><category scheme="http://cwasteson.skolbloggen.se" term="funderingar" /><category scheme="http://cwasteson.skolbloggen.se" term="blip.tv" /><category scheme="http://cwasteson.skolbloggen.se" term="podcast" /><category scheme="http://cwasteson.skolbloggen.se" term="podsändning" />		<summary type="html"><![CDATA[Jag har tidigare använt&#160;blip.tv för filmer. Nu prövar jag att lägga upp en ljudfil (mp3):
+Presentation
+Jag har lagligt plockat musiken från Multimediabyrån under Arkiv &#8211; Musik &#8211; Historisk musik &#8211; 1900-tal &#8211; Al Capone och så har jag lagt in en kort presentation av mig och min blogg. Ljudfilen gjordes med hjälp av  Audacity och [...]]]></summary>
+		<content type="html" xml:base="http://cwasteson.skolbloggen.se/2010/06/30/mp3-pa-blip-tv/"><![CDATA[<p>Jag har tidigare använt&nbsp;<a href="http://blip.tv" title="http://blip. " target="_blank">blip.tv</a> för filmer. Nu prövar jag att lägga upp en ljudfil (mp3):</p>
+<p><a href="http://blip.tv/file/get/Cwaste-LiteOmMigOchMinBlogg127.mp3">Presentation</a></p>
+<p>Jag har lagligt plockat musiken från Multimediabyrån under Arkiv &#8211; Musik &#8211; <a href="http://www.multimedia.skolverket.se/Arkiv/Musik/Historisk-musik/">Historisk musik</a> &#8211; 1900-tal &#8211; Al Capone och så har jag lagt in en kort presentation av mig och min blogg. Ljudfilen gjordes med hjälp av  <a href="http://audacity.sourceforge.net/" target="_blank">Audacity</a> och omvandlades sedan till mp3 med hjälp av <a href="http://audacity.sourceforge.net/help/faq?s=install&amp;item=lame-mp3" target="_blank">MP3-kodaren  LAME.</a></p>
+<p>Mmm &#8230; jag vet inte. Riktigt smidigt var det inte. Det måste gå att göra det enklare. Har ni några tips?</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/30/mp3-pa-blip-tv/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://cwasteson.skolbloggen.se/2010/06/30/mp3-pa-blip-tv/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>cwaste</name>
+						<uri>http://skolbloggen.se/members/cwaste/</uri>
+					</author>
+		<title type="html"><![CDATA[Jag hinner inte!]]></title>
+		<link rel="alternate" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/28/jag-hinner-inte/" />
+		<id>http://cwasteson.skolbloggen.se/?p=1295</id>
+		<updated>2010-06-28T07:32:17Z</updated>
+		<published>2010-06-28T07:31:02Z</published>
+		<category scheme="http://cwasteson.skolbloggen.se" term="funderingar" /><category scheme="http://cwasteson.skolbloggen.se" term="utbildning" /><category scheme="http://cwasteson.skolbloggen.se" term="blogg" /><category scheme="http://cwasteson.skolbloggen.se" term="blogger" /><category scheme="http://cwasteson.skolbloggen.se" term="IKT" />		<summary type="html"><![CDATA[
+Det är sommar och sol och jag roar mig med sommarlovsläsning. Jag tar en kurs på KTH och i den ingår att vi ska blogga på Blogger. I sommar kommer jag därför bara att publicera inlägg på följande blogg:
+http://cwasteson.blogspot.com/
+Inläggen kommer att handla om användning av informations- och kommunikationsteknik i skolan. Jag testar bl.a. webb 2.0, [...]]]></summary>
+		<content type="html" xml:base="http://cwasteson.skolbloggen.se/2010/06/28/jag-hinner-inte/"><![CDATA[<p><a href="http://www.flickr.com/photos/wastes/4736925294/"><img class="alignnone" title="Summertime and the living is easy by CWasteson CC på Flickr." src="http://farm5.static.flickr.com/4099/4736925294_20f782c3d8_m.jpg" alt="" width="240" height="159" /></a></p>
+<p>Det är sommar och sol och jag roar mig med sommarlovsläsning. Jag tar en kurs på KTH och i den ingår att vi ska blogga på Blogger. I sommar kommer jag därför bara att publicera inlägg på följande blogg:</p>
+<p><a href="http://cwasteson.blogspot.com/">http://cwasteson.blogspot.com/</a></p>
+<p>Inläggen kommer att handla om användning av informations- och kommunikationsteknik i skolan. Jag testar bl.a. webb 2.0, olika lärplattformar och open source-verktyg och -material.</p>
+<p>Välkomna!</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/28/jag-hinner-inte/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://cwasteson.skolbloggen.se/2010/06/28/jag-hinner-inte/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>cwaste</name>
+						<uri>http://skolbloggen.se/members/cwaste/</uri>
+					</author>
+		<title type="html"><![CDATA[Mediekompassen om mediers påverkan]]></title>
+		<link rel="alternate" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/23/medieradet-om-mediers-paverkan/" />
+		<id>http://cwasteson.skolbloggen.se/?p=1290</id>
+		<updated>2010-06-23T07:27:13Z</updated>
+		<published>2010-06-23T07:26:09Z</published>
+		<category scheme="http://cwasteson.skolbloggen.se" term="Internet" /><category scheme="http://cwasteson.skolbloggen.se" term="utbildning" /><category scheme="http://cwasteson.skolbloggen.se" term="medier" /><category scheme="http://cwasteson.skolbloggen.se" term="medierådet" />		<summary type="html"><![CDATA[Den här sidan erbjuder mycket bra material och användbara länkar:
+http://medieradet.se/
+Särskilt  länken till f.d. Tidningen i skolan, numera Mediekompassen, tror jag att jag  kommer att ha mycket nytta av i skolan!
+Har du använt Medierådets  material? Eller har du andra tips på sidor kring medier och mediers  påverkan?
+]]></summary>
+		<content type="html" xml:base="http://cwasteson.skolbloggen.se/2010/06/23/medieradet-om-mediers-paverkan/"><![CDATA[<p>Den här sidan erbjuder mycket bra material och användbara länkar:<br />
+<a href="http://medieradet.se/">http://medieradet.se/</a><br />
+Särskilt  länken till f.d. Tidningen i skolan, numera <a href="http://www.mediekompass.se/">Mediekompassen</a>, tror jag att jag  kommer att ha mycket nytta av i skolan!</p>
+<p>Har du använt Medierådets  material? Eller har du andra tips på sidor kring medier och mediers  påverkan?</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/23/medieradet-om-mediers-paverkan/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://cwasteson.skolbloggen.se/2010/06/23/medieradet-om-mediers-paverkan/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>cwaste</name>
+						<uri>http://skolbloggen.se/members/cwaste/</uri>
+					</author>
+		<title type="html"><![CDATA[Så här funkar Wikipedia ;-)]]></title>
+		<link rel="alternate" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/21/sa-har-funkar-wikipedia/" />
+		<id>http://cwasteson.skolbloggen.se/?p=1288</id>
+		<updated>2010-07-14T21:08:49Z</updated>
+		<published>2010-06-21T12:02:51Z</published>
+		<category scheme="http://cwasteson.skolbloggen.se" term="Internet" /><category scheme="http://cwasteson.skolbloggen.se" term="funderingar" /><category scheme="http://cwasteson.skolbloggen.se" term="utbildning" /><category scheme="http://cwasteson.skolbloggen.se" term="wiki" /><category scheme="http://cwasteson.skolbloggen.se" term="wikipedia" />		<summary type="html"><![CDATA[Här kan ni se en talande illustration av hur  Wikipedia  fungerar:
+http://www.youtube.com/watch?v=eaADQTeZRCY
+Tyvärr har Collage Humor tagit bort möjligheten att bädda in deras film,  så ni får gå till Youtube för att se den. Det är dock värt det!  
+]]></summary>
+		<content type="html" xml:base="http://cwasteson.skolbloggen.se/2010/06/21/sa-har-funkar-wikipedia/"><![CDATA[<h3><span style="font-size: small;">Här kan ni se en talande illustration av hur  Wikipedia  fungerar:</span></h3>
+<p><a href="http://www.youtube.com/watch?v=eaADQTeZRCY">http://www.youtube.com/watch?v=eaADQTeZRCY</a></p>
+<p>Tyvärr har Collage Humor tagit bort möjligheten att bädda in deras film,  så ni får gå till Youtube för att se den. Det är dock värt det! <img src='http://cwasteson.skolbloggen.se/wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' /> </p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/21/sa-har-funkar-wikipedia/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://cwasteson.skolbloggen.se/2010/06/21/sa-har-funkar-wikipedia/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>cwaste</name>
+						<uri>http://skolbloggen.se/members/cwaste/</uri>
+					</author>
+		<title type="html"><![CDATA[Utbildar skolan bort barnens kreativitet?]]></title>
+		<link rel="alternate" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/21/utbildar-skolan-bort-barnens-kreativitet/" />
+		<id>http://cwasteson.skolbloggen.se/2010/06/21/1279/</id>
+		<updated>2010-06-21T08:02:21Z</updated>
+		<published>2010-06-21T08:00:21Z</published>
+		<category scheme="http://cwasteson.skolbloggen.se" term="funderingar" /><category scheme="http://cwasteson.skolbloggen.se" term="utbildning" /><category scheme="http://cwasteson.skolbloggen.se" term="intelligens" /><category scheme="http://cwasteson.skolbloggen.se" term="Ken Robinson" /><category scheme="http://cwasteson.skolbloggen.se" term="kreativitet" /><category scheme="http://cwasteson.skolbloggen.se" term="skola" />		<summary type="html"><![CDATA[Sir Ken Robinson, kreativitetsexpert och professor emeritus vid Warwicks  universitet i England, hävdar att skolan dödar kreativiteten: &#8220;children grow out of creativity&#8221; eller, ännu värre, &#8220;the schools educate the children out of creativity&#8221;. Hemskt om han har rätt!
+
+Robinson säger också &#8220;Om du inte är beredd på att ha fel, så kommer du inte att [...]]]></summary>
+		<content type="html" xml:base="http://cwasteson.skolbloggen.se/2010/06/21/utbildar-skolan-bort-barnens-kreativitet/"><![CDATA[<p>Sir Ken Robinson, kreativitetsexpert och professor emeritus vid Warwicks  universitet i England, hävdar att skolan dödar kreativiteten: &#8220;children grow out of creativity&#8221; eller, ännu värre, &#8220;the schools educate the children out of creativity&#8221;. Hemskt om han har rätt!</p>
+<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="334" height="326" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="wmode" value="transparent" /><param name="bgColor" value="#ffffff" /><param name="flashvars" value="vu=http://video.ted.com/talks/dynamic/SirKenRobinson_2006-medium.flv&amp;su=http://images.ted.com/images/ted/tedindex/embed-posters/SirKenRobinson-2006.embed_thumbnail.jpg&amp;vw=320&amp;vh=240&amp;ap=0&amp;ti=66&amp;introDuration=15330&amp;adDuration=4000&amp;postAdDuration=830&amp;adKeys=talk=ken_robinson_says_schools_kill_creativity;year=2006;theme=top_10_tedtalks;theme=bold_predictions_stern_warnings;theme=master_storytellers;theme=the_creative_spark;theme=how_the_mind_works;theme=how_we_learn;event=TED2006;&amp;preAdTag=tconf.ted/embed;tile=1;sz=512x288;" /><param name="src" value="http://video.ted.com/assets/player/swf/EmbedPlayer.swf" /><param name="bgcolor" value="#ffffff" /><param name="allowfullscreen" value="true" /><embed type="application/x-shockwave-flash" width="334" height="326" src="http://video.ted.com/assets/player/swf/EmbedPlayer.swf" flashvars="vu=http://video.ted.com/talks/dynamic/SirKenRobinson_2006-medium.flv&amp;su=http://images.ted.com/images/ted/tedindex/embed-posters/SirKenRobinson-2006.embed_thumbnail.jpg&amp;vw=320&amp;vh=240&amp;ap=0&amp;ti=66&amp;introDuration=15330&amp;adDuration=4000&amp;postAdDuration=830&amp;adKeys=talk=ken_robinson_says_schools_kill_creativity;year=2006;theme=top_10_tedtalks;theme=bold_predictions_stern_warnings;theme=master_storytellers;theme=the_creative_spark;theme=how_the_mind_works;theme=how_we_learn;event=TED2006;&amp;preAdTag=tconf.ted/embed;tile=1;sz=512x288;" bgcolor="#ffffff" wmode="transparent" allowscriptaccess="always" allowfullscreen="true"></embed></object></p>
+<p>Robinson säger också &#8220;Om du inte är beredd på att ha fel, så kommer du inte att kunna tänka eller göra något originellt&#8221; och han hävdar att intelligens är &#8220;diverce, dynamic and distinct&#8221;.</p>
+<p>Har Robinson rätt i att skolan utbildar bort barnens kreativitet? Vad tycker du?</p>
+<p>Vill du läsa mer om Ken Robinson kan du till exempel läsa här: <a href="http://sirkenrobinson.com/skr/" target="_blank">http://sirkenrobinson.com/skr/</a></p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/21/utbildar-skolan-bort-barnens-kreativitet/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://cwasteson.skolbloggen.se/2010/06/21/utbildar-skolan-bort-barnens-kreativitet/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>cwaste</name>
+						<uri>http://skolbloggen.se/members/cwaste/</uri>
+					</author>
+		<title type="html"><![CDATA[Kärlek och hat]]></title>
+		<link rel="alternate" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/19/karlek-och-hat/" />
+		<id>http://cwasteson.skolbloggen.se/?p=1272</id>
+		<updated>2010-06-19T18:30:15Z</updated>
+		<published>2010-06-19T18:20:14Z</published>
+		<category scheme="http://cwasteson.skolbloggen.se" term="funderingar" />		<summary type="html"><![CDATA[
+När jag var ute och promenerade såg jag en text målad på ett elskåp nere vid hamnen: &#8220;Hat är vackert. Utan hat ingen kärlek.&#8221;
+Det kan vid första anblicken låta klokt. Motsatser behövs. Ofta. Men jag tror att ju mer och fler man hatar, desto svårare får man att älska. Och ju mer och fler man [...]]]></summary>
+		<content type="html" xml:base="http://cwasteson.skolbloggen.se/2010/06/19/karlek-och-hat/"><![CDATA[<p><img class="alignnone" title="&quot;love hate relationship&quot; CC by http://www.flickr.com/photos/smemon/" src="http://farm5.static.flickr.com/4017/4379697501_674fcd999d.jpg" alt="" width="328" height="114" /></p>
+<p>När jag var ute och promenerade såg jag en text målad på ett elskåp nere vid hamnen: &#8220;Hat är vackert. Utan hat ingen kärlek.&#8221;</p>
+<p>Det kan vid första anblicken låta klokt. Motsatser behövs. Ofta. Men jag tror att ju mer och fler man hatar, desto svårare får man att älska. Och ju mer och fler man älskar, desto lättare får man att älska. Hat föder hat och kärlek föder kärlek, inte tvärt om!</p>
+<p>Vad tror du?</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/19/karlek-och-hat/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://cwasteson.skolbloggen.se/2010/06/19/karlek-och-hat/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>cwaste</name>
+						<uri>http://skolbloggen.se/members/cwaste/</uri>
+					</author>
+		<title type="html"><![CDATA[Träffande beskrivning av problemlösning]]></title>
+		<link rel="alternate" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/15/traffande-beskrivning-av-problemlosning/" />
+		<id>http://cwasteson.skolbloggen.se/?p=1266</id>
+		<updated>2010-06-19T18:16:24Z</updated>
+		<published>2010-06-15T20:08:50Z</published>
+		<category scheme="http://cwasteson.skolbloggen.se" term="funderingar" />		<summary type="html"><![CDATA[Här kommer en träffande beskrivning av problemlösning på hög nivå (BP):
+
+]]></summary>
+		<content type="html" xml:base="http://cwasteson.skolbloggen.se/2010/06/15/traffande-beskrivning-av-problemlosning/"><![CDATA[<p>Här kommer en träffande beskrivning av problemlösning på hög nivå (BP):</p>
+<p><code><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="469" height="285" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://www.youtube.com/v/2AAa0gd7ClM&amp;hl=sv_SE&amp;fs=1&amp;" /><param name="allowfullscreen" value="true" /><embed type="application/x-shockwave-flash" width="469" height="285" src="http://www.youtube.com/v/2AAa0gd7ClM&amp;hl=sv_SE&amp;fs=1&amp;" allowscriptaccess="always" allowfullscreen="true"></embed></object></code></p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://cwasteson.skolbloggen.se/2010/06/15/traffande-beskrivning-av-problemlosning/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://cwasteson.skolbloggen.se/2010/06/15/traffande-beskrivning-av-problemlosning/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+	</feed>

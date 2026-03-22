@@ -15,6 +15,9 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlsplit, urlunsplit
 from urllib.request import Request, build_opener
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from raw_cache import fetch_url_bytes  # type: ignore
+
 
 CDX_ENDPOINT = "https://web.archive.org/cdx/search/cdx"
 WAYBACK_BASE = "https://web.archive.org/web"
@@ -86,12 +89,14 @@ class QueryDefinition:
 class CdxClient:
     def __init__(
         self,
+        cache_root: Path,
         endpoint: str = CDX_ENDPOINT,
         user_agent: str = "cdx-inventory/1.0",
         *,
         max_retries: int = 5,
         retry_backoff_seconds: float = 2.0,
     ) -> None:
+        self.cache_root = cache_root
         self.endpoint = endpoint
         self.user_agent = user_agent
         self.max_retries = max_retries
@@ -135,22 +140,17 @@ class CdxClient:
 
     def _request(self, params: dict[str, str | list[str]]) -> bytes:
         url = f"{self.endpoint}?{urlencode(params, doseq=True)}"
-        request = Request(url, headers={"User-Agent": self.user_agent, "Accept-Encoding": "identity"})
-        attempt = 0
-
-        while True:
-            try:
-                with self.opener.open(request) as response:
-                    return response.read()
-            except HTTPError as exc:
-                if exc.code not in RETRYABLE_HTTP_STATUSES or attempt >= self.max_retries:
-                    raise
-            except URLError:
-                if attempt >= self.max_retries:
-                    raise
-
-            attempt += 1
-            time.sleep(self.retry_backoff_seconds * attempt)
+        return fetch_url_bytes(
+            self.cache_root,
+            url,
+            source="bufsimrishamn/cdx_inventory.py",
+            user_agent=self.user_agent,
+            max_retries=self.max_retries,
+            retry_backoff_seconds=self.retry_backoff_seconds,
+            retryable_statuses=RETRYABLE_HTTP_STATUSES,
+            opener=self.opener,
+            suffix=".json",
+        )
 
 
 def parse_cdx_json(payload: bytes | str) -> tuple[list[dict[str, str]], str | None]:
@@ -512,6 +512,7 @@ def run(argv: list[str] | None = None) -> int:
 
     definitions = build_query_definitions(args.domain, args.scope, args.from_year, args.to_year)
     client = CdxClient(
+        output_dir.parent,
         endpoint=args.cdx_endpoint,
         max_retries=args.max_retries,
         retry_backoff_seconds=args.retry_backoff_seconds,

@@ -1,0 +1,1071 @@
+{
+  "mode": "html-subset",
+  "downloaded_count": 152,
+  "failed_count": 25,
+  "downloaded": [
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/10/29/hej-varlden/",
+      "kind": "post_like",
+      "path": "2010/10/29/hej-varlden/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2010/10/",
+      "kind": "other",
+      "path": "2010/10/index.html",
+      "archive_url": "https://web.archive.org/web/20181227122614id_/https://ikttips.skolbloggen.se/2010/10/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/11/24/retorik/",
+      "kind": "post_like",
+      "path": "2010/11/24/retorik/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/11/25/kluriga-mattefragor/",
+      "kind": "post_like",
+      "path": "2010/11/25/kluriga-mattefragor/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2010/11/",
+      "kind": "other",
+      "path": "2010/11/index.html",
+      "archive_url": "https://web.archive.org/web/20181230154131id_/https://ikttips.skolbloggen.se/2010/11/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/12/02/vad-menas-med-molnet-2/",
+      "kind": "post_like",
+      "path": "2010/12/02/vad-menas-med-molnet-2/index.html",
+      "archive_url": "https://web.archive.org/web/20171009235232id_/http://ikttips.skolbloggen.se:80/2010/12/02/vad-menas-med-molnet-2/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/12/08/creative-commons-wikimedia-commons-och-flickr/",
+      "kind": "post_like",
+      "path": "2010/12/08/creative-commons-wikimedia-commons-och-flickr/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/12/08/webb-2-0-i-skolan-ett-exempel/",
+      "kind": "post_like",
+      "path": "2010/12/08/webb-2-0-i-skolan-ett-exempel/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2010/12/",
+      "kind": "other",
+      "path": "2010/12/index.html",
+      "archive_url": "https://web.archive.org/web/20190103003930id_/https://ikttips.skolbloggen.se/2010/12/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/01/11/det-finns-olika-satt-att-lara-och-lara-ut/",
+      "kind": "post_like",
+      "path": "2011/01/11/det-finns-olika-satt-att-lara-och-lara-ut/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/01/11/gapminder/",
+      "kind": "post_like",
+      "path": "2011/01/11/gapminder/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001911id_/http://ikttips.skolbloggen.se:80/2011/01/11/gapminder/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/01/21/kallhanvisningar-till-bilder/",
+      "kind": "post_like",
+      "path": "2011/01/21/kallhanvisningar-till-bilder/index.html",
+      "archive_url": "https://web.archive.org/web/20171022193841id_/http://ikttips.skolbloggen.se:80/2011/01/21/kallhanvisningar-till-bilder/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/01/29/kom-igang-med-skolbloggen-se/",
+      "kind": "post_like",
+      "path": "2011/01/29/kom-igang-med-skolbloggen-se/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001751id_/http://ikttips.skolbloggen.se:80/2011/01/29/kom-igang-med-skolbloggen-se/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2011/01/",
+      "kind": "other",
+      "path": "2011/01/index.html",
+      "archive_url": "https://web.archive.org/web/20190104092118id_/https://ikttips.skolbloggen.se/2011/01/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/02/andra-installningar-pa-bloggen/",
+      "kind": "post_like",
+      "path": "2011/02/02/andra-installningar-pa-bloggen/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/02/andra-utseende-pa-bloggen/",
+      "kind": "post_like",
+      "path": "2011/02/02/andra-utseende-pa-bloggen/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/02/lagga-till-anvandare-pa-bloggen/",
+      "kind": "post_like",
+      "path": "2011/02/02/lagga-till-anvandare-pa-bloggen/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/13/har-kan-du-lasa-mer-om-innovativa-skolprogrammet/",
+      "kind": "post_like",
+      "path": "2011/02/13/har-kan-du-lasa-mer-om-innovativa-skolprogrammet/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/13/ola-svahn-visade-webbresurs-i-kemi/",
+      "kind": "post_like",
+      "path": "2011/02/13/ola-svahn-visade-webbresurs-i-kemi/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/24/anne-frank/",
+      "kind": "post_like",
+      "path": "2011/02/24/anne-frank/index.html",
+      "archive_url": "https://web.archive.org/web/20120615010040id_/http://ikttips.skolbloggen.se:80/2011/02/24/anne-frank/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2011/02/",
+      "kind": "other",
+      "path": "2011/02/index.html",
+      "archive_url": "https://web.archive.org/web/20181227072521id_/https://ikttips.skolbloggen.se/2011/02/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/01/tips-pa-digitala-resurser/",
+      "kind": "post_like",
+      "path": "2011/03/01/tips-pa-digitala-resurser/index.html",
+      "archive_url": "https://web.archive.org/web/20120904155816id_/http://ikttips.skolbloggen.se:80/2011/03/01/tips-pa-digitala-resurser/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/02/fler-tips-pa-digitala-resurser/",
+      "kind": "post_like",
+      "path": "2011/03/02/fler-tips-pa-digitala-resurser/index.html",
+      "archive_url": "https://web.archive.org/web/20120615012012id_/http://ikttips.skolbloggen.se:80/2011/03/02/fler-tips-pa-digitala-resurser/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/07/animationer-att-diskutera-i-samhallskunskapen/",
+      "kind": "post_like",
+      "path": "2011/03/07/animationer-att-diskutera-i-samhallskunskapen/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/08/lektionstips-sok-sommarjobb/",
+      "kind": "post_like",
+      "path": "2011/03/08/lektionstips-sok-sommarjobb/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/10/workshop-om-plagiatkontroll/",
+      "kind": "post_like",
+      "path": "2011/03/10/workshop-om-plagiatkontroll/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/23/bloggen-som-pedagogiskt-verktyg/",
+      "kind": "post_like",
+      "path": "2011/03/23/bloggen-som-pedagogiskt-verktyg/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/23/workshops-233/",
+      "kind": "post_like",
+      "path": "2011/03/23/workshops-233/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2011/03/",
+      "kind": "other",
+      "path": "2011/03/index.html",
+      "archive_url": "https://web.archive.org/web/20181223152351id_/https://ikttips.skolbloggen.se/2011/03/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/04/07/workshops-74/",
+      "kind": "post_like",
+      "path": "2011/04/07/workshops-74/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/04/12/kth-elever-coachar-i-matte-pa-natet/",
+      "kind": "post_like",
+      "path": "2011/04/12/kth-elever-coachar-i-matte-pa-natet/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/04/12/webbplats-om-hur-du-kan-samarbeta-pa-natet/",
+      "kind": "post_like",
+      "path": "2011/04/12/webbplats-om-hur-du-kan-samarbeta-pa-natet/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2011/04/",
+      "kind": "other",
+      "path": "2011/04/index.html",
+      "archive_url": "https://web.archive.org/web/20190103144405id_/https://ikttips.skolbloggen.se/2011/04/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/05/22/tydlig-film-om-upphovsratten/",
+      "kind": "post_like",
+      "path": "2011/05/22/tydlig-film-om-upphovsratten/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/05/26/skolporten-bjuder-pa-underbar-matematik/",
+      "kind": "post_like",
+      "path": "2011/05/26/skolporten-bjuder-pa-underbar-matematik/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2011/05/",
+      "kind": "other",
+      "path": "2011/05/index.html",
+      "archive_url": "https://web.archive.org/web/20181230082127id_/https://ikttips.skolbloggen.se/2011/05/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/09/02/hur-du-kan-hitta-och-anvanda-fria-bilder-pa-webben/",
+      "kind": "post_like",
+      "path": "2011/09/02/hur-du-kan-hitta-och-anvanda-fria-bilder-pa-webben/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/09/15/hur-du-lagger-in-bilder-i-dina-inlagg-pa-skolbloggen/",
+      "kind": "post_like",
+      "path": "2011/09/15/hur-du-lagger-in-bilder-i-dina-inlagg-pa-skolbloggen/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/09/29/workshop-om-bloggar-29-september/",
+      "kind": "post_like",
+      "path": "2011/09/29/workshop-om-bloggar-29-september/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2011/09/",
+      "kind": "other",
+      "path": "2011/09/index.html",
+      "archive_url": "https://web.archive.org/web/20181228183310id_/https://ikttips.skolbloggen.se/2011/09/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/10/09/nagra-filmer-om-fusk-och-plagiering/",
+      "kind": "post_like",
+      "path": "2011/10/09/nagra-filmer-om-fusk-och-plagiering/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/10/10/mentorstiden-10-okt-2011-akademisk-hederlighet/",
+      "kind": "post_like",
+      "path": "2011/10/10/mentorstiden-10-okt-2011-akademisk-hederlighet/index.html",
+      "archive_url": "https://web.archive.org/web/20120308021341id_/http://ikttips.skolbloggen.se:80/2011/10/10/mentorstiden-10-okt-2011-akademisk-hederlighet/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/10/23/mentorstiden-24-okt-upphovsratten-och-hur-du-kan-hitta-fria-bilder/",
+      "kind": "post_like",
+      "path": "2011/10/23/mentorstiden-24-okt-upphovsratten-och-hur-du-kan-hitta-fria-bilder/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001756id_/http://ikttips.skolbloggen.se:80/2011/10/23/mentorstiden-24-okt-upphovsratten-och-hur-du-kan-hitta-fria-bilder/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/10/24/ett-3d-projekt-i-garsnas/",
+      "kind": "post_like",
+      "path": "2011/10/24/ett-3d-projekt-i-garsnas/index.html",
+      "archive_url": "https://web.archive.org/web/20120308021336id_/http://ikttips.skolbloggen.se:80/2011/10/24/ett-3d-projekt-i-garsnas/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2011/10/",
+      "kind": "other",
+      "path": "2011/10/index.html",
+      "archive_url": "https://web.archive.org/web/20181227124134id_/https://ikttips.skolbloggen.se/2011/10/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/11/15/bokcirkel-om-gosta-berlings-saga/",
+      "kind": "post_like",
+      "path": "2011/11/15/bokcirkel-om-gosta-berlings-saga/index.html",
+      "archive_url": "https://web.archive.org/web/20120308021449id_/http://ikttips.skolbloggen.se:80/2011/11/15/bokcirkel-om-gosta-berlings-saga/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/11/22/mentorstiden-1411-2011/",
+      "kind": "post_like",
+      "path": "2011/11/22/mentorstiden-1411-2011/index.html",
+      "archive_url": "https://web.archive.org/web/20131226095138id_/http://ikttips.skolbloggen.se/2011/11/22/mentorstiden-1411-2011/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/11/22/mentorstiden-2111-2011/",
+      "kind": "post_like",
+      "path": "2011/11/22/mentorstiden-2111-2011/index.html",
+      "archive_url": "https://web.archive.org/web/20131226094033id_/http://ikttips.skolbloggen.se/2011/11/22/mentorstiden-2111-2011/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/11/24/bloggar-i-skolan/",
+      "kind": "post_like",
+      "path": "2011/11/24/bloggar-i-skolan/index.html",
+      "archive_url": "https://web.archive.org/web/20131226095258id_/http://ikttips.skolbloggen.se/2011/11/24/bloggar-i-skolan/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/11/28/mentorstiden-2811-2011-kallkritik/",
+      "kind": "post_like",
+      "path": "2011/11/28/mentorstiden-2811-2011-kallkritik/index.html",
+      "archive_url": "https://web.archive.org/web/20180225141659id_/http://ikttips.skolbloggen.se:80/2011/11/28/mentorstiden-2811-2011-kallkritik/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/11/28/resurs-for-dig-som-vill-anvanda-ikt-i-matematikundervisningen/",
+      "kind": "post_like",
+      "path": "2011/11/28/resurs-for-dig-som-vill-anvanda-ikt-i-matematikundervisningen/index.html",
+      "archive_url": "https://web.archive.org/web/20120615012017id_/http://ikttips.skolbloggen.se:80/2011/11/28/resurs-for-dig-som-vill-anvanda-ikt-i-matematikundervisningen/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2011/11/",
+      "kind": "other",
+      "path": "2011/11/index.html",
+      "archive_url": "https://web.archive.org/web/20181230141841id_/https://ikttips.skolbloggen.se/2011/11/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/12/05/digitala-resurser-i-stallet-for-larobocker/",
+      "kind": "post_like",
+      "path": "2011/12/05/digitala-resurser-i-stallet-for-larobocker/index.html",
+      "archive_url": "https://web.archive.org/web/20120615013753id_/http://ikttips.skolbloggen.se:80/2011/12/05/digitala-resurser-i-stallet-for-larobocker/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/12/06/pa-svt-play-kan-du-fa-inspiration-i-hur-du-kan-jobba-med-no-i-skolan/",
+      "kind": "post_like",
+      "path": "2011/12/06/pa-svt-play-kan-du-fa-inspiration-i-hur-du-kan-jobba-med-no-i-skolan/index.html",
+      "archive_url": "https://web.archive.org/web/20120615014109id_/http://ikttips.skolbloggen.se:80/2011/12/06/pa-svt-play-kan-du-fa-inspiration-i-hur-du-kan-jobba-med-no-i-skolan/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/12/21/jul-pa-natet/",
+      "kind": "post_like",
+      "path": "2011/12/21/jul-pa-natet/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123758id_/http://ikttips.skolbloggen.se:80/2011/12/21/jul-pa-natet/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2011/12/",
+      "kind": "other",
+      "path": "2011/12/index.html",
+      "archive_url": "https://web.archive.org/web/20190101033244id_/https://ikttips.skolbloggen.se/2011/12/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2012/01/19/vad-ska-vi-ha-student-helpdesk-till/",
+      "kind": "post_like",
+      "path": "2012/01/19/vad-ska-vi-ha-student-helpdesk-till/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123803id_/http://ikttips.skolbloggen.se:80/2012/01/19/vad-ska-vi-ha-student-helpdesk-till/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2012/01/",
+      "kind": "other",
+      "path": "2012/01/index.html",
+      "archive_url": "https://web.archive.org/web/20181229065908id_/https://ikttips.skolbloggen.se/2012/01/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2012/02/02/vi-jobbar-med-pim/",
+      "kind": "post_like",
+      "path": "2012/02/02/vi-jobbar-med-pim/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125252id_/http://ikttips.skolbloggen.se:80/2012/02/02/vi-jobbar-med-pim/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2012/02/06/datorn-i-utbildningen/",
+      "kind": "post_like",
+      "path": "2012/02/06/datorn-i-utbildningen/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125628id_/http://ikttips.skolbloggen.se:80/2012/02/06/datorn-i-utbildningen/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2012/02/29/inspiration-pa-natet/",
+      "kind": "post_like",
+      "path": "2012/02/29/inspiration-pa-natet/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123808id_/http://ikttips.skolbloggen.se:80/2012/02/29/inspiration-pa-natet/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2012/02/",
+      "kind": "other",
+      "path": "2012/02/index.html",
+      "archive_url": "https://web.archive.org/web/20190106053057id_/https://ikttips.skolbloggen.se/2012/02/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2012/03/22/bloggen-som-ett-pedagogiskt-verktyg/",
+      "kind": "post_like",
+      "path": "2012/03/22/bloggen-som-ett-pedagogiskt-verktyg/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123622id_/http://ikttips.skolbloggen.se:80/2012/03/22/bloggen-som-ett-pedagogiskt-verktyg/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2012/03/22/en-svensklarares-baspaket/",
+      "kind": "post_like",
+      "path": "2012/03/22/en-svensklarares-baspaket/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125100id_/http://ikttips.skolbloggen.se:80/2012/03/22/en-svensklarares-baspaket/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2012/03/22/testa-enkatverktyget-surveymonkey/",
+      "kind": "post_like",
+      "path": "2012/03/22/testa-enkatverktyget-surveymonkey/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125634id_/http://ikttips.skolbloggen.se:80/2012/03/22/testa-enkatverktyget-surveymonkey/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2012/03/",
+      "kind": "other",
+      "path": "2012/03/index.html",
+      "archive_url": "https://web.archive.org/web/20181229000446id_/https://ikttips.skolbloggen.se/2012/03/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2012/05/06/grundlaggande-soktips-pa-internet/",
+      "kind": "post_like",
+      "path": "2012/05/06/grundlaggande-soktips-pa-internet/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125638id_/http://ikttips.skolbloggen.se:80/2012/05/06/grundlaggande-soktips-pa-internet/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2012/05/",
+      "kind": "other",
+      "path": "2012/05/index.html",
+      "archive_url": "https://web.archive.org/web/20181227070204id_/https://ikttips.skolbloggen.se/2012/05/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2012/08/15/svenska-i-svedala/",
+      "kind": "post_like",
+      "path": "2012/08/15/svenska-i-svedala/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125256id_/http://ikttips.skolbloggen.se:80/2012/08/15/svenska-i-svedala/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2012/08/22/borja-dar-du-star/",
+      "kind": "post_like",
+      "path": "2012/08/22/borja-dar-du-star/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125301id_/http://ikttips.skolbloggen.se:80/2012/08/22/borja-dar-du-star/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2012/08/29/presentera-dig-sjalv-med-hjalp-av-bilder-och-ljud/",
+      "kind": "post_like",
+      "path": "2012/08/29/presentera-dig-sjalv-med-hjalp-av-bilder-och-ljud/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123818id_/http://ikttips.skolbloggen.se:80/2012/08/29/presentera-dig-sjalv-med-hjalp-av-bilder-och-ljud/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2012/08/",
+      "kind": "other",
+      "path": "2012/08/index.html",
+      "archive_url": "https://web.archive.org/web/20190104224136id_/https://ikttips.skolbloggen.se/2012/08/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2013/04/19/wikipedia-i-skolan/",
+      "kind": "post_like",
+      "path": "2013/04/19/wikipedia-i-skolan/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123627id_/http://ikttips.skolbloggen.se:80/2013/04/19/wikipedia-i-skolan/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2013/04/",
+      "kind": "other",
+      "path": "2013/04/index.html",
+      "archive_url": "https://web.archive.org/web/20181222080243id_/https://ikttips.skolbloggen.se/2013/04/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2014/05/18/guidning-pa-edulife-och-gafe-under-en-k-dag-pa-og-19-maj-2014/",
+      "kind": "post_like",
+      "path": "2014/05/18/guidning-pa-edulife-och-gafe-under-en-k-dag-pa-og-19-maj-2014/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125915id_/http://ikttips.skolbloggen.se:80/2014/05/18/guidning-pa-edulife-och-gafe-under-en-k-dag-pa-og-19-maj-2014/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2014/05/19/3310/",
+      "kind": "post_like",
+      "path": "2014/05/19/3310/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125643id_/http://ikttips.skolbloggen.se:80/2014/05/19/3310/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/2014/05/",
+      "kind": "other",
+      "path": "2014/05/index.html",
+      "archive_url": "https://web.archive.org/web/20190101032356id_/https://ikttips.skolbloggen.se/2014/05/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/author/cwaste/",
+      "kind": "other",
+      "path": "author/cwaste/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123823id_/http://ikttips.skolbloggen.se:80/author/cwaste/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/att-blogga-tips/",
+      "kind": "category",
+      "path": "category/att-blogga-tips/index.html",
+      "archive_url": "https://web.archive.org/web/20170923211736id_/http://ikttips.skolbloggen.se:80/category/att-blogga-tips/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/bild/",
+      "kind": "category",
+      "path": "category/bild/index.html",
+      "archive_url": "https://web.archive.org/web/20170923211706id_/http://ikttips.skolbloggen.se:80/category/bild/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/biologi/",
+      "kind": "category",
+      "path": "category/biologi/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001916id_/http://ikttips.skolbloggen.se:80/category/biologi/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/datorer-internet/",
+      "kind": "category",
+      "path": "category/datorer-internet/index.html",
+      "archive_url": "https://web.archive.org/web/20170923211751id_/http://ikttips.skolbloggen.se:80/category/datorer-internet/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/digitala-resurser/",
+      "kind": "category",
+      "path": "category/digitala-resurser/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001921id_/http://ikttips.skolbloggen.se:80/category/digitala-resurser/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/engelska/",
+      "kind": "category",
+      "path": "category/engelska/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001926id_/http://ikttips.skolbloggen.se:80/category/engelska/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/fysik/",
+      "kind": "category",
+      "path": "category/fysik/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001801id_/http://ikttips.skolbloggen.se:80/category/fysik/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/geografi/",
+      "kind": "category",
+      "path": "category/geografi/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001214id_/http://ikttips.skolbloggen.se:80/category/geografi/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/google-apps-for-education/",
+      "kind": "category",
+      "path": "category/google-apps-for-education/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001219id_/http://ikttips.skolbloggen.se:80/category/google-apps-for-education/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/historia/",
+      "kind": "category",
+      "path": "category/historia/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001224id_/http://ikttips.skolbloggen.se:80/category/historia/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/innovativa-skolprogrammet/",
+      "kind": "category",
+      "path": "category/innovativa-skolprogrammet/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001229id_/http://ikttips.skolbloggen.se:80/category/innovativa-skolprogrammet/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/kallkritik/",
+      "kind": "category",
+      "path": "category/kallkritik/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001931id_/http://ikttips.skolbloggen.se:80/category/kallkritik/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/kemi/",
+      "kind": "category",
+      "path": "category/kemi/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001807id_/http://ikttips.skolbloggen.se:80/category/kemi/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/larportaler/",
+      "kind": "category",
+      "path": "category/larportaler/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001812id_/http://ikttips.skolbloggen.se:80/category/larportaler/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/matematik/",
+      "kind": "category",
+      "path": "category/matematik/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001049id_/http://ikttips.skolbloggen.se:80/category/matematik/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/moderna-sprak/",
+      "kind": "category",
+      "path": "category/moderna-sprak/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001936id_/http://ikttips.skolbloggen.se:80/category/moderna-sprak/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/naturkunskap/",
+      "kind": "category",
+      "path": "category/naturkunskap/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001055id_/http://ikttips.skolbloggen.se:80/category/naturkunskap/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/okategoriserade/",
+      "kind": "category",
+      "path": "category/okategoriserade/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001100id_/http://ikttips.skolbloggen.se:80/category/okategoriserade/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/om-den-har-webbplatsen/",
+      "kind": "category",
+      "path": "category/om-den-har-webbplatsen/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001941id_/http://ikttips.skolbloggen.se:80/category/om-den-har-webbplatsen/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/pedagogisk-verkstad/",
+      "kind": "category",
+      "path": "category/pedagogisk-verkstad/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001118id_/http://ikttips.skolbloggen.se:80/category/pedagogisk-verkstad/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/plagiatkontroll/",
+      "kind": "category",
+      "path": "category/plagiatkontroll/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001946id_/http://ikttips.skolbloggen.se:80/category/plagiatkontroll/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/projektarbete/",
+      "kind": "category",
+      "path": "category/projektarbete/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001234id_/http://ikttips.skolbloggen.se:80/category/projektarbete/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/samhallskunskap/",
+      "kind": "category",
+      "path": "category/samhallskunskap/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001123id_/http://ikttips.skolbloggen.se:80/category/samhallskunskap/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/skolbloggen/",
+      "kind": "category",
+      "path": "category/skolbloggen/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001816id_/http://ikttips.skolbloggen.se:80/category/skolbloggen/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/sprakintroduktion/",
+      "kind": "category",
+      "path": "category/sprakintroduktion/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001951id_/http://ikttips.skolbloggen.se:80/category/sprakintroduktion/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/student-helpdesk/",
+      "kind": "category",
+      "path": "category/student-helpdesk/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001821id_/http://ikttips.skolbloggen.se:80/category/student-helpdesk/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/svenska/",
+      "kind": "category",
+      "path": "category/svenska/index.html",
+      "archive_url": "https://web.archive.org/web/20170924001239id_/http://ikttips.skolbloggen.se:80/category/svenska/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/category/upphovsratten/",
+      "kind": "category",
+      "path": "category/upphovsratten/index.html",
+      "archive_url": "https://web.archive.org/web/20170923211809id_/http://ikttips.skolbloggen.se:80/category/upphovsratten/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/ikt-verktyg/296-2/",
+      "kind": "other",
+      "path": "ikt-verktyg/296-2/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123641id_/http://ikttips.skolbloggen.se:80/ikt-verktyg/296-2/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/ikt-verktyg/blogg/",
+      "kind": "other",
+      "path": "ikt-verktyg/blogg/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125115id_/http://ikttips.skolbloggen.se:80/ikt-verktyg/blogg/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/ikt-verktyg/datorns-sprakkontroll/",
+      "kind": "other",
+      "path": "ikt-verktyg/datorns-sprakkontroll/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125925id_/http://ikttips.skolbloggen.se:80/ikt-verktyg/datorns-sprakkontroll/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/ikt-verktyg/",
+      "kind": "other",
+      "path": "ikt-verktyg/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123632id_/http://ikttips.skolbloggen.se:80/ikt-verktyg/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/ikt-verktyg/presentera-online-med-asa-kronkvist/",
+      "kind": "other",
+      "path": "ikt-verktyg/presentera-online-med-asa-kronkvist/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125653id_/http://ikttips.skolbloggen.se:80/ikt-verktyg/presentera-online-med-asa-kronkvist/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/ikt-verktyg/samarbeta-online-med-hjalp-av-asa-kronkvist/",
+      "kind": "other",
+      "path": "ikt-verktyg/samarbeta-online-med-hjalp-av-asa-kronkvist/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125658id_/http://ikttips.skolbloggen.se:80/ikt-verktyg/samarbeta-online-med-hjalp-av-asa-kronkvist/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/ikt-verktyg/skarminspelning/",
+      "kind": "other",
+      "path": "ikt-verktyg/skarminspelning/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125306id_/http://ikttips.skolbloggen.se:80/ikt-verktyg/skarminspelning/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/ikt-verktyg/sprakstod-pa-natet/",
+      "kind": "other",
+      "path": "ikt-verktyg/sprakstod-pa-natet/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125311id_/http://ikttips.skolbloggen.se:80/ikt-verktyg/sprakstod-pa-natet/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/ikt-verktyg/tankekartor/",
+      "kind": "other",
+      "path": "ikt-verktyg/tankekartor/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125930id_/http://ikttips.skolbloggen.se:80/ikt-verktyg/tankekartor/"
+    },
+    {
+      "url": "https://ikttips.skolbloggen.se/",
+      "kind": "homepage",
+      "path": "index.html",
+      "archive_url": "https://web.archive.org/web/20190822033704id_/https://ikttips.skolbloggen.se/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/informationshantering/",
+      "kind": "other",
+      "path": "informationshantering/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125512id_/http://ikttips.skolbloggen.se:80/informationshantering/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/informationshantering/informationssokning/",
+      "kind": "other",
+      "path": "informationshantering/informationssokning/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125316id_/http://ikttips.skolbloggen.se:80/informationshantering/informationssokning/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/informationshantering/kallkritik/",
+      "kind": "other",
+      "path": "informationshantering/kallkritik/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125120id_/http://ikttips.skolbloggen.se:80/informationshantering/kallkritik/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/informationshantering/organisera/",
+      "kind": "other",
+      "path": "informationshantering/organisera/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125125id_/http://ikttips.skolbloggen.se:80/informationshantering/organisera/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/lag-och-ratt/grooming-natmobbing-och/",
+      "kind": "other",
+      "path": "lag-och-ratt/grooming-natmobbing-och/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125517id_/http://ikttips.skolbloggen.se:80/lag-och-ratt/grooming-natmobbing-och/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/lag-och-ratt/hantering-av-personuppgifter-och-offentlighetsprincipen/",
+      "kind": "other",
+      "path": "lag-och-ratt/hantering-av-personuppgifter-och-offentlighetsprincipen/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123642id_/http://ikttips.skolbloggen.se:80/lag-och-ratt/hantering-av-personuppgifter-och-offentlighetsprincipen/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/lag-och-ratt/",
+      "kind": "other",
+      "path": "lag-och-ratt/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123410id_/http://ikttips.skolbloggen.se:80/lag-och-ratt/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/lag-och-ratt/plagiat-och-plagiatkontroll/",
+      "kind": "other",
+      "path": "lag-och-ratt/plagiat-och-plagiatkontroll/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123416id_/http://ikttips.skolbloggen.se:80/lag-och-ratt/plagiat-och-plagiatkontroll/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/lag-och-ratt/upphovsratt/",
+      "kind": "other",
+      "path": "lag-och-ratt/upphovsratt/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123648id_/http://ikttips.skolbloggen.se:80/lag-och-ratt/upphovsratt/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/om/",
+      "kind": "other",
+      "path": "om/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125936id_/http://ikttips.skolbloggen.se:80/om/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/oppna-larresurser/484-2/",
+      "kind": "other",
+      "path": "oppna-larresurser/484-2/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125130id_/http://ikttips.skolbloggen.se:80/oppna-larresurser/484-2/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/oppna-larresurser/",
+      "kind": "other",
+      "path": "oppna-larresurser/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123422id_/http://ikttips.skolbloggen.se:80/oppna-larresurser/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/oppna-larresurser/itunes-u/",
+      "kind": "other",
+      "path": "oppna-larresurser/itunes-u/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123426id_/http://ikttips.skolbloggen.se:80/oppna-larresurser/itunes-u/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/oppna-larresurser/kolla-kallan/",
+      "kind": "other",
+      "path": "oppna-larresurser/kolla-kallan/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125321id_/http://ikttips.skolbloggen.se:80/oppna-larresurser/kolla-kallan/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/oppna-larresurser/pedagogwebben/",
+      "kind": "other",
+      "path": "oppna-larresurser/pedagogwebben/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125704id_/http://ikttips.skolbloggen.se:80/oppna-larresurser/pedagogwebben/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/oppna-larresurser/skapa-egna-laromedel/",
+      "kind": "other",
+      "path": "oppna-larresurser/skapa-egna-laromedel/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125136id_/http://ikttips.skolbloggen.se:80/oppna-larresurser/skapa-egna-laromedel/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/oppna-larresurser/skapa-en-egen-larplattform/",
+      "kind": "other",
+      "path": "oppna-larresurser/skapa-en-egen-larplattform/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123431id_/http://ikttips.skolbloggen.se:80/oppna-larresurser/skapa-en-egen-larplattform/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/oppna-larresurser/skapa-larresurser-med-hjalp-av-andras-bilder/",
+      "kind": "other",
+      "path": "oppna-larresurser/skapa-larresurser-med-hjalp-av-andras-bilder/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125941id_/http://ikttips.skolbloggen.se:80/oppna-larresurser/skapa-larresurser-med-hjalp-av-andras-bilder/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/oppna-larresurser/teacher-on-demand/",
+      "kind": "other",
+      "path": "oppna-larresurser/teacher-on-demand/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125140id_/http://ikttips.skolbloggen.se:80/oppna-larresurser/teacher-on-demand/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/oppna-larresurser/wikibooks/",
+      "kind": "other",
+      "path": "oppna-larresurser/wikibooks/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125946id_/http://ikttips.skolbloggen.se:80/oppna-larresurser/wikibooks/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/oppna-larresurser/wikiversity/",
+      "kind": "other",
+      "path": "oppna-larresurser/wikiversity/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123436id_/http://ikttips.skolbloggen.se:80/oppna-larresurser/wikiversity/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/oppna-larresurser/youtube-edu/",
+      "kind": "other",
+      "path": "oppna-larresurser/youtube-edu/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125522id_/http://ikttips.skolbloggen.se:80/oppna-larresurser/youtube-edu/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/page/2/",
+      "kind": "pagination",
+      "path": "page/2/index.html",
+      "archive_url": "https://web.archive.org/web/20120426082608id_/http://ikttips.skolbloggen.se:80/page/2/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/specialpedagogik/dyslexi/",
+      "kind": "other",
+      "path": "specialpedagogik/dyslexi/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125527id_/http://ikttips.skolbloggen.se:80/specialpedagogik/dyslexi/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/specialpedagogik/hida-hjalpmedel-i-databas/",
+      "kind": "other",
+      "path": "specialpedagogik/hida-hjalpmedel-i-databas/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125532id_/http://ikttips.skolbloggen.se:80/specialpedagogik/hida-hjalpmedel-i-databas/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/specialpedagogik/",
+      "kind": "other",
+      "path": "specialpedagogik/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123652id_/http://ikttips.skolbloggen.se:80/specialpedagogik/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/specialpedagogik/koncentrationssvarigheter-och-kognitiva-problem/",
+      "kind": "other",
+      "path": "specialpedagogik/koncentrationssvarigheter-och-kognitiva-problem/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125146id_/http://ikttips.skolbloggen.se:80/specialpedagogik/koncentrationssvarigheter-och-kognitiva-problem/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/specialpedagogik/nagra-hjalpmedel-pa-skolan/",
+      "kind": "other",
+      "path": "specialpedagogik/nagra-hjalpmedel-pa-skolan/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125326id_/http://ikttips.skolbloggen.se:80/specialpedagogik/nagra-hjalpmedel-pa-skolan/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/specialpedagogik/pedagogwebben/",
+      "kind": "other",
+      "path": "specialpedagogik/pedagogwebben/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123657id_/http://ikttips.skolbloggen.se:80/specialpedagogik/pedagogwebben/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/specialpedagogik/skoldatatek/",
+      "kind": "other",
+      "path": "specialpedagogik/skoldatatek/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125331id_/http://ikttips.skolbloggen.se:80/specialpedagogik/skoldatatek/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/specialpedagogik/specialpedagogiska-skolmyndigheten/",
+      "kind": "other",
+      "path": "specialpedagogik/specialpedagogiska-skolmyndigheten/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125951id_/http://ikttips.skolbloggen.se:80/specialpedagogik/specialpedagogiska-skolmyndigheten/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/specialpedagogik/syn-och-horselnedsattning/",
+      "kind": "other",
+      "path": "specialpedagogik/syn-och-horselnedsattning/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125537id_/http://ikttips.skolbloggen.se:80/specialpedagogik/syn-och-horselnedsattning/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/specialpedagogik/synnedsattning-och-blindhet/",
+      "kind": "other",
+      "path": "specialpedagogik/synnedsattning-och-blindhet/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123702id_/http://ikttips.skolbloggen.se:80/specialpedagogik/synnedsattning-och-blindhet/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/specialpedagogik/teacher-on-demand/",
+      "kind": "other",
+      "path": "specialpedagogik/teacher-on-demand/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125152id_/http://ikttips.skolbloggen.se:80/specialpedagogik/teacher-on-demand/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/specialpedagogik/ung-kompensation/",
+      "kind": "other",
+      "path": "specialpedagogik/ung-kompensation/index.html",
+      "archive_url": "https://web.archive.org/web/20170924123707id_/http://ikttips.skolbloggen.se:80/specialpedagogik/ung-kompensation/"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/spel/",
+      "kind": "other",
+      "path": "spel/index.html",
+      "archive_url": "https://web.archive.org/web/20170924125542id_/http://ikttips.skolbloggen.se:80/spel/"
+    }
+  ],
+  "failed": [
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/10/workshop-om-plagiatkontroll/",
+      "path": "2011/03/10/workshop-om-plagiatkontroll/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/23/bloggen-som-pedagogiskt-verktyg/",
+      "path": "2011/03/23/bloggen-som-pedagogiskt-verktyg/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/23/workshops-233/",
+      "path": "2011/03/23/workshops-233/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/04/07/workshops-74/",
+      "path": "2011/04/07/workshops-74/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/04/12/kth-elever-coachar-i-matte-pa-natet/",
+      "path": "2011/04/12/kth-elever-coachar-i-matte-pa-natet/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/04/12/webbplats-om-hur-du-kan-samarbeta-pa-natet/",
+      "path": "2011/04/12/webbplats-om-hur-du-kan-samarbeta-pa-natet/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/05/22/tydlig-film-om-upphovsratten/",
+      "path": "2011/05/22/tydlig-film-om-upphovsratten/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/05/26/skolporten-bjuder-pa-underbar-matematik/",
+      "path": "2011/05/26/skolporten-bjuder-pa-underbar-matematik/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/09/02/hur-du-kan-hitta-och-anvanda-fria-bilder-pa-webben/",
+      "path": "2011/09/02/hur-du-kan-hitta-och-anvanda-fria-bilder-pa-webben/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/09/15/hur-du-lagger-in-bilder-i-dina-inlagg-pa-skolbloggen/",
+      "path": "2011/09/15/hur-du-lagger-in-bilder-i-dina-inlagg-pa-skolbloggen/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/09/29/workshop-om-bloggar-29-september/",
+      "path": "2011/09/29/workshop-om-bloggar-29-september/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/10/09/nagra-filmer-om-fusk-och-plagiering/",
+      "path": "2011/10/09/nagra-filmer-om-fusk-och-plagiering/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/02/lagga-till-anvandare-pa-bloggen/",
+      "path": "2011/02/02/lagga-till-anvandare-pa-bloggen/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/13/har-kan-du-lasa-mer-om-innovativa-skolprogrammet/",
+      "path": "2011/02/13/har-kan-du-lasa-mer-om-innovativa-skolprogrammet/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/13/ola-svahn-visade-webbresurs-i-kemi/",
+      "path": "2011/02/13/ola-svahn-visade-webbresurs-i-kemi/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/07/animationer-att-diskutera-i-samhallskunskapen/",
+      "path": "2011/03/07/animationer-att-diskutera-i-samhallskunskapen/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/03/08/lektionstips-sok-sommarjobb/",
+      "path": "2011/03/08/lektionstips-sok-sommarjobb/index.html",
+      "status": "resolve_failed",
+      "error": "local_only"
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/10/29/hej-varlden/",
+      "path": "2010/10/29/hej-varlden/index.html",
+      "status": "resolve_failed",
+      "error": ""
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/11/24/retorik/",
+      "path": "2010/11/24/retorik/index.html",
+      "status": "resolve_failed",
+      "error": ""
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/11/25/kluriga-mattefragor/",
+      "path": "2010/11/25/kluriga-mattefragor/index.html",
+      "status": "resolve_failed",
+      "error": ""
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/12/08/creative-commons-wikimedia-commons-och-flickr/",
+      "path": "2010/12/08/creative-commons-wikimedia-commons-och-flickr/index.html",
+      "status": "resolve_failed",
+      "error": ""
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2010/12/08/webb-2-0-i-skolan-ett-exempel/",
+      "path": "2010/12/08/webb-2-0-i-skolan-ett-exempel/index.html",
+      "status": "resolve_failed",
+      "error": ""
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/01/11/det-finns-olika-satt-att-lara-och-lara-ut/",
+      "path": "2011/01/11/det-finns-olika-satt-att-lara-och-lara-ut/index.html",
+      "status": "resolve_failed",
+      "error": ""
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/02/andra-installningar-pa-bloggen/",
+      "path": "2011/02/02/andra-installningar-pa-bloggen/index.html",
+      "status": "resolve_failed",
+      "error": ""
+    },
+    {
+      "url": "http://ikttips.skolbloggen.se/2011/02/02/andra-utseende-pa-bloggen/",
+      "path": "2011/02/02/andra-utseende-pa-bloggen/index.html",
+      "status": "resolve_failed",
+      "error": ""
+    }
+  ]
+}

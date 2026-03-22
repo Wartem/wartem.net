@@ -1,0 +1,48 @@
+{
+  "capture_count": 168,
+  "kind_counts": {
+    "category": 12,
+    "feed": 9,
+    "homepage": 2,
+    "media": 10,
+    "other": 30,
+    "post_like": 27,
+    "tag": 34
+  },
+  "mimetype_counts": {
+    "application/atom+xml": 2,
+    "application/javascript": 4,
+    "application/rss+xml": 2,
+    "application/xml": 2,
+    "image/vnd.microsoft.icon": 1,
+    "text/css": 4,
+    "text/html": 115,
+    "text/javascript": 1,
+    "text/plain": 9,
+    "text/xml": 7,
+    "warc/revisit": 21
+  },
+  "query_counts": {
+    "html_200_root": 103,
+    "raw_domain_match": 0,
+    "raw_http_prefix": 168,
+    "raw_https_prefix": 168,
+    "raw_prefix_root": 168,
+    "raw_www_prefix": 168,
+    "unique_domain": 113,
+    "wp_category_prefix": 12,
+    "wp_feed_prefix": 6,
+    "wp_page_prefix": 0,
+    "wp_posts_prefix": 0,
+    "wp_tag_prefix": 34
+  },
+  "statuscode_counts": {
+    "-": 21,
+    "200": 133,
+    "301": 10,
+    "302": 1,
+    "404": 2,
+    "405": 1
+  },
+  "unique_url_count": 124
+}

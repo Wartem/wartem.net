@@ -1,0 +1,10 @@
+{
+  "offset": 60,
+  "candidate_count": 25,
+  "resolved_count": 5,
+  "downloaded_count": 5,
+  "skipped_existing_count": 0,
+  "failure_count": 0,
+  "candidates_file": "site\\recovery\\asset_candidates.txt",
+  "log_file": "site\\recovery\\assets-log.jsonl"
+}

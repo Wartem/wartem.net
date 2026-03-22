@@ -1,0 +1,15 @@
+{
+  "total_entries": 386,
+  "content_candidates": 178,
+  "redirect_candidates": 58,
+  "downloaded": 178,
+  "cache_hits": 178,
+  "errors": 0,
+  "kinds": {
+    "category": 3,
+    "homepage": 10,
+    "other": 148,
+    "post_like": 7,
+    "tag": 10
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://web.archive.org/web/20180321020140id_/http://cwaste.skolbloggen.se:80/",
+  "source": "backup_first_inventory.py",
+  "body_path": "46f947d46fb0e3080bd0a00c8e64ed2d35bb27ba.html",
+  "requested_url": "https://web.archive.org/web/20180321020140id_/http://cwaste.skolbloggen.se:80/",
+  "final_url": "https://web.archive.org/web/20180321020140id_/http://cwaste.skolbloggen.se:80/",
+  "normalized_url": "http://cwaste.skolbloggen.se/",
+  "best_wayback_url": "https://web.archive.org/web/20180321020140/http://cwaste.skolbloggen.se:80/",
+  "best_statuscode": "200",
+  "content_type": "text/html"
+}

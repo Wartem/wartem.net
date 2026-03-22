@@ -1,0 +1,275 @@
+{
+  "target_count": 24,
+  "rebuilt_count": 10,
+  "failed_count": 14,
+  "rebuilt": [
+    {
+      "path": "2010/01/18/varfor-pedagogisk-dokumentation/index.html",
+      "snippet_count": 2,
+      "source_paths": [
+        "tag/lenz-taguchi/index.html",
+        "tag/skolutveckling/index.html"
+      ]
+    },
+    {
+      "path": "2010/05/13/kan-du-forlata/index.html",
+      "snippet_count": 1,
+      "source_paths": [
+        "tag/ursakt/index.html"
+      ]
+    },
+    {
+      "path": "2010/05/21/bild-hamta-och-hantera/index.html",
+      "snippet_count": 2,
+      "source_paths": [
+        "category/pim/index.html",
+        "tag/bildredigering/index.html"
+      ]
+    },
+    {
+      "path": "2010/06/06/jag-provar-blogger/index.html",
+      "snippet_count": 1,
+      "source_paths": [
+        "tag/ikt/index.html"
+      ]
+    },
+    {
+      "path": "2010/06/10/en-wiki-for-larare-pa-natet/index.html",
+      "snippet_count": 1,
+      "source_paths": [
+        "tag/wiki/index.html"
+      ]
+    },
+    {
+      "path": "2010/06/12/twitter-kraver-en-insats-men-kan-ge-mycket-tillbaka/index.html",
+      "snippet_count": 1,
+      "source_paths": [
+        "tag/twitter/index.html"
+      ]
+    },
+    {
+      "path": "2010/06/13/en-mindmap-over-google-dokument/index.html",
+      "snippet_count": 4,
+      "source_paths": [
+        "tag/dokument/index.html",
+        "tag/google-dokuments/index.html",
+        "tag/humla/index.html",
+        "tag/mindmap/index.html"
+      ]
+    },
+    {
+      "path": "2010/06/13/google-docs-for-fildelning-och-samarbete/index.html",
+      "snippet_count": 2,
+      "source_paths": [
+        "tag/dokument/index.html",
+        "tag/google-docs/index.html"
+      ]
+    },
+    {
+      "path": "2010/06/14/faror-pa-natet/index.html",
+      "snippet_count": 3,
+      "source_paths": [
+        "tag/grooming/index.html",
+        "tag/natkulturer/index.html",
+        "tag/natmobbing/index.html"
+      ]
+    },
+    {
+      "path": "2010/06/15/traffande-beskrivning-av-problemlosning/index.html",
+      "snippet_count": 133,
+      "source_paths": [
+        "category/okategoriserad/index.html",
+        "category/pim/index.html",
+        "tag/affarside/index.html",
+        "tag/aktivitetshanteraren/index.html",
+        "tag/amneskunskaper/index.html",
+        "tag/attityd/index.html",
+        "tag/begripligt/index.html",
+        "tag/beskrivning/index.html",
+        "tag/beslut/index.html",
+        "tag/beslutsangest/index.html",
+        "tag/bibliotek/index.html",
+        "tag/big-huge-labs/index.html",
+        "tag/bildmosaik/index.html",
+        "tag/bildredigering/index.html",
+        "tag/blogger/index.html",
+        "tag/bruksprosa/index.html",
+        "tag/centrum-for-livsstilsfragor/index.html",
+        "tag/cicero/index.html",
+        "tag/dag-osterlund/index.html",
+        "tag/databaser/index.html",
+        "tag/demokrati/index.html",
+        "tag/diskussionsforum/index.html",
+        "tag/dokument/index.html",
+        "tag/dunkels/index.html",
+        "tag/e/index.html",
+        "tag/e-bocker/index.html",
+        "tag/e-post/index.html",
+        "tag/ergonomi/index.html",
+        "tag/facebook/index.html",
+        "tag/familj/index.html",
+        "tag/fardighet/index.html",
+        "tag/filandelser/index.html",
+        "tag/flash/index.html",
+        "tag/fonsterhantering/index.html",
+        "tag/forskning/index.html",
+        "tag/forteckningar/index.html",
+        "tag/framtidsvision/index.html",
+        "tag/fundering/index.html",
+        "tag/google-docs/index.html",
+        "tag/google-dokuments/index.html",
+        "tag/gratis-verktyg/index.html",
+        "tag/grooming/index.html",
+        "tag/hantera/index.html",
+        "tag/hertzberg/index.html",
+        "tag/humla/index.html",
+        "tag/humor/index.html",
+        "tag/hund/index.html",
+        "tag/hyperlankar/index.html",
+        "tag/ikt/index.html",
+        "tag/illustrera/index.html",
+        "tag/imagechef/index.html",
+        "tag/informationskompetens/index.html",
+        "tag/installningar/index.html",
+        "tag/instruktionsfilm/index.html",
+        "tag/integritet/index.html",
+        "tag/intelligens/index.html",
+        "tag/kanslisprak/index.html",
+        "tag/ken-robinson/index.html",
+        "tag/klarsprak/index.html",
+        "tag/klipp-och-klistra/index.html",
+        "tag/kolla-kallan/index.html",
+        "tag/kommentarsfunktion/index.html",
+        "tag/kunskap/index.html",
+        "tag/kyckling/index.html",
+        "tag/lamplighetstest/index.html",
+        "tag/lankar/index.html",
+        "tag/lars-lagergren/index.html",
+        "tag/ljud/index.html",
+        "tag/loggbok/index.html",
+        "tag/lokensgard-hoel/index.html",
+        "tag/medieradet/index.html",
+        "tag/menyer/index.html",
+        "tag/metakunskap/index.html",
+        "tag/miljodebatt/index.html",
+        "tag/mindmap/index.html",
+        "tag/motivation/index.html",
+        "tag/mus/index.html",
+        "tag/musik/index.html",
+        "tag/natkulturer/index.html",
+        "tag/natmobbing/index.html",
+        "tag/naturupplevelse/index.html",
+        "tag/offentligt-sprak/index.html",
+        "tag/osterlund/index.html",
+        "tag/pask/index.html",
+        "tag/pitbull/index.html",
+        "tag/planering/index.html",
+        "tag/plugin/index.html",
+        "tag/podcast/index.html",
+        "tag/portfoliometodik/index.html",
+        "tag/profilsida/index.html",
+        "tag/redovisning/index.html",
+        "tag/sakerhet/index.html",
+        "tag/saklitteratur/index.html",
+        "tag/samarbete/index.html",
+        "tag/scamportfolio/index.html",
+        "tag/se/index.html",
+        "tag/skolbloggen-se/index.html",
+        "tag/skrivregler/index.html",
+        "tag/skype/index.html",
+        "tag/slideshow/index.html",
+        "tag/sokassistenten/index.html",
+        "tag/somn/index.html",
+        "tag/spara/index.html",
+        "tag/sr/index.html",
+        "tag/stefan-palsson/index.html",
+        "tag/sven-eric-liedman/index.html",
+        "tag/svenska-b-kurs/index.html",
+        "tag/synlighet/index.html",
+        "tag/tangentbord/index.html",
+        "tag/tankeverksamhet/index.html",
+        "tag/text/index.html",
+        "tag/textvard/index.html",
+        "tag/tid/index.html",
+        "tag/tillganglighet/index.html",
+        "tag/trakig/index.html",
+        "tag/tv/index.html",
+        "tag/twitter/index.html",
+        "tag/ungdom/index.html",
+        "tag/uppgifter/index.html",
+        "tag/upphovsratt/index.html",
+        "tag/uppvaxtmiljo/index.html",
+        "tag/ursakt/index.html",
+        "tag/usb-minne/index.html",
+        "tag/utforska/index.html",
+        "tag/verktyg/index.html",
+        "tag/webbibliotek/index.html",
+        "tag/webbradio/index.html",
+        "tag/webbtext/index.html",
+        "tag/wiki/index.html",
+        "tag/wikipedia/index.html",
+        "tag/will-richardson/index.html",
+        "tag/wordpress/index.html",
+        "tag/youtube/index.html"
+      ]
+    }
+  ],
+  "failed": [
+    {
+      "path": "2010/06/07/medier-i-undervisningen/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2010/06/07/tips-nar-du-vill-dokumentera-ett-studiebesok/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2010/06/12/google-reader-bade-van-och-fiende/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2010/09/14/nagra-ord-om-lashunger/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2010/09/18/uppstramningen-framst-mot-de-svaga/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2010/09/21/pippi-och-forebilder/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2010/09/22/rwandas-kvinnor-far-allt-mer-makt/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2010/09/23/var-framtid-med-sverigedemokraterna/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2010/09/25/lashunger-kan-kopplas-till-stordad/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2010/10/06/vi-lar-som-vi-lever/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2010/11/02/ta-tillvara-fordelarna-och-undvik-fallgroparna/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2011/04/13/1496/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2011/04/29/en-forfarlig-paskhelg-pa-osterlen/index.html",
+      "error": "no-local-snippets-found"
+    },
+    {
+      "path": "2011/09/28/nu-skriver-jag-dar-istallet/index.html",
+      "error": "no-local-snippets-found"
+    }
+  ]
+}

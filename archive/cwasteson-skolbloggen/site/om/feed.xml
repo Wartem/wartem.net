@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+		>
+<channel>
+	<title>Kommentarer till Om Bollplanket</title>
+	<atom:link href="http://cwasteson.skolbloggen.se/om/feed/" rel="self" type="application/rss+xml" />
+	<link>http://cwasteson.skolbloggen.se</link>
+	<description>en gymnasielärares funderingar</description>
+	<lastBuildDate>Mon, 16 Aug 2010 06:58:47 +0100</lastBuildDate>
+	<generator>http://wordpress.org/?v=2.9.2</generator>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+		<item>
+		<title>Av: cwaste</title>
+		<link>http://cwasteson.skolbloggen.se/om/comment-page-1/#comment-22</link>
+		<dc:creator>cwaste</dc:creator>
+		<pubDate>Wed, 03 Feb 2010 19:08:51 +0000</pubDate>
+		<guid isPermaLink="false">#comment-22</guid>
+		<description>Vad kul! Trevligt! Ja, det verkar bli en bra kurs! :D</description>
+		<content:encoded><![CDATA[<p>Vad kul! Trevligt! Ja, det verkar bli en bra kurs! <img src='http://cwasteson.skolbloggen.se/wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' /> </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Av: Malin</title>
+		<link>http://cwasteson.skolbloggen.se/om/comment-page-1/#comment-19</link>
+		<dc:creator>Malin</dc:creator>
+		<pubDate>Wed, 03 Feb 2010 16:39:43 +0000</pubDate>
+		<guid isPermaLink="false">#comment-19</guid>
+		<description>Hej!
+Hittade hit genom din presentation på &quot;Att skriva för nätet&quot;.
+Ser också mycket fram emot kursen, kommer bli super! :)
+
+Malin</description>
+		<content:encoded><![CDATA[<p>Hej!<br />
+Hittade hit genom din presentation på &#8220;Att skriva för nätet&#8221;.<br />
+Ser också mycket fram emot kursen, kommer bli super! <img src='http://cwasteson.skolbloggen.se/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>Malin</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

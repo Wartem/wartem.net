@@ -23,6 +23,7 @@ ALLOWED_IMAGE_HOST_PATTERNS = (
     "simrishamn.se",
 )
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".avif"}
+ABSOLUTE_URL_RE = re.compile(r"https?://[^\s\"'<>]+", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -40,6 +41,18 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument("--domain", default="bufsimrishamn.wordpress.com")
     parser.add_argument("--site-dir", default="site")
+    parser.add_argument(
+        "--asset-host",
+        action="append",
+        dest="asset_hosts",
+        help="Optional exact asset hostname to include during asset discovery, for example blogger.googleusercontent.com.",
+    )
+    parser.add_argument(
+        "--host-pattern",
+        action="append",
+        dest="host_patterns",
+        help="Optional hostname prefix filter. Repeat to keep only matching asset hosts, for example farm or live.staticflickr.com.",
+    )
     parser.add_argument("--workers", type=int, default=6)
     parser.add_argument("--limit", type=int, help="Optional limit after prioritization.")
     parser.add_argument("--offset", type=int, default=0)
@@ -57,15 +70,34 @@ def iter_html_files(site_dir: Path) -> list[Path]:
 
 
 def candidate_urls_from_html(html_text: str, current_url: str, domain: str) -> set[str]:
-    collector = reconstruct_site.HTMLAssetCollector(current_url, domain, f"{domain.split('.', 1)[0]}.files.wordpress.com")
+    return candidate_urls_from_html_with_options(html_text, current_url, domain)
+
+
+def candidate_urls_from_html_with_options(
+    html_text: str,
+    current_url: str,
+    domain: str,
+    *,
+    extra_asset_hosts: Iterable[str] | None = None,
+    allowed_host_patterns: Iterable[str] | None = None,
+) -> set[str]:
+    collector = reconstruct_site.HTMLAssetCollector(
+        current_url,
+        domain,
+        reconstruct_site.default_files_domain(domain),
+        extra_asset_hosts=extra_asset_hosts,
+    )
     collector.feed(html_text)
     collector.close()
     urls = set()
-    for url in collector.urls:
+    raw_urls = set(collector.urls)
+    raw_urls.update(ABSOLUTE_URL_RE.findall(html_text))
+    patterns = tuple(pattern.lower() for pattern in (allowed_host_patterns or default_allowed_image_host_patterns(domain, extra_asset_hosts)))
+    for url in raw_urls:
         parsed = urlsplit(url)
         host = (parsed.hostname or "").lower()
         path = parsed.path.lower()
-        if not any(host == pattern or host.startswith(pattern) for pattern in ALLOWED_IMAGE_HOST_PATTERNS):
+        if not any(host == pattern or host.startswith(pattern) for pattern in patterns):
             continue
         if PurePosixPath(path).suffix.lower() not in IMAGE_EXTENSIONS and "imagevaulthandler.aspx" not in path:
             continue
@@ -73,13 +105,38 @@ def candidate_urls_from_html(html_text: str, current_url: str, domain: str) -> s
     return urls
 
 
-def collect_asset_candidates(site_dir: Path, domain: str) -> list[str]:
+def default_allowed_image_host_patterns(domain: str, extra_asset_hosts: Iterable[str] | None = None) -> tuple[str, ...]:
+    extra = tuple((host or "").lower() for host in (extra_asset_hosts or []) if host)
+    return (reconstruct_site.default_files_domain(domain), *ALLOWED_IMAGE_HOST_PATTERNS[1:], *extra)
+
+
+def collect_asset_candidates(site_dir: Path, domain: str, extra_asset_hosts: Iterable[str] | None = None) -> list[str]:
     candidates: set[str] = set()
     for html_file in iter_html_files(site_dir):
         current_url = f"https://{domain}/{html_file.relative_to(site_dir).as_posix().replace('index.html', '')}"
         html_text = html_file.read_text(encoding="utf-8", errors="replace")
-        candidates.update(candidate_urls_from_html(html_text, current_url, domain))
+        candidates.update(
+            candidate_urls_from_html_with_options(
+                html_text,
+                current_url,
+                domain,
+                extra_asset_hosts=extra_asset_hosts,
+            )
+        )
     return sorted(candidates)
+
+
+def filter_candidates_by_host_patterns(candidates: Iterable[str], host_patterns: Iterable[str] | None) -> list[str]:
+    patterns = [pattern.lower() for pattern in (host_patterns or []) if pattern]
+    if not patterns:
+        return sorted(set(candidates))
+
+    filtered: list[str] = []
+    for candidate in candidates:
+        host = (urlsplit(candidate).hostname or "").lower()
+        if any(host == pattern or host.startswith(pattern) for pattern in patterns):
+            filtered.append(candidate)
+    return sorted(set(filtered))
 
 
 def asset_key(url: str) -> tuple[str, str]:
@@ -228,8 +285,9 @@ def run(argv: list[str] | None = None) -> int:
     recovery_dir = site_dir / "recovery"
     recovery_dir.mkdir(parents=True, exist_ok=True)
 
-    all_candidates = collect_asset_candidates(site_dir, args.domain)
-    groups = prioritize_candidates(all_candidates)
+    all_candidates = collect_asset_candidates(site_dir, args.domain, args.asset_hosts)
+    filtered_candidates = filter_candidates_by_host_patterns(all_candidates, args.host_patterns)
+    groups = prioritize_candidates(filtered_candidates)
     if args.offset:
         groups = groups[args.offset :]
     if args.limit is not None:
@@ -237,6 +295,7 @@ def run(argv: list[str] | None = None) -> int:
 
     summary_path = recovery_dir / "priority-assets-summary.json"
     log_path = recovery_dir / "priority-assets-log.jsonl"
+    log_path.write_text("", encoding="utf-8")
     candidate_path = recovery_dir / "priority-assets-candidates.json"
     candidate_path.write_text(
         json.dumps(
@@ -287,12 +346,14 @@ def run(argv: list[str] | None = None) -> int:
     failed = sum(1 for result in results if result["stage"] == "download_failed")
     summary = {
         "raw_candidate_count": len(all_candidates),
-        "group_count": len(prioritize_candidates(all_candidates)),
+        "filtered_candidate_count": len(filtered_candidates),
+        "group_count": len(prioritize_candidates(filtered_candidates)),
         "offset": args.offset,
         "processed_group_count": len(groups),
         "downloaded_count": downloaded,
         "skipped_existing_count": skipped,
         "failed_count": failed,
+        "host_patterns": args.host_patterns or [],
         "candidate_file": str(candidate_path),
         "log_file": str(log_path),
     }

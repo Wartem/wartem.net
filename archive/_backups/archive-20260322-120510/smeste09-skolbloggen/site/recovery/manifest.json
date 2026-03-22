@@ -1,0 +1,278 @@
+{
+  "mode": "html-subset",
+  "downloaded_count": 45,
+  "failed_count": 0,
+  "downloaded": [
+    {
+      "url": "http://smeste09.skolbloggen.se/",
+      "kind": "homepage",
+      "path": "index.html",
+      "archive_url": "https://web.archive.org/web/20171201033147id_/http://smeste09.skolbloggen.se:80/"
+    },
+    {
+      "url": "https://smeste09.skolbloggen.se/",
+      "kind": "homepage",
+      "path": "index.html",
+      "archive_url": "https://web.archive.org/web/20181204070754id_/https://smeste09.skolbloggen.se/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/01/09/kom-igang-med-skolbloggen-se/",
+      "kind": "post_like",
+      "path": "2011/01/09/kom-igang-med-skolbloggen-se/index.html",
+      "archive_url": "https://web.archive.org/web/20110511204114id_/http://smeste09.skolbloggen.se:80/2011/01/09/kom-igang-med-skolbloggen-se/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/01/11/sprakvetenskap/",
+      "kind": "post_like",
+      "path": "2011/01/11/sprakvetenskap/index.html",
+      "archive_url": "https://web.archive.org/web/20110511054230id_/http://smeste09.skolbloggen.se:80/2011/01/11/sprakvetenskap/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/01/13/andra-installningar-pa-skolbloggen/",
+      "kind": "post_like",
+      "path": "2011/01/13/andra-installningar-pa-skolbloggen/index.html",
+      "archive_url": "https://web.archive.org/web/20110513042936id_/http://smeste09.skolbloggen.se:80/2011/01/13/andra-installningar-pa-skolbloggen/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/01/13/andra-utseende-pa-skolbloggen/",
+      "kind": "post_like",
+      "path": "2011/01/13/andra-utseende-pa-skolbloggen/index.html",
+      "archive_url": "https://web.archive.org/web/20110513042938id_/http://smeste09.skolbloggen.se:80/2011/01/13/andra-utseende-pa-skolbloggen/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/01/13/hur-du-skapar-inlagg-i-bloggen/",
+      "kind": "post_like",
+      "path": "2011/01/13/hur-du-skapar-inlagg-i-bloggen/index.html",
+      "archive_url": "https://web.archive.org/web/20110511054052id_/http://smeste09.skolbloggen.se:80/2011/01/13/hur-du-skapar-inlagg-i-bloggen/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/01/14/lagga-till-anvandare-pa-skolbloggen/",
+      "kind": "post_like",
+      "path": "2011/01/14/lagga-till-anvandare-pa-skolbloggen/index.html",
+      "archive_url": "https://web.archive.org/web/20110513042943id_/http://smeste09.skolbloggen.se:80/2011/01/14/lagga-till-anvandare-pa-skolbloggen/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/01/14/presentera-dig-sjalv-pa-sidan-om/",
+      "kind": "post_like",
+      "path": "2011/01/14/presentera-dig-sjalv-pa-sidan-om/index.html",
+      "archive_url": "https://web.archive.org/web/20110513042948id_/http://smeste09.skolbloggen.se:80/2011/01/14/presentera-dig-sjalv-pa-sidan-om/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/01/16/forsta-inlagget-dina-forvantningar-och-behov-pa-kursen/",
+      "kind": "post_like",
+      "path": "2011/01/16/forsta-inlagget-dina-forvantningar-och-behov-pa-kursen/index.html",
+      "archive_url": "https://web.archive.org/web/20110513042953id_/http://smeste09.skolbloggen.se:80/2011/01/16/forsta-inlagget-dina-forvantningar-och-behov-pa-kursen/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/01/19/tema-sprakvetenskap-steg-1/",
+      "kind": "post_like",
+      "path": "2011/01/19/tema-sprakvetenskap-steg-1/index.html",
+      "archive_url": "https://web.archive.org/web/20110513042959id_/http://smeste09.skolbloggen.se:80/2011/01/19/tema-sprakvetenskap-steg-1/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/01/20/tema-sprakvetenskap-steg-2/",
+      "kind": "post_like",
+      "path": "2011/01/20/tema-sprakvetenskap-steg-2/index.html",
+      "archive_url": "https://web.archive.org/web/20110513043003id_/http://smeste09.skolbloggen.se:80/2011/01/20/tema-sprakvetenskap-steg-2/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/02/08/teaterresa/",
+      "kind": "post_like",
+      "path": "2011/02/08/teaterresa/index.html",
+      "archive_url": "https://web.archive.org/web/20110511202008id_/http://smeste09.skolbloggen.se:80/2011/02/08/teaterresa/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/02/14/250/",
+      "kind": "post_like",
+      "path": "2011/02/14/250/index.html",
+      "archive_url": "https://web.archive.org/web/20110511202012id_/http://smeste09.skolbloggen.se:80/2011/02/14/250/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/02/28/tavlingar/",
+      "kind": "post_like",
+      "path": "2011/02/28/tavlingar/index.html",
+      "archive_url": "https://web.archive.org/web/20110511202436id_/http://smeste09.skolbloggen.se:80/2011/02/28/tavlingar/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/03/05/referat/",
+      "kind": "post_like",
+      "path": "2011/03/05/referat/index.html",
+      "archive_url": "https://web.archive.org/web/20180227190843id_/http://smeste09.skolbloggen.se:80/2011/03/05/referat/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/03/14/nagra-skrivrad/",
+      "kind": "post_like",
+      "path": "2011/03/14/nagra-skrivrad/index.html",
+      "archive_url": "https://web.archive.org/web/20110511054057id_/http://smeste09.skolbloggen.se:80/2011/03/14/nagra-skrivrad/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/03/21/litteraturvetenskap-nagra-viktiga-begrepp-verk-och-personer/",
+      "kind": "post_like",
+      "path": "2011/03/21/litteraturvetenskap-nagra-viktiga-begrepp-verk-och-personer/index.html",
+      "archive_url": "https://web.archive.org/web/20110511002840id_/http://smeste09.skolbloggen.se:80/2011/03/21/litteraturvetenskap-nagra-viktiga-begrepp-verk-och-personer/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/03/24/skrivuppgift/",
+      "kind": "post_like",
+      "path": "2011/03/24/skrivuppgift/index.html",
+      "archive_url": "https://web.archive.org/web/20110511032209id_/http://smeste09.skolbloggen.se:80/2011/03/24/skrivuppgift/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/03/31/att-ge-och-fa-skriftlig-respons/",
+      "kind": "post_like",
+      "path": "2011/03/31/att-ge-och-fa-skriftlig-respons/index.html",
+      "archive_url": "https://web.archive.org/web/20110511032341id_/http://smeste09.skolbloggen.se:80/2011/03/31/att-ge-och-fa-skriftlig-respons/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/03/31/skriv-om-natmobbing/",
+      "kind": "post_like",
+      "path": "2011/03/31/skriv-om-natmobbing/index.html",
+      "archive_url": "https://web.archive.org/web/20110511032213id_/http://smeste09.skolbloggen.se:80/2011/03/31/skriv-om-natmobbing/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/04/13/pasklov-och-sedan/",
+      "kind": "post_like",
+      "path": "2011/04/13/pasklov-och-sedan/index.html",
+      "archive_url": "https://web.archive.org/web/20110511011535id_/http://smeste09.skolbloggen.se:80/2011/04/13/pasklov-och-sedan/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/04/14/tips-kring-er-text-med-bade-referat-och-egna-asikter/",
+      "kind": "post_like",
+      "path": "2011/04/14/tips-kring-er-text-med-bade-referat-och-egna-asikter/index.html",
+      "archive_url": "https://web.archive.org/web/20110511011544id_/http://smeste09.skolbloggen.se:80/2011/04/14/tips-kring-er-text-med-bade-referat-och-egna-asikter/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/04/26/folj-argumentationen-las-och-kommentera/",
+      "kind": "post_like",
+      "path": "2011/04/26/folj-argumentationen-las-och-kommentera/index.html",
+      "archive_url": "https://web.archive.org/web/20110511011603id_/http://smeste09.skolbloggen.se:80/2011/04/26/folj-argumentationen-las-och-kommentera/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/04/28/shakespeare/",
+      "kind": "post_like",
+      "path": "2011/04/28/shakespeare/index.html",
+      "archive_url": "https://web.archive.org/web/20110511032218id_/http://smeste09.skolbloggen.se:80/2011/04/28/shakespeare/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/05/03/franskklassicismen-och-moliere/",
+      "kind": "post_like",
+      "path": "2011/05/03/franskklassicismen-och-moliere/index.html",
+      "archive_url": "https://web.archive.org/web/20110825095027id_/http://smeste09.skolbloggen.se:80/2011/05/03/franskklassicismen-och-moliere/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/05/05/ljuv-lasning/",
+      "kind": "post_like",
+      "path": "2011/05/05/ljuv-lasning/index.html",
+      "archive_url": "https://web.archive.org/web/20110511054302id_/http://smeste09.skolbloggen.se:80/2011/05/05/ljuv-lasning/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/2011/09/22/argumentera-mera/",
+      "kind": "post_like",
+      "path": "2011/09/22/argumentera-mera/index.html",
+      "archive_url": "https://web.archive.org/web/20160428011752id_/http://smeste09.skolbloggen.se:80/2011/09/22/argumentera-mera/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/category/argumentation/",
+      "kind": "category",
+      "path": "category/argumentation/index.html",
+      "archive_url": "https://web.archive.org/web/20110511204128id_/http://smeste09.skolbloggen.se:80/category/argumentation/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/category/att-skriva/",
+      "kind": "category",
+      "path": "category/att-skriva/index.html",
+      "archive_url": "https://web.archive.org/web/20110511204133id_/http://smeste09.skolbloggen.se:80/category/att-skriva/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/category/bild/",
+      "kind": "category",
+      "path": "category/bild/index.html",
+      "archive_url": "https://web.archive.org/web/20110511204138id_/http://smeste09.skolbloggen.se:80/category/bild/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/category/introduktion/",
+      "kind": "category",
+      "path": "category/introduktion/index.html",
+      "archive_url": "https://web.archive.org/web/20110511202442id_/http://smeste09.skolbloggen.se:80/category/introduktion/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/category/litteraturvetenskap/",
+      "kind": "category",
+      "path": "category/litteraturvetenskap/index.html",
+      "archive_url": "https://web.archive.org/web/20110511204143id_/http://smeste09.skolbloggen.se:80/category/litteraturvetenskap/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/category/okategoriserade/",
+      "kind": "category",
+      "path": "category/okategoriserade/index.html",
+      "archive_url": "https://web.archive.org/web/20110511054101id_/http://smeste09.skolbloggen.se:80/category/okategoriserade/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/category/referat/",
+      "kind": "category",
+      "path": "category/referat/index.html",
+      "archive_url": "https://web.archive.org/web/20110511204151id_/http://smeste09.skolbloggen.se:80/category/referat/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/category/respons/",
+      "kind": "category",
+      "path": "category/respons/index.html",
+      "archive_url": "https://web.archive.org/web/20110511204154id_/http://smeste09.skolbloggen.se:80/category/respons/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/category/sprakvetenskap/",
+      "kind": "category",
+      "path": "category/sprakvetenskap/index.html",
+      "archive_url": "https://web.archive.org/web/20110511203447id_/http://smeste09.skolbloggen.se:80/category/sprakvetenskap/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/category/tavlingar/",
+      "kind": "category",
+      "path": "category/tavlingar/index.html",
+      "archive_url": "https://web.archive.org/web/20110511204159id_/http://smeste09.skolbloggen.se:80/category/tavlingar/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/category/teater/",
+      "kind": "category",
+      "path": "category/teater/index.html",
+      "archive_url": "https://web.archive.org/web/20110511202017id_/http://smeste09.skolbloggen.se:80/category/teater/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/category/uppgifter/",
+      "kind": "category",
+      "path": "category/uppgifter/index.html",
+      "archive_url": "https://web.archive.org/web/20110511203452id_/http://smeste09.skolbloggen.se:80/category/uppgifter/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/om-cwn/",
+      "kind": "other",
+      "path": "om-cwn/index.html",
+      "archive_url": "https://web.archive.org/web/20110511204204id_/http://smeste09.skolbloggen.se:80/om-cwn/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/om/",
+      "kind": "other",
+      "path": "om/index.html",
+      "archive_url": "https://web.archive.org/web/20110511054107id_/http://smeste09.skolbloggen.se:80/om/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/skicka-till-urkund/",
+      "kind": "other",
+      "path": "skicka-till-urkund/index.html",
+      "archive_url": "https://web.archive.org/web/20110511054112id_/http://smeste09.skolbloggen.se:80/skicka-till-urkund/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/uppgifter/",
+      "kind": "other",
+      "path": "uppgifter/index.html",
+      "archive_url": "https://web.archive.org/web/20110511054117id_/http://smeste09.skolbloggen.se:80/uppgifter/"
+    },
+    {
+      "url": "http://smeste09.skolbloggen.se/veckoplanering-vt-2011/",
+      "kind": "other",
+      "path": "veckoplanering-vt-2011/index.html",
+      "archive_url": "https://web.archive.org/web/20110825093820id_/http://smeste09.skolbloggen.se:80/veckoplanering-vt-2011/"
+    }
+  ],
+  "failed": []
+}

@@ -1,0 +1,549 @@
+{
+  "mode": "html-subset",
+  "downloaded_count": 78,
+  "failed_count": 12,
+  "downloaded": [
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/01/18/varfor-pedagogisk-dokumentation/",
+      "kind": "post_like",
+      "path": "2010/01/18/varfor-pedagogisk-dokumentation/index.html",
+      "archive_url": "https://web.archive.org/web/20130522203619id_/http://cwasteson.skolbloggen.se/2010/01/18/varfor-pedagogisk-dokumentation/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/01/31/podsandning-skapar-mening/",
+      "kind": "post_like",
+      "path": "2010/01/31/podsandning-skapar-mening/index.html",
+      "archive_url": "https://web.archive.org/web/20100303001203id_/http://cwasteson.skolbloggen.se:80/2010/01/31/podsandning-skapar-mening/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/01/",
+      "kind": "other",
+      "path": "2010/01/index.html",
+      "archive_url": "https://web.archive.org/web/20100817215520id_/http://cwasteson.skolbloggen.se/2010/01/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/01/att-lara-sig-podsandning/",
+      "kind": "post_like",
+      "path": "2010/02/01/att-lara-sig-podsandning/index.html",
+      "archive_url": "https://web.archive.org/web/20100303001212id_/http://cwasteson.skolbloggen.se:80/2010/02/01/att-lara-sig-podsandning/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/06/kallkritik-%E2%80%93-viktigare-an-nagonsin/",
+      "kind": "post_like",
+      "path": "2010/02/06/kallkritik-%E2%80%93-viktigare-an-nagonsin/index.html",
+      "archive_url": "https://web.archive.org/web/20100227062445id_/http://cwasteson.skolbloggen.se:80/2010/02/06/kallkritik-%E2%80%93-viktigare-an-nagonsin/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/09/skriva-for-att-lara/",
+      "kind": "post_like",
+      "path": "2010/02/09/skriva-for-att-lara/index.html",
+      "archive_url": "https://web.archive.org/web/20100227062145id_/http://cwasteson.skolbloggen.se:80/2010/02/09/skriva-for-att-lara/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/10/lamplighetstest-av-larare/",
+      "kind": "post_like",
+      "path": "2010/02/10/lamplighetstest-av-larare/index.html",
+      "archive_url": "https://web.archive.org/web/20100227062151id_/http://cwasteson.skolbloggen.se:80/2010/02/10/lamplighetstest-av-larare/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/13/cheat-neutral/",
+      "kind": "post_like",
+      "path": "2010/02/13/cheat-neutral/index.html",
+      "archive_url": "https://web.archive.org/web/20100227062449id_/http://cwasteson.skolbloggen.se:80/2010/02/13/cheat-neutral/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/13/surfandet-stjal-tid-och-gor-dig-otalig/",
+      "kind": "post_like",
+      "path": "2010/02/13/surfandet-stjal-tid-och-gor-dig-otalig/index.html",
+      "archive_url": "https://web.archive.org/web/20100227062454id_/http://cwasteson.skolbloggen.se:80/2010/02/13/surfandet-stjal-tid-och-gor-dig-otalig/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/15/tips-nar-du-ska-skriva-texter-for-webben/",
+      "kind": "post_like",
+      "path": "2010/02/15/tips-nar-du-ska-skriva-texter-for-webben/index.html",
+      "archive_url": "https://web.archive.org/web/20100227062156id_/http://cwasteson.skolbloggen.se:80/2010/02/15/tips-nar-du-ska-skriva-texter-for-webben/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/17/borde-vi-inte-alla-visa-tacksamhet/",
+      "kind": "post_like",
+      "path": "2010/02/17/borde-vi-inte-alla-visa-tacksamhet/index.html",
+      "archive_url": "https://web.archive.org/web/20100227062202id_/http://cwasteson.skolbloggen.se:80/2010/02/17/borde-vi-inte-alla-visa-tacksamhet/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/17/svenska-skrivregler-har-utvidgats/",
+      "kind": "post_like",
+      "path": "2010/02/17/svenska-skrivregler-har-utvidgats/index.html",
+      "archive_url": "https://web.archive.org/web/20100227062505id_/http://cwasteson.skolbloggen.se:80/2010/02/17/svenska-skrivregler-har-utvidgats/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/18/extra-tid-foder-kreativitet/",
+      "kind": "post_like",
+      "path": "2010/02/18/extra-tid-foder-kreativitet/index.html",
+      "archive_url": "https://web.archive.org/web/20100227062509id_/http://cwasteson.skolbloggen.se:80/2010/02/18/extra-tid-foder-kreativitet/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/19/textvard/",
+      "kind": "post_like",
+      "path": "2010/02/19/textvard/index.html",
+      "archive_url": "https://web.archive.org/web/20100227041153id_/http://cwasteson.skolbloggen.se:80/2010/02/19/textvard/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/",
+      "kind": "other",
+      "path": "2010/02/index.html",
+      "archive_url": "https://web.archive.org/web/20100817215451id_/http://cwasteson.skolbloggen.se/2010/02/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/03/07/att-sprida-material-med-google-docs/",
+      "kind": "post_like",
+      "path": "2010/03/07/att-sprida-material-med-google-docs/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/03/07/vart-forhallande-till-sociala-medie/",
+      "kind": "post_like",
+      "path": "2010/03/07/vart-forhallande-till-sociala-medie/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/03/16/jag-ar-lite-avundsjuk/",
+      "kind": "post_like",
+      "path": "2010/03/16/jag-ar-lite-avundsjuk/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/03/20/amneskunskaper-behovs-vid-kallkritik/",
+      "kind": "post_like",
+      "path": "2010/03/20/amneskunskaper-behovs-vid-kallkritik/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/03/28/glad-pask/",
+      "kind": "post_like",
+      "path": "2010/03/28/glad-pask/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/03/",
+      "kind": "other",
+      "path": "2010/03/index.html",
+      "archive_url": "https://web.archive.org/web/20100817215437id_/http://cwasteson.skolbloggen.se/2010/03/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/04/21/google-dokuments-i-skolan/",
+      "kind": "post_like",
+      "path": "2010/04/21/google-dokuments-i-skolan/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/04/",
+      "kind": "other",
+      "path": "2010/04/index.html",
+      "archive_url": "https://web.archive.org/web/20100817215422id_/http://cwasteson.skolbloggen.se/2010/04/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/10/har-du-svart-for-att-bestamma-dig/",
+      "kind": "post_like",
+      "path": "2010/05/10/har-du-svart-for-att-bestamma-dig/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/10/kommer-ni-ihag-snon-som-foll-i-fjol/",
+      "kind": "post_like",
+      "path": "2010/05/10/kommer-ni-ihag-snon-som-foll-i-fjol/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/11/riktigt-bra-musik-ar-nagot-alldeles-extra/",
+      "kind": "post_like",
+      "path": "2010/05/11/riktigt-bra-musik-ar-nagot-alldeles-extra/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/15/ar-jag-pim-klar/",
+      "kind": "post_like",
+      "path": "2010/05/15/ar-jag-pim-klar/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/16/hantera-filer-och-mappar/",
+      "kind": "post_like",
+      "path": "2010/05/16/hantera-filer-och-mappar/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/16/vad-gor-dig-motiverad/",
+      "kind": "post_like",
+      "path": "2010/05/16/vad-gor-dig-motiverad/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/19/leker-med-bildredigeringsprogram/",
+      "kind": "post_like",
+      "path": "2010/05/19/leker-med-bildredigeringsprogram/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/20/hantera-datorns-utseende/",
+      "kind": "post_like",
+      "path": "2010/05/20/hantera-datorns-utseende/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/",
+      "kind": "other",
+      "path": "2010/05/index.html",
+      "archive_url": "https://web.archive.org/web/20100817215357id_/http://cwasteson.skolbloggen.se/2010/05/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/07/medier-i-undervisningen/",
+      "kind": "post_like",
+      "path": "2010/06/07/medier-i-undervisningen/index.html",
+      "archive_url": "https://web.archive.org/web/20100621114248id_/http://cwasteson.skolbloggen.se:80/2010/06/07/medier-i-undervisningen/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/07/tips-nar-du-vill-dokumentera-ett-studiebesok/",
+      "kind": "post_like",
+      "path": "2010/06/07/tips-nar-du-vill-dokumentera-ett-studiebesok/index.html",
+      "archive_url": "https://web.archive.org/web/20100621114253id_/http://cwasteson.skolbloggen.se:80/2010/06/07/tips-nar-du-vill-dokumentera-ett-studiebesok/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/10/en-wiki-for-larare-pa-natet/",
+      "kind": "post_like",
+      "path": "2010/06/10/en-wiki-for-larare-pa-natet/index.html",
+      "archive_url": "https://web.archive.org/web/20100621114258id_/http://cwasteson.skolbloggen.se:80/2010/06/10/en-wiki-for-larare-pa-natet/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/12/google-reader-bade-van-och-fiende/",
+      "kind": "post_like",
+      "path": "2010/06/12/google-reader-bade-van-och-fiende/index.html",
+      "archive_url": "https://web.archive.org/web/20100621120704id_/http://cwasteson.skolbloggen.se:80/2010/06/12/google-reader-bade-van-och-fiende/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/13/google-docs-for-fildelning-och-samarbete/",
+      "kind": "post_like",
+      "path": "2010/06/13/google-docs-for-fildelning-och-samarbete/index.html",
+      "archive_url": "https://web.archive.org/web/20100621120719id_/http://cwasteson.skolbloggen.se:80/2010/06/13/google-docs-for-fildelning-och-samarbete/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/15/traffande-beskrivning-av-problemlosning/",
+      "kind": "post_like",
+      "path": "2010/06/15/traffande-beskrivning-av-problemlosning/index.html",
+      "archive_url": "https://web.archive.org/web/20100621120724id_/http://cwasteson.skolbloggen.se:80/2010/06/15/traffande-beskrivning-av-problemlosning/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/19/karlek-och-hat/",
+      "kind": "post_like",
+      "path": "2010/06/19/karlek-och-hat/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/21/sa-har-funkar-wikipedia/",
+      "kind": "post_like",
+      "path": "2010/06/21/sa-har-funkar-wikipedia/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/21/utbildar-skolan-bort-barnens-kreativitet/",
+      "kind": "post_like",
+      "path": "2010/06/21/utbildar-skolan-bort-barnens-kreativitet/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/23/medieradet-om-mediers-paverkan/",
+      "kind": "post_like",
+      "path": "2010/06/23/medieradet-om-mediers-paverkan/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/28/jag-hinner-inte/",
+      "kind": "post_like",
+      "path": "2010/06/28/jag-hinner-inte/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/30/mp3-pa-blip-tv/",
+      "kind": "post_like",
+      "path": "2010/06/30/mp3-pa-blip-tv/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/",
+      "kind": "other",
+      "path": "2010/06/index.html",
+      "archive_url": "https://web.archive.org/web/20100817215338id_/http://cwasteson.skolbloggen.se/2010/06/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/07/14/upphovsratt-pa-internet/",
+      "kind": "post_like",
+      "path": "2010/07/14/upphovsratt-pa-internet/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/07/18/integritet-pa-internet/",
+      "kind": "post_like",
+      "path": "2010/07/18/integritet-pa-internet/index.html",
+      "archive_url": "https://web.archive.org/web/20100809185427id_/http://cwasteson.skolbloggen.se:80/2010/07/18/integritet-pa-internet/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/07/",
+      "kind": "other",
+      "path": "2010/07/index.html",
+      "archive_url": "https://web.archive.org/web/20100817215330id_/http://cwasteson.skolbloggen.se/2010/07/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/15/mobilen-i-undervisningen/",
+      "kind": "post_like",
+      "path": "2010/08/15/mobilen-i-undervisningen/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/25/lc200n-digital-kompetens-och-larande-ii/",
+      "kind": "post_like",
+      "path": "2010/08/25/lc200n-digital-kompetens-och-larande-ii/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/25/projektarbete-i-kursen-lc100n-digital-kompetens-pa-kth/",
+      "kind": "post_like",
+      "path": "2010/08/25/projektarbete-i-kursen-lc100n-digital-kompetens-pa-kth/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/26/behovs-dagslandor-eller-myror-i-skolpolitiken/",
+      "kind": "post_like",
+      "path": "2010/08/26/behovs-dagslandor-eller-myror-i-skolpolitiken/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/27/jisses-jesus/",
+      "kind": "post_like",
+      "path": "2010/08/27/jisses-jesus/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/27/svenssons-bildning-pa-internet/",
+      "kind": "post_like",
+      "path": "2010/08/27/svenssons-bildning-pa-internet/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/31/ska-lararen-behalla-badkladerna-pa/",
+      "kind": "post_like",
+      "path": "2010/08/31/ska-lararen-behalla-badkladerna-pa/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/08/",
+      "kind": "other",
+      "path": "2010/08/index.html",
+      "archive_url": "https://web.archive.org/web/20100817215320id_/http://cwasteson.skolbloggen.se/2010/08/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/09/02/nojeslasning-kan-vara-kostsam-for-institutionerna/",
+      "kind": "post_like",
+      "path": "2010/09/02/nojeslasning-kan-vara-kostsam-for-institutionerna/index.html",
+      "archive_url": "local-snippet-reconstruction"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/09/18/uppstramningen-framst-mot-de-svaga/",
+      "kind": "post_like",
+      "path": "2010/09/18/uppstramningen-framst-mot-de-svaga/index.html",
+      "archive_url": "https://web.archive.org/web/20120126044118id_/http://cwasteson.skolbloggen.se/2010/09/18/uppstramningen-framst-mot-de-svaga/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/09/21/pippi-och-forebilder/",
+      "kind": "post_like",
+      "path": "2010/09/21/pippi-och-forebilder/index.html",
+      "archive_url": "https://web.archive.org/web/20120308021740id_/http://cwasteson.skolbloggen.se:80/2010/09/21/pippi-och-forebilder/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/09/22/rwandas-kvinnor-far-allt-mer-makt/",
+      "kind": "post_like",
+      "path": "2010/09/22/rwandas-kvinnor-far-allt-mer-makt/index.html",
+      "archive_url": "https://web.archive.org/web/20120126051211id_/http://cwasteson.skolbloggen.se/2010/09/22/rwandas-kvinnor-far-allt-mer-makt/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/09/23/var-framtid-med-sverigedemokraterna/",
+      "kind": "post_like",
+      "path": "2010/09/23/var-framtid-med-sverigedemokraterna/index.html",
+      "archive_url": "https://web.archive.org/web/20120126044344id_/http://cwasteson.skolbloggen.se/2010/09/23/var-framtid-med-sverigedemokraterna/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/09/25/lashunger-kan-kopplas-till-stordad/",
+      "kind": "post_like",
+      "path": "2010/09/25/lashunger-kan-kopplas-till-stordad/index.html",
+      "archive_url": "https://web.archive.org/web/20120126081116id_/http://cwasteson.skolbloggen.se/2010/09/25/lashunger-kan-kopplas-till-stordad/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/10/06/vi-lar-som-vi-lever/",
+      "kind": "post_like",
+      "path": "2010/10/06/vi-lar-som-vi-lever/index.html",
+      "archive_url": "https://web.archive.org/web/20120126042231id_/http://cwasteson.skolbloggen.se/2010/10/06/vi-lar-som-vi-lever/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/11/02/ta-tillvara-fordelarna-och-undvik-fallgroparna/",
+      "kind": "post_like",
+      "path": "2010/11/02/ta-tillvara-fordelarna-och-undvik-fallgroparna/index.html",
+      "archive_url": "https://web.archive.org/web/20120126091856id_/http://cwasteson.skolbloggen.se/2010/11/02/ta-tillvara-fordelarna-och-undvik-fallgroparna/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2011/04/13/1496/",
+      "kind": "post_like",
+      "path": "2011/04/13/1496/index.html",
+      "archive_url": "https://web.archive.org/web/20170128144647id_/http://cwasteson.skolbloggen.se/2011/04/13/1496/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2011/04/29/en-forfarlig-paskhelg-pa-osterlen/",
+      "kind": "post_like",
+      "path": "2011/04/29/en-forfarlig-paskhelg-pa-osterlen/index.html",
+      "archive_url": "https://web.archive.org/web/20120126060026id_/http://cwasteson.skolbloggen.se/2011/04/29/en-forfarlig-paskhelg-pa-osterlen/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2011/09/28/nu-skriver-jag-dar-istallet/",
+      "kind": "post_like",
+      "path": "2011/09/28/nu-skriver-jag-dar-istallet/index.html",
+      "archive_url": "https://web.archive.org/web/20190819164826id_/https://cwasteson.skolbloggen.se/2011/09/28/nu-skriver-jag-dar-istallet/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/category/bokpresentation/",
+      "kind": "category",
+      "path": "category/bokpresentation/index.html",
+      "archive_url": "https://web.archive.org/web/20120126082431id_/http://cwasteson.skolbloggen.se/category/bokpresentation/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/category/forskning/",
+      "kind": "category",
+      "path": "category/forskning/index.html",
+      "archive_url": "https://web.archive.org/web/20120126003704id_/http://cwasteson.skolbloggen.se/category/forskning/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/category/funderingar/",
+      "kind": "category",
+      "path": "category/funderingar/index.html",
+      "archive_url": "https://web.archive.org/web/20120303061801id_/http://cwasteson.skolbloggen.se:80/category/funderingar/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/category/internet/",
+      "kind": "category",
+      "path": "category/internet/index.html",
+      "archive_url": "https://web.archive.org/web/20120126030735id_/http://cwasteson.skolbloggen.se/category/internet/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/category/okategoriserad/",
+      "kind": "category",
+      "path": "category/okategoriserad/index.html",
+      "archive_url": "https://web.archive.org/web/20100820163012id_/http://cwasteson.skolbloggen.se/category/okategoriserad/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/category/pim/",
+      "kind": "category",
+      "path": "category/pim/index.html",
+      "archive_url": "https://web.archive.org/web/20100821011727id_/http://cwasteson.skolbloggen.se/category/pim/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/category/utbildning/",
+      "kind": "category",
+      "path": "category/utbildning/index.html",
+      "archive_url": "https://web.archive.org/web/20120308033303id_/http://cwasteson.skolbloggen.se:80/category/utbildning/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/",
+      "kind": "homepage",
+      "path": "index.html",
+      "archive_url": "https://web.archive.org/web/20190819164747id_/https://cwasteson.skolbloggen.se/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/om/",
+      "kind": "other",
+      "path": "om/index.html",
+      "archive_url": "https://web.archive.org/web/20120126013804id_/http://cwasteson.skolbloggen.se/om/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/page/2/",
+      "kind": "pagination",
+      "path": "page/2/index.html",
+      "archive_url": "https://web.archive.org/web/20120126045337id_/http://cwasteson.skolbloggen.se/page/2/"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/page/6",
+      "kind": "pagination",
+      "path": "page/6/index.html",
+      "archive_url": "https://web.archive.org/web/20170704113908id_/http://cwasteson.skolbloggen.se:80/page/6/"
+    }
+  ],
+  "failed": [
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/02/03/tva-saker-angrar-jag/",
+      "path": "2010/02/03/tva-saker-angrar-jag/index.html",
+      "status": "resolve_failed",
+      "error": "<urlopen error [WinError 10013] Ett försök gjordes att få åtkomst till en socket på ett sätt som är förbjudet av åtkomstbehörigheterna>"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/03/07/att-sprida-material-med-google-docs/",
+      "path": "2010/03/07/att-sprida-material-med-google-docs/index.html",
+      "status": "resolve_failed",
+      "error": "<urlopen error [WinError 10013] Ett försök gjordes att få åtkomst till en socket på ett sätt som är förbjudet av åtkomstbehörigheterna>"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/03/07/vart-forhallande-till-sociala-medie/",
+      "path": "2010/03/07/vart-forhallande-till-sociala-medie/index.html",
+      "status": "resolve_failed",
+      "error": "<urlopen error [WinError 10013] Ett försök gjordes att få åtkomst till en socket på ett sätt som är förbjudet av åtkomstbehörigheterna>"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/03/16/jag-ar-lite-avundsjuk/",
+      "path": "2010/03/16/jag-ar-lite-avundsjuk/index.html",
+      "status": "resolve_failed",
+      "error": "<urlopen error [WinError 10013] Ett försök gjordes att få åtkomst till en socket på ett sätt som är förbjudet av åtkomstbehörigheterna>"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/03/20/amneskunskaper-behovs-vid-kallkritik/",
+      "path": "2010/03/20/amneskunskaper-behovs-vid-kallkritik/index.html",
+      "status": "resolve_failed",
+      "error": "<urlopen error [WinError 10013] Ett försök gjordes att få åtkomst till en socket på ett sätt som är förbjudet av åtkomstbehörigheterna>"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/03/28/glad-pask/",
+      "path": "2010/03/28/glad-pask/index.html",
+      "status": "resolve_failed",
+      "error": "<urlopen error [WinError 10013] Ett försök gjordes att få åtkomst till en socket på ett sätt som är förbjudet av åtkomstbehörigheterna>"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/04/11/vilket-typsnitt-ar-bast/",
+      "path": "2010/04/11/vilket-typsnitt-ar-bast/index.html",
+      "status": "resolve_failed",
+      "error": "<urlopen error [WinError 10013] Ett försök gjordes att få åtkomst till en socket på ett sätt som är förbjudet av åtkomstbehörigheterna>"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/04/21/google-dokuments-i-skolan/",
+      "path": "2010/04/21/google-dokuments-i-skolan/index.html",
+      "status": "resolve_failed",
+      "error": "<urlopen error [WinError 10013] Ett försök gjordes att få åtkomst till en socket på ett sätt som är förbjudet av åtkomstbehörigheterna>"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/10/har-du-svart-for-att-bestamma-dig/",
+      "path": "2010/05/10/har-du-svart-for-att-bestamma-dig/index.html",
+      "status": "resolve_failed",
+      "error": "<urlopen error [WinError 10013] Ett försök gjordes att få åtkomst till en socket på ett sätt som är förbjudet av åtkomstbehörigheterna>"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/10/kommer-ni-ihag-snon-som-foll-i-fjol/",
+      "path": "2010/05/10/kommer-ni-ihag-snon-som-foll-i-fjol/index.html",
+      "status": "resolve_failed",
+      "error": "<urlopen error [WinError 10013] Ett försök gjordes att få åtkomst till en socket på ett sätt som är förbjudet av åtkomstbehörigheterna>"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/05/11/riktigt-bra-musik-ar-nagot-alldeles-extra/",
+      "path": "2010/05/11/riktigt-bra-musik-ar-nagot-alldeles-extra/index.html",
+      "status": "resolve_failed",
+      "error": "<urlopen error [WinError 10013] Ett försök gjordes att få åtkomst till en socket på ett sätt som är förbjudet av åtkomstbehörigheterna>"
+    },
+    {
+      "url": "http://cwasteson.skolbloggen.se/2010/06/19/karlek-och-hat/",
+      "path": "2010/06/19/karlek-och-hat/index.html",
+      "status": "resolve_failed",
+      "error": "<urlopen error [WinError 10013] Ett försök gjordes att få åtkomst till en socket på ett sätt som är förbjudet av åtkomstbehörigheterna>"
+    }
+  ]
+}

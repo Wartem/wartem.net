@@ -11,3 +11,6 @@ __pycache__/
 *.pyc
 archive/bufsimrishamn/tmp*/
 archive/bufsimrishamn/out-smoke/
+Backups only/
+archive - kopia/
+Backup only/

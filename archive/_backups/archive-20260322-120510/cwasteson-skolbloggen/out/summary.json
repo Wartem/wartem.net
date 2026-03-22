@@ -1,0 +1,373 @@
+{
+  "capture_count": 424,
+  "failed_best_capture_lookups": [
+    {
+      "error": "http://cwasteson.skolbloggen.se/2010/08/31/ska-lararen-behalla-badkladerna-pa/comment-page-1/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/2010/08/31/ska-lararen-behalla-badkladerna-pa/comment-page-1/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/2010/09/14/nagra-ord-om-lashunger/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/2010/09/14/nagra-ord-om-lashunger/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/application/x-mplayer2: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/application/x-mplayer2"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/fonsterhantering/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/fonsterhantering/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/forskning/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/forskning/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/forteckningar/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/forteckningar/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/foto/widget-30.slide.com: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/foto/widget-30.slide.com"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/foto/widget-c5.slide.com: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/foto/widget-c5.slide.com"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/fundering/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/fundering/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/google-docs/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/google-docs/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/google-dokuments/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/google-dokuments/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/gratis-verktyg/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/gratis-verktyg/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/hertzberg/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/hertzberg/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/illustrera/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/illustrera/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/imagechef/widget-30.slide.com: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/imagechef/widget-30.slide.com"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/informationskompetens/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/informationskompetens/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/installningar/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/installningar/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/jesper-fundberg/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/jesper-fundberg/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/jesper-fundberg/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/jesper-fundberg/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/klarsprak/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/klarsprak/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/kolla-kallan/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/kolla-kallan/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/kommentarsfunktion/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/kommentarsfunktion/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/klarsprak/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/klarsprak/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/kreativitet/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/kreativitet/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/lasvanligt/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/lasvanligt/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/ljud/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/ljud/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/medieradet/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/medieradet/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/menyer/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/menyer/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/miljodebatt/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/miljodebatt/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/mindmap/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/mindmap/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/mus/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/mus/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/mus/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/mus/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/musik/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/musik/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/natmobbing/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/natmobbing/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/offentligt-sprak/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/offentligt-sprak/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/offentligt-sprak/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/offentligt-sprak/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/pask/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/pask/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/pask/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/pask/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/photofiltre/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/photofiltre/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/pim/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/pim/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/pitbull/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/pitbull/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/podcast/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/podcast/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/powerpoint/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/powerpoint/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/profilsida/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/profilsida/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/redovisning/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/redovisning/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/presentation/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/presentation/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/saklitteratur/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/saklitteratur/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/saklitteratur/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/saklitteratur/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/simrishamn/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/simrishamn/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/skola/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/skola/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/skonlitteratur/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/skonlitteratur/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/skonlitteratur/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/skonlitteratur/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/skype/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/skype/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/somn/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/somn/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/somn/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/somn/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/sr/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/sr/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/sr/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/sr/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/svenska-b-kurs/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/svenska-b-kurs/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/tacksamhet/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/tacksamhet/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/tangentbord/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/tangentbord/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/textvard/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/textvard/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/tips/widget-c5.slide.com: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/tips/widget-c5.slide.com"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/trakig/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/trakig/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/trakig/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/trakig/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/trygg/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/trygg/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/utforska/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/utforska/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/vanner/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/vanner/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/webbibliotek/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/webbibliotek/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/webbtext/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/webbtext/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/tag/wikipedia/feed/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/tag/wikipedia/feed/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/undervisningslanka/comment-page-1/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/undervisningslanka/comment-page-1/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/wp-atom.php: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/wp-atom.php"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/wp-content/plugins/buddypress/bp-core/js/jquery-query.min.js?ver=2.6.2: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/wp-content/plugins/buddypress/bp-core/js/jquery-query.min.js?ver=2.6.2"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/wp-content/plugins/buddypress/bp-core/js/jquery-scroll-to.min.js?ver=2.6.2: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/wp-content/plugins/buddypress/bp-core/js/jquery-scroll-to.min.js?ver=2.6.2"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/wp-content/plugins/buddypress/bp-themes/bp-default/_inc/css/adminbar.css?ver=2.9.2: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/wp-content/plugins/buddypress/bp-themes/bp-default/_inc/css/adminbar.css?ver=2.9.2"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/wp-content/plugins/pro-sites/pro-sites-files/js/tax.js?ver=3.5.4: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/wp-content/plugins/pro-sites/pro-sites-files/js/tax.js?ver=3.5.4"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/wp-content/themes/blix/style.css?1: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/wp-content/themes/blix/style.css?1"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/wp-includes/css/admin-bar.min.css?ver=ba1af84a589c99f85e42f8364aff6812: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/wp-includes/css/admin-bar.min.css?ver=ba1af84a589c99f85e42f8364aff6812"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/wp-content/themes/blix/spring_flavour.css: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/wp-content/themes/blix/spring_flavour.css"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se/wp-includes/js/jquery/jquery.js?ver=1.12.4: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se/wp-includes/js/jquery/jquery.js?ver=1.12.4"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se:80/2010/02/15/att-lara-sig-undvika-faror-pa-natet/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se:80/2010/02/15/att-lara-sig-undvika-faror-pa-natet/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se:80/2010/05/21/bild-hamta-och-hantera/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se:80/2010/05/21/bild-hamta-och-hantera/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se:80/2010/05/21/bild-hamta-och-hantera/comment-page-1/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se:80/2010/05/21/bild-hamta-och-hantera/comment-page-1/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se:80/2010/06/06/jag-provar-blogger/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se:80/2010/06/06/jag-provar-blogger/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se:80/2010/06/12/twitter-kraver-en-insats-men-kan-ge-mycket-tillbaka/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se:80/2010/06/12/twitter-kraver-en-insats-men-kan-ge-mycket-tillbaka/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se:80/2010/05/13/kan-du-forlata/: HTTP Error 504: Gateway Time-out",
+      "url": "http://cwasteson.skolbloggen.se:80/2010/05/13/kan-du-forlata/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se:80/2010/06/13/en-mindmap-over-google-dokument/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se:80/2010/06/13/en-mindmap-over-google-dokument/"
+    },
+    {
+      "error": "http://cwasteson.skolbloggen.se:80/2010/06/14/faror-pa-natet/: <urlopen error [WinError 10061] Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det>",
+      "url": "http://cwasteson.skolbloggen.se:80/2010/06/14/faror-pa-natet/"
+    }
+  ],
+  "kind_counts": {
+    "category": 14,
+    "feed": 6,
+    "homepage": 1,
+    "media": 16,
+    "other": 30,
+    "pagination": 2,
+    "post_like": 30,
+    "tag": 325
+  },
+  "mode": "url-first-best-capture",
+  "unique_url_count": 424
+}

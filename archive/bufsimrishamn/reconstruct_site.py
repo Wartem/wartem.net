@@ -21,6 +21,9 @@ from urllib.request import Request, build_opener
 
 import cdx_inventory
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from raw_cache import fetch_url_bytes  # type: ignore
+
 
 ARCHIVE_RAW_BASE = "https://web.archive.org/web"
 RETRYABLE_HTTP_STATUSES = {429, 500, 502, 503, 504}
@@ -86,29 +89,24 @@ class DownloadedFile:
 
 
 class ArchiveClient:
-    def __init__(self, *, max_retries: int = 5, retry_backoff_seconds: float = 2.0) -> None:
+    def __init__(self, cache_root: Path, *, max_retries: int = 5, retry_backoff_seconds: float = 2.0) -> None:
+        self.cache_root = cache_root
         self.max_retries = max_retries
         self.retry_backoff_seconds = retry_backoff_seconds
         self.opener = build_opener()
 
     def download(self, url: str) -> tuple[bytes, str]:
-        request = Request(url, headers={"User-Agent": "site-reconstructor/1.0", "Accept-Encoding": "identity"})
-        attempt = 0
-
-        while True:
-            try:
-                with self.opener.open(request) as response:
-                    content_type = response.headers.get_content_type()
-                    return response.read(), content_type
-            except HTTPError as exc:
-                if exc.code not in RETRYABLE_HTTP_STATUSES or attempt >= self.max_retries:
-                    raise
-            except URLError:
-                if attempt >= self.max_retries:
-                    raise
-
-            attempt += 1
-            time.sleep(self.retry_backoff_seconds * attempt)
+        content = fetch_url_bytes(
+            self.cache_root,
+            url,
+            source="bufsimrishamn/reconstruct_site.py",
+            user_agent="site-reconstructor/1.0",
+            max_retries=self.max_retries,
+            retry_backoff_seconds=self.retry_backoff_seconds,
+            retryable_statuses=RETRYABLE_HTTP_STATUSES,
+            opener=self.opener,
+        )
+        return content, mimetypes.guess_type(url)[0] or "application/octet-stream"
 
 
 def build_archive_raw_url(timestamp: str, original: str) -> str:
@@ -225,10 +223,28 @@ def decode_html(data: bytes) -> str:
     return data.decode("utf-8", errors="replace")
 
 
-def extract_asset_urls(html_text: str, current_url: str, primary_domain: str) -> set[str]:
-    asset_urls: set[str] = set()
+def default_files_domain(primary_domain: str) -> str:
     site_prefix = primary_domain.split(".", 1)[0]
-    parser = HTMLAssetCollector(current_url, primary_domain, f"{site_prefix}.files.wordpress.com")
+    return f"{site_prefix}.files.wordpress.com"
+
+
+def extract_asset_urls(
+    html_text: str,
+    current_url: str,
+    primary_domain: str,
+    *,
+    extra_asset_hosts: Iterable[str] | None = None,
+    files_domain: str | None = None,
+    primary_media_path_prefixes: Iterable[str] | None = None,
+) -> set[str]:
+    asset_urls: set[str] = set()
+    parser = HTMLAssetCollector(
+        current_url,
+        primary_domain,
+        files_domain or default_files_domain(primary_domain),
+        extra_asset_hosts=extra_asset_hosts,
+        primary_media_path_prefixes=primary_media_path_prefixes,
+    )
     parser.feed(html_text)
     parser.close()
     return parser.urls
@@ -266,6 +282,14 @@ def rewrite_single_url(value: str, current_url: str, current_relative_path: str,
 
 class HtmlLinkRewriter(HTMLParser):
     URL_ATTRIBUTES = {"href", "src", "action", "poster", "data-src", "data-large-file", "data-orig-file"}
+    BACKUP_ATTRIBUTES = {"src", "data-src", "poster", "data-large-file", "data-orig-file", "srcset"}
+    LOCAL_FALLBACK_JS = (
+        "this.onerror=null;"
+        "if(this.dataset.localSrc){"
+        "this.removeAttribute('srcset');"
+        "this.src=this.dataset.localSrc;"
+        "}"
+    )
 
     def __init__(self, current_url: str, current_relative_path: str, link_map: dict[str, str]) -> None:
         super().__init__(convert_charrefs=False)
@@ -307,6 +331,8 @@ class HtmlLinkRewriter(HTMLParser):
     def _render_tag(self, tag: str, attrs, *, closing: str) -> str:
         parts = [f"<{tag}"]
         attribute_lookup = {name.lower(): value for name, value in attrs}
+        backup_attributes: list[tuple[str, str]] = []
+        fallback_enabled = False
         for name, value in attrs:
             if value is None:
                 parts.append(f" {name}")
@@ -320,7 +346,35 @@ class HtmlLinkRewriter(HTMLParser):
             elif lower_name == "content" and tag.lower() == "meta":
                 if attribute_lookup.get("property", "").lower() in {"og:image", "og:url"}:
                     rewritten = rewrite_single_url(value, self.current_url, self.current_relative_path, self.link_map)
+            if tag.lower() == "img":
+                original_backup = attribute_lookup.get(f"data-original-{lower_name}")
+                if lower_name in {"src", "srcset"} and original_backup and original_backup.startswith(("http://", "https://")):
+                    if rewritten != original_backup:
+                        if f"data-local-{lower_name}" not in attribute_lookup:
+                            backup_attributes.append((f"data-local-{lower_name}", rewritten))
+                        rewritten = original_backup
+                        fallback_enabled = fallback_enabled or lower_name == "src"
+                elif lower_name == "src" and rewritten != value and value.startswith(("http://", "https://")):
+                    if "data-local-src" not in attribute_lookup:
+                        backup_attributes.append(("data-local-src", rewritten))
+                    rewritten = value
+                    fallback_enabled = True
+                elif lower_name == "srcset" and rewritten != value and value.startswith(("http://", "https://")):
+                    if "data-local-srcset" not in attribute_lookup:
+                        backup_attributes.append(("data-local-srcset", rewritten))
+                    rewritten = value
             parts.append(f' {name}="{escape(rewritten, quote=True)}"')
+            if (
+                lower_name in self.BACKUP_ATTRIBUTES
+                and rewritten != value
+                and value.startswith(("http://", "https://"))
+                and f"data-original-{lower_name}" not in attribute_lookup
+            ):
+                backup_attributes.append((f"data-original-{lower_name}", value))
+        if tag.lower() == "img" and fallback_enabled and "onerror" not in attribute_lookup:
+            parts.append(f' onerror="{escape(self.LOCAL_FALLBACK_JS, quote=True)}"')
+        for name, value in backup_attributes:
+            parts.append(f' {name}="{escape(value, quote=True)}"')
         parts.append(closing)
         return "".join(parts)
 
@@ -328,11 +382,22 @@ class HtmlLinkRewriter(HTMLParser):
 class HTMLAssetCollector(HTMLParser):
     URL_ATTRIBUTES = {"href", "src", "action", "poster", "data-src", "data-large-file", "data-orig-file", "srcset"}
 
-    def __init__(self, current_url: str, primary_domain: str, files_domain: str) -> None:
+    def __init__(
+        self,
+        current_url: str,
+        primary_domain: str,
+        files_domain: str,
+        *,
+        extra_asset_hosts: Iterable[str] | None = None,
+        primary_media_path_prefixes: Iterable[str] | None = None,
+    ) -> None:
         super().__init__(convert_charrefs=False)
         self.current_url = current_url
         self.primary_domain = primary_domain
         self.files_domain = files_domain
+        self.extra_asset_hosts = {(host or "").lower() for host in (extra_asset_hosts or []) if host}
+        prefixes = tuple(primary_media_path_prefixes or ("/wp-content/",))
+        self.primary_media_path_prefixes = tuple(prefix.lower() for prefix in prefixes if prefix)
         self.urls: set[str] = set()
 
     def handle_starttag(self, tag: str, attrs) -> None:
@@ -358,9 +423,16 @@ class HTMLAssetCollector(HTMLParser):
         resolved = urljoin(self.current_url, value)
         parts = urlsplit(resolved)
         host = (parts.hostname or "").lower()
-        if host not in {self.primary_domain, self.files_domain}:
+        allowed_hosts = {self.primary_domain, self.files_domain, *self.extra_asset_hosts}
+        if host not in allowed_hosts:
             return
-        if host == self.primary_domain and "/wp-content/" not in parts.path:
+        if host == self.primary_domain and self.primary_media_path_prefixes:
+            if not any(parts.path.lower().startswith(prefix) for prefix in self.primary_media_path_prefixes):
+                return
+        if host == self.primary_domain and not self.primary_media_path_prefixes:
+            if PurePosixPath(parts.path).suffix.lower() not in ASSET_EXTENSIONS:
+                return
+        if host in self.extra_asset_hosts and PurePosixPath(parts.path).suffix.lower() not in ASSET_EXTENSIONS:
             return
         if PurePosixPath(parts.path).suffix.lower() not in ASSET_EXTENSIONS and host != self.files_domain:
             return
@@ -603,6 +675,9 @@ def reconstruct_site(
     *,
     domain: str,
     site_dir: Path,
+    extra_asset_hosts: Iterable[str] | None = None,
+    primary_media_path_prefixes: Iterable[str] | None = None,
+    skip_asset_pass: bool = False,
     max_retries: int,
     retry_backoff_seconds: float,
     sleep_seconds: float,
@@ -628,7 +703,7 @@ def reconstruct_site(
     def download_entry(entry: SiteEntry) -> tuple[SiteEntry, str, bytes | None, str | None, str | None]:
         archive_url = build_archive_raw_url(entry.best_timestamp, entry.best_original)
         relative_path = entry_relative_path(entry, primary_domain=domain)
-        client = ArchiveClient(max_retries=max_retries, retry_backoff_seconds=retry_backoff_seconds)
+        client = ArchiveClient(site_root, max_retries=max_retries, retry_backoff_seconds=retry_backoff_seconds)
         try:
             content, response_mime = client.download(archive_url)
             return entry, relative_path, content, response_mime, None
@@ -654,46 +729,55 @@ def reconstruct_site(
             if sleep_seconds:
                 time.sleep(sleep_seconds)
 
-    asset_urls: set[str] = set()
-    for _, entry, html_text in html_files:
-        asset_urls.update(extract_asset_urls(html_text, entry.best_original, domain))
+    if not skip_asset_pass:
+        asset_urls: set[str] = set()
+        for _, entry, html_text in html_files:
+            asset_urls.update(
+                extract_asset_urls(
+                    html_text,
+                    entry.best_original,
+                    domain,
+                    extra_asset_hosts=extra_asset_hosts,
+                    primary_media_path_prefixes=primary_media_path_prefixes,
+                )
+            )
 
-    asset_entries: list[SiteEntry] = []
-    with ThreadPoolExecutor(max_workers=workers) as executor:
-        future_map = {
-            executor.submit(
-                resolve_best_entry,
-                asset_url,
-                from_year=None,
-                to_year=None,
-                max_retries=max_retries,
-                retry_backoff_seconds=retry_backoff_seconds,
-            ): asset_url
-            for asset_url in sorted(asset_urls)
-            if cdx_inventory.normalize_url(asset_url) not in link_map
-        }
-        for future in as_completed(future_map):
-            entry, error = future.result()
-            if entry is not None:
-                asset_entries.append(entry)
-            elif error:
-                failed.append({"url": future_map[future], "archive_url": "", "error": error})
+        asset_entries: list[SiteEntry] = []
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            future_map = {
+                executor.submit(
+                    resolve_best_entry,
+                    asset_url,
+                    from_year=None,
+                    to_year=None,
+                    max_retries=max_retries,
+                    retry_backoff_seconds=retry_backoff_seconds,
+                ): asset_url
+                for asset_url in sorted(asset_urls)
+                if cdx_inventory.normalize_url(asset_url) not in link_map
+            }
+            for future in as_completed(future_map):
+                entry, error = future.result()
+                if entry is not None:
+                    asset_entries.append(entry)
+                elif error:
+                    failed.append({"url": future_map[future], "archive_url": "", "error": error})
 
-    with ThreadPoolExecutor(max_workers=workers) as executor:
-        future_map = {executor.submit(download_entry, entry): entry for entry in asset_entries}
-        for future in as_completed(future_map):
-            entry, relative_path, content, _, error = future.result()
-            archive_url = build_archive_raw_url(entry.best_timestamp, entry.best_original)
-            destination = site_dir / relative_path
-            destination.parent.mkdir(parents=True, exist_ok=True)
-            if error:
-                failed.append({"url": entry.normalized_url, "archive_url": archive_url, "error": error})
-                continue
-            assert content is not None
-            destination.write_bytes(content)
-            for alias in make_aliases(entry):
-                link_map[alias] = relative_path
-            downloaded.append(DownloadedFile(entry=entry, relative_path=relative_path, archive_url=archive_url, status="downloaded"))
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            future_map = {executor.submit(download_entry, entry): entry for entry in asset_entries}
+            for future in as_completed(future_map):
+                entry, relative_path, content, _, error = future.result()
+                archive_url = build_archive_raw_url(entry.best_timestamp, entry.best_original)
+                destination = site_dir / relative_path
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                if error:
+                    failed.append({"url": entry.normalized_url, "archive_url": archive_url, "error": error})
+                    continue
+                assert content is not None
+                destination.write_bytes(content)
+                for alias in make_aliases(entry):
+                    link_map[alias] = relative_path
+                downloaded.append(DownloadedFile(entry=entry, relative_path=relative_path, archive_url=archive_url, status="downloaded"))
 
     for destination, entry, html_text in html_files:
         rewritten = rewrite_html(html_text, entry.best_original, entry_relative_path(entry, primary_domain=domain), link_map)
@@ -734,6 +818,19 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--max-retries", type=int, default=6)
     parser.add_argument("--retry-backoff-seconds", type=float, default=3.0)
     parser.add_argument("--workers", type=int, default=4, help="Parallel workers for capture lookup and downloads.")
+    parser.add_argument(
+        "--asset-host",
+        action="append",
+        dest="asset_hosts",
+        help="Optional extra asset hostname to keep when rewriting or downloading media, for example blogger.googleusercontent.com.",
+    )
+    parser.add_argument(
+        "--primary-media-path",
+        action="append",
+        dest="primary_media_paths",
+        help="Optional allowed path prefix on the primary domain for media URLs. Repeat to allow multiple prefixes. Default is /wp-content/.",
+    )
+    parser.add_argument("--skip-asset-pass", action="store_true", help="Skip asset lookup and asset downloads to prioritize fast HTML reconstruction.")
     parser.add_argument("--refresh-inventory", action="store_true", help="Refetch CDX inventory before reconstruction.")
     return parser.parse_args(argv)
 
@@ -761,6 +858,9 @@ def run(argv: list[str] | None = None) -> int:
             entries,
             domain=args.domain,
             site_dir=site_dir,
+            extra_asset_hosts=args.asset_hosts,
+            primary_media_path_prefixes=args.primary_media_paths,
+            skip_asset_pass=args.skip_asset_pass,
             max_retries=args.max_retries,
             retry_backoff_seconds=args.retry_backoff_seconds,
             sleep_seconds=args.sleep_seconds,
