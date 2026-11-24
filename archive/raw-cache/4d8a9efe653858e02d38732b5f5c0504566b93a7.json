@@ -1,0 +1,7 @@
+{
+  "url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fcwasteson.skolbloggen.se%2F2010%2F04%2F11%2Fvilket-typsnitt-ar-bast%2F&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&filter=statuscode%3A200&output=json",
+  "source": "bufsimrishamn/cdx_inventory.py",
+  "body_path": "4d8a9efe653858e02d38732b5f5c0504566b93a7.json",
+  "status": 200,
+  "final_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fcwasteson.skolbloggen.se%2F2010%2F04%2F11%2Fvilket-typsnitt-ar-bast%2F&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&filter=statuscode%3A200&output=json"
+}

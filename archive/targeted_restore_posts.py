@@ -15,6 +15,13 @@ from raw_cache import fetch_url_bytes  # type: ignore
 
 RETRYABLE = {429, 500, 502, 503, 504}
 HTML_MIME_PREFIXES = ("text/html", "application/xhtml+xml")
+BAD_CAPTURE_MARKERS = (
+    "Skolbloggen stängde den 1:a januari 2019",
+    "/Vi på SLI Play som drivit Skolbloggen",
+    "Ask the publishers",
+    "change.org/LetReadersRead",
+    "HTTP/1.1 503 Service Temporarily Unavailable",
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -32,6 +39,10 @@ def decode_html(data: bytes) -> str:
         except UnicodeDecodeError:
             continue
     return data.decode("utf-8", errors="replace")
+
+
+def is_bad_capture_html(html_text: str) -> bool:
+    return any(marker in html_text for marker in BAD_CAPTURE_MARKERS)
 
 
 def build_archive_raw_url(timestamp: str, original: str) -> str:
@@ -84,8 +95,11 @@ def fetch_and_write(site_root: Path, row: dict[str, str], max_retries: int = 4) 
             max_retries=max_retries,
             retryable_statuses=RETRYABLE,
         )
+        html_text = decode_html(data)
+        if is_bad_capture_html(html_text):
+            return row["relative_path"], False, "bad-capture-placeholder"
         destination.parent.mkdir(parents=True, exist_ok=True)
-        destination.write_text(decode_html(data), encoding="utf-8")
+        destination.write_text(html_text, encoding="utf-8")
         return row["relative_path"], True, ""
     except (HTTPError, URLError) as exc:
         return row["relative_path"], False, str(exc)

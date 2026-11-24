@@ -1,0 +1,7 @@
+{
+  "url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fcwasteson.skolbloggen.se%2F2010%2F02%2F03%2Ftva-saker-angrar-jag%2F&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&filter=statuscode%3A200&output=json",
+  "source": "bufsimrishamn/cdx_inventory.py",
+  "body_path": "93c7545747a93c94fa22520c344e82dd14d0f88b.json",
+  "status": 200,
+  "final_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fcwasteson.skolbloggen.se%2F2010%2F02%2F03%2Ftva-saker-angrar-jag%2F&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&filter=statuscode%3A200&output=json"
+}

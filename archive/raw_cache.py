@@ -38,8 +38,17 @@ def read_cached_bytes(site_root: Path, url: str) -> bytes | None:
     return data_path.read_bytes()
 
 
-def write_cached_response(site_root: Path, url: str, body: bytes, *, source: str, encoding: str | None = None, extra: dict[str, object] | None = None) -> Path:
-    data_path, meta_path = cache_paths(site_root, url)
+def write_cached_response(
+    site_root: Path,
+    url: str,
+    body: bytes,
+    *,
+    source: str,
+    encoding: str | None = None,
+    extra: dict[str, object] | None = None,
+    suffix: str = ".html",
+) -> Path:
+    data_path, meta_path = cache_paths(site_root, url, suffix=suffix)
     data_path.write_bytes(body)
     payload: dict[str, object] = {
         "url": url,

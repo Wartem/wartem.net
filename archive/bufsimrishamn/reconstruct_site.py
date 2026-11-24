@@ -512,12 +512,14 @@ def fetch_unique_originals(
 def resolve_best_entry(
     original_url: str,
     *,
+    cache_root: Path | None = None,
     from_year: int | None,
     to_year: int | None,
     max_retries: int,
     retry_backoff_seconds: float,
 ) -> tuple[SiteEntry | None, str | None]:
     client = cdx_inventory.CdxClient(
+        cache_root or Path(__file__).resolve().parent.parent,
         max_retries=max_retries,
         retry_backoff_seconds=retry_backoff_seconds,
     )

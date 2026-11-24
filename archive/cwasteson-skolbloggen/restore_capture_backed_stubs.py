@@ -30,6 +30,13 @@ STUB_MARKERS = (
     "Rekonstruerad fr",
     "Wayback Machine",
 )
+BAD_CAPTURE_MARKERS = (
+    "Skolbloggen stängde den 1:a januari 2019",
+    "/Vi på SLI Play som drivit Skolbloggen",
+    "Ask the publishers",
+    "change.org/LetReadersRead",
+    "HTTP/1.1 503 Service Temporarily Unavailable",
+)
 
 
 def load_archive_map() -> dict[str, str]:
@@ -89,7 +96,10 @@ def fetch_html(url: str) -> str:
         user_agent="Mozilla/5.0",
         timeout=30,
     )
-    return raw.decode("utf-8", errors="replace")
+    html_text = raw.decode("utf-8", errors="replace")
+    if any(marker in html_text for marker in BAD_CAPTURE_MARKERS):
+        raise RuntimeError(f"Rejected placeholder capture: {url}")
+    return html_text
 
 
 def sanitize_capture_html(html_text: str) -> str:

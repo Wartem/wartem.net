@@ -139,7 +139,11 @@ def extract_internal_links(html_text: str, current_url: str, primary_domain: str
 
 
 def fetch_capture_rows(seed_url: str, *, max_retries: int, retry_backoff_seconds: float) -> list[dict[str, str]]:
-    client = cdx_inventory.CdxClient(max_retries=max_retries, retry_backoff_seconds=retry_backoff_seconds)
+    client = cdx_inventory.CdxClient(
+        ROOT,
+        max_retries=max_retries,
+        retry_backoff_seconds=retry_backoff_seconds,
+    )
     rows = client.fetch_query(
         "listing_capture_lookup",
         {
@@ -192,7 +196,11 @@ def resolve_candidate_entry(
 
     path = path_from_url(normalized)
     lookup_path = path[:-1] if path.endswith("/") and path != "/" else path
-    client = cdx_inventory.CdxClient(max_retries=max_retries, retry_backoff_seconds=retry_backoff_seconds)
+    client = cdx_inventory.CdxClient(
+        ROOT,
+        max_retries=max_retries,
+        retry_backoff_seconds=retry_backoff_seconds,
+    )
     try:
         rows = client.fetch_query(
             "candidate_path_lookup",
@@ -525,7 +533,11 @@ def main() -> int:
     seeds = [cdx_inventory.normalize_url(row["normalized_url"]) for row in rows if is_listing_seed(row)]
     seeds = sorted(dict.fromkeys(seeds))
 
-    client = reconstruct_site.ArchiveClient(max_retries=args.max_retries, retry_backoff_seconds=args.retry_backoff_seconds)
+    client = reconstruct_site.ArchiveClient(
+        ROOT,
+        max_retries=args.max_retries,
+        retry_backoff_seconds=args.retry_backoff_seconds,
+    )
     RECOVERY_DIR.mkdir(parents=True, exist_ok=True)
 
     listing_scan_results: list[dict[str, object]] = []

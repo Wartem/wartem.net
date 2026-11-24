@@ -1,0 +1,7 @@
+{
+  "url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fcwasteson.skolbloggen.se%2F2010%2F03%2F11%2Fnagra-tankar-kring-facebook%2F&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&filter=statuscode%3A200&output=json",
+  "source": "bufsimrishamn/cdx_inventory.py",
+  "body_path": "7486b9fded0cc36378492966d3c9848931aa9099.json",
+  "status": 200,
+  "final_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fcwasteson.skolbloggen.se%2F2010%2F03%2F11%2Fnagra-tankar-kring-facebook%2F&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&filter=statuscode%3A200&output=json"
+}
